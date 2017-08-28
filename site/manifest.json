@@ -1,0 +1,178 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/scirneanu/Desktop/work/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/contactus/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/contactus/index.html",
+          "hash": "XupvRmbEMr9DvplAwREAtQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/docstore/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/docstore/index.html",
+          "hash": "TachtKrXszTFP0sX58kdsA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/doclist/CreatingPackage.docx",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/doclist/CreatingPackage.docx"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/doclist/DS topologies.pdf",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/doclist/DS topologies.pdf"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/doclist/DesignStudioT24-Workshop_GDV.docx",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/doclist/DesignStudioT24-Workshop_GDV.docx"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/doclist/DevOpsBank_setup_with_T24SandBox v2.docx",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/doclist/DevOpsBank_setup_with_T24SandBox v2.docx"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/docstore/techguides/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/docstore/techguides/index.html",
+          "hash": "nMCbmVUzA5Gnhd9A7UYj2A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/index.html",
+          "hash": "PVFUjsoRWgkGoCdOIJifVw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "home/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "home/toc.html",
+          "hash": "l+EjY0cnITaLXlLfomaTSg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "frKT+RPIYjMY3d2bmg4sEw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "OrpLznCsO9UuJzS7+g3q6A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build"
+      },
+      "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "RestApiDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "incrementalPhase": "postProcessing"
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {}
+}
