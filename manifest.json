@@ -29,43 +29,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/doclist/CreatingPackage.docx",
+      "source_relative_path": "home/docstore/techguides/doclist/Using GitLab with MarketPlace Sandbox.docx",
       "output": {
         "resource": {
-          "relative_path": "home/docstore/techguides/doclist/CreatingPackage.docx"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/doclist/DS topologies.pdf",
-      "output": {
-        "resource": {
-          "relative_path": "home/docstore/techguides/doclist/DS topologies.pdf"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/doclist/DesignStudioT24-Workshop_GDV.docx",
-      "output": {
-        "resource": {
-          "relative_path": "home/docstore/techguides/doclist/DesignStudioT24-Workshop_GDV.docx"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/doclist/DevOpsBank_setup_with_T24SandBox v2.docx",
-      "output": {
-        "resource": {
-          "relative_path": "home/docstore/techguides/doclist/DevOpsBank_setup_with_T24SandBox v2.docx"
+          "relative_path": "home/docstore/techguides/doclist/Using GitLab with MarketPlace Sandbox.docx"
         }
       },
       "is_incremental": false,
@@ -77,7 +44,7 @@
       "output": {
         ".html": {
           "relative_path": "home/docstore/techguides/index.html",
-          "hash": "nMCbmVUzA5Gnhd9A7UYj2A=="
+          "hash": "BX4fsvilW7U30z7NiKSRPw=="
         }
       },
       "is_incremental": false,
@@ -113,7 +80,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "frKT+RPIYjMY3d2bmg4sEw=="
+          "hash": "aQHzQW/IQWhYYPqWLRiGrw=="
         }
       },
       "is_incremental": false,
@@ -150,6 +117,10 @@
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
@@ -157,10 +128,6 @@
         "RestApiDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
           "incrementalPhase": "build"
         }
       }
