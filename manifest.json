@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/Users/scirneanu/Desktop/work/docfx_project",
+  "source_base_path": "C:/Users/scirneanu/Desktop/tGit/temenos-platform-documentation/docfx_project",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -9,10 +9,10 @@
       "output": {
         ".html": {
           "relative_path": "home/contactus/index.html",
-          "hash": "XupvRmbEMr9DvplAwREAtQ=="
+          "hash": "MvR/8SskZJrtvz9EIjY4JA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -21,18 +21,18 @@
       "output": {
         ".html": {
           "relative_path": "home/docstore/index.html",
-          "hash": "TachtKrXszTFP0sX58kdsA=="
+          "hash": "e/lTRAQ2ocPLRlouGBkn0g=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/doclist/Using GitLab with MarketPlace Sandbox.docx",
+      "source_relative_path": "home/docstore/techguides/doclist/How to use GitLab_SSH with MarketPlace Sandbox.docx",
       "output": {
         "resource": {
-          "relative_path": "home/docstore/techguides/doclist/Using GitLab with MarketPlace Sandbox.docx"
+          "relative_path": "home/docstore/techguides/doclist/How to use GitLab_SSH with MarketPlace Sandbox.docx"
         }
       },
       "is_incremental": false,
@@ -44,7 +44,7 @@
       "output": {
         ".html": {
           "relative_path": "home/docstore/techguides/index.html",
-          "hash": "BX4fsvilW7U30z7NiKSRPw=="
+          "hash": "N/q0WkHLJnKnflVsXt9PZg=="
         }
       },
       "is_incremental": false,
@@ -56,10 +56,10 @@
       "output": {
         ".html": {
           "relative_path": "home/index.html",
-          "hash": "PVFUjsoRWgkGoCdOIJifVw=="
+          "hash": "T2p+DUYxlWrAMmheYp/Icw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -68,7 +68,7 @@
       "output": {
         ".html": {
           "relative_path": "home/toc.html",
-          "hash": "l+EjY0cnITaLXlLfomaTSg=="
+          "hash": "XQEYm8ZgmwGCP5EbzdVVVQ=="
         }
       },
       "is_incremental": false,
@@ -80,10 +80,10 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "aQHzQW/IQWhYYPqWLRiGrw=="
+          "hash": "ULOQBFpQYrpihheNQLto4A=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -92,7 +92,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "OrpLznCsO9UuJzS7+g3q6A=="
+          "hash": "U98VRGqNWJHQf1mTfvaZrw=="
         }
       },
       "is_incremental": false,
@@ -102,14 +102,13 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot build incrementally because last build info is missing.",
+        "can_incremental": true,
         "incrementalPhase": "build"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
+        "RestApiDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "TocDocumentProcessor": {
@@ -117,29 +116,34 @@
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
+        "ResourceDocumentProcessor": {
           "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build"
         },
-        "RestApiDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
           "incrementalPhase": "build"
         }
       }
     },
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
         "incrementalPhase": "postProcessing"
       },
       "processors": {}
     }
   ],
-  "version_info": {}
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
 }

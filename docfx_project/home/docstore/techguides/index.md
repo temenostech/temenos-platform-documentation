@@ -1,3 +1,3 @@
 # Technical Guides Page
 
-[Using GitLab with MarketPlace Sandbox](./doclist/Using GitLab with MarketPlace Sandbox.docx)  
+[How to use GitLab_SSH with MarketPlace Sandbox](./doclist/How to use GitLab_SSH with MarketPlace Sandbox.docx)  
