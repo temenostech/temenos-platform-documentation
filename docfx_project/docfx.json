@@ -38,6 +38,7 @@
       {
         "files": [
           "images/**",
+		  "home/docstore/techguides/images/**",
 		  "home/docstore/techguides/doclist/**"
         ],
         "exclude": [
