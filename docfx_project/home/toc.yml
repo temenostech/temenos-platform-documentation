@@ -6,3 +6,6 @@
   items:
   - name: Technical Guides
     href: ./docstore/techguides/index.md
+    items:
+    - name: Use Gitlab Repository
+      href: ./docstore/techguides/use-gitlab-repository.md
