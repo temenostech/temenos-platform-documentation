@@ -22,9 +22,9 @@
         "files": [
           "home/**.yml",
           "home/index.md",
-		  "home/contactus/index.md",
-		  "home/docstore/index.md",
-		  "home/docstore/techguides/index.md",
+		  "home/contactus/**.md",
+		  "home/docstore/**.md",
+		  "home/docstore/techguides/**.md",
 		  "toc.yml",
           "*.md"
         ],
