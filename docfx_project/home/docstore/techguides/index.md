@@ -1,3 +1,3 @@
-# Technical Guides Page
+# Technical Guides
 
-[How to use GitLab_SSH with MarketPlace Sandbox](./doclist/How to use GitLab_SSH with MarketPlace Sandbox.docx)  
+Here you have access to online documentation to help you develop and test the integration of your products through the cloud sandbox environment provided by Temenos MarketPlace.

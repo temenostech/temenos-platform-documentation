@@ -37,8 +37,7 @@
       {
         "files": [
           "images/**",
-		  "home/docstore/techguides/images/**",
-		  "home/docstore/techguides/doclist/**"
+		  "home/docstore/techguides/images/**"
         ],
         "exclude": [
           "obj/**",
