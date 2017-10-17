@@ -1,5 +1,3 @@
-- name: Contact Us
-  href: ./contactus/index.md
 
 - name: Document Store
   href: ./docstore/index.md

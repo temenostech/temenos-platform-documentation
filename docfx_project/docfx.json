@@ -22,7 +22,6 @@
         "files": [
           "home/**.yml",
           "home/index.md",
-		  "home/contactus/**.md",
 		  "home/docstore/**.md",
 		  "home/docstore/techguides/**.md",
 		  "toc.yml",
