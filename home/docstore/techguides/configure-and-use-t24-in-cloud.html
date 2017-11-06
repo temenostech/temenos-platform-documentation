@@ -1,0 +1,355 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Start Design Studio </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Start Design Studio ">
+    <meta name="generator" content="docfx 2.21.1.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="start-design-studio">Start Design Studio</h1>
+
+<h2 id="prerequisites">Prerequisites</h2>
+<p>To be able to use T24 cloud environment, you need to have access to:</p>
+<ul>
+<li>Design Studio</li>
+<li>Temenos Sandbox</li>
+<li>Tortoise Git  - download from <a href="https://tortoisegit.org/download/" title="Tortoise">here</a></li>
+<li>GitLab Platform</li>
+</ul>
+<h1 id="create-new-project">Create New Project</h1>
+<p>The package delivered by Temenos MarketPlace contains the following:</p>
+<ul>
+<li>Design Studio</li>
+<li>T24 libraries</li>
+<li>TAFJ environment</li>
+</ul>
+<p>Design Studio will be delivered pre-configured in order to be able to introspect T24 applications hosted in MarketPlace Could Infrastructure</p>
+<p><strong>- Start Design Studio application:</strong></p>
+<p>Go into DesignStudioT24 folder and double click on <strong>StartDesignStudio.bat</strong></p>
+<p><img src="images/start-ds.png" alt="start Design Studio"></p>
+<p><strong>- Choose a workspace:</strong></p>
+<p>When it opens, browse for the <strong>Workspace</strong> folder which is in the DesignStudioT24 folder.</p>
+<p><img src="images/choose-workspace.png" alt="choose workspace"></p>
+<p><strong>- Create project:</strong></p>
+<p>On the menu bar, click <strong>File</strong> &gt; <strong>New</strong> &gt; <strong>Project</strong> </p>
+<p><img src="images/new-project.png" alt="create new project"></p>
+<p><strong>Result</strong>: the New Project dialog box is displayed.</p>
+<ul>
+<li>Select <strong>Design Studio</strong> &gt; <strong>Design Studio Template Project</strong> and click <strong>Next</strong>:</li>
+</ul>
+<p><img src="images/ds-template-project.png" alt="design studio template project"></p>
+<p><strong>Result</strong>: the New Design Template Projects dialog box is displayed.</p>
+<p>Select from the drop down list the template accorded to your T24 installation:  <strong>t24-packager-tafj</strong></p>
+<p><img src="images/tafj-packager.png" alt="tafj package"></p>
+<ul>
+<li><strong>Set Template parameters values</strong> (mandatory fields as notified in previous image)</li>
+</ul>
+<p><img src="images/template-project.png" alt="template project"></p>
+<div class="NOTE"><h5>NOTE</h5><p>In Value field, change the <strong>project-name</strong> from the defaulted one to “<em>something at your choice</em>” (here we&#39;ve named it &#39;sample&#39;). <strong>Use small letters</strong></p>
+</div>
+<div class="NOTE"><h5>NOTE</h5><p>In Value field, change <strong>component-name</strong> from the defaulted one to “<em>something at your choice</em>”. <strong>Start words with capital letters</strong></p>
+</div>
+<div class="TIP"><h5>TIP</h5><p>Value fields above need to be changed in order to avoid overriding an existing jar, which already appears in the environment </p>
+</div>
+<ul>
+<li>Click <strong>Finish</strong> to create the project.</li>
+</ul>
+<p><strong>Result</strong>: Four projects are created by the template. By default, ft-modelbank is the prefix of these projects: </p>
+<p><img src="images/created-projects.png" alt="created projects"></p>
+<div class="NOTE"><h5>NOTE</h5><p>Instead of default &#39;<em>ft-sample</em>&#39; it will appear &#39;<em>the name</em>&#39; you provided</p>
+</div>
+<ul>
+<li><p>ft-sample-<strong>data-code</strong>: holding basic and data files.</p>
+<ul>
+<li><p>ft-sample-<strong>models</strong>: holding Design Studio models that can be imported and amended thanks to dedicated editors.</p>
+</li>
+<li><p>ft-sample-<strong>models-gen</strong>: holding files Design Studio generates from the <em>ft-modelbank</em>-modelsproject.</p>
+</li>
+<li><p>ft-sample-<strong>packager</strong>: <strong>is the packager project itself</strong> from where you can launch the final artifact creation.</p>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>On servers tab, click right and <strong>Add New T24 Server</strong></li>
+</ul>
+<p><img src="images/add-server.png" alt="add server"></p>
+<ul>
+<li>A new screen is open. Give a <strong>project name</strong> and click <strong>Next</strong></li>
+</ul>
+<p><img src="images/project-name.png" alt="project name"></p>
+<ul>
+<li>Choose connection type as <strong>T24 Server-Web service</strong> and click <strong>Finish</strong></li>
+</ul>
+<p><img src="images/connection-type.png" alt="connection type"></p>
+<ul>
+<li>Check your configuration (username, authorizer, Hostname address and Port):</li>
+</ul>
+<p><img src="images/server-properties.png" alt="server properties"></p>
+<p><strong>Secured box</strong> needs to be checked.</p>
+<p><strong>Protocol</strong> should remain &quot;ws&quot;.</p>
+<p><strong>Hostname</strong> should be the DNS hostname of T24 endpoint.</p>
+<p><strong>Port</strong> should be changed to 443.</p>
+<p><strong>Context</strong> should remain axis2.</p>
+<ul>
+<li>Change server state into <strong>active</strong>:</li>
+</ul>
+<p><img src="images/t24-connection.png" alt="t24 connection"></p>
+<ul>
+<li>If you go to <strong>Servers tab</strong>, state should be active: </li>
+</ul>
+<p><img src="images/active-server.png" alt="active server"></p>
+<p>Make sure T24 Connection is active. (If not, click on Start/Restart)</p>
+<p><strong>Expand</strong> ft-modelbank-data-code:</p>
+<p><img src="images/select-modelbank-data.png" alt="select modelbank data"></p>
+<ul>
+<li><strong>Click on</strong> ft sample-models. <strong>Click right</strong> – <strong>select Maven</strong> – <strong>update Project</strong> </li>
+</ul>
+<p><img src="images/update-project.png" alt="update maven project"></p>
+<ul>
+<li><strong>Select all, then OK</strong></li>
+</ul>
+<p><img src="images/update-maven.png" alt="update maven project"></p>
+<ul>
+<li>Expand ft-sample-packager, click right on <strong>Launch T24 packager</strong> &gt; <strong>Run as &gt; Launch T24 Packager (TAFJ)</strong></li>
+</ul>
+<p><img src="images/launch-packager.png" alt="launch tafj packager"></p>
+<ul>
+<li><p>Wait for the workspace to be built.</p>
+</li>
+<li><p>A successful packager build is shown in the console</p>
+</li>
+</ul>
+<p><img src="images/build-success.png" alt="build success"></p>
+<h1 id="adding-subroutines">Adding subroutines</h1>
+<p>In order to add a routine, follow below steps:</p>
+<p><img src="images/add-routine.png" alt="add routine"></p>
+<p><img src="images/wizard-routine.png" alt="wizard routine"></p>
+<ul>
+<li>Give a <strong>name</strong> for the routine you want to create:</li>
+</ul>
+<p><img src="images/routine-name.png" alt="routine name"></p>
+<ul>
+<li><strong>Result</strong>: the routine is created:</li>
+</ul>
+<p><img src="images/sample-routine-created.png" alt="sample routine created"></p>
+<div class="NOTE"><h5>NOTE</h5><p>After writing the routine, in case the compilation will throw an error related to “$PACKAGE is mandatory”, make sure you put on “Dunce Cap” as below:</p>
+<p><img src="images/dunce-cap.png" alt="put dunce cap"></p>
+</div>
+<h1 id="import-t24-applications">Import T24 Applications</h1>
+<ul>
+<li>Go to your models project. Right click on <strong>Applications</strong> and choose <strong>Import</strong>:</li>
+</ul>
+<p><img src="images/import-applications.png" alt="import applications"></p>
+<ul>
+<li>Select <strong>Design Studio</strong> and choose <strong>Import T24 Applications</strong>, click on <strong>next</strong> button and wait until it loads</li>
+</ul>
+<p><img src="images/load-applications.png" alt="load applications"></p>
+<ul>
+<li>Click on <strong>Select All</strong> button and check <strong>Import to subfolders based on Product name</strong>:</li>
+</ul>
+<p><img src="images/import-app-wizard.png" alt="import applications window"></p>
+<ul>
+<li>Click on <strong>Next</strong> button and choose the <strong>location</strong> where to be imported the applications:</li>
+</ul>
+<p><img src="images/app-location.png" alt="app location"></p>
+<ul>
+<li>Click on <strong>Finish</strong> button and wait until the operation is completed (this might take longer):</li>
+</ul>
+<p><img src="images/download-app.png" alt="download app"></p>
+<ul>
+<li>A <strong>successful</strong> message will be displayed at the end and your application will be imported in your area.</li>
+</ul>
+<p><img src="images/success-message.png" alt="success message"></p>
+<h1 id="enquiries-and-versions">Enquiries and Versions</h1>
+<h2 id="import-enquiries">Import Enquiries</h2>
+<ul>
+<li>Go to <strong>Models</strong>, click right and choose <strong>Import</strong>:</li>
+</ul>
+<p><img src="images/import-enquiries.png" alt="import enquiries"></p>
+<p><img src="images/import-t24-enquiries.png" alt="import t24 enquiries"></p>
+<ul>
+<li>Select all or just enquiries that you are interested in</li>
+</ul>
+<p><img src="images/select-enquiries.png" alt="select t24 enquiries"></p>
+<ul>
+<li><strong>Example</strong> of a single enquiry import:</li>
+</ul>
+<p><img src="images/single-enquiry.png" alt="single enquiry"></p>
+<ul>
+<li>Click on <strong>Next</strong> button and chose the location:</li>
+</ul>
+<p><img src="images/enquiry-location.png" alt="choose enquiry location"></p>
+<ul>
+<li>A <strong>success message</strong> is displayed:</li>
+</ul>
+<p><img src="images/success-message-enquiry.png" alt="success message enquiry"></p>
+<h2 id="import-versions">Import Versions</h2>
+<ul>
+<li>Go to <strong>Models</strong>, click right and choose <strong>Import</strong>:</li>
+</ul>
+<p><img src="images/import-version.png" alt="import version"></p>
+<ul>
+<li><strong>Select</strong> all or the versions of interest:</li>
+</ul>
+<p><img src="images/select-versions.png" alt="select versions"></p>
+<ul>
+<li>See below <strong>example</strong>:</li>
+</ul>
+<p><img src="images/select-example-version.png" alt="select example version"></p>
+<ul>
+<li>Click on <strong>Next</strong> button and chose the location:</li>
+</ul>
+<p><img src="images/choose-version-location.png" alt="choose version location"></p>
+<ul>
+<li>A <strong>success message</strong> is displayed:</li>
+</ul>
+<p><img src="images/success-message-version.png" alt="success message version"></p>
+<h1 id="build-the-project">Build the project</h1>
+<ul>
+<li>Go to: <strong>ft-sample-packager</strong> &gt; <strong>Launch T24 Packager (TAFJ).launch</strong> &gt; <strong>Run As</strong> &gt; <strong>Launch T24 Packager (TAFJ)</strong></li>
+</ul>
+<p><img src="images/build-project.png" alt="build-project"></p>
+<ul>
+<li><strong>Wait</strong> for workspace to be built:</li>
+</ul>
+<p><img src="images/building.png" alt="building"></p>
+<p><img src="images/build-success-final.png" alt="build success"></p>
+<ul>
+<li>You can also check <strong>build’s success</strong> here:</li>
+</ul>
+<p><img src="images/check-build-success.png" alt="check build success"></p>
+<h1 id="clone-gitlab-repository">Clone GitLab Repository</h1>
+<ul>
+<li>Make sure you have installed TortoiseGit. </li>
+<li>Make sure you have received the <strong>ppk</strong> private key to open ssh</li>
+<li>Create a folder somewhere in your local machine. In current example, it was used  a folder named &#39;GitLab&#39; </li>
+<li>Inside the created folder, click right and choose <strong>Git Clone</strong></li>
+</ul>
+<p><img src="images/git-clone.png" alt="git clone"></p>
+<p>Insert as follows:</p>
+<p><strong>URL</strong>: git@gitlab.temenos.cloud:1c3pg74t41czk/corebanking.git
+<strong>Directory</strong>: D:\MKP\gitlab   <em>(path of your folder)</em>
+<strong>Check Load Putty Key</strong>: browse for you ppk key</p>
+<p><img src="images/load-putty-key.png" alt="load putty key"></p>
+<ul>
+<li>Following alert message is displayed. Click <strong>yes</strong></li>
+</ul>
+<p><img src="images/tortoise-alert.png" alt="tortoise alert"></p>
+<ul>
+<li>Repository was cloned:</li>
+</ul>
+<p><img src="images/clone-result.png" alt="clone result"></p>
+<h1 id="deploy-the-jar">Deploy the Jar</h1>
+<p>In order to find the jar&#39;s location, check properties in ft-sample-packager.</p>
+<p><img src="images/generated-jar.png" alt="generated jar"></p>
+<p><img src="images/package-properties.png" alt="package properties"></p>
+<p><img src="images/jar-location.png" alt="jar location"></p>
+<ul>
+<li>Copy/ drag the <strong>jar</strong> into the <strong>packages</strong> folder:</li>
+</ul>
+<p><img src="images/packages.png" alt="packages"></p>
+<ul>
+<li><strong>Add</strong> and <strong>commit</strong> the jar to the repository by using Tortoise Git:</li>
+</ul>
+<p><img src="images/tortoise-add.png" alt="tortoise add"></p>
+<p>A screen will appear saying the file was added. Press <strong>commit</strong>:</p>
+<p><img src="images/tortoise-commit.png" alt="tortoise commit"></p>
+<p>A new screen will appear. Insert a comment in the upper window and then choose <strong>Commit and Push</strong></p>
+<p><img src="images/commit-push.png" alt="tortoise commit and push"></p>
+<p>A success message should be displayed.</p>
+<div class="NOTE"><h5>NOTE</h5><p>For any change, you can add, rename, delete, push, pull etc as per Tortoise commands:
+<img src="images/tortoise-commands.png" alt="clone result"></p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>
