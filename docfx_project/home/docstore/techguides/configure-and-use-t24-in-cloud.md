@@ -135,13 +135,38 @@ Make sure T24 Connection is active. (If not, click on Start/Restart)
 
 ![update maven project](./images/update-maven.png)
 
- - Expand ft-sample-packager, click right on **Launch T24 packager** > **Run as and Launch T24 Packager (TAFJ)**
+ - Expand ft-sample-packager, click right on **Launch T24 packager** > **Run as > Launch T24 Packager (TAFJ)**
+
 
 ![launch tafj packager](./images/launch-packager.png)
 
- - **A successful packager build is shown in the console**
+ - Wait for the workspace to be built.
+
+ - A successful packager build is shown in the console
 
 ![build success](./images/build-success.png)
+
+# Adding subroutines #
+
+In order to add a routine, follow below steps:
+
+![add routine](./images/add-routine.png)
+
+![wizard routine](./images/wizard-routine.png)
+
+ - Give a **name** for the routine you want to create:
+
+![routine name](./images/routine-name.png)
+
+ - **Result**: the routine is created:
+
+![sample routine created](./images/sample-routine-created.png)
+
+> [!Note]
+> After writing the routine, in case the compilation will throw an error related to “$PACKAGE is mandatory”, make sure you put on “Dunce Cap” as below:
+> 
+>![put dunce cap](./images/dunce-cap.png)
+
 
 # Import T24 Applications #
 
@@ -260,10 +285,35 @@ Insert as follows:
 
 ![clone result](./images/clone-result.png)
 
-- For any change, you can add, rename, delete, push, pull etc as per Tortoise commands:
 
+# Deploy the Jar #
+
+In order to find the jar's location, check properties in ft-sample-packager.
+
+![generated jar](./images/generated-jar.png)
+
+![package properties](./images/package-properties.png)
+
+![jar location](./images/jar-location.png)
+
+ - Copy/ drag the **jar** into the **packages** folder:
+
+![packages](./images/packages.png)
+
+- **Add** and **commit** the jar to the repository by using Tortoise Git:
+
+![tortoise add](./images/tortoise-add.png)
+
+A screen will appear saying the file was added. Press **commit**:
+
+![tortoise commit](./images/tortoise-commit.png)
+
+A new screen will appear. Insert a comment in the upper window and then choose **Commit and Push**
+
+![tortoise commit and push](./images/commit-push.png)
+
+A success message should be displayed.
+
+> [!Note]
+> For any change, you can add, rename, delete, push, pull etc as per Tortoise commands:
 ![clone result](./images/tortoise-commands.png)
-
-
-
-
