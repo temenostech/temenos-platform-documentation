@@ -7,4 +7,5 @@
     items:
     - name: Use Gitlab Repository
       href: ./docstore/techguides/use-gitlab-repository.md
+    - name: Configure and Use T24 in Cloud
       href: ./docstore/techguides/configure-and-use-t24-in-cloud.md
