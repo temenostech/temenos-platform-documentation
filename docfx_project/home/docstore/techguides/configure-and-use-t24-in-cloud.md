@@ -8,7 +8,7 @@ To be able to use T24 cloud environment, you need to have access to:
  - Design Studio
  - Temenos Sandbox
  - Tortoise Git  - download from [here](https://tortoisegit.org/download/ "Tortoise")
- - PAAS Configiration Repository
+ - PAAS Configuration Repository
 
 
 # Create New Project #
