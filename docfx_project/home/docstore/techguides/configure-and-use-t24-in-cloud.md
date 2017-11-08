@@ -8,7 +8,7 @@ To be able to use T24 cloud environment, you need to have access to:
  - Design Studio
  - Temenos Sandbox
  - Tortoise Git  - download from [here](https://tortoisegit.org/download/ "Tortoise")
- - GitLab Platform
+ - PAAS Configiration Repository
 
 
 # Create New Project #
@@ -260,7 +260,7 @@ In order to add a routine, follow below steps:
 ![check build success](./images/check-build-success.png)
 
 
-# Clone GitLab Repository #
+# Clone PaaS Configuration Repository #
 
 - Make sure you have installed TortoiseGit. 
 - Make sure you have received the **ppk** private key to open ssh
