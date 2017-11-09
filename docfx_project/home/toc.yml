@@ -5,6 +5,8 @@
   - name: Technical Guides
     href: ./docstore/techguides/index.md
     items:
+    - name: User Creation In PaaS
+      href: ./docstore/techguides/user-creation-in-paas.md
     - name: Use Gitlab Repository
       href: ./docstore/techguides/use-gitlab-repository.md
     - name: Configure and Use T24 in Cloud

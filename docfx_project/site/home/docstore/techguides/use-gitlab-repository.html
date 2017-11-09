@@ -8,7 +8,7 @@
     <title>Use GitLab repository for MarketPlace Sandbox </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Use GitLab repository for MarketPlace Sandbox ">
-    <meta name="generator" content="docfx 2.21.1.0">
+    <meta name="generator" content="docfx 2.24.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../../../styles/main.css">
     <meta property="docfx:navrel" content="../../../toc.html">
     <meta property="docfx:tocrel" content="../../toc.html">
+    
     
     
   </head>
@@ -70,52 +71,7 @@
 
 <h2 id="quick-start-guide">Quick Start Guide</h2>
 <h3 id="audience">Audience</h3>
-<p>This document can be used by technical staff who need to use GitLab repository to update files on the Temenos Sandbox provisioned through MarketPlace. Each Sandbox created has an associated GitLab Repository for uploading files, plugins, add-ons to the cloud environment (called Sandbox). The platform will perform the scripts and steps needed for the files to be deployed successfully as background activities. Before proceeding you need to know the associated GitLab repository, and have users with ssh keys created in the portal. </p>
-<h1 id="install-gitbash-cli-for-windows">Install GitBash CLI for Windows</h1>
-<p>You can use any GitLab/GitHub client. </p>
-<div class="NOTE"><h5>Note</h5><p>If you already have installed a Git client on your computer, you can skip this step.</p>
-</div>
-<p>•   Download the installer from <a href="https://git-scm.com/download/win" title="https://git-scm.com/download/win">https://git-scm.com/download/win</a></p>
-<p><img src="images/git-download.png" alt="git download"></p>
-<p>•   Run the installer and click <strong>Next</strong> on each screen, without changing anything in configurations. Click <strong>Finish</strong> once completed.</p>
-<h1 id="create-ssh-keys-pair-public-and-private-keys">Create SSH keys (pair public and private keys)</h1>
-<p>•   Open Git Bash and run:</p>
-<p><img src="images/ssh-keygen.png" alt="ssh keygen"></p>
-<p>•   This creates a new ssh key, using the provided email as a label.</p>
-<p><img src="images/generate-ssh-key.png" alt="generate ssh key"></p>
-<p>•   When you&#39;re prompted to &quot;Enter a file in which to save the key,&quot; press Enter. This accepts the default file location.</p>
-<p><img src="images/file-location.png" alt="file location"></p>
-<p>•   At the prompt, press enter twice to create SSH keys without a passphrase:</p>
-<p><img src="images/enter-passphrase.png" alt="enter passphrase"></p>
-<p><img src="images/enter-passphrase-again.png" alt="enter passphrase again"></p>
-<p>•   The screen should look like this:</p>
-<p><img src="images/screen-key-generated.png" alt="screen key generated"></p>
-<p>•   SSH keys are created and need to be added to ssh-agent. Ensure that ssh-agent is running. Run the command below:</p>
-<p><img src="images/ssh-agent.png" alt="ssh agent"></p>
-<p>•   Add your SSH private key to the ssh-agent. If you created your key with a different name, or if you are adding an existing key that has a different name, replace id_rsa in the command with the name of your private key file. Run the command below:</p>
-<p><img src="images/replace-id.png" alt="replace id"></p>
-<p>•   Output should be:</p>
-<p><img src="images/add-ssh-key.png" alt="add ssh key"></p>
-<p>•   Leave this Git Bash window open. Move to the next chapter to add your public key to portal. You will return to this window to clone the repository.</p>
-<h1 id="add-users-in-portal-with-ssh-key">Add users in portal with SSH key</h1>
-<p>•   Login to your organisation portal using the link and the credentials provided.</p>
-<p><img src="images/portal-login.png" alt="portal login"></p>
-<p>•   Click User menu and then New user button, as below:</p>
-<p><img src="images/new-user.png" alt="new user"></p>
-<p>This will create a new user in your organisation. This new user will be automatically assigned to all GitLab Repositories from within all environments. If you have already a user created, you can click on the user and update the SSH key box with the one created above.</p>
-<p><img src="images/new-user-created.png" alt="new user created"></p>
-<p>•   Public SSH key needs to be pasted in SSH Key text box. Open Windows Explorer and locate the public key generated above. Navigate to c:\users&lt;yourusername&gt;.ssh and locate the .pub file (id_rsa.pub). </p>
-<p><img src="images/paste-keytext.png" alt="paste key text"></p>
-<p>• Right click and open it with notepad. Select all and copy to clipboard.</p>
-<p><img src="images/copy-key.png" alt="copy key"></p>
-<p>•   Paste the copied text into the SSH Key text box and click Create user button.</p>
-<p><img src="images/ssh-text-box.png" alt="ssh text box"></p>
-<ul>
-<li><p>Your username will be created in Gitlab server and public SSH key provided will be added to your account being accessible from all the environments created in your organisation.</p>
-</li>
-<li><p>For further details or issues related to Gitlab SSH keys usage, or other operating systems (MAC, Linux), please consult this link:  <a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/">https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/</a></p>
-</li>
-</ul>
+<p>This document can be used by technical staff who need to use GitLab repository to update files on the Temenos Sandbox provisioned through MarketPlace. Each Sandbox created has an associated GitLab Repository for uploading files, plugins, add-ons to the cloud environment (called Sandbox). The platform will perform the scripts and steps needed for the files to be deployed successfully as background activities. Before proceeding you need to know the associated GitLab repository and to have users with ssh keys created in the portal. </p>
 <h1 id="clone-the-repository-to-your-local-computer">Clone the Repository to your local computer</h1>
 <p>Before proceeding, please login to your organisation, find your environment then locate the <strong>Repository</strong> Application and Endpoint. Right click the endpoint and copy the link address or click the <strong>copy to clipboard icon</strong> from the right:</p>
 <p><img src="images/repository.png" alt="repository"></p>

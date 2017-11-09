@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Use GitLab repository for MarketPlace Sandbox </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Use GitLab repository for MarketPlace Sandbox ">
+    <meta name="generator" content="docfx 2.24.0.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="how-to-create-users-in-paas">How to create Users in PaaS</h1>
+
+<h2 id="quick-start-guide">Quick Start Guide</h2>
+<h3 id="audience">Audience</h3>
+<p>This document can be used by technical staff who need to create Users in PaaS Portal and associate to each user a ssh key.</p>
+<h1 id="use-putty-ssh-client-for-ssh-key-generation">Use PuTTY ssh client for ssh key generation.</h1>
+<p>You can use any other ssh key generator client.</p>
+<div class="NOTE"><h5>Note</h5><p>If you already have installed a ssh key generator client, you can skip this step.</p>
+</div>
+<p>•   Download the installer from <a href="http://www.putty.org/" title="http://www.putty.org/">http://www.putty.org/</a></p>
+<p><img src="images/putty-download.png" alt="putty download"></p>
+<p>•   Run the installer and click <strong>Next</strong> on each screen, without changing anything in configurations. Click <strong>Finish</strong> once completed.</p>
+<h1 id="create-ssh-keys-pair-public-and-private-keys">Create SSH keys (pair public and private keys)</h1>
+<p>•   Open PuTTYgen and click Generate button:</p>
+<p><img src="images/putty-keygen.png" alt="putty keygen"></p>
+<p>•   This creates a new ssh key by moving the mouse in the blank area(highlighted in red), as per bellow picture.</p>
+<p><img src="images/putty-keygen-random.png" alt="generate ssh key"></p>
+<p>•   After Puttygen finished key generation, you can save your public key/private key in any location from your local machine.</p>
+<div class="NOTE"><h5>Note</h5><p>In order to have a valid ssh key that can be recognized by PaaS Infrastructure, do not use the Save pulic key button from Puttygen and just select the whole public key from the PuTTYgen screen and save it in your local machine.</p>
+</div>
+<p><img src="images/putty-keygen-publickey.png" alt="save public key"></p>
+<p>•   From PuTTYgen screen, you must also save the private key. Press the Save private key button, choose Yes on the next prompt (save the key without a passphrase to protect it) and indicate a name and location for the private key.</p>
+<p><img src="images/putty-keygen-privatekey.png" alt="save private key"></p>
+<p>•   The public/private key location on your local machine should look like this:</p>
+<p><img src="images/putty-keygen-keyslocation.png" alt="public/private keys location"></p>
+<h1 id="add-users-in-portal-with-ssh-key">Add users in portal with SSH key</h1>
+<p>•   Login to your organisation portal using the link and the credentials provided.</p>
+<p><img src="images/portal-login.png" alt="portal login"></p>
+<p>•   Click User menu and then New user button, as below:</p>
+<p><img src="images/new-user.png" alt="new user"></p>
+<p>This will create a new user in your organisation. This new user will be automatically assigned to all GitLab Repositories from within all environments. If you have already a user created, you can click on the user and update the SSH key box with the one created above.</p>
+<p><img src="images/new-user-created.png" alt="new user created"></p>
+<p>•   Public SSH key needs to be pasted in SSH Key text box. Open Windows Explorer and locate your public key generated using PuTTY Key Generator. </p>
+<p><img src="images/putty-keygen-publicselect.png" alt="paste key text"></p>
+<p>• Right click and open it with notepad. Select all and copy to clipboard.</p>
+<p><img src="images/copy-key.png" alt="copy key"></p>
+<p>•   Paste the copied text into the SSH Key text box and click Create user button.</p>
+<p><img src="images/ssh-text-box.png" alt="ssh text box"></p>
+<ul>
+<li><p>Your username will be created in Gitlab server and public SSH key provided will be added to your account being accessible from all the environments created in your organisation.</p>
+</li>
+<li><p>For further details or issues related to Gitlab SSH keys usage, or other operating systems (MAC, Linux), please consult this link:  <a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/">https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/</a></p>
+</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>
