@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>General Troubleshooting </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="General Troubleshooting ">
+    <meta name="generator" content="docfx 2.21.1.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="general-troubleshooting">General Troubleshooting</h1>
+
+<p>This user guide shows the options to verify the errors in case of failure when deploying the following:</p>
+<ul>
+<li>DS Packages</li>
+<li>Plugins (war files)</li>
+<li>Updates</li>
+</ul>
+<p>By following this you can identify why a package didn&#39;t install or you can check why a jenkins build failed.</p>
+<h2 id="1use-winscp">1.Use WinSCP</h2>
+<ul>
+<li><p>Go to your organization PaaS link </p>
+<ul>
+<li>example: <a href="http://51.141.24.193:4200/organisations/1c484wyz0lslc/environments" title="Environment">http://51.141.24.193:4200/organisations/1c484wyz0lslc/environments</a></li>
+</ul>
+</li>
+<li><p>Login with your <strong>user</strong> and <strong>password</strong></p>
+</li>
+</ul>
+<p><img src="images/login-environment.png" alt="login"></p>
+<ul>
+<li><strong>Click</strong> on New ABN Env</li>
+</ul>
+<p><img src="images/new-abn-env.png" alt="new abn env"></p>
+<ul>
+<li><strong>Click on Export Environment</strong> and wait for a few moments</li>
+</ul>
+<p><img src="images/export-environment.png" alt="export environment"></p>
+<ul>
+<li><strong>Click</strong> on <strong>copy</strong> button and you&#39;ll <strong>copy sftp.dev.temenos.cloud</strong></li>
+</ul>
+<p><img src="images/copy-env.png" alt="copy environment"></p>
+<ul>
+<li>From Programs list, open <strong>WinSCP</strong></li>
+<li>Insert <strong>Host Name</strong> (use the link copied above: sftp.dev.temenos.cloud, insert <strong>your user</strong> and press <strong>Advanced</strong></li>
+</ul>
+<p><img src="images/portal-login-details.png" alt="portal login details"></p>
+<ul>
+<li>Go to <strong>Authentication</strong> and then add <strong>private key file</strong> and click <strong>OK</strong></li>
+</ul>
+<p><img src="images/add-ppk-key.png" alt="portal login details"></p>
+<ul>
+<li><p>Previous screen is displayed. Click <strong>Login</strong></p>
+</li>
+<li><p>Next warning message is displayed. Click <strong>Yes</strong></p>
+</li>
+</ul>
+<p><img src="images/connecting-to-server.png" alt="connecting to server"></p>
+<ul>
+<li>Next screen is open. You can check here the archives containing the logs with all required information</li>
+</ul>
+<p><img src="images/check-archives.png" alt="check archives"></p>
+<h2 id="2use-tafjee">2.Use TAFJEE</h2>
+<ul>
+<li>Go back to main portal page and click to <strong>Monitor Application</strong>:</li>
+</ul>
+<p><img src="images/monitor-application.png" alt="monitor application"></p>
+<ul>
+<li>Following screen is open. Click on <strong>Log Files</strong></li>
+</ul>
+<p><img src="images/log-files.png" alt="log files"></p>
+<ul>
+<li>From the list of <strong>Logs</strong>, below are highlighted some which could be useful in case of an issue:</li>
+</ul>
+<p><img src="images/check-logs.png" alt="check logs"></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>
