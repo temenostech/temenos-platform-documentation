@@ -266,62 +266,40 @@
 <li>A <strong>success message</strong> is displayed:</li>
 </ul>
 <p><img src="images/success-message-version.png" alt="success message version"></p>
-<h1 id="build-the-project">Build the project</h1>
+<h1 id="create-a-t24-package-based-on-your-project">Create a T24 package based on your project</h1>
 <ul>
-<li>Go to: <strong>ft-sample-packager</strong> &gt; <strong>Launch T24 Packager (TAFJ).launch</strong> &gt; <strong>Run As</strong> &gt; <strong>Launch T24 Packager (TAFJ)</strong></li>
+<li>Go to <strong>ft--packager</strong> in Design Studio workspace, right click on <strong>Launch T24 Packager (TAFJ).launch</strong> and choose <strong>Run As</strong> &gt; <strong>Launch T24 Packager (TAFJ)</strong>.</li>
 </ul>
 <p><img src="images/build-project.png" alt="build-project"></p>
 <ul>
-<li><strong>Wait</strong> for workspace to be built:</li>
+<li><strong>Wait</strong> for successfull build for the project.</li>
 </ul>
-<p><img src="images/building.png" alt="building"></p>
 <p><img src="images/build-success-final.png" alt="build success"></p>
 <ul>
-<li>You can also check <strong>build’s success</strong> here:</li>
+<li>Check where the <strong>package</strong> was generated.</li>
 </ul>
 <p><img src="images/check-build-success.png" alt="check build success"></p>
-<h1 id="clone-paas-configuration-repository">Clone PaaS Configuration Repository</h1>
+<h1 id="deploy-the-generated-package-to-sandbox">Deploy the generated package to Sandbox</h1>
+<div class="NOTE"><h5>Note</h5><p>Make sure you cloned in your local machine the GitLab repository of your sandbox.</p>
+</div>
 <ul>
-<li>Make sure you have installed TortoiseGit. </li>
-<li>Make sure you have received the <strong>ppk</strong> private key to open ssh</li>
-<li>Create a folder somewhere in your local machine. In current example, it was used  a folder named &#39;GitLab&#39; </li>
-<li>Inside the created folder, click right and choose <strong>Git Clone</strong></li>
-</ul>
-<p><img src="images/git-clone.png" alt="git clone"></p>
-<p>Insert as follows:</p>
-<p><strong>URL</strong>: git@gitlab.temenos.cloud:1c3pg74t41czk/corebanking.git
-<strong>Directory</strong>: D:\MKP\gitlab   <em>(path of your folder)</em>
-<strong>Check Load Putty Key</strong>: browse for you ppk key</p>
-<p><img src="images/load-putty-key.png" alt="load putty key"></p>
-<ul>
-<li>Following alert message is displayed. Click <strong>yes</strong></li>
-</ul>
-<p><img src="images/tortoise-alert.png" alt="tortoise alert"></p>
-<ul>
-<li>Repository was cloned:</li>
-</ul>
-<p><img src="images/clone-result.png" alt="clone result"></p>
-<h1 id="deploy-the-jar">Deploy the Jar</h1>
-<p>In order to find the jar&#39;s location, check properties in ft-sample-packager.</p>
-<p><img src="images/generated-jar.png" alt="generated jar"></p>
-<p><img src="images/package-properties.png" alt="package properties"></p>
-<p><img src="images/jar-location.png" alt="jar location"></p>
-<ul>
-<li>Copy/ drag the <strong>jar</strong> into the <strong>packages</strong> folder:</li>
+<li>Copy the generated package into the <strong>packages</strong> folder of the cloned GitLab repository from your local machine:</li>
 </ul>
 <p><img src="images/packages.png" alt="packages"></p>
 <ul>
-<li><strong>Add</strong> and <strong>commit</strong> the jar to the repository by using Tortoise Git:</li>
+<li>If the package is a new file in the repository, the package must be first added to the repository:</li>
 </ul>
 <p><img src="images/tortoise-add.png" alt="tortoise add"></p>
-<p>A screen will appear saying the file was added. Press <strong>commit</strong>:</p>
+<p>A screen will appear saying that the file was added. Press <strong>commit</strong>:</p>
 <p><img src="images/tortoise-commit.png" alt="tortoise commit"></p>
-<p>A new screen will appear. Insert a comment in the upper window and then choose <strong>Commit and Push</strong></p>
+<p>A new screen will appear. Insert a comment in the upper window and then choose <strong>Commit</strong>.</p>
 <p><img src="images/commit-push.png" alt="tortoise commit and push"></p>
+<p>A new screen will appear and choose <strong>Push</strong>.</p>
+<p><img src="images/push_after_commit.png" alt="tortoise push after commit"></p>
+<p>A new screen will appear and choose <strong>Ok</strong>.</p>
+<p><img src="images/ok_after_push.png" alt="tortoise ok after push"></p>
 <p>A success message should be displayed.</p>
-<div class="NOTE"><h5>Note</h5><p>For any change, you can add, rename, delete, push, pull etc as per Tortoise commands:
-<img src="images/tortoise-commands.png" alt="clone result"></p>
-</div>
+<p><img src="images/success_after_push.png" alt="tortoise success after push"></p>
 </article>
           </div>
           
