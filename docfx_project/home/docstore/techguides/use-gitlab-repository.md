@@ -38,11 +38,11 @@ Before proceeding, please login to your organisation, select your environment an
 
 ![gitlab repo clone3](./images/gitlab_repo_clone3.png)
 
+# GitLab Repository folder structure and description #
+
 •	The GitLab repository structure on your computer should look like this:
 
 ![gitlab repo structure](./images/gitlab_repo_struc.png)
-
-# GitLab Repository folder structure and description #
 
 | **Folder Name**  				| Description	|
 |-					|-		|
