@@ -21,10 +21,10 @@
       "output": {
         ".html": {
           "relative_path": "home/docstore/techguides/configure-and-use-t24-in-cloud.html",
-          "hash": "/UdLfLPh4cHut4yBeX7tnA=="
+          "hash": "XCFzxBVKDnWapN2HSBho0Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -205,17 +205,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/images/clone-repo.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/docstore/techguides/images/clone-repo.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/docstore/techguides/images/clone-result.png",
       "output": {
         "resource": {
@@ -308,17 +297,6 @@
       "output": {
         "resource": {
           "relative_path": "home/docstore/techguides/images/download-app.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/images/download-content.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/docstore/techguides/images/download-content.png"
         }
       },
       "is_incremental": false,
@@ -447,28 +425,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/images/git-commit.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/docstore/techguides/images/git-commit.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/images/git-confirm.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/docstore/techguides/images/git-confirm.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/docstore/techguides/images/git-download.png",
       "output": {
         "resource": {
@@ -480,10 +436,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/images/git-push.png",
+      "source_relative_path": "home/docstore/techguides/images/gitlab_repo_clone1.png",
       "output": {
         "resource": {
-          "relative_path": "home/docstore/techguides/images/git-push.png"
+          "relative_path": "home/docstore/techguides/images/gitlab_repo_clone1.png"
         }
       },
       "is_incremental": false,
@@ -491,10 +447,32 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/images/git-status.png",
+      "source_relative_path": "home/docstore/techguides/images/gitlab_repo_clone2.png",
       "output": {
         "resource": {
-          "relative_path": "home/docstore/techguides/images/git-status.png"
+          "relative_path": "home/docstore/techguides/images/gitlab_repo_clone2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/gitlab_repo_clone3.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/gitlab_repo_clone3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/gitlab_repo_struc.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/gitlab_repo_struc.png"
         }
       },
       "is_incremental": false,
@@ -678,6 +656,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/ok_after_push.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/ok_after_push.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/docstore/techguides/images/package-properties.png",
       "output": {
         "resource": {
@@ -737,6 +726,17 @@
       "output": {
         "resource": {
           "relative_path": "home/docstore/techguides/images/project-name.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/push_after_commit.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/push_after_commit.png"
         }
       },
       "is_incremental": false,
@@ -825,17 +825,6 @@
       "output": {
         "resource": {
           "relative_path": "home/docstore/techguides/images/replace-id.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/images/repo.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/docstore/techguides/images/repo.png"
         }
       },
       "is_incremental": false,
@@ -1030,6 +1019,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/success_after_push.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/success_after_push.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/docstore/techguides/images/t24-connection.png",
       "output": {
         "resource": {
@@ -1078,17 +1078,6 @@
       "output": {
         "resource": {
           "relative_path": "home/docstore/techguides/images/tortoise-alert.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/images/tortoise-commands.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/docstore/techguides/images/tortoise-commands.png"
         }
       },
       "is_incremental": false,
@@ -1190,10 +1179,10 @@
       "output": {
         ".html": {
           "relative_path": "home/docstore/techguides/use-gitlab-repository.html",
-          "hash": "p1JEgygQWqR6uK0IZHLCQQ=="
+          "hash": "mCRiU9B3kE8qfXRP2dk8ZA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1280,12 +1269,9 @@
           "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build"
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ResourceDocumentProcessor": {
@@ -1293,9 +1279,12 @@
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
           "incrementalPhase": "build"
         }
       }

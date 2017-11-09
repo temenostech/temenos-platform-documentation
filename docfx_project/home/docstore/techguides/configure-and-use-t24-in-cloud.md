@@ -243,77 +243,50 @@ In order to add a routine, follow below steps:
 
 ![success message version](./images/success-message-version.png)
 
-# Build the project #
+# Create a T24 package based on your project #
 
- - Go to: **ft-sample-packager** > **Launch T24 Packager (TAFJ).launch** > **Run As** > **Launch T24 Packager (TAFJ)**
+ - Go to **ft--packager** in Design Studio workspace, right click on **Launch T24 Packager (TAFJ).launch** and choose **Run As** > **Launch T24 Packager (TAFJ)**.
 
 ![build-project](./images/build-project.png)
 
- - **Wait** for workspace to be built:
-
-![building](./images/building.png)
+ - **Wait** for successfull build for the project.
 
 ![build success](./images/build-success-final.png)
 
- - You can also check **build’s success** here:
+ - Check where the **package** was generated.
 
 ![check build success](./images/check-build-success.png)
 
+# Deploy the generated package to Sandbox #
 
-# Clone PaaS Configuration Repository #
+> [!Note]
+> Make sure you cloned in your local machine the GitLab repository of your sandbox.
 
-- Make sure you have installed TortoiseGit. 
-- Make sure you have received the **ppk** private key to open ssh
-- Create a folder somewhere in your local machine. In current example, it was used  a folder named 'GitLab' 
-- Inside the created folder, click right and choose **Git Clone**
-
-![git clone](./images/git-clone.png)
-
-Insert as follows:
-
-**URL**: git@gitlab.temenos.cloud:1c3pg74t41czk/corebanking.git
-**Directory**: D:\MKP\gitlab   *(path of your folder)*
-**Check Load Putty Key**: browse for you ppk key
-
-![load putty key](./images/load-putty-key.png)
-
- - Following alert message is displayed. Click **yes**
-
-![tortoise alert](./images/tortoise-alert.png)
-
- - Repository was cloned:
-
-![clone result](./images/clone-result.png)
-
-
-# Deploy the Jar #
-
-In order to find the jar's location, check properties in ft-sample-packager.
-
-![generated jar](./images/generated-jar.png)
-
-![package properties](./images/package-properties.png)
-
-![jar location](./images/jar-location.png)
-
- - Copy/ drag the **jar** into the **packages** folder:
+- Copy the generated package into the **packages** folder of the cloned GitLab repository from your local machine:
 
 ![packages](./images/packages.png)
 
-- **Add** and **commit** the jar to the repository by using Tortoise Git:
+- If the package is a new file in the repository, the package must be first added to the repository:
 
 ![tortoise add](./images/tortoise-add.png)
 
-A screen will appear saying the file was added. Press **commit**:
+A screen will appear saying that the file was added. Press **commit**:
 
 ![tortoise commit](./images/tortoise-commit.png)
 
-A new screen will appear. Insert a comment in the upper window and then choose **Commit and Push**
+A new screen will appear. Insert a comment in the upper window and then choose **Commit**.
 
 ![tortoise commit and push](./images/commit-push.png)
 
+A new screen will appear and choose **Push**.
+
+![tortoise push after commit](./images/push_after_commit.png)
+
+A new screen will appear and choose **Ok**.
+
+![tortoise ok after push](./images/ok_after_push.png)
+
 A success message should be displayed.
 
-> [!Note]
-> For any change, you can add, rename, delete, push, pull etc as per Tortoise commands:
-![clone result](./images/tortoise-commands.png)
+![tortoise success after push](./images/success_after_push.png)
+
