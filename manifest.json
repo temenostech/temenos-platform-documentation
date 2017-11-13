@@ -150,17 +150,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/images/check-archives.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/docstore/techguides/images/check-archives.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/docstore/techguides/images/check-build-success.png",
       "output": {
         "resource": {
@@ -220,17 +209,6 @@
       "output": {
         "resource": {
           "relative_path": "home/docstore/techguides/images/commit-push.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/images/connecting-to-server.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/docstore/techguides/images/connecting-to-server.png"
         }
       },
       "is_incremental": false,
@@ -363,6 +341,39 @@
       "output": {
         "resource": {
           "relative_path": "home/docstore/techguides/images/export-environment.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/export_env_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/export_env_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/export_env_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/export_env_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/export_env_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/export_env_3.png"
         }
       },
       "is_incremental": false,
@@ -590,32 +601,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/images/login-environment.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/docstore/techguides/images/login-environment.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/docstore/techguides/images/monitor-application.png",
       "output": {
         "resource": {
           "relative_path": "home/docstore/techguides/images/monitor-application.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/images/new-abn-env.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/docstore/techguides/images/new-abn-env.png"
         }
       },
       "is_incremental": false,
@@ -931,6 +920,72 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/sftp_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/sftp_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/sftp_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/sftp_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/sftp_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/sftp_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/sftp_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/sftp_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/sftp_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/sftp_5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/sftp_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/sftp_6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/docstore/techguides/images/single-enquiry.png",
       "output": {
         "resource": {
@@ -1167,7 +1222,7 @@
       "output": {
         ".html": {
           "relative_path": "home/docstore/techguides/troubleshooting.html",
-          "hash": "dDok4PUyyBUogjoxFL2awA=="
+          "hash": "T2h4n2wKNJ6y8nJvolC7Fg=="
         }
       },
       "is_incremental": true,
@@ -1182,7 +1237,7 @@
           "hash": "zi7JJvXmD0R0qkaDFjcecw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {

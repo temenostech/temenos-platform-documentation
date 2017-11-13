@@ -69,69 +69,56 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="general-troubleshooting">General Troubleshooting</h1>
 
-<p>This user guide shows the options to verify the errors in case of failure when deploying the following:</p>
+<p>This user guide shows different ways of accessing details related to your sandbox when deploying the following:  </p>
 <ul>
-<li>DS Packages</li>
-<li>Plugins (war files)</li>
+<li>Design Studio Packages</li>
+<li>Plugins</li>
 <li>Updates</li>
+<li>WAR files</li>
 </ul>
-<p>By following this you can identify why a package didn&#39;t install or you can check why a jenkins build failed.</p>
-<h2 id="1use-winscp">1.Use WinSCP</h2>
+<h2 id="1-export-environment-details">1. Export Environment Details</h2>
+<p>The Export Environment Details functionality gives you access to different information related to your sandbox like:<br>-&gt; the <em>T24 UD (default)</em> folder from your T24 sandbox<br>-&gt; the <em>jars</em> deployed in your T24 sandbox<br>-&gt; the <em>war</em> files deployed(with success or not) in your T24 sandbox<br>-&gt; the jboss <em>server.log</em> from your T24 sandbox.  </p>
+<p>The environment details are exported in a SFTP server to which you have to connect in order to download the related files in your local machine. For this purpose, make sure you <a href="https://winscp.net/download/WinSCP-5.11.2-Setup.exe">download</a> and install WinSCP SFTP client.  </p>
+<p>The Export Environment Details functionality can be triggered from PaaS Portal following the bellow steps:</p>
 <ul>
-<li><p>Go to your organization PaaS link </p>
+<li>Log-in to your organisation in PaaS Portal, go to your enviroment page and click on the <strong>Export Environment</strong> button for the T24 application.</li>
+</ul>
+<p><img src="images/export_env_1.png" alt="export env 1"></p>
 <ul>
-<li>example: <a href="http://51.141.24.193:4200/organisations/1c484wyz0lslc/environments" title="Environment">http://51.141.24.193:4200/organisations/1c484wyz0lslc/environments</a></li>
+<li>After click, the <strong>Export Environment</strong> button will become disabled(as per bellow picture), meaning that the export was triggered.</li>
+</ul>
+<p><img src="images/export_env_2.png" alt="export env 2"></p>
+<div class="NOTE"><h5>Note</h5><p>The Export Environment action is finished when the Export Environment button becomes enabled.</p>
+</div>
+<ul>
+<li><p>In order to download the exported files of your environment from the SFTP server to your local machine: </p>
+<ul>
+<li>In PaaS Portal for your organisation, go to your environment page and Right click and copy the <em>sftp.temenos.cloud</em> Endpoint or click the copy to clipboard icon from the right: </li>
+</ul>
+<p><img src="images/export_env_3.png" alt="export env 3"></p>
+<ul>
+<li>Open <strong>WinSCP</strong> SFTP client and create a new site that will allow you to connect to the SFTP server. Make sure you put <em>sftp.temenos.cloud</em> Endpoint as Host name, your <em>PaaS user</em> as User name and instead of password, the SSH key related to your PaaS user must be used.
+<img src="images/sftp_1.png" alt="sftp 1"></li>
+<li>In order to attach the SSH key, press <strong>Advanced</strong> button, go to <strong>Authentification</strong> menu and select the <strong>private key</strong> related to your PaaS user. 
+<img src="images/sftp_2.png" alt="sftp 2"></li>
+<li>After attaching your SSH key, save your site with any name for future use.
+<img src="images/sftp_3.png" alt="sftp 3"></li>
+<li>Click <strong>Login</strong> to connect to the SFTP server.<br>If connection is successful, you will have 2 sections in WinSCP:<br>-&gt; the left section(highlighted in black) represents the location from your local machine where the environment details will be downloaded.<br>-&gt; the right section(highlighted in yellow) represents the location of the exported environment details in the SFTP server; the environment details are saved in the SFTP server in /organisationID/environmentID folder structure.
+<img src="images/sftp_4.png" alt="sftp 4">  </li>
+<li>Go inside your environmentID folder and you will see a zip file that contains the Environment Details. In order to download the zip, select it and press F5.<br><img src="images/sftp_5.png" alt="sftp 5">  </li>
+<li>After downloading the zip file to your local machine, unzip it and you will have the bellow folder structure:<br><img src="images/sftp_6.png" alt="sftp 6"><br>Based on the above folder structure, you can check the following:<br>-&gt; If you deployed any update in your sandbox, check if jar/jars related to the update are changed in the jar list from <em>modules/com/temenos/t24/main</em> folder.<br>-&gt; If you deployed any package in your sandbox, check if the jar related to the package is present in <em>modules/com/temenos/t24/main/localjars</em> folder.<br>-&gt; If you deployed any war file in your sandbox, check if the war was deployed with success(a file named war_name.deployed should be present in <em>standalone\deployments</em> folder). The war deployment will be failed if a file named war_name.failed is present in <em>standalone\deployments</em> folder and this file must be checked for details.</li>
 </ul>
 </li>
-<li><p>Login with your <strong>user</strong> and <strong>password</strong></p>
-</li>
 </ul>
-<p><img src="images/login-environment.png" alt="login"></p>
+<h2 id="2-use-tafjee-tool">2. Use TAFJEE tool</h2>
 <ul>
-<li><strong>Click</strong> on New ABN Env</li>
-</ul>
-<p><img src="images/new-abn-env.png" alt="new abn env"></p>
-<ul>
-<li><strong>Click on Export Environment</strong> and wait for a few moments</li>
-</ul>
-<p><img src="images/export-environment.png" alt="export environment"></p>
-<ul>
-<li><strong>Click</strong> on <strong>copy</strong> button and you&#39;ll <strong>copy sftp.dev.temenos.cloud</strong></li>
-</ul>
-<p><img src="images/copy-env.png" alt="copy environment"></p>
-<ul>
-<li>From Programs list, open <strong>WinSCP</strong></li>
-<li>Insert <strong>Host Name</strong> (use the link copied above: sftp.dev.temenos.cloud, insert <strong>your user</strong> and press <strong>Advanced</strong></li>
-</ul>
-<p><img src="images/portal-login-details.png" alt="portal login details"></p>
-<ul>
-<li>Go to <strong>Authentication</strong> and then add <strong>private key file</strong> and click <strong>OK</strong></li>
-</ul>
-<p><img src="images/add-ppk-key.png" alt="portal login details"></p>
-<ul>
-<li><p>Previous screen is displayed. Click <strong>Login</strong></p>
-</li>
-<li><p>Next warning message is displayed. Click <strong>Yes</strong></p>
-</li>
-</ul>
-<p><img src="images/connecting-to-server.png" alt="connecting to server"></p>
-<ul>
-<li>Next screen is open. You can check here the archives containing the logs with all required information</li>
-</ul>
-<p><img src="images/check-archives.png" alt="check archives"></p>
-<h2 id="2use-tafjee">2.Use TAFJEE</h2>
-<ul>
-<li>Go back to main portal page and click to <strong>Monitor Application</strong>:</li>
+<li>Log-in to your organisation in PaaS Portal, go to your enviroment page and click on the <strong>Monitor Application</strong> Endpoint for the T24 application.  </li>
 </ul>
 <p><img src="images/monitor-application.png" alt="monitor application"></p>
 <ul>
-<li>Following screen is open. Click on <strong>Log Files</strong></li>
+<li>The bellow page is opened. From this page, you can use:<br>-&gt; <strong>tShow</strong> to check for any T24 routine from your sandbox details like the compilation date or the jar that contains the class of this routine.<br>-&gt; <strong>Log Files</strong> from which you can check logs like DATABASE, RUNTIME or T24.  </li>
 </ul>
 <p><img src="images/log-files.png" alt="log files"></p>
-<ul>
-<li>From the list of <strong>Logs</strong>, below are highlighted some which could be useful in case of an issue:</li>
-</ul>
-<p><img src="images/check-logs.png" alt="check logs"></p>
 </article>
           </div>
           
