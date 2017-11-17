@@ -16,18 +16,6 @@
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "home/docstore/techguides/configure-and-use-t24-in-cloud.md",
-      "output": {
-        ".html": {
-          "relative_path": "home/docstore/techguides/configure-and-use-t24-in-cloud.html",
-          "hash": "XCFzxBVKDnWapN2HSBho0Q=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
       "type": "Resource",
       "source_relative_path": "home/docstore/techguides/images/abn-package.png",
       "output": {
@@ -62,6 +50,28 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/add-routine-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/add-routine-1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/add-routine-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/add-routine-2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/docstore/techguides/images/add-routine.png",
       "output": {
         "resource": {
@@ -88,17 +98,6 @@
       "output": {
         "resource": {
           "relative_path": "home/docstore/techguides/images/add-ssh-key.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/images/app-location.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/docstore/techguides/images/app-location.png"
         }
       },
       "is_incremental": false,
@@ -165,28 +164,6 @@
       "output": {
         "resource": {
           "relative_path": "home/docstore/techguides/images/check-logs.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/images/choose-version-location.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/docstore/techguides/images/choose-version-location.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/images/choose-workspace.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/docstore/techguides/images/choose-workspace.png"
         }
       },
       "is_incremental": false,
@@ -271,10 +248,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/images/download-app.png",
+      "source_relative_path": "home/docstore/techguides/images/dev-package.png",
       "output": {
         "resource": {
-          "relative_path": "home/docstore/techguides/images/download-app.png"
+          "relative_path": "home/docstore/techguides/images/dev-package.png"
         }
       },
       "is_incremental": false,
@@ -297,17 +274,6 @@
       "output": {
         "resource": {
           "relative_path": "home/docstore/techguides/images/dunce-cap.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/images/enquiry-location.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/docstore/techguides/images/enquiry-location.png"
         }
       },
       "is_incremental": false,
@@ -341,6 +307,28 @@
       "output": {
         "resource": {
           "relative_path": "home/docstore/techguides/images/export-environment.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/export_enquiries_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/export_enquiries_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/export_enquiries_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/export_enquiries_2.png"
         }
       },
       "is_incremental": false,
@@ -491,10 +479,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/images/import-app-wizard.png",
+      "source_relative_path": "home/docstore/techguides/images/hostname.png",
       "output": {
         "resource": {
-          "relative_path": "home/docstore/techguides/images/import-app-wizard.png"
+          "relative_path": "home/docstore/techguides/images/hostname.png"
         }
       },
       "is_incremental": false,
@@ -502,10 +490,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/images/import-applications.png",
+      "source_relative_path": "home/docstore/techguides/images/import_enquiries_1.png",
       "output": {
         "resource": {
-          "relative_path": "home/docstore/techguides/images/import-applications.png"
+          "relative_path": "home/docstore/techguides/images/import_enquiries_1.png"
         }
       },
       "is_incremental": false,
@@ -513,10 +501,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/images/import-enquiries.png",
+      "source_relative_path": "home/docstore/techguides/images/import_enquiries_2.png",
       "output": {
         "resource": {
-          "relative_path": "home/docstore/techguides/images/import-enquiries.png"
+          "relative_path": "home/docstore/techguides/images/import_enquiries_2.png"
         }
       },
       "is_incremental": false,
@@ -524,10 +512,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/images/import-t24-enquiries.png",
+      "source_relative_path": "home/docstore/techguides/images/import_enquiries_3.png",
       "output": {
         "resource": {
-          "relative_path": "home/docstore/techguides/images/import-t24-enquiries.png"
+          "relative_path": "home/docstore/techguides/images/import_enquiries_3.png"
         }
       },
       "is_incremental": false,
@@ -535,10 +523,21 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/images/import-version.png",
+      "source_relative_path": "home/docstore/techguides/images/import_enquiries_4.png",
       "output": {
         "resource": {
-          "relative_path": "home/docstore/techguides/images/import-version.png"
+          "relative_path": "home/docstore/techguides/images/import_enquiries_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/import_enquiries_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/import_enquiries_5.png"
         }
       },
       "is_incremental": false,
@@ -550,28 +549,6 @@
       "output": {
         "resource": {
           "relative_path": "home/docstore/techguides/images/jar-location.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/images/launch-packager.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/docstore/techguides/images/launch-packager.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/images/load-applications.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/docstore/techguides/images/load-applications.png"
         }
       },
       "is_incremental": false,
@@ -601,10 +578,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/images/monitor-application.png",
+      "source_relative_path": "home/docstore/techguides/images/monitor-application-result.png",
       "output": {
         "resource": {
-          "relative_path": "home/docstore/techguides/images/monitor-application.png"
+          "relative_path": "home/docstore/techguides/images/monitor-application-result.png"
         }
       },
       "is_incremental": false,
@@ -612,10 +589,32 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/images/new-project.png",
+      "source_relative_path": "home/docstore/techguides/images/monitor-application-submit.png",
       "output": {
         "resource": {
-          "relative_path": "home/docstore/techguides/images/new-project.png"
+          "relative_path": "home/docstore/techguides/images/monitor-application-submit.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/monitor-application-tshow.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/monitor-application-tshow.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/monitor-application.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/monitor-application.png"
         }
       },
       "is_incremental": false,
@@ -865,50 +864,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/images/select-enquiries.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/docstore/techguides/images/select-enquiries.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/images/select-example-version.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/docstore/techguides/images/select-example-version.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/images/select-modelbank-data.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/docstore/techguides/images/select-modelbank-data.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/images/select-versions.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/docstore/techguides/images/select-versions.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/docstore/techguides/images/server-properties.png",
       "output": {
         "resource": {
@@ -986,17 +941,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/images/single-enquiry.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/docstore/techguides/images/single-enquiry.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/docstore/techguides/images/ssh-agent.png",
       "output": {
         "resource": {
@@ -1023,50 +967,6 @@
       "output": {
         "resource": {
           "relative_path": "home/docstore/techguides/images/ssh-text-box.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/images/start-ds.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/docstore/techguides/images/start-ds.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/images/success-message-enquiry.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/docstore/techguides/images/success-message-enquiry.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/images/success-message-version.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/docstore/techguides/images/success-message-version.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/images/success-message.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/docstore/techguides/images/success-message.png"
         }
       },
       "is_incremental": false,
@@ -1107,10 +1007,43 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/images/template-project.png",
+      "source_relative_path": "home/docstore/techguides/images/tafj-toggle-1.png",
       "output": {
         "resource": {
-          "relative_path": "home/docstore/techguides/images/template-project.png"
+          "relative_path": "home/docstore/techguides/images/tafj-toggle-1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/tafj-toggle-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/tafj-toggle-2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/tafj-toggle-3.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/tafj-toggle-3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/tafj-toggle-4.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/tafj-toggle-4.png"
         }
       },
       "is_incremental": false,
@@ -1173,28 +1106,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/images/update-maven.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/docstore/techguides/images/update-maven.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/docstore/techguides/images/update-project.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/docstore/techguides/images/update-project.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/docstore/techguides/images/wizard-routine.png",
       "output": {
         "resource": {
@@ -1218,6 +1129,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "home/docstore/techguides/t24-development.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/docstore/techguides/t24-development.html",
+          "hash": "6EYW9/zTf4IO3YM6DyMJWw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "home/docstore/techguides/troubleshooting.md",
       "output": {
         ".html": {
@@ -1234,7 +1157,7 @@
       "output": {
         ".html": {
           "relative_path": "home/docstore/techguides/use-gitlab-repository.html",
-          "hash": "zi7JJvXmD0R0qkaDFjcecw=="
+          "hash": "AudNqN7RGU4/wHTOL7td9g=="
         }
       },
       "is_incremental": true,
@@ -1270,7 +1193,7 @@
       "output": {
         ".html": {
           "relative_path": "home/toc.html",
-          "hash": "yRsRskQ7rEyKiZWRqa2DTA=="
+          "hash": "/yOxZKxW+i5UVEcP5eje/A=="
         }
       },
       "is_incremental": false,
@@ -1324,22 +1247,22 @@
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
+        "RestApiDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "RestApiDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }

@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Start Design Studio </title>
+    <title>Introduction &amp; Prerequisites </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Start Design Studio ">
+    <meta name="title" content="Introduction &amp; Prerequisites ">
     <meta name="generator" content="docfx 2.24.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -67,161 +67,112 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="start-design-studio">Start Design Studio</h1>
+<h1 id="introduction--prerequisites">Introduction &amp; Prerequisites</h1>
 
-<h2 id="prerequisites">Prerequisites</h2>
-<p>To be able to use T24 cloud environment, you need to have access to:</p>
+<p>This developer guide presents the required configurations and the main steps for the following actions:</p>
 <ul>
-<li>Design Studio</li>
-<li>Temenos Sandbox</li>
-<li>Tortoise Git  - download from <a href="https://tortoisegit.org/download/" title="Tortoise">here</a></li>
-<li>PAAS Configuration Repository</li>
+<li>develop new/existent routines and deploy them to your sandbox</li>
+<li>import/export applications/enquiries/versions from/to your sandbox to/from your local machine</li>
+<li>extract from the database/load in the database data (.d) files from/to your sandbox to/from your local machine.</li>
 </ul>
-<h1 id="create-new-project">Create New Project</h1>
-<p>The package delivered by Temenos MarketPlace contains the following:</p>
+<p>For this purpose, you need to have access to:</p>
 <ul>
-<li>Design Studio</li>
-<li>T24 libraries</li>
-<li>TAFJ environment</li>
+<li>Design Studio(locally)</li>
+<li>T24 libraries(locally)</li>
+<li>TAFJ (locally)</li>
+<li>Temenos Sandbox(cloud)</li>
+<li>Tortoise Git(locally)  - download from <a href="https://tortoisegit.org/download/" title="Tortoise">here</a></li>
 </ul>
-<p>Design Studio will be delivered pre-configured in order to be able to introspect T24 applications hosted in MarketPlace Could Infrastructure</p>
-<p><strong>- Start Design Studio application:</strong></p>
-<p>Go into DesignStudioT24 folder and double click on <strong>StartDesignStudio.bat</strong></p>
-<p><img src="images/start-ds.png" alt="start Design Studio"></p>
-<p><strong>- Choose a workspace:</strong></p>
-<p>When it opens, browse for the <strong>Workspace</strong> folder which is in the DesignStudioT24 folder.</p>
-<p><img src="images/choose-workspace.png" alt="choose workspace"></p>
-<p><strong>- Create project:</strong></p>
-<p>On the menu bar, click <strong>File</strong> &gt; <strong>New</strong> &gt; <strong>Project</strong> </p>
-<p><img src="images/new-project.png" alt="create new project"></p>
-<p><strong>Result</strong>: the New Project dialog box is displayed.</p>
+<p>A development package (containing Design Studio, T24 libraries and TAFJ) is provided by Temenos MarketPlace and it is pre-configured in order to be able to introspect T24 application hosted in MarketPlace Could Infrastructure.
+This package is adapted according to the T24 version of your sandbox and it is provided as a zip file. After extracting it in your local machine to any folder, the bellow folders and files should exist:
+<img src="images/dev-package.png" alt="dev package"><br>The development package is pre-configured to be extracted in <em>C:\TemenosDev</em> path. If the package is extracted in another path(Your_DEV_Path), make sure you make the bellow changes to the development package:</p>
 <ul>
-<li>Select <strong>Design Studio</strong> &gt; <strong>Design Studio Template Project</strong> and click <strong>Next</strong>:</li>
+<li>in <em>tafj.link file</em> from Your_DEV_Path\DesignStudio\dropins folder, update the path variable with the new path to <em>TAFJ\eclipse</em> folder.(make sure you use &#39;/&#39; as separator between folders)</li>
+<li>in <em>tafj.properties</em> from Your_DEV_Path\TAFJ\conf, update lines 13,26 and 42 based on Your_DEV_Path.</li>
+<li>if a project already exists in your DesignStudio workspace, in <em>Launch T24 Packager (TAFJ).launch</em> file from Your_DEV_Path\DesignStudio\workspace\YOUR-project-packager, lines 9, 10 and 11 must be updated accordingly to Your_Path.  </li>
 </ul>
-<p><img src="images/ds-template-project.png" alt="design studio template project"></p>
-<p><strong>Result</strong>: the New Design Template Projects dialog box is displayed.</p>
-<p>Select from the drop down list the template accorded to your T24 installation:  <strong>t24-packager-tafj</strong></p>
-<p><img src="images/tafj-packager.png" alt="tafj package"></p>
-<ul>
-<li><strong>Set Template parameters values</strong> (mandatory fields as notified in previous image)</li>
-</ul>
-<p><img src="images/template-project.png" alt="template project"></p>
-<div class="NOTE"><h5>Note</h5><p>In Value field, change the <strong>project-name</strong> from the defaulted one to “<em>something at your choice</em>” (here we&#39;ve named it &#39;sample&#39;). <strong>Use small letters</strong></p>
+<p>In case of extracting from/load in the database data (.d) files, a series of updates must be added to <em>tafj.properties</em> file from Your_DEV_Path\TAFJ\conf:  </p>
+<table>
+<thead>
+<tr>
+<th><strong>Property</strong></th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>temn.tafj.jdbc.url</td>
+<td>jdbc:h2:tcp://<strong>Your_Sandbox_Database_IP</strong>/TAFJDB;MODE=Oracle;TRACE_LEVEL_FILE=0; TRACE_LEVEL_SYSTEM_OUT=0;DB_CLOSE_ON_EXIT=FALSE;FILE_LOCK=NO; IFEXISTS=TRUE;CACHE_SIZE=131072;MVCC=TRUE;LOCK_TIMEOUT=30000</td>
+</tr>
+<tr>
+<td>temn.tafj.jdbc.driver</td>
+<td>org.h2.Driver</td>
+</tr>
+<tr>
+<td>temn.tafj.jdbc.username</td>
+<td>t24</td>
+</tr>
+<tr>
+<td>temn.tafj.jdbc.password</td>
+<td>t24</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE"><h5>Note</h5><p>In order to get the database IP of your Sandbox, contact MarketPlace team at <br>marketplace-support@temenos.com.</p>
 </div>
-<div class="NOTE"><h5>Note</h5><p>In Value field, change <strong>component-name</strong> from the defaulted one to “<em>something at your choice</em>”. <strong>Start words with capital letters</strong></p>
+<h1 id="create-new-project-in-design-studio">Create New Project in Design Studio</h1>
+<p>In order to accomplish the development actions presented at the beginning of the guide, you need to create a new project in Design Studio.</p>
+<ul>
+<li>Start Design Studio from <em>DesignStudio</em> folder using <strong>StartDesignStudio.bat</strong> file and choose the default workspace (Your_DEV_Path\DesignStudio\workspace) or any other workspace from your local machine.</li>
+<li>After Design Studio starts, go to <strong>File</strong> &gt; <strong>New</strong> &gt; <strong>Project</strong>.  </li>
+<li>Select <strong>Design Studio Template Project</strong> from <strong>Design Studio</strong> item and click <strong>Next</strong>.<br><img src="images/ds-template-project.png" alt="design studio template project"></li>
+<li>In the next screen, select <strong>t24-packager-tafj</strong> template from the drop down list and set <em>tafjHome</em>, <em>insertDir</em> and <em>libDir</em> parameters according to Your_DEV_Path.<br><img src="images/tafj-packager.png" alt="tafj package">
+&gt; [!Note]
+&gt; For <strong>project-name</strong> parameter, make sure you use small letters(ft-sample as per above example) and for <strong>project-name</strong> parameter, make sure you start the words with capital letters(FT-Sample as per above example).</li>
+<li>Click <strong>Finish</strong> to create the project and 4 modules will be created, as per bellow picture.<br>-&gt; ft-sample-<strong>data-code</strong>: holding basic routines and data files.<br>-&gt; ft-sample-<strong>models</strong>: holding Design Studio models(applications, enquiries, versions) that can be imported/exported from/to your sandbox.<br>-&gt; ft-sample-<strong>models-gen</strong>: holding files generated by Design Studio generates from the ft-sample-<strong>models</strong> project.<br>-&gt; ft-sample-<strong>packager</strong>: holding the launcher for creating a Design Studio package that can be deployed to your sandbox.
+<img src="images/created-projects.png" alt="created projects"></li>
+</ul>
+<h1 id="create-new-t24-server-in-design-studio">Create New T24 Server in Design Studio</h1>
+<p>A T24 Server is required in Design Studio to be able to import/export applications/enquiries/versions from/to your sandbox. Follow next steps to create and configure a T24 server:</p>
+<ul>
+<li>On servers tab, click right and select <strong>Add New T24 Server</strong>.<br><img src="images/add-server.png" alt="add server"></li>
+<li>A new screen is open. Give a <strong>project name</strong>(make sure it includes &#39;-server&#39; string) and click <strong>Next</strong>.<br><img src="images/project-name.png" alt="project name">  </li>
+<li>Choose connection type as <strong>T24 Server-Web service</strong> and click <strong>Finish</strong>.<br><img src="images/connection-type.png" alt="connection type">  </li>
+<li>After the server is created, the <em>server.properties</em> must be updated according to your details related to your sandox:<br>-&gt; In T24 User (deployment only) section, <strong>2 T24 users</strong> that you use to connect to your T24 sandbox must be introduced.<br>-&gt; In WebSerbice (TAFJ) Connection section, <strong>Secured box</strong> must be checked, <strong>Protocol</strong> must be set to <em>ws</em> value, <strong>Hostname</strong> must be set according to the hostname of your sandbox, <strong>Port</strong> must be set to <em>443</em> value and <strong>Context</strong> to <em>axis2</em> value.<br><img src="images/server-properties.png" alt="server properties">  </li>
+</ul>
+<h1 id="jbc-routines-development">jBC Routines Development</h1>
+<p>jBC routines are developed in the <strong>data-code</strong> module which must be first toggled to TAFJ project nature by following next steps.</p>
+<ul>
+<li>Right click on <strong>data-code</strong> module and choose <strong>Toggle TAFJ project nature</strong>.<br><img src="images/tafj-toggle-1.png" alt="tafj toggle 1">  </li>
+<li>In the next screen, import <em>tafj_properties</em> from Your_DEV_Path/TAFJ/conf folder, choose TAFJ_HOME as Your_DEV_Path/TAFJ folder and click <strong>Next</strong>. In the bellow picture, DEV_Path is set to C:\TemenosDEV.
+<img src="images/tafj-toggle-2.png" alt="tafj toggle 2">  </li>
+<li>In the next screens, click <strong>Next</strong> and <strong>Finish</strong>.<br><img src="images/tafj-toggle-3.png" alt="tafj toggle 3">  </li>
+<li>In the end, <strong>data-code</strong> module should be toggled.
+<img src="images/tafj-toggle-4.png" alt="tafj toggle 4"> </li>
+</ul>
+<p>After the <strong>data-code</strong> module is toggled to TAFJ project nature, the jBC routines development can be initiated.  </p>
+<ul>
+<li>In order to create a new jBC routine, expand <strong>data-code</strong> module, go to src-&gt;Source-&gt;Private, right click on project name (FT_Sample in the above picture), select New and then New T24 routine / component / testcase.
+<img src="images/add-routine.png" alt="add routine">  </li>
+<li>On next screen, type the name of the routine and click <strong>Finish</strong>.<br><img src="images/add-routine-1.png" alt="add routine name"></li>
+<li>The new routine is created.<br><img src="images/add-routine-2.png" alt="add routine created"></li>
+</ul>
+<h1 id="import-t24-applications-enquiries-and-versions">Import T24 Applications, Enquiries and Versions</h1>
+<ul>
+<li>In order to import Applications/Enquiries/Versions from your sandbox to your local machine, make sure you have a T24-server created, configured and started in Design Studio.</li>
+<li>Go to Servers tab, right click on your server state and change state to <strong>active</strong>.
+<img src="images/t24-connection.png" alt="t24 connection">  </li>
+<li>State should become active:<br><img src="images/active-server.png" alt="active server">  </li>
+</ul>
+<div class="NOTE"><h5>Note</h5><p>The following example is about importinh Enquiries from your sandbox to your local machine. The same steps can be aplied for Applications and Versions.  </p>
 </div>
-<div class="TIP"><h5>Tip</h5><p>Value fields above need to be changed in order to avoid overriding an existing jar, which already appears in the environment </p>
-</div>
 <ul>
-<li>Click <strong>Finish</strong> to create the project.</li>
+<li>After the T24-server is active, right click on the <strong>models</strong> and choose <strong>Import</strong>:<br><img src="images/import_enquiries_1.png" alt="import enquiries 1"></li>
+<li>Select <strong>Design Studio</strong>, choose <strong>Import T24 Enquiries</strong> and click on <strong>Next</strong> button. (you have to wait until the list of enquiries is fetched from the sandbox).<br><img src="images/import_enquiries_2.png" alt="import enquiries 2"></li>
+<li>Select from this list which enquiry you want to import from the sandbox to your local machine and click <strong>Next</strong>.<br><img src="images/import_enquiries_3.png" alt="import enquiries 3"></li>
+<li>Choose the location from <strong>models</strong> module where to import the enquiry and click <strong>Finish</strong>.<br><img src="images/import_enquiries_4.png" alt="import enquiries 4"></li>
+<li>Click on <strong>Finish</strong> button and wait until the operation is completed. A successful message will be displayed at the end.<br><img src="images/import_enquiries_5.png" alt="import enquiries 5"></li>
 </ul>
-<p><strong>Result</strong>: Four projects are created by the template. By default, ft-modelbank is the prefix of these projects: </p>
-<p><img src="images/created-projects.png" alt="created projects"></p>
-<div class="NOTE"><h5>Note</h5><p>Instead of default &#39;<em>ft-sample</em>&#39; it will appear &#39;<em>the name</em>&#39; you provided</p>
-</div>
-<ul>
-<li><p>ft-sample-<strong>data-code</strong>: holding basic and data files.</p>
-<ul>
-<li><p>ft-sample-<strong>models</strong>: holding Design Studio models that can be imported and amended thanks to dedicated editors.</p>
-</li>
-<li><p>ft-sample-<strong>models-gen</strong>: holding files Design Studio generates from the <em>ft-modelbank</em>-modelsproject.</p>
-</li>
-<li><p>ft-sample-<strong>packager</strong>: <strong>is the packager project itself</strong> from where you can launch the final artifact creation.</p>
-</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>On servers tab, click right and <strong>Add New T24 Server</strong></li>
-</ul>
-<p><img src="images/add-server.png" alt="add server"></p>
-<ul>
-<li>A new screen is open. Give a <strong>project name</strong> and click <strong>Next</strong></li>
-</ul>
-<p><img src="images/project-name.png" alt="project name"></p>
-<ul>
-<li>Choose connection type as <strong>T24 Server-Web service</strong> and click <strong>Finish</strong></li>
-</ul>
-<p><img src="images/connection-type.png" alt="connection type"></p>
-<ul>
-<li>Check your configuration (username, authorizer, Hostname address and Port):</li>
-</ul>
-<p><img src="images/server-properties.png" alt="server properties"></p>
-<p><strong>Secured box</strong> needs to be checked.</p>
-<p><strong>Protocol</strong> should remain &quot;ws&quot;.</p>
-<p><strong>Hostname</strong> should be the DNS hostname of T24 endpoint.</p>
-<p><strong>Port</strong> should be changed to 443.</p>
-<p><strong>Context</strong> should remain axis2.</p>
-<ul>
-<li>Change server state into <strong>active</strong>:</li>
-</ul>
-<p><img src="images/t24-connection.png" alt="t24 connection"></p>
-<ul>
-<li>If you go to <strong>Servers tab</strong>, state should be active: </li>
-</ul>
-<p><img src="images/active-server.png" alt="active server"></p>
-<p>Make sure T24 Connection is active. (If not, click on Start/Restart)</p>
-<p><strong>Expand</strong> ft-modelbank-data-code:</p>
-<p><img src="images/select-modelbank-data.png" alt="select modelbank data"></p>
-<ul>
-<li><strong>Click on</strong> ft sample-models. <strong>Click right</strong> – <strong>select Maven</strong> – <strong>update Project</strong> </li>
-</ul>
-<p><img src="images/update-project.png" alt="update maven project"></p>
-<ul>
-<li><strong>Select all, then OK</strong></li>
-</ul>
-<p><img src="images/update-maven.png" alt="update maven project"></p>
-<ul>
-<li>Expand ft-sample-packager, click right on <strong>Launch T24 packager</strong> &gt; <strong>Run as &gt; Launch T24 Packager (TAFJ)</strong></li>
-</ul>
-<p><img src="images/launch-packager.png" alt="launch tafj packager"></p>
-<ul>
-<li><p>Wait for the workspace to be built.</p>
-</li>
-<li><p>A successful packager build is shown in the console</p>
-</li>
-</ul>
-<p><img src="images/build-success.png" alt="build success"></p>
-<h1 id="adding-subroutines">Adding subroutines</h1>
-<p>In order to add a routine, follow below steps:</p>
-<p><img src="images/add-routine.png" alt="add routine"></p>
-<p><img src="images/wizard-routine.png" alt="wizard routine"></p>
-<ul>
-<li>Give a <strong>name</strong> for the routine you want to create:</li>
-</ul>
-<p><img src="images/routine-name.png" alt="routine name"></p>
-<ul>
-<li><strong>Result</strong>: the routine is created:</li>
-</ul>
-<p><img src="images/sample-routine-created.png" alt="sample routine created"></p>
-<div class="NOTE"><h5>Note</h5><p>After writing the routine, in case the compilation will throw an error related to “$PACKAGE is mandatory”, make sure you put on “Dunce Cap” as below:</p>
-<p><img src="images/dunce-cap.png" alt="put dunce cap"></p>
-</div>
-<h1 id="import-t24-applications">Import T24 Applications</h1>
-<ul>
-<li>Go to your models project. Right click on <strong>Applications</strong> and choose <strong>Import</strong>:</li>
-</ul>
-<p><img src="images/import-applications.png" alt="import applications"></p>
-<ul>
-<li>Select <strong>Design Studio</strong> and choose <strong>Import T24 Applications</strong>, click on <strong>next</strong> button and wait until it loads</li>
-</ul>
-<p><img src="images/load-applications.png" alt="load applications"></p>
-<ul>
-<li>Click on <strong>Select All</strong> button and check <strong>Import to subfolders based on Product name</strong>:</li>
-</ul>
-<p><img src="images/import-app-wizard.png" alt="import applications window"></p>
-<ul>
-<li>Click on <strong>Next</strong> button and choose the <strong>location</strong> where to be imported the applications:</li>
-</ul>
-<p><img src="images/app-location.png" alt="app location"></p>
-<ul>
-<li>Click on <strong>Finish</strong> button and wait until the operation is completed (this might take longer):</li>
-</ul>
-<p><img src="images/download-app.png" alt="download app"></p>
-<ul>
-<li>A <strong>successful</strong> message will be displayed at the end and your application will be imported in your area.</li>
-</ul>
-<p><img src="images/success-message.png" alt="success message"></p>
 <h1 id="enquiries-and-versions">Enquiries and Versions</h1>
 <h2 id="import-enquiries">Import Enquiries</h2>
 <ul>

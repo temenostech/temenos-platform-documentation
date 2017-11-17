@@ -9,7 +9,7 @@
       href: ./docstore/techguides/user-creation-in-paas.md
     - name: Use Gitlab Repository
       href: ./docstore/techguides/use-gitlab-repository.md
-    - name: Configure and Use T24 in Cloud
-      href: ./docstore/techguides/configure-and-use-t24-in-cloud.md
+    - name: T24 Development
+      href: ./docstore/techguides/t24-development.md
     - name: Troubleshooting
       href: ./docstore/techguides/troubleshooting.md
