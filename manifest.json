@@ -237,6 +237,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/data_files_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/data_files_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/docstore/techguides/images/db.png",
       "output": {
         "resource": {
@@ -362,6 +373,72 @@
       "output": {
         "resource": {
           "relative_path": "home/docstore/techguides/images/export_env_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/extract_data_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/extract_data_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/extract_data_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/extract_data_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/extract_data_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/extract_data_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/extract_data_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/extract_data_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/extract_data_dbtools_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/extract_data_dbtools_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/extract_data_dbtools_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/extract_data_dbtools_2.png"
         }
       },
       "is_incremental": false,
@@ -560,6 +637,39 @@
       "output": {
         "resource": {
           "relative_path": "home/docstore/techguides/images/load-putty-key.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/load_data_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/load_data_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/load_data_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/load_data_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/load_data_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/load_data_3.png"
         }
       },
       "is_incremental": false,
@@ -1051,6 +1161,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/tafj-toggle-5.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/tafj-toggle-5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/docstore/techguides/images/tortoise-add.png",
       "output": {
         "resource": {
@@ -1133,10 +1254,10 @@
       "output": {
         ".html": {
           "relative_path": "home/docstore/techguides/t24-development.html",
-          "hash": "6EYW9/zTf4IO3YM6DyMJWw=="
+          "hash": "GXh+foVYDIIKYlE7Qh25Lg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1242,14 +1363,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "RestApiDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {

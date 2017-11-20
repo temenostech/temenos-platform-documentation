@@ -71,7 +71,7 @@
 
 <p>This developer guide presents the required configurations and the main steps for the following actions:</p>
 <ul>
-<li>develop new/existent routines and deploy them to your sandbox</li>
+<li>develop new/existent jBC routines and deploy them to your sandbox</li>
 <li>import/export applications/enquiries/versions from/to your sandbox to/from your local machine</li>
 <li>extract from the database/load in the database data (.d) files from/to your sandbox to/from your local machine.</li>
 </ul>
@@ -84,14 +84,14 @@
 <li>Tortoise Git(locally)  - download from <a href="https://tortoisegit.org/download/" title="Tortoise">here</a></li>
 </ul>
 <p>A development package (containing Design Studio, T24 libraries and TAFJ) is provided by Temenos MarketPlace and it is pre-configured in order to be able to introspect T24 application hosted in MarketPlace Could Infrastructure.
-This package is adapted according to the T24 version of your sandbox and it is provided as a zip file. After extracting it in your local machine to any folder, the bellow folders and files should exist:
+This package is adapted according to the T24 version of your sandbox and it is provided as a .zip file. After extracting it in your local machine to any location, the bellow folders and files should exist:
 <img src="images/dev-package.png" alt="dev package"><br>The development package is pre-configured to be extracted in <em>C:\TemenosDev</em> path. If the package is extracted in another path(Your_DEV_Path), make sure you make the bellow changes to the development package:</p>
 <ul>
 <li>in <em>tafj.link file</em> from Your_DEV_Path\DesignStudio\dropins folder, update the path variable with the new path to <em>TAFJ\eclipse</em> folder.(make sure you use &#39;/&#39; as separator between folders)</li>
-<li>in <em>tafj.properties</em> from Your_DEV_Path\TAFJ\conf, update lines 13,26 and 42 based on Your_DEV_Path.</li>
+<li>in <em>tafj.properties</em> from Your_DEV_Path\TAFJ\conf, update lines 13, 26 and 42 based on Your_DEV_Path.</li>
 <li>if a project already exists in your DesignStudio workspace, in <em>Launch T24 Packager (TAFJ).launch</em> file from Your_DEV_Path\DesignStudio\workspace\YOUR-project-packager, lines 9, 10 and 11 must be updated accordingly to Your_Path.  </li>
 </ul>
-<p>In case of extracting from/load in the database data (.d) files, a series of updates must be added to <em>tafj.properties</em> file from Your_DEV_Path\TAFJ\conf:  </p>
+<p>To be able to interogate the sandbox database, a series of updates must be applied to <em>tafj.properties</em> file from Your_DEV_Path\TAFJ\conf:  </p>
 <table>
 <thead>
 <tr>
@@ -143,17 +143,20 @@ This package is adapted according to the T24 version of your sandbox and it is p
 <li>After the server is created, the <em>server.properties</em> must be updated according to your sandox details:<br>-&gt; In <em>T24 User (deployment only)</em> section, <strong>2 users</strong> that you use to connect to your T24 sandbox must be introduced.<br>-&gt; In <em>WebService (TAFJ) Connection</em> section, <strong>Secured box</strong> must be checked, <strong>Protocol</strong> must be set to <em>ws</em> value, <strong>Hostname</strong> must be set according to the hostname of your sandbox, <strong>Port</strong> must be set to <em>443</em> value and <strong>Context</strong> to <em>axis2</em> value.<br><img src="images/server-properties.png" alt="server properties"><br>-&gt; To get the hostname of your sandbox, log-in to your organisation in PaaS Portal, go to your enviroment page and click on the <strong>GO TO Application</strong> Endpoint for the T24 application. The BrowserWeb page of your sandbox is opened and from the URL of this page, you must select the part between <em>https://</em> and <em>/BrowserWeb/servlet/BrowserServlet</em>.
 <img src="images/hostname.png" alt="hostname"></li>
 </ul>
-<h1 id="jbc-routines-development">jBC Routines Development</h1>
-<p>jBC routines are developed in the <strong>data-code</strong> module which must be first toggled to TAFJ project nature by following next steps.</p>
+<h1 id="toggle-project-to-tafj-project-nature">Toggle Project to TAFJ project nature</h1>
+<p>The <strong>Toggle TAFJ project nature</strong> action must be performed in order to be able to develop, compile and package jBC routines and to interogate your sandbox database.  </p>
 <ul>
 <li>Right click on <strong>data-code</strong> module and choose <strong>Toggle TAFJ project nature</strong>.<br><img src="images/tafj-toggle-1.png" alt="tafj toggle 1">  </li>
 <li>In the next screen, import <em>tafj_properties</em> from Your_DEV_Path/TAFJ/conf folder, choose TAFJ_HOME as Your_DEV_Path/TAFJ folder and click <strong>Next</strong>. In the bellow picture, DEV_Path is set to C:\TemenosDEV.
 <img src="images/tafj-toggle-2.png" alt="tafj toggle 2">  </li>
 <li>In the next screens, click <strong>Next</strong> and <strong>Finish</strong>.<br><img src="images/tafj-toggle-3.png" alt="tafj toggle 3">  </li>
-<li>In the end, <strong>data-code</strong> module should be toggled.
-<img src="images/tafj-toggle-4.png" alt="tafj toggle 4"> </li>
+<li>In the end, <strong>data-code</strong> module should be toggled.<br><img src="images/tafj-toggle-4.png" alt="tafj toggle 4">  </li>
+<li>A .properties file was created for your project in Your_DEV_Path/TAFJ/conf folder.<br><img src="images/tafj-toggle-5.png" alt="tafj toggle 5">  </li>
 </ul>
-<p>After the <strong>data-code</strong> module is toggled to TAFJ project nature, the jBC routines development can be initiated.  </p>
+<div class="NOTE"><h5>Note</h5><p>If TAFJ properties for your project must be updated, make sure you update the .properties related to your project from Your_DEV_Path/TAFJ/conf folder.</p>
+</div>
+<h1 id="jbc-routines-development">jBC Routines Development</h1>
+<p>jBC routines are developed in the <strong>data-code</strong> module which must be toggled to TAFJ project nature by following next steps.  </p>
 <ul>
 <li>In order to create a new jBC routine, expand <strong>data-code</strong> module, go to src-&gt;Source-&gt;Private, right click on project name (FT_Sample in the above picture), select <strong>New</strong> and then <strong>New T24 routine / component / testcase</strong>.
 <img src="images/add-routine.png" alt="add routine">  </li>
@@ -219,7 +222,30 @@ This package is adapted according to the T24 version of your sandbox and it is p
 <ul>
 <li>Right click on the <strong>models</strong> module and choose <strong>Design Studio</strong> -&gt; <strong>Generate Code</strong>:<br><img src="images/export_enquiries_1.png" alt="export enquiries 1">  </li>
 <li>A message should be displayed saying that the enquiry was successfully modified.
-<img src="images/export_enquiries_2.png" alt="export enquiries 2"> </li>
+<img src="images/export_enquiries_2.png" alt="export enquiries 2">  </li>
+</ul>
+<h1 id="data-d-files">Data (.d) files</h1>
+<p>A data(.d) file represents a details viewer of a record from the database. A data file has 2 columns:<br>-&gt; first column contains the unique number of all table fields of the record;<br>-&gt; second column contains the values for all table fields of the record.<br><img src="images/data_files_1.png" alt="data files 1"></p>
+<div class="NOTE"><h5>Note</h5><p>Assuming that your <strong>date-code</strong> module is toggled to TAFJ project nature, make sure you update the .properties file related to your project from Your_DEV_Path/TAFJ/conf folder with the database IP of your sandbox.</p>
+</div>
+<p>Before starting to extract/load data files from/to your sandbox database, you must login to TAFJ-DBTools.<br>-&gt; Right click on your <strong>data-code</strong> module and select <strong>DBTools login</strong>.
+<img src="images/extract_data_dbtools_1.png" alt="extract data dbtools 1"><br>-&gt; A wizard will appear in which you must type the DBTools credentials(which can be found in Add_DBTools_User.bat file from Your_DEV_Path) and click <strong>Finish</strong>.
+<img src="images/extract_data_dbtools_2.png" alt="extract data dbtools 2">  </p>
+<h2 id="extract-data-files-from-the-database">Extract data files from the database</h2>
+<ul>
+<li>Expand <strong>data-code</strong> module, go to src, right click on <strong>Data</strong> and select <strong>Extract from the database</strong>.<br><img src="images/extract_data_1.png" alt="extract data 1">  </li>
+<li>The bellow wizard will appear. Make sure the URL of the Database contains the correct database IP of your sandbox. Otherwise, you have update your .properties file related to your project from Your_DEV_Path/TAFJ/conf folder.
+<img src="images/extract_data_2.png" alt="extract data 2">  </li>
+<li>Type the Table Name and Record ID and click <strong>Finish</strong>.<br><img src="images/extract_data_3.png" alt="extract data 3">  </li>
+<li>Check the console log to see if the data files was extracted.
+<img src="images/extract_data_4.png" alt="extract data 4">  </li>
+</ul>
+<h2 id="load-data-files-in-the-database">Load data files in the database</h2>
+<ul>
+<li>Right click on your data file and select <strong>Load in the database</strong>.<br><img src="images/load_data_1.png" alt="load data 1">  </li>
+<li>The bellow wizard will appear and click <strong>Finish</strong>. Make sure the URL of the Database contains the correct database IP of your sandbox. Otherwise, you have update your .properties file related to your project from Your_DEV_Path/TAFJ/conf folder.
+<img src="images/load_data_2.png" alt="extract data 2">  </li>
+<li>A success message should be displayed in the console.<br><img src="images/load_data_3.png" alt="extract data 3">  </li>
 </ul>
 </article>
           </div>
