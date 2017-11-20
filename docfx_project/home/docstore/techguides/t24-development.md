@@ -20,7 +20,7 @@ The development package is pre-configured to be extracted in _C:\TemenosDev_ pat
  - in _tafj.properties_ from Your_DEV_Path\TAFJ\conf, update lines 13, 26 and 42 based on Your_DEV_Path.
  - if a project already exists in your DesignStudio workspace, in _Launch T24 Packager (TAFJ).launch_ file from Your_DEV_Path\DesignStudio\workspace\YOUR-project-packager, lines 9, 10 and 11 must be updated accordingly to Your_Path.  
 
-To be able to interogate the sandbox database, a series of updates must be applied to _tafj.properties_ file from Your_DEV_Path\TAFJ\conf:  
+To be able to interrogate the sandbox database, a series of updates must be applied to _tafj.properties_ file from Your_DEV_Path\TAFJ\conf:  
 | **Property**  		| Value	|
 |-					|-		|
 |temn.tafj.jdbc.url		|	jdbc:h2:tcp://**Your_Sandbox_Database_IP**/TAFJDB;MODE=Oracle;TRACE_LEVEL_FILE=0; TRACE_LEVEL_SYSTEM_OUT=0;DB_CLOSE_ON_EXIT=FALSE;FILE_LOCK=NO; IFEXISTS=TRUE;CACHE_SIZE=131072;MVCC=TRUE;LOCK_TIMEOUT=30000   |
@@ -66,7 +66,7 @@ A T24 Server is required in Design Studio to be able to import/export applicatio
 ![hostname](./images/hostname.png)
 
 # Toggle Project to TAFJ project nature #
-The **Toggle TAFJ project nature** action must be performed in order to be able to develop, compile and package jBC routines and to interogate your sandbox database.  
+The **Toggle TAFJ project nature** action must be performed in order to be able to develop, compile and package jBC routines and to interrogate your sandbox database.  
 * Right click on **data-code** module and choose **Toggle TAFJ project nature**.  
 ![tafj toggle 1](./images/tafj-toggle-1.png)  
 * In the next screen, import _tafj_properties_ from Your_DEV_Path/TAFJ/conf folder, choose TAFJ_HOME as Your_DEV_Path/TAFJ folder and click **Next**. In the bellow picture, DEV_Path is set to C:\TemenosDEV.
