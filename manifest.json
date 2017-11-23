@@ -193,6 +193,39 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/como_files_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/como_files_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/como_files_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/como_files_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/como_files_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/como_files_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/docstore/techguides/images/connection-type.png",
       "output": {
         "resource": {
@@ -252,6 +285,83 @@
       "output": {
         "resource": {
           "relative_path": "home/docstore/techguides/images/db.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/dbtools_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/dbtools_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/dbtools_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/dbtools_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/dbtools_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/dbtools_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/dbtools_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/dbtools_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/dbtools_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/dbtools_5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/dbtools_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/dbtools_6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/dbtools_7.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/dbtools_7.png"
         }
       },
       "is_incremental": false,
@@ -688,6 +798,50 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/log_files_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/log_files_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/log_files_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/log_files_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/log_files_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/log_files_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/log_files_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/log_files_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/docstore/techguides/images/monitor-application-result.png",
       "output": {
         "resource": {
@@ -1106,6 +1260,61 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/tDiag_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/tDiag_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/tDiag_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/tDiag_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/tShow_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/tShow_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/tShow_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/tShow_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/docstore/techguides/images/tShow_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/docstore/techguides/images/tShow_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/docstore/techguides/images/tafj-packager.png",
       "output": {
         "resource": {
@@ -1257,7 +1466,7 @@
           "hash": "jI4WFbckkfD1CvGDrWghwQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1266,10 +1475,10 @@
       "output": {
         ".html": {
           "relative_path": "home/docstore/techguides/troubleshooting.html",
-          "hash": "T2h4n2wKNJ6y8nJvolC7Fg=="
+          "hash": "08CHbnKPwHNZtzy7nFwlRg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1363,11 +1572,6 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "RestApiDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -1375,6 +1579,11 @@
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
