@@ -1,0 +1,76 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "src/**.csproj"
+          ],
+          "exclude": [
+            "**/obj/**",
+            "**/bin/**",
+            "site/**"
+          ]
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "home/**.yml",
+          "home/index.md",
+		  "home/docstore/**.md",
+		  "home/docstore/techguides/**.md",
+		  "toc.yml",
+          "*.md"
+        ],
+       "exclude": [
+         "obj/**",
+         "site/**"
+       ]
+	  }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**",
+		  "home/docstore/techguides/images/**"
+        ],
+        "exclude": [
+          "obj/**",
+          "site/**"
+        ]
+      }
+	  
+    ],
+	"globalMetadata": 
+	{
+      "_disableContribution": true
+    },
+	
+    "overwrite": [
+      {
+        "files": [
+          "apidoc/**.md"
+        ],
+        "exclude": [
+          "obj/**",
+          "site/**"
+        ]
+      }
+    ],
+    "dest": "site",
+    "globalMetadataFiles": [],
+    "fileMetadataFiles": [],
+    "template": [
+      "default"
+    ],
+    "postProcessors": [],
+    "noLangKeyword": false,
+    "keepFileLink": false,
+    "cleanupCacheHistory": false
+  }
+}
