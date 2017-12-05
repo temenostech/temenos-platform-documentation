@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/Users/scirneanu/Desktop/tGit/temenos-platform-documentation/docfx_project",
+  "source_base_path": "C:/Jenkins/workspace/DeveloperPortal-Build/docfx_project",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -9,10 +9,10 @@
       "output": {
         ".html": {
           "relative_path": "home/docstore/index.html",
-          "hash": "v8OsYt3CUjkC2azTiHD6yw=="
+          "hash": "YnML299XGmEfbfpkVe/K+A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1451,10 +1451,10 @@
       "output": {
         ".html": {
           "relative_path": "home/docstore/techguides/index.html",
-          "hash": "GNb7pZydiL6RaM/PuPTn7g=="
+          "hash": "buk6gu4fFqw4FzUIMXDSZw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1463,10 +1463,10 @@
       "output": {
         ".html": {
           "relative_path": "home/docstore/techguides/t24-development.html",
-          "hash": "jI4WFbckkfD1CvGDrWghwQ=="
+          "hash": "eSXcbA6cQHSAc1aaVmUOzQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1475,7 +1475,7 @@
       "output": {
         ".html": {
           "relative_path": "home/docstore/techguides/troubleshooting.html",
-          "hash": "08CHbnKPwHNZtzy7nFwlRg=="
+          "hash": "zRnZXEpKbAgckKZtw6PFtg=="
         }
       },
       "is_incremental": false,
@@ -1487,10 +1487,10 @@
       "output": {
         ".html": {
           "relative_path": "home/docstore/techguides/use-gitlab-repository.html",
-          "hash": "AudNqN7RGU4/wHTOL7td9g=="
+          "hash": "tFw6pEOCErSfqZo2teGRLA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1499,10 +1499,10 @@
       "output": {
         ".html": {
           "relative_path": "home/docstore/techguides/user-creation-in-paas.html",
-          "hash": "bYfCJxDrYsBbe/BlNcVkQw=="
+          "hash": "cgYNNl1xxGcWdCH+4K4p5w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1511,10 +1511,10 @@
       "output": {
         ".html": {
           "relative_path": "home/index.html",
-          "hash": "xal9ZXLpMc7HujZ+OWrzhw=="
+          "hash": "F2IQTOWniSQi2dM9KuhNEw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1523,7 +1523,7 @@
       "output": {
         ".html": {
           "relative_path": "home/toc.html",
-          "hash": "/yOxZKxW+i5UVEcP5eje/A=="
+          "hash": "m/F/7lGvmBsFfhjA0zMaQQ=="
         }
       },
       "is_incremental": false,
@@ -1546,10 +1546,10 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "s6CxeTPCaPXTAlmRnBjSYw=="
+          "hash": "titvp4EO4Yo9/1SGr9xIPg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1558,7 +1558,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "iVfMTLnK+V/yCZu3fvksFw=="
+          "hash": "B2tKwZS7kNLhIFDYVvkPNQ=="
         }
       },
       "is_incremental": false,
@@ -1568,48 +1568,44 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
         "incrementalPhase": "build"
       },
       "processors": {
-        "RestApiDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build"
-        },
-        "TocDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": true,
           "incrementalPhase": "build"
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
+        },
+        "RestApiDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
         }
       }
     },
     {
       "status": {
-        "can_incremental": true,
-        "details": "Can support incremental post processing.",
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
         "incrementalPhase": "postProcessing"
       },
       "processors": {}
     }
   ],
-  "version_info": {},
-  "groups": [
-    {
-      "xrefmap": "xrefmap.yml"
-    }
-  ]
+  "version_info": {}
 }
