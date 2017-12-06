@@ -11,36 +11,43 @@
     <meta name="generator" content="docfx 2.22.2.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
     <link rel="stylesheet" href="../../../styles/woocircle.css">
     <meta property="docfx:navrel" content="../../../toc.html">
     <meta property="docfx:tocrel" content="../../toc.html">
     
     
   </head>
-  <body data-spy="scroll" data-target="#affix">
+  <body data-spy="scroll" data-target="#affix" class="Introduction &amp; Prerequisites ">
     <div id="wrapper">
       <header>
         
         <nav id="autocollapse" class="navbar" role="navigation">
           <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              
-              <a class="navbar-brand" href="../../../index.html">
-                <img id="logo" class="svg" src="../images/template/logo-temenos-top.png" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
-              </form>
+            <div class="row">
+              <div class="navbar-header col-md-2">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                
+                <a class="navbar-brand" href="/index.html">
+                  <img id="logo" src="/logo.png" alt="">
+                </a>
+              </div>
+              <div class="themainmenu col-md-10">
+              <div class="collapse navbar-collapse" id="navbar">
+                <form class="navbar-form navbar-right" role="search" id="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                  </div>
+                </form>
+              </div>
+              </div>
             </div>
           </div>
         </nav>
@@ -244,14 +251,11 @@ This package is adapted according to the T24 version of your sandbox and it is p
 <img src="images/load_data_2.png" alt="extract data 2">  </li>
 <li>A success message should be displayed in the console.<br><img src="images/load_data_3.png" alt="extract data 3">  </li>
 </ul>
-<p>
-                <br>
-                <hr>
-                <div id="disqus_thread"></div>
-                <div id="disqus_thread"></div>
+<p><br></p>
+              <hr>
+              
+              <div id="disqus_thread"></div>
                 <script>
-
-
                     (function() {
                         var d = document, s = d.createElement('script');
                         s.src = 'https://temenostech.disqus.com/embed.js';
@@ -259,7 +263,6 @@ This package is adapted according to the T24 version of your sandbox and it is p
                         (d.head || d.body).appendChild(s);
                      })();
                 </script>
-                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
             </article>
           </div>
           
@@ -279,7 +282,7 @@ This package is adapted according to the T24 version of your sandbox and it is p
           <div class="row">
             <div class="col-md-6 footer-note left">
               <p>
-                <a href="/"><img src="../images/template/logo-temenos-bottom.png"></a>
+                <a href="/"><img src="/logo-bottom.png" alt=""></a>
                 <a href="https://www.temenos.com/en/accessibility/">Accessibility</a>
                 <a href="https://www.temenos.com/en/legal-information/cookie-policy/">Cookie Policy</a>
                 <a href="https://www.temenos.com/en/legal-information/privacy-policy/">Privacy Policy</a>
@@ -308,9 +311,47 @@ This package is adapted according to the T24 version of your sandbox and it is p
       </div>
     </div>
     
-    <script src="../../../styles/woocircle.js"></script>
-    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
     <script id="dsq-count-scr" src="//temenostech.disqus.com/count.js" async=""></script>
+    
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myshareDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.sharedropbtn')) {
+    
+        var dropdowns = document.getElementsByClassName("sharedropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+    
+    <script>
+    	window.onload = function(){
+        	document.getElementById("shareFacebook").href = 'https://www.facebook.com/sharer/sharer.php?u=' + window.location.toString();
+    
+        	document.getElementById("shareTwitter").href = 'https://twitter.com/intent/tweet?text=Temenos+Developer+Portal&url=' + window.location.toString();
+    
+        	document.getElementById("shareGoogle").href = 'https://plus.google.com/share?url=' + window.location.toString();
+    
+        	document.getElementById("shareLinkedin").href = 'https://www.linkedin.com/shareArticle?mini=true&url=' + window.location.toString() + '&title=Temenos+Developer+Portal&summary=&source=';
+    
+        	document.getElementById("shareEmail").href = 'mailto:' + window.location.toString();
+    	}
+    </script>
     
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
