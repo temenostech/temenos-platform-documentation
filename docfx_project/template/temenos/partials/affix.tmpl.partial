@@ -1,0 +1,40 @@
+{{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}}
+
+<div class="hidden-sm col-md-2" role="complementary">
+  <div class="sideaffix">
+    {{^_disableContribution}}
+    <div class="contribution">
+      <ul class="nav">
+        {{#docurl}}
+        <li>
+          <a href="{{docurl}}" class="contribution-link"><i class="fa fa-pencil" aria-hidden="true"></i> {{__global.improveThisDoc}}</a>
+        </li>
+        {{/docurl}}
+        {{#sourceurl}}
+        <li>
+          <a href="{{sourceurl}}" class="contribution-link"><i class="fa fa-code" aria-hidden="true"></i> {{__global.viewSource}}</a>
+        </li>
+        {{/sourceurl}}
+        <li>
+          <a href="#disqus_thread" class="contribution-link comment-icon">0 Comments</a>
+        </li>
+        <li>
+          <div class="sharedropdown">
+            <button onclick="myFunction()" class="sharedropbtn"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</button>
+            <div id="myshareDropdown" class="sharedropdown-content">
+              <a id="shareTwitter" class="sharingsocialmedia" target=_blank" href="#" class="social-button twitter-button"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+              <a id="shareFacebook" class="sharingsocialmedia" target=_blank" href="#" class="social-button facebook-button"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a>
+              <a id="shareGoogle" class="sharingsocialmedia" target=_blank" href="#" class="social-button googleplus-button"><i class="fa fa-google-plus" aria-hidden="true"></i> Google +</a>
+              <a id="shareLinkedin" class="sharingsocialmedia" target=_blank" href="#" class="social-button linkedin-button"><i class="fa fa-linkedin" aria-hidden="true"></i> Linkedin</a>
+              <a id="shareEmail" class="sharingsocialmedia" target=_blank" href="#" class="social-button email-button" title="Send an E-Mail"><i class="fa fa-envelope" aria-hidden="true"></i> E-mail</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    {{/_disableContribution}}
+    <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+    <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+    </nav>
+  </div>
+</div>

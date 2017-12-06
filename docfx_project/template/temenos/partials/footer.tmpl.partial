@@ -1,0 +1,37 @@
+{{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}}
+
+{{{_appFooter}}}
+{{^_appFooter}}
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 footer-note left">
+        <p>
+          <a href="/"><img src="/logo-bottom.png" alt="{{_appName}}"></a>
+          <a href="https://www.temenos.com/en/accessibility/">Accessibility</a>
+          <a href="https://www.temenos.com/en/legal-information/cookie-policy/">Cookie Policy</a>
+          <a href="https://www.temenos.com/en/legal-information/privacy-policy/">Privacy Policy</a>
+          <a href="https://www.temenos.com/en/legal-information/terms-and-conditions/">Terms & Conditions</a>
+        </p>
+      </div>
+
+      <div class="col-md-6 footer-note right">
+        <p>
+          Copyright &copy; 2017 Temenos Headquarters SA <span>&#183;</span>
+          <a target="_blank" href="https://www.facebook.com/TemenosGroup"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+          <a target="_blank" href="https://twitter.com/Temenos"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a target="_blank" href="http://www.linkedin.com/company/temenos"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <a target="_blank" href="//plus.google.com/u/0/100035548059267323447?prsrc=3"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+        </p>
+      </div>
+    </div>
+
+  </div>
+</footer>
+{{/_appFooter}}
+
+<div class="back-to-top">
+  <a href="#top">
+    <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i></span>
+  </a>
+</div>
