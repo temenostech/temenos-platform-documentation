@@ -1,0 +1,212 @@
+.header {
+  position: relative;
+  display: table;
+  width: 100%;
+}
+
+#logo {
+  padding: 6px 0;
+}
+
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+.featurette-divider {
+  margin: 5rem 0;
+}
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+.text-vertical-center {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+  padding: 100px 0 150px 0;
+  .brand {
+    img {
+      margin-bottom: 80px;
+    }
+    
+  }
+  h1 {
+    font-size: 4.5em;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+	}
+}
+
+.btn-call-to-action {
+  	color: #fff;
+  	background-color: rgba(0, 0, 0, .4);
+  	border-color: transparent;
+  	&:hover {
+    	color: #fff;
+    	background-color: rgba(0, 0, 0, .7);
+    	border-color: transparent;
+	}
+	&:focus, &.focus {
+		box-shadow: none;
+	}
+}
+
+.btn-temenos {
+  	color: #fff;
+  	background-color: #e37808;
+  	border-color: #e37808;
+  	text-transform: uppercase;
+  	padding: 10px 15px;
+  	font-size: 15px;
+
+  	&:hover {
+    	color: #e37808;
+    	background-color: #fff;
+    	border-color: #e37808;
+	}
+	&:focus, &.focus {
+		box-shadow: none;
+	}
+}
+
+.marketing {
+  h2 {
+    font-weight: 300 !important;
+    line-height: 1;
+    letter-spacing: -.05rem;
+    margin-bottom: 1.4rem;
+  }
+	img {
+		margin-bottom: 30px;
+    display: block;
+	}
+}
+
+.the-box {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: #fff;
+  border-radius: 16px;
+  transition: background-color .3s ease-in-out;
+  &:hover {
+    background-color: #7ed0e0;
+
+    transition: background-color .3s ease-in-out;
+  }
+}
+
+.featurette-heading {
+  &.special {
+    margin: 3rem 0;
+  }
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 43px;
+  z-index: 1001;
+  a {
+    color: #e37808;
+    &:hover {
+      color: #005294;
+      transition: all .3s ease-in-out;
+    }
+  }
+}
+
+footer {
+  background: url(../images/template/bg-footer.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #fff;
+  width: 100%;
+  line-height: 32px;
+}
+
+.footer-note {
+  vertical-align: middle;
+  p {
+    margin: 0;
+  }
+  &.left {
+    img {
+      margin-right: 10px;
+      margin-top: -3px;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+      padding-right: 3px;
+      transition: all .3s ease-in-out;
+      &:hover {
+        color: #e37808;
+        transition: all .3s ease-in-out;
+      }
+    }
+  }
+  &.right {
+    text-align: right;
+    span {
+      padding-left: 6px;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+      padding-left: 6px;
+      font-weight: 300;
+      transition: all .3s ease-in-out;
+      &:hover {
+        color: #e37808;
+        transition: all .3s ease-in-out;
+      }
+    }
+  }
+}
+
+.featurette-divider {
+  &.second {
+    margin-bottom: 1.6rem;
+  }
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
