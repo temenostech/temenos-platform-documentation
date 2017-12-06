@@ -1,23 +1,8 @@
----
-title: Use GitLab repository for MarketPlace Sandbox
-description: learn how to create users in PaaS Portal
-author: scirneanu
-category: techguides
-tags: techguides
-date: 10/12/2017 5:59:14 PM 
-reviewer: mhart
----
 
+# Introduction #
+This document can be used by technical staff who need to create Users in PaaS Portal and associate to each user a ssh key.  
 
-# How to create Users in PaaS
-
-
-## Quick Start Guide ##
-
-### Audience ###
-This document can be used by technical staff who need to create Users in PaaS Portal and associate to each user a ssh key.
-
-# Use PuTTY ssh client for ssh key generation.
+# Use PuTTY ssh client for ssh key generation. #
 
 You can use any other ssh key generator client.
 

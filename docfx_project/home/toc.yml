@@ -7,7 +7,7 @@
     items:
     - name: User Creation In PaaS
       href: ./docstore/techguides/user-creation-in-paas.md
-    - name: Use Gitlab Repository
+    - name: Use GitLab Repository
       href: ./docstore/techguides/use-gitlab-repository.md
     - name: T24 Development
       href: ./docstore/techguides/t24-development.md

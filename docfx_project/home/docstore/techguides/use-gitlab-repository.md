@@ -1,18 +1,5 @@
----
-title: Use GitLab repository for MarketPlace Sandbox
-description: learn how to use GitLab repository for MarketPlace Sandbox
-author: cbenea
-category: techguides
-tags: techguides
-date: 10/12/2017 5:59:14 PM 
-reviewer: mhart
----
 
-
-# How to use GitLab Repository for MarketPlace Sandbox
-
-
-### Audience ###
+# Introduction #
 This document can be used by technical staff who need to use GitLab repository to update files on the Temenos Sandbox provisioned through MarketPlace. Each Sandbox created has an associated GitLab Repository for uploading files, plugins, add-ons to the cloud environment (called Sandbox). The platform will perform the scripts and steps needed for the files to be deployed successfully as background activities. Before proceeding you need to know the associated GitLab repository and to have users with ssh keys created in the portal. 
 
 # Clone the GitLab Repository of your sandbox to your local computer #
