@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Temenos Cloud Development Platform </title>
+    <title>Architecture Overview </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Temenos Cloud Development Platform ">
+    <meta name="title" content="Architecture Overview ">
     <meta name="generator" content="docfx 2.22.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -20,7 +20,7 @@
     
     
   </head>
-  <body data-spy="scroll" data-target="#affix" class="Temenos Cloud Development Platform ">
+  <body data-spy="scroll" data-target="#affix" class="Architecture Overview ">
     <div id="wrapper">
       <header>
         
@@ -71,106 +71,129 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="temenos-cloud-development-platform"><strong>Temenos Cloud Development Platform</strong></h1>
+<h1 id="architecture-overview">Architecture Overview</h1>
 
-<h2 id="devx"><strong>DevX</strong></h2>
-<h3 id="product-definition">Product Definition</h3>
+<h3 id="where-does-temenos-paas-fit-into-the-enterprise-it-landscape"><strong>Where does Temenos PaaS fit into the enterprise IT landscape?</strong></h3>
 <hr>
-<ul>
-<li><strong>What is Temenos PaaS?</strong></li>
-</ul>
-<p>Temenos PaaS is a type of cloud service offered by Temenos Cloud; it is a <em>Platform as a Service (PaaS)</em> that provides individuals and teams with the ability to manage and configure their own instances Temenos applications and approved 3rd party Plug &amp; Play applications from the Temenos ecosystem.</p>
-<ul>
-<li><strong>What is DevX?</strong></li>
-</ul>
-<p>“DevX” is a cloud based infrastructure for use during development, test, implementation, and ongoing change with configurable and scalable Temenos Suites on-demand. DevX enables you to create Environments, i.e. Temenos Suites on-demand, for non-production use in the cloud.  Environments can be requested and provisioned within minutes rather than weeks helping you accelerate your projects.  All Temenos Suites (Retail, Corporate, Wealth, Micro-Finance, and Islamic Banking) are readily available and allow you to develop and test your proof of concept, share development environments across dispersed teams, replicate production environments or use them for training. The speed, reliability, and agility of these environments will instantly add value to your implementation and scale your project delivery capacity.</p>
-<h3 id="benefits">Benefits</h3>
+<p>The Temenos PaaS platform promotes the concept of simplified and standardised change promotion through the IT landscape.</p>
+<p><img src="images/architecture-arrows.png" alt=""></p>
+<p>Typical organisations have a number of non-production (i.e. development/test) environments, where changes are implemented and checked prior to deployment to production systems.  The Devops movement seeks to improve this QA process through means of automation, which both allows an increase in speed in change promotion, and a reduction in the risk of manual errors when promoting changes.</p>
+<p>The Temenos PaaS platform includes a simple and repeatable method of collating changes (both configuration and customisation) which subsequently is simple to promote from environment to environment.</p>
+<p>In addition, the core function of the Temenos PaaS platform is to simplify the environment provisioning process, which means if extra stages in the change flow are required (e.g. for additional testing phases), it becomes far simpler to spin up temporary environments for these purposes.#</p>
+<p>It should be noted that the Temenos PaaS platform only supplies non-production environments (also known as &#39;sandboxes&#39;), which means organisations will still require at least one non-production environment on representative hardware in order to sanity check changes prior to production release (see example below).</p>
+<p><img src="images/architecture-paas-deploy.png" alt=""></p>
+<p>Delegating platform and infrastructure responsibilities to a third party allows organisations to concentrate on what is important to them - applications and data.</p>
+<p><img src="images/architecture-responsabilities.png" alt=""></p>
+<p>The Temenos PaaS platform may be used for simple environment provisioning, or may be augmented by additional tools (such as Continuous Integration tooling) to provide a streamlined and automated development experience.  The change promotion mechansim within the PaaS platform is simple to plug into standard CI tooling to push code/config/data from environment to environment.  An example development flow is shown below:</p>
+<p><img src="images/architecture-process.png" alt=""></p>
+<h3 id="what-are-the-components-of-temenos-paas"><strong>What are the components of Temenos PaaS?</strong></h3>
 <hr>
-<ul>
-<li><strong>What are the key benefits of DevX?</strong></li>
-</ul>
-<p>•   3 month reduction in all projects duration; by eliminating the time to create an environment</p>
-<p>•   Self-service environment provisioning, with centralised control or completely self-service</p>
-<p>•   Reduction in all projects duration; by eliminating the time to create or wait for an environment</p>
-<p>•   Operational expense; subscription service where you only pay for the cloud infrastructure you use – saving upwards of 90% of the infrastructure costs currently incurred</p>
-<p>•   Start development and testing in minutes, not weeks</p>
-<p>•   Reproduce identical environments</p>
-<p><br></p>
-<ul>
-<li><strong>What are the key features of DevX?</strong></li>
-</ul>
-<p>•   Immediate provisioning of identical environments</p>
-<p>•   Deployment of change is fully automated; with plugins, add-ons, updates, packages, data, and configuration all being managed through a software configuration management repository</p>
-<p>•   Metered usage and full reporting</p>
-<p>•   Self-service data loading</p>
-<p>•   Self-service data export</p>
-<p>•   Highly available</p>
-<p>•   Managed OS patching</p>
-<p>•   Point in time Backup / Restore</p>
-<p>•   Scheduled jobs</p>
-<p>•   Scale up / down</p>
-<p>•   Logging to syslog</p>
-<p><br></p>
-<h2 id="implementation-faqs">Implementation FAQs</h2>
+<p>Sandbox environments are managed by the PaaS Platform Portal, and are comprised of distinct components as described below:</p>
+<p><img src="images/architecture-customer-facing-systems.png" alt=""></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Component</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Portal</td>
+<td style="text-align:left">The Portal is the front-end component of the PaaS Platform which allows users to perform management functions across sandbox environments.  These functions include user management and sandbox provisioning/scaling.</td>
+</tr>
+<tr>
+<td style="text-align:left">Configuration Repository</td>
+<td style="text-align:left">The Configuration Repository is the &#39;change hub&#39; for the PaaS Platform.  It supports configuration and customisation (per sandbox), including T24 updates, custom config/code packages, database imports and third party plug-ins/add-ons.</td>
+</tr>
+<tr>
+<td style="text-align:left">T24 Instance</td>
+<td style="text-align:left">The T24 instance comprises the application and database for T24.  The application tier may be scaled horizontally as required (via the management facility in the Portal).</td>
+</tr>
+<tr>
+<td style="text-align:left">Exports (File Storage)</td>
+<td style="text-align:left">The T24 database may be exported via the management facility in the Portal, as may the &#39;environment&#39; (file system level). These exports are stored per Sandbox environment and may be downloaded by users via SFTP.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="what-can-you-do-with-temenos-paas"><strong>What can you do with Temenos PaaS?</strong></h3>
 <hr>
-<ul>
-<li><strong>How can a customer gain access to DevX?</strong></li>
-</ul>
-<p>The client should go through the normal procurement process for a Temenos Cloud service.  Temenos regional sales. </p>
-<ul>
-<li><strong>What are the minimum system requirements?</strong></li>
-</ul>
-<p>Internet access over https.</p>
-<ul>
-<li><strong>How can a customer deploy DevX?</strong></li>
-</ul>
-<p>The clients will be supplied with a URL and initial login, from there they will be able to create their own environments at their chosen release, add users for a developer or team of developers and then they can create the environments immediately. The users can create up to the maximum number of environments purchased, once the environment is destroyed, another individual or team can create a new environment up to the maximum. This means that many teams can share a single subscription, very useful to remove barriers within project and in fully automated testing.</p>
-<ul>
-<li><strong>Who will handle customers’ queries/issues for DevX?</strong></li>
-</ul>
-<p>Sales queries will be handled via the Temenos Cloud (TemenosCloud@temenos.com) support team. Support is available through a dedicated online support portal for cloud infrastructure issues.  All Product issues remain through the Temenos Customer Support. </p>
-<h2 id="temenos-cloud-management-of-organisations-users-and-environments">Temenos Cloud Management of Organisations, Users and Environments</h2>
+<p>Below is a list of functions which can be performed using Temenos PaaS.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Function</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Apply configuration/ customisation</td>
+<td style="text-align:left">Apply the necessary change components to create a customised sandbox configuration for an organisation</td>
+</tr>
+<tr>
+<td style="text-align:left">Delete a sandbox</td>
+<td style="text-align:left">Delete a sandbox</td>
+</tr>
+<tr>
+<td style="text-align:left">Export a database</td>
+<td style="text-align:left">Export a database from a sandbox (e.g. to re-import into another sandbox)</td>
+</tr>
+<tr>
+<td style="text-align:left">Export a sandbox environment</td>
+<td style="text-align:left">Export a copy of a sandbox environment (file system level) for offline perusal</td>
+</tr>
+<tr>
+<td style="text-align:left">Import a database</td>
+<td style="text-align:left">Import a database into a sandbox</td>
+</tr>
+<tr>
+<td style="text-align:left">Login to T24</td>
+<td style="text-align:left">Use the resultant customised sandbox</td>
+</tr>
+<tr>
+<td style="text-align:left">Manage a user</td>
+<td style="text-align:left">Create/ edit/ delete a user</td>
+</tr>
+<tr>
+<td style="text-align:left">Provision a new sandbox</td>
+<td style="text-align:left">Create a sandbox</td>
+</tr>
+<tr>
+<td style="text-align:left">Scale a sandbox</td>
+<td style="text-align:left">Scale a sandbox horizontally by adding/removing additional T24 instances for a given database instance</td>
+</tr>
+</tbody>
+</table>
+<h3 id="what-tools-do-i-need-to-use-temenos-paas"><strong>What tools do I need to use Temenos PaaS?</strong></h3>
 <hr>
-<ul>
-<li><strong>Organisation ID</strong></li>
-</ul>
-<p>As a MarketPlace provider, you will receive an <strong>unique</strong> Organisation Id. Below is an example with an Organisation Id and the link to login:</p>
-<p><img src="images/login-screen.png" alt=""></p>
-<p><br></p>
-<ul>
-<li><strong>Users</strong></li>
-</ul>
-<p>Once logged, you can check the list of users linked to the current organisation.</p>
-<p>You can also add other users by clicking <strong>New user</strong> button.</p>
-<p><img src="images/users.png" alt=""></p>
-<p><br></p>
-<ul>
-<li><strong>Environments</strong></li>
-</ul>
-<p>Create your own environment:</p>
-<p><img src="images/new-environment.png" alt=""></p>
-<p><br></p>
-<ul>
-<li>Fill Name and Description fields</li>
-<li>Select one of the available templates from dropdown list, based on your requirements</li>
-<li>Click <strong>Create environment</strong></li>
-</ul>
-<p><img src="images/new-environment-create.png" alt=""></p>
-<p><br></p>
-<ul>
-<li><strong>Templates</strong></li>
-</ul>
-<p>Check the list with all available templates. These are latest Retail Suites versions:</p>
-<p><img src="images/templates.png" alt=""></p>
-<h2 id="how-temenos-cloud-templates-work">How Temenos Cloud Templates Work</h2>
-<p>The Temenos PaaS platform has the capability to provision environments in a variety of different configurations.  This capability is driven through the concept of &#39;Templates&#39; - a simplified view of the constituent elements which make up a sandbox configuration, including:</p>
-<ul>
-<li>Server Size</li>
-<li>Basic server setup and technology stack</li>
-<li>T24 version to deploy</li>
-</ul>
-<p>By default, new templates are added with each monthly release of T24. These templates follow a standard pattern, configuration and technology stack, but with the most recent releases of T24 being deployed.</p>
-<p>However, the Temenos PaaS platform team also offer the ability to create customised templates for clients.  For more information, please contact temenoscloud@temenos.com.</p>
+<p>Below is a list of tools which may be used to exploit Temenos PaaS functionality.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Tool</th>
+<th style="text-align:left">Description and Rationale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Continuous Integration Tool (Optional)</td>
+<td style="text-align:left">Continuous Integration tools may be used to help automate change promotion between environments.  There is no CI tool provided as part of the Temenos PaaS Platform, but these are useful in reducing manual tasks when managing environments.</td>
+</tr>
+<tr>
+<td style="text-align:left">Design Studio (Optional)</td>
+<td style="text-align:left">Design Studio is the IDE (Integrated Development Environment) produced by Temenos for developing changes in T24 systems.  Design Studio itself does not form part of the PaaS Platform, but change outputs from this tool are supported within the Configuration Repository.</td>
+</tr>
+<tr>
+<td style="text-align:left">Git</td>
+<td style="text-align:left">Git is a version control system, used by the PaaS platform to manage the Configuration Repository</td>
+</tr>
+<tr>
+<td style="text-align:left">SFTP Client</td>
+<td style="text-align:left">SFTP is the protocol used to download file exports (environment or database exports)</td>
+</tr>
+</tbody>
+</table>
 <p><br></p>
               <hr>
               
