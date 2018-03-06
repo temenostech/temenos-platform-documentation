@@ -22,6 +22,9 @@
         "files": [
           "home/**.yml",
           "home/index.md",
+		  "home/overview.md",
+		  "home/**.md",
+		  "home/techguides/**.md",
 		  "home/docstore/**.md",
 		  "home/docstore/techguides/**.md",
 		  "toc.yml",
@@ -37,6 +40,8 @@
       {
         "files": [
           "images/**",
+		  "home/images/**",
+		  "home/techguides/images/**",
 		  "home/docstore/techguides/images/**"
         ],
         "exclude": [
