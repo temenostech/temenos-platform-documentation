@@ -1,15 +1,15 @@
-
-- name: Document Store
-  href: ./docstore/index.md
+- name: Overview
+  href: ./overview.md
+- name: Architecture
+  href: ./architecture.md
+- name: Technical Guides
+  href: ./techguides/index.md
   items:
-  - name: Technical Guides
-    href: ./docstore/techguides/index.md
-    items:
-    - name: User Creation In PaaS
-      href: ./docstore/techguides/user-creation-in-paas.md
-    - name: Use GitLab Repository
-      href: ./docstore/techguides/use-gitlab-repository.md
-    - name: T24 Development
-      href: ./docstore/techguides/t24-development.md
-    - name: Troubleshooting
-      href: ./docstore/techguides/troubleshooting.md
+   - name: User Creation In PaaS
+     href: ./techguides/user-creation-in-paas.md
+   - name: Use GitLab Repository
+     href: ./techguides/use-gitlab-repository.md
+   - name: T24 Development
+     href: ./techguides/t24-development.md
+   - name: Troubleshooting
+     href: ./techguides/troubleshooting.md
