@@ -2,41 +2,24 @@
 
 ## **DevX** 
 
-### Product Definition
 
 ----------
 
-- **What is Temenos PaaS?**
+### What is Temenos PaaS?
 
-Temenos PaaS is a type of cloud service offered by Temenos Cloud; it is a *Platform as a Service (PaaS)* that provides individuals and teams with the ability to manage and configure their own instances Temenos applications and approved 3rd party Plug & Play applications from the Temenos ecosystem.
+Temenos PaaS is a type of cloud service offered by Temenos Cloud; it is a *Platform as a Service (PaaS)* that provides individuals and teams with the ability to manage and configure their own instances of Temenos applications and approved 3rd party Plug & Play applications from the Temenos ecosystem.
 
-- **What is DevX?**
+### What is DevX?
 
-“DevX” is a cloud based infrastructure for use during development, test, implementation, and ongoing change with configurable and scalable Temenos Suites on-demand. DevX enables you to create Environments, i.e. Temenos Suites on-demand, for non-production use in the cloud.  Environments can be requested and provisioned within minutes rather than weeks helping you accelerate your projects.  All Temenos Suites (Retail, Corporate, Wealth, Micro-Finance, and Islamic Banking) are readily available and allow you to develop and test your proof of concept, share development environments across dispersed teams, replicate production environments or use them for training. The speed, reliability, and agility of these environments will instantly add value to your implementation and scale your project delivery capacity.
+“DevX” is a cloud based infrastructure for use during development, test, implementation, and ongoing change with configurable and scalable Temenos Suites on-demand. DevX enables you to create Environments, i.e. Temenos Suites on-demand, for non-production use in the cloud.  Environments can be requested and provisioned within minutes rather than weeks helping you accelerate your projects. Retail Suite is readily available, with all other Temenos Suites (Corporate, Wealth, Micro-Finance and Islamic Banking) available on request and allow you to develop and test your proof of concept, share development environments across dispersed teams, replicate production environments or use them for training. The speed, reliability, and agility of these environments will instantly add value to your implementation and scale your project delivery capacity.
 
-### Benefits
+
+
+## **Features**
 
 ----------
 
-
-- **What are the key benefits of DevX?**
-
-•	3 month reduction in all projects duration; by eliminating the time to create an environment
-
-•	Self-service environment provisioning, with centralised control or completely self-service
-
-•	Reduction in all projects duration; by eliminating the time to create or wait for an environment
-
-•	Operational expense; subscription service where you only pay for the cloud infrastructure you use – saving upwards of 90% of the infrastructure costs currently incurred
-
-•	Start development and testing in minutes, not weeks
-
-•	Reproduce identical environments
-
-<br>
-
-
-- **What are the key features of DevX?**
+### What are the key features of DevX?
 
 •	Immediate provisioning of identical environments
 
@@ -48,21 +31,19 @@ Temenos PaaS is a type of cloud service offered by Temenos Cloud; it is a *Platf
 
 •	Self-service data export
 
-•	Highly available
+•	Self-service horizontally scalable (Scale up / down)
+
+•	Self-service access to log data
+
+•	Self-service job initiation
+
+•	Point in time rebuild of database (Backup / Restore)
 
 •	Managed OS patching
 
-•	Point in time Backup / Restore
 
-•	Scheduled jobs
 
-•	Scale up / down
-
-•	Logging to syslog
-
-<br>
-
-## Implementation FAQs
+## **Implementation FAQs**
 
 ----------
 
@@ -81,6 +62,23 @@ The clients will be supplied with a URL and initial login, from there they will 
 - **Who will handle customers’ queries/issues for DevX?**
 
 Sales queries will be handled via the Temenos Cloud (TemenosCloud@temenos.com) support team. Support is available through a dedicated online support portal for cloud infrastructure issues.  All Product issues remain through the Temenos Customer Support. 
+
+
+## **Data and Security Considerations**
+
+The most important consideration with respect to data on the Temenos PaaS platform is that it for non-production use only.  For clarification, no 'personally identifiable information'; 'confidential' or 'sensitive' data may be stored on any sandbox environments.
+
+Other considerations include:
+
+•   Data is stored in UK datacentres
+
+•   Data is encrypted in transit
+
+•   Access to sandbox management facilities requires username/password and/or SSH certificates
+
+•   Environments can be deleted immediately by the user. All client-related data will be deleted by Temenos 60 days 
+after the termination of the agreement
+
 
 
 ## Temenos Cloud Management of Organisations, Users and Environments 
@@ -129,18 +127,6 @@ Check the list with all available templates. These are latest Retail Suites vers
 ![](./images/templates.png)
 
 
-## How Temenos Cloud Templates Work 
-
-
-The Temenos PaaS platform has the capability to provision environments in a variety of different configurations.  This capability is driven through the concept of 'Templates' - a simplified view of the constituent elements which make up a sandbox configuration, including:
-
-- Server Size
-- Basic server setup and technology stack
-- T24 version to deploy
-
-By default, new templates are added with each monthly release of T24. These templates follow a standard pattern, configuration and technology stack, but with the most recent releases of T24 being deployed.
-
-However, the Temenos PaaS platform team also offer the ability to create customised templates for clients.  For more information, please contact temenoscloud@temenos.com.
 
 
 
