@@ -42,6 +42,62 @@ Temenos PaaS is a type of cloud service offered by Temenos Cloud; it is a *Platf
 •	Managed OS patching
 
 
+## Temenos Cloud Management of Organisations, Users and Environments 
+
+----------
+
+
+- **Organisation ID**
+
+The Temenos Development Platform support multitenancy and Organisations are designed to be distinctive accounts.  
+
+Upon subscription you'll receive a **unique** Organisation Id as a URL link such as: 
+
+`http://portal.staging.temenos.cloud:4200/organisations/1cg74hgepdevio/login`
+
+The confirmation of your Organisation activation will contain the link and access instructions to your designated Organisation administrator. The administrator is the first and only user.
+
+![](./images/login-screen.png)
+
+<br>
+
+- **Users**
+
+The Administrator can navigate to the Users section on the portal, create more users and invite them on the Development platform using the URL link. This way the administrator is in control of who receives the URL link and which users can access the Organisation.
+
+The users of the platform can access the Organisation, view their user profile and change their password. Should the users requires access to the source code repository they need to provide their public SSH Keys on the user profile section to gain access.
+
+![](./images/users.png)
+
+<br>
+
+- **Environments**
+
+The Development platform has the capability to provision environments in a variety of different configurations. Users can initiate a new environment and select from a predefined list of templates the application, the release and stack they wish to provision. Each month we host a new template with the latest release of Temenos suite. 
+
+The environments are customisable in terms of Name and brief description to explain their purpose. The templates follow the official Temenos configuration stack but it can be customised for Releases 2016 onwards.   
+
+
+Create your own environment:
+
+![](./images/new-environment.png)
+
+<br>
+
+ - Fill Name and Description fields
+ - Select one of the available templates from dropdown list, based on your requirements
+ - Click **Create environment**
+
+![](./images/new-environment-create.png)
+
+<br>
+
+- **Templates**
+
+Check the list with all available templates. These are latest Retail Suites versions:
+
+![](./images/templates.png)
+
 
 ## **Implementation FAQs**
 
@@ -66,7 +122,7 @@ Sales queries will be handled via the Temenos Cloud (TemenosCloud@temenos.com) s
 
 ## **Data and Security Considerations**
 
-The most important consideration with respect to data on the Temenos PaaS platform is that it for non-production use only.  For clarification, no 'personally identifiable information'; 'confidential' or 'sensitive' data may be stored on any sandbox environments.
+The most important consideration with respect to data on the Temenos PaaS platform is that it for **non-production use only**.  For clarification, no 'personally identifiable information'; 'confidential' or 'sensitive' data may be stored on any sandbox environments.
 
 Other considerations include:
 
@@ -81,50 +137,6 @@ after the termination of the agreement
 
 
 
-## Temenos Cloud Management of Organisations, Users and Environments 
-
-----------
-
-
-- **Organisation ID**
-
-As a MarketPlace provider, you will receive an **unique** Organisation Id. Below is an example with an Organisation Id and the link to login:
-
-![](./images/login-screen.png)
-
-<br>
-
-- **Users**
-
-Once logged, you can check the list of users linked to the current organisation.
-
-You can also add other users by clicking **New user** button.
-
-![](./images/users.png)
-
-<br>
-
-- **Environments**
-
-Create your own environment:
-
-![](./images/new-environment.png)
-
-<br>
-
- - Fill Name and Description fields
- - Select one of the available templates from dropdown list, based on your requirements
- - Click **Create environment**
-
-![](./images/new-environment-create.png)
-
-<br>
-
-- **Templates**
-
-Check the list with all available templates. These are latest Retail Suites versions:
-
-![](./images/templates.png)
 
 
 
