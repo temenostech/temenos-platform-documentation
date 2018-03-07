@@ -9,7 +9,19 @@
       "output": {
         ".html": {
           "relative_path": "home/architecture.html",
-          "hash": "RP1SM+VbtqNdaFZ8JOmOTg=="
+          "hash": "+zp/cUVPXXGLgd88MKMwbQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/benefits.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/benefits.html",
+          "hash": "3GZBO5HbU1TBfTCRNX4ixw=="
         }
       },
       "is_incremental": false,
@@ -1645,7 +1657,7 @@
       "output": {
         ".html": {
           "relative_path": "home/overview.html",
-          "hash": "51GpkK73maFHTSnPiniWPQ=="
+          "hash": "wsvpzxa6V6gifyhNGqqVUQ=="
         }
       },
       "is_incremental": false,
@@ -3142,12 +3154,24 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "home/temenos-cloud-templates.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/temenos-cloud-templates.html",
+          "hash": "UDp1JUKntQatMqeip/ou0w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "home/toc.yml",
       "output": {
         ".html": {
           "relative_path": "home/toc.html",
-          "hash": "QGHoAxgUDnsvaaSCS6f3SQ=="
+          "hash": "UJjvWjx35qMlGqUWiL4wKg=="
         }
       },
       "is_incremental": false,
