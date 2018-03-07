@@ -92,6 +92,44 @@
 <p>•   Self-service job initiation</p>
 <p>•   Point in time rebuild of database (Backup / Restore)</p>
 <p>•   Managed OS patching</p>
+<h2 id="temenos-cloud-management-of-organisations-users-and-environments">Temenos Cloud Management of Organisations, Users and Environments</h2>
+<hr>
+<ul>
+<li><strong>Organisation ID</strong></li>
+</ul>
+<p>The Temenos Development Platform support multitenancy and Organisations are designed to be distinctive accounts.  </p>
+<p>Upon subscription you&#39;ll receive a <strong>unique</strong> Organisation Id as a URL link such as: </p>
+<p><code>http://portal.staging.temenos.cloud:4200/organisations/1cg74hgepdevio/login</code></p>
+<p>The confirmation of your Organisation activation will contain the link and access instructions to your designated Organisation administrator. The administrator is the first and only user.</p>
+<p><img src="images/login-screen.png" alt=""></p>
+<p><br></p>
+<ul>
+<li><strong>Users</strong></li>
+</ul>
+<p>The Administrator can navigate to the Users section on the portal, create more users and invite them on the Development platform using the URL link. This way the administrator is in control of who receives the URL link and which users can access the Organisation.</p>
+<p>The users of the platform can access the Organisation, view their user profile and change their password. Should the users requires access to the source code repository they need to provide their public SSH Keys on the user profile section to gain access.</p>
+<p><img src="images/users.png" alt=""></p>
+<p><br></p>
+<ul>
+<li><strong>Environments</strong></li>
+</ul>
+<p>The Development platform has the capability to provision environments in a variety of different configurations. Users can initiate a new environment and select from a predefined list of templates the application, the release and stack they wish to provision. Each month we host a new template with the latest release of Temenos suite. </p>
+<p>The environments are customisable in terms of Name and brief description to explain their purpose. The templates follow the official Temenos configuration stack but it can be customised for Releases 2016 onwards.   </p>
+<p>Create your own environment:</p>
+<p><img src="images/new-environment.png" alt=""></p>
+<p><br></p>
+<ul>
+<li>Fill Name and Description fields</li>
+<li>Select one of the available templates from dropdown list, based on your requirements</li>
+<li>Click <strong>Create environment</strong></li>
+</ul>
+<p><img src="images/new-environment-create.png" alt=""></p>
+<p><br></p>
+<ul>
+<li><strong>Templates</strong></li>
+</ul>
+<p>Check the list with all available templates. These are latest Retail Suites versions:</p>
+<p><img src="images/templates.png" alt=""></p>
 <h2 id="implementation-faqs"><strong>Implementation FAQs</strong></h2>
 <hr>
 <ul>
@@ -111,46 +149,13 @@
 </ul>
 <p>Sales queries will be handled via the Temenos Cloud (TemenosCloud@temenos.com) support team. Support is available through a dedicated online support portal for cloud infrastructure issues.  All Product issues remain through the Temenos Customer Support. </p>
 <h2 id="data-and-security-considerations"><strong>Data and Security Considerations</strong></h2>
-<p>The most important consideration with respect to data on the Temenos PaaS platform is that it for non-production use only.  For clarification, no &#39;personally identifiable information&#39;; &#39;confidential&#39; or &#39;sensitive&#39; data may be stored on any sandbox environments.</p>
+<p>The most important consideration with respect to data on the Temenos PaaS platform is that it for <strong>non-production use only</strong>.  For clarification, no &#39;personally identifiable information&#39;; &#39;confidential&#39; or &#39;sensitive&#39; data may be stored on any sandbox environments.</p>
 <p>Other considerations include:</p>
 <p>•   Data is stored in UK datacentres</p>
 <p>•   Data is encrypted in transit</p>
 <p>•   Access to sandbox management facilities requires username/password and/or SSH certificates</p>
 <p>•   Environments can be deleted immediately by the user. All client-related data will be deleted by Temenos 60 days 
 after the termination of the agreement</p>
-<h2 id="temenos-cloud-management-of-organisations-users-and-environments">Temenos Cloud Management of Organisations, Users and Environments</h2>
-<hr>
-<ul>
-<li><strong>Organisation ID</strong></li>
-</ul>
-<p>As a MarketPlace provider, you will receive an <strong>unique</strong> Organisation Id. Below is an example with an Organisation Id and the link to login:</p>
-<p><img src="images/login-screen.png" alt=""></p>
-<p><br></p>
-<ul>
-<li><strong>Users</strong></li>
-</ul>
-<p>Once logged, you can check the list of users linked to the current organisation.</p>
-<p>You can also add other users by clicking <strong>New user</strong> button.</p>
-<p><img src="images/users.png" alt=""></p>
-<p><br></p>
-<ul>
-<li><strong>Environments</strong></li>
-</ul>
-<p>Create your own environment:</p>
-<p><img src="images/new-environment.png" alt=""></p>
-<p><br></p>
-<ul>
-<li>Fill Name and Description fields</li>
-<li>Select one of the available templates from dropdown list, based on your requirements</li>
-<li>Click <strong>Create environment</strong></li>
-</ul>
-<p><img src="images/new-environment-create.png" alt=""></p>
-<p><br></p>
-<ul>
-<li><strong>Templates</strong></li>
-</ul>
-<p>Check the list with all available templates. These are latest Retail Suites versions:</p>
-<p><img src="images/templates.png" alt=""></p>
 <p><br></p>
               <hr>
               

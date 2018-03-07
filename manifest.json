@@ -1619,6 +1619,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/images/sandbox-templates.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/sandbox-templates.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/images/templates.png",
       "output": {
         "resource": {
@@ -1657,7 +1668,7 @@
       "output": {
         ".html": {
           "relative_path": "home/overview.html",
-          "hash": "wsvpzxa6V6gifyhNGqqVUQ=="
+          "hash": "QFQ1u/GvK0gU4+c1DGfCRw=="
         }
       },
       "is_incremental": false,
@@ -3159,7 +3170,7 @@
       "output": {
         ".html": {
           "relative_path": "home/temenos-cloud-templates.html",
-          "hash": "UDp1JUKntQatMqeip/ou0w=="
+          "hash": "7b/TfaWykbabwzo9E+KkhA=="
         }
       },
       "is_incremental": false,
