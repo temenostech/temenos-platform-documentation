@@ -3,8 +3,6 @@
   items:
     - name: Benefits
       href: ./benefits.md
-    - name: Users
-      href: ./users.md
 - name: FAQs
   href: ./faq.md
 - name: Architecture
@@ -12,16 +10,16 @@
   items:
     - name: Temenos Cloud Templates
       href: ./temenos-cloud-templates.md
-- name: Technical Guides
+- name: How to...
   href: ./techguides/index.md
   items:
-   - name: User Creation In PaaS
+   - name: How to Create User in PaaS?
      href: ./techguides/user-creation-in-paas.md
-   - name: Environment and Organisation Creation
+   - name: How to Create Environment and Organisation?
      href: ./techguides/environment-creation-in-paas.md
-   - name: Use GitLab Repository
+   - name: How to Use GitLab Repository?
      href: ./techguides/use-gitlab-repository.md
-   - name: T24 Development
+   - name: How to Develop with T24?
      href: ./techguides/t24-development.md
    - name: Troubleshooting
      href: ./techguides/troubleshooting.md
