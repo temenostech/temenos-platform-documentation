@@ -1,25 +1,22 @@
 - name: What is Temenos Cloud DevX Platform?
   href: ./overview.md
-  items:
-    - name: Benefits
-      href: ./benefits.md
-- name: FAQs
-  href: ./faq.md
 - name: Architecture
   href: ./architecture.md
   items:
     - name: Temenos Cloud Templates
       href: ./temenos-cloud-templates.md
+- name: FAQs
+  href: ./faq.md
 - name: How to...
   href: ./techguides/index.md
   items:
-   - name: How to Create User in PaaS?
+   - name: Create users
      href: ./techguides/user-creation-in-paas.md
-   - name: How to Create Environment and Organisation?
+   - name: Create environments and organisations
      href: ./techguides/environment-creation-in-paas.md
-   - name: How to Use GitLab Repository?
+   - name: Push configuration to an environment
      href: ./techguides/use-gitlab-repository.md
-   - name: How to Develop with T24?
+   - name: Develop T24 packages, plugins and Code
      href: ./techguides/t24-development.md
    - name: Troubleshooting
      href: ./techguides/troubleshooting.md

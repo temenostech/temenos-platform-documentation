@@ -1,18 +1,15 @@
 # **Temenos Cloud Development Platform**
 
-## **DevX** 
 
+### What is Temenos Cloud Platform?
 
-----------
+Temenos Cloud Platform is a type of cloud service offered by Temenos Cloud; it is a *Platform as a Service (PaaS)* that provides individuals and teams with the ability to manage and configure their own instances of Temenos applications and approved 3rd party Plug & Play applications from the Temenos ecosystem.
+
+## DevX
 
 ### What is Temenos DevX Platform?
 
 “DevX” is a cloud based infrastructure for use during development, test, implementation, and ongoing change with configurable and scalable Temenos Suites on-demand[**... see more**](./what-is-devx.md)
-
-
-### What is Temenos PaaS?
-
-Temenos PaaS is a type of cloud service offered by Temenos Cloud; it is a *Platform as a Service (PaaS)* that provides individuals and teams with the ability to manage and configure their own instances of Temenos applications and approved 3rd party Plug & Play applications from the Temenos ecosystem.
 
 
 ## **Features**
@@ -21,21 +18,31 @@ Temenos PaaS is a type of cloud service offered by Temenos Cloud; it is a *Platf
 
 ### What are the features of DevX?
 
-- Request and Provision identical environments within minutes 
-- Chose the application you wish from a predefined list of Temenos Suites
-- Deployment of change is fully automated; All types of change, configuration, updates and data are managed through a software configuration management repository
-- Stay in  control with metered usage and full reporting
-- You decide and manage your data loading
-- You can export your data at any point
-- You decide and manage scalability according your demands (Scale up / down)
-- Online access to live log data
-- Full access and control of your CoB and all job services.
-- You are in control of backup/rebuild of databases, at any point in time.
-- Decide and select updates for your OS.
+**Self-service environment provisioning**
+
+- An authenticated user, e.g. a developer or tester, has the ability to request an environment from the [catalogue of templates](./temenos-cloud-templates.md); this template will be materialised into compute, storage, and networks on the Temenos Cloud. See [architecture](./architecture.md). The platform administrator, e.g. the project manager, is in  control of number of the users and maximum number of running environments, thus having total control of the platform and its usage.
+
+**Secure configuration and environment management**
+
+- A developer, is able to configure a personal SSH Key on their user profile and use this key to securely push changes over SSH.  Deployment of change into the environment is fully automated for configuration, updates, plugins, add-ons and data.  These changes can be stored in a software configuration management repository and deployed to the environment via a Continuous Integration / Continuous Deployment process.
+
+**Controlling the environment**
+
+- A user is able to scale up, scale down, start, stop, delete, and export data from an environment.  Furthermore, a user is able to push a database into the configuration repository and rebuild the environment, thereby refreshing the database back to that point in time and re-apply transactions and configuration as required. 
+
+- As an example, a developer or a tester can load a database and collaborate to validate changes and test cases in a shared environment. Should these users need to delete or migrate an environment, they can export the data, create a fresh environment with the latest release, upload the data and continue working all managed through the portal.  When development activity requires additional resources, the users can easily scale up the environments and equally reduce capacity or stop it entirely.
+
+**Monitoring the environment**
+
+- A user can export the application log data, monitor the status of the environments (started, starting, stopped, stopping, rebuilding), and see the results of any application deployments.
 
 
+**Controlling the application**
 
-## Temenos Cloud Management of Users, Organisations and Environments 
+- The Temenos core banking template [insert link] exposes endpoints for the user interface and TAFJEE management screens that allows a user to control COB job services.
+
+
+## Managed Resources
 
 ----------
 
@@ -60,7 +67,7 @@ The Temenos Development Platform can provision environments in a variety of diff
 
 ----------
 
-The most important consideration with respect to data on the Temenos PaaS platform is that it for **non-production use only**.  For clarification, no 'personally identifiable information'; 'confidential' or 'sensitive' data may be stored on any sandbox environments.
+The most important consideration with respect to data on the Temenos DevX platform is that it for **non-production use only**.  For clarification, no 'personally identifiable information'; 'confidential' or 'sensitive' data may be stored on any sandbox environments.
 
 Other considerations include:
 
