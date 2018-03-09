@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "home/benefits.html",
-          "hash": "3GZBO5HbU1TBfTCRNX4ixw=="
+          "hash": "i7CW0aIGZREsK2USsNVdpw=="
         }
       },
       "is_incremental": false,
@@ -1530,6 +1530,18 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "home/faq.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/faq.html",
+          "hash": "mDfOM1cR08I87/sVJ3KfmA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Resource",
       "source_relative_path": "home/images/architecture-arrows.png",
       "output": {
@@ -1668,7 +1680,7 @@
       "output": {
         ".html": {
           "relative_path": "home/overview.html",
-          "hash": "QFQ1u/GvK0gU4+c1DGfCRw=="
+          "hash": "t/d0f/J56szXKot5BkuoOQ=="
         }
       },
       "is_incremental": false,
@@ -3182,7 +3194,19 @@
       "output": {
         ".html": {
           "relative_path": "home/toc.html",
-          "hash": "UJjvWjx35qMlGqUWiL4wKg=="
+          "hash": "dWrVE5uHurZdVMptM8yt6w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/users.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/users.html",
+          "hash": "36Gk7sIvsj436huKURZcSA=="
         }
       },
       "is_incremental": false,
