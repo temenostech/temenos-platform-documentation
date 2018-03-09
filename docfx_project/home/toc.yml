@@ -1,12 +1,12 @@
-- name: Overview
+- name: What is Temenos Cloud DevX Platform?
   href: ./overview.md
   items:
     - name: Benefits
       href: ./benefits.md
     - name: Users
       href: ./users.md
-    - name: FAQ
-      href: ./faq.md
+- name: FAQs
+  href: ./faq.md
 - name: Architecture
   href: ./architecture.md
   items:
@@ -25,3 +25,5 @@
      href: ./techguides/t24-development.md
    - name: Troubleshooting
      href: ./techguides/troubleshooting.md
+- name: Getting Support
+  href: ./support.md
