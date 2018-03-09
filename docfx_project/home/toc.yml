@@ -3,6 +3,10 @@
   items:
     - name: Benefits
       href: ./benefits.md
+    - name: Users
+      href: ./users.md
+    - name: FAQ
+      href: ./faq.md
 - name: Architecture
   href: ./architecture.md
   items:

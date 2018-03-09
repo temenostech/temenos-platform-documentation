@@ -19,27 +19,20 @@ Temenos PaaS is a type of cloud service offered by Temenos Cloud; it is a *Platf
 
 ----------
 
-### What are the key features of DevX?
+### What are the features of DevX?
 
-•	Immediate provisioning of identical environments
+- Request and Provision identical environments within minutes 
+- Chose the application you wish from a predefined list of Temenos Suites
+- Deployment of change is fully automated; All types of change, configuration, updates and data are managed through a software configuration management repository
+- Stay in  control with metered usage and full reporting
+- You decide and manage your data loading
+- You can export your data at any point
+- You decide and manage scalability according your demands (Scale up / down)
+- Online access to live log data
+- Full access and control of your CoB and all job services.
+- You are in control of backup/rebuild of databases, at any point in time.
+- Decide and select updates for your OS.
 
-•	Deployment of change is fully automated; with plugins, add-ons, updates, packages, data, and configuration all being managed through a software configuration management repository
-
-•	Metered usage and full reporting
-
-•	Self-service data loading
-
-•	Self-service data export
-
-•	Self-service horizontally scalable (Scale up / down)
-
-•	Self-service access to log data
-
-•	Self-service job initiation
-
-•	Point in time rebuild of database (Backup / Restore)
-
-•	Managed OS patching
 
 
 ## Temenos Cloud Management of Organisations, Users and Environments 
@@ -61,15 +54,6 @@ The confirmation of your Organisation activation will contain the link and acces
 
 <br>
 
-- **Users**
-
-The Administrator can navigate to the Users section on the portal, create more users and invite them on the Development platform using the URL link. This way the administrator is in control of who receives the URL link and which users can access the Organisation.
-
-The users of the platform can access the Organisation, view their user profile and change their password. Should the users requires access to the source code repository they need to provide their public SSH Keys on the user profile section to gain access.
-
-![](./images/users.png)
-
-<br>
 
 - **Environments**
 
@@ -99,28 +83,9 @@ Check the list with all available templates. These are latest Retail Suites vers
 ![](./images/templates.png)
 
 
-## **Implementation FAQs**
+## **Data and Security Considerations**
 
 ----------
-
-- **How can a customer gain access to DevX?**
-
-The client should go through the normal procurement process for a Temenos Cloud service.  Temenos regional sales. 
-
-- **What are the minimum system requirements?**
-
-Internet access over https.
-
-- **How can a customer deploy DevX?**
-
-The clients will be supplied with a URL and initial login, from there they will be able to create their own environments at their chosen release, add users for a developer or team of developers and then they can create the environments immediately. The users can create up to the maximum number of environments purchased, once the environment is destroyed, another individual or team can create a new environment up to the maximum. This means that many teams can share a single subscription, very useful to remove barriers within project and in fully automated testing.
-
-- **Who will handle customers’ queries/issues for DevX?**
-
-Sales queries will be handled via the Temenos Cloud (TemenosCloud@temenos.com) support team. Support is available through a dedicated online support portal for cloud infrastructure issues.  All Product issues remain through the Temenos Customer Support. 
-
-
-## **Data and Security Considerations**
 
 The most important consideration with respect to data on the Temenos PaaS platform is that it for **non-production use only**.  For clarification, no 'personally identifiable information'; 'confidential' or 'sensitive' data may be stored on any sandbox environments.
 
