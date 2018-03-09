@@ -17,6 +17,8 @@
   items:
    - name: User Creation In PaaS
      href: ./techguides/user-creation-in-paas.md
+   - name: Environment and Organisation Creation
+     href: ./techguides/environment-creation-in-paas.md
    - name: Use GitLab Repository
      href: ./techguides/use-gitlab-repository.md
    - name: T24 Development

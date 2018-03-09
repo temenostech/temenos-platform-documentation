@@ -5,14 +5,14 @@
 
 ----------
 
-### What is Temenos PaaS?
-
-Temenos PaaS is a type of cloud service offered by Temenos Cloud; it is a *Platform as a Service (PaaS)* that provides individuals and teams with the ability to manage and configure their own instances of Temenos applications and approved 3rd party Plug & Play applications from the Temenos ecosystem.
-
-### What is DevX?
+### What is Temenos DevX Platform?
 
 “DevX” is a cloud based infrastructure for use during development, test, implementation, and ongoing change with configurable and scalable Temenos Suites on-demand. DevX enables you to create Environments, i.e. Temenos Suites on-demand, for non-production use in the cloud.  Environments can be requested and provisioned within minutes rather than weeks helping you accelerate your projects. Retail Suite is readily available, with all other Temenos Suites (Corporate, Wealth, Micro-Finance and Islamic Banking) available on request and allow you to develop and test your proof of concept, share development environments across dispersed teams, replicate production environments or use them for training. The speed, reliability, and agility of these environments will instantly add value to your implementation and scale your project delivery capacity.
 
+
+### What is Temenos PaaS?
+
+Temenos PaaS is a type of cloud service offered by Temenos Cloud; it is a *Platform as a Service (PaaS)* that provides individuals and teams with the ability to manage and configure their own instances of Temenos applications and approved 3rd party Plug & Play applications from the Temenos ecosystem.
 
 
 ## **Features**
@@ -35,52 +35,25 @@ Temenos PaaS is a type of cloud service offered by Temenos Cloud; it is a *Platf
 
 
 
-## Temenos Cloud Management of Organisations, Users and Environments 
+## Temenos Cloud Management of Users, Organisations and Environments 
 
 ----------
 
+- **Users**
 
-- **Organisation ID**
+The users of the platform can access the Organisation, view their user profile and change their password. 
 
-The Temenos Development Platform support multitenancy and Organisations are designed to be distinctive accounts.  
+Please check [**here**](./users.md) more details about Users.
 
-Upon subscription you'll receive a **unique** Organisation Id as a URL link such as: 
+- **Organisation and Environments**
 
-`http://portal.staging.temenos.cloud:4200/organisations/1cg74hgepdevio/login`
+The Temenos Development Platform support multitenancy and Organisations are designed to be distinctive accounts.  Also it has the capability to provision environments in a variety of different configurations.
 
-The confirmation of your Organisation activation will contain the link and access instructions to your designated Organisation administrator. The administrator is the first and only user.
-
-![](./images/login-screen.png)
-
-<br>
-
-
-- **Environments**
-
-The Development platform has the capability to provision environments in a variety of different configurations. Users can initiate a new environment and select from a predefined list of templates the application, the release and stack they wish to provision. Each month we host a new template with the latest release of Temenos suite. 
-
-The environments are customisable in terms of Name and brief description to explain their purpose. The templates follow the official Temenos configuration stack but it can be customised for Releases 2016 onwards.   
-
-
-Create your own environment:
-
-![](./images/new-environment.png)
-
-<br>
-
- - Fill Name and Description fields
- - Select one of the available templates from dropdown list, based on your requirements
- - Click **Create environment**
-
-![](./images/new-environment-create.png)
-
-<br>
+Please check [**here**](./techguides/environment-creation-in-paas.md) more details about Temenos cloud management of organisations and environments.
 
 - **Templates**
 
-Check the list with all available templates. These are latest Retail Suites versions:
-
-![](./images/templates.png)
+The Temenos Development Platform can provision environments in a variety of different configurations through the concept of 'Templates'. Please check [**here**](./temenos-cloud-templates.md) for more details. 
 
 
 ## **Data and Security Considerations**
