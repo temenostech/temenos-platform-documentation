@@ -1,6 +1,6 @@
 ### What is Temenos DevX Platform?
 
-“DevX” is a cloud based infrastructure for use during development, test, implementation, and ongoing change with configurable and scalable Temenos Suites on-demand[**... see more**](./what-is-devx.md)
+“DevX” is a cloud based platform for use during development, test, implementation, and ongoing change with configurable and scalable Temenos Suites on-demand.
 
 
 ## **Features**
@@ -11,7 +11,7 @@
 
 **Self-service environment provisioning**
 
-- An authenticated user, e.g. a developer or tester, has the ability to request an environment from the [catalogue of templates](./temenos-cloud-templates.md); this template will be materialised into compute, storage, and networks on the Temenos Cloud. See [architecture](./architecture.md). The platform administrator, e.g. the project manager, is in  control of number of the users and maximum number of running environments, thus having total control of the platform and its usage.
+- An authenticated user, e.g. a developer or tester, has the ability to request an environment from the catalogue of [templates](./temenos-cloud-templates.md); this template will be materialised into compute, storage, and networks on the Temenos Cloud. See [architecture](./architecture.md). The platform administrator, e.g. the project manager, is in  control of number of the users and maximum number of running environments, thus having total control of the platform and its usage.
 
 **Secure configuration and environment management**
 
@@ -30,7 +30,7 @@
 
 **Controlling the application**
 
-- The Temenos core banking template [insert link] exposes endpoints for the user interface and TAFJEE management screens that allows a user to control COB job services.
+- The Temenos core banking template exposes endpoints for the user interface and TAFJEE management screens that allows a user to control COB job services.
 
 
 ## Managed Resources
@@ -39,34 +39,36 @@
 
 **Users**
 
-The users of the platform can access the Organisation, view their user profile and change their password. 
+Each user has their own profile within an Organisation.
 
 Please check [**here**](./users.md) more details about Users.
 
-**Organisation and Environments**
+**Environments**
 
-The Temenos Development Platform support multitenancy and Organisations are designed to be distinctive accounts.  Also it has the capability to provision environments in a variety of different configurations.
+An environment is an instance of an application and the platform provides the facilities to manage the application configuration.
 
-Please check [**here**](./techguides/environment-creation-in-paas.md) more details about Temenos cloud management of organisations and environments.
+**Organisations**
+
+The users of the platform can provision and manage the environments within their Organisation.
+
+Please check [**here**](./techguides/environment-creation-in-paas.md) for more details about Temenos Cloud management of Organisations and Environments.
 
 **Templates**
 
-The Temenos Development Platform can provision environments in a variety of different configurations through the concept of 'Templates'. Please check [**here**](./temenos-cloud-templates.md) for more details. 
+Environments can be provisioned using a variety of pre-defined application, processing, storage, network, and operating system configurations. Please check [**here**](./temenos-cloud-templates.md) for more details. 
 
 
 ## **Data and Security Considerations**
 
 ----------
 
-The most important consideration with respect to data on the Temenos DevX platform is that it for **non-production use only**.  For clarification, no 'personally identifiable information'; 'confidential' or 'sensitive' data may be stored on any sandbox environments.
-
-Other considerations include:
+The Temenos DevX platform is for **non-production use only**.  No 'personally identifiable information'; 'confidential' or 'sensitive' data should be stored on any Environment.
 
 •   Data is stored in UK datacentres
 
 •   Data is encrypted in transit
 
-•   Access to sandbox management facilities requires username/password and/or SSH certificates
+•   Access to management facilities requires username/password and/or SSH certificates
 
 •   Environments can be deleted immediately by the user. All client-related data will be deleted by Temenos 60 days 
 after the termination of the agreement
