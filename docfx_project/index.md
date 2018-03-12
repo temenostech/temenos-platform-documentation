@@ -4,13 +4,13 @@
 
 ### Benefits
 
-- Simple to reproduce identical environments
-
 - Start development and testing in minutes, not weeks
 
-- A subscription service that can reduce operational expense
-
 - Immediate environment provisioning can acceleration all your projects
+
+- Simple to reproduce identical environments from templates
+
+- A subscription service that means you don't need to buy and manage expensive hardware
 
 - Self-service environment provisioning that is able to provide your teams with autonomy or centralised control
 
