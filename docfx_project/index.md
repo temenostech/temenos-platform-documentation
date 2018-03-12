@@ -1,6 +1,6 @@
 # Welcome to the **Temenos Cloud Platform** documentation portal
 
-- **Temenos Cloud Platform** is a suite of products offered by Temenos Cloud; it is a *Platform as a Service (PaaS)* that provides individuals and teams with the ability to manage and configure their own instances of Temenos applications and approved 3rd party Plug & Play applications from the Temenos ecosystem.
+**Temenos Cloud Platform** is a suite of products offered by Temenos Cloud; it is a *Platform as a Service (PaaS)* that provides individuals and teams with the ability to manage and configure their own instances of Temenos applications and approved 3rd party Plug & Play applications from the Temenos ecosystem.
 
 ### Benefits
 
