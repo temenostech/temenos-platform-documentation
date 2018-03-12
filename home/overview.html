@@ -73,13 +73,13 @@
             <article class="content wrap" id="_content" data-uid="">
 <h3 id="what-is-temenos-devx-platform">What is Temenos DevX Platform?</h3>
 
-<p>“DevX” is a cloud based infrastructure for use during development, test, implementation, and ongoing change with configurable and scalable Temenos Suites on-demand<a href="what-is-devx.html"><strong>... see more</strong></a></p>
+<p>“DevX” is a cloud based platform for use during development, test, implementation, and ongoing change with configurable and scalable Temenos Suites on-demand.</p>
 <h2 id="features"><strong>Features</strong></h2>
 <hr>
 <h3 id="what-are-the-features-of-devx">What are the features of DevX?</h3>
 <p><strong>Self-service environment provisioning</strong></p>
 <ul>
-<li>An authenticated user, e.g. a developer or tester, has the ability to request an environment from the <a href="temenos-cloud-templates.html">catalogue of templates</a>; this template will be materialised into compute, storage, and networks on the Temenos Cloud. See <a href="architecture.html">architecture</a>. The platform administrator, e.g. the project manager, is in  control of number of the users and maximum number of running environments, thus having total control of the platform and its usage.</li>
+<li>An authenticated user, e.g. a developer or tester, has the ability to request an environment from the catalogue of <a href="temenos-cloud-templates.html">templates</a>; this template will be materialised into compute, storage, and networks on the Temenos Cloud. See <a href="architecture.html">architecture</a>. The platform administrator, e.g. the project manager, is in  control of number of the users and maximum number of running environments, thus having total control of the platform and its usage.</li>
 </ul>
 <p><strong>Secure configuration and environment management</strong></p>
 <ul>
@@ -98,25 +98,26 @@
 </ul>
 <p><strong>Controlling the application</strong></p>
 <ul>
-<li>The Temenos core banking template [insert link] exposes endpoints for the user interface and TAFJEE management screens that allows a user to control COB job services.</li>
+<li>The Temenos core banking template exposes endpoints for the user interface and TAFJEE management screens that allows a user to control COB job services.</li>
 </ul>
 <h2 id="managed-resources">Managed Resources</h2>
 <hr>
 <p><strong>Users</strong></p>
-<p>The users of the platform can access the Organisation, view their user profile and change their password. </p>
+<p>Each user has their own profile within an Organisation.</p>
 <p>Please check <a href="users.html"><strong>here</strong></a> more details about Users.</p>
-<p><strong>Organisation and Environments</strong></p>
-<p>The Temenos Development Platform support multitenancy and Organisations are designed to be distinctive accounts.  Also it has the capability to provision environments in a variety of different configurations.</p>
-<p>Please check <a href="techguides/environment-creation-in-paas.html"><strong>here</strong></a> more details about Temenos cloud management of organisations and environments.</p>
+<p><strong>Environments</strong></p>
+<p>An environment is an instance of an application and the platform provides the facilities to manage the application configuration.</p>
+<p><strong>Organisations</strong></p>
+<p>The users of the platform can provision and manage the environments within their Organisation.</p>
+<p>Please check <a href="techguides/environment-creation-in-paas.html"><strong>here</strong></a> for more details about Temenos Cloud management of Organisations and Environments.</p>
 <p><strong>Templates</strong></p>
-<p>The Temenos Development Platform can provision environments in a variety of different configurations through the concept of &#39;Templates&#39;. Please check <a href="temenos-cloud-templates.html"><strong>here</strong></a> for more details. </p>
+<p>Environments can be provisioned using a variety of pre-defined application, processing, storage, network, and operating system configurations. Please check <a href="temenos-cloud-templates.html"><strong>here</strong></a> for more details. </p>
 <h2 id="data-and-security-considerations"><strong>Data and Security Considerations</strong></h2>
 <hr>
-<p>The most important consideration with respect to data on the Temenos DevX platform is that it for <strong>non-production use only</strong>.  For clarification, no &#39;personally identifiable information&#39;; &#39;confidential&#39; or &#39;sensitive&#39; data may be stored on any sandbox environments.</p>
-<p>Other considerations include:</p>
+<p>The Temenos DevX platform is for <strong>non-production use only</strong>.  No &#39;personally identifiable information&#39;; &#39;confidential&#39; or &#39;sensitive&#39; data should be stored on any Environment.</p>
 <p>•   Data is stored in UK datacentres</p>
 <p>•   Data is encrypted in transit</p>
-<p>•   Access to sandbox management facilities requires username/password and/or SSH certificates</p>
+<p>•   Access to management facilities requires username/password and/or SSH certificates</p>
 <p>•   Environments can be deleted immediately by the user. All client-related data will be deleted by Temenos 60 days 
 after the termination of the agreement</p>
 <p><br></p>
