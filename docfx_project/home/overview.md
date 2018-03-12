@@ -1,12 +1,3 @@
-# **Temenos Cloud Development Platform**
-
-
-### What is Temenos Cloud Platform?
-
-Temenos Cloud Platform is a type of cloud service offered by Temenos Cloud; it is a *Platform as a Service (PaaS)* that provides individuals and teams with the ability to manage and configure their own instances of Temenos applications and approved 3rd party Plug & Play applications from the Temenos ecosystem.
-
-## DevX
-
 ### What is Temenos DevX Platform?
 
 “DevX” is a cloud based infrastructure for use during development, test, implementation, and ongoing change with configurable and scalable Temenos Suites on-demand[**... see more**](./what-is-devx.md)
@@ -46,19 +37,19 @@ Temenos Cloud Platform is a type of cloud service offered by Temenos Cloud; it i
 
 ----------
 
-- **Users**
+**Users**
 
 The users of the platform can access the Organisation, view their user profile and change their password. 
 
 Please check [**here**](./users.md) more details about Users.
 
-- **Organisation and Environments**
+**Organisation and Environments**
 
 The Temenos Development Platform support multitenancy and Organisations are designed to be distinctive accounts.  Also it has the capability to provision environments in a variety of different configurations.
 
 Please check [**here**](./techguides/environment-creation-in-paas.md) more details about Temenos cloud management of organisations and environments.
 
-- **Templates**
+**Templates**
 
 The Temenos Development Platform can provision environments in a variety of different configurations through the concept of 'Templates'. Please check [**here**](./temenos-cloud-templates.md) for more details. 
 
