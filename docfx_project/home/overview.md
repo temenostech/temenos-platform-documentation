@@ -1,6 +1,6 @@
 ### What is Temenos DevX Platform?
 
-“DevX” is a cloud based platform for use during development, test, implementation, and ongoing change with configurable and scalable Temenos Suites on-demand.
+“DevX” is a cloud based service for use during development, test, implementation, and ongoing change with configurable and scalable Temenos Suites on-demand.  This software service provides clients with access to a portal interface through which they can provision cloud environments using software defined templates. Once provisioned client can interact with these environments through portal tools, design studio integration and the standard Temenos product web and APIs.
 
 
 ## **Features**
