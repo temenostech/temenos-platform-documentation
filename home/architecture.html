@@ -75,20 +75,20 @@
 
 <h3 id="where-does-temenos-devx-fit-into-the-enterprise-it-landscape"><strong>Where does Temenos DevX fit into the enterprise IT landscape?</strong></h3>
 <hr>
-<p>The Temenos DevX platform promotes the concept of simplified and standardised change promotion through the IT landscape.</p>
+<p>The Temenos DevX service promotes the concept of simplified and standardised change promotion through the IT landscape.</p>
 <p><img src="images/architecture-arrows.png" alt=""></p>
 <p>Typical organisations have a number of non-production (i.e. development/test) environments, where changes are implemented and checked prior to deployment to production systems. The Devops movement seeks to improve this QA process through means of automation, which both allows an increase in speed in change promotion, and a reduction in the risk of manual errors when promoting changes.</p>
-<p>The Temenos DevX platform includes a simple and repeatable method of collating changes (both configuration and customisation) which subsequently is simple to promote from environment to environment.</p>
-<p>In addition, the core function of the Temenos DevX platform is to simplify the environment provisioning process, which means if extra stages in the change flow are required (e.g. for additional testing phases), it becomes far simpler to spin up temporary environments for these purposes.</p>
-<p>It should be noted that the Temenos DevX platform only supplies non-production environments (also known as &#39;sandboxes&#39;), which means organisations will still require at least one non-production environment on representative hardware in order to sanity check changes prior to production release (see example below).</p>
+<p>The Temenos DevX includes a simple and repeatable method of collating changes (both configuration and customisation) which subsequently is simple to promote from environment to environment.</p>
+<p>In addition, the core function of the Temenos DevX  is to simplify the environment provisioning process, which means if extra stages in the change flow are required (e.g. for additional testing phases), it becomes far simpler to spin up temporary environments for these purposes.</p>
+<p>It should be noted that the Temenos DevX only supplies non-production environments (also known as &#39;sandboxes&#39;), which means organisations will still require at least one non-production environment on representative hardware in order to sanity check changes prior to production release (see example below).</p>
 <p><img src="images/architecture-paas-deploy.png" alt=""></p>
 <p>Delegating platform and infrastructure responsibilities to a third party allows organisations to concentrate on what is important to them - applications and data.</p>
 <p><img src="images/architecture-responsabilities.png" alt=""></p>
-<p>The Temenos DevX platform may be used for simple environment provisioning, or may be augmented by additional tools (such as Continuous Integration tooling) to provide a streamlined and automated development experience. The change promotion mechansim within the DevX platform is simple to plug into standard CI tooling to push code/config/data from environment to environment.  An example development flow is shown below:</p>
+<p>The Temenos DevX may be used for simple environment provisioning, or may be augmented by additional tools (such as Continuous Integration tooling) to provide a streamlined and automated development experience. The change promotion mechansim within the DevX  is simple to plug into standard CI tooling to push code/config/data from environment to environment.  An example development flow is shown below:</p>
 <p><img src="images/architecture-process.png" alt=""></p>
 <h3 id="what-are-the-components-of-temenos-devx"><strong>What are the components of Temenos DevX?</strong></h3>
 <hr>
-<p>Sandbox environments are managed by the DevX Platform Portal, and are comprised of distinct components as described below:</p>
+<p>Sandbox environments are managed by the DevX Portal, and are comprised of distinct components as described below:</p>
 <p><img src="images/architecture-customer-facing-systems.png" alt=""></p>
 <table>
 <thead>
@@ -100,11 +100,11 @@
 <tbody>
 <tr>
 <td style="text-align:left">Portal</td>
-<td style="text-align:left">The Portal is the front-end component of the DevX Platform which allows users to perform management functions across sandbox environments.  These functions include user management and sandbox provisioning/scaling.</td>
+<td style="text-align:left">The Portal is the front-end component of the DevX which allows users to perform management functions across sandbox environments.  These functions include user management and sandbox provisioning/scaling.</td>
 </tr>
 <tr>
 <td style="text-align:left">Configuration Repository</td>
-<td style="text-align:left">The Configuration Repository is the &#39;change hub&#39; for the DevX Platform.  It supports configuration and customisation (per sandbox), including T24 updates, custom config/code packages, database imports and third party plug-ins/add-ons.</td>
+<td style="text-align:left">The Configuration Repository is the &#39;change hub&#39; for the DevX.  It supports configuration and customisation (per sandbox), including T24 updates, custom config/code packages, database imports and third party plug-ins/add-ons.</td>
 </tr>
 <tr>
 <td style="text-align:left">T24 Instance</td>
@@ -178,7 +178,7 @@
 <tbody>
 <tr>
 <td style="text-align:left">Git</td>
-<td style="text-align:left">Git is a version control system, used by the DevX platform to manage the Configuration Repository</td>
+<td style="text-align:left">Git (/ɡɪt/) is a version control system for tracking changes in computer files and coordinating work on those files among multiple people.  A client program for Git is required to push artefacts into the configuration repository.</td>
 </tr>
 <tr>
 <td style="text-align:left">SFTP Client</td>
