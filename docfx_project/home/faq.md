@@ -12,7 +12,7 @@ Internet access over https.
 
 - **How can a customer deploy DevX?**
 
-The clients will be supplied with a URL and initial login, from there they will be able to create their own environments at their chosen release, add users for a developer or team of developers and then they can create the environments immediately. The users can create up to the maximum number of environments purchased, once the environment is destroyed, another individual or team can create a new environment up to the maximum. This means that many teams can share a single subscription, very useful to remove barriers within project and in fully automated testing.
+The clients will be supplied with a URL and initial login, from there they will be able to create their own environments at their chosen release, add users for a developer or team of developers and then they can create the environments immediately. The users can create up to the maximum number of environments purchased, once the environment is destroyed, another individual or team can create a new environment up to the maximum. Thus many users can share a single subscription, removing collaboration barriers accross the project team while supporting automated testing.
 
 - **Who will handle customers’ queries/issues for DevX?**
 
