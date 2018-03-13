@@ -62,7 +62,7 @@ Environments can be provisioned using a variety of pre-defined application, proc
 
 ----------
 
-The Temenos DevX  is for **non-production use only**.  No 'personal data'; 'confidential' or 'sensitive' data should be stored on any Environment.
+The Temenos DevX  is for **non-production use only**, unless otherwise stated.  No 'personal data'; 'confidential' or 'sensitive' data should be stored on any Environment.
 
 •   Data is stored in UK datacentres
 
