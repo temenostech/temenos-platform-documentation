@@ -12,7 +12,7 @@ For this purpose, you need to have access to:
  - Temenos Sandbox(cloud)
  - Tortoise Git(locally)  - download from [here](https://tortoisegit.org/download/ "Tortoise")
  
-A development package (containing Design Studio, T24 libraries and TAFJ) is provided by Temenos MarketPlace and it is pre-configured in order to be able to introspect T24 application hosted in MarketPlace Could Infrastructure.
+A development package (containing Design Studio, T24 libraries and TAFJ) is provided by Temenos  and it is pre-configured in order to be able to introspect T24 application hosted in Temenos Could Development Dev-X.
 This package is adapted according to the T24 version of your sandbox and it is provided as a .zip file. After extracting it in your local machine to any location, the bellow folders and files should exist:
 ![dev package](./images/dev-package.png)  
 The development package is pre-configured to be extracted in _C:\TemenosDev_ path. If the package is extracted in another path(Your_DEV_Path), make sure you make the bellow changes to the development package:
@@ -28,7 +28,7 @@ To be able to interrogate the sandbox database, a series of updates must be appl
 |temn.tafj.jdbc.username|	t24 |
 |temn.tafj.jdbc.password|	t24 |
 > [!Note]
-> In order to get the database IP of your Sandbox, contact MarketPlace team at <br>marketplace-support@temenos.com.
+> In order to get the database IP of your Sandbox, contact TemenosCloud team at <br>TemenosCloud@temenos.com.
  
 # Create New Project in Design Studio #
 In order to accomplish the development actions presented at the beginning of the guide, you need to create a new project in Design Studio.
