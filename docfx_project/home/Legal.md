@@ -1,4 +1,4 @@
-### Legal Input and Other Items
+### Legal and Other Items
 
 ----------
 
