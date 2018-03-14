@@ -5,6 +5,18 @@
   "files": [
     {
       "type": "Conceptual",
+      "source_relative_path": "home/Legal.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/Legal.html",
+          "hash": "dGKbj8oeoa3Tu9zNL5o17Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "home/architecture.md",
       "output": {
         ".html": {
