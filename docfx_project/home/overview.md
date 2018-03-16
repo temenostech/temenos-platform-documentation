@@ -7,8 +7,6 @@
 
 ----------
 
-### What are the features of DevX?
-
 **Self-service environment provisioning**
 
 - An authenticated user, e.g. a developer or tester, has the ability to request an environment from the catalogue of [templates](./temenos-cloud-templates.md); this template will be materialised into compute, storage, and networks on the Temenos Cloud. See [architecture](./architecture.md). The  administrator, e.g. the project manager, is in  control of number of the users and maximum number of running environments, thus having total control of the platform and its usage.
