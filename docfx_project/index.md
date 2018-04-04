@@ -17,7 +17,7 @@
 
 ### Services
 
-- **DevX** is a cloud based service for use during development, test, implementation, and ongoing change with configurable and scalable Temenos Suites on-demand. Click [**here**](./home/overview.md) to find out more.
+- **Development Platform** is a cloud based service for use during development, test, implementation, and ongoing change with configurable and scalable Temenos Suites on-demand. Click [**here**](./home/overview.md) to find out more.
 
 
 
