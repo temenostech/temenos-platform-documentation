@@ -1,4 +1,4 @@
-## **What are the benefits of DevX?**
+## **What are the benefits of Temenos Development Platform?**
 
 ----------
 
