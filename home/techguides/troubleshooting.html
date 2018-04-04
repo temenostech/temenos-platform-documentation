@@ -73,7 +73,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h2 id="introduction">Introduction</h2>
 
-<p>This user guide shows different ways of accessing details related to your sandbox when deploying the following:  </p>
+<p>This user guide shows different ways of accessing details related to your development environment when deploying the following:  </p>
 <ul>
 <li>Design Studio Packages</li>
 <li>Plugins</li>
@@ -111,23 +111,23 @@
 </li>
 </ul>
 <h1 id="2-tafjee-monitoring-tool">2. TAFJEE Monitoring Tool</h1>
-<p>TAFJEE Monitoring Tool can be used in the following situations:<br>-&gt; To get the TAFJ installation details from your Sandbox (using <strong>tDiag</strong> Servlet)<br>-&gt; To get the compilation details for a T24 routine from your Sandbox (using <strong>tShow</strong> Servlet)<br>-&gt; To access various logs from your Sandbox like Database log or Runtime log (using <strong>Logger</strong> Servlet)<br>-&gt; To access como content from your Sandbox (using <strong>Como</strong> Servlet)<br>-&gt; To execute DBTools commands (using <strong>DBTools</strong> Servlet).  </p>
-<p>To access the TAFJE Monitoring Tool for your Sandbox, log-in to your organisation in PaaS Portal, go to your enviroment page and click on the <strong>MONITOR APPLICATION</strong> Endpoint for the T24 application.<br><img src="images/monitor-application.png" alt="monitor application"><br>The bellow page is opened from which various servlets can be accessed.<br><img src="images/log-files.png" alt="log files">  </p>
+<p>TAFJEE Monitoring Tool can be used in the following situations:<br>-&gt; To get the TAFJ installation details from your Environment (using <strong>tDiag</strong> Servlet)<br>-&gt; To get the compilation details for a T24 routine from your Environment (using <strong>tShow</strong> Servlet)<br>-&gt; To access various logs from your Environment like Database log or Runtime log (using <strong>Logger</strong> Servlet)<br>-&gt; To access como content from your Environment (using <strong>Como</strong> Servlet)<br>-&gt; To execute DBTools commands (using <strong>DBTools</strong> Servlet).  </p>
+<p>To access the TAFJE Monitoring Tool for your Environment, log-in to your organisation in PaaS Portal, go to your enviroment page and click on the <strong>MONITOR APPLICATION</strong> Endpoint for the T24 application.<br><img src="images/monitor-application.png" alt="monitor application"><br>The bellow page is opened from which various servlets can be accessed.<br><img src="images/log-files.png" alt="log files">  </p>
 <h2 id="tafj-environment-information">TAFJ Environment Information</h2>
 <ul>
-<li>To view various information about the TAFJ Environment from your Sandbox, access the TAFJ Monitoring Tool of your Sandbox from PaaS Portal and select <strong>tDiag</strong> option from the <strong>Diagnostic</strong> section.<br><img src="images/tDiag_1.png" alt="tDiag 1">  </li>
+<li>To view various information about the TAFJ Environment from your Environment, access the TAFJ Monitoring Tool of your Environment from PaaS Portal and select <strong>tDiag</strong> option from the <strong>Diagnostic</strong> section.<br><img src="images/tDiag_1.png" alt="tDiag 1">  </li>
 <li>The next page is opened in which information like TAFJ installation details, Environment details, TAFJ Runtime properties, T24 Monitoring properties and TAFJ Session Monitor properties can be found.<br><img src="images/tDiag_2.png" alt="tDiag 2">  </li>
 </ul>
 <h2 id="t24-routine-information">T24 Routine Information</h2>
 <ul>
-<li>To view the compilation details for a T24 Routine from your Sandbox, access the TAFJ Monitoring Tool of your Sandbox from PaaS Portal and select <strong>tShow</strong> option from the <strong>Diagnostic</strong> section.<br><img src="images/tShow_1.png" alt="tShow 1">  </li>
+<li>To view the compilation details for a T24 Routine from your Environment, access the TAFJ Monitoring Tool of your Environment from PaaS Portal and select <strong>tShow</strong> option from the <strong>Diagnostic</strong> section.<br><img src="images/tShow_1.png" alt="tShow 1">  </li>
 <li>The next page is opened in which you must enter the name of the T24 Routine. Click <strong>Submit</strong> to get the compilation details.<br><img src="images/tShow_2.png" alt="tShow 2">  </li>
 <li>The details like compilation date or the .jar file that contains the class of the T24 Routine are displayed.
 <img src="images/tShow_3.png" alt="tShow 3">  </li>
 </ul>
 <h2 id="logs-information">Logs Information</h2>
 <ul>
-<li>To view different log files from your Sandbox(Database log/Runtime log), go to the TAFJ Monitoring Tool of your Sandbox from PaaS Portal and select <strong>Log files</strong> option from the <strong>Troubleshooting</strong> section.<br><img src="images/log_files_1.png" alt="log files 1">  </li>
+<li>To view different log files from your Environment (Database log/Runtime log), go to the TAFJ Monitoring Tool of your Environment from PaaS Portal and select <strong>Log files</strong> option from the <strong>Troubleshooting</strong> section.<br><img src="images/log_files_1.png" alt="log files 1">  </li>
 <li>The next page is opened in which you can select any log from the list and change dynamically the log level (6 log levels are available: FATAL, ERROR, WARN, INFO, DEBUG, TRACE).<br><img src="images/log_files_2.png" alt="log files 2">  </li>
 <li>For example, to view the <strong>Database log</strong> for a specific level, go to the Database log part of the page, choose the appropriate level and click <strong>View</strong>.<br><img src="images/log_files_3.png" alt="log files 3">  </li>
 <li>The Database log information for the selected level is displayed.
@@ -137,15 +137,15 @@
 </div>
 <h2 id="como-information">Como Information</h2>
 <ul>
-<li>The TAFJ Monitoring Tool offers the possibility of viewing the log files generated when running different tSAs(Temenos Service Agents) or when installing T24 packages or T24 updates in your Sandbox. This is achieved with the aid of the Como servlet which provides direct access to the &amp;COMO&amp; folder content from your Sandbox.<br>To view the Como content, go to the TAFJ Monitoring Tool of your Sandbox from PaaS Portal and select <strong>Como files</strong> option from the <strong>Troubleshooting</strong> section.<br><img src="images/como_files_1.png" alt="como files 1">  </li>
+<li>The TAFJ Monitoring Tool offers the possibility of viewing the log files generated when running different tSAs(Temenos Service Agents) or when installing T24 packages or T24 updates in your Environment. This is achieved with the aid of the Como servlet which provides direct access to the &amp;COMO&amp; folder content from your Environment.<br>To view the Como content, go to the TAFJ Monitoring Tool of your Environment from the Development platform portal and select <strong>Como files</strong> option from the <strong>Troubleshooting</strong> section.<br><img src="images/como_files_1.png" alt="como files 1">  </li>
 <li>The next page is opened in which you can select for which Como log do you want to <strong>View</strong> the details.<br><img src="images/como_files_2.png" alt="como files 2">  </li>
 <li>In the bellow example, the Como log generated for installing a T24 package is displayed.<br><img src="images/como_files_3.png" alt="como files 3">  </li>
 </ul>
-<div class="NOTE"><h5>Note</h5><p>Please note that you will get a picture of the &amp;COMO&amp; folder from your Sandbox at a point of time only and that there is no automatic refresh functionality. Thus, you must use the <strong>Refresh</strong> button to get latest state of Como logs.  </p>
+<div class="NOTE"><h5>Note</h5><p>Please note that you will get a picture of the &amp;COMO&amp; folder from your Environment at a point of time only and that there is no automatic refresh functionality. Thus, you must use the <strong>Refresh</strong> button to get latest state of Como logs.  </p>
 </div>
 <h2 id="dbtools-information">DBTools Information</h2>
 <ul>
-<li>To interogate the Sandbox Database from TAFJEE tool with DBTools commands, go to the TAFJ Monitoring Tool of your Sandbox from PaaS Portal and select <strong>DBTools</strong> option from the <strong>Execution</strong> section.<br><img src="images/dbtools_1.png" alt="dbtools 1">  </li>
+<li>To interogate the Environment Database from TAFJEE tool with DBTools commands, go to the TAFJ Monitoring Tool of your Environment from Development platform portal and select <strong>DBTools</strong> option from the <strong>Execution</strong> section.<br><img src="images/dbtools_1.png" alt="dbtools 1">  </li>
 <li>A pop-up will appear in which JBOSS credentials must be introduce because the DBTools application can be accessed by authenticated users only.<br><img src="images/dbtools_2.png" alt="dbtools 2">  </li>
 </ul>
 <div class="NOTE"><h5>Note</h5><p>In case you do not have the required JBOSS/DBTools credentials, please contact MarketPlace team at <br>marketplace-support@temenos.com.  </p>
