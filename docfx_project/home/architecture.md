@@ -9,7 +9,7 @@ The Temenos Development Platform promotes the concept of simplified and standard
 
 Typical organisations have a number of non-production (i.e. development/test) environments, where changes are implemented and checked prior to deployment to production systems. The Devops movement seeks to improve this QA process through means of automation, which both allows an increase in speed in change promotion, and a reduction in the risk of manual errors when promoting changes.
 
-The Temenos DevX includes a simple and repeatable method of collating changes (both configuration and customisation) which subsequently is simple to promote from environment to environment.
+The Development Platform includes a simple and repeatable method of collating changes (both configuration and customisation) which subsequently is simple to promote from environment to environment.
 
 In addition, the core function of the Development Platform  is to simplify the environment provisioning process, which means if extra stages in the change flow are required (e.g. for additional testing phases), it becomes far simpler to spin up temporary environments for these purposes.
 
