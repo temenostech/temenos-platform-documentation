@@ -36,10 +36,10 @@ Sandbox environments are managed by the Development Portal, and are comprised of
 
 | Component  				| Description	| 
 | :---  					| :---  	| 
-| Portal			|	The Portal is the front-end component of the Development Platform which allows users to perform management functions across sandbox environments.  These functions include user management and sandbox provisioning/scaling.| 
-| Configuration Repository			|	The Configuration Repository is the 'change hub' for the Development Platform.  It supports configuration and customisation (per sandbox), including T24 updates, custom config/code packages, database imports and third party plug-ins/add-ons.|
+| Portal			|	The Portal is the front-end component of the Development Platform which allows users to perform management functions across development environments.  These functions include user management and environment provisioning/scaling.| 
+| Configuration Repository			|	The Configuration Repository is the 'change hub' for the Development Platform.  It supports configuration and customisation (per environment), including T24 updates, custom config/code packages, database imports and third party plug-ins/add-ons.|
 | T24 Instance		|	The T24 instance comprises the application and database for T24.  The application tier may be scaled horizontally as required (via the management facility in the Portal).|
-| Exports (File Storage)			|	The T24 database may be exported via the management facility in the Portal, as may the 'environment' (file system level). These exports are stored per Sandbox environment and may be downloaded by users via SFTP.|
+| Exports (File Storage)			|	The T24 database may be exported via the management facility in the Portal, as may the 'environment' (file system level). These exports are stored per environment and may be downloaded by users via SFTP.|
 
 
 ### **What can you do with Temenos Development Platform?**
@@ -71,5 +71,5 @@ Below is a list of tools which may be used to exploit Temenos Development Platfo
 | :---  					| :---  	|
 | Git|	Git (/ɡɪt/) is a version control system for tracking changes in computer files and coordinating work on those files among multiple people.  A client program for Git is required to push artefacts into the configuration repository.|
 | SFTP Client|	SFTP is the protocol used to download file exports (environment or database exports) |
-| Continuous Integration Tool (Optional)	|	Continuous Integration tools may be used to help automate change promotion between environments.  There is no CI tool provided as part of the Temenos DevX, but these are useful in reducing manual tasks when managing environments.| 
-| Design Studio (Optional)|	Design Studio is the IDE (Integrated Development Environment) produced by Temenos for developing changes in T24 systems.  Design Studio itself does not form part of the DevX, but change outputs from this tool are supported within the Configuration Repository. | 
+| Continuous Integration Tool (Optional)	|	Continuous Integration tools may be used to help automate change promotion between environments.  There is no CI tool provided as part of the Temenos Development Platform, but these are useful in reducing manual tasks when managing environments.| 
+| Design Studio (Optional)|	Design Studio is the IDE (Integrated Development Environment) produced by Temenos for developing changes in T24 systems.  Design Studio itself does not form part of the Development Platform, but change outputs from this tool are supported within the Configuration Repository. | 
