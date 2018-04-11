@@ -73,22 +73,22 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="architecture-overview">Architecture Overview</h1>
 
-<h3 id="where-does-temenos-devx-fit-into-the-enterprise-it-landscape"><strong>Where does Temenos DevX fit into the enterprise IT landscape?</strong></h3>
+<h3 id="where-does-temenos-development-platform-fit-into-the-enterprise-it-landscape"><strong>Where does Temenos Development Platform fit into the enterprise IT landscape?</strong></h3>
 <hr>
-<p>The Temenos DevX service promotes the concept of simplified and standardised change promotion through the IT landscape.</p>
+<p>The Temenos Development Platform promotes the concept of simplified and standardised change promotion through the IT landscape.</p>
 <p><img src="images/architecture-arrows.png" alt=""></p>
 <p>Typical organisations have a number of non-production (i.e. development/test) environments, where changes are implemented and checked prior to deployment to production systems. The Devops movement seeks to improve this QA process through means of automation, which both allows an increase in speed in change promotion, and a reduction in the risk of manual errors when promoting changes.</p>
 <p>The Temenos DevX includes a simple and repeatable method of collating changes (both configuration and customisation) which subsequently is simple to promote from environment to environment.</p>
-<p>In addition, the core function of the Temenos DevX  is to simplify the environment provisioning process, which means if extra stages in the change flow are required (e.g. for additional testing phases), it becomes far simpler to spin up temporary environments for these purposes.</p>
-<p>It should be noted that the Temenos DevX only supplies non-production environments (also known as &#39;sandboxes&#39;), which means organisations will still require at least one non-production environment on representative hardware in order to sanity check changes prior to production release (see example below).</p>
+<p>In addition, the core function of the Development Platform  is to simplify the environment provisioning process, which means if extra stages in the change flow are required (e.g. for additional testing phases), it becomes far simpler to spin up temporary environments for these purposes.</p>
+<p>It should be noted that the Development platfrom only supplies non-production environments (also known as &#39;sandboxes&#39;), which means organisations will still require at least one non-production environment on representative hardware in order to sanity check changes prior to production release (see example below).</p>
 <p><img src="images/architecture-paas-deploy.png" alt=""></p>
 <p>Delegating platform and infrastructure responsibilities to a third party allows organisations to concentrate on what is important to them - applications and data.</p>
 <p><img src="images/architecture-responsabilities.png" alt=""></p>
-<p>The Temenos DevX may be used for simple environment provisioning, or may be augmented by additional tools (such as Continuous Integration tooling) to provide a streamlined and automated development experience. The change promotion mechansim within the DevX  is simple to plug into standard CI tooling to push code/config/data from environment to environment.  An example development flow is shown below:</p>
+<p>The Development platform may be used for simple environment provisioning, or may be augmented by additional tools (such as Continuous Integration tooling) to provide a streamlined and automated development experience. The change promotion mechansim within the Development platform  is simple to plug into standard CI tooling to push code/config/data from environment to environment.  An example development flow is shown below:</p>
 <p><img src="images/architecture-process.png" alt=""></p>
-<h3 id="what-are-the-components-of-temenos-devx"><strong>What are the components of Temenos DevX?</strong></h3>
+<h3 id="what-are-the-components-of-temenos-development-platform"><strong>What are the components of Temenos Development Platform?</strong></h3>
 <hr>
-<p>Sandbox environments are managed by the DevX Portal, and are comprised of distinct components as described below:</p>
+<p>Sandbox environments are managed by the Development Portal, and are comprised of distinct components as described below:</p>
 <p><img src="images/architecture-customer-facing-systems.png" alt=""></p>
 <table>
 <thead>
@@ -100,11 +100,11 @@
 <tbody>
 <tr>
 <td style="text-align:left">Portal</td>
-<td style="text-align:left">The Portal is the front-end component of the DevX which allows users to perform management functions across sandbox environments.  These functions include user management and sandbox provisioning/scaling.</td>
+<td style="text-align:left">The Portal is the front-end component of the Development Platform which allows users to perform management functions across sandbox environments.  These functions include user management and sandbox provisioning/scaling.</td>
 </tr>
 <tr>
 <td style="text-align:left">Configuration Repository</td>
-<td style="text-align:left">The Configuration Repository is the &#39;change hub&#39; for the DevX.  It supports configuration and customisation (per sandbox), including T24 updates, custom config/code packages, database imports and third party plug-ins/add-ons.</td>
+<td style="text-align:left">The Configuration Repository is the &#39;change hub&#39; for the Development Platform.  It supports configuration and customisation (per sandbox), including T24 updates, custom config/code packages, database imports and third party plug-ins/add-ons.</td>
 </tr>
 <tr>
 <td style="text-align:left">T24 Instance</td>
@@ -116,9 +116,9 @@
 </tr>
 </tbody>
 </table>
-<h3 id="what-can-you-do-with-temenos-devx"><strong>What can you do with Temenos DevX?</strong></h3>
+<h3 id="what-can-you-do-with-temenos-development-platform"><strong>What can you do with Temenos Development Platform?</strong></h3>
 <hr>
-<p>Below is a list of functions which can be performed using Temenos DevX.</p>
+<p>Below is a list of functions which can be performed using Temenos Development Platform.</p>
 <table>
 <thead>
 <tr>
@@ -128,16 +128,16 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">Provision a new sandbox</td>
-<td style="text-align:left">Create a sandbox</td>
+<td style="text-align:left">Provision a new environment</td>
+<td style="text-align:left">Create an environment</td>
 </tr>
 <tr>
-<td style="text-align:left">Scale a sandbox</td>
-<td style="text-align:left">Scale a sandbox horizontally by adding/removing additional T24 instances for a given database instance</td>
+<td style="text-align:left">Scale an environment</td>
+<td style="text-align:left">Scale a environment horizontally by adding/removing additional T24 instances for a given database instance</td>
 </tr>
 <tr>
-<td style="text-align:left">Delete a sandbox</td>
-<td style="text-align:left">Delete a sandbox</td>
+<td style="text-align:left">Delete a environment</td>
+<td style="text-align:left">Delete a environment</td>
 </tr>
 <tr>
 <td style="text-align:left">Manage a user</td>
@@ -145,29 +145,29 @@
 </tr>
 <tr>
 <td style="text-align:left">Apply configuration/ customisation</td>
-<td style="text-align:left">Apply the necessary change components to create a customised sandbox configuration for an organisation</td>
+<td style="text-align:left">Apply the necessary change components to create a customised environment configuration for an organisation</td>
 </tr>
 <tr>
 <td style="text-align:left">Login to T24</td>
-<td style="text-align:left">Use the resultant customised sandbox</td>
+<td style="text-align:left">Use the resultant customised environment</td>
 </tr>
 <tr>
 <td style="text-align:left">Import a database</td>
-<td style="text-align:left">Import a database into a sandbox</td>
+<td style="text-align:left">Import a database into a environment</td>
 </tr>
 <tr>
 <td style="text-align:left">Export a database</td>
-<td style="text-align:left">Export a database from a sandbox (e.g. to re-import into another sandbox)</td>
+<td style="text-align:left">Export a database from a environment (e.g. to re-import into another environment)</td>
 </tr>
 <tr>
-<td style="text-align:left">Export a sandbox environment</td>
-<td style="text-align:left">Export a copy of a sandbox environment (file system level) for offline perusal</td>
+<td style="text-align:left">Export an environment</td>
+<td style="text-align:left">Export a copy of a environment (file system level) for offline perusal</td>
 </tr>
 </tbody>
 </table>
-<h3 id="what-tools-do-i-need-to-use-temenos-devx"><strong>What tools do I need to use Temenos DevX?</strong></h3>
+<h3 id="what-tools-do-i-need-to-use-temenos-development-platform"><strong>What tools do I need to use Temenos Development Platform?</strong></h3>
 <hr>
-<p>Below is a list of tools which may be used to exploit Temenos DevX functionality.</p>
+<p>Below is a list of tools which may be used to exploit Temenos Development Platform functionality.</p>
 <table>
 <thead>
 <tr>
