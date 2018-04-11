@@ -30,7 +30,7 @@ The Development platform may be used for simple environment provisioning, or may
 
 ----------
 
-Sandbox environments are managed by the Development Portal, and are comprised of distinct components as described below:
+Development & Testing environments are managed by the Development Portal, and are comprised of distinct components as described below:
 
 ![](./images/architecture-customer-facing-systems.png)
 
