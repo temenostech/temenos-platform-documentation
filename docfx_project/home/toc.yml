@@ -18,6 +18,8 @@
      href: ./techguides/use-gitlab-repository.md
    - name: Develop T24 packages, plugins and Code
      href: ./techguides/t24-development.md
+   - name: Add new endpoints to an application
+     href: ./techguides/add-app-endpoint.md    
    - name: Troubleshooting
      href: ./techguides/troubleshooting.md
 - name: Getting Support
