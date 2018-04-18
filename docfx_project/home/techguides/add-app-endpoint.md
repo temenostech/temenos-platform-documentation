@@ -9,7 +9,7 @@ This document can be used by technical staff who need to add new endpoints to th
 
 | Property Name        | Property <br />Description	|
 |-					   |-		                |
-|Endpoint Description  | The Endpoint Description will be displayed in the Endpoints section of the T24 application from your Sandbox. |
+|Endpoint Description  | The Endpoint Description will be displayed in your Organisation Portal in the Endpoints section of the T24 application from your Sandbox. |
 |Endpoint URL          | The Endpoint URL will be automatically concatenated with the Hostname of your Sandbox and opened in a new tab of your browser when the Endpoint Description is clicked. Endpoint URL must always start with **/** character. |
 
 In order to create new endpoints for the T24 application of your Sandbox, the following steps must be followed:
