@@ -5,22 +5,22 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Table of Content </title>
+    <title>Create new application endpoint </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Table of Content ">
-    <meta name="generator" content="docfx ">
+    <meta name="title" content="Create new application endpoint ">
+    <meta name="generator" content="docfx 2.22.2.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/woocircle.css">
-    <meta property="docfx:navrel" content="../toc.html">
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/woocircle.css">
+    <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="../toc.html">
     
     
   </head>
-  <body data-spy="scroll" data-target="#affix" class="Table of Content ">
+  <body data-spy="scroll" data-target="#affix" class="Create new application endpoint ">
     <div id="wrapper">
       <header>
         
@@ -61,67 +61,81 @@
         </div>
       </header>
       <div role="main" class="container body-content hide-when-search">
-        <div class="article row grid">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<div id="sidetoggle">
-  <div>
-    <div class="sidefilter">
-      <form class="toc-filter">
-        <span class="filter-icon"><i class="fa fa-filter" aria-hidden="true"></i></span>
-        <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
-      </form>
-    </div>
-    <div class="sidetoc">
-      <div class="toc" id="toc">
-          
-          <ul class="nav level1">
-            <li>
-              <a href="overview.html" name="" title="What is Temenos Cloud Development Platform?">What is Temenos Cloud Development Platform?</a>
-            </li>
-            <li>
-              <span class="expand-stub"></span>
-              <a href="architecture.html" name="" title="Architecture">Architecture</a>
-                
-                <ul class="nav level2">
-                  <li>
-                    <a href="temenos-cloud-templates.html" name="" title="Temenos Cloud Templates">Temenos Cloud Templates</a>
-                  </li>
-                </ul>  </li>
-            <li>
-              <a href="faq.html" name="" title="FAQs">FAQs</a>
-            </li>
-            <li>
-              <span class="expand-stub"></span>
-              <a href="techguides/index.html" name="" title="How to...">How to...</a>
-                
-                <ul class="nav level2">
-                  <li>
-                    <a href="techguides/user-creation-in-paas.html" name="" title="Create users">Create users</a>
-                  </li>
-                  <li>
-                    <a href="techguides/environment-creation-in-paas.html" name="" title="Create environments and organisations">Create environments and organisations</a>
-                  </li>
-                  <li>
-                    <a href="techguides/use-gitlab-repository.html" name="" title="Push configuration to an environment">Push configuration to an environment</a>
-                  </li>
-                  <li>
-                    <a href="techguides/add-app-endpoint.html" name="" title="Add new endpoints to an application">Add new endpoints to an application</a>
-                  </li>
-                  <li>
-                    <a href="techguides/t24-development.html" name="" title="Develop T24 packages, plugins and Code">Develop T24 packages, plugins and Code</a>
-                  </li>
-                  <li>
-                    <a href="techguides/troubleshooting.html" name="" title="Troubleshooting">Troubleshooting</a>
-                  </li>
-                </ul>  </li>
-            <li>
-              <a href="support.html" name="" title="Getting Support">Getting Support</a>
-            </li>
-          </ul>      </div>
-    </div>
-  </div>
-</div><p><br></p>
+<h1 id="create-new-application-endpoint">Create new application endpoint</h1>
+
+<p>This document can be used by technical staff who need to add new endpoints to the T24 application of a Sandbox in case of deploying a plugin in the application server of the Sandbox.</p>
+<div class="NOTE"><h5>Note</h5><p>This guide presumes that a Sandbox is already created and available.</p>
+</div>
+<p>   Two properties are mandatory to create a new endpoint:</p>
+<table>
+<thead>
+<tr>
+<th>Property Name</th>
+<th>Property <br>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Endpoint Description</td>
+<td>The Endpoint Description will be displayed in your Organisation Portal in the Endpoints section of the T24 application from your Sandbox.</td>
+</tr>
+<tr>
+<td>Endpoint URL</td>
+<td>The Endpoint URL will be automatically concatenated with the Hostname of your Sandbox and opened in a new tab of your browser when the Endpoint Description is clicked. <strong>Endpoint URL must always start with &quot;/&quot; character.</strong></td>
+</tr>
+</tbody>
+</table>
+<p>In order to create new endpoints for the T24 application of your Sandbox, the following steps must be followed:</p>
+<ul>
+<li>Clone the GitLab repository of your Sandbox in your local machine.  For more details on how to clone a repository, check this <a href="use-gitlab-repository.html">page</a>.</li>
+<li><p>Create a file with <strong>.endpoint</strong> extension inside <strong>plugins</strong> folder of the cloned repository as in the bellow picture. The name of the file is not important, but it should relate to the plugin for which endpoints are added.
+<img src="images/app_endp1.png" alt="create endpoint file"></p>
+</li>
+<li><p>Inside the <strong>.endpoint</strong> file, add a new line for each endpoint with the structure <strong>Your_Endpoint_Description~/Your_Endpoint_URL</strong>, as per bellow picture.
+<img src="images/app_endp2.png" alt="edit endpoint file"></p>
+<div class="NOTE"><h5>Note</h5><p>&quot;<strong>~</strong>&quot; character is used as a separator between Endpoint Description and URL properties and it must always be present in each endpoint line.</p>
+</div>
+</li>
+<li><p>After creating and editing the <strong>.endpoint</strong> file, commit the file to the GitLab repository of your Sandbox.</p>
+</li>
+<li>Wait until the <strong>.endpoint</strong> file is deployed in your Sandbox and check the Endpoints section of the T24 application where Your_Endpoint_Description Endpoint is displayed as bellow.
+<img src="images/app_endp3.png" alt="portal endpoint display">
+When the new Endpoint is clicked, the URL opened in a new tab is based on the Hostname of the Sandbox and the Endpoint URL property from the .endpoint file.
+<img src="images/app_endp4.png" alt="portal endpoint display"></li>
+</ul>
+<h1 id="add-multiple-endpoints-from-a-single-file">Add multiple endpoints from a single file</h1>
+<ul>
+<li>If a plugin has more than one endpoint, create a .endpoint file and add a separate line for each endpoint item, as bellow.
+<img src="images/app_endp5.png" alt="multiple endpoints same file"></li>
+<li>After the file is deployed, all 3 endpoints from the example are displayed in the Endpoints section of the T24 application.
+<img src="images/app_endp6.png" alt="multiple endpoints same file display"></li>
+</ul>
+<h1 id="add-multiple-endpoints-from-multiple-files-in-the-same-time">Add multiple endpoints from multiple files in the same time</h1>
+<ul>
+<li>If you want to add endpoints for multiple plugins deployed in your Sandbox, you can add the endpoints of all plugins in a single file or you can also create a separate .endpoint file for each plugin for a better delimitation.
+<img src="images/app_endp7.png" alt="multiple endpoints multiple files"></li>
+<li>After both files are deployed, the 3 endpoints for plugin 1 and the 2 endpoints for plugin 2 are displayed in the Endpoints section of the T24 application.
+<img src="images/app_endp8.png" alt="multiple endpoints multiples files display"></li>
+</ul>
+<h1 id="updateremove-endpoints">Update/Remove endpoints</h1>
+<ul>
+<li>If you want to update endpoints that were already added to an application, you just have to update the required endpoint line from the .endpoint file, commit the file to the GitLab repository of your Sandbox and after the file is deployed, the required endpoint will be updated in the Endpoints section of your Application.</li>
+<li><p>If you want to remove endpoints that were already added to an application, you just have to remove the required endpoint line from the .endpoint file, commit the file to the GitLab repository of your Sandbox and after the file is deployed, only the endpoints available in the .endpoint file will be displayed in the Endpoints section of your Application.</p>
+<div class="NOTE"><h5>Note</h5><p>To summarize, the list of plugin endpoints displayed in the Endpoints section for an application is updated based on the content of <strong>.endpoint</strong> files available in the <strong>plugins</strong> folder from the GitLab repository of your Sandbox. If no .endpoint files are available in the GitLab repository of your Sandbox, then no plugin endpoints will be displayed.</p>
+</div>
+</li>
+</ul>
+<p><br></p>
               <hr>
               
               <div id="disqus_thread"></div>
@@ -138,25 +152,6 @@
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="#disqus_thread" class="contribution-link comment-icon">0 Comments</a>
-                  </li>
-                  <li>
-                    <div class="sharedropdown">
-                      <button onclick="myFunction()" class="sharedropbtn"><i class="fa fa-share-alt" aria-hidden="true"></i> Share</button>
-                      <div id="myshareDropdown" class="sharedropdown-content">
-                        <a id="shareTwitter" class="sharingsocialmedia" target="_blank" "="" href="#" class="social-button twitter-button"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
-                        <a id="shareFacebook" class="sharingsocialmedia" target="_blank" "="" href="#" class="social-button facebook-button"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a>
-                        <a id="shareGoogle" class="sharingsocialmedia" target="_blank" "="" href="#" class="social-button googleplus-button"><i class="fa fa-google-plus" aria-hidden="true"></i> Google +</a>
-                        <a id="shareLinkedin" class="sharingsocialmedia" target="_blank" "="" href="#" class="social-button linkedin-button"><i class="fa fa-linkedin" aria-hidden="true"></i> Linkedin</a>
-                        <a id="shareEmail" class="sharingsocialmedia" target="_blank" "="" href="#" class="social-button email-button" title="Send an E-Mail"><i class="fa fa-envelope" aria-hidden="true"></i> E-mail</a>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
               <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
@@ -200,9 +195,9 @@
       </div>
     </div>
     
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
     <script id="dsq-count-scr" src="//temenostech.disqus.com/count.js" async=""></script>
     
     <script>
