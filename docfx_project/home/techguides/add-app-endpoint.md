@@ -10,10 +10,10 @@ This document can be used by technical staff who need to add new endpoints to th
 | Property Name        | Property <br />Description	|
 |-					   |-		                |
 |Endpoint Description  | The Endpoint Description will be displayed in your Organisation Portal in the Endpoints section of the T24 application from your Sandbox. |
-|Endpoint URL          | The Endpoint URL will be automatically concatenated with the Hostname of your Sandbox and opened in a new tab of your browser when the Endpoint Description is clicked. Endpoint URL must always start with **/** character. |
+|Endpoint URL          | The Endpoint URL will be automatically concatenated with the Hostname of your Sandbox and opened in a new tab of your browser when the Endpoint Description is clicked. **Endpoint URL must always start with "/" character.** |
 
 In order to create new endpoints for the T24 application of your Sandbox, the following steps must be followed:
- - Clone the GitLab repository of your Sandbox in your local machine.
+ - Clone the GitLab repository of your Sandbox in your local machine.  For more details on how to clone a repository, check this [page](./use-gitlab-repository.md).
  - Create a file with **.endpoint** extension inside **plugins** folder of the cloned repository as in the bellow picture. The name of the file is not important, but it should relate to the plugin for which endpoints are added.
 ![create endpoint file](./images/app_endp1.png)
 
@@ -21,7 +21,7 @@ In order to create new endpoints for the T24 application of your Sandbox, the fo
  ![edit endpoint file](./images/app_endp2.png)
  
  > [!Note]
- > **~** character is used as a separator between Endpoint Description and URL properties and it must always be present in each endpoint line.
+ > "**~**" character is used as a separator between Endpoint Description and URL properties and it must always be present in each endpoint line.
 
  - After creating and editing the **.endpoint** file, commit the file to the GitLab repository of your Sandbox.
  - Wait until the **.endpoint** file is deployed in your Sandbox and check the Endpoints section of the T24 application where Your_Endpoint_Description Endpoint is displayed as bellow.
@@ -40,3 +40,10 @@ In order to create new endpoints for the T24 application of your Sandbox, the fo
  ![multiple endpoints multiple files](./images/app_endp7.png)
  - After both files are deployed, the 3 endpoints for plugin 1 and the 2 endpoints for plugin 2 are displayed in the Endpoints section of the T24 application.
  ![multiple endpoints multiples files display](./images/app_endp8.png)
+
+# Update/Remove endpoints #
+ - If you want to update endpoints that were already added to an application, you just have to update the required endpoint line from the .endpoint file, commit the file to the GitLab repository of your Sandbox and after the file is deployed, the required endpoint will be updated in the Endpoints section of your Application.
+ - If you want to remove endpoints that were already added to an application, you just have to remove the required endpoint line from the .endpoint file, commit the file to the GitLab repository of your Sandbox and after the file is deployed, only the endpoints available in the .endpoint file will be displayed in the Endpoints section of your Application.
+
+ > [!Note]
+ > To summarize, the list of plugin endpoints displayed in the Endpoints section for an application is updated based on the content of **.endpoint** files available in the **plugins** folder from the GitLab repository of your Sandbox. If no .endpoint files are available in the GitLab repository of your Sandbox, then no plugin endpoints will be displayed.
