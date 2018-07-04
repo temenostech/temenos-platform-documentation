@@ -1,0 +1,314 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Use Jenkins to Build Pipelines </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Use Jenkins to Build Pipelines ">
+    <meta name="generator" content="docfx 2.22.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/woocircle.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" class="Use Jenkins to Build Pipelines ">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar" role="navigation">
+          <div class="container">
+            <div class="row">
+              <div class="navbar-header col-md-2">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                
+                <a class="navbar-brand" href="/index.html">
+                  <img id="logo" src="/logo.png" alt="">
+                </a>
+              </div>
+              <div class="themainmenu col-md-10">
+              <div class="collapse navbar-collapse" id="navbar">
+                <form class="navbar-form navbar-right" role="search" id="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                  </div>
+                </form>
+              </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h2 id="use-jenkins-to-build-pipelines">Use Jenkins to Build Pipelines</h2>
+
+<h2 id="introduction">Introduction</h2>
+<p>This document explains how to configure the Jenkins build and promote pipelines. </p>
+<p>&#39;Build pipeline&#39; builds the artifacts and deploys them in test environment. Once the testing is successful and it&#39;s ready for promotion, &#39;Promote pipeline&#39; deploys the tested artifacts into integrated dev environment. </p>
+<p>The core of the pipeline is the file called Jenkins File. It performs the list of jobs as illustrated in the flowchart. For this tutorial, we will be integrating Jenkins with GitHub so that Jenkins can pull the code and build artifacts.</p>
+<p><img src="images/jenkins-build-promote-pipelines-flow.png" alt=""></p>
+<p>To implement the Pipeline as a code we will use Jenkins Pipeline used to automate tasks associated with building, testing and deploying software.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>•   Valid SSH keys to clone the GIT repositories
+•   Environments IDs - Test/Integrated Dev
+•   Pipeline scripts - Build/Promote </p>
+<h2 id="enter-temenos-cloud">Enter Temenos Cloud</h2>
+<p>All you need is to sign into following URL: <code>portal.dev.temenos.cloud</code> using the credentials provided by Temenos (Username and Password):</p>
+<p><img src="images/jenkins-build-portal-login.png" alt=""></p>
+<h2 id="create-a-new-environment">Create a new environment</h2>
+<p>Press &#39;New environment&#39;</p>
+<p><img src="images/jenkins-build-new-environment.png" alt=""></p>
+<p>Fill the following parameters and press &#39;Create environment&#39;:</p>
+<p>•   Name</p>
+<p>•   Description</p>
+<p>•   Template</p>
+<p>•   <em>Labels (optional)</em></p>
+<p><img src="images/jenkins-build-environment-fields.png" alt=""></p>
+<div class="NOTE"><h5>Note</h5><p>It might take about 15 minutes to create the enviroment.</p>
+<p> Please refresh the page if the new environment doesn&#39;t appear &#39;green&#39; after more than 15 minutes.</p>
+</div>
+<p><img src="images/jenkins-build-created-environment.png" alt=""></p>
+<h2 id="login-to-jenkins">Login to Jenkins</h2>
+<p>Click on the environment created and than go to Jenkins Dashboard</p>
+<p><img src="images/jenkins-build-dashboard.png" alt=""></p>
+<p>In the new screen, click Login button on the top-right corner.</p>
+<p>Sign in with user &#39;admin&#39; and password &#39;changeit&#39;</p>
+<p><img src="images/jenkins-build-login.png" alt=""></p>
+<div class="NOTE"><h5>Note</h5><p>After first login, you will need to change the password.</p>
+</div>
+<h2 id="change-the-password">Change the password</h2>
+<ul>
+<li>Click on &#39;Admin&#39; button on top-right corner</li>
+<li>On the left side, click on &#39;Configure&#39; button </li>
+<li>Input a new password, confirm it, click &quot;Apply&#39; and then &#39;Save&#39;</li>
+</ul>
+<p><img src="images/jenkins-build-change-password.png" alt=""></p>
+<div class="NOTE"><h5>Note</h5><p><img src="images/jenkins-build-coffee.png" alt=""> In case of a coffee break during the Jenkins configuration, the session may expire. </p>
+<p>Make sure when you come back that you are <strong>still</strong> logged or login again.</p>
+</div>
+<h2 id="build-pipeline-workflow">Build pipeline workflow</h2>
+<p>Build Pipeline works based on pipeline script (Jenkins file). </p>
+<p><strong>Requirements:</strong></p>
+<ul>
+<li>It requires valid credentials to pull the code from your Git repository (Github/Gitlab..etc). Users need to add credentials to clone the git repositories. <ul>
+<li>For setting up credentials please refer to below section &quot;Add SSH keys inside Jenkins&quot;</li>
+</ul>
+</li>
+</ul>
+<p><strong>Steps during build:</strong></p>
+<ul>
+<li>Pulls the code from GIT </li>
+<li>Builds the artifacts using DS binaries</li>
+<li>Deploys the artifacts in the TEST environments</li>
+</ul>
+<div class="NOTE"><h5>Note</h5><p>Jenkins File for reference <a href="https://github.com/temenostech/temenos-ds-demo/blob/master/201711JenkinsFile">https://github.com/temenostech/temenos-ds-demo/blob/master/201711JenkinsFile</a></p>
+</div>
+<h2 id="generate-ssh-key">Generate SSH key</h2>
+<p>This section explains how to add the credentials in order to clone the Git repositories.</p>
+<p>First, you will need a SSH key, which can be generated by using PuTTY:</p>
+<p><img src="images/jenkins-build-putty.png" alt=""></p>
+<p>As instructed on PuTTY screen, move the mouse over the blank area to generate the key.</p>
+<p>After the key is generated, <strong>COPY</strong> the key, save it somewhere and click &#39;Save private key&#39;</p>
+<p><img src="./images/jenkins-build-save-private-key.png" alt=""></p>
+<h2 id="add-ssh-keys-inside-jenkins">Add SSH Keys inside Jenkins</h2>
+<p>Go to Credentials from left pane inside Jenkins console and then click global:</p>
+<p><img src="images/jenkins-build-credentials.png" alt=""></p>
+<ul>
+<li>A new screen is open. </li>
+<li>In the Kind box, click the dropdown button and select ‘SSH Username with private key’</li>
+<li>Scope, you can leave the default option &#39;Global (Jenkins, node...)&#39;</li>
+<li>Choose a username. In current case we have chosen ‘gituser1’ so that we can easily identify that it is associated with demorepo repository in GitHub. </li>
+<li>Go to Private Key field, select &#39;Enter directly&#39; and paste the <strong>private</strong> key generated at previous step</li>
+<li>Click OK</li>
+</ul>
+<p><img src="images/jenkins-build-credentials-check.png" alt=""></p>
+<p>You will see the following screen with user details:</p>
+<p><img src="images/jenkins-build-user-id.png" alt=""></p>
+<div class="NOTE"><h5>Note</h5><p>This uniqe ID of SSH key will be used in the pipeline scripts (Jenkins File) to clone the repositories. See next step.</p>
+</div>
+<h2 id="configure-jenkins-pipeline-job-to-use-ssh-keys">Configure Jenkins pipeline job to use SSH keys</h2>
+<ul>
+<li>Go to My View from left pane inside Jenkins console </li>
+</ul>
+<p><img src="images/jenkins-build-views.png" alt=""> </p>
+<ul>
+<li>Click on &#39;Build&#39;</li>
+</ul>
+<p><img src="images/jenkins-build-build.png" alt=""> </p>
+<ul>
+<li>Then on &#39;Configure&#39;</li>
+</ul>
+<p><img src="./images/jenkins-build-cofigure.png" alt=""> </p>
+<ul>
+<li>And finally click on &#39;Pipeline&#39;</li>
+</ul>
+<p><img src="images/jenkins-build-pipeline.png" alt=""> </p>
+<ul>
+<li>On the same screen, make sure you have the same details in Script Path as below, then click on Apply and &#39;Save&#39; </li>
+</ul>
+<p><img src="images/jenkins-build-script-path.png" alt=""> </p>
+<ul>
+<li>It’s time now to go ahead and build our job.</li>
+</ul>
+<h2 id="build-the-jenkins-job">Build the Jenkins job</h2>
+<p>Go to left pane inside Jenkins console and press &#39;Jenkins&#39; button</p>
+<p><img src="images/jenkins-build-start-job.png" alt=""> </p>
+<p>Then click on &#39;Built on&#39;</p>
+<p><img src="images/jenkins-build-built-on.png" alt=""> </p>
+<p>New screen is open. The following parameters are required to change according to your setup:</p>
+<p>•   SrcRepo
+•   workspacePath
+•   PackagePrefix
+•   EnvID
+•   emailRecipentsList (optional)</p>
+<p><img src="images/jenkins-build-pipeline-build.png" alt=""> </p>
+<h2 id="promote-pipeline-workflow">Promote pipeline workflow</h2>
+<p>Go again to left pane inside Jenkins console and press &#39;Jenkins&#39; button</p>
+<p>Then click on &#39;Built on&#39; button on &#39;Promote Changes&#39; line</p>
+<p><img src="images/jenkins-build-promote-changes.png" alt=""> </p>
+<p>New screen is open:</p>
+<p><img src="images/jenkins-build-promote-screen.png" alt=""> </p>
+<p><br></p>
+              <hr>
+              
+              <div id="disqus_thread"></div>
+                <script>
+                    (function() {
+                        var d = document, s = d.createElement('script');
+                        s.src = 'https://temenostech.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                     })();
+                </script>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 footer-note left">
+              <p>
+                <a href="/"><img src="/logo-bottom.png" alt=""></a>
+                <a href="https://www.temenos.com/en/accessibility/">Accessibility</a>
+                <a href="https://www.temenos.com/en/legal-information/cookie-policy/">Cookie Policy</a>
+                <a href="https://www.temenos.com/en/legal-information/privacy-policy/">Privacy Policy</a>
+                <a href="https://www.temenos.com/en/legal-information/terms-and-conditions/">Terms & Conditions</a>
+              </p>
+            </div>
+      
+            <div class="col-md-6 footer-note right">
+              <p>
+                Copyright &copy; 2017 Temenos Headquarters SA <span>&#183;</span>
+                <a target="_blank" href="https://www.facebook.com/TemenosGroup"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+                <a target="_blank" href="https://twitter.com/Temenos"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a target="_blank" href="http://www.linkedin.com/company/temenos"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a target="_blank" href="//plus.google.com/u/0/100035548059267323447?prsrc=3"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+              </p>
+            </div>
+          </div>
+      
+        </div>
+      </footer>
+      
+      <div class="back-to-top">
+        <a href="#top">
+          <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i></span>
+        </a>
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script id="dsq-count-scr" src="//temenostech.disqus.com/count.js" async=""></script>
+    
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myshareDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.sharedropbtn')) {
+    
+        var dropdowns = document.getElementsByClassName("sharedropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+    
+    <script>
+    	window.onload = function(){
+        	document.getElementById("shareFacebook").href = 'https://www.facebook.com/sharer/sharer.php?u=' + window.location.toString();
+    
+        	document.getElementById("shareTwitter").href = 'https://twitter.com/intent/tweet?text=Temenos+Developer+Portal&url=' + window.location.toString();
+    
+        	document.getElementById("shareGoogle").href = 'https://plus.google.com/share?url=' + window.location.toString();
+    
+        	document.getElementById("shareLinkedin").href = 'https://www.linkedin.com/shareArticle?mini=true&url=' + window.location.toString() + '&title=Temenos+Developer+Portal&summary=&source=';
+    
+        	document.getElementById("shareEmail").href = 'mailto:' + window.location.toString();
+    	}
+    </script>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-38593742-4', 'auto');
+      ga('send', 'pageview');
+    
+    </script>  </body>
+</html>
