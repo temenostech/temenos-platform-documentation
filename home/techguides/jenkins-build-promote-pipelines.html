@@ -75,21 +75,36 @@
 
 <h2 id="introduction">Introduction</h2>
 <p>This document explains how to configure the Jenkins build and promote pipelines. </p>
-<p>&#39;Build pipeline&#39; builds the artifacts and deploys them in test environment. Once the testing is successful and it&#39;s ready for promotion, &#39;Promote pipeline&#39; deploys the tested artifacts into integrated dev environment. </p>
-<p>The core of the pipeline is the file called Jenkins File. It performs the list of jobs as illustrated in the flowchart. For this tutorial, we will be integrating Jenkins with GitHub so that Jenkins can pull the code and build artifacts.</p>
+<p><strong>&#39;Build pipeline&#39;</strong> builds the artifacts and deploys them in test environment. </p>
+<p>Once the testing is successful and it&#39;s ready for promotion, <strong>&#39;Promote pipeline&#39;</strong> deploys the tested artifacts into integrated dev environment. </p>
+<p>The core of the pipeline is the file called Jenkins File. It performs the list of jobs as illustrated in the flowchart. </p>
+<p>For this tutorial, we will be integrating Jenkins with GitHub so that Jenkins can pull the code and build artifacts.</p>
 <p><img src="images/jenkins-build-promote-pipelines-flow.png" alt=""></p>
+<ol>
+<li>Initiate Pipeline</li>
+<li>Source Code Management</li>
+<li>Repo /Branch name</li>
+<li>Test Environment</li>
+<li>Jenkins File </li>
+<li>Get Source Code - 7. Git Clone - private repo</li>
+<li>Build Design Studio package - 9. Build with Maven - 10. Push the artifacts into repo</li>
+<li>Deploy to dev integrated environment - 11. Git clone Core banking - 12. Copy artifacts to package folder - 13. Git push to core Banking repo</li>
+<li>Integrated Dev Environments</li>
+</ol>
 <p>To implement the Pipeline as a code we will use Jenkins Pipeline used to automate tasks associated with building, testing and deploying software.</p>
 <h2 id="prerequisites">Prerequisites</h2>
+<p><em>(Please note that all necessary information is explained below in the next chapters of current document)</em></p>
 <p>•   Valid SSH keys to clone the GIT repositories
 •   Environments IDs - Test/Integrated Dev
 •   Pipeline scripts - Build/Promote </p>
-<h2 id="enter-temenos-cloud">Enter Temenos Cloud</h2>
-<p>All you need is to sign into following URL: <code>portal.dev.temenos.cloud</code> using the credentials provided by Temenos (Username and Password):</p>
+<h2 id="access-development-portal">Access Development Portal</h2>
+<p>Sign into following URL: <code>portal.temenos.cloud</code> using the credentials provided by Temenos (Username and Password):</p>
 <p><img src="images/jenkins-build-portal-login.png" alt=""></p>
+<p><br></p>
 <h2 id="create-a-new-environment">Create a new environment</h2>
-<p>Press &#39;New environment&#39;</p>
+<p>Press <strong>&#39;New environment&#39;</strong></p>
 <p><img src="images/jenkins-build-new-environment.png" alt=""></p>
-<p>Fill the following parameters and press &#39;Create environment&#39;:</p>
+<p>Fill the following parameters and press <strong>&#39;Create environment&#39;</strong>:</p>
 <p>•   Name</p>
 <p>•   Description</p>
 <p>•   Template</p>
@@ -98,20 +113,27 @@
 <div class="NOTE"><h5>Note</h5><p>It might take about 15 minutes to create the enviroment.</p>
 <p> Please refresh the page if the new environment doesn&#39;t appear &#39;green&#39; after more than 15 minutes.</p>
 </div>
+<p>The environment named &#39;Integrated Dev Environment&#39; has been created:</p>
 <p><img src="images/jenkins-build-created-environment.png" alt=""></p>
 <h2 id="login-to-jenkins">Login to Jenkins</h2>
 <p>Click on the environment created and than go to Jenkins Dashboard</p>
 <p><img src="images/jenkins-build-dashboard.png" alt=""></p>
-<p>In the new screen, click Login button on the top-right corner.</p>
-<p>Sign in with user &#39;admin&#39; and password &#39;changeit&#39;</p>
+<p><br></p>
+<p>In the new screen, click Login button on the top-right corner:</p>
+<p><img src="images/jenkins-build-dashboard-login.png" alt=""></p>
+<p><br></p>
+<p>Sign in with user <strong><em>your user</em></strong> and password <strong><em>your password</em></strong></p>
 <p><img src="images/jenkins-build-login.png" alt=""></p>
 <div class="NOTE"><h5>Note</h5><p>After first login, you will need to change the password.</p>
 </div>
 <h2 id="change-the-password">Change the password</h2>
 <ul>
-<li>Click on &#39;Admin&#39; button on top-right corner</li>
-<li>On the left side, click on &#39;Configure&#39; button </li>
-<li>Input a new password, confirm it, click &quot;Apply&#39; and then &#39;Save&#39;</li>
+<li>Click on <strong>&#39;Admin&#39;</strong> button on top-right corner and then, on the left side, click on <strong>&#39;Configure&#39;</strong> button </li>
+</ul>
+<p><img src="images/jenkins-build-configure.png" alt=""></p>
+<p><br></p>
+<ul>
+<li>Input a new password, confirm it, click <strong>&#39;Apply&#39;</strong> and then <strong>&#39;Save&#39;</strong></li>
 </ul>
 <p><img src="images/jenkins-build-change-password.png" alt=""></p>
 <div class="NOTE"><h5>Note</h5><p><img src="images/jenkins-build-coffee.png" alt=""> In case of a coffee break during the Jenkins configuration, the session may expire. </p>
@@ -132,28 +154,36 @@
 <li>Builds the artifacts using DS binaries</li>
 <li>Deploys the artifacts in the TEST environments</li>
 </ul>
-<div class="NOTE"><h5>Note</h5><p>Jenkins File for reference <a href="https://github.com/temenostech/temenos-ds-demo/blob/master/201711JenkinsFile">https://github.com/temenostech/temenos-ds-demo/blob/master/201711JenkinsFile</a></p>
-</div>
 <h2 id="generate-ssh-key">Generate SSH key</h2>
 <p>This section explains how to add the credentials in order to clone the Git repositories.</p>
 <p>First, you will need a SSH key, which can be generated by using PuTTY:</p>
 <p><img src="images/jenkins-build-putty.png" alt=""></p>
 <p>As instructed on PuTTY screen, move the mouse over the blank area to generate the key.</p>
-<p>After the key is generated, <strong>COPY</strong> the key, save it somewhere and click &#39;Save private key&#39;</p>
-<p><img src="./images/jenkins-build-save-private-key.png" alt=""></p>
+<p>After the key is generated, <strong>COPY</strong> the key, save it somewhere and click <strong>&#39;Save private key&#39;</strong> </p>
+<p><img src="images/jenkins-build-save-private-key.png" alt=""></p>
 <h2 id="add-ssh-keys-inside-jenkins">Add SSH Keys inside Jenkins</h2>
 <p>Go to Credentials from left pane inside Jenkins console and then click global:</p>
 <p><img src="images/jenkins-build-credentials.png" alt=""></p>
+<p><br></p>
+<p>Then add credentials:</p>
+<p><img src="images/jenkins-build-add-credentials.png" alt=""></p>
+<p><br></p>
 <ul>
 <li>A new screen is open. </li>
-<li>In the Kind box, click the dropdown button and select ‘SSH Username with private key’</li>
-<li>Scope, you can leave the default option &#39;Global (Jenkins, node...)&#39;</li>
+</ul>
+<p><img src="images/jenkins-build-fields.png" alt=""></p>
+<ul>
+<li>In the Kind box - click the dropdown button and select ‘SSH Username with private key’</li>
+<li>Scope - you can leave the default option &#39;Global (Jenkins, node...)&#39;</li>
 <li>Choose a username. In current case we have chosen ‘gituser1’ so that we can easily identify that it is associated with demorepo repository in GitHub. </li>
-<li>Go to Private Key field, select &#39;Enter directly&#39; and paste the <strong>private</strong> key generated at previous step</li>
+<li>Go to Private Key field, select <strong>&#39;Enter directly&#39;</strong> and paste the <strong><em>private</em></strong> key generated at previous step</li>
 <li>Click OK</li>
 </ul>
+<p><br></p>
 <p><img src="images/jenkins-build-credentials-check.png" alt=""></p>
+<p><br></p>
 <p>You will see the following screen with user details:</p>
+<p><br></p>
 <p><img src="images/jenkins-build-user-id.png" alt=""></p>
 <div class="NOTE"><h5>Note</h5><p>This uniqe ID of SSH key will be used in the pipeline scripts (Jenkins File) to clone the repositories. See next step.</p>
 </div>
@@ -186,13 +216,13 @@
 <p><img src="images/jenkins-build-start-job.png" alt=""> </p>
 <p>Then click on &#39;Built on&#39;</p>
 <p><img src="images/jenkins-build-built-on.png" alt=""> </p>
-<p>New screen is open. The following parameters are required to change according to your setup:</p>
-<p>•   SrcRepo
-•   workspacePath
-•   PackagePrefix
-•   EnvID
-•   emailRecipentsList (optional)</p>
+<p>New screen is open. The following parameters are <strong>required to change</strong> according to your setup:</p>
+<p>•   EnvID </p>
+<p>•   emailRecipientsList (optional)</p>
 <p><img src="images/jenkins-build-pipeline-build.png" alt=""> </p>
+<div class="NOTE"><h5>Note</h5><p>The environment ID is the one that appears on the URL address after you login and you click on your environment:</p>
+<p><img src="images/jenkins-build-environment-id.png" alt=""> </p>
+</div>
 <h2 id="promote-pipeline-workflow">Promote pipeline workflow</h2>
 <p>Go again to left pane inside Jenkins console and press &#39;Jenkins&#39; button</p>
 <p>Then click on &#39;Built on&#39; button on &#39;Promote Changes&#39; line</p>
