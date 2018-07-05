@@ -20,8 +20,10 @@
      href: ./techguides/add-app-endpoint.md   
    - name: Develop T24 packages, plugins and Code
      href: ./techguides/t24-development.md
-   - name: Troubleshooting
-     href: ./techguides/troubleshooting.md
+   - name: Use Jenkins to Build Pipelines
+     href: ./techguides/jenkins-build-promote-pipelines.md
+- name: Troubleshooting
+  href: ./techguides/troubleshooting.md
 - name: Getting Support
   href: ./support.md
 
