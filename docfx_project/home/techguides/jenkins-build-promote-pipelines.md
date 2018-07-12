@@ -31,7 +31,9 @@ To implement the Pipeline as a code we will use Jenkins Pipeline used to automat
 *(Please note that all necessary information is explained below in the next chapters of current document)*
 
 •	Valid SSH keys to clone the GIT repositories
+
 •	Environments IDs - Test/Integrated Dev
+
 •	Pipeline scripts - Build/Promote 
 
 ## Access Development Portal
@@ -85,7 +87,7 @@ In the new screen, click Login button on the top-right corner:
 
 <br>
 
-Sign in with user ***your user*** and password ***your password***
+Sign in with user ***admin*** and password ***changeit***
 
 ![](./images/jenkins-build-login.png)
 
@@ -216,7 +218,9 @@ Then click on 'Built on'
 
 New screen is open. The following parameters are **required to change** according to your setup:
 
-•	EnvID 
+•	SrcRepo 
+
+•	EnvID (see the note below)
 
 •	emailRecipientsList (optional)
 
