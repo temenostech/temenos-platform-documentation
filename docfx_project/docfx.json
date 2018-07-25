@@ -22,10 +22,10 @@
         "files": [
           "home/**.yml",
           "home/index.md",
-		  "home/overview.md",
-		  "home/**.md",
-		  "home/techguides/**.md",
-		  "toc.yml",
+          "home/overview.md",
+          "home/**.md",
+          "home/techguides/**.md",
+          "toc.yml",
           "*.md"
         ],
        "exclude": [
@@ -38,21 +38,22 @@
       {
         "files": [
           "images/**",
-		  "home/images/**",
-		  "home/techguides/images/**"
+          "home/images/**",
+          "home/techguides/images/**",
+          "home/scripts/**",
         ],
         "exclude": [
           "obj/**",
           "site/**"
         ]
       }
-	  
+
     ],
-	"globalMetadata": 
+	"globalMetadata":
 	{
       "_disableContribution": true
     },
-	
+
     "overwrite": [
       {
         "files": [
