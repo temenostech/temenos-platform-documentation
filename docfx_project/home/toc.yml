@@ -16,8 +16,10 @@
      href: ./techguides/environment-creation-in-paas.md
    - name: Push configuration to an environment
      href: ./techguides/use-gitlab-repository.md
+   - name: Customize templates
+     href: ./techguides/customize-templates.md
    - name: Add new endpoints to an application
-     href: ./techguides/add-app-endpoint.md   
+     href: ./techguides/add-app-endpoint.md
    - name: Develop T24 packages, plugins and Code
      href: ./techguides/t24-development.md
    - name: Use Jenkins to Build Pipelines
@@ -26,4 +28,3 @@
   href: ./techguides/troubleshooting.md
 - name: Getting Support
   href: ./support.md
-
