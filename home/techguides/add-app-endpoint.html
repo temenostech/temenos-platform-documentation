@@ -73,8 +73,8 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="create-new-application-endpoint">Create new application endpoint</h1>
 
-<p>This document can be used by technical staff who need to add new endpoints to the T24 application of a Sandbox in case of deploying a plugin in the application server of the Sandbox.</p>
-<div class="NOTE"><h5>Note</h5><p>This guide presumes that a Sandbox is already created and available.</p>
+<p>This document can be used by technical staff who need to add new endpoints to the T24 application of a Dev Environment in case of deploying a plugin in the application server of the Dev Environment.</p>
+<div class="NOTE"><h5>Note</h5><p>This guide presumes that a Dev Environment is already created and available.</p>
 </div>
 <p>   Two properties are mandatory to create a new endpoint:</p>
 <table>
@@ -87,17 +87,17 @@
 <tbody>
 <tr>
 <td>Endpoint Description</td>
-<td>The Endpoint Description will be displayed in your Organisation Portal in the Endpoints section of the T24 application from your Sandbox.</td>
+<td>The Endpoint Description will be displayed in your Organisation Portal in the Endpoints section of the T24 application from your Dev Environment.</td>
 </tr>
 <tr>
 <td>Endpoint URL</td>
-<td>The Endpoint URL will be automatically concatenated with the Hostname of your Sandbox and opened in a new tab of your browser when the Endpoint Description is clicked. <strong>Endpoint URL must always start with &quot;/&quot; character.</strong></td>
+<td>The Endpoint URL will be automatically concatenated with the Hostname of your Dev Environment and opened in a new tab of your browser when the Endpoint Description is clicked. <strong>Endpoint URL must always start with &quot;/&quot; character.</strong></td>
 </tr>
 </tbody>
 </table>
-<p>In order to create new endpoints for the T24 application of your Sandbox, the following steps must be followed:</p>
+<p>In order to create new endpoints for the T24 application of your Dev Environment, the following steps must be followed:</p>
 <ul>
-<li>Clone the GitLab repository of your Sandbox in your local machine.  For more details on how to clone a repository, check this <a href="use-gitlab-repository.html">page</a>.</li>
+<li>Clone the GitLab repository of your Dev Environment in your local machine.  For more details on how to clone a repository, check this <a href="use-gitlab-repository.html">page</a>.</li>
 <li><p>Create a file with <strong>.endpoint</strong> extension inside <strong>plugins</strong> folder of the cloned repository as in the bellow picture. The name of the file is not important, but it should relate to the plugin for which endpoints are added.
 <img src="images/app_endp1.png" alt="create endpoint file"></p>
 </li>
@@ -106,11 +106,11 @@
 <div class="NOTE"><h5>Note</h5><p>&quot;<strong>~</strong>&quot; character is used as a separator between Endpoint Description and URL properties and it must always be present in each endpoint line.</p>
 </div>
 </li>
-<li><p>After creating and editing the <strong>.endpoint</strong> file, commit the file to the GitLab repository of your Sandbox.</p>
+<li><p>After creating and editing the <strong>.endpoint</strong> file, commit the file to the GitLab repository of your Dev Environment.</p>
 </li>
-<li>Wait until the <strong>.endpoint</strong> file is deployed in your Sandbox and check the Endpoints section of the T24 application where Your_Endpoint_Description Endpoint is displayed as bellow.
+<li>Wait until the <strong>.endpoint</strong> file is deployed in your Dev Environment and check the Endpoints section of the T24 application where Your_Endpoint_Description Endpoint is displayed as bellow.
 <img src="images/app_endp3.png" alt="portal endpoint display">
-When the new Endpoint is clicked, the URL opened in a new tab is based on the Hostname of the Sandbox and the Endpoint URL property from the .endpoint file.
+When the new Endpoint is clicked, the URL opened in a new tab is based on the Hostname of the Dev Environment and the Endpoint URL property from the .endpoint file.
 <img src="images/app_endp4.png" alt="portal endpoint display"></li>
 </ul>
 <h1 id="add-multiple-endpoints-from-a-single-file">Add multiple endpoints from a single file</h1>
@@ -122,16 +122,16 @@ When the new Endpoint is clicked, the URL opened in a new tab is based on the Ho
 </ul>
 <h1 id="add-multiple-endpoints-from-multiple-files-in-the-same-time">Add multiple endpoints from multiple files in the same time</h1>
 <ul>
-<li>If you want to add endpoints for multiple plugins deployed in your Sandbox, you can add the endpoints of all plugins in a single file or you can also create a separate .endpoint file for each plugin for a better delimitation.
+<li>If you want to add endpoints for multiple plugins deployed in your Dev Environment, you can add the endpoints of all plugins in a single file or you can also create a separate .endpoint file for each plugin for a better delimitation.
 <img src="images/app_endp7.png" alt="multiple endpoints multiple files"></li>
 <li>After both files are deployed, the 3 endpoints for plugin 1 and the 2 endpoints for plugin 2 are displayed in the Endpoints section of the T24 application.
 <img src="images/app_endp8.png" alt="multiple endpoints multiples files display"></li>
 </ul>
 <h1 id="updateremove-endpoints">Update/Remove endpoints</h1>
 <ul>
-<li>If you want to update endpoints that were already added to an application, you just have to update the required endpoint line from the .endpoint file, commit the file to the GitLab repository of your Sandbox and after the file is deployed, the required endpoint will be updated in the Endpoints section of your Application.</li>
-<li><p>If you want to remove endpoints that were already added to an application, you just have to remove the required endpoint line from the .endpoint file, commit the file to the GitLab repository of your Sandbox and after the file is deployed, only the endpoints available in the .endpoint file will be displayed in the Endpoints section of your Application.</p>
-<div class="NOTE"><h5>Note</h5><p>To summarize, the list of plugin endpoints displayed in the Endpoints section for an application is updated based on the content of <strong>.endpoint</strong> files available in the <strong>plugins</strong> folder from the GitLab repository of your Sandbox. If no .endpoint files are available in the GitLab repository of your Sandbox, then no plugin endpoints will be displayed.</p>
+<li>If you want to update endpoints that were already added to an application, you just have to update the required endpoint line from the .endpoint file, commit the file to the GitLab repository of your Dev Environment and after the file is deployed, the required endpoint will be updated in the Endpoints section of your Application.</li>
+<li><p>If you want to remove endpoints that were already added to an application, you just have to remove the required endpoint line from the .endpoint file, commit the file to the GitLab repository of your Dev Environment and after the file is deployed, only the endpoints available in the .endpoint file will be displayed in the Endpoints section of your Application.</p>
+<div class="NOTE"><h5>Note</h5><p>To summarize, the list of plugin endpoints displayed in the Endpoints section for an application is updated based on the content of <strong>.endpoint</strong> files available in the <strong>plugins</strong> folder from the GitLab repository of your Dev Environment. If no .endpoint files are available in the GitLab repository of your Dev Environment, then no plugin endpoints will be displayed.</p>
 </div>
 </li>
 </ul>
