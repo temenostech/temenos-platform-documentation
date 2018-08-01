@@ -1301,10 +1301,32 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-save-key.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-save-key.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/jenkins-build-save-private-key.png",
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/jenkins-build-save-private-key.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-save-public-key.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-save-public-key.png"
         }
       },
       "is_incremental": false,
@@ -1338,6 +1360,39 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/jenkins-build-start-job.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-user-gitlab-public.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-user-gitlab-public.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-user-gitlab-role.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-user-gitlab-role.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-user-gitlab.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-user-gitlab.png"
         }
       },
       "is_incremental": false,
@@ -2090,7 +2145,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/jenkins-build-promote-pipelines.html",
-          "hash": "OJH/6CfIaZZYWi8JCZ/8MQ=="
+          "hash": "jB5Ha1kUnDz0aPDPJ8ehHw=="
         }
       },
       "is_incremental": false,
@@ -2236,14 +2291,19 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
+        "ResourceDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "RestApiDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
@@ -2252,11 +2312,6 @@
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
-          "incrementalPhase": "build"
-        },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
