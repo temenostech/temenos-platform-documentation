@@ -1,6 +1,6 @@
 ### Getting Support
 ----------
-If you have questions or encounter an issue while working with the platform, please address your request to **temenoscloud@temenos.com**.
+If you have questions or encounter an issue while working with the platform, please address your request to **CloudPlatformSupport@temenos.com**.
 
 Our support team will be able to resolve your issue faster if you can include:
 
