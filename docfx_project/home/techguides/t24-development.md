@@ -28,7 +28,7 @@ To be able to interrogate the sandbox database, a series of updates must be appl
 |temn.tafj.jdbc.username|	t24 |
 |temn.tafj.jdbc.password|	t24 |
 > [!Note]
-> In order to get the database IP of your Sandbox, contact TemenosCloud team at <br>TemenosCloud@temenos.com.
+> In order to get the database IP of your Sandbox, contact Temenos Cloud support team at <br>CloudPlatformSupport@temenos.com.
  
 # Create New Project in Design Studio #
 In order to accomplish the development actions presented at the beginning of the guide, you need to create a new project in Design Studio.

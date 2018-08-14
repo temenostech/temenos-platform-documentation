@@ -16,4 +16,4 @@ The clients will be supplied with a URL and initial login, from there they will 
 
 - **Who will handle customers’ queries/issues for Development Platform?**
 
-Sales queries will be handled via the Temenos Cloud (TemenosCloud@temenos.com) support team. Support is available through a dedicated online support portal for cloud infrastructure issues.  All Product issues remain through the Temenos Customer Support. 
+Sales queries will be handled via the Temenos Cloud (CloudPlatformSupport@temenos.com) support team. Support is available through a dedicated online support portal for cloud infrastructure issues.  All Product issues remain through the Temenos Customer Support. 

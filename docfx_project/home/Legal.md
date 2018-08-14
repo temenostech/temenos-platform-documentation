@@ -22,7 +22,7 @@ A secure ftp (SFTP) client is required to download exported log files and data f
 -	Design Studio – is the Temenos tooling used to develop changes for core banking (T24).
 
 ##Support and SLAs
--	Initial support mechanism: email temenoscloud@temenos.com 
+-	Initial support mechanism: email CloudPlatformSupport@temenos.com 
 -	Future state support mechanism: Temenos cloud ticketing system
 -	SLAs: target 99% Uptime (can go down for maintenance, business hours)
 -	Warranties: Other SLAs as per Temenos Cloud

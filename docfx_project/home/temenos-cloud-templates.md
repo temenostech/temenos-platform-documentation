@@ -12,4 +12,4 @@ Templates are used by the provisioning service to create Sandbox environments wi
 
 By default, new Templates are added with each monthly release of T24. These Templates follow a standard pattern, configuration and technology stack, but with the most recent releases of T24 being deployed.
 
-However, the Temenos Development platform team also offer the ability to create customised Templates for clients. For more information, please contact temenoscloud@temenos.com.
+However, the Temenos Development platform team also offer the ability to create customised Templates for clients. For more information, please contact **CloudPlatformSupport@temenos.com**.
