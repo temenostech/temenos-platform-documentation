@@ -222,20 +222,29 @@ Then add credentials:
  - Go to Private Key field, select **'Enter directly'** and paste the ***private*** key generated at previous step
  - Click OK
 
-<br>
-
-![](./images/jenkins-build-credentials-check.png)
 
 <br>
 
-You will see the following screen with user details:
+Now if you click on credentials, you will see the following screen with user details:
 
-<br>
 
 ![](./images/jenkins-build-user-id.png)
 
 > [!Note]
-> This uniqe ID of SSH key will be used in the pipeline scripts (Jenkins File) to clone the repositories. See next step.
+> This uniqe ID of SSH key will be used in the pipeline scripts (Jenkins File) to clone the repositories. 
+
+### Add user to the portal
+
+ - Go to portal.temenos.cloud
+ - Click on **New user**
+ - And fill the required fields
+
+> [!Note]
+> Copy-paste the entire public key generated before and then delete the last part until equal sign and press **Create user**
+
+
+![](./images/jenkins-build-new-portal-user.png)
+
 
 ## Configure Jenkins pipeline job to use SSH keys
 
@@ -249,19 +258,42 @@ You will see the following screen with user details:
 
 - Then on 'Configure'
 
-![](./images/jenkins-build-cofigure.png) 
-
 - And finally click on 'Pipeline'
 
 ![](./images/jenkins-build-pipeline.png) 
 
-  - On the same screen, make sure you have the same details in Script Path as below, then click on Apply and 'Save' 
+  - On the same screen, make sure you have the Jenkins File path in Script Path, then click on Apply and 'Save' 
 
-![](./images/jenkins-build-script-path.png) 
+## Add a second user to the portal
 
- - It’s time now to go ahead and build our job.
+The same as for the first user added, first make sure you generated a new SSH key and then:
+
+ - Go to portal.temenos.cloud
+ - Click on **New user**
+ - And fill the required fields
+
+> [!Note]
+> Copy-paste the entire **public** key generated before and then delete the last part until equal sign and press **Create user**
+
+![](./images/jenkins-build-second-portal-user.png)
+
+ - Then go to Credentials from left pane inside Jenkins console and then click global.
+ - Click 'Add credentials' and fill the required fields
+
+![](./images/jenkins-build-fields.png)
+
+ - In the Kind box - click the dropdown button and select ‘SSH Username with private key’
+ - Scope - you can leave the default option 'Global (Jenkins, node...)'
+ - Insert the second username you just added to the portal. 
+ - Go to Private Key field, select **'Enter directly'** and paste the ***private*** key generated at previous step
+ - Click OK
+
+![](./images/jenkins-build-fields2.png)
+
 
 ## Build the Jenkins job
+
+ - It’s time now to go ahead and build our job.
 
 Go to left pane inside Jenkins console and press 'Jenkins' button
 
@@ -278,6 +310,8 @@ New screen is open. The following parameters are **required to change** accordin
 •	EnvID (see the note below)
 
 •	emailRecipientsList (optional)
+
+Click **Build**.
 
 
 ![](./images/jenkins-build-pipeline-build.png) 
@@ -299,3 +333,5 @@ Then click on 'Built on' button on 'Promote Changes' line
 New screen is open:
 
 ![](./images/jenkins-build-promote-screen.png) 
+
+Click **Build**.
