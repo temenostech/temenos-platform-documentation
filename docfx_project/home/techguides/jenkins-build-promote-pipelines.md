@@ -280,7 +280,6 @@ The same as for the first user added, first make sure you generated a new SSH ke
  - Then go to Credentials from left pane inside Jenkins console and then click global.
  - Click 'Add credentials' and fill the required fields
 
-![](./images/jenkins-build-fields.png)
 
  - In the Kind box - click the dropdown button and select ‘SSH Username with private key’
  - Scope - you can leave the default option 'Global (Jenkins, node...)'
@@ -320,6 +319,10 @@ Click **Build**.
 > [!Note] The environment ID is the one that appears on the URL address after you login and you click on your environment:
 > 
 >![](./images/jenkins-build-environment-id.png) 
+
+Build should be successful:
+
+![](./images/jenkins-build-success.png) 
 
 
 ## Promote pipeline workflow
