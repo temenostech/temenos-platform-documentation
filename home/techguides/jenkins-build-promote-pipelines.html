@@ -212,13 +212,19 @@
 <li>Click OK</li>
 </ul>
 <p><br></p>
-<p><img src="images/jenkins-build-credentials-check.png" alt=""></p>
-<p><br></p>
-<p>You will see the following screen with user details:</p>
-<p><br></p>
+<p>Now if you click on credentials, you will see the following screen with user details:</p>
 <p><img src="images/jenkins-build-user-id.png" alt=""></p>
-<div class="NOTE"><h5>Note</h5><p>This uniqe ID of SSH key will be used in the pipeline scripts (Jenkins File) to clone the repositories. See next step.</p>
+<div class="NOTE"><h5>Note</h5><p>This uniqe ID of SSH key will be used in the pipeline scripts (Jenkins File) to clone the repositories. </p>
 </div>
+<h3 id="add-user-to-the-portal">Add user to the portal</h3>
+<ul>
+<li>Go to portal.temenos.cloud</li>
+<li>Click on <strong>New user</strong></li>
+<li>And fill the required fields</li>
+</ul>
+<div class="NOTE"><h5>Note</h5><p>Copy-paste the entire public key generated before and then delete the last part until equal sign and press <strong>Create user</strong></p>
+</div>
+<p><img src="images/jenkins-build-new-portal-user.png" alt=""></p>
 <h2 id="configure-jenkins-pipeline-job-to-use-ssh-keys">Configure Jenkins pipeline job to use SSH keys</h2>
 <ul>
 <li>Go to My View from left pane inside Jenkins console </li>
@@ -229,21 +235,42 @@
 </ul>
 <p><img src="images/jenkins-build-build.png" alt=""> </p>
 <ul>
-<li>Then on &#39;Configure&#39;</li>
-</ul>
-<p><img src="./images/jenkins-build-cofigure.png" alt=""> </p>
-<ul>
-<li>And finally click on &#39;Pipeline&#39;</li>
+<li><p>Then on &#39;Configure&#39;</p>
+</li>
+<li><p>And finally click on &#39;Pipeline&#39;</p>
+</li>
 </ul>
 <p><img src="images/jenkins-build-pipeline.png" alt=""> </p>
 <ul>
-<li>On the same screen, make sure you have the same details in Script Path as below, then click on Apply and &#39;Save&#39; </li>
+<li>On the same screen, make sure you have the Jenkins File path in Script Path, then click on Apply and &#39;Save&#39; </li>
 </ul>
-<p><img src="images/jenkins-build-script-path.png" alt=""> </p>
+<h2 id="add-a-second-user-to-the-portal">Add a second user to the portal</h2>
+<p>The same as for the first user added, first make sure you generated a new SSH key and then:</p>
+<ul>
+<li>Go to portal.temenos.cloud</li>
+<li>Click on <strong>New user</strong></li>
+<li>And fill the required fields</li>
+</ul>
+<div class="NOTE"><h5>Note</h5><p>Copy-paste the entire <strong>public</strong> key generated before and then delete the last part until equal sign and press <strong>Create user</strong></p>
+</div>
+<p><img src="images/jenkins-build-second-portal-user.png" alt=""></p>
+<ul>
+<li>Then go to Credentials from left pane inside Jenkins console and then click global.</li>
+<li>Click &#39;Add credentials&#39; and fill the required fields</li>
+</ul>
+<p><img src="images/jenkins-build-fields.png" alt=""></p>
+<ul>
+<li>In the Kind box - click the dropdown button and select ‘SSH Username with private key’</li>
+<li>Scope - you can leave the default option &#39;Global (Jenkins, node...)&#39;</li>
+<li>Insert the second username you just added to the portal. </li>
+<li>Go to Private Key field, select <strong>&#39;Enter directly&#39;</strong> and paste the <strong><em>private</em></strong> key generated at previous step</li>
+<li>Click OK</li>
+</ul>
+<p><img src="images/jenkins-build-fields2.png" alt=""></p>
+<h2 id="build-the-jenkins-job">Build the Jenkins job</h2>
 <ul>
 <li>It’s time now to go ahead and build our job.</li>
 </ul>
-<h2 id="build-the-jenkins-job">Build the Jenkins job</h2>
 <p>Go to left pane inside Jenkins console and press &#39;Jenkins&#39; button</p>
 <p><img src="images/jenkins-build-start-job.png" alt=""> </p>
 <p>Then click on &#39;Built on&#39;</p>
@@ -252,6 +279,7 @@
 <p>•   SrcRepo </p>
 <p>•   EnvID (see the note below)</p>
 <p>•   emailRecipientsList (optional)</p>
+<p>Click <strong>Build</strong>.</p>
 <p><img src="images/jenkins-build-pipeline-build.png" alt=""> </p>
 <div class="NOTE"><h5>Note</h5><p>The environment ID is the one that appears on the URL address after you login and you click on your environment:</p>
 <p><img src="images/jenkins-build-environment-id.png" alt=""> </p>
@@ -262,6 +290,7 @@
 <p><img src="images/jenkins-build-promote-changes.png" alt=""> </p>
 <p>New screen is open:</p>
 <p><img src="images/jenkins-build-promote-screen.png" alt=""> </p>
+<p>Click <strong>Build</strong>.</p>
 <p><br></p>
               <hr>
               
