@@ -256,11 +256,10 @@
 <p><img src="images/jenkins-build-second-portal-user.png" alt=""></p>
 <ul>
 <li>Then go to Credentials from left pane inside Jenkins console and then click global.</li>
-<li>Click &#39;Add credentials&#39; and fill the required fields</li>
-</ul>
-<p><img src="images/jenkins-build-fields.png" alt=""></p>
-<ul>
-<li>In the Kind box - click the dropdown button and select ‘SSH Username with private key’</li>
+<li><p>Click &#39;Add credentials&#39; and fill the required fields</p>
+</li>
+<li><p>In the Kind box - click the dropdown button and select ‘SSH Username with private key’</p>
+</li>
 <li>Scope - you can leave the default option &#39;Global (Jenkins, node...)&#39;</li>
 <li>Insert the second username you just added to the portal. </li>
 <li>Go to Private Key field, select <strong>&#39;Enter directly&#39;</strong> and paste the <strong><em>private</em></strong> key generated at previous step</li>
@@ -284,6 +283,8 @@
 <div class="NOTE"><h5>Note</h5><p>The environment ID is the one that appears on the URL address after you login and you click on your environment:</p>
 <p><img src="images/jenkins-build-environment-id.png" alt=""> </p>
 </div>
+<p>Build should be successful:</p>
+<p><img src="images/jenkins-build-success.png" alt=""> </p>
 <h2 id="promote-pipeline-workflow">Promote pipeline workflow</h2>
 <p>Go again to left pane inside Jenkins console and press &#39;Jenkins&#39; button</p>
 <p>Then click on &#39;Built on&#39; button on &#39;Promote Changes&#39; line</p>
