@@ -1,0 +1,298 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Templates Customization </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Templates Customization ">
+    <meta name="generator" content="docfx 2.22.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/woocircle.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" class="Templates Customization ">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar" role="navigation">
+          <div class="container">
+            <div class="row">
+              <div class="navbar-header col-md-2">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                
+                <a class="navbar-brand" href="/index.html">
+                  <img id="logo" src="/logo.png" alt="">
+                </a>
+              </div>
+              <div class="themainmenu col-md-10">
+              <div class="collapse navbar-collapse" id="navbar">
+                <form class="navbar-form navbar-right" role="search" id="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                  </div>
+                </form>
+              </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="templates-customization">Templates Customization</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>This document can be used by technical staff who need to customize already defined PaaS templates based on specific requirements. Templates customization will allow changes related to:</p>
+<ul>
+<li>the environment applications (i.e. the scripts to install and configure each application and the information displayed in PaaS Portal for each application);</li>
+<li>the VM specifications in which each application is deployed.</li>
+</ul>
+<div class="NOTE"><h5>Note</h5><p>This guide presumes that a Sandbox is already created and available under an Organisation for which the templates customization functionality is allowed.</p>
+</div>
+<h2 id="boost-your-environment">Boost your environment</h2>
+<p>To start customizing your environment built using a PaaS template, login to PaaS portal using your organisation user, go to your environment page and click on the <strong>Boost</strong> button attached to <strong>Repository</strong> application.
+<img src="images/boost_env1.png" alt="boost 1">
+After clicking the Boost button, the status of Repository application is changed to <span style="color:orange">Boosting</span>, as per bellow picture. The operation triggered by the Boost button will copy in environment repository all the template files used to create the environment.
+<img src="images/boost_env2.png" alt="boost 2">
+When the Boosting operation is finished, the message <em>&quot;Scripts are customized for this environment.&quot;</em> is displayed under the name of your environment.
+<img src="images/boost_env3.png" alt="boost 3"></p>
+<h2 id="repository-structure-after-boost">Repository structure after Boost</h2>
+<p>As stated above, the Boost operation will make changes to environment repository. The difference between the before and after boost environment repository versions is represented by the presence of <span style="color:red">environments</span> folder, as it can be observed bellow.
+<img src="images/boost_env4.png" alt="boost 4">
+The structure of the <span style="color:red">environments</span> folder is represented by 3 folders:</p>
+<ul>
+<li>infra-templates</li>
+<li>playbooks</li>
+<li>roles
+<img src="images/boost_env5.png" alt="boost 5"></li>
+</ul>
+<p>The description of each folder is presented bellow:</p>
+<table>
+<thead>
+<tr>
+<th>Folder Name</th>
+<th>Folder <br>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>infra-templates</td>
+<td>This folder contains an <strong>infratemplate.yml</strong> file that describes the template of your environment (i.e. information related to the applications that are installed in your environment and VM specifications in which environment applications are deployed.).</td>
+</tr>
+<tr>
+<td>playbooks</td>
+<td>This folder contains a <strong>playbook.yml</strong> file that describes the set of roles that will be installed for each host(VM) defined under <em><span style="color:#010466;font-weight:600;">[services][servers]</span></em> component in <em><span style="color:#D2940F;font-weight:600;">infratemplate.yml</span></em> file.</td>
+</tr>
+<tr>
+<td>roles</td>
+<td>This folder contains all the roles defined for your template.</td>
+</tr>
+</tbody>
+</table>
+<p>A role represents any of your environment applications or it can be a module/plugin/framework that is required for your environment applications. A role is described by the following folders:</p>
+<ul>
+<li><code>defaults</code> - contains default variables for the role.</li>
+<li><code>files</code> - contains the files which are deployed using this role.</li>
+<li><code>handlers</code> - contains handlers that are used by this role.</li>
+<li><code>meta</code> - defines meta data for this role.</li>
+<li><code>tasks</code> - contains the list of tasks that is executed for this role.</li>
+<li><code>templates</code> - contains templates that can be deployed using this role.</li>
+<li><code>vars</code> - contains the role variables.</li>
+</ul>
+<div class="NOTE"><h5>Note</h5><p>A role definition must include at least one of the above folders. Thus, any unused folders can be excluded. However, any in use folder must include a <strong>main.yml</strong> file that contains the relevant information.</p>
+</div>
+<div class="NOTE"><h5>Note</h5><p>Ansible automation tool is used by the PaaS Platform to automate environment creation based on applications with specific requirements and installation steps. For more details about Ansible, please access this <strong><a href="https://docs.ansible.com/ansible/2.5/user_guide/quickstart.html" target="blank">link</a></strong>.</p>
+</div>
+<h2 id="start-template-customization">Start template customization</h2>
+<p>After boosting your environment, meaning that your environment repository contains all the folders and files related to your environment template, you can start the customization.
+There are several ways in which you can customize your environment template based on the type of your change.</p>
+<div class="NOTE"><h5>Note</h5><p>All the changes that must be implemented to a PaaS environment template can be done only in <u>environment repository</u>. Thus, environment repository must be cloned in your local machine. For more information about how to clone an environment repository, please check this <strong><a href="use-gitlab-repository.html" target="blank">page</a></strong>.</p>
+</div>
+<ol>
+<li><p>Changes that will require <span style="color:red;font-weight:600;">the rebuild of your environment</span>:</p>
+<div class="NOTE"><h5>Note</h5><p>The rebuild operation will take around 20 minutes and it will recreate all environment resources(VMs) and run the deployment of all roles defined in environment template.<br>To trigger the rebuild of your environment, login to PaaS portal using your organisation user, go to your environment page and click on the <strong><span style="color:#00bfff;font-weight:600;">Rebuild</span></strong> button attached to your environment main application.</p>
+</div>
+<ul>
+<li>Changes related to applications that will be installed under your environment.<br>
+<p style="padding-left: 10px">The applications list is defined in <em><span style="color:#010466;font-weight:600;">[services][servers]</span></em> component from <em><span style="color:#D2940F;font-weight:600;">infratemplate.yml</span></em> file located in <em><span style="background-color: #858382;color: white;"> /environments/common/infra-templates </span></em> &nbsp;folder of environment repository. An example of a template with 2 applications (t24 &amp; h2) is presented bellow.<br>
+<img src="images/boost_env6.png" alt="boost 6"><br>
+<table style="margin-left: 10px; width: 610px;"><tr><td style="border:0 !important; width: 15px !important;">-&gt;</td><td style="border:0 !important; width: 400px !important;">
+If an application must be removed from the default application list of the template, then the corespondent item must be removed from <em><span style="color:#010466;font-weight:600;">[services][servers]</span></em> component and the item related to the application must be removed from <em><span style="color:#D2940F;font-weight:600;">playbook.yml</span></em> file from <em><span style="background-color: #858382;color: white;"> /environments/common/playbooks </span></em> &nbsp;folder.
+</td></tr></table>
+<table style="margin-left: 10px; width: 610px;"><tr><td style="border:0 !important; width: 15px !important;">-&gt;</td><td style="border:0 !important; width: 400px !important;">
+If an application must be added to the default application list of the template, then a new item must be added in <em><span style="color:#010466;font-weight:600;">[services][servers]</span></em> component. After this, a new role must be created for this application in <em><span style="background-color: #858382;color: white;"> /environments/common/roles </span></em> &nbsp;folder of environment repository and <em><span style="color:#D2940F;font-weight:600;">playbook.yml</span></em> file from <em><span style="background-color: #858382;color: white;"> /environments/common/playbooks </span></em> &nbsp;must be updated with a new item for the new application.
+</td></tr></table>
+</p></li>
+<li>Changes related to applications information (name, description, etc.) displayed in PaaS Portal.<br>
+<p style="padding-left: 10px">Each environment application has a related item in <em><span style="color:#010466;font-weight:600;">[services][servers]</span></em> component from <em><span style="color:#D2940F;font-weight:600;">infratemplate.yml</span></em> file. Please check the description of each key (e.g. <em>app_name</em>, <em>app_description</em>, etc.) in <em><span style="color:#D2940F;font-weight:600;">infratemplate.yml</span></em> file in order to understand which information appear in PaaS Portal.</p></li>
+<li>Changes related to VM specifications in which environment applications are deployed.<br>
+<p style="padding-left: 10px">The VM specifications on which each environment application is deployed are defined in <em><span style="color:#010466;font-weight:600;">[provider][azure][config]</span></em> component from <em><span style="color:#D2940F;font-weight:600;">infratemplate.yml</span></em> file. <br>
+<img src="images/boost_env7.png" alt="boost 7"><br>
+<em><span style="color:#010466;font-weight:600;">[server_size]</span></em> key defines the VM specifications that will be applied for all applications defined in <em><span style="color:#010466;font-weight:600;">[services][servers]</span></em> component. If different VM specifications must be applied to each environment application, then <em><span style="color:#010466;font-weight:600;">[server_size]</span></em> key must be set in <em><span style="color:#010466;font-weight:600;">[services][servers]</span></em> component for each application.<br>
+The detailed VM specifications can be viewed <strong><a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes-general#dsv2-series" target="blank">here</a></strong>.</p></li>
+</ul>
+<div class="NOTE"><h5>Note</h5><p>After making the required changes, commit and push them to your environment repository and trigger the rebuild. <br> To make sure there are no syntax erros in the updated <em><span style="color:#D2940F;font-weight:600;">infratemplate.yml</span></em> file, you can use this <strong><a href="https://codebeautify.org/yaml-validator" target="blank">online validator</a></strong>.</p>
+</div>
+</li>
+<li><p>Changes that will require <span style="color:red;font-weight:600;">the deployment of your environment</span>:</p>
+<div class="NOTE"><h5>Note</h5><p>The deployment operation will take around 5 minutes or more depending on your changes.<br>To trigger the deployment of your environment, login to PaaS portal using your organisation user, go to your environment page and click on the <strong><span style="color:#00bfff;font-weight:600;">Deploy</span></strong> button attached to <strong>Repository</strong> application.</p>
+</div>
+<ul>
+<li>Changes related to roles already present in template. (i.e. an environment is already created with this template)<br>
+<p style="padding-left: 10px">If an already present role must be updated (for example, the tasks list for a role must be updated), make the required changes for that role, commit and push the changes to the environment repository and trigger the deployment.</p></li>
+<li>Changes related to roles tha represent a module/plugin/framework and not an application.
+<p style="padding-left: 10px">New roles that represent a module/plugin/framework and not an application can be added to an application of your environment. In order to accomplish this, a new role along its settings must be created in <em><span style="background-color: #858382;color: white;"> /environments/common/roles </span></em> &nbsp;folder and the new role must be added to the specific application in <em><span style="color:#D2940F;font-weight:600;">playbook.yml</span></em> file from <em><span style="background-color: #858382;color: white;"> /environments/common/playbooks </span></em> &nbsp;folder. After this, push all these changes to environment repository and trigger the deployment.</p></li>
+<li>Changes that are not related to environment template.
+<p style="padding-left: 10px">For the changes described <strong><a href="use-gitlab-repository.html#gitlab-repository-folder-structure-and-description" target="blank">here</a></strong> that are not related to environment template, you just have to commit and push the required changes to your environment repository and trigger the deployment.</p></li>
+</ul>
+<div class="NOTE"><h5>Note</h5><p>If the deployment operation is not successful for your changes, please rebuild the environment.</p>
+</div>
+</li>
+</ol>
+<p>The PaaS catalogue of available templates can be cheched <strong><a href="../temenos-cloud-templates.html" target="blank">here</a></strong>.</p>
+<!-- <br /><span style="font-size:20px">text</span> -->
+<p><br></p>
+              <hr>
+              
+              <div id="disqus_thread"></div>
+                <script>
+                    (function() {
+                        var d = document, s = d.createElement('script');
+                        s.src = 'https://temenostech.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                     })();
+                </script>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 footer-note left">
+              <p>
+                <a href="/"><img src="/logo-bottom.png" alt=""></a>
+                <a href="https://www.temenos.com/en/accessibility/">Accessibility</a>
+                <a href="https://www.temenos.com/en/legal-information/cookie-policy/">Cookie Policy</a>
+                <a href="https://www.temenos.com/en/legal-information/privacy-policy/">Privacy Policy</a>
+                <a href="https://www.temenos.com/en/legal-information/terms-and-conditions/">Terms & Conditions</a>
+              </p>
+            </div>
+      
+            <div class="col-md-6 footer-note right">
+              <p>
+                Copyright &copy; 2017 Temenos Headquarters SA <span>&#183;</span>
+                <a target="_blank" href="https://www.facebook.com/TemenosGroup"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+                <a target="_blank" href="https://twitter.com/Temenos"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a target="_blank" href="http://www.linkedin.com/company/temenos"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a target="_blank" href="//plus.google.com/u/0/100035548059267323447?prsrc=3"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+              </p>
+            </div>
+          </div>
+      
+        </div>
+      </footer>
+      
+      <div class="back-to-top">
+        <a href="#top">
+          <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i></span>
+        </a>
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script id="dsq-count-scr" src="//temenostech.disqus.com/count.js" async=""></script>
+    
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myshareDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.sharedropbtn')) {
+    
+        var dropdowns = document.getElementsByClassName("sharedropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+    
+    <script>
+    	window.onload = function(){
+        	document.getElementById("shareFacebook").href = 'https://www.facebook.com/sharer/sharer.php?u=' + window.location.toString();
+    
+        	document.getElementById("shareTwitter").href = 'https://twitter.com/intent/tweet?text=Temenos+Developer+Portal&url=' + window.location.toString();
+    
+        	document.getElementById("shareGoogle").href = 'https://plus.google.com/share?url=' + window.location.toString();
+    
+        	document.getElementById("shareLinkedin").href = 'https://www.linkedin.com/shareArticle?mini=true&url=' + window.location.toString() + '&title=Temenos+Developer+Portal&summary=&source=';
+    
+        	document.getElementById("shareEmail").href = 'mailto:' + window.location.toString();
+    	}
+    </script>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-38593742-4', 'auto');
+      ga('send', 'pageview');
+    
+    </script>  </body>
+</html>
