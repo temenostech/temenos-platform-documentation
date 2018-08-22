@@ -11,7 +11,7 @@ $(window).on("load", function(){
 			var templatesList;
 			//Get templates.
 			var post1 = $.ajax({
-		    url: 'https://paascontroller.dev.temenos.cloud/platform/controller-iris.svc/templates',
+		    url: 'https://paascontroller.temenos.cloud/platform/controller-iris.svc/templates',
 		    headers: {
 		        'Accept':'application/json',
 		        'Content-Type':'application/json'

@@ -2,7 +2,7 @@
      var templatesYamlContent;
      //Get template details.
      var post1 = $.ajax({
-       url: 'https://paascontroller.dev.temenos.cloud/platform/controller-iris.svc/templates/' + templateId,
+       url: 'https://paascontroller.temenos.cloud/platform/controller-iris.svc/templates/' + templateId,
        headers: {
          'Accept': 'application/json',
          'Content-Type': 'application/json'
