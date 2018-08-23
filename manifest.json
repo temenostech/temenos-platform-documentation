@@ -1907,6 +1907,94 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/repo_commit_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/repo_commit_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/repo_commit_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/repo_commit_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/repo_commit_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/repo_commit_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/repo_commit_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/repo_commit_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/repo_commit_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/repo_commit_5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/repo_commit_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/repo_commit_6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/repo_deploy_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/repo_deploy_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/repo_deploy_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/repo_deploy_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/repository.png",
       "output": {
         "resource": {
@@ -2322,7 +2410,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/use-gitlab-repository.html",
-          "hash": "E/q1mbwQSISJqqtoY8Cfxg=="
+          "hash": "qHF2wu4tKOaewPeUqDfx7Q=="
         }
       },
       "is_incremental": false,
@@ -2358,7 +2446,7 @@
       "output": {
         ".html": {
           "relative_path": "home/toc.html",
-          "hash": "xtaMDpFjHh0pL5IVuiPv0g=="
+          "hash": "tQ2/UBxEl9wu6IRQP9Am4g=="
         }
       },
       "is_incremental": false,
@@ -2432,11 +2520,6 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "RestApiDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -2445,6 +2528,11 @@
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "RestApiDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
