@@ -14,7 +14,7 @@
      href: ./techguides/user-creation-in-paas.md
    - name: Create environments and organisations
      href: ./techguides/environment-creation-in-paas.md
-   - name: Push configuration to an environment
+   - name: Deploy features to environment
      href: ./techguides/use-gitlab-repository.md
    - name: Customize templates
      href: ./techguides/customize-templates.md
