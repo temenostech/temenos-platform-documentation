@@ -248,7 +248,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/customize-templates.html",
-          "hash": "y+uG7JyCU3SN8EyAMd5eZw=="
+          "hash": "4FfOGq9B7WZm1Q0epThfWA=="
         }
       },
       "is_incremental": false,
@@ -2410,7 +2410,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/use-gitlab-repository.html",
-          "hash": "qHF2wu4tKOaewPeUqDfx7Q=="
+          "hash": "swkfRTXWVXQ1aJbCODMT3w=="
         }
       },
       "is_incremental": false,
@@ -2520,11 +2520,6 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -2541,6 +2536,11 @@
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
