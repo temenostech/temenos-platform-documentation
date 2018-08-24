@@ -61,10 +61,10 @@ There are several ways in which you can customize your environment template base
  * Changes related to applications that will be installed under your environment.<br />
    <p style="padding-left: 10px">The applications list is defined in *<span style="color:#010466;font-weight:600;">[services][servers]</span>* component from *<span style="color:#D2940F;font-weight:600;">infratemplate.yml</span>* file located in *<span style="background-color: #858382;color: white;"> /environments/common/infra-templates </span>* &nbsp;folder of environment repository. An example of a template with 2 applications (t24 & h2) is presented bellow.<br />
    ![boost 6](./images/boost_env6.png)<br />
-   <table style="margin-left: 10px; width: 610px;"><tr><td style="border:0 !important; width: 15px !important;">-></td><td style="border:0 !important; width: 400px !important;">
+   <table style="margin-left: 10px; max-width: 610px;"><tr><td style="border:0 !important; width: 15px !important;">-></td><td style="border:0 !important; width: 400px !important;">
    If an application must be removed from the default application list of the template, then the corespondent item must be removed from *<span style="color:#010466;font-weight:600;">[services][servers]</span>* component and the item related to the application must be removed from *<span style="color:#D2940F;font-weight:600;">playbook.yml</span>* file from *<span style="background-color: #858382;color: white;"> /environments/common/playbooks </span>* &nbsp;folder.
    </td></tr></table>
-   <table style="margin-left: 10px; width: 610px;"><tr><td style="border:0 !important; width: 15px !important;">-></td><td style="border:0 !important; width: 400px !important;">
+   <table style="margin-left: 10px; max-width: 610px;"><tr><td style="border:0 !important; width: 15px !important;">-></td><td style="border:0 !important; width: 400px !important;">
    If an application must be added to the default application list of the template, then a new item must be added in *<span style="color:#010466;font-weight:600;">[services][servers]</span>* component. After this, a new role must be created for this application in *<span style="background-color: #858382;color: white;"> /environments/common/roles </span>* &nbsp;folder of environment repository and *<span style="color:#D2940F;font-weight:600;">playbook.yml</span>* file from *<span style="background-color: #858382;color: white;"> /environments/common/playbooks </span>* &nbsp;must be updated with a new item for the new application.
    </td></tr></table>
    </p>
@@ -88,7 +88,7 @@ There are several ways in which you can customize your environment template base
  * Changes related to roles tha represent a module/plugin/framework and not an application.
    <p style="padding-left: 10px">New roles that represent a module/plugin/framework and not an application can be added to an application of your environment. In order to accomplish this, a new role along its settings must be created in *<span style="background-color: #858382;color: white;"> /environments/common/roles </span>* &nbsp;folder and the new role must be added to the specific application in *<span style="color:#D2940F;font-weight:600;">playbook.yml</span>* file from *<span style="background-color: #858382;color: white;"> /environments/common/playbooks </span>* &nbsp;folder. After this, push all these changes to environment repository and trigger the deployment.</p>
  * Changes that are not related to environment template.
-   <p style="padding-left: 10px">For the changes described **<a href="./use-gitlab-repository.md#gitlab-repository-folder-structure-and-description" target="blank">here</a>** that are not related to environment template, you just have to commit and push the required changes to your environment repository and trigger the deployment.</p>
+   <p style="padding-left: 10px">For the changes described **<a href="./use-gitlab-repository.md#repository-structure" target="blank">here</a>** that are not related to environment template, you just have to commit and push the required changes to your environment repository and trigger the deployment.</p>
 
    > [!Note]
    > If the deployment operation is not successful for your changes, please rebuild the environment.

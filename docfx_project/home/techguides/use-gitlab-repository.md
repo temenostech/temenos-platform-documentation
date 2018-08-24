@@ -27,15 +27,23 @@ Before proceeding, please check the following requirements:
 The repository structure on your local machine should look like this:
 ![gitlab repo structure](./images/gitlab_repo_struc.png)
 
-| **Folder Name**  				| Description	|
+| **Folder**  				| Functionality	|
 |-					|-		|
-|addons				|	This folder is designated for AppDynamics. Upload files as JAR. |
+|addons				|	This folder is designed for AppDynamics. Upload files as JAR. |
 |client_files\h2db		|	Local H2 database that will be uploaded to the Cloud Environment. Database username must be t24 and password t24 (case sensitive). Database name is mandatory to be “TAFJDB.h2.db” (case sensitive) and must be archived as a ZIP with name TAFJDB.zip (case sensitive). If the above conditions are not satisfied, the database will not be uploaded to the Cloud Environment. This procedure will **replace** the existing database in the cloud with this one. The **old database** will be **lost**, including any records loaded manually.|
-|client_files\localjars				|	Upload here any local jars (not released by T24 Core). There can be any simple Jars used by T24 or other parties. All files will be copied to the module folder inside Jboss and the module.xml file will be updated automatically every time a new commit is triggered in this folder. If a Jar file is corrupted or there are missing dependencies, Jboss will fail to start and the Environment can’t be used. Fixing the issue, will trigger a new rebuild and Jboss restart. |
+|client_files\helptext   | Custom Help Text files can be uploaded in this folder. The file structure must be the same as HELP.TEXT T24 core. Thus, under client_files\helptext folder, the HelpText folder with subfolders for each component (AA, EB, PP, etc.) is expected.   |
 |packages				|	One or more T24 DS (Design Studio) packages can be uploaded into this folder. All packages will be deployed automatically inside T24. |
 |plugins				|	WAR files can be uploaded in this folder. The files will be deployed inside Jboss EAP. In addition to this, endpoints related to plugins can be automatically added to an application. For more details, check this <a href="./add-app-endpoint.md" target="blank">guide</a>. |
 |updates				|	The updates files downloaded from the portal in zip format. The files will be copied to the update folder and the T24 Update procedure is triggered. |
 |wsdl				|	WSDL files and folders that are required by plug-ins (war file) need to be uploaded here. |
+
+## Additional folders
+The bellow folders are not present as default in environment repository. In any of the bellow functionalities is required, the folder related to that functionality must be first created in environment repository and only after this the functionality of the folder can be used.
+
+| **Folder**  				| Functionality	|
+|-					|-		|
+|client_files\localjars	|	This folder is designed for local JARs (not released by T24 Core) installation.<br />Any JAR file used by T24 or other parties can be uploaded in this folder. During deployment, all JARs present in this folder will be deployed in the environment. If a JAR file is corrupted or some dependencies are missing, the environment will not start.   |
+|client_files\localjars\ext	|	This folder is designed for local JARs installation inside **TAFJ/ext** folder from the environment. |
 
 # Commit & Push features to Repository #
 •	Go to repository folder from your local machine(GitLabRepo folder in our example) and copy your file/files (related to your required features that must be deployed to your Environment) to the specific folder/folders based on your requirement. In this guide, an update is pushed to the Environment Repository.
