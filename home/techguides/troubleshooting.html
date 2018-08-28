@@ -158,6 +158,61 @@
 <li>Click the <strong>Refresh</strong> button and in the <strong>Output</strong> section, a log(containing the result of the DBTools command) will be displayed.<br><img src="images/dbtools_6.png" alt="dbtools 6">  </li>
 <li>Click the <strong>View</strong> button related to the generated log to view the result of the DBTools command.<br><img src="images/dbtools_7.png" alt="dbtools 7">  </li>
 </ul>
+<h1 id="3-import-data-eson-instead-of-d-record">3. Import Data Eson instead of .d record</h1>
+<h2 id="--fix-sslhandshageexception-error">- Fix &quot;sslHandshageException&quot; error</h2>
+<p> While importing the data eson files, but also while importing the Enquiry, versions, etc. an error related to sslHandshageException may appear. </p>
+<p> To solve this error, follow below instructions:</p>
+<p>Add the certification to the <strong>cacerts</strong> of the jre inside DS tool by following below steps:</p>
+<ul>
+<li><p>Download the certification:</p>
+<ul>
+<li>open in your browser, for example Chrome, the T24 BrowserWeb</li>
+<li>click on &quot;Secure&quot; &gt; Certificate &gt; Details &gt; Copy to File &gt; Next &gt; select Base-64 encoded X.509 (.CER) and click Next</li>
+<li>save the certification of the T24 area <em>(example: we are saving it with the name **sharedSandboxCert.cer</em><em>)</em></li>
+</ul>
+</li>
+<li><p>Close DS tool</p>
+</li>
+<li><p>Copy the certification into <code>&lt;DS_path&gt;\jdk\jre\lib\security</code> location</p>
+</li>
+<li><p>Go to <code>&lt;DS_path&gt;\jdk\jre\bin</code> and, from a cmd window, run below command:
+keytool -keystore ../lib/security/cacerts -importcert -alias sharedSandbox -file ../lib/security/sharedSandboxCert.cer</p>
+</li>
+<li><p>Start DS and try again to import the files</p>
+</li>
+</ul>
+<h2 id="--how-to-import-dataeson-instead-of-d-files">- How to import data.eson instead of .d files</h2>
+<ul>
+<li><p>Start the t24 server</p>
+</li>
+<li><p>Right click on <code>&lt;projectName&gt;-data-code</code></p>
+</li>
+<li><p>Select Import &gt; DesignStudio &gt; Import T24 data</p>
+</li>
+<li><p>Select the folder where you want the record to be added (usually it is added inside <code>&lt;projectName&gt;-data-code &gt; src &gt; data &gt; Model or &lt;projectName&gt;-data-code &gt; src &gt; data &gt; Public</code>  location depending on the type of the record )</p>
+</li>
+<li><p>Select the Application, meaning the table name from T24 (example: CURRENCY)</p>
+</li>
+<li><p>Type the Record Id (example: USD)</p>
+</li>
+<li><p>Click on finish button</p>
+</li>
+<li><p>You should obtain a record with the name like: GB0010001.CURRENCY!EUR.data.eson</p>
+</li>
+</ul>
+<div class="NOTE"><h5>Note</h5><p>In order to ensure that the data.eson records will be added to the package while building it please do below steps:</p>
+<ul>
+<li><p>Open the pom.xml file from the <code>&lt;projectName&gt;-packager</code> </p>
+</li>
+<li><p>Search for the line that is starting with <code>&lt;componentName&gt;</code> </p>
+</li>
+<li><p>Under that line please add this line:
+  <code>&lt;packageEsonAsCsv&gt;true&lt;/packageEsonAsCsv&gt;</code></p>
+</li>
+<li><p>Save the file</p>
+</li>
+</ul>
+</div>
 <p><br></p>
               <hr>
               
