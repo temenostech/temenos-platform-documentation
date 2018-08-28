@@ -127,3 +127,58 @@ To view the Como content, go to the TAFJ Monitoring Tool of your Environment fro
 ![dbtools 6](./images/dbtools_6.png)  
 * Click the **View** button related to the generated log to view the result of the DBTools command.  
 ![dbtools 7](./images/dbtools_7.png)  
+
+
+# 3. Import Data Eson instead of .d record 
+
+##  - Fix "sslHandshageException" error
+
+ While importing the data eson files, but also while importing the Enquiry, versions, etc. an error related to sslHandshageException may appear. 
+
+ To solve this error, follow below instructions:
+
+Add the certification to the **cacerts** of the jre inside DS tool by following below steps:
+
+-	Download the certification:
+
+  - open in your browser, for example Chrome, the T24 BrowserWeb
+  - click on "Secure" > Certificate > Details > Copy to File > Next > select Base-64 encoded X.509 (.CER) and click Next
+  - save the certification of the T24 area *(example: we are saving it with the name **sharedSandboxCert.cer**)*
+ 
+-	Close DS tool
+
+-	Copy the certification into `<DS_path>\jdk\jre\lib\security` location
+
+-	Go to `<DS_path>\jdk\jre\bin` and, from a cmd window, run below command:
+keytool -keystore ../lib/security/cacerts -importcert -alias sharedSandbox -file ../lib/security/sharedSandboxCert.cer
+
+-	Start DS and try again to import the files
+
+##  - How to import data.eson instead of .d files
+
+-	Start the t24 server
+
+-	Right click on `<projectName>-data-code`
+
+-	Select Import > DesignStudio > Import T24 data
+
+-	Select the folder where you want the record to be added (usually it is added inside `<projectName>-data-code > src > data > Model or <projectName>-data-code > src > data > Public`  location depending on the type of the record )
+
+- Select the Application, meaning the table name from T24 (example: CURRENCY)
+ 
+- Type the Record Id (example: USD)
+
+- Click on finish button
+
+- You should obtain a record with the name like: GB0010001.CURRENCY!EUR.data.eson
+
+> [!Note]
+> In order to ensure that the data.eson records will be added to the package while building it please do below steps:
+    >  - Open the pom.xml file from the `<projectName>-packager` 
+    
+    >  - Search for the line that is starting with `<componentName>` 
+   
+     >  - Under that line please add this line:
+     `<packageEsonAsCsv>true</packageEsonAsCsv>`
+
+     >  - Save the file
