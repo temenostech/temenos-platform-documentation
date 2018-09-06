@@ -159,31 +159,59 @@
 <p>Later during Jenkins configurations, it will be necessary to use these SSH keys.</p>
 <p>To use the public key, you need to click right on the key saved <em>(.ppk format)</em> and select <strong>Edit with PuTTYgen</strong></p>
 <p><img src="images/jenkins-build-save-public-key.png" alt=""></p>
+<h2 id="add-user-to-the-portal">Add user to the portal</h2>
+<ul>
+<li>Go to portal.temenos.cloud</li>
+<li>Click on <strong>New user</strong></li>
+<li>And fill the required fields</li>
+</ul>
+<div class="NOTE"><h5>Note</h5><p>Copy-paste the entire public key generated before and then delete the last part until equal sign and press <strong>Create user</strong></p>
+</div>
+<p><img src="images/jenkins-build-new-portal-user.png" alt=""></p>
+<h2 id="add-a-second-user-to-the-portal">Add a second user to the portal</h2>
+<p>The same as for the first user added, first make sure you generated a <strong>new</strong> SSH key and then:</p>
+<ul>
+<li>Go to portal.temenos.cloud</li>
+<li>Click on <strong>New user</strong></li>
+<li>And fill the required fields</li>
+</ul>
+<div class="NOTE"><h5>Note</h5><p>Copy-paste the entire <strong>public</strong> key generated before and then delete the last part until equal sign and press <strong>Create user</strong></p>
+</div>
+<p><img src="images/jenkins-build-second-portal-user.png" alt=""></p>
 <h2 id="add-ssh-key-to-gitlab-repository">Add SSH key to GitLab repository</h2>
 <p>We are using GitLab repository, but you can use a different one. </p>
-<p>In this repository you have to add a user to connect to Jenkins in order to build resources.</p>
+<p>In this repository you have to add the ssh keys for the users created in order to connect to Jenkins and build resources.</p>
+<p>The users created into the <a href="https://portal.temenos.cloud/">https://portal.temenos.cloud/</a> will be automatically added in the Gitlab repo.</p>
 <ul>
-<li>Log in to GitLab as an <strong>admin</strong> and follow below steps:</li>
+<li><p>Log in to GitLab as an <strong>admin</strong> and follow below steps:</p>
+<ul>
+<li>Click on the key for admin area</li>
+<li>Go to <strong>users</strong> tab</li>
+<li>Search the users created (<em>example: cristina</em>) and press enter</li>
+<li>Click on the user name and then on the edit button on the right</li>
+<li>Set a password of minimum 8 chars and repeat password for confirmation, then Save changes</li>
+<li>Logout from admin menu and login with the new user and the password set before</li>
 </ul>
-<p><img src="images/jenkins-build-user-gitlab.png" alt=""></p>
+</li>
+<li><p><strong>Change user password:</strong></p>
 <ul>
-<li>Change user password:</li>
-</ul>
-<p>After clicking <strong>Create user</strong> button, click Edit button up-right and set a new password, confirm it and then click <strong>Save changes</strong>.</p>
-<ul>
-<li>Now logout from admin user and login with the newly created user. </li>
 <li>Once you login, you will notice that it will be required automatically to setup a new password (Input your current password &gt; Set a new password &gt; Confirm it &gt; Click <strong>Set new password</strong></li>
-<li>After this step you will be automatically logged out and you need to login again with the new password</li>
-<li>Click on the user icon on the top-right corner and select &#39;Settings&#39;</li>
-<li>Go to <strong>SSH Keys</strong> tab and paste the public key that you generated before as follows:<ul>
+<li>After this step you will be automatically logged out and you need to login <strong>again</strong> with the new password</li>
+<li>Click on the user icon on the top-right corner and select &#39;Settings&#39;<ul>
+<li>Go to <strong>SSH Keys</strong> tab and paste the public key that you generated before as follows:</li>
 <li>paste the entire public key &gt; you will notice that the Title field is automatically completed with the last part of the key (<em>rsa-key-20180731</em>)</li>
 <li>delete the last part until equal sign and press <strong>Add key</strong></li>
 </ul>
 </li>
 </ul>
+</li>
+</ul>
 <p><img src="images/jenkins-build-user-gitlab-public.png" alt=""></p>
+<p>Repeat the same steps from this section <strong>(&#39;Add SSH key to GitLab repository&#39;)</strong> for the second portal user that you created.</p>
 <h2 id="add-user-to-your-gitlab-project">Add user to your Gitlab project</h2>
 <p>You also need to add the created user to your project and give full access:</p>
+<div class="NOTE"><h5>Note</h5><p>Repeat the same steps below also for the other user created in the portal</p>
+</div>
 <ul>
 <li>Login back as an admin and go to admin area (<em>use settings button</em>)<ol>
 <li>Click on <strong>Projects</strong> tab</li>
@@ -194,37 +222,38 @@
 </li>
 </ul>
 <p><img src="images/jenkins-build-user-gitlab-role.png" alt=""></p>
-<p>Go to Credentials from left pane inside Jenkins console and then click global:</p>
+<h2 id="add-credentials">Add credentials</h2>
+<p>Inside Jenkins console, go to Credentials from left pane and then click global:</p>
 <p><img src="images/jenkins-build-credentials.png" alt=""></p>
 <p><br></p>
 <p>Then add credentials:</p>
 <p><img src="images/jenkins-build-add-credentials.png" alt=""></p>
 <p><br></p>
 <ul>
-<li>A new screen is open. </li>
-</ul>
-<p><img src="images/jenkins-build-fields.png" alt=""></p>
-<ul>
+<li>A new screen is open</li>
 <li>In the Kind box - click the dropdown button and select ‘SSH Username with private key’</li>
 <li>Scope - you can leave the default option &#39;Global (Jenkins, node...)&#39;</li>
 <li>Choose a username. In current case we have chosen ‘gituser1’ so that we can easily identify that it is associated with demorepo repository in GitHub. </li>
 <li>Go to Private Key field, select <strong>&#39;Enter directly&#39;</strong> and paste the <strong><em>private</em></strong> key generated at previous step</li>
 <li>Click OK</li>
 </ul>
+<p><img src="images/jenkins-build-fields.png" alt=""></p>
 <p><br></p>
-<p>Now if you click on credentials, you will see the following screen with user details:</p>
+<ul>
+<li>Add credentials for the second user</li>
+<li>Go to Credentials from left pane inside Jenkins console and then click global.</li>
+<li>Click &#39;Add credentials&#39; and fill the required fields</li>
+<li>In the Kind box - click the dropdown button and select ‘SSH Username with private key’</li>
+<li>Scope - you can leave the default option &#39;Global (Jenkins, node...)&#39;</li>
+<li>Insert the second username you just added to the portal. </li>
+<li>Go to Private Key field, select <strong>&#39;Enter directly&#39;</strong> and paste the <strong><em>private</em></strong> key generated at previous step</li>
+<li>Click OK</li>
+</ul>
+<p><img src="images/jenkins-build-fields2.png" alt=""></p>
+<p>Now if you click on credentials, you will see the following screen with both users details:</p>
 <p><img src="images/jenkins-build-user-id.png" alt=""></p>
 <div class="NOTE"><h5>Note</h5><p>This uniqe ID of SSH key will be used in the pipeline scripts (Jenkins File) to clone the repositories. </p>
 </div>
-<h3 id="add-user-to-the-portal">Add user to the portal</h3>
-<ul>
-<li>Go to portal.temenos.cloud</li>
-<li>Click on <strong>New user</strong></li>
-<li>And fill the required fields</li>
-</ul>
-<div class="NOTE"><h5>Note</h5><p>Copy-paste the entire public key generated before and then delete the last part until equal sign and press <strong>Create user</strong></p>
-</div>
-<p><img src="images/jenkins-build-new-portal-user.png" alt=""></p>
 <h2 id="configure-jenkins-pipeline-job-to-use-ssh-keys">Configure Jenkins pipeline job to use SSH keys</h2>
 <ul>
 <li>Go to My View from left pane inside Jenkins console </li>
@@ -244,28 +273,6 @@
 <ul>
 <li>On the same screen, make sure you have the Jenkins File path in Script Path, then click on Apply and &#39;Save&#39; </li>
 </ul>
-<h2 id="add-a-second-user-to-the-portal">Add a second user to the portal</h2>
-<p>The same as for the first user added, first make sure you generated a new SSH key and then:</p>
-<ul>
-<li>Go to portal.temenos.cloud</li>
-<li>Click on <strong>New user</strong></li>
-<li>And fill the required fields</li>
-</ul>
-<div class="NOTE"><h5>Note</h5><p>Copy-paste the entire <strong>public</strong> key generated before and then delete the last part until equal sign and press <strong>Create user</strong></p>
-</div>
-<p><img src="images/jenkins-build-second-portal-user.png" alt=""></p>
-<ul>
-<li>Then go to Credentials from left pane inside Jenkins console and then click global.</li>
-<li><p>Click &#39;Add credentials&#39; and fill the required fields</p>
-</li>
-<li><p>In the Kind box - click the dropdown button and select ‘SSH Username with private key’</p>
-</li>
-<li>Scope - you can leave the default option &#39;Global (Jenkins, node...)&#39;</li>
-<li>Insert the second username you just added to the portal. </li>
-<li>Go to Private Key field, select <strong>&#39;Enter directly&#39;</strong> and paste the <strong><em>private</em></strong> key generated at previous step</li>
-<li>Click OK</li>
-</ul>
-<p><img src="images/jenkins-build-fields2.png" alt=""></p>
 <h2 id="build-the-jenkins-job">Build the Jenkins job</h2>
 <ul>
 <li>It’s time now to go ahead and build our job.</li>
@@ -286,6 +293,19 @@
 <p>Build should be successful:</p>
 <p><img src="images/jenkins-build-success.png" alt=""> </p>
 <h2 id="promote-pipeline-workflow">Promote pipeline workflow</h2>
+<ul>
+<li><p>Click on &#39;Promote Changes&#39;</p>
+</li>
+<li><p>Then on &#39;Configure&#39;</p>
+</li>
+<li><p>And finally click on &#39;Pipeline&#39;</p>
+</li>
+</ul>
+<ul>
+<li>Insert your repository URL (<em>in our example: git@staging-gitlab.temenos.cloud:root/Temenos-DS-Demo.git</em>)</li>
+<li>Credentials: use the second user that you added to the portal</li>
+<li>Script Path: PromoteChangesJenkinsFile</li>
+</ul>
 <p>Go again to left pane inside Jenkins console and press &#39;Jenkins&#39; button</p>
 <p>Then click on &#39;Built on&#39; button on &#39;Promote Changes&#39; line</p>
 <p><img src="images/jenkins-build-promote-changes.png" alt=""> </p>
