@@ -4,9 +4,9 @@ $(window).on("load", function(){
 
 		var $selecttmpl = $('#templateSelectionId');
 		$.each(templatesList, function(idx, item){
-			if (item.id != "1bkhsq3k12ps5"){
+			if (item.publicTemplate){
 				$selecttmpl.append('<option value="' + item.id + '">' + item.name + '</option>');
-			}		
+			}
 		})
 
 		function getTemplatesList() {
