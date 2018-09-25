@@ -4,12 +4,21 @@
   "xrefmap": "xrefmap.yml",
   "files": [
     {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "home/Legal.md",
       "output": {
         ".html": {
           "relative_path": "home/Legal.html",
-          "hash": "48GsCur0NouTfP1YWHgEsg=="
+          "hash": "Rpc/f/BCY7B0rzRmDiUlQA=="
         }
       },
       "is_incremental": false,
@@ -21,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "home/architecture.html",
-          "hash": "sUuz7m0eSvEyYrbdQbbAYA=="
+          "hash": "FCtwxxSmVT4YPO6F52cHww=="
         }
       },
       "is_incremental": false,
@@ -33,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "home/benefits.html",
-          "hash": "NCwhMvnHF5TlHlf275Bh5w=="
+          "hash": "wn488G7d08Ub8020Pt0LLg=="
         }
       },
       "is_incremental": false,
@@ -45,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "home/create-dev-env-video.html",
-          "hash": "iMMdHkC8+iUMECLdJdNvjA=="
+          "hash": "B85FvXNkYoA97Dbj6J3swg=="
         }
       },
       "is_incremental": false,
@@ -57,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "home/faq.html",
-          "hash": "NL0PxzlaGb+bbGHi3LvD9Q=="
+          "hash": "FjLUPpZRwo2R+A/Up8p0Vg=="
         }
       },
       "is_incremental": false,
@@ -190,7 +199,7 @@
       "output": {
         ".html": {
           "relative_path": "home/index.html",
-          "hash": "iZ7GK38vC7+UVTXaYMG6hA=="
+          "hash": "T+QeH7aqSOMXJ7YJRzop7Q=="
         }
       },
       "is_incremental": false,
@@ -202,7 +211,7 @@
       "output": {
         ".html": {
           "relative_path": "home/jenkins-build-video.html",
-          "hash": "EnTJbzI+850qgENeIC1XHw=="
+          "hash": "Xk6OBQmlxSTAdOHa6psMIw=="
         }
       },
       "is_incremental": false,
@@ -214,7 +223,7 @@
       "output": {
         ".html": {
           "relative_path": "home/overview.html",
-          "hash": "XYNYnwY2ycuEyx4tirvCig=="
+          "hash": "z9y6xN14uKC4c9nqbYf57Q=="
         }
       },
       "is_incremental": false,
@@ -248,7 +257,7 @@
       "output": {
         ".html": {
           "relative_path": "home/support.html",
-          "hash": "32gKXI6/vxvuEwYGW1vvhA=="
+          "hash": "iKlwa1dsQbqKGn009g13Ag=="
         }
       },
       "is_incremental": false,
@@ -260,7 +269,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/add-app-endpoint.html",
-          "hash": "T4cUXAMizRXEN7tn/lkcAQ=="
+          "hash": "rbMLcJq/Ojpc3Spz119wlA=="
         }
       },
       "is_incremental": false,
@@ -272,7 +281,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/customize-templates.html",
-          "hash": "4FfOGq9B7WZm1Q0epThfWA=="
+          "hash": "V8yvPy97UzzSCvF5fU3dvQ=="
         }
       },
       "is_incremental": false,
@@ -284,7 +293,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/environment-creation-in-paas.html",
-          "hash": "Pj6KeC6YTH1Zln4kWecY8A=="
+          "hash": "h5R1IIiJYG94BStMOUu9Qw=="
         }
       },
       "is_incremental": false,
@@ -2386,7 +2395,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/index.html",
-          "hash": "9N/rhtesdvgHDPDCAljgnA=="
+          "hash": "3auKyATlFy2lpsAFkx4LXw=="
         }
       },
       "is_incremental": false,
@@ -2398,7 +2407,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/jenkins-build-promote-pipelines.html",
-          "hash": "N2f0y+DWwnvvvVZHVDh0cg=="
+          "hash": "GW2tfVuukKbWjnwcUwCAxg=="
         }
       },
       "is_incremental": false,
@@ -2410,7 +2419,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/t24-development.html",
-          "hash": "E9eZrw0J1JBgDwgwWgUkdw=="
+          "hash": "/rfZE+qg8ieTH6nwb23nQw=="
         }
       },
       "is_incremental": false,
@@ -2422,7 +2431,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/troubleshooting.html",
-          "hash": "rBquZoaJszFFop73OcaAjA=="
+          "hash": "PKNb4ldihux3iGCkH1NIDQ=="
         }
       },
       "is_incremental": false,
@@ -2434,7 +2443,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/use-gitlab-repository.html",
-          "hash": "swkfRTXWVXQ1aJbCODMT3w=="
+          "hash": "T37cepXZFwpAibUObGc5OA=="
         }
       },
       "is_incremental": false,
@@ -2446,7 +2455,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/user-creation-in-paas.html",
-          "hash": "/WlrrxP8Eu8q8p55wCYpKQ=="
+          "hash": "kohuYmTuQH6dDuZ49AcJEA=="
         }
       },
       "is_incremental": false,
@@ -2458,7 +2467,7 @@
       "output": {
         ".html": {
           "relative_path": "home/temenos-cloud-templates.html",
-          "hash": "UHRHGCp0TS7eMNp3JmUs3A=="
+          "hash": "QR5X/9s42VnXSkGB8K/fTg=="
         }
       },
       "is_incremental": false,
@@ -2482,7 +2491,7 @@
       "output": {
         ".html": {
           "relative_path": "home/users.html",
-          "hash": "/h1vCyfSIvYG+bimUXe3ag=="
+          "hash": "lzKsvzjHsCaKtfTLPAG6Ug=="
         }
       },
       "is_incremental": false,
@@ -2494,7 +2503,7 @@
       "output": {
         ".html": {
           "relative_path": "home/what-is-devx.html",
-          "hash": "4tFZwhuwW9ZkBsM3jXxsOw=="
+          "hash": "ejNXpwQ7ABn/vcFZwvcHpg=="
         }
       },
       "is_incremental": false,
@@ -2517,7 +2526,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "hFWMFtVeahT4TXkDCInJkg=="
+          "hash": "6/sbUc5lD8y+fu0YuDbbLw=="
         }
       },
       "is_incremental": false,
@@ -2544,14 +2553,18 @@
         "incrementalPhase": "build"
       },
       "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "RestApiDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "TocDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
@@ -2562,17 +2575,13 @@
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build"
         }
       }
     },
     {
       "status": {
         "can_incremental": false,
-        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
         "incrementalPhase": "postProcessing"
       },
       "processors": {}
