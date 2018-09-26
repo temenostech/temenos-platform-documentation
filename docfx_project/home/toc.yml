@@ -28,9 +28,9 @@
   href: ./techguides/troubleshooting.md
 - name: Getting Support
   href: ./support.md
-- name: Video Tutorials
+- name: Tutorials
   items:
-    - name: Jenkins Build Demo
+    - name: Jenkins Build 
       href: ./jenkins-build-video.md
-    - name: Create and Manage Dev Enviroment Demo
+    - name: Create and Manage Dev Enviroment
       href: ./create-dev-env-video.md
