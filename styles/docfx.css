@@ -772,7 +772,7 @@ footer {
   .toc .level1 > li {
     display: block;
   }
-  
+
   .toc .level1 > li:after {
     display: none;
   }
@@ -891,4 +891,34 @@ div.embeddedvideo iframe {
   .footer {
     display: none;
   }
+}
+
+/* For templates */
+.collapseItem {
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.collapseItem:before {
+  content: "\002B";
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.collapseActive:before {
+  content: "\2212";
+}
+
+.collapseContent {
+  padding: 0px 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+  background-color: #f7f7f7;
 }

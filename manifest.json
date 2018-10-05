@@ -231,10 +231,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/scripts/functionToTriggerOnSelect.js",
+      "source_relative_path": "home/scripts/getTemplateDetails.js",
       "output": {
         "resource": {
-          "relative_path": "home/scripts/functionToTriggerOnSelect.js"
+          "relative_path": "home/scripts/getTemplateDetails.js"
         }
       },
       "is_incremental": false,
@@ -246,6 +246,17 @@
       "output": {
         "resource": {
           "relative_path": "home/scripts/getTemplates.js"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/scripts/js-yaml.min.js",
+      "output": {
+        "resource": {
+          "relative_path": "home/scripts/js-yaml.min.js"
         }
       },
       "is_incremental": false,
@@ -2467,7 +2478,7 @@
       "output": {
         ".html": {
           "relative_path": "home/temenos-cloud-templates.html",
-          "hash": "QR5X/9s42VnXSkGB8K/fTg=="
+          "hash": "2BkwsG5XAlnfuASytij5DA=="
         }
       },
       "is_incremental": false,
@@ -2553,14 +2564,13 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
           "incrementalPhase": "build"
         },
         "RestApiDocumentProcessor": {
@@ -2572,8 +2582,9 @@
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
+        "ResourceDocumentProcessor": {
           "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
