@@ -34,3 +34,7 @@
       href: ./jenkins-build-video.md
     - name: Create and Manage Dev Enviroment
       href: ./create-dev-env-video.md
+    - name: Export and Import a Database
+      href: ./export-import-database-video.md
+    - name: Manage Cloud Environments and Customize Templates
+      href: ./cloud-environments-customize-templates.md
