@@ -38,3 +38,5 @@
       href: ./export-import-database-video.md
     - name: Manage Cloud Environments and Customize Templates
       href: ./cloud-environments-customize-templates.md
+    - name: FCM Cloud Configuration
+      href: ./fcm-configuration-video.md
