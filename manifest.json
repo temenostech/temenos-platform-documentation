@@ -97,6 +97,18 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "home/fcm-configuration-video.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/fcm-configuration-video.html",
+          "hash": "NBPde0TR3ty/ZhqdyPb4KA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Resource",
       "source_relative_path": "home/images/architecture-arrows.png",
       "output": {
@@ -2514,7 +2526,7 @@
       "output": {
         ".html": {
           "relative_path": "home/toc.html",
-          "hash": "Uo3vEBkwviojIPC7IMFDCw=="
+          "hash": "fXliDjSHQ9XFySux63Yz4A=="
         }
       },
       "is_incremental": false,
@@ -2593,11 +2605,6 @@
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "RestApiDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -2609,6 +2616,11 @@
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
