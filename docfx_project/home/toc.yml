@@ -36,6 +36,8 @@
       href: ./create-dev-env-video.md
     - name: Export and Import a Database
       href: ./export-import-database-video.md
+    - name: Add Features to an Environment
+      href: ./add-features-to-environment-video.md
     - name: Manage Cloud Environments and Customize Templates
       href: ./cloud-environments-customize-templates.md
     - name: FCM Cloud Configuration
