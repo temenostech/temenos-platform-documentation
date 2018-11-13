@@ -24,7 +24,7 @@
      href: ./techguides/t24-development.md
    - name: Use Jenkins to Build Pipelines
      href: ./techguides/jenkins-build-promote-pipelines.md
-   - name: FCM Configuration
+   - name: Configure and Use FCM Application
      href: ./techguides/fcm-configuration.md  
 - name: Troubleshooting
   href: ./techguides/troubleshooting.md
