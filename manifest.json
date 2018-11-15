@@ -26,11 +26,23 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "home/access-ud-directories-video.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/access-ud-directories-video.html",
+          "hash": "y43J/RjMCmiI63CZRJ86fw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "home/add-features-to-environment-video.md",
       "output": {
         ".html": {
           "relative_path": "home/add-features-to-environment-video.html",
-          "hash": "e0YjhBRipMAZYR9JjeNRUg=="
+          "hash": "xwSNg+Vo27O1NRKw/GQU2g=="
         }
       },
       "is_incremental": false,
@@ -66,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "home/cloud-environments-customize-templates.html",
-          "hash": "V+LmzJ+lBDOzDR4AoifqmA=="
+          "hash": "chXXMJ4mzESZh86ktHL0/w=="
         }
       },
       "is_incremental": false,
@@ -78,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "home/create-dev-env-video.html",
-          "hash": "6MpjKIMLj2Nmp7hfbPsl2w=="
+          "hash": "h0tR/Q48PQZ8YxPZLNrn/g=="
         }
       },
       "is_incremental": false,
@@ -90,7 +102,7 @@
       "output": {
         ".html": {
           "relative_path": "home/export-import-database-video.html",
-          "hash": "296FWc/ORyEY2DVZV2Q9dw=="
+          "hash": "jdj8q2iO8V3/uep6cZIcJQ=="
         }
       },
       "is_incremental": false,
@@ -114,7 +126,7 @@
       "output": {
         ".html": {
           "relative_path": "home/fcm-configuration-video.html",
-          "hash": "NBPde0TR3ty/ZhqdyPb4KA=="
+          "hash": "BBMAee3oaWrB8CkKYegQag=="
         }
       },
       "is_incremental": false,
@@ -259,7 +271,7 @@
       "output": {
         ".html": {
           "relative_path": "home/jenkins-build-video.html",
-          "hash": "GdBWgJYNCqBish9jz1mCNg=="
+          "hash": "5mHAl0ekOQlWXeN5EyRHUQ=="
         }
       },
       "is_incremental": false,
@@ -323,15 +335,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/access-ud-directories.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/access-ud-directories.html",
-          "hash": "e2M0FzC05W/qnCEVfPZmCQ=="
+          "hash": "qDqPvXJI12jcbPFkMaRPVQ=="
         }
       },
       "is_incremental": false,
@@ -391,6 +400,39 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/abn-package.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/access-ud-new-env.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/access-ud-new-env.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/access-ud-schema.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/access-ud-schema.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/access-ud-sftp-fields.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/access-ud-sftp-fields.png"
         }
       },
       "is_incremental": false,
@@ -2664,7 +2706,7 @@
       "output": {
         ".html": {
           "relative_path": "home/toc.html",
-          "hash": "5CyZzq5bU1urYnL9IYMNHQ=="
+          "hash": "Y5xgBICdnlhX/xbZb8HEVQ=="
         }
       },
       "is_incremental": false,
@@ -2738,6 +2780,11 @@
         "incrementalPhase": "build"
       },
       "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -2754,11 +2801,6 @@
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
-          "incrementalPhase": "build"
-        },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
