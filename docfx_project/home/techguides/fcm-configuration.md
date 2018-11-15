@@ -29,7 +29,7 @@ Learn how to use FCM application by accessing it via Temenos Cloud Platform.
   - **Description**
 - Select an application from **Cloud native applications**
 - Choose a template from **Templates** list
-*- **Labels** field is optional*
+- *Labels field is optional*
 - Click **Create environment**
 
 ![new environment](./images/fcm-environment-fields.png)
