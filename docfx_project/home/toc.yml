@@ -44,5 +44,9 @@
       href: ./add-features-to-environment-video.md
     - name: Manage Cloud Environments and Customize Templates
       href: ./cloud-environments-customize-templates.md
+    - name: Access UD Directories
+      href: ./access-ud-directories-video.md
     - name: FCM Cloud Configuration
       href: ./fcm-configuration-video.md
+      
+      
