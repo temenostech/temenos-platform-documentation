@@ -39,7 +39,7 @@ You can use any other ssh key generator client.
 
 > [!Note]
 > In order to have a valid ssh key that can be recognized by 
->  Infrastructure, do not use the Save pulic key button from Puttygen and just select the whole public key from the PuTTYgen screen and save it in your local machine.
+>  Infrastructure, do not use the Save public key button from Puttygen and just select the whole public key from the PuTTYgen screen and save it in your local machine.
 
 ![save public key](./images/putty-keygen-publickey.png)
 

@@ -69,6 +69,7 @@ A T24 Server is required in Design Studio to be able to import/export applicatio
 The **Toggle TAFJ project nature** action must be performed in order to be able to develop, compile and package jBC routines and to interrogate your sandbox database.  
 * Right click on **data-code** module and choose **Toggle TAFJ project nature**.  
 ![tafj toggle 1](./images/tafj-toggle-1.png)  
+<br>
 * In the next screen, import _tafj_properties_ from Your_DEV_Path/TAFJ/conf folder, choose TAFJ_HOME as Your_DEV_Path/TAFJ folder and click **Next**. In the bellow picture, DEV_Path is set to C:\TemenosDEV.
 ![tafj toggle 2](./images/tafj-toggle-2.png)  
 * In the next screens, click **Next** and **Finish**.  
@@ -114,14 +115,26 @@ In order to deploy your developed routines in the sandbox, a T24 package must be
 ![tortoise add](./images/tortoise-add.png)  
 * A screen will appear saying that the file was added. Press **Commit**:  
 ![tortoise commit](./images/tortoise-commit.png)  
+<br>
 * A new screen will appear. Insert a comment in the upper window and then choose **Commit**.  
 ![tortoise commit and push](./images/commit-push.png)  
+<br>
 * A new screen will appear and choose **Push**.  
 ![tortoise push after commit](./images/push_after_commit.png)  
+<br>
 * A new screen will appear and choose **OK**.  
 ![tortoise ok after push](./images/ok_after_push.png)  
 * A success message should be displayed. Press **Close**.
+<br>
 ![tortoise success after push](./images/success_after_push.png)  
+
+## Trigger the deployment
+
+ - After commiting and pushing to Environment Repository all the features, you have to deploy them in your Environment. 
+ - Login to your organisation, select your environment, locate the Repository Application and click the Deploy button. 
+
+For more details about the deployment, check the following [<ins>**steps**</ins>](use-gitlab-repository.md#trigger-deployment).
+
 
 # Check jBC routines deployment to Sandbox #
 
