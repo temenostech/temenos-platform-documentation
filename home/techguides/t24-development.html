@@ -158,7 +158,7 @@ This package is adapted according to the T24 version of your sandbox and it is p
 <h1 id="toggle-project-to-tafj-project-nature">Toggle Project to TAFJ project nature</h1>
 <p>The <strong>Toggle TAFJ project nature</strong> action must be performed in order to be able to develop, compile and package jBC routines and to interrogate your sandbox database.  </p>
 <ul>
-<li>Right click on <strong>data-code</strong> module and choose <strong>Toggle TAFJ project nature</strong>.<br><img src="images/tafj-toggle-1.png" alt="tafj toggle 1">  </li>
+<li>Right click on <strong>data-code</strong> module and choose <strong>Toggle TAFJ project nature</strong>.<br><img src="images/tafj-toggle-1.png" alt="tafj toggle 1"><br><br></li>
 <li>In the next screen, import <em>tafj_properties</em> from Your_DEV_Path/TAFJ/conf folder, choose TAFJ_HOME as Your_DEV_Path/TAFJ folder and click <strong>Next</strong>. In the bellow picture, DEV_Path is set to C:\TemenosDEV.
 <img src="images/tafj-toggle-2.png" alt="tafj toggle 2">  </li>
 <li>In the next screens, click <strong>Next</strong> and <strong>Finish</strong>.<br><img src="images/tafj-toggle-3.png" alt="tafj toggle 3">  </li>
@@ -195,13 +195,20 @@ This package is adapted according to the T24 version of your sandbox and it is p
 <ul>
 <li>Copy the generated package into the <strong>packages</strong> folder of the cloned GitLab repository from your local machine:<br><img src="images/packages.png" alt="packages">  </li>
 <li>If the package is a new file in the repository, the package must be first added to the repository:<br><img src="images/tortoise-add.png" alt="tortoise add">  </li>
-<li>A screen will appear saying that the file was added. Press <strong>Commit</strong>:<br><img src="images/tortoise-commit.png" alt="tortoise commit">  </li>
-<li>A new screen will appear. Insert a comment in the upper window and then choose <strong>Commit</strong>.<br><img src="images/commit-push.png" alt="tortoise commit and push">  </li>
-<li>A new screen will appear and choose <strong>Push</strong>.<br><img src="images/push_after_commit.png" alt="tortoise push after commit">  </li>
+<li>A screen will appear saying that the file was added. Press <strong>Commit</strong>:<br><img src="images/tortoise-commit.png" alt="tortoise commit"><br><br></li>
+<li>A new screen will appear. Insert a comment in the upper window and then choose <strong>Commit</strong>.<br><img src="images/commit-push.png" alt="tortoise commit and push"><br><br></li>
+<li>A new screen will appear and choose <strong>Push</strong>.<br><img src="images/push_after_commit.png" alt="tortoise push after commit"><br><br></li>
 <li>A new screen will appear and choose <strong>OK</strong>.<br><img src="images/ok_after_push.png" alt="tortoise ok after push">  </li>
 <li>A success message should be displayed. Press <strong>Close</strong>.
+<br>
 <img src="images/success_after_push.png" alt="tortoise success after push">  </li>
 </ul>
+<h2 id="trigger-the-deployment">Trigger the deployment</h2>
+<ul>
+<li>After commiting and pushing to Environment Repository all the features, you have to deploy them in your Environment. </li>
+<li>Login to your organisation, select your environment, locate the Repository Application and click the Deploy button. </li>
+</ul>
+<p>For more details about the deployment, check the following <a href="use-gitlab-repository.html#trigger-deployment"><ins><strong>steps</strong></ins></a>.</p>
 <h1 id="check-jbc-routines-deployment-to-sandbox">Check jBC routines deployment to Sandbox</h1>
 <ul>
 <li>Log-in to your organisation in PaaS Portal, go to your enviroment page and click on the <strong>Monitor Application</strong> Endpoint for the T24 application.<br><img src="images/monitor-application.png" alt="monitor application">  </li>

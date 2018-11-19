@@ -360,6 +360,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "home/techguides/clone-environment.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/clone-environment.html",
+          "hash": "SWhtfMXwn0Ih+i6GG1bLGA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "home/techguides/customize-templates.md",
       "output": {
         ".html": {
@@ -741,6 +753,61 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/check-logs.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/clone-env-button-disabled.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/clone-env-button-disabled.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/clone-env-creating-all.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/clone-env-creating-all.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/clone-env-creating.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/clone-env-creating.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/clone-env-new.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/clone-env-new.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/clone-env-press-clone.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/clone-env-press-clone.png"
         }
       },
       "is_incremental": false,
@@ -2646,7 +2713,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/t24-development.html",
-          "hash": "Ayc7CVHrcXwLY+Rq7ZmvZA=="
+          "hash": "dKIvA7EOcuShizBGRlTSVg=="
         }
       },
       "is_incremental": false,
@@ -2682,7 +2749,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/user-creation-in-paas.html",
-          "hash": "wDY8/OHmBJ0F2hf6oAZb2A=="
+          "hash": "2pq+efOWmgWA71QTkKO2HQ=="
         }
       },
       "is_incremental": false,
@@ -2780,19 +2847,9 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "RestApiDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
@@ -2801,6 +2858,16 @@
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "RestApiDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
