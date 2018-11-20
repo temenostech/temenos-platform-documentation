@@ -7,8 +7,9 @@ In case different changes have been done such as: modifying the database, additi
 Please see below some explanations on how this process works and what are the restrictions during the cloning action.
 
 > [!Note]
-> Check also our <a href="https://www.youtube.com/watch?v=XBsmOZvg-z8" target="_blank">**Video tutorial**
+> Check also our <a href="https://www.youtube.com/watch?v=mTzfl_OYKVI" target="_blank">**Video tutorial**
 </a>
+
 
 ## Environment Status during Cloning
 
