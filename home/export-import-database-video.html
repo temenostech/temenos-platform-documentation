@@ -82,9 +82,28 @@
 
 <html>
  <body>
-<iframe src="https://www.youtube.com/embed/pHBOjBuWyfY" width="720" height="400" frameborder="0" allowfullscreen=""></iframe>
+<iframe src="https://www.youtube.com/embed/pHBOjBuWyfY" width="100%" height="400" frameborder="0" allowfullscreen=""></iframe>
  </body>
 </html>
+
+<p><br></p>
+<p><span style="color:#005294"><strong>Total video time</strong></span>: <strong>18:13 minutes</strong>
+<br>
+<span style="color:#005294"><strong>Total demo time</strong></span>: <strong>~ 40 minutes</strong> (from which <strong>~ 15 minutes</strong> the creation of the environment)</p>
+<p><span style="color:#005294"><strong>INFO</strong></span>:
+<br></p>
+<ul>
+<li>Create <span style="color:#005294"><strong>two environments</strong></span>.</li>
+<li>Add a <span style="color:#005294"><strong>user</strong></span> on the portal and attach to it the public <span style="color:#005294"><strong>SSH key</strong></span>.</li>
+<li>Login to T24 from &quot;source&quot; environment and <span style="color:#005294"><strong>change a record</strong></span> in the database.</li>
+<li><span style="color:#005294"><strong>Export</strong></span> the database of the source environment.</li>
+<li><span style="color:#005294"><strong>Connect</strong></span> to SFTP server via WinSCP client using the user and the SFTP endpoint from the portal.</li>
+<li><span style="color:#005294"><strong>Download</strong></span> the DB to the local machine.</li>
+<li><span style="color:#005294"><strong>Clone</strong></span> the target environment.</li>
+<li><span style="color:#005294"><strong>Push</strong></span> the database to the new (target) environment.</li>
+<li><span style="color:#005294"><strong>Deploy</strong></span> the database to the target repository.</li>
+<li><span style="color:#005294"><strong>Check</strong></span> the successful import of the database &gt; Verify the changed record in T24.</li>
+</ul>
 <p><br></p>
               <hr>
               
