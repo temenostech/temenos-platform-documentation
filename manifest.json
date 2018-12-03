@@ -2510,6 +2510,72 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/t24-created-projects.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/t24-created-projects.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/t24-dev-copy-jars.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/t24-dev-copy-jars.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/t24-dev-set-home.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/t24-dev-set-home.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/t24-ft-sample-xml.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/t24-ft-sample-xml.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/t24-set-paths.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/t24-set-paths.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/t24-tafj-properties.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/t24-tafj-properties.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/tDiag_1.png",
       "output": {
         "resource": {
@@ -2720,12 +2786,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/t24-development.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/t24-development.html",
-          "hash": "dKIvA7EOcuShizBGRlTSVg=="
+          "hash": "dRS8lceIAXFefDEfJwBP2w=="
         }
       },
       "is_incremental": false,
