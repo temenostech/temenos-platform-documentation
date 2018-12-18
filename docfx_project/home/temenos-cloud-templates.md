@@ -18,7 +18,7 @@ Templates are used by the provisioning service to create Sandbox environments wi
 By default, new Templates are added with each monthly release of T24. These Templates follow a standard pattern, configuration and technology stack, but with the most recent releases of T24 being deployed.
 
 > [!Note]
-> To see what are the **Azure Prices and Cost of Resources**, please check <a href="https://azure.microsoft.com/en-gb/pricing/calculator/" target="_top"><u>**here**</u></a>.
+> To see what are the **Azure Prices and Cost of Resources**, please check <a href="https://azure.microsoft.com/en-gb/pricing/calculator/" target="_blank"><u>**here**</u></a>.
 
 
 However, the Temenos Development platform team also offer the ability to create customised Templates for clients. For more information, please contact **CloudPlatformSupport@temenos.com**.
