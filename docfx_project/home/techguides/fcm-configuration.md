@@ -1,7 +1,7 @@
 # Configure FCM Application
 
 Learn how to use FCM application by accessing it via Temenos Cloud Platform.
-
+    
 > [!Note]
 > Check also our <a href="https://www.youtube.com/watch?v=XBsmOZvg-z8" target="_blank">**Video tutorial**
 </a>
