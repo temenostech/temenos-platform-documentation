@@ -49,6 +49,12 @@ Press **'New environment'**
 > • A target environment with the same template as the last one
 
 
+**Build resources** environment:
+
+Fill the mandatory fields as in below picture:
+
+![](./images/jenkins-build-new-environment-resources.png)
+
 Fill the following parameters and press **'Create environment'**:
 
 •	Name
@@ -130,7 +136,7 @@ Build Pipeline works based on pipeline script (Jenkins file).
 
 This section explains how to add the credentials in order to clone the Git repositories.
 
-The Jenkins Server requires a Source code repository, which will be taken from Github repository (or another kind of repository that you have), then a Developement environment and a Test environment. The dependencies between all of them are done through the ssh keys.
+The Jenkins Server requires a Source code repository, which will be taken from Github repository (or another kind of repository that you have), then a Development environment and a Test environment. The dependencies between all of them are done through the ssh keys.
 
 The SSH key is used to authenticate between the Jenkins server and the environments. The keys solve different problems such as: user identification, security/ privacy and continuos integration and delivery best practices  
 
@@ -234,7 +240,7 @@ You also need to add the created user to your project and give full access:
 
 ![](./images/jenkins-build-user-gitlab-role.png)
 
-## Add credentials
+## Add credentials and Use ID from 'temenos-ds-demo' Project
 
 Inside Jenkins console, go to Credentials from left pane and then click global:
 
@@ -257,6 +263,8 @@ Then add credentials:
 
 ![](./images/jenkins-build-fields.png)
 
+> [!Note]
+> The ID field must be completed with the **sshagent credentials** taken from the JenkinsFile available on [https://github.com/temenostech/temenos-ds-demo](https://github.com/temenostech/temenos-ds-demo) as in the picture above.
 
 <br>
 
