@@ -1663,6 +1663,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-new-environment-resources.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-new-environment-resources.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/jenkins-build-new-environment.png",
       "output": {
         "resource": {
@@ -2499,6 +2510,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/t24-configure-paths.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/t24-configure-paths.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/t24-connection.png",
       "output": {
         "resource": {
@@ -2554,10 +2576,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/t24-set-paths.png",
+      "source_relative_path": "home/techguides/images/t24-tafj-properties.png",
       "output": {
         "resource": {
-          "relative_path": "home/techguides/images/t24-set-paths.png"
+          "relative_path": "home/techguides/images/t24-tafj-properties.png"
         }
       },
       "is_incremental": false,
@@ -2565,10 +2587,21 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/t24-tafj-properties.png",
+      "source_relative_path": "home/techguides/images/t24-view-server-search.png",
       "output": {
         "resource": {
-          "relative_path": "home/techguides/images/t24-tafj-properties.png"
+          "relative_path": "home/techguides/images/t24-view-server-search.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/t24-view-server.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/t24-view-server.png"
         }
       },
       "is_incremental": false,
@@ -2779,7 +2812,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/jenkins-build-promote-pipelines.html",
-          "hash": "rNdAki+6MQk9hHceEmg9wg=="
+          "hash": "TmQXZT9Im0FqBjoEBa5XFQ=="
         }
       },
       "is_incremental": false,
@@ -2794,7 +2827,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/t24-development.html",
-          "hash": "dRS8lceIAXFefDEfJwBP2w=="
+          "hash": "ab6cr1jQkgHg5UrmgafpNw=="
         }
       },
       "is_incremental": false,
@@ -2928,19 +2961,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
+        "RestApiDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "RestApiDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
@@ -2949,6 +2977,11 @@
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
