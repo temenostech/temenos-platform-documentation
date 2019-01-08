@@ -7,7 +7,7 @@ Learn how to use FCM application by accessing it via Temenos Cloud Platform.
 </a>
 
 
-## About FCM Template
+## About FCM Template   
 
  - Login to your organization on the Temenos Cloud Platform ([https://portal.temenos.cloud/](https://portal.temenos.cloud/)) using the username and password provided by the Temenos team
  - Each time you login, you must accept the Privacy Notice in order to have access to the portal
