@@ -896,7 +896,7 @@ div.embeddedvideo iframe {
 /* For templates */
 .collapseItem {
   cursor: pointer;
-  padding: 18px;
+  padding: 8px;
   width: 100%;
   border: none;
   text-align: left;
@@ -916,6 +916,10 @@ div.embeddedvideo iframe {
 }
 
 .collapseContent {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 12px;
+  font-size: 12px;
+  font-weight: normal;
   padding: 0px 18px;
   max-height: 0;
   overflow: hidden;

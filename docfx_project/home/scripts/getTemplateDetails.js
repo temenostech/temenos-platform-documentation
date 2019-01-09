@@ -24,18 +24,18 @@
 
        if (templateYamlContent) {
          var yamlTemplateComps = parseYamlTemplate(templateYamlContent, templateVersion);
-         var templateContentMinimize = '<div class="collapseContent" style="margin-bottom: 8px; margin-top: 8px; font-family: Arial, Helvetica, sans-serif !important;line-height: 18px !important;font-size: 16px !important;font-weight: normal;">';
+         var templateContentMinimize = '<div class="collapseContent">';
          templateContentMinimize = templateContentMinimize + '<p style="margin-bottom: 8px;margin-top: 8px;">' + templateName + ' template has the following components:<br></p>';
          var i;
          for (i = 0; i < yamlTemplateComps.length; i++) {
            templateContentMinimize = templateContentMinimize + '<li style="flex-direction: column; padding: 4px 4px 4px 4px; background-color: white; border: 1px solid rgba(0,0,0,.125);">' + yamlTemplateComps[i] + '</li>';
          }
          templateContentMinimize = templateContentMinimize + '<p style="margin-bottom: 8px;margin-top: 8px;"></p>';
-         templateContentMinimize = templateContentMinimize + '</div>';
        } else { // error case.
-         var templateContentMinimize = '<div class="collapseContent" style="margin-bottom: 8px; margin-top: 8px; font-family: Arial, Helvetica, sans-serif !important;line-height: 18px !important;font-size: 16px !important;font-weight: normal;">';
+         var templateContentMinimize = '<div class="collapseContent">';
          templateContentMinimize = templateContentMinimize + '<p style="margin-bottom: 8px;margin-top: 8px;">Error received while retrieving template details!</p>';
        }
+       templateContentMinimize = templateContentMinimize + '</div>';
      }
 
      // Append template content.
@@ -75,8 +75,6 @@
      if (doc.services.servers) {
        var position;
        for (let j = 0; j <= doc.services.servers.length - 1; j++) {
-         // Get server name.
-         var name = doc.services.servers[j].app_description.replace("{version}", templateVersion);
          // Get server vm type.
          if (doc.services.servers[j].server_size) {
            var vmtype = doc.services.servers[j].server_size;
@@ -84,18 +82,47 @@
            var vmtype = generalVmType;
          }
          position = counter + j;
-         // Set name and vmtype.
-         yamlTemplateComps[position] = name + " ";
-         if (name == 't24') {
-           yamlTemplateComps[position] = yamlTemplateComps[position] + templateVersion + " version "
+         if (doc.services.servers[j].applications){
+           let apps_manag_list = new Array();
+           // Get only manageable applications.
+           apps_manag_list = doc.services.servers[j].applications.filter(function(app) {return app.app_manageable});
+           let apps_manag_nr = apps_manag_list.length;
+           if (apps_manag_nr > 0){
+             yamlTemplateComps[position] = "";
+             for (let jj = 0; jj <= apps_manag_nr-1; jj++) {
+                 yamlTemplateComps[position] = yamlTemplateComps[position] + doc.services.servers[j].applications[jj].name;
+                 if (jj == apps_manag_nr-2){
+                   yamlTemplateComps[position] = yamlTemplateComps[position] + " and ";
+                 } else {
+                   if (jj != apps_manag_nr-1){
+                     yamlTemplateComps[position] = yamlTemplateComps[position] + ", ";
+                   } else {
+                     if (apps_manag_nr > 1){
+                       yamlTemplateComps[position] = yamlTemplateComps[position] + " applications ";
+                     } else {
+                       yamlTemplateComps[position] = yamlTemplateComps[position] + " application ";
+                     }
+                   }
+                 }
+             }
+             yamlTemplateComps[position] = yamlTemplateComps[position] + " installed in " + vmtype + " VM named " + doc.services.servers[j].name;
+           }
+         } else {
+           // Get server name.
+           var name = doc.services.servers[j].app_description.replace("{version}", templateVersion);
+           // Set name and vmtype.
+           yamlTemplateComps[position] = name + " ";
+           if (name == 't24') {
+             yamlTemplateComps[position] = yamlTemplateComps[position] + templateVersion + " version ";
+           }
+           yamlTemplateComps[position] = yamlTemplateComps[position] + " installed in " + vmtype + " VM named " + doc.services.servers[j].name;
          }
-         yamlTemplateComps[position] = yamlTemplateComps[position] + "installed in " + generalVmType + " VM named " + doc.services.servers[j].name;
        }
      }
 
      // Get client repository app.
      if (doc.repository) {
-       yamlTemplateComps[doc.services.servers.length + counter] = doc.repository[0].app_description;
+       yamlTemplateComps[yamlTemplateComps.length] = doc.repository[0].app_description;
      }
      return yamlTemplateComps;
    }
