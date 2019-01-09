@@ -14,7 +14,7 @@ $(window).on("load", function() {
 		}
     if (item.publicTemplate) {
 			firstTemplateAdded = true;
-      $templatesList.append('<li id="' + item.id + '" class="collapseItem" style="' + styleTemplate + '" onclick="getTemplateDetails(this.id)"><div class=""><p style="color: #005294; font-size: 24px; margin-bottom: 0px;">' + item.name + '</p><p class="card-subtitle">' + item.description + '</p></div></li>');
+      $templatesList.append('<li id="' + item.id + '" class="collapseItem" style="' + styleTemplate + '" onclick="getTemplateDetails(this.id)"><div class=""><p style="color: #005294; font-size: 16px; margin-bottom: 0px;">' + item.name + '</p><p class="card-subtitle" style="font-size: 14px;">' + item.description + '</p></div></li>');
     }
   })
 
