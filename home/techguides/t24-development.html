@@ -98,63 +98,17 @@
 </ul>
 <p>A development package (containing Design Studio, T24 libraries and TAFJ) is provided by Temenos  and it is pre-configured in order to be able to introspect T24 application hosted in Temenos Could Development Platform.</p>
 <p>This package is adapted according to the T24 version of your sandbox and it is provided as a <strong>.zip</strong> file. </p>
-<p>After extracting it in your local machine to any location, the bellow folders and files should be available:
-<img src="images/dev-package.png" alt="dev package"> </p>
-<p><br></p>
-<div class="NOTE"><h5>Note</h5><p>The development package is pre-configured to be extracted in <strong><em>C:\TemenosDev</em></strong> path. 
-If the package is extracted in another path (Your_DEV_Path), make sure you make the bellow <strong>changes</strong> to the development package:
-<em>- in <em>tafj.link file</em> from Your_DEV_Path\DesignStudio\dropins folder, update the path variable with the new path to <em>TAFJ\eclipse</em> folder.(make sure you use &#39;/&#39; as separator between folders)</em></p>
-</div>
-<div class="NOTE"><h5>Note</h5><p><span style="color:red">If above steps are not fixing the issue, then:</span></p>
+<p>After extracting it in your local machine to any location, the bellow folders should be available:</p>
 <ul>
-<li>Delete the <strong>tafj.link</strong> file from the <strong>dropins</strong> folder.</li>
-<li>Copy the plugins from your <strong>TAFJ&gt; eclipse &gt; plugins</strong> and paste them into the <strong>DesignStudio &gt; dropins</strong> folder of your DS.</li>
-<li>Example:
-<img src="images/t24-dev-copy-jars.png" alt="jars"></li>
+<li>DS</li>
+<li>t24Lib</li>
+<li>TAFJ</li>
 </ul>
-</div>
-<p><br></p>
-<p>In <strong>tafj.properties</strong> from Your_DEV_Path\TAFJ\conf, update the lines based on Your_DEV_Path.
- -If a project already exists in your DesignStudio workspace, in <strong>Launch T24 Packager (TAFJ).launch</strong> file from Your_DEV_Path\DesignStudio\workspace\YOUR-project-packager, lines related to <em>home</em> must be updated accordingly to Your_Path. </p>
-<ul>
-<li>Example:
-<img src="images/t24-dev-set-home.png" alt="set home"></li>
-</ul>
-<p><br></p>
-<p>To be able to interrogate the sandbox database, a series of updates must be applied to <strong>tafj.properties</strong> file from Your_DEV_Path\TAFJ\conf:  </p>
-<table>
-<thead>
-<tr>
-<th><strong>Property</strong></th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>temn.tafj.jdbc.url</td>
-<td>jdbc:h2:tcp://<strong>Your_Sandbox_Database_IP</strong>/TAFJDB;MODE=Oracle;TRACE_LEVEL_FILE=0; TRACE_LEVEL_SYSTEM_OUT=0;DB_CLOSE_ON_EXIT=FALSE;FILE_LOCK=NO; IFEXISTS=TRUE;CACHE_SIZE=131072;MVCC=TRUE;LOCK_TIMEOUT=30000</td>
-</tr>
-<tr>
-<td>temn.tafj.jdbc.driver</td>
-<td>org.h2.Driver</td>
-</tr>
-<tr>
-<td>temn.tafj.jdbc.username</td>
-<td>t24</td>
-</tr>
-<tr>
-<td>temn.tafj.jdbc.password</td>
-<td>t24</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>Example:</li>
-</ul>
-<p><img src="images/t24-tafj-properties.png" alt="tafj properties"> </p>
-<p><br></p>
-<div class="NOTE"><h5>Note</h5><p>In order to get the <strong>private database IP</strong> of your Sandbox, you need to contact Temenos Cloud support team at <a href="CloudPlatformSupport@temenos.com"><strong>CloudPlatformSupport@temenos.com</strong></a>.</p>
-</div>
+<p>To be able to interrogate the sandbox database, following update must be applied to <strong>tafj.properties</strong> file from Your_DEV_Path\TAFJ\conf:  </p>
+<p>temn.tafj.jdbc.url=jdbc:h2:tcp://<strong>ENV_DNS</strong>:9092/TAFJDB;MODE=Oracle;TRACE_LEVEL_FILE=0;
+TRACE_LEVEL_SYSTEM_OUT=0;DB_CLOSE_ON_EXIT=FALSE;
+FILE_LOCK=NO;IFEXISTS=TRUE;CACHE_SIZE=131072;
+MVCC=TRUE;LOCK_TIMEOUT=30000<br> <span style="color:red">Replace <strong>ENV_DNS</strong> with <strong>your environment DNS</strong>.</span></p>
 <h2 id="create-new-project-in-design-studio">Create New Project in Design Studio</h2>
 <p>In order to accomplish the development actions presented at the beginning of the guide, you need to create a new project in Design Studio.</p>
 <ul>
