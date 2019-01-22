@@ -26,6 +26,8 @@
      href: ./techguides/jenkins-build-promote-pipelines.md
    - name: Clone an Environment  
      href: ./techguides/clone-environment.md
+   - name: Export and Import a Database  
+     href: ./techguides/export-import-database.md
    - name: Access UD Directories
      href: ./techguides/access-ud-directories.md
    - name: Configure and Use FCM Application
