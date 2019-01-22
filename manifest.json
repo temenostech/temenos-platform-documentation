@@ -408,6 +408,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "home/techguides/export-import-database.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/export-import-database.html",
+          "hash": "yZiU+YXoL/O2iY22Y7jO1A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "home/techguides/fcm-configuration.md",
       "output": {
         ".html": {
@@ -622,6 +634,28 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/app_endp8.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/blue-ocean-menu.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/blue-ocean-menu.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/blue-ocean-new-pipeline.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/blue-ocean-new-pipeline.png"
         }
       },
       "is_incremental": false,
@@ -930,6 +964,215 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/data_files_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-amend-address.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-amend-address.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-amend-customer.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-amend-customer.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-authorise-record.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-authorise-record.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-check-record.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-check-record.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-copy-repo-endpoint.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-copy-repo-endpoint.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-deploy.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-deploy.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-export.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-export.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-git-clone.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-git-clone.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-go-to-app.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-go-to-app.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-login-portal.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-login-portal.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-push-db.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-push-db.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-search-record.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-search-record.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-sftp-connect.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-sftp-connect.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-sftp-screen.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-sftp-screen.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-sftp-ssh.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-sftp-ssh.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-t24-signin-author.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-t24-signin-author.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-t24-signin.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-t24-signin.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-tafjdb-zip.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-tafjdb-zip.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-tortoise-clone.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-tortoise-clone.png"
         }
       },
       "is_incremental": false,
@@ -2873,7 +3116,7 @@
       "output": {
         ".html": {
           "relative_path": "home/toc.html",
-          "hash": "4U+M6dUVJKDhpkx4PVlKlA=="
+          "hash": "XlpKeQk2Y0+4baOFhe2EXQ=="
         }
       },
       "is_incremental": false,
@@ -2947,6 +3190,11 @@
         "incrementalPhase": "build"
       },
       "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -2963,11 +3211,6 @@
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
-          "incrementalPhase": "build"
-        },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
