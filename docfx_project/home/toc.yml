@@ -16,6 +16,8 @@
      href: ./techguides/environment-creation-in-paas.md
    - name: Deploy features to environment
      href: ./techguides/use-gitlab-repository.md
+   - name: Make Updates on Cloud Environment
+     href: ./techguides/make-updates-cloud.md
    - name: Customize templates
      href: ./techguides/customize-templates.md
    - name: Add new endpoints to an application
