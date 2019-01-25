@@ -2247,6 +2247,116 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/make-updates-add-zip.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/make-updates-add-zip.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/make-updates-commit-push.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/make-updates-commit-push.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/make-updates-copy-endpoint.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/make-updates-copy-endpoint.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/make-updates-deploy.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/make-updates-deploy.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/make-updates-git-clone.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/make-updates-git-clone.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/make-updates-git-fields.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/make-updates-git-fields.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/make-updates-monitor-login.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/make-updates-monitor-login.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/make-updates-show-updates.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/make-updates-show-updates.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/make-updates-t24-signin.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/make-updates-t24-signin.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/make-updates-tsa-start.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/make-updates-tsa-start.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/monitor-application-result.png",
       "output": {
         "resource": {
@@ -3052,6 +3162,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "home/techguides/make-updates-cloud.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/make-updates-cloud.html",
+          "hash": "5cyb6bMfAy4dasyd6+kDCg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "home/techguides/t24-development.md",
       "output": {
         ".html": {
@@ -3116,7 +3238,7 @@
       "output": {
         ".html": {
           "relative_path": "home/toc.html",
-          "hash": "XlpKeQk2Y0+4baOFhe2EXQ=="
+          "hash": "tbNHW+c41odXDQA9dE2Njw=="
         }
       },
       "is_incremental": false,
@@ -3190,14 +3312,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "RestApiDocumentProcessor": {
