@@ -167,7 +167,7 @@ After attaching the SSH key, click on save button – here we can give a site na
 
  - Go back to the portal to the target environment and click the **Deploy** button under the Repository
 
-![](./images/db-deploy.png) 
+![deployment](./images/db-deploy-button.png) 
 
  -  After the deployment is done, you can check the change of the database as follows:
    - Click Go to Application to open a T24 Browser
