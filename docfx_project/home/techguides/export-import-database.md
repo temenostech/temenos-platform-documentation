@@ -33,6 +33,8 @@ Login to your organization on the PaaS portal (<a href="https://portal.temenos.c
  - Make sure you attach an SSH key to the user created, as it is required when exporting and importing the database.
 
 > [!Note]
+> This user can be used on both environments (DEMO and DEMO1).
+> 
 > Check <a href="./user-creation-in-paas.md" target="_blank">**this**</a>  user guide to see how to create a user on the portal and attach a SSH key.
 
 
@@ -63,11 +65,11 @@ Login to your organization on the PaaS portal (<a href="https://portal.temenos.c
 
 ![](./images/db-amend-customer.png) 
 
-- Change the GB Town/City from the Physical Address tab and then press **Commit the deal** button in order to save the change. 
+- Change the GB Town/City from the Physical Address tab and then press **Commit the deal** button ![](./images/db-commit-button.png) in order to save the change. 
 
 *(**Note**: You can do any change on any record type)*
 
-![](./images/db-amend-address.png) 
+![](./images/db-amend-info.png) 
 
  - Two notifications about Customer's documents will pop up > Mark them as '**Received**' and Click "**Accept Overrides**" > Transaction is complete
  - The next step is to authorize the record change:
@@ -88,12 +90,12 @@ In case you want to export and re-import the database into an environment or do 
 
  - After clicking, it will start exporting (the action should take less than a minute or more minutes based on the DB size). While exporting, the button is disabled, after the export is done, the button gets enabled back.
 
-![](./images/db-authorise-record.png) 
+![](./images/db-export.png) 
 
 > [!Note]
 > Please note that the same steps showed in this demo can be followed to export an environment. Start exporting by using the **Export** button (check the available buttons under T24 Release).
 
- - During this action, the db is exported in a SFTP server to which you have to connect in order to download the related content on your local machine. 
+ - During this action, the db is exported through SFTP server to which you have to connect in order to download the related content on your local machine. 
  - Download WinSCP from <a href="https://winscp.net/eng/index.php" target="_blank">**here**</a>.
  - Open WinSCP and create a new site which will allow the connection through SFTP server:
    - For host name, use the endpoint of the db. *(You can copy it from your portal by clicking the copy icon near the endpoint of the database - 'sftp.temenos.cloud').*
