@@ -109,7 +109,8 @@ They will be used to see how to export the DB from one environment and import it
 <li>Fill all required fields</li>
 <li>Make sure you attach an SSH key to the user created, as it is required when exporting and importing the database.</li>
 </ul>
-<div class="NOTE"><h5>Note</h5><p>Check <a href="user-creation-in-paas.html" target="_blank"><strong>this</strong></a>  user guide to see how to create a user on the portal and attach a SSH key.</p>
+<div class="NOTE"><h5>Note</h5><p>This user can be used on both environments (DEMO and DEMO1).</p>
+<p>Check <a href="user-creation-in-paas.html" target="_blank"><strong>this</strong></a>  user guide to see how to create a user on the portal and attach a SSH key.</p>
 </div>
 <h2 id="span-stylecolororangechange-a-record-into-the-database-for-demo-purposesspan"><span style="color:orange">Change a record into the Database <em>(for demo purposes)</em></span></h2>
 <div class="NOTE"><h5>Note</h5><p>This section is just an <strong>example</strong> and it can be skipped. 
@@ -134,10 +135,10 @@ The only purpose is to prove that the export and import of the database has been
 </ul>
 <p><img src="images/db-amend-customer.png" alt=""> </p>
 <ul>
-<li>Change the GB Town/City from the Physical Address tab and then press <strong>Commit the deal</strong> button in order to save the change. </li>
+<li>Change the GB Town/City from the Physical Address tab and then press <strong>Commit the deal</strong> button <img src="images/db-commit-button.png" alt=""> in order to save the change. </li>
 </ul>
 <p><em>(</em><em>Note</em><em>: You can do any change on any record type)</em></p>
-<p><img src="images/db-amend-address.png" alt=""> </p>
+<p><img src="images/db-amend-info.png" alt=""> </p>
 <ul>
 <li>Two notifications about Customer&#39;s documents will pop up &gt; Mark them as &#39;<strong>Received</strong>&#39; and Click &quot;<strong>Accept Overrides</strong>&quot; &gt; Transaction is complete</li>
 <li>The next step is to authorize the record change:</li>
@@ -157,11 +158,11 @@ The only purpose is to prove that the export and import of the database has been
 <li><p>After clicking, it will start exporting (the action should take less than a minute or more minutes based on the DB size). While exporting, the button is disabled, after the export is done, the button gets enabled back.</p>
 </li>
 </ul>
-<p><img src="images/db-authorise-record.png" alt=""> </p>
+<p><img src="images/db-export.png" alt=""> </p>
 <div class="NOTE"><h5>Note</h5><p>Please note that the same steps showed in this demo can be followed to export an environment. Start exporting by using the <strong>Export</strong> button (check the available buttons under T24 Release).</p>
 </div>
 <ul>
-<li>During this action, the db is exported in a SFTP server to which you have to connect in order to download the related content on your local machine. </li>
+<li>During this action, the db is exported through SFTP server to which you have to connect in order to download the related content on your local machine. </li>
 <li>Download WinSCP from <a href="https://winscp.net/eng/index.php" target="_blank"><strong>here</strong></a>.</li>
 <li>Open WinSCP and create a new site which will allow the connection through SFTP server:<ul>
 <li>For host name, use the endpoint of the db. <em>(You can copy it from your portal by clicking the copy icon near the endpoint of the database - &#39;sftp.temenos.cloud&#39;).</em></li>
@@ -240,7 +241,7 @@ The only purpose is to prove that the export and import of the database has been
 <ul>
 <li>Go back to the portal to the target environment and click the <strong>Deploy</strong> button under the Repository</li>
 </ul>
-<p><img src="images/db-deploy.png" alt=""> </p>
+<p><img src="./images/db-deploy.png" alt=""> </p>
 <ul>
 <li>After the deployment is done, you can check the change of the database as follows:<ul>
 <li>Click Go to Application to open a T24 Browser</li>
