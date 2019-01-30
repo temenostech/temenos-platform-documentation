@@ -364,7 +364,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/add-app-endpoint.html",
-          "hash": "NdZwz5C45BPJA0gmfa+YPA=="
+          "hash": "ftCoWc0oVyNCoXly2VRQtQ=="
         }
       },
       "is_incremental": false,
@@ -586,6 +586,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/app-endpoints-deployed.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/app-endpoints-deployed.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/app_endp1.png",
       "output": {
         "resource": {
@@ -597,43 +608,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/app_endp2.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/app_endp2.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/app_endp3.png",
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/app_endp3.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/app_endp5.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/app_endp5.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/app_endp6.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/app_endp6.png"
         }
       },
       "is_incremental": false,
@@ -1305,17 +1283,6 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/dunce-cap.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/endpoints-deployed.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/endpoints-deployed.png"
         }
       },
       "is_incremental": false,
