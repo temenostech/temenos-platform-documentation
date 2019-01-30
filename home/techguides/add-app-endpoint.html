@@ -82,9 +82,9 @@
 <h1 id="create-new-application-endpoint">Create new application endpoint</h1>
 
 <p>This document can be used by technical staff who need to add new endpoints to the T24 application of a Dev Environment in case of deploying a plugin in the application server of the Dev Environment.</p>
-<div class="NOTE"><h5>Note</h5><p>This guide presumes that a Dev Environment is already created and available.</p>
+<div class="NOTE"><h5>Note</h5><p>This guide presumes that a Dev Environment is already created and available. <em>(In this example, we have created a Dev Environment named DEMO).</em></p>
 </div>
-<p>   Two properties are mandatory to create a new endpoint:</p>
+<p><strong>Three</strong> properties are mandatory to create a new endpoint:</p>
 <table>
 <thead>
 <tr>
@@ -99,39 +99,46 @@
 </tr>
 <tr>
 <td>Endpoint URL</td>
-<td>The Endpoint URL will be automatically concatenated with the Hostname of your Dev Environment and opened in a new tab of your browser when the Endpoint Description is clicked. <strong>Endpoint URL must always start with &quot;/&quot; character.</strong></td>
+<td>The Endpoint URL will be: <br> * <strong>opened</strong> in a new tab of your browser when the Endpoint Description is clicked, if the type is clickable. <br> * <strong>copied</strong>, if the type is copyable. <br> * automatically <strong>downloaded</strong>, if it is a downloadable type.</td>
+</tr>
+<tr>
+<td>Endpoint Type</td>
+<td>In order to apply above actions, a type must be added for each endpoint, based on how you want to be displayed or used: clickable, copyable and downloadable.</td>
 </tr>
 </tbody>
 </table>
 <p>In order to create new endpoints for the T24 application of your Dev Environment, the following steps must be followed:</p>
 <ul>
-<li>Clone the GitLab repository of your Dev Environment in your local machine.  For more details on how to clone a repository, check this <a href="use-gitlab-repository.html">page</a>.</li>
+<li><p>Clone the GitLab repository of your Dev Environment in your local machine. For more details on how to clone a repository, check this <a href="use-gitlab-repository.html" target="_blank"><strong>page</strong></a>.</p>
+</li>
 <li><p>Create a file with <strong>.endpoint</strong> extension inside <strong>plugins</strong> folder of the cloned repository as in the bellow picture. The name of the file is not important, but it should relate to the plugin for which endpoints are added.
 <img src="images/app_endp1.png" alt="create endpoint file"></p>
 </li>
-<li><p>Inside the <strong>.endpoint</strong> file, add a new line for each endpoint with the structure <strong>Your_Endpoint_Description~/Your_Endpoint_URL</strong>, as per bellow picture.
-<img src="images/app_endp2.png" alt="edit endpoint file"></p>
-<div class="NOTE"><h5>Note</h5><p>&quot;<strong>~</strong>&quot; character is used as a separator between Endpoint Description and URL properties and it must always be present in each endpoint line.</p>
+<li><p>Inside the <strong>.endpoint</strong> file, add a new line for each endpoint with the structure <strong>Your_Endpoint_Description~Your_Endpoint_URL~Your_Endpoint_Type</strong>, as per bellow picture:</p>
+<p><img src="images/app-endpoint-edit.png" alt="edit endpoint file"></p>
+<div class="NOTE"><h5>Note</h5><p>&quot;<strong>~</strong>&quot; character is used as a separator between Endpoint Description, URL and Type and it must always be present in each endpoint line.</p>
 </div>
 </li>
-<li><p>After creating and editing the <strong>.endpoint</strong> file, commit the file to the GitLab repository of your Dev Environment.</p>
+<li><p>After creating and editing the <strong>.endpoint</strong> file, commit the file to the GitLab repository of your Dev Environment. <em>(In this example we have used TortoiseGit to commit and push the endpoint file - Command: Git Commit -&gt;&quot;master&quot;)</em></p>
 </li>
+<li>Go to your environment to the portal and click the <strong>deploy</strong> button under the Repository.   </li>
 <li>Wait until the <strong>.endpoint</strong> file is deployed in your Dev Environment and check the Endpoints section of the T24 application where Your_Endpoint_Description Endpoint is displayed as bellow.
-<img src="images/app_endp3.png" alt="portal endpoint display">
-When the new Endpoint is clicked, the URL opened in a new tab is based on the Hostname of the Dev Environment and the Endpoint URL property from the .endpoint file.
-<img src="images/app_endp4.png" alt="portal endpoint display"></li>
+<img src="images/app_endp3.png" alt="portal endpoint display"></li>
 </ul>
 <h1 id="add-multiple-endpoints-from-a-single-file">Add multiple endpoints from a single file</h1>
 <ul>
-<li>If a plugin has more than one endpoint, create a .endpoint file and add a separate line for each endpoint item, as bellow.
-<img src="images/app_endp5.png" alt="multiple endpoints same file"></li>
-<li>After the file is deployed, all 3 endpoints from the example are displayed in the Endpoints section of the T24 application.
-<img src="images/app_endp6.png" alt="multiple endpoints same file display"></li>
+<li>If a plugin has more than one endpoint, create a .endpoint file and add a separate line for each endpoint item, as bellow:
+<img src="images/app-endpoint-multiple.png" alt="multiple endpoints same file"></li>
 </ul>
-<h1 id="add-multiple-endpoints-from-multiple-files-in-the-same-time">Add multiple endpoints from multiple files in the same time</h1>
+<p><br></p>
+<ul>
+<li>After the file is deployed, all 3 endpoints from the example are displayed in the Endpoints section of the T24 application.
+<img src="images/endpoints-deployed.png" alt="multiple endpoints same file display"></li>
+</ul>
+<h1 id="add-multiple-endpoints-from-multiple-files-at-the-same-time">Add multiple endpoints from multiple files at the same time</h1>
 <ul>
 <li>If you want to add endpoints for multiple plugins deployed in your Dev Environment, you can add the endpoints of all plugins in a single file or you can also create a separate .endpoint file for each plugin for a better delimitation.
-<img src="images/app_endp7.png" alt="multiple endpoints multiple files"></li>
+<img src="images/app-endpoint-files.png" alt="multiple endpoints multiple files"></li>
 <li>After both files are deployed, the 3 endpoints for plugin 1 and the 2 endpoints for plugin 2 are displayed in the Endpoints section of the T24 application.
 <img src="images/app_endp8.png" alt="multiple endpoints multiples files display"></li>
 </ul>
