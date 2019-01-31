@@ -364,7 +364,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/add-app-endpoint.html",
-          "hash": "IPUhBibiHsaZiyx0nO9jvQ=="
+          "hash": "rk8aB4DhsinuUysyft+2Jw=="
         }
       },
       "is_incremental": false,
@@ -590,6 +590,17 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/app-endpoint-multiple.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/app-endpoint-single.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/app-endpoint-single.png"
         }
       },
       "is_incremental": false,
@@ -3312,6 +3323,11 @@
         "incrementalPhase": "build"
       },
       "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -3328,11 +3344,6 @@
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
-          "incrementalPhase": "build"
-        },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
