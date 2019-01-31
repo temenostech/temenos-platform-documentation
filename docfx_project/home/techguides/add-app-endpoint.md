@@ -35,8 +35,9 @@ In order to create new endpoints for the T24 application of your Dev Environment
 
 
 # Add multiple endpoints from a single file #
- - If a plugin has more than one endpoint, create a .endpoint file and add a separate line for each endpoint item, as bellow:
- ![multiple endpoints same file](./images/app-endpoint-multiple.png)
+ - If a plugin has more than one endpoint, create a .endpoint file and add a separate line for each endpoint item, as below:
+ ![multiple endpoints same file](./images/app-endpoint-single.png)
+<br>
  - After the file is deployed, all 3 endpoints from the example are displayed in the Endpoints section of the T24 application.
  - Also note that the endpoints are displayed/ grouped by their type: clickable, copyable and downloadable.
  ![multiple endpoints same file](./images/app-endpoints-deployed-type.png)
