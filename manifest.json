@@ -364,7 +364,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/add-app-endpoint.html",
-          "hash": "ftCoWc0oVyNCoXly2VRQtQ=="
+          "hash": "IPUhBibiHsaZiyx0nO9jvQ=="
         }
       },
       "is_incremental": false,
@@ -553,6 +553,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/app-endpoint-clickable.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/app-endpoint-clickable.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/app-endpoint-edit.png",
       "output": {
         "resource": {
@@ -586,10 +597,21 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/app-endpoints-deployed.png",
+      "source_relative_path": "home/techguides/images/app-endpoints-deployed-type.png",
       "output": {
         "resource": {
-          "relative_path": "home/techguides/images/app-endpoints-deployed.png"
+          "relative_path": "home/techguides/images/app-endpoints-deployed-type.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/app-endpoints-multiple.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/app-endpoints-multiple.png"
         }
       },
       "is_incremental": false,
@@ -601,28 +623,6 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/app_endp1.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/app_endp3.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/app_endp3.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/app_endp8.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/app_endp8.png"
         }
       },
       "is_incremental": false,
