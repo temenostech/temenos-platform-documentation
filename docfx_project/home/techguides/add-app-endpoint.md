@@ -30,7 +30,8 @@ In order to create new endpoints for the T24 application of your Dev Environment
  - After creating and editing the **.endpoint** file, commit the file to the GitLab repository of your Dev Environment. *(In this example we have used TortoiseGit to commit and push the endpoint file - Command: Git Commit ->"master")*
  - Go to your environment to the portal and click the **deploy** button under the Repository.   
  - Wait until the **.endpoint** file is deployed in your Dev Environment and check the Endpoints section of the T24 application where Your_Endpoint_Description Endpoint is displayed as bellow:
- ![portal endpoint display](./images/app_endp3.png)
+ - 
+ ![portal endpoint display](./images/app-endpoint-clickable.png)
 
 
 # Add multiple endpoints from a single file #
@@ -38,13 +39,13 @@ In order to create new endpoints for the T24 application of your Dev Environment
  ![multiple endpoints same file](./images/app-endpoint-multiple.png)
  - After the file is deployed, all 3 endpoints from the example are displayed in the Endpoints section of the T24 application.
  - Also note that the endpoints are displayed/ grouped by their type: clickable, copyable and downloadable.
- ![multiple endpoints same file](./images/app-endpoints-deployed.png)
+ ![multiple endpoints same file](./images/app-endpoints-deployed-type.png)
 
 # Add multiple endpoints from multiple files at the same time #
  - If you want to add endpoints for multiple plugins deployed in your Dev Environment, you can add the endpoints of all plugins in a single file or you can also create a separate .endpoint file for each plugin for a better delimitation.
  ![multiple endpoints multiple files](./images/app-endpoint-files.png)
  - After both files are deployed, the three endpoints for plugin1 and the two endpoints for plugin2 are displayed in the Endpoints section of the T24 application.
- ![multiple endpoints multiples files display](./images/app_endp8.png)
+ ![multiple endpoints multiples files display](./images/app-endpoints-multiple.png)
 
 # Update/Remove endpoints #
  - If you want to update endpoints that were already added to an application, you just have to update the required endpoint line from the .endpoint file, commit the file to the GitLab repository of your Dev Environment and after the file is deployed, the required endpoint will be updated in the Endpoints section of your Application.
