@@ -10,7 +10,6 @@ The Administrator can navigate to the Users section on the portal, create more u
 
 The users can access their organisation only, view their user profiles and change their password. Should the users requires access to the source code repository they need to provide their public SSH Keys on the user profile section to gain access.
 
-![](../images/users.png) 
 
 # Use PuTTY ssh client for ssh key generation. #
 
@@ -55,11 +54,11 @@ You can use any other ssh key generator client.
 
 •	Login to your organisation portal using the link and the credentials provided.
 
-![portal login](./images/portal-login.png)
+![portal login](./images/user-login.png)
 
-•	Click User menu and then New user button, as below:
+•	Go to the menu on the left and then click Users tab, as below:
 
-![new user](./images/new-user.png)
+![new user](./images/users-tab.png)
 
 This will create a new user in your organisation. This new user will be automatically assigned to all GitLab Repositories from within all environments. If you have already a user created, you can click on the user and update the SSH key box with the one created above.
 
