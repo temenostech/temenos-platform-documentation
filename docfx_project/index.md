@@ -20,5 +20,35 @@
 - **Development Platform** is a cloud based service for use during development, test, implementation, and ongoing change with configurable and scalable Temenos Suites on-demand. Click [**here**](./home/overview.md) to find out more.
 
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div style="max-width:80%;height:auto;">
+ <div style="margin-left:40%">
 
 
+ <section id="sec-pricing" class="sec-pricing">
+  <div class="container">
+ 
+<div style="width:100%">
+ <div style="margin-left:10%">
+   <div class="row justify-content-center">
+
+
+    <div class="col-md-2">
+     <div class="card text-center">
+      <div class="card-block">
+        <a href="./home/overview.md">
+       <h5 class="card-title h5"><b>CONTINUE TO SITE</b></h5>
+        </a>
+      <a href="./home/overview.md">
+        <img class="img-responsive img-rounded" src="./images/docs.png" alt="" height="60" width="60" style="display:block;margin: 0 auto"/>
+      </a>
+      </div>
+     </div>
+    </div>
+
+
+ </div>
+     </div>
+    </div>
+    </div>
+ </section>
