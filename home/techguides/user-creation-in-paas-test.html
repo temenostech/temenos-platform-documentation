@@ -5,22 +5,22 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Welcome to the Temenos Cloud Platform </title>
+    <title>Introduction </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Welcome to the Temenos Cloud Platform ">
+    <meta name="title" content="Introduction ">
     <meta name="generator" content="docfx 2.22.2.0">
     
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles/docfx.vendor.css">
-    <link rel="stylesheet" href="styles/docfx.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/woocircle.css">
-    <meta property="docfx:navrel" content="toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-    <meta property="docfx:rel" content="">
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/woocircle.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    <meta property="docfx:rel" content="../../">
     
   </head>
-  <body data-spy="scroll" data-target="#affix" class="Welcome to the Temenos Cloud Platform ">
+  <body data-spy="scroll" data-target="#affix" class="Introduction ">
     <div id="wrapper">
       <header>
         
@@ -69,59 +69,65 @@
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
-        <div class="article row grid">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="welcome-to-the-temenos-cloud-platform">Welcome to the <strong>Temenos Cloud Platform</strong></h1>
+<h1 id="introduction">Introduction</h1>
 
-<p><strong>Temenos Cloud Platform</strong> is a suite of products offered by Temenos Cloud; it is a <em>Platform as a Service (PaaS)</em> that provides individuals and teams with the ability to manage and configure their own instances of Temenos applications and approved 3rd party Plug &amp; Play applications from the Temenos ecosystem.</p>
-<h3 id="benefits">Benefits</h3>
+<p>This document can be used by technical staff who need to create Users on the Temenos Cloud Platfrom and associate to each user a ssh key. </p>
+<h2 id="users"><strong>Users</strong></h2>
+<hr>
+<p>The Administrator can navigate to the Users section on the portal, create more users and invite them to access and use the portal using the URL link. This way the administrator is in control of who receives the URL link and which users can access the Organisation.</p>
+<p>The users can access their organisation only, view their user profiles and change their password. Should the users requires access to the source code repository they need to provide their public SSH Keys on the user profile section to gain access.</p>
+<p><img src="../images/users.png" alt=""> </p>
+<h1 id="use-putty-ssh-client-for-ssh-key-generation">Use PuTTY ssh client for ssh key generation.</h1>
+<p>You can use any other ssh key generator client.</p>
+<div class="NOTE"><h5>Note</h5><p>If you already have installed a ssh key generator client, you can skip this step.</p>
+</div>
+<p>•   Download the installer from <a href="http://www.putty.org/" title="http://www.putty.org/">http://www.putty.org/</a></p>
+<p><img src="images/putty-download.png" alt="putty download"></p>
+<p>•   Run the installer and click <strong>Next</strong> on each screen, without changing anything in configurations. Click <strong>Finish</strong> once completed.</p>
+<h1 id="create-ssh-keys-pair-public-and-private-keys">Create SSH keys (pair public and private keys)</h1>
+<p>•   Open PuTTYgen and click Generate button:</p>
+<p><img src="images/putty-keygen.png" alt="putty keygen"></p>
+<p>•   This creates a new ssh key by moving the mouse in the blank area(highlighted in red), as per bellow picture.</p>
+<p><img src="images/putty-keygen-random.png" alt="generate ssh key"></p>
+<p>•   After Puttygen finished key generation, you can save your public key/private key in any location from your local machine.</p>
+<div class="NOTE"><h5>Note</h5><p>In order to have a valid ssh key that can be recognized by 
+ Infrastructure, do not use the Save public key button from Puttygen and just select the whole public key from the PuTTYgen screen and save it in your local machine.</p>
+</div>
+<p><img src="images/putty-keygen-publickey.png" alt="save public key"></p>
+<p>•   From PuTTYgen screen, you must also save the private key. Press the Save private key button, choose Yes on the next prompt (save the key without a passphrase to protect it) and indicate a name and location for the private key.</p>
+<p><img src="images/putty-keygen-privatekey.png" alt="save private key"></p>
+<p>•   The public/private key location on your local machine should look like this:</p>
+<p><img src="images/putty-keygen-keyslocation.png" alt="public/private keys location"></p>
+<h1 id="add-users-in-portal-with-ssh-key">Add users in portal with SSH key</h1>
+<p>•   Login to your organisation portal using the link and the credentials provided.</p>
+<p><img src="images/portal-login.png" alt="portal login"></p>
+<p>•   Click User menu and then New user button, as below:</p>
+<p><img src="images/new-user.png" alt="new user"></p>
+<p>This will create a new user in your organisation. This new user will be automatically assigned to all GitLab Repositories from within all environments. If you have already a user created, you can click on the user and update the SSH key box with the one created above.</p>
+<p><img src="images/new-user-created.png" alt="new user created"></p>
+<p>•   Public SSH key needs to be pasted in SSH Key text box. Open Windows Explorer and locate your public key generated using PuTTY Key Generator. </p>
+<p><img src="images/putty-keygen-publicselect.png" alt="paste key text"></p>
+<p>• Right click and open it with notepad. Select all and copy to clipboard.</p>
+<p><img src="images/copy-key.png" alt="copy key"></p>
+<p>•   Paste the copied text into the SSH Key text box and click Create user button.</p>
+<p><img src="images/ssh-text-box.png" alt="ssh text box"></p>
 <ul>
-<li><p>Start development and testing in minutes, not weeks</p>
+<li><p>Your username will be created in Gitlab server and public SSH key provided will be added to your account being accessible from all the environments created in your organisation.</p>
 </li>
-<li><p>Immediate environment provisioning can acceleration all your projects</p>
-</li>
-<li><p>Simple to reproduce identical environments from templates</p>
-</li>
-<li><p>A subscription service that means you don&#39;t need to buy and manage expensive hardware</p>
-</li>
-<li><p>Self-service environment provisioning that is able to provide your teams with autonomy or centralised control</p>
+<li><p>For further details or issues related to Gitlab SSH keys usage, or other operating systems (MAC, Linux), please consult this link:  <a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/">https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/</a></p>
 </li>
 </ul>
-<h3 id="services">Services</h3>
-<ul>
-<li><strong>Development Platform</strong> is a cloud based service for use during development, test, implementation, and ongoing change with configurable and scalable Temenos Suites on-demand. Click <a href="home/overview.html"><strong>here</strong></a> to find out more.</li>
-</ul>
-<p><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<div style="max-width:80%;height:auto;">
- <div style="margin-left:40%"><p>
- <section id="sec-pricing" class="sec-pricing">
-  <div class="container">
-
-<div style="width:100%">
- <div style="margin-left:10%">
-   <div class="row justify-content-center">
-
-
-    <div class="col-md-2">
-     <div class="card text-center">
-      <div class="card-block">
-        <a href="home/overview.html">
-       <h5 class="card-title h5"><b>CONTINUE TO SITE</b></h5>
-        </a>
-      <a href="home/overview.html">
-        <img class="img-responsive img-rounded" src="images/docs.png" alt="" height="60" width="60" style="display:block;margin: 0 auto">
-      </a>
-      </div>
-     </div>
-    </div>
-
-
- </div>
-     </div>
-    </div>
-    </div>
- </section></div></div><p><br></p>
+<p><br></p>
               <hr>
               
               <div id="disqus_thread"></div>
@@ -173,9 +179,9 @@
       </div>
     </div>
     
-    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="styles/docfx.js"></script>
-    <script type="text/javascript" src="styles/main.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
     <script id="dsq-count-scr" src="//temenostech.disqus.com/count.js" async=""></script>
     
     <script>
