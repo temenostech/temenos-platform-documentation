@@ -6,24 +6,26 @@ This document can be used by technical staff who need to customize already defin
 - the VM specifications in which each application is deployed.
 
 > [!Note]
-> This guide presumes that a Sandbox is already created and available under an Organisation for which the templates customization functionality is allowed.
+> This guide presumes that a environment is already created and available under an Organisation for which the templates customization functionality is allowed.
 
 ## Boost your environment
-To start customizing your environment built using a PaaS template, login to PaaS portal using your organisation user, go to your environment page and click on the **Boost** button attached to **Repository** application.
-![boost 1](./images/boost_env1.png)
+To start customizing your environment built using a Temenos Cloud template, login to Temenos Continuous Deployment platform using your organisation user, go to your environment page and click on the **Boost** button attached to **Repository** application.
+
+![boost 1](./images/customize-templates-button.png)
+
 After clicking the Boost button, the status of Repository application is changed to <span style="color:orange">Boosting</span>, as per bellow picture. The operation triggered by the Boost button will copy in environment repository all the template files used to create the environment.
-![boost 2](./images/boost_env2.png)
-When the Boosting operation is finished, the message *"Scripts are customized for this environment."* is displayed under the name of your environment.
-![boost 3](./images/boost_env3.png)
+![boost 2](./images/customize-templates-boost.png)
+
 
 ## Repository structure after Boost
 As stated above, the Boost operation will make changes to environment repository. The difference between the before and after boost environment repository versions is represented by the presence of <span style="color:red">environments</span> folder, as it can be observed bellow.
-![boost 4](./images/boost_env4.png)
+![boost 4](./images/customize-templates-after-boost.png)
+
 The structure of the <span style="color:red">environments</span> folder is represented by 3 folders:
 - infra-templates
 - playbooks
 - roles
-![boost 5](./images/boost_env5.png)
+![boost 5](./images/customize-templates-folders.png)
 
 The description of each folder is presented bellow:
 | Folder Name        | Folder <br />Description	|
@@ -56,7 +58,7 @@ There are several ways in which you can customize your environment template base
 
 1. Changes that will require <span style="color:red;font-weight:600;">the rebuild of your environment</span>:
 > [!Note]
-> The rebuild operation will take around 20 minutes and it will recreate all environment resources(VMs) and run the deployment of all roles defined in environment template.<br />To trigger the rebuild of your environment, login to PaaS portal using your organisation user, go to your environment page and click on the **<span style="color:#00bfff;font-weight:600;">Rebuild</span>** button attached to your environment main application.
+> The rebuild operation will take around 20 minutes and it will recreate all environment resources (VMs) and run the deployment of all roles defined in environment template.<br />To trigger the rebuild of your environment, login to PaaS portal using your organisation user, go to your environment page and click on the **<span style="color:#00bfff;font-weight:600;">Rebuild</span>** button attached to your environment main application.
 
  * Changes related to applications that will be installed under your environment.<br />
    <p style="padding-left: 10px">The applications list is defined in *<span style="color:#010466;font-weight:600;">[services][servers]</span>* component from *<span style="color:#D2940F;font-weight:600;">infratemplate.yml</span>* file located in *<span style="background-color: #858382;color: white;"> /environments/common/infra-templates </span>* &nbsp;folder of environment repository. An example of a template with 2 applications (t24 & h2) is presented bellow.<br />
