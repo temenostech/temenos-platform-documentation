@@ -14,6 +14,8 @@
      href: ./techguides/user-creation-in-paas.md
    - name: Create environments and organisations
      href: ./techguides/environment-creation-in-paas.md
+   - name: Perform Environment Basic Operations
+     href: ./techguides/environment-basic-operations.md
    - name: Deploy features to environment
      href: ./techguides/use-gitlab-repository.md
    - name: Make Updates on Cloud Environment

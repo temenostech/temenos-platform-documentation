@@ -26,17 +26,17 @@ To implement the Pipeline as a code we will use Jenkins Pipeline in order to aut
 
 ## Access Development Portal
 
-Sign into following URL: `portal.temenos.cloud` using the credentials provided by Temenos (Username and Password):
+Sign into one of the following URLs (choose the link you have been provided with): [portal.temenos.cloud](https://portal.temenos.cloud/) or [https://tcd-portal.temenos.cloud/](https://tcd-portal.temenos.cloud/) using the credentials provided by Temenos (Username and Password):
 
-![](./images/jenkins-build-portal-login.png)
+![](./images/db-login.png)
 
 <br>
 
 ## Create a new environment
 
-Press **'New environment'**
+- Fill the required fileds and press **Create**
 
-![](./images/jenkins-build-new-environment.png)
+![](./images/env-new.png)
 
 
 > [!Note]
@@ -44,16 +44,16 @@ Press **'New environment'**
 > 
 > • A build environment with template "Build resources"
 > 
-> • A source environment with the required template (*in our example is "Retail Suite R17.12(H2)"*)
+> • A source environment with the required template (*in our example is "Retail Suite R18.11"*)
 > 
 > • A target environment with the same template as the last one
 
 
 **Build resources** environment:
 
-Fill the mandatory fields as in below picture:
+Click New Environment button and fill the mandatory fields as in below picture:
 
-![](./images/jenkins-build-new-environment-resources.png)
+![](./images/jenkins-build-resources.png)
 
 Fill the following parameters and press **'Create environment'**:
 
@@ -65,22 +65,19 @@ Fill the following parameters and press **'Create environment'**:
 
 •	*Labels (optional)*
 
-![](./images/jenkins-build-environment-fields.png)
+![](./images/jenkins-build-integrated.png)
 
 > [!Note]
-> It might take about 15 minutes to create the enviroment.
+> It might take about 15-20
+>  minutes to create the enviroment.
 
-
-The environment named 'Integrated Dev Environment' has been created:
-
-![](./images/jenkins-build-created-environment.png)
 
 
 ## Login to Jenkins
 
-Click on the **BUILD** environment created (the first environment created - "Build resources") and then go to Jenkins Dashboard
+After the "BuildResources" environment has been created, click on it and go to Jenkins Dashboard:
 
-![](./images/jenkins-build-dashboard.png)
+![](./images/jenkins-build-dashboard-click.png)
 
 <br>
 
@@ -167,7 +164,7 @@ To use the public key, you need to click right on the key saved *(.ppk format)* 
 
 ## Add user to the portal
 
- - Go to portal.temenos.cloud
+ - Go to [portal.temenos.cloud](https://portal.temenos.cloud/), respectively [https://tcd-portal.temenos.cloud/](https://tcd-portal.temenos.cloud/).
  - Click on **New user**
  - And fill the required fields
 
@@ -175,20 +172,20 @@ To use the public key, you need to click right on the key saved *(.ppk format)* 
 > Copy-paste the entire public key generated before and then delete the last part until equal sign and press **Create user**
 
 
-![](./images/jenkins-build-new-portal-user.png)
+![](./images/user-details.png)
 
 ## Add a second user to the portal
 
 The same as for the first user added, first make sure you generated a **new** SSH key and then:
 
- - Go to portal.temenos.cloud
+ - Go to [portal.temenos.cloud](https://portal.temenos.cloud/), respectively [https://tcd-portal.temenos.cloud/](https://tcd-portal.temenos.cloud/).
  - Click on **New user**
  - And fill the required fields
 
 > [!Note]
-> Copy-paste the entire **public** key generated before and then delete the last part until equal sign and press **Create user**
+> Copy-paste the entire **public** key generated before and then delete the last part until equal sign and press **Create**
 
-![](./images/jenkins-build-second-portal-user.png)
+![](./images/user-new-second.png)
 
 
 ## Add SSH key to GitLab repository

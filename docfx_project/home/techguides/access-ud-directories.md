@@ -3,16 +3,15 @@
 Learn how to easily access the T24 UD directories of your sandbox and make updates, without the need of exporting zip files, but using symbolic links on the SFTP server to the T24 VM machines.
 
 > [!Note]
-> Check also our <a href="https://www.youtube.com/watch?v=wqBTV76cAOQ" target="_blank">**Video tutorial**
-</a>
+> Check also our <a href="https://www.youtube.com/watch?v=wqBTV76cAOQ" target="_blank">**Video tutorial**!
+</a> (to be updated)
 
 
 ## Create New Environment
 
- - Login to [**https://portal.temenos.cloud/**](https://portal.temenos.cloud/) 
- - Each time you login, you must accept the Privacy Notice in order to have access to the portal
- - The first page that is displayed after login is the **Environments** list
-- Click **New environment** button
+ - Login to the indicated Temenos Continuous Deployment Platform - either: [**https://portal.temenos.cloud/**](https://portal.temenos.cloud/) or [**https://tcd-portal.temenos.cloud/**](https://tcd-portal.temenos.cloud/).
+ - Each time you login, you must accept the Privacy Notice in order to have access to the portal.
+ - The first page that is displayed after login is the **Environments** page where you can fill the date to create a **New environment**
 - Fill the mandatory fields:
     - **Name**
     - **Description**
@@ -21,10 +20,10 @@ Learn how to easily access the T24 UD directories of your sandbox and make updat
 - *Labels field is optional*
 - Click **Create environment**
 
-![new environment](./images/access-ud-new-env.png)
+![new environment](./images/env-new.png)
 
 > [!Note]
-> It will take about 15 minutes for the new environment to be created
+> It will take about 15-20 minutes for the new environment to be created
 
 ## Create a User on the Portal
 
@@ -54,12 +53,44 @@ To see all the steps regarding how to add a new user on the portal and to attach
  - After logging in, on the right window, locate your envirnoment ID
  - Double click to access the live folders of the environment
  - You will be able to see and access the following T24 live folders structure:
-   - default - *for example, here you can push a message file into the application that you need to test*
-   - log_t24  
-       - como - it will load TSA logs when running different TSA services
-       - T24.log -  refers to the T24 BrowserWeb processes
-   - standalone/server.log - shows the Jboss application log
+   - <span style="color:orange">**default**</span>
+   - <span style="color:orange">**log_t24**</span>
+   - <span style="color:orange">**standalone**</span>
 
+<br>
+
+   - <span style="color:orange">**default**</span> - *for example, here you can push a message file into the application that you need to test*. Here you can create a folder and add some files to it, if you need them to do some specific actions. This folder is supposed to point to the **T24_HOME** location.
+
+In order to find out the T24_HOME path:
+ - Go to your environment on the portal 
+ - Click on MONITOR APPLICATION
+ - Then on tdiag (the path will look similar to this: https://t24-1xxxxxxxxxxxxo.dev.temenos.cloud/TAFJEE/tDiag)  the xxx part represents your environment's id
+ - Scroll down a bit until you get to "TAFJ Runtime properties" section
+ - Here you can see: temn.tafj.runtime.directory.current	/opt/rh/eap7/root/usr/share/wildfly/default
+
+
+- If for example, you need to create a folder into the default location (/temenossftp/*yourorgid/yourenvid/yourenvid*/default) named "demo" then, in the T24 area the appropriate path will be **/opt/rh/eap7/root/usr/share/wildfly/default/demo**.
+
+
+   - <span style="color:orange">**log_t24**</span>  - contains the T24.log files and also your como logs files when you run TSAs
+
+![access ud directories schema](./images/access-ud-como.png)
+
+   - como - it will load TSA logs when running different TSA services
+   - T24.log -  refers to the T24 BrowserWeb processes
+
+
+<br>
+
+  - <span style="color:orange">**standalone**</span> - contains the jboss logs
+server.log - shows the Jboss application log
+
+![access ud directories schema](./images/access-ud-standalone.png)
+<br>
+
+<br>
+
+To understand better how the SFTP connection works, check below schema:
 
 ![access ud directories schema](./images/access-ud-schema.png)
 
