@@ -6,7 +6,7 @@ Learn how to easily access the T24 UD directories of your sandbox and make updat
 > Check also our <a href="https://www.youtube.com/watch?v=wqBTV76cAOQ" target="_blank">**Video tutorial**!
 </a> (to be updated)
 
-
+  
 
 ## Create New Environment
 
