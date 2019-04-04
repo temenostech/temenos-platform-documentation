@@ -155,7 +155,7 @@ MVCC=TRUE;LOCK_TIMEOUT=30000<br> <span style="color:red">Replace <strong>ENV_DNS
 <li><p>Make sure you check the <strong>secured box</strong> as in below picture:</p>
 </li>
 </ul>
-<p><img src="images/t24-created-projects.png" alt="created projects"></p>
+<p><img src="./images/t24-created-projects.png" alt="created projects"></p>
 <p><br></p>
 <h2 id="uncheck-xml-for-local-fields">Uncheck XML for Local Fields</h2>
 <p>Go to ft-sample-models &gt; click right and select Properties &gt; expand Design Studio &gt; click Code Generation &gt; expand All Categories &gt; Uncheck XML for Local Fields (LT/RTL)</p>
@@ -170,17 +170,17 @@ MVCC=TRUE;LOCK_TIMEOUT=30000<br> <span style="color:red">Replace <strong>ENV_DNS
 </li>
 <li><p>Choose connection type as <strong>T24 Server-Web Service</strong> and click <strong>Finish</strong>.<br><img src="images/connection-type.png" alt="connection type"><br><br></p>
 </li>
-<li><p>After the server is created, the <em>server.properties</em> must be updated according to your sandox details:<br>-&gt; In <em>T24 User (deployment only)</em> section, <strong>2 users</strong> that you use to connect to your T24 sandbox must be introduced.<br>-&gt; In <em>WebService (TAFJ) Connection</em> section, <strong>Secured box</strong> must be checked, <strong>Protocol</strong> must be set to <em>ws</em> value, <strong>Hostname</strong> must be set according to the hostname of your sandbox, <strong>Port</strong> must be set to <em>443</em> value and <strong>Context</strong> to <em>axis2</em> value.<br><img src="images/server-properties.png" alt="server properties">  </p>
+<li><p>After the server is created, the <em>server.properties</em> must be updated according to your sandox details:<br>-&gt; In <em>T24 User (deployment only)</em> section, <strong>2 users</strong> that you use to connect to your T24 sandbox must be introduced.<br>-&gt; In <em>WebService (TAFJ) Connection</em> section, <strong>Secured box</strong> must be checked, <strong>Protocol</strong> must be set to <em>ws</em> value, <strong>Hostname</strong> must be set according to the hostname of your sandbox, <strong>Port</strong> must be set to <em>443</em> value and <strong>Context</strong> to <em>axis2</em> value.<br><img src="./images/server-properties.png" alt="server properties">  </p>
 </li>
 </ul>
 <p><br>
--&gt; To get the hostname of your sandbox, log-in to your organisation in TCD Portal (Temenos Continuous Deployment), go to your enviroment page and click on the <strong>GO TO Application</strong> Endpoint for the T24 application. The BrowserWeb page of your sandbox is opened and from the URL of this page, you must select the part between <em>https://</em> and <em>/BrowserWeb/servlet/BrowserServlet</em>.
-<img src="images/hostname.png" alt="hostname"></p>
+-&gt; To get the hostname of your sandbox, log-in to your organisation in PaaS Portal, go to your enviroment page and click on the <strong>GO TO Application</strong> Endpoint for the T24 application. The BrowserWeb page of your sandbox is opened and from the URL of this page, you must select the part between <em>https://</em> and <em>/BrowserWeb/servlet/BrowserServlet</em>.
+<img src="./images/hostname.png" alt="hostname"></p>
 <p><br></p>
 <div class="NOTE"><h5>Note</h5><p>For future use, in case T24 Server is not visible, go to: <strong>Window &gt; Show View &gt; Other</strong>:</p>
 <p><img src="images/t24-view-server.png" alt="t24 server"></p>
 <p>Type Server in the search bar and select <strong>Design Studio &gt; Servers</strong>:</p>
-<p><img src="images/t24-view-server-search.png" alt="t24 server"></p>
+<p><img src="./images/t24-view-server-search.png" alt="t24 server"></p>
 </div>
 <h2 id="toggle-project-to-tafj-project-nature">Toggle Project to TAFJ project nature</h2>
 <p>The <strong>Toggle TAFJ project nature</strong> action must be performed in order to be able to develop, compile and package jBC routines and to interrogate your sandbox database.  </p>
@@ -200,11 +200,11 @@ MVCC=TRUE;LOCK_TIMEOUT=30000<br> <span style="color:red">Replace <strong>ENV_DNS
 <p>jBC routines are developed in the <strong>data-code</strong> module which must be toggled to TAFJ project nature by following next steps.  </p>
 <ul>
 <li>In order to create a new jBC routine, expand <strong>data-code</strong> module, go to src-&gt;Source-&gt;Private, right click on project name (FT_Sample in the above picture), select <strong>New</strong> and then <strong>New T24 routine / component / testcase</strong>.
-<img src="images/add-routine.png" alt="add routine"> 
+<img src="./images/add-routine.png" alt="add routine"> 
 <br> </li>
-<li>On next screen, type the name of the routine and click <strong>Finish</strong>.<br><img src="images/add-routine-1.png" alt="add routine name">
+<li>On next screen, type the name of the routine and click <strong>Finish</strong>.<br><img src="./images/add-routine-1.png" alt="add routine name">
 <br></li>
-<li>The new routine is created.<br><img src="images/add-routine-2.png" alt="add routine created">
+<li>The new routine is created.<br><img src="./images/add-routine-2.png" alt="add routine created">
 <br></li>
 </ul>
 <h2 id="create-a-t24-package-based-on-your-project">Create a T24 package based on your project</h2>
@@ -215,7 +215,7 @@ MVCC=TRUE;LOCK_TIMEOUT=30000<br> <span style="color:red">Replace <strong>ENV_DNS
 <br></li>
 <li><strong>Wait</strong> for successfull build for the project.</li>
 </ul>
-<p><img src="images/build-success-final.png" alt="build success">
+<p><img src="./images/build-success-final.png" alt="build success">
 <br></p>
 <ul>
 <li>Check where the <strong>package</strong> was generated.</li>
@@ -230,11 +230,11 @@ MVCC=TRUE;LOCK_TIMEOUT=30000<br> <span style="color:red">Replace <strong>ENV_DNS
 <li>If the package is a new file in the repository, the package must be first added to the repository:<br><img src="images/tortoise-add.png" alt="tortoise add"><br><br></li>
 <li>A screen will appear saying that the file was added. Press <strong>Commit</strong>:<br><img src="images/tortoise-commit.png" alt="tortoise commit"><br><br></li>
 <li>A new screen will appear. Insert a comment in the upper window and then choose <strong>Commit</strong>.<br><img src="images/commit-push.png" alt="tortoise commit and push"><br><br></li>
-<li>A new screen will appear and choose <strong>Push</strong>.<br><img src="images/push_after_commit.png" alt="tortoise push after commit"><br><br></li>
-<li>A new screen will appear and choose <strong>OK</strong>.<br><img src="images/ok_after_push.png" alt="tortoise ok after push"><br><br></li>
+<li>A new screen will appear and choose <strong>Push</strong>.<br><img src="./images/push_after_commit.png" alt="tortoise push after commit"><br><br></li>
+<li>A new screen will appear and choose <strong>OK</strong>.<br><img src="./images/ok_after_push.png" alt="tortoise ok after push"><br><br></li>
 <li>A success message should be displayed. Press <strong>Close</strong>.
 <br>
-<img src="images/success_after_push.png" alt="tortoise success after push">  </li>
+<img src="./images/success_after_push.png" alt="tortoise success after push">  </li>
 </ul>
 <h2 id="trigger-the-deployment">Trigger the deployment</h2>
 <ul>
@@ -244,10 +244,10 @@ MVCC=TRUE;LOCK_TIMEOUT=30000<br> <span style="color:red">Replace <strong>ENV_DNS
 <p>For more details about the deployment, check the following <a href="use-gitlab-repository.html#trigger-deployment"><ins><strong>steps</strong></ins></a>.</p>
 <h2 id="check-jbc-routines-deployment-to-sandbox">Check jBC routines deployment to Sandbox</h2>
 <ul>
-<li>Log-in to your organisation into the Temenos Continuos Deployment Platform, go to your enviroment page and click on the <strong>Monitor Application</strong> Endpoint for the T24 application.<br><img src="images/t24-monitor-app.png" alt="monitor application"><br><br></li>
-<li>The TAFJEE page is opened. Click <strong>tShow</strong> to check if your developed routines were deployed in your sandbox. Details like the compilation date or the jar that contains the class of those routines can be checked.<br><img src="images/monitor-application-tshow.png" alt="monitor application"><br><br></li>
-<li>In the next screen, input your routine name and click <strong>Submit</strong>.<br><img src="images/monitor-application-submit.png" alt="monitor application"><br><br></li>
-<li>In the next screen, the details of your routine can be seen.<br><img src="images/monitor-application-result.png" alt="monitor application"><br><br></li>
+<li>Log-in to your organisation in PaaS Portal, go to your enviroment page and click on the <strong>Monitor Application</strong> Endpoint for the T24 application.<br><img src="./images/monitor-application.png" alt="monitor application"><br><br></li>
+<li>The TAFJEE page is opened. Click <strong>tShow</strong> to check if your developed routines were deployed in your sandbox. Details like the compilation date or the jar that contains the class of those routines can be checked.<br><img src="./images/monitor-application-tshow.png" alt="monitor application"><br><br></li>
+<li>In the next screen, input your routine name and click <strong>Submit</strong>.<br><img src="./images/monitor-application-submit.png" alt="monitor application"><br><br></li>
+<li>In the next screen, the details of your routine can be seen.<br><img src="./images/monitor-application-result.png" alt="monitor application"><br><br></li>
 </ul>
 <h2 id="import-t24-applications-enquiries-and-versions">Import T24 Applications, Enquiries and Versions</h2>
 <div class="NOTE"><h5>Note</h5><p>In order to import Applications/Enquiries/Versions from your sandbox to your local machine, make sure you have a T24-server created and configured in Design Studio.</p>
@@ -255,20 +255,20 @@ MVCC=TRUE;LOCK_TIMEOUT=30000<br> <span style="color:red">Replace <strong>ENV_DNS
 <ul>
 <li>Go to Servers tab, right click on your server state and change state to <strong>active</strong>.
 <img src="images/t24-connection.png" alt="t24 connection"><br><br></li>
-<li>State should become active:<br><img src="images/active-server.png" alt="active server"><br><br></li>
+<li>State should become active:<br><img src="./images/active-server.png" alt="active server"><br><br></li>
 </ul>
 <div class="NOTE"><h5>Note</h5><p>The following example is about importing Enquiries from your sandbox to your local machine. The same steps can be aplied for Applications and Versions.  </p>
 </div>
 <ul>
-<li>After the T24-server is active, right click on the <strong>models</strong> module and choose <strong>Import</strong>:<br><img src="images/import_enquiries_1.png" alt="import enquiries 1">
+<li>After the T24-server is active, right click on the <strong>models</strong> module and choose <strong>Import</strong>:<br><img src="./images/import_enquiries_1.png" alt="import enquiries 1">
 <br></li>
-<li>Expand <strong>Design Studio</strong> item, choose <strong>Import T24 Enquiries</strong> and click on <strong>Next</strong> button. (you have to wait until the list of enquiries is fetched from the sandbox database).<br><img src="images/import_enquiries_2.png" alt="import enquiries 2">
+<li>Expand <strong>Design Studio</strong> item, choose <strong>Import T24 Enquiries</strong> and click on <strong>Next</strong> button. (you have to wait until the list of enquiries is fetched from the sandbox database).<br><img src="./images/import_enquiries_2.png" alt="import enquiries 2">
 <br></li>
-<li>Select from this list which enquiry you want to import from the sandbox to your local machine and click <strong>Next</strong>.<br><img src="images/import_enquiries_3.png" alt="import enquiries 3">
+<li>Select from this list which enquiry you want to import from the sandbox to your local machine and click <strong>Next</strong>.<br><img src="./images/import_enquiries_3.png" alt="import enquiries 3">
 <br></li>
-<li>Choose where to import the enquiry(<strong>Models</strong> folder from <strong>models</strong> module) and click <strong>Finish</strong>(wait until the operation is completed).<br><img src="images/import_enquiries_4.png" alt="import enquiries 4">
+<li>Choose where to import the enquiry(<strong>Models</strong> folder from <strong>models</strong> module) and click <strong>Finish</strong>(wait until the operation is completed).<br><img src="./images/import_enquiries_4.png" alt="import enquiries 4">
 <br></li>
-<li>A successful message will be displayed at the end and the enquiry will be saved in your local machine.<br><img src="images/import_enquiries_5.png" alt="import enquiries 5">
+<li>A successful message will be displayed at the end and the enquiry will be saved in your local machine.<br><img src="./images/import_enquiries_5.png" alt="import enquiries 5">
 <br></li>
 </ul>
 <h2 id="export-t24-applications-enquiries-and-versions">Export T24 Applications, Enquiries and Versions</h2>
@@ -277,33 +277,33 @@ MVCC=TRUE;LOCK_TIMEOUT=30000<br> <span style="color:red">Replace <strong>ENV_DNS
 <div class="NOTE"><h5>Note</h5><p>Make sure your T24 server is set to <strong>active</strong>.</p>
 </div>
 <ul>
-<li>Right click on the <strong>models</strong> module and choose <strong>Design Studio</strong> -&gt; <strong>Generate Code</strong>:<br><img src="images/export_enquiries_1.png" alt="export enquiries 1"><br><br></li>
+<li>Right click on the <strong>models</strong> module and choose <strong>Design Studio</strong> -&gt; <strong>Generate Code</strong>:<br><img src="./images/export_enquiries_1.png" alt="export enquiries 1"><br><br></li>
 <li>A message should be displayed saying that the enquiry was successfully modified.
 <img src="images/export_enquiries_2.png" alt="export enquiries 2"><br><br></li>
 </ul>
 <h2 id="data-d-files">Data (.d) files</h2>
-<p>A data(.d) file represents a details viewer of a record from the database. A data file has 2 columns:<br>-&gt; first column contains the unique number of all table fields of the record;<br>-&gt; second column contains the values for all table fields of the record.<br><img src="images/data_files_1.png" alt="data files 1">
+<p>A data(.d) file represents a details viewer of a record from the database. A data file has 2 columns:<br>-&gt; first column contains the unique number of all table fields of the record;<br>-&gt; second column contains the values for all table fields of the record.<br><img src="./images/data_files_1.png" alt="data files 1">
 <br></p>
 <div class="NOTE"><h5>Note</h5><p>Assuming that your <strong>date-code</strong> module is toggled to TAFJ project nature, make sure you update the .properties file related to your project from Your_DEV_Path/TAFJ/conf folder with the private database IP of your sandbox.</p>
 </div>
 <p>Before starting to extract/load data files from/to your sandbox database, you must login to TAFJ-DBTools.<br>-&gt; Right click on your <strong>data-code</strong> module and select <strong>DBTools login</strong>.
-<img src="images/extract_data_dbtools_1.png" alt="extract data dbtools 1"><br><br>
+<img src="./images/extract_data_dbtools_1.png" alt="extract data dbtools 1"><br><br>
 -&gt; A wizard will appear in which you must type the DBTools credentials(which can be found in Add_DBTools_User.bat file from Your_DEV_Path) and click <strong>Finish</strong>.
-<img src="images/extract_data_dbtools_2.png" alt="extract data dbtools 2"><br><br></p>
+<img src="./images/extract_data_dbtools_2.png" alt="extract data dbtools 2"><br><br></p>
 <h3 id="extract-data-files-from-the-database">Extract data files from the database</h3>
 <ul>
-<li>Expand <strong>data-code</strong> module, go to src, right click on <strong>Data</strong> and select <strong>Extract from the database</strong>.<br><img src="images/extract_data_1.png" alt="extract data 1"><br><br></li>
+<li>Expand <strong>data-code</strong> module, go to src, right click on <strong>Data</strong> and select <strong>Extract from the database</strong>.<br><img src="./images/extract_data_1.png" alt="extract data 1"><br><br></li>
 <li>The bellow wizard will appear. Make sure the URL of the Database contains the correct database IP of your sandbox. Otherwise, you have update your .properties file related to your project from Your_DEV_Path/TAFJ/conf folder.
-<img src="images/extract_data_2.png" alt="extract data 2"><br><br></li>
-<li>Type the Table Name and Record ID and click <strong>Finish</strong>.<br><img src="images/extract_data_3.png" alt="extract data 3"><br><br></li>
+<img src="./images/extract_data_2.png" alt="extract data 2"><br><br></li>
+<li>Type the Table Name and Record ID and click <strong>Finish</strong>.<br><img src="./images/extract_data_3.png" alt="extract data 3"><br><br></li>
 <li>Check the console log to see if the data files was extracted.
 <img src="images/extract_data_4.png" alt="extract data 4"><br><br></li>
 </ul>
 <h3 id="load-data-files-in-the-database">Load data files in the database</h3>
 <ul>
-<li>Right click on your data file and select <strong>Load in the database</strong>.<br><img src="images/load_data_1.png" alt="load data 1"><br><br></li>
+<li>Right click on your data file and select <strong>Load in the database</strong>.<br><img src="./images/load_data_1.png" alt="load data 1"><br><br></li>
 <li>The bellow wizard will appear and click <strong>Finish</strong>. Make sure the URL of the Database contains the correct database IP of your sandbox. Otherwise, you have update your .properties file related to your project from Your_DEV_Path/TAFJ/conf folder.
-<img src="images/load_data_2.png" alt="extract data 2"><br><br></li>
+<img src="./images/load_data_2.png" alt="extract data 2"><br><br></li>
 <li>A success message should be displayed in the console.<br><img src="images/load_data_3.png" alt="extract data 3">  </li>
 </ul>
 <p><br></p>

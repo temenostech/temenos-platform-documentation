@@ -87,22 +87,24 @@
 <li>the environment applications (i.e. the scripts to install and configure each application and the information displayed in PaaS Portal for each application);</li>
 <li>the VM specifications in which each application is deployed.</li>
 </ul>
-<div class="NOTE"><h5>Note</h5><p>This guide presumes that a environment is already created and available under an Organisation for which the templates customization functionality is allowed.</p>
+<div class="NOTE"><h5>Note</h5><p>This guide presumes that a Sandbox is already created and available under an Organisation for which the templates customization functionality is allowed.</p>
 </div>
 <h2 id="boost-your-environment">Boost your environment</h2>
-<p>To start customizing your environment built using a Temenos Cloud template, login to Temenos Continuous Deployment platform using your organisation user, go to your environment page and click on the <strong>Boost</strong> button attached to <strong>Repository</strong> application.</p>
-<p><img src="images/customize-templates-button.png" alt="boost 1"></p>
-<p>After clicking the Boost button, the status of Repository application is changed to <span style="color:orange">Boosting</span>, as per bellow picture. The operation triggered by the Boost button will copy in environment repository all the template files used to create the environment.
-<img src="images/customize-templates-boost.png" alt="boost 2"></p>
+<p>To start customizing your environment built using a PaaS template, login to PaaS portal using your organisation user, go to your environment page and click on the <strong>Boost</strong> button attached to <strong>Repository</strong> application.
+<img src="./images/boost_env1.png" alt="boost 1">
+After clicking the Boost button, the status of Repository application is changed to <span style="color:orange">Boosting</span>, as per bellow picture. The operation triggered by the Boost button will copy in environment repository all the template files used to create the environment.
+<img src="./images/boost_env2.png" alt="boost 2">
+When the Boosting operation is finished, the message <em>&quot;Scripts are customized for this environment.&quot;</em> is displayed under the name of your environment.
+<img src="./images/boost_env3.png" alt="boost 3"></p>
 <h2 id="repository-structure-after-boost">Repository structure after Boost</h2>
 <p>As stated above, the Boost operation will make changes to environment repository. The difference between the before and after boost environment repository versions is represented by the presence of <span style="color:red">environments</span> folder, as it can be observed bellow.
-<img src="images/customize-templates-after-boost.png" alt="boost 4"></p>
-<p>The structure of the <span style="color:red">environments</span> folder is represented by 3 folders:</p>
+<img src="./images/boost_env4.png" alt="boost 4">
+The structure of the <span style="color:red">environments</span> folder is represented by 3 folders:</p>
 <ul>
 <li>infra-templates</li>
 <li>playbooks</li>
 <li>roles
-<img src="images/customize-templates-folders.png" alt="boost 5"></li>
+<img src="./images/boost_env5.png" alt="boost 5"></li>
 </ul>
 <p>The description of each folder is presented bellow:</p>
 <table>
@@ -148,12 +150,12 @@ There are several ways in which you can customize your environment template base
 </div>
 <ol>
 <li><p>Changes that will require <span style="color:red;font-weight:600;">the rebuild of your environment</span>:</p>
-<div class="NOTE"><h5>Note</h5><p>The rebuild operation will take around 20 minutes and it will recreate all environment resources (VMs) and run the deployment of all roles defined in environment template.<br>To trigger the rebuild of your environment, login to PaaS portal using your organisation user, go to your environment page and click on the <strong><span style="color:#00bfff;font-weight:600;">Rebuild</span></strong> button attached to your environment main application.</p>
+<div class="NOTE"><h5>Note</h5><p>The rebuild operation will take around 20 minutes and it will recreate all environment resources(VMs) and run the deployment of all roles defined in environment template.<br>To trigger the rebuild of your environment, login to PaaS portal using your organisation user, go to your environment page and click on the <strong><span style="color:#00bfff;font-weight:600;">Rebuild</span></strong> button attached to your environment main application.</p>
 </div>
 <ul>
 <li>Changes related to applications that will be installed under your environment.<br>
 <p style="padding-left: 10px">The applications list is defined in <em><span style="color:#010466;font-weight:600;">[services][servers]</span></em> component from <em><span style="color:#D2940F;font-weight:600;">infratemplate.yml</span></em> file located in <em><span style="background-color: #858382;color: white;"> /environments/common/infra-templates </span></em> &nbsp;folder of environment repository. An example of a template with 2 applications (t24 &amp; h2) is presented bellow.<br>
-<img src="images/boost_env6.png" alt="boost 6"><br>
+<img src="./images/boost_env6.png" alt="boost 6"><br>
 <table style="margin-left: 10px; max-width: 610px;"><tr><td style="border:0 !important; width: 15px !important;">-&gt;</td><td style="border:0 !important; width: 400px !important;">
 If an application must be removed from the default application list of the template, then the corespondent item must be removed from <em><span style="color:#010466;font-weight:600;">[services][servers]</span></em> component and the item related to the application must be removed from <em><span style="color:#D2940F;font-weight:600;">playbook.yml</span></em> file from <em><span style="background-color: #858382;color: white;"> /environments/common/playbooks </span></em> &nbsp;folder.
 </td></tr></table>

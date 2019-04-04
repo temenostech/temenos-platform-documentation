@@ -347,72 +347,45 @@
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "home/techguides/access-ud-directories.md",
-      "output": {
-        ".html": {
-          "relative_path": "home/techguides/access-ud-directories.html",
-          "hash": "pZ/8h7ETujPBLmyGAIUbEQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/add-app-endpoint.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/add-app-endpoint.html",
-          "hash": "qEOjCUSVvvXcZzKleQQwpg=="
+          "hash": "Gl1iQRQLaMdB9W+FVwLC6A=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/clone-environment.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/clone-environment.html",
-          "hash": "O2JSyJNNtIlvEYJPx8+0wA=="
+          "hash": "mR16UbVKlWGUMlb7Tryd4A=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "home/techguides/component-product.md",
-      "output": {
-        ".html": {
-          "relative_path": "home/techguides/component-product.html",
-          "hash": "DClr9RE5f+Py2el34//M/Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/customize-templates.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/customize-templates.html",
-          "hash": "088uvyEy+x54+SPBRRtO1w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "home/techguides/environment-basic-operations.md",
-      "output": {
-        ".html": {
-          "relative_path": "home/techguides/environment-basic-operations.html",
-          "hash": "Ow0q3sJEp1BueoqTs780+Q=="
+          "hash": "2o2pRDdT8v9sVmV/ImQ5OQ=="
         }
       },
       "is_incremental": false,
@@ -424,65 +397,22 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/environment-creation-in-paas.html",
-          "hash": "r2BqiwS3WXlPtXX6XRvHtQ=="
+          "hash": "Na2k8kokdeJ2ajNhJ26PMA=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "home/techguides/export-import-database.md",
-      "output": {
-        ".html": {
-          "relative_path": "home/techguides/export-import-database.html",
-          "hash": "jSjzXn1ZQOxvPIS7AkDhmA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "home/techguides/factories.md",
-      "output": {
-        ".html": {
-          "relative_path": "home/techguides/factories.html",
-          "hash": "zrd0lQgIgCCcNORnGXIzuA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/fcm-configuration.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/fcm-configuration.html",
-          "hash": "JBogjjsiwRKc45vUMeE+VA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/abn-package.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/abn-package.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/access-ud-como.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/access-ud-como.png"
+          "hash": "OFqjfqee0PuVKF1p5SRiMA=="
         }
       },
       "is_incremental": false,
@@ -523,65 +453,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/access-ud-standalone.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/access-ud-standalone.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/active-server.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/active-server.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/add-ppk-key.png",
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/add-ppk-key.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/add-routine-1.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/add-routine-1.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/add-routine-2.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/add-routine-2.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/add-routine.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/add-routine.png"
         }
       },
       "is_incremental": false,
@@ -615,17 +490,6 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/app-endpoint-clickable.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/app-endpoint-edit.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/app-endpoint-edit.png"
         }
       },
       "is_incremental": false,
@@ -688,109 +552,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/app_endp1.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/app_endp1.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/basic-operations-all.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/basic-operations-all.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/blue-ocean-menu.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/blue-ocean-menu.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/blue-ocean-new-pipeline.png",
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/blue-ocean-new-pipeline.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/boost_env1.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/boost_env1.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/boost_env2.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/boost_env2.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/boost_env3.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/boost_env3.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/boost_env4.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/boost_env4.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/boost_env5.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/boost_env5.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/boost_env6.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/boost_env6.png"
         }
       },
       "is_incremental": false,
@@ -820,120 +585,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/build-success-final.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/build-success-final.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/build-success.png",
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/build-success.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/building.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/building.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/button-boost.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/button-boost.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/button-delete.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/button-delete.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/button-deploy.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/button-deploy.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/button-export.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/button-export.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/button-rebuild.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/button-rebuild.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/button-scale.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/button-scale.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/button-start.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/button-start.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/button-stop.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/button-stop.png"
         }
       },
       "is_incremental": false,
@@ -956,28 +611,6 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/check-logs.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/clone-env-button-disabled.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/clone-env-button-disabled.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/clone-env-creating-all.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/clone-env-creating-all.png"
         }
       },
       "is_incremental": false,
@@ -1040,39 +673,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/como_files_1.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/como_files_1.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/como_files_2.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/como_files_2.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/como_files_3.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/como_files_3.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/connection-type.png",
       "output": {
         "resource": {
@@ -1099,72 +699,6 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/copy-key.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/created-projects.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/created-projects.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/customize-templates-after-boost.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/customize-templates-after-boost.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/customize-templates-boost.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/customize-templates-boost.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/customize-templates-button.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/customize-templates-button.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/customize-templates-folders.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/customize-templates-folders.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/data_files_1.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/data_files_1.png"
         }
       },
       "is_incremental": false,
@@ -1227,50 +761,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/db-copy-repo-endpoint.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/db-copy-repo-endpoint.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/db-copy-repo.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/db-copy-repo.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/db-deploy-button.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/db-deploy-button.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/db-deploy.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/db-deploy.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/db-export.png",
       "output": {
         "resource": {
@@ -1282,32 +772,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/db-exporting.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/db-exporting.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/db-git-clone.png",
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/db-git-clone.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/db-go-t24.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/db-go-t24.png"
         }
       },
       "is_incremental": false,
@@ -1337,32 +805,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/db-login.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/db-login.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/db-push-db.png",
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/db-push-db.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/db-search-record.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/db-search-record.png"
         }
       },
       "is_incremental": false,
@@ -1381,54 +827,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/db-sftp-screen - Copy.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/db-sftp-screen - Copy.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/db-sftp-screen.png",
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/db-sftp-screen.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/db-sftp-ssh.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/db-sftp-ssh.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/db-sftp.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/db-sftp.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/db-t24-signin-author.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/db-t24-signin-author.png"
         }
       },
       "is_incremental": false,
@@ -1458,109 +860,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/db-tortoise-clone - Copy.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/db-tortoise-clone - Copy.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/db-tortoise-clone.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/db-tortoise-clone.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/db-tortoise.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/db-tortoise.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/db.png",
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/db.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/dbtools_1.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/dbtools_1.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/dbtools_2.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/dbtools_2.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/dbtools_3.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/dbtools_3.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/dbtools_4.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/dbtools_4.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/dbtools_5.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/dbtools_5.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/dbtools_6.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/dbtools_6.png"
         }
       },
       "is_incremental": false,
@@ -1590,142 +893,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/dunce-cap.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/dunce-cap.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/endpoint-added.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/endpoint-added.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/endpoint-click.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/endpoint-click.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/endpoint-create.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/endpoint-create.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/endpoint-grouped.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/endpoint-grouped.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/endpoint-test.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/endpoint-test.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/enter-passphrase-again.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/enter-passphrase-again.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/enter-passphrase.png",
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/enter-passphrase.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/env-new.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/env-new.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/env-tab.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/env-tab.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/env-template-list.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/env-template-list.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/env-template-type.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/env-template-type.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/env-template.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/env-template.png"
         }
       },
       "is_incremental": false,
@@ -1744,43 +915,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/export_enquiries_1.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/export_enquiries_1.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/export_enquiries_2.png",
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/export_enquiries_2.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/export_env_1.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/export_env_1.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/export_env_2.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/export_env_2.png"
         }
       },
       "is_incremental": false,
@@ -1799,39 +937,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/extract_data_1.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/extract_data_1.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/extract_data_2.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/extract_data_2.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/extract_data_3.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/extract_data_3.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/extract_data_4.png",
       "output": {
         "resource": {
@@ -1843,54 +948,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/extract_data_dbtools_1.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/extract_data_dbtools_1.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/extract_data_dbtools_2.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/extract_data_dbtools_2.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/fcm-check-messages.png",
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/fcm-check-messages.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/fcm-create-environment.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/fcm-create-environment.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/fcm-drag-message.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/fcm-drag-message.png"
         }
       },
       "is_incremental": false,
@@ -1964,17 +1025,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/file-location.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/file-location.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/generate-ssh-key.png",
       "output": {
         "resource": {
@@ -2008,43 +1058,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/git-clone.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/git-clone.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/git-download.png",
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/git-download.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/gitlab_repo_clone1.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/gitlab_repo_clone1.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/gitlab_repo_clone2.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/gitlab_repo_clone2.png"
         }
       },
       "is_incremental": false,
@@ -2063,83 +1080,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/gitlab_repo_struc.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/gitlab_repo_struc.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/hostname.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/hostname.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/import_enquiries_1.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/import_enquiries_1.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/import_enquiries_2.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/import_enquiries_2.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/import_enquiries_3.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/import_enquiries_3.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/import_enquiries_4.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/import_enquiries_4.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/import_enquiries_5.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/import_enquiries_5.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/jar-location.png",
       "output": {
         "resource": {
@@ -2151,32 +1091,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/jenkins-build-add-credentials.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/jenkins-build-add-credentials.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/jenkins-build-build.png",
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/jenkins-build-build.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/jenkins-build-built-on.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/jenkins-build-built-on.png"
         }
       },
       "is_incremental": false,
@@ -2228,65 +1146,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/jenkins-build-credentials.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/jenkins-build-credentials.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/jenkins-build-dashboard-click.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/jenkins-build-dashboard-click.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/jenkins-build-dashboard-login.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/jenkins-build-dashboard-login.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/jenkins-build-dashboard.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/jenkins-build-dashboard.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/jenkins-build-environment-fields.png",
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/jenkins-build-environment-fields.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/jenkins-build-environment-id.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/jenkins-build-environment-id.png"
         }
       },
       "is_incremental": false,
@@ -2316,32 +1179,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/jenkins-build-integrated.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/jenkins-build-integrated.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/jenkins-build-login.png",
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/jenkins-build-login.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/jenkins-build-new-environment-resources.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/jenkins-build-new-environment-resources.png"
         }
       },
       "is_incremental": false,
@@ -2364,17 +1205,6 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/jenkins-build-new-portal-user.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/jenkins-build-pipeline-build.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/jenkins-build-pipeline-build.png"
         }
       },
       "is_incremental": false,
@@ -2448,17 +1278,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/jenkins-build-resources.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/jenkins-build-resources.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/jenkins-build-save-key.png",
       "output": {
         "resource": {
@@ -2514,28 +1333,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/jenkins-build-ssh.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/jenkins-build-ssh.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/jenkins-build-start-job.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/jenkins-build-start-job.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/jenkins-build-success.png",
       "output": {
         "resource": {
@@ -2558,32 +1355,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/jenkins-build-user-gitlab-role.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/jenkins-build-user-gitlab-role.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/jenkins-build-user-gitlab.png",
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/jenkins-build-user-gitlab.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/jenkins-build-user-id.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/jenkins-build-user-id.png"
         }
       },
       "is_incremental": false,
@@ -2613,28 +1388,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/load_data_1.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/load_data_1.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/load_data_2.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/load_data_2.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/load_data_3.png",
       "output": {
         "resource": {
@@ -2657,50 +1410,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/log_files_1.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/log_files_1.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/log_files_2.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/log_files_2.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/log_files_3.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/log_files_3.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/log_files_4.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/log_files_4.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/make-updates-add-zip.png",
       "output": {
         "resource": {
@@ -2716,17 +1425,6 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/make-updates-commit-push.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/make-updates-copy-endpoint.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/make-updates-copy-endpoint.png"
         }
       },
       "is_incremental": false,
@@ -2778,17 +1476,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/make-updates-show-updates.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/make-updates-show-updates.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/make-updates-t24-signin.png",
       "output": {
         "resource": {
@@ -2804,94 +1491,6 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/make-updates-tsa-start.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/monitor-application-result.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/monitor-application-result.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/monitor-application-submit.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/monitor-application-submit.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/monitor-application-tshow.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/monitor-application-tshow.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/monitor-application.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/monitor-application.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/new-user-created.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/new-user-created.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/new-user.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/new-user.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/ok_after_push.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/ok_after_push.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/organisation-url.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/organisation-url.png"
         }
       },
       "is_incremental": false,
@@ -2932,17 +1531,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/portal-login-details.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/portal-login-details.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/portal-login.png",
       "output": {
         "resource": {
@@ -2958,17 +1546,6 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/project-name.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/push_after_commit.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/push_after_commit.png"
         }
       },
       "is_incremental": false,
@@ -3031,17 +1608,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/putty-keygen-random.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/putty-keygen-random.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/putty-keygen.png",
       "output": {
         "resource": {
@@ -3057,83 +1623,6 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/replace-id.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/repo_commit_1.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/repo_commit_1.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/repo_commit_2.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/repo_commit_2.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/repo_commit_3.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/repo_commit_3.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/repo_commit_4.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/repo_commit_4.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/repo_commit_5.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/repo_commit_5.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/repo_commit_6.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/repo_commit_6.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/repo_deploy_1.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/repo_deploy_1.png"
         }
       },
       "is_incremental": false,
@@ -3163,17 +1652,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/routine-name.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/routine-name.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/sample-routine-created.png",
       "output": {
         "resource": {
@@ -3189,83 +1667,6 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/screen-key-generated.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/server-properties.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/server-properties.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/sftp-ids.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/sftp-ids.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/sftp_1.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/sftp_1.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/sftp_2.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/sftp_2.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/sftp_3.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/sftp_3.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/sftp_4.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/sftp_4.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/sftp_5.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/sftp_5.png"
         }
       },
       "is_incremental": false,
@@ -3317,17 +1718,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/success_after_push.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/success_after_push.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/t24-configure-paths.png",
       "output": {
         "resource": {
@@ -3343,17 +1733,6 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/t24-connection.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/t24-created-projects.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/t24-created-projects.png"
         }
       },
       "is_incremental": false,
@@ -3394,32 +1773,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/t24-monitor-app.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/t24-monitor-app.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/t24-tafj-properties.png",
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/t24-tafj-properties.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/t24-view-server-search.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/t24-view-server-search.png"
         }
       },
       "is_incremental": false,
@@ -3438,43 +1795,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/tDiag_1.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/tDiag_1.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/tDiag_2.png",
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/tDiag_2.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/tShow_1.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/tShow_1.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/tShow_2.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/tShow_2.png"
         }
       },
       "is_incremental": false,
@@ -3613,252 +1937,90 @@
       "version": ""
     },
     {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/updates-go-to-app.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/updates-go-to-app.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/use-git-deploy.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/use-git-deploy.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/use-git-deployment.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/use-git-deployment.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/use-git-endpoint.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/use-git-endpoint.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/use-git-repo.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/use-git-repo.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/user-details.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/user-details.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/user-list.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/user-list.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/user-login.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/user-login.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/user-new-second.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/user-new-second.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/user-new.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/user-new.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/users-tab.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/users-tab.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/wizard-routine.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/wizard-routine.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "home/techguides/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "home/techguides/index.html",
-          "hash": "sQb346QYCVKvpbLCrmpibA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/jenkins-build-promote-pipelines.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/jenkins-build-promote-pipelines.html",
-          "hash": "Tj7Mxgx1hztysfgCcq0wpg=="
+          "hash": "67yfyFAJb6oU+6Q6OpSnbQ=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/make-updates-cloud.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/make-updates-cloud.html",
-          "hash": "UJaBABj77fZ+r4juEUgi3w=="
+          "hash": "m8JGFa4jYknCJx4GEeVKag=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "home/techguides/metadata.md",
-      "output": {
-        ".html": {
-          "relative_path": "home/techguides/metadata.html",
-          "hash": "g92U5mBHtroV03AQSfDCyw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "home/techguides/stage.md",
-      "output": {
-        ".html": {
-          "relative_path": "home/techguides/stage.html",
-          "hash": "IsrGZD0QUZPVDlLBWCuy6g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "home/techguides/stream.md",
-      "output": {
-        ".html": {
-          "relative_path": "home/techguides/stream.html",
-          "hash": "/K2Lxg/600AfISePWdAVvA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/t24-development.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/t24-development.html",
-          "hash": "r6nDUjiVFGGc3ZiXiGQVYQ=="
+          "hash": "Zw9Sd3Jm8DDOQwSnmYlzlg=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "home/techguides/troubleshooting.md",
-      "output": {
-        ".html": {
-          "relative_path": "home/techguides/troubleshooting.html",
-          "hash": "KcnJeMWwRagyVcRazZvtOQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/use-gitlab-repository.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/use-gitlab-repository.html",
-          "hash": "AHie8WmjIrhtyC9VJsjH6Q=="
+          "hash": "+71/uGONJnbwMof2X1Ghhg=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "home/techguides/user-creation-in-paas-test.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/user-creation-in-paas-test.html",
+          "hash": "unB6cTxVA1Z+teEaIIwoeA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/user-creation-in-paas.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/user-creation-in-paas.html",
-          "hash": "oTZZq15Mu+FHbqEn+JxdAw=="
+          "hash": "7hMPb+5+TktLfKF1ClSXJg=="
         }
       },
       "is_incremental": false,
@@ -3877,12 +2039,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "home/toc.yml",
       "output": {
         ".html": {
           "relative_path": "home/toc.html",
-          "hash": "58Tn0Wq2EFrGDWxBUHTa9w=="
+          "hash": "9avpwynj4uVuF9uaMhA+YQ=="
         }
       },
       "is_incremental": false,
@@ -3956,9 +2121,18 @@
         "incrementalPhase": "build"
       },
       "processors": {
+        "RestApiDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
@@ -3968,15 +2142,6 @@
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "RestApiDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
           "incrementalPhase": "build"
         }
       }
