@@ -82,17 +82,16 @@
 <h1 id="access-t24-ud-directories">Access T24 UD Directories</h1>
 
 <p>Learn how to easily access the T24 UD directories of your sandbox and make updates, without the need of exporting zip files, but using symbolic links on the SFTP server to the T24 VM machines.</p>
-<div class="NOTE"><h5>Note</h5><p>Check also our <a href="https://www.youtube.com/watch?v=wqBTV76cAOQ" target="_blank"><strong>Video tutorial</strong>
-</a></p>
+<div class="NOTE"><h5>Note</h5><p>Check also our <a href="https://www.youtube.com/watch?v=wqBTV76cAOQ" target="_blank"><strong>Video tutorial</strong>!
+</a> (to be updated)</p>
 </div>
 <h2 id="create-new-environment">Create New Environment</h2>
 <ul>
-<li>Login to <a href="https://portal.temenos.cloud/"><strong>https://portal.temenos.cloud/</strong></a> </li>
-<li>Each time you login, you must accept the Privacy Notice in order to have access to the portal</li>
-<li>The first page that is displayed after login is the <strong>Environments</strong> list<ul>
-<li>Click <strong>New environment</strong> button</li>
+<li>Login to the indicated Temenos Continuous Deployment Platform - either: <a href="https://portal.temenos.cloud/"><strong>https://portal.temenos.cloud/</strong></a> or <a href="https://tcd-portal.temenos.cloud/"><strong>https://tcd-portal.temenos.cloud/</strong></a>.</li>
+<li>Each time you login, you must accept the Privacy Notice in order to have access to the portal.</li>
+<li>The first page that is displayed after login is the <strong>Environments</strong> page where you can fill the date to create a <strong>New environment</strong><ul>
 <li>Fill the mandatory fields:<ul>
-<li><strong>Name</strong></li>
+<li><strong>Name</strong>   </li>
 <li><strong>Description</strong></li>
 </ul>
 </li>
@@ -103,8 +102,8 @@
 </ul>
 </li>
 </ul>
-<p><img src="images/access-ud-new-env.png" alt="new environment"></p>
-<div class="NOTE"><h5>Note</h5><p>It will take about 15 minutes for the new environment to be created</p>
+<p><img src="images/env-new.png" alt="new environment"></p>
+<div class="NOTE"><h5>Note</h5><p>It will take about 15-20 minutes for the new environment to be created</p>
 </div>
 <h2 id="create-a-user-on-the-portal">Create a User on the Portal</h2>
 <p>This is required later when connecting to T24 through SFTP server connection, because it checks the authentication to the cloud environment with that specific user and the attached SSH key.</p>
@@ -132,16 +131,45 @@
 <li>After logging in, on the right window, locate your envirnoment ID</li>
 <li>Double click to access the live folders of the environment</li>
 <li>You will be able to see and access the following T24 live folders structure:<ul>
-<li>default - <em>for example, here you can push a message file into the application that you need to test</em></li>
-<li>log_t24  <ul>
+<li><span style="color:orange"><strong>default</strong></span></li>
+<li><span style="color:orange"><strong>log_t24</strong></span></li>
+<li><span style="color:orange"><strong>standalone</strong></span></li>
+</ul>
+</li>
+</ul>
+<p><br></p>
+<ul>
+<li><span style="color:orange"><strong>default</strong></span> - <em>for example, here you can push a message file into the application that you need to test</em>. Here you can create a folder and add some files to it, if you need them to do some specific actions. This folder is supposed to point to the <strong>T24_HOME</strong> location.</li>
+</ul>
+<p>In order to find out the T24_HOME path:</p>
+<ul>
+<li>Go to your environment on the portal </li>
+<li>Click on MONITOR APPLICATION</li>
+<li>Then on tdiag (the path will look similar to this: <a href="https://t24-1xxxxxxxxxxxxo.dev.temenos.cloud/TAFJEE/tDiag">https://t24-1xxxxxxxxxxxxo.dev.temenos.cloud/TAFJEE/tDiag</a>)  the xxx part represents your environment&#39;s id</li>
+<li>Scroll down a bit until you get to &quot;TAFJ Runtime properties&quot; section</li>
+<li>Here you can see: temn.tafj.runtime.directory.current    /opt/rh/eap7/root/usr/share/wildfly/default</li>
+</ul>
+<ul>
+<li><p>If for example, you need to create a folder into the default location (/temenossftp/<em>yourorgid/yourenvid/yourenvid</em>/default) named &quot;demo&quot; then, in the T24 area the appropriate path will be <strong>/opt/rh/eap7/root/usr/share/wildfly/default/demo</strong>.</p>
+<ul>
+<li><span style="color:orange"><strong>log_t24</strong></span>  - contains the T24.log files and also your como logs files when you run TSAs</li>
+</ul>
+</li>
+</ul>
+<p><img src="images/access-ud-como.png" alt="access ud directories schema"></p>
+<ul>
 <li>como - it will load TSA logs when running different TSA services</li>
 <li>T24.log -  refers to the T24 BrowserWeb processes</li>
 </ul>
-</li>
-<li>standalone/server.log - shows the Jboss application log</li>
+<p><br></p>
+<ul>
+<li><span style="color:orange"><strong>standalone</strong></span> - contains the jboss logs
+server.log - shows the Jboss application log</li>
 </ul>
-</li>
-</ul>
+<p><img src="images/access-ud-standalone.png" alt="access ud directories schema">
+<br></p>
+<p><br></p>
+<p>To understand better how the SFTP connection works, check below schema:</p>
 <p><img src="images/access-ud-schema.png" alt="access ud directories schema"></p>
 <p><br></p>
 <ul>

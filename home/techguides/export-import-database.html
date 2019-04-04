@@ -82,26 +82,26 @@
 <h1 id="export-and-import-databases">Export and Import Databases</h1>
 
 <p>This user guide explains how to import and export databases of a Temenos cloud environment in order to migrate datasets across environments. </p>
-<p>Login to your organization on the PaaS portal (<a href="https://portal.temenos.cloud/" target="_blank"><strong>https://portal.temenos.cloud/</strong></a>), read and accept the privacy notice.</p>
-<p><img src="images/db-login-portal.png" alt=""></p>
+<p>Login to your organization on the TCD (Temenos Continuous Deployment) portal (<a href="https://portal.temenos.cloud/" target="_blank"><strong>https://portal.temenos.cloud/</strong></a>), (<a href="https://tcd-portal.temenos.cloud/" target="_blank"><strong>https://tcd-portal.temenos.cloud/</strong></a>) read and accept the privacy notice.</p>
+<p><img src="images/db-login.png" width="450" height="200"></p>
 <h2 id="create-an-environment">Create an Environment</h2>
 <ul>
-<li>Once logged, click <strong>New environment</strong> button</li>
-<li>Fill Name and Description fields</li>
-<li>Select T24 from Cloud Native Applications (dropdown list)</li>
-<li>And then choose a T24 template with the version that you need (in current example R18.11)</li>
-<li><em>Labels field is optional</em></li>
-<li>Click <strong>Create environment</strong></li>
-<li>Wait about 15-20 minutes to see the action completed and to have your environment available</li>
+<li>Once logged, go to the Environments tab on the left and then click <strong>New environment</strong> button on the right.</li>
+<li>Fill Name and Description fields.</li>
+<li>Select T24 from Cloud Native Applications (dropdown list).</li>
+<li>And then choose a T24 template with the version that you need (in current example R18.11).</li>
+<li><em>Labels field is optional</em>.</li>
+<li>Click <strong>Create</strong> button.</li>
+<li>Wait about 15-20 minutes to see the action completed and to have your environment available.</li>
 </ul>
 <div class="NOTE"><h5>Note</h5><p>To see how to create an environment, please also check <a href="environment-creation-in-paas.html" target="_blank"><strong>this</strong></a> user guide.</p>
 </div>
 <div class="NOTE"><h5>Note</h5><p>For this user guide, there are two environments created: </p>
 <ul>
-<li>DEMO</li>
-<li>DEMO1
-They will be used to see how to export the DB from one environment and import it into the other one.</li>
+<li>DevEnv</li>
+<li>DevEnv1</li>
 </ul>
+<p>They will be used to see how to export the DB from one environment and import it into the other one.</p>
 </div>
 <h2 id="add-a-user-to-the-portal">Add a User to the Portal</h2>
 <ul>
@@ -109,7 +109,7 @@ They will be used to see how to export the DB from one environment and import it
 <li>Fill all required fields</li>
 <li>Make sure you attach an SSH key to the user created, as it is required when exporting and importing the database.</li>
 </ul>
-<div class="NOTE"><h5>Note</h5><p>This user can be used on both environments (DEMO and DEMO1).</p>
+<div class="NOTE"><h5>Note</h5><p>This user can be used on both environments (DevEnv and DevEnv1).</p>
 <p>Check <a href="user-creation-in-paas.html" target="_blank"><strong>this</strong></a>  user guide to see how to create a user on the portal and attach a SSH key.</p>
 </div>
 <h2 id="span-stylecolororangechange-a-record-into-the-database-for-demo-purposesspan"><span style="color:orange">Change a record into the Database <em>(for demo purposes)</em></span></h2>
@@ -120,13 +120,13 @@ The only purpose is to prove that the export and import of the database has been
 <li>Go to your environment</li>
 <li>Connect to T24 browser (Click <strong>Go to Application</strong>)</li>
 </ul>
-<p><img src="images/db-go-to-app.png" alt=""> </p>
+<p><img src="images/db-go-t24.png" alt=""> </p>
 <p><br></p>
 <ul>
-<li>And login to t24 with your user and password:</li>
+<li>And login to T24 with your user and password:</li>
 </ul>
 <p>(Please note that <strong>first</strong> login will be slower) </p>
-<p><img src="images/db-t24-signin.png" alt=""> </p>
+<p><img src="images/db-t24-signin.png" width="590" height="250"></p>
 <h2 id="amend-a-customer-record">Amend a customer record</h2>
 <ul>
 <li>Go to User Menu &gt; Customer &gt; Amend Customer</li>
@@ -144,7 +144,7 @@ The only purpose is to prove that the export and import of the database has been
 <li>The next step is to authorize the record change:</li>
 <li>Log out and login with a different user (in production, this user will have special rights)</li>
 </ul>
-<p><img src="images/db-t24-signin-author.png" alt=""> </p>
+<p><img src="images/db-t24-signin-author.png" width="590" height="250"></p>
 <ul>
 <li>Go to User Menu &gt; Customer &gt; click <strong>Authorise/ Delete Customer</strong> menu</li>
 <li>Click authorise button (<em>double-check</em>) &gt; The screen is expanded with the details of the customer &gt; Click again authorise  </li>
@@ -158,7 +158,7 @@ The only purpose is to prove that the export and import of the database has been
 <li><p>After clicking, it will start exporting (the action should take less than a minute or more minutes based on the DB size). While exporting, the button is disabled, after the export is done, the button gets enabled back.</p>
 </li>
 </ul>
-<p><img src="images/db-export.png" alt=""> </p>
+<p><img src="images/db-exporting.png" alt=""> </p>
 <div class="NOTE"><h5>Note</h5><p>Please note that the same steps showed in this demo can be followed to export an environment. Start exporting by using the <strong>Export</strong> button (check the available buttons under T24 Release).</p>
 </div>
 <ul>
@@ -171,7 +171,7 @@ The only purpose is to prove that the export and import of the database has been
 </ul>
 </li>
 </ul>
-<p><img src="images/db-sftp-connect.png" alt=""> </p>
+<p><img src="images/db-sftp.png" alt=""> </p>
 <ul>
 <li>A new screen is open</li>
 <li>Choose SSH &gt; Authentication &gt; and browse for the private key related to your portal user &gt; click OK.</li>
@@ -187,14 +187,14 @@ The only purpose is to prove that the export and import of the database has been
 </ul>
 </li>
 </ul>
-<p><img src="images/db-sftp-screen.png" alt=""> </p>
+<p><img src="images/sftp-ids.png" alt=""> </p>
 <ul>
 <li>The database appears as TAFJDB.zip. In order to download the zip, select it and press F5. After is being downloaded, you can unzip it to see the db file.</li>
 <li>After this step, you can close the SFTP connection: Session &gt; Disconnect.</li>
 </ul>
 <h2 id="clone-the-target-environment">Clone the Target Environment</h2>
 <ul>
-<li><p>For each Environment there is a Repository associated to it. This repository needs to be cloned locally and then the database will be pushed into it. Next step is to deploy it to the Temenos Cloud target environment (DEMO1 in current example).</p>
+<li><p>For each Environment there is a Repository associated to it. This repository needs to be cloned locally and then the database will be pushed into it. Next step is to deploy it to the Temenos Cloud target environment (DevEnv1 in current example).</p>
 <ul>
 <li><p>To be able to clone, you need to have a GUI Git Client installed on your local machine. Example: <a href="https://tortoisegit.org/download/" target="_blank"><strong>Tortoise Git</strong></a></p>
 </li>
@@ -204,7 +204,7 @@ The only purpose is to prove that the export and import of the database has been
 </ul>
 </li>
 </ul>
-<p><img src="images/db-copy-repo-endpoint.png" alt=""> </p>
+<p><img src="images/db-copy-repo.png" alt=""> </p>
 <ul>
 <li>Create a folder on your computer (you can place it anywhere on your local machine). In this example is named &#39;GitDemo&#39;<ul>
 <li>Click right inside the folder and choose <strong>Git Clone</strong> (this command belongs to TortoiseGit)</li>
@@ -221,7 +221,7 @@ The only purpose is to prove that the export and import of the database has been
 </ul>
 </li>
 </ul>
-<p><img src="images/db-tortoise-clone.png" alt=""> </p>
+<p><img src="images/db-tortoise.png" alt=""> </p>
 <ul>
 <li>The content is downloaded from the repository of your environment to your computer, displaying a success message if the cloning was correct.</li>
 <li>You will be able to see the <strong>corebanking</strong> repository structure with several folders like: addons, client_files, packages, plugins, updates, wsdl etc.</li>
@@ -241,7 +241,7 @@ The only purpose is to prove that the export and import of the database has been
 <ul>
 <li>Go back to the portal to the target environment and click the <strong>Deploy</strong> button under the Repository</li>
 </ul>
-<p><img src="images/db-deploy-button.png" alt="deployment"> </p>
+<p><img src="images/db-deploy.png" alt="deployment"> </p>
 <ul>
 <li>After the deployment is done, you can check the change of the database as follows:<ul>
 <li>Click Go to Application to open a T24 Browser</li>

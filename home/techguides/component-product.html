@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Introduction </title>
+    <title>Components &amp; Products </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Introduction ">
+    <meta name="title" content="Components &amp; Products ">
     <meta name="generator" content="docfx 2.22.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -20,7 +20,7 @@
     <meta property="docfx:rel" content="../../">
     
   </head>
-  <body data-spy="scroll" data-target="#affix" class="Introduction ">
+  <body data-spy="scroll" data-target="#affix" class="Components &amp; Products ">
     <div id="wrapper">
       <header>
         
@@ -79,65 +79,46 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="introduction">Introduction</h1>
+<h1 id="components--products">Components &amp; Products</h1>
 
-<p>This document can be used by technical staff who need to create Users on the Temenos Cloud Platfrom and associate to each user a ssh key. </p>
-<h2 id="users"><strong>Users</strong></h2>
-<hr>
-<p>The Administrator can navigate to the Users section on the portal, create more users and invite them to access and use the portal using the URL link. This way the administrator is in control of who receives the URL link and which users can access the Organisation.</p>
-<p>The users can access their organisation only, view their user profiles and change their password. Should the users requires access to the source code repository they need to provide their public SSH Keys on the user profile section to gain access.</p>
-<h1 id="use-putty-ssh-client-for-ssh-key-generation">Use PuTTY ssh client for ssh key generation.</h1>
-<p>You can use any other ssh key generator client.</p>
-<div class="NOTE"><h5>Note</h5><p>If you already have installed a ssh key generator client, you can skip this step.</p>
-</div>
-<p>•   Download the installer from <a href="http://www.putty.org/" title="http://www.putty.org/">http://www.putty.org/</a></p>
-<p><img src="images/putty-download.png" alt="putty download"></p>
-<p>•   Run the installer and click <strong>Next</strong> on each screen, without changing anything in configurations. Click <strong>Finish</strong> once completed.</p>
-<h1 id="create-ssh-keys-pair-public-and-private-keys">Create SSH keys (pair public and private keys)</h1>
-<p>•   Open PuTTYgen and click Generate button:</p>
-<p><img src="images/putty-keygen.png" alt="putty keygen"></p>
-<p>•   This creates a new ssh key by moving the mouse in the blank area(highlighted in red), as per bellow picture.</p>
-<p><img src="images/putty-keygen-random.png" alt="generate ssh key"></p>
-<p>•   After Puttygen finished key generation, you can save your public key/private key in any location from your local machine.</p>
-<div class="NOTE"><h5>Note</h5><p>In order to have a valid ssh key that can be recognized by 
- Infrastructure, do not use the Save public key button from Puttygen and just select the whole public key from the PuTTYgen screen and save it in your local machine.</p>
-</div>
-<p><img src="images/putty-keygen-publickey.png" alt="save public key"></p>
-<p>•   From PuTTYgen screen, you must also save the private key. Press the Save private key button, choose Yes on the next prompt (save the key without a passphrase to protect it) and indicate a name and location for the private key.</p>
-<p><img src="images/putty-keygen-privatekey.png" alt="save private key"></p>
-<p>•   The public/private key location on your local machine should look like this:</p>
-<p><img src="images/putty-keygen-keyslocation.png" alt="public/private keys location"></p>
-<h1 id="add-users-in-portal-with-ssh-key">Add users in portal with SSH key</h1>
-<p>•   Login to your organisation portal using the link and the credentials provided.</p>
-<p><img src="images/user-login.png" alt="portal login"></p>
-<p>•   Go to the menu on the left and then click Users tab, as below:</p>
-<p><img src="images/users-tab.png" alt="new user"></p>
-<p>The first screen that you will see is the one for the existing user (usually admin).</p>
-<p>Click <strong>New user</strong> button on the top-right corner:</p>
-<p><img src="images/user-new.png" alt="new user"></p>
-<p>This will create a new user in your organisation. This new user will be automatically assigned to all GitLab Repositories from within all environments. If you have already a user created, you can click on the user and update the SSH key box with the one created above.</p>
-<p><strong>Create a new user:</strong></p>
-<div class="NOTE"><h5>Note</h5><p>All fields are mandatory!
-See further below how to generate the SSH key</p>
-</div>
-<p><img src="images/user-details.png" alt="new user"></p>
-<p>•   Public SSH key needs to be pasted in SSH Key text box. Open Windows Explorer and locate your public key generated using PuTTY Key Generator. </p>
-<p><img src="images/putty-keygen-publicselect.png" alt="paste key text"></p>
-<p>• Right click and open it with notepad. Select all and copy to clipboard.</p>
-<p><img src="images/copy-key.png" alt="copy key"></p>
-<p>•   Paste the copied text into the SSH Key text box and click Create user button.</p>
+<h2 id="component">Component</h2>
+<p>Components are individually deployable units that are understood by TCP (Temenos Cloud Platform) based on the component type that each component refers to. </p>
+<p>Each component is associated to a component type to help TCP deploy the component. </p>
+<p>The component Type field in the component data is the key to help the TCP Controllers deploy the right components in the right way. 
+An organization can define as many components as needed but should have all mandatory components defined in the templates that are assigned to the organization.</p>
+<p>Each component has the following fields:</p>
+<ol>
+<li><p>Component Type</p>
+</li>
+<li><p>Name</p>
+</li>
+<li><p>Description</p>
+</li>
+<li><p>Display Name</p>
+</li>
+</ol>
+<h3 id="component-type">Component Type</h3>
+<p>The TCP uses a convention/protocol to deploy all parts required to run a full-fledged instance of T24 (Or any other product supported by a template). Such parts to constitute a complete system are called components. </p>
+<p>The T24 installation may have the following components (No exhaustive or inclusive):</p>
 <ul>
-<li>Your user is now available in the user list:</li>
+<li>T24-Jars</li>
+<li>T24-ud</li>
+<li>Helptext</li>
+<li>Tafj-installer Etc.</li>
 </ul>
-<p><img src="images/user-list.png" alt="user"></p>
+<p>Each item in this list is called a component type. </p>
+<p>The names of these parts / Component Types are fixed and are not user editable. This is managed internally by the TCP admin/development group and can only be changed or modified by this group. </p>
+<p>Each component type represents a deployable unit and has an ansible script associated to it. </p>
+<p>These components have a structure associated and work in a standardized manner across different deployment stacks (OS, App server variations, DB variations etc).</p>
+<h2 id="products">Products</h2>
+<p>A product is a logical grouping of several components. This is just to make it easy for users to select a list of components to deploy instead of selecting each component in a sequence. </p>
+<p>A product has the following fields:</p>
 <ul>
-<li><p>You have the option to edit or to delete it.</p>
-</li>
-<li><p>Your username will be created in Gitlab server and public SSH key provided will be added to your account being accessible from all the environments created in your organisation.</p>
-</li>
-<li><p>For further details or issues related to Gitlab SSH keys usage, or other operating systems (MAC, Linux), please consult this link:  <a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/">https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/</a></p>
-</li>
+<li>Name</li>
+<li>Description</li>
+<li>List of constituent components.</li>
 </ul>
+<p>Ultimately, a product is used in a factory and will be used eventually to deploy the required components.</p>
 <p><br></p>
               <hr>
               
