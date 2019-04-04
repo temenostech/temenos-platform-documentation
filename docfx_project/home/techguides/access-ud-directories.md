@@ -10,7 +10,7 @@ Learn how to easily access the T24 UD directories of your sandbox and make updat
 
 ## Create New Environment
 
- - Login to the indicated Temenos Continuous Deployment Platform - either: [**https://portal.temenos.cloud/**](https://portal.temenos.cloud/) or [**https://tcd-portal.temenos.cloud/**](https://tcd-portal.temenos.cloud/).
+ - Login to [**https://portal.temenos.cloud/**](https://portal.temenos.cloud/).
  - Each time you login, you must accept the Privacy Notice in order to have access to the portal.
  - The first page that is displayed after login is the **Environments** page where you can fill the date to create a **New environment**
 - Fill the mandatory fields:
