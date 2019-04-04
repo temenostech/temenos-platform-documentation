@@ -104,7 +104,7 @@
 </div>
 <p><strong>Build resources</strong> environment:</p>
 <p>Fill the mandatory fields as in below picture:</p>
-<p><img src="./images/jenkins-build-new-environment-resources.png" alt=""></p>
+<p><img src="images/jenkins-build-new-environment-resources.png" alt=""></p>
 <p>Fill the following parameters and press <strong>&#39;Create environment&#39;</strong>:</p>
 <p>•   Name</p>
 <p>•   Description</p>
@@ -117,10 +117,10 @@
 <p><img src="images/jenkins-build-created-environment.png" alt=""></p>
 <h2 id="login-to-jenkins">Login to Jenkins</h2>
 <p>Click on the <strong>BUILD</strong> environment created (the first environment created - &quot;Build resources&quot;) and then go to Jenkins Dashboard</p>
-<p><img src="./images/jenkins-build-dashboard.png" alt=""></p>
+<p><img src="images/jenkins-build-dashboard.png" alt=""></p>
 <p><br></p>
 <p>In the new screen, click Login button on the top-right corner:</p>
-<p><img src="./images/jenkins-build-dashboard-login.png" alt=""></p>
+<p><img src="images/jenkins-build-dashboard-login.png" alt=""></p>
 <p><br></p>
 <p>Sign in with user <strong><em>admin</em></strong> and password <strong><em>changeit</em></strong></p>
 <p><img src="images/jenkins-build-login.png" alt=""></p>
@@ -232,13 +232,13 @@
 </ol>
 </li>
 </ul>
-<p><img src="./images/jenkins-build-user-gitlab-role.png" alt=""></p>
+<p><img src="images/jenkins-build-user-gitlab-role.png" alt=""></p>
 <h2 id="add-credentials-and-use-id-from-temenos-ds-demo-project">Add credentials and Use ID from &#39;temenos-ds-demo&#39; Project</h2>
 <p>Inside Jenkins console, go to Credentials from left pane and then click global:</p>
-<p><img src="./images/jenkins-build-credentials.png" alt=""></p>
+<p><img src="images/jenkins-build-credentials.png" alt=""></p>
 <p><br></p>
 <p>Then add credentials:</p>
-<p><img src="./images/jenkins-build-add-credentials.png" alt=""></p>
+<p><img src="images/jenkins-build-add-credentials.png" alt=""></p>
 <p><br></p>
 <ul>
 <li>A new screen is open</li>
@@ -264,7 +264,7 @@
 </ul>
 <p><img src="images/jenkins-build-fields2.png" alt=""></p>
 <p>Now if you click on credentials, you will see the following screen with both users details:</p>
-<p><img src="./images/jenkins-build-user-id.png" alt=""></p>
+<p><img src="images/jenkins-build-user-id.png" alt=""></p>
 <div class="NOTE"><h5>Note</h5><p>This uniqe ID of SSH key will be used in the pipeline scripts (Jenkins File) to clone the repositories. </p>
 </div>
 <h2 id="configure-jenkins-pipeline-job-to-use-ssh-keys">Configure Jenkins pipeline job to use SSH keys</h2>
@@ -291,17 +291,17 @@
 <li>It’s time now to go ahead and build our job.</li>
 </ul>
 <p>Go to left pane inside Jenkins console and press &#39;Jenkins&#39; button</p>
-<p><img src="./images/jenkins-build-start-job.png" alt=""> </p>
+<p><img src="images/jenkins-build-start-job.png" alt=""> </p>
 <p>Then click on &#39;Built on&#39;</p>
-<p><img src="./images/jenkins-build-built-on.png" alt=""> </p>
+<p><img src="images/jenkins-build-built-on.png" alt=""> </p>
 <p>New screen is open. The following parameters are <strong>required to change</strong> according to your setup:</p>
 <p>•   SrcRepo </p>
 <p>•   EnvID (see the note below)</p>
 <p>•   emailRecipientsList (optional)</p>
 <p>Click <strong>Build</strong>.</p>
-<p><img src="./images/jenkins-build-pipeline-build.png" alt=""> </p>
+<p><img src="images/jenkins-build-pipeline-build.png" alt=""> </p>
 <div class="NOTE"><h5>Note</h5><p>The environment ID is the one that appears on the URL address after you login and you click on your environment:</p>
-<p><img src="./images/jenkins-build-environment-id.png" alt=""> </p>
+<p><img src="images/jenkins-build-environment-id.png" alt=""> </p>
 </div>
 <p>Build should be successful:</p>
 <p><img src="images/jenkins-build-success.png" alt=""> </p>

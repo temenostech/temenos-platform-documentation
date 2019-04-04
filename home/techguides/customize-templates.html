@@ -91,20 +91,20 @@
 </div>
 <h2 id="boost-your-environment">Boost your environment</h2>
 <p>To start customizing your environment built using a PaaS template, login to PaaS portal using your organisation user, go to your environment page and click on the <strong>Boost</strong> button attached to <strong>Repository</strong> application.
-<img src="./images/boost_env1.png" alt="boost 1">
+<img src="images/boost_env1.png" alt="boost 1">
 After clicking the Boost button, the status of Repository application is changed to <span style="color:orange">Boosting</span>, as per bellow picture. The operation triggered by the Boost button will copy in environment repository all the template files used to create the environment.
-<img src="./images/boost_env2.png" alt="boost 2">
+<img src="images/boost_env2.png" alt="boost 2">
 When the Boosting operation is finished, the message <em>&quot;Scripts are customized for this environment.&quot;</em> is displayed under the name of your environment.
-<img src="./images/boost_env3.png" alt="boost 3"></p>
+<img src="images/boost_env3.png" alt="boost 3"></p>
 <h2 id="repository-structure-after-boost">Repository structure after Boost</h2>
 <p>As stated above, the Boost operation will make changes to environment repository. The difference between the before and after boost environment repository versions is represented by the presence of <span style="color:red">environments</span> folder, as it can be observed bellow.
-<img src="./images/boost_env4.png" alt="boost 4">
+<img src="images/boost_env4.png" alt="boost 4">
 The structure of the <span style="color:red">environments</span> folder is represented by 3 folders:</p>
 <ul>
 <li>infra-templates</li>
 <li>playbooks</li>
 <li>roles
-<img src="./images/boost_env5.png" alt="boost 5"></li>
+<img src="images/boost_env5.png" alt="boost 5"></li>
 </ul>
 <p>The description of each folder is presented bellow:</p>
 <table>
@@ -155,7 +155,7 @@ There are several ways in which you can customize your environment template base
 <ul>
 <li>Changes related to applications that will be installed under your environment.<br>
 <p style="padding-left: 10px">The applications list is defined in <em><span style="color:#010466;font-weight:600;">[services][servers]</span></em> component from <em><span style="color:#D2940F;font-weight:600;">infratemplate.yml</span></em> file located in <em><span style="background-color: #858382;color: white;"> /environments/common/infra-templates </span></em> &nbsp;folder of environment repository. An example of a template with 2 applications (t24 &amp; h2) is presented bellow.<br>
-<img src="./images/boost_env6.png" alt="boost 6"><br>
+<img src="images/boost_env6.png" alt="boost 6"><br>
 <table style="margin-left: 10px; max-width: 610px;"><tr><td style="border:0 !important; width: 15px !important;">-&gt;</td><td style="border:0 !important; width: 400px !important;">
 If an application must be removed from the default application list of the template, then the corespondent item must be removed from <em><span style="color:#010466;font-weight:600;">[services][servers]</span></em> component and the item related to the application must be removed from <em><span style="color:#D2940F;font-weight:600;">playbook.yml</span></em> file from <em><span style="background-color: #858382;color: white;"> /environments/common/playbooks </span></em> &nbsp;folder.
 </td></tr></table>

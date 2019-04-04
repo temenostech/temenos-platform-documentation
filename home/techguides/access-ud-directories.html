@@ -1,0 +1,284 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Access T24 UD Directories </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Access T24 UD Directories ">
+    <meta name="generator" content="docfx 2.22.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/woocircle.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" class="Access T24 UD Directories ">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar" role="navigation">
+          <div class="container">
+            <div class="row">
+              <div class="navbar-header col-md-2">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                
+                <a class="navbar-brand" href="/index.html">
+                  <img id="logo" src="/logo.png" alt="">
+                </a>
+              </div>
+              <div class="themainmenu col-md-10">
+              <div class="collapse navbar-collapse" id="navbar">
+                <form class="navbar-form navbar-right" role="search" id="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                  </div>
+                </form>
+              </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="access-t24-ud-directories">Access T24 UD Directories</h1>
+
+<p>Learn how to easily access the T24 UD directories of your sandbox and make updates, without the need of exporting zip files, but using symbolic links on the SFTP server to the T24 VM machines.</p>
+<div class="NOTE"><h5>Note</h5><p>Check also our <a href="https://www.youtube.com/watch?v=wqBTV76cAOQ" target="_blank"><strong>Video tutorial</strong>!
+</a> (to be updated)</p>
+</div>
+<h2 id="create-new-environment">Create New Environment</h2>
+<ul>
+<li>Login to the indicated Temenos Continuous Deployment Platform - either: <a href="https://portal.temenos.cloud/"><strong>https://portal.temenos.cloud/</strong></a> or <a href="https://tcd-portal.temenos.cloud/"><strong>https://tcd-portal.temenos.cloud/</strong></a>.</li>
+<li>Each time you login, you must accept the Privacy Notice in order to have access to the portal.</li>
+<li>The first page that is displayed after login is the <strong>Environments</strong> page where you can fill the date to create a <strong>New environment</strong><ul>
+<li>Fill the mandatory fields:<ul>
+<li><strong>Name</strong></li>
+<li><strong>Description</strong></li>
+</ul>
+</li>
+<li>Select an application from <strong>Cloud native applications</strong></li>
+<li>Choose a template from <strong>Templates</strong> list</li>
+<li><em>Labels field is optional</em></li>
+<li>Click <strong>Create environment</strong></li>
+</ul>
+</li>
+</ul>
+<p><img src="images/access-ud-new-env.png" alt="new environment"></p>
+<div class="NOTE"><h5>Note</h5><p>It will take about 15-20 minutes for the new environment to be created</p>
+</div>
+<h2 id="create-a-user-on-the-portal">Create a User on the Portal</h2>
+<p>This is required later when connecting to T24 through SFTP server connection, because it checks the authentication to the cloud environment with that specific user and the attached SSH key.</p>
+<p>To see all the steps regarding how to add a new user on the portal and to attach the SSH key, please see the following user guide about how to <a href="user-creation-in-paas.html"><strong>Create Users</strong></a>.</p>
+<h2 id="connect-via-sftp-client">Connect via SFTP Client</h2>
+<ul>
+<li>In order to have access to the T24/ VM Cloud Application live folders, you can install an FTP client from <a href="https://winscp.net/eng/index.php">https://winscp.net/eng/index.php</a></li>
+<li>Open WinSCP application and fill the mandatory fields:<ul>
+<li>Host name &gt; copy it from the environment endpoint: sftp.temenos.cloud </li>
+<li>User name &gt; input the exact name of the user added to the portal</li>
+</ul>
+</li>
+<li>Click <strong>Advanced</strong></li>
+<li>In the new screen, select <strong>SSH Authentication</strong> </li>
+<li>Upload the private key previously saved (corresponding to the public key attached to the portal user)</li>
+<li>Click <strong>OK</strong></li>
+</ul>
+<p><img src="images/access-ud-sftp-fields.png" alt="sftp fields"></p>
+<p><br></p>
+<ul>
+<li>Previous screen pops-up, click <strong>Login</strong></li>
+</ul>
+<h2 id="check-and-use-live-folders">Check and Use Live Folders</h2>
+<ul>
+<li>After logging in, on the right window, locate your envirnoment ID</li>
+<li>Double click to access the live folders of the environment</li>
+<li>You will be able to see and access the following T24 live folders structure:<ul>
+<li><span style="color:orange"><strong>default</strong></span></li>
+<li><span style="color:orange"><strong>log_t24</strong></span></li>
+<li><span style="color:orange"><strong>standalone</strong></span></li>
+</ul>
+</li>
+</ul>
+<p><br></p>
+<ul>
+<li><span style="color:orange"><strong>default</strong></span> - <em>for example, here you can push a message file into the application that you need to test</em>. Here you can create a folder and add some files to it, if you need them to do some specific actions. This folder is supposed to point to the <strong>T24_HOME</strong> location.</li>
+</ul>
+<p>In order to find out the T24_HOME path:</p>
+<ul>
+<li>Go to your environment on the portal </li>
+<li>Click on MONITOR APPLICATION</li>
+<li>Then on tdiag (the path will look similar to this: <a href="https://t24-1xxxxxxxxxxxxo.dev.temenos.cloud/TAFJEE/tDiag">https://t24-1xxxxxxxxxxxxo.dev.temenos.cloud/TAFJEE/tDiag</a>)  the xxx part represents your environment&#39;s id</li>
+<li>Scroll down a bit until you get to &quot;TAFJ Runtime properties&quot; section</li>
+<li>Here you can see: temn.tafj.runtime.directory.current    /opt/rh/eap7/root/usr/share/wildfly/default</li>
+</ul>
+<ul>
+<li><p>If for example, you need to create a folder into the default location (/temenossftp/<em>yourorgid/yourenvid/yourenvid</em>/default) named &quot;demo&quot; then, in the T24 area the appropriate path will be <strong>/opt/rh/eap7/root/usr/share/wildfly/default/demo</strong>.</p>
+<ul>
+<li><span style="color:orange"><strong>log_t24</strong></span>  - contains the T24.log files and also your como logs files when you run TSAs</li>
+</ul>
+</li>
+</ul>
+<p><img src="images/access-ud-como.png" alt="access ud directories schema"></p>
+<ul>
+<li>como - it will load TSA logs when running different TSA services</li>
+<li>T24.log -  refers to the T24 BrowserWeb processes</li>
+</ul>
+<p><br></p>
+<ul>
+<li><span style="color:orange"><strong>standalone</strong></span> - contains the jboss logs
+server.log - shows the Jboss application log</li>
+</ul>
+<p><img src="images/access-ud-standalone.png" alt="access ud directories schema">
+<br></p>
+<p><br></p>
+<p>To understand better how the SFTP connection works, check below schema:</p>
+<p><img src="images/access-ud-schema.png" alt="access ud directories schema"></p>
+<p><br></p>
+<ul>
+<li>To see how you can push a message to be processed by an application, check this <a href="fcm-configuration.html#process-messages-in-the-fcm-application"><strong>FCM example</strong></a>.</li>
+</ul>
+<div class="NOTE"><h5>Note</h5><p>Make sure you place the files in the appropriate folder belonging to the specific application that you want to use</p>
+</div>
+<p><br></p>
+              <hr>
+              
+              <div id="disqus_thread"></div>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 footer-note left">
+              <p>
+                <a href="/"><img src="/logo-bottom.png" alt=""></a>
+                <a href="https://www.temenos.com/en/accessibility/">Accessibility</a>
+                <a href="https://www.temenos.com/en/legal-information/cookie-policy/">Cookie Policy</a>
+                <a href="https://www.temenos.com/en/legal-information/privacy-policy/">Privacy Policy</a>
+                <a href="https://www.temenos.com/en/legal-information/terms-and-conditions/">Terms & Conditions</a>
+              </p>
+            </div>
+      
+            <div class="col-md-6 footer-note right">
+              <p>
+                Copyright &copy; 2017 Temenos Headquarters SA <span>&#183;</span>
+                <a target="_blank" href="https://www.facebook.com/TemenosGroup"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+                <a target="_blank" href="https://twitter.com/Temenos"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a target="_blank" href="http://www.linkedin.com/company/temenos"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a target="_blank" href="//plus.google.com/u/0/100035548059267323447?prsrc=3"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+              </p>
+            </div>
+          </div>
+      
+        </div>
+      </footer>
+      
+      <div class="back-to-top">
+        <a href="#top">
+          <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i></span>
+        </a>
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script id="dsq-count-scr" src="//temenostech.disqus.com/count.js" async=""></script>
+    
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myshareDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.sharedropbtn')) {
+    
+        var dropdowns = document.getElementsByClassName("sharedropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+    
+    <script>
+    	window.onload = function(){
+        	document.getElementById("shareFacebook").href = 'https://www.facebook.com/sharer/sharer.php?u=' + window.location.toString();
+    
+        	document.getElementById("shareTwitter").href = 'https://twitter.com/intent/tweet?text=Temenos+Developer+Portal&url=' + window.location.toString();
+    
+        	document.getElementById("shareGoogle").href = 'https://plus.google.com/share?url=' + window.location.toString();
+    
+        	document.getElementById("shareLinkedin").href = 'https://www.linkedin.com/shareArticle?mini=true&url=' + window.location.toString() + '&title=Temenos+Developer+Portal&summary=&source=';
+    
+        	document.getElementById("shareEmail").href = 'mailto:' + window.location.toString();
+    	}
+    </script>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-38593742-4', 'auto');
+      ga('send', 'pageview');
+    
+    </script>  </body>
+</html>
