@@ -14,7 +14,7 @@ Learn how to easily access the T24 UD directories of your sandbox and make updat
  - Each time you login, you must accept the Privacy Notice in order to have access to the portal.
  - The first page that is displayed after login is the **Environments** page where you can fill the date to create a **New environment**
 - Fill the mandatory fields:
-    - **Name**
+    - **Name**   
     - **Description**
 - Select an application from **Cloud native applications**
 - Choose a template from **Templates** list
