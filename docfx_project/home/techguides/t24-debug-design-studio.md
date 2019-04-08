@@ -124,6 +124,8 @@ In order to accomplish the development actions presented at the beginning of the
 
 ![created projects](./images/t24-created-projects.png)
 
+Don't forget to sabve the change: **CTRL+S**
+
 <br>
 
 #### b. Uncheck XML for Local Fields ####
@@ -131,6 +133,8 @@ In order to accomplish the development actions presented at the beginning of the
 Go to ft-sample-models > click right and select Properties > expand Design Studio > click Code Generation > expand All Categories > Uncheck XML for Local Fields (LT/RTL)
 
 ![uncheck xml](./images/t24-ft-sample-xml.png)
+
+Click Apply and OK. Wait for the workspace to be built.
 
 #### c. Create New T24 Server in Design Studio ####
 
@@ -199,7 +203,7 @@ In order to deploy this code into your environment, a T24 package must be create
 ![build-project](./images/build-project.png)
 <br>
 
- - Check where the **package** was generated.
+ - Wait for the workspace to finish the build and check where the **package** was generated.
 
 ![check build success](./images/check-build-success.png)
 <br>
@@ -265,4 +269,16 @@ You will be able to see the debug data into the Console
 
 ## 5. Check the Debugging into T24 ##
 
+- You can add CRt in your code and you will be able to see it into the console:
+
+![](./images/add-crt.png) 
+
+- Also you can toggle a breakpoint in your methog and then trigger the debug as explained below to see the information in the console:
+
+![](./images/toggle-breakpoint.png) 
+
+
  - Log-in to T24 and go to User Menu > Payment Hub > Payment Inquiries > Pending and Processed Payments > Pending Process Payments - Party Wise > click on **Find** button and the logs/breakpoints put in the previous method (E.NOFILE.PP.INQ.MAIN) should appear in debug session console.
+ - From this step further you can use the above buttons (the F5 - Step Into, F6 - Step Over and F7 Step Return - arrows) to continue the debug check.
+
+![](./images/console-output.png) 
