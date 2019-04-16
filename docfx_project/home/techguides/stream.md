@@ -55,16 +55,21 @@ You can edit anytime the name, the description of the stage or choose the disabl
 > <span style="color:red">In order to delete a stream, you need to delete first all the subsequent features created. See example and explanations below.</span>
 
 
-For example: 
+Example 1: 
 - Suppose we have created a stream named Dev2 that has just the default stage (stable_dev) and without adding other stages or configuring further components and products.
-- In order to be able to delete this stream, we need first to go and delete the stage attached to it.
-- Go first to Stages button on the left menu > Select first your stream (top right) > Click the Delete button > This will delete your stable_dev stage and you will be able to delete your stream
+- We can just go and delete this stage (even if it has the stable_dev associated to it).
+
+Example 2:
+- Suppose we have created a stream named Dev that has the default stage (stable_dev) and and also a stage named Primary_stage, without configuring further components and products.
+- In order to be able to delete a stream that has **more than the stable_dev stage**, we need first to go and delete the stages attached to it.
+- Go first to Stages button on the left menu > Select first your stream (top right) > Select the stage that you want to delete (others then stable_dev - *because this stage cannot be deleted*) > And click the delete button.
+
 
 ![](./images/streams-delete-stage.png)
 
-- Go back to Streams and you will notice that your stream has no further stages associated so you can delete the stream. Click the Delete button.
+- Go back to Streams and you will notice that your stream has only the stable_dev stage associated, therefore you are able to delete the stream. Click the Delete button.
 
-![](./images/streams-delete-stream.png)
+![](./images/streams-delete-streams.png)
 
 If you have added other stages and also components and products, first delete all the products, then the components, then the associated stages and finally you will be able to delete the stream. In case you skip one of these features deletion, the system will notify that is not possible to delete the respective stage.
 
