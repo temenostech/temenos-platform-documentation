@@ -259,7 +259,7 @@ Go to Design Studio > RUN > Debug Configurations
 
    - Host: the DNS of your environment *(you can take it if you click on your environment, then Go to Application)*
 
-   - Port: leave the default value
+   - Port: **leave the default value as it is** (<span style="color:red">don't change the value that appears on your screen otherwise debug will not work</span>)
 
 - Click **Apply** and then **Debug**
 
