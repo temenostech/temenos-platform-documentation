@@ -1,37 +1,48 @@
 
-# Factories #
+## Factories ##
 
 Factories are the core Assemble components that define how, what and when to deploy, test and promote the various components used by an organization. 
 
 A factory is an information bundle that holds the following critical information that is needed to run an assembly factory:
 
-**- Name** -just to identify or tag a factory
 
-**- Products**:
+*<span style="background-color: #f4f1ef;color: DarkBlue;"><b>Name</b></span>* &nbsp;
 
-a. Principle Products – Principle products simply mean the list of components that are being tested for against a stable set of other pre-tested components.
+- Used just to identify or tag a factory
 
-b. Other products – Products that are pre-tested (by other factories) and are known to be stage.
+<br>
 
-**- Stages**:
+*<span style="background-color: #f4f1ef;color: DarkBlue;"><b>Products</b></span>* &nbsp;
 
-a. From stage (Which stage to get the principle components from from) –Source stage (The stage from which pre-tested stable components can be picked up)
+a. **Principle Products** – Principle products simply mean the list of components that are being tested against a stable set of other pre-tested components. After successfully running the factory, the principle products are promoted to the next stage (the configured one).
 
-b. Source Stage – The stage from which the “Other Products” components are fetched. This stage represents a stable version of components that is pre-tested from the perspective of the current factory.
+b. **Other products** *(Base Products)* – Products that are pre-tested (by other factories) and are known to be stage.  These are products that don’t need to be promoted but they are required to test the Principle Products.
 
-c. Target Stage - The stage to which components are promoted if the assembly successfully tests the list of components
+<br>
 
-**- Templates**:
+*<span style="background-color: #f4f1ef;color: DarkBlue;"><b>Stages</b></span>* &nbsp;
 
-a. Environment Template - holds the details of the template that is to be used to deploy the components selected by the factory
+a. From stage (Which stage to get the principle components from) – **Source stage** (The stage from which pre-tested stable components can be picked up).
 
-b. Test Template – specifies the template that is required to deploy a test environment that holds the testing framework and test scripts. This is needed to generalize the test tools as a template.
+b. **Source Stage** – The stage from which the “Other Products” *(Base Products)* components are fetched. This stage represents a stable version of components that is pre-tested from the perspective of the current factory.
 
-**- WebHooks**:
+c. **Target Stage** - The stage to which components are promoted if the assembly successfully tests the list of components
 
-a. Success Webhook – This is just a simple callback mechanism that can be utilized by the owner of a factory to callback another API if the factory successfully runs.
+<br>
 
-b. Failure Webhook – Same as Success Webhooks. But are called when the factory fails.
+*<span style="background-color: #f4f1ef;color: DarkBlue;"><b>Templates</b></span>* &nbsp;
+
+a. **Environment Template** - holds the details of the template that is to be used to deploy the components selected by the factory
+
+b. **Test Template** – specifies the template that is required to deploy a test environment that holds the testing framework and test scripts. This is needed to generalize the test tools as a template.
+
+<br>
+
+*<span style="background-color: #f4f1ef;color: DarkBlue;"><b>WebHooks</b></span>* &nbsp;
+
+a. **Success Webhook** – This is just a simple callback mechanism that can be utilized by the owner of a factory to callback another API if the factory successfully runs.
+
+b. **Failure Webhook** – Same as Success Webhooks. But are called when the factory fails.
 
 ## Validations ##
 
@@ -48,3 +59,40 @@ b. Failure Webhook – Same as Success Webhooks. But are called when the factory
 3. Templates – The selection of templates are restricted based on the type of the template and a selection list is already confined to allocated and valid templates.
 
 4. Stages – No restriction. The factory can even choose to use the same Stage for all three stage values.
+
+
+> [!Note]
+> See below configurations to understand better how to configure correctly and the factory's behavior.
+
+# How to Set-up/ Edit/ Delete Factories 
+
+## Set-up/ Create a Factory ##
+
+- Click on Settings button on the main menu on the left.
+- Make sure you select first the Stream and Stage where you want to create a factory and then click **New Factory** button on the top-right.
+- Fill the required fields (see all definitions above and also below example). All fields are mandatory except the last three *(Base Products, Success Webhook and Failure Webhook)*. 
+    - Name: choose a meaningful name for your factory.
+    - Description: put a description that will help knowing what the factory is about.
+    - Templates: choose an Environment Template from the dropdown list. Based on this template will be created the environments where you will be able to test different products.
+    - Test Environment Template: this is a defaulted test tool available on the Platform in order to be able to run your tests on the Platform interface. Based on the Environment release you should choose the related Test Template.
+    - Source Stage: this is the stage with the stable version of components. 
+    - Base Stage *(target stage)*: this is the stage where components are promoted. When testing the first time, you can choose the same stage for source and base to make sure everything is promoted successfully.
+    - Principle Products - these are promoted to the next stage and belong under Source Stage.
+    - Base Products - these are products that don’t need to be promoted but they are required to test the Principle Products and they belong under the Base Stage.
+- Click **Create** button > the factory is successfully created. 
+
+
+![](./images/factory-create.png)
+
+## Edit a Factory ##
+
+- Click the **Edit** button.
+- Any field can be changed/ edited as long as the entire Factory configuration complies with the validation rules.
+- Click the **Update** button.
+
+
+## Delete a Factory ##
+
+- You can easily delete a factory by clicking the **delete** button.
+- The products, stages and streams created before can be re-used.
+
