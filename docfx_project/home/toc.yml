@@ -5,6 +5,8 @@
   items:
     - name: Temenos Cloud Templates
       href: ./temenos-cloud-templates.md
+- name: Technical Overview
+  href: ./technical-overview.md
 - name: FAQs
   href: ./faq.md
 - name: How to...
