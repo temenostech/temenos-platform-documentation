@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Clone a Temenos Cloud Environment </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Clone a Temenos Cloud Environment ">
+    <meta name="generator" content="docfx 2.22.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/woocircle.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" class="Clone a Temenos Cloud Environment ">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar" role="navigation">
+          <div class="container">
+            <div class="row">
+              <div class="navbar-header col-md-2">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                
+                <a class="navbar-brand" href="/index.html">
+                  <img id="logo" src="/logo.png" alt="">
+                </a>
+              </div>
+              <div class="themainmenu col-md-10">
+              <div class="collapse navbar-collapse" id="navbar">
+                <form class="navbar-form navbar-right" role="search" id="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                  </div>
+                </form>
+              </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="clone-a-temenos-cloud-environment">Clone a Temenos Cloud Environment</h1>
+
+<p>One of the features of the Temenos Cloud Platform is the possibility to create a clone of an environment.</p>
+<p>In case different changes have been done such as: modifying the database, addition of new endpoints, installing plugins or others, and is needed a copy of that specific environment with all the changes, this can be easily done by clicking the clone button and creating a clone.</p>
+<p>Please see below some explanations on how this process works and what are the restrictions during the cloning action.</p>
+<div class="NOTE"><h5>Note</h5><p>Check also our <a href="https://www.youtube.com/watch?v=mTzfl_OYKVI" target="_blank"><strong>Video tutorial</strong>
+</a></p>
+</div>
+<h2 id="environment-status-during-cloning">Environment Status during Cloning</h2>
+<div class="NOTE"><h5>Note</h5><ul>
+<li><p>You can <strong>not</strong> clone an environment if the environment is: Stopping, Rebuilding, Scaling, Exporting or it has a Warning. </p>
+</li>
+<li><p>You can clone an environment only when the status is Started/Starting &gt; the <strong>Start</strong> button will be disabled.</p>
+</li>
+</ul>
+</div>
+<h2 id="clone-the-environment">Clone the Environment</h2>
+<ul>
+<li>Select the environment that you want to clone and press <strong>Clone</strong> button.</li>
+</ul>
+<p><img src="images/clone-button.png" alt=""> </p>
+<p><br></p>
+<ul>
+<li>Input a <strong>Name</strong> and <strong>Description</strong> and optionally, a <em>Label</em>, then click <strong>Clone</strong>. </li>
+<li>You will get a notification on the screen that the environment cloning has been initiated.</li>
+</ul>
+<p><img src="images/clone-env-details.png" alt=""> </p>
+<div class="NOTE"><h5>Note</h5><p>Use the <strong>Refresh List</strong> button in order to see the new actions.</p>
+</div>
+<ul>
+<li>At this point, there will be created: a New address and a GitHub endpoint with the same content as the cloned one and also a cloned Database (the export of the database is triggered).</li>
+<li>The new (clone-environment) will have the same template as the source environment.</li>
+<li>In the Event Tab of the source Environment (the one being cloned), the Event notifications will display the date, time and duration of the Cloning action.</li>
+<li>The <strong>Clone</strong> button will be disabled until on the left side of the screen you will notice the new cloned environment being created.</li>
+</ul>
+<p><br></p>
+<ul>
+<li>The new environment will be visible in the Environments list with the status <strong>Creating</strong>:</li>
+</ul>
+<p><img src="images/clone-refresh.png" alt=""> </p>
+<p><br></p>
+<p><img src="images/clone-env-creating.png" alt=""> </p>
+<ul>
+<li>The target environment (clone) will display the status <strong>Creating</strong> for:<ul>
+<li>T24 application</li>
+<li>H2 database</li>
+<li>GitHub repository</li>
+</ul>
+</li>
+</ul>
+<div class="NOTE"><h5>Note</h5><p>It will take around 15-20 minutes for the clone environment to be created.</p>
+</div>
+<p><br></p>
+              <hr>
+              
+              <div id="disqus_thread"></div>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 footer-note left">
+              <p>
+                <a href="/"><img src="/logo-bottom.png" alt=""></a>
+                <a href="https://www.temenos.com/en/accessibility/">Accessibility</a>
+                <a href="https://www.temenos.com/en/legal-information/cookie-policy/">Cookie Policy</a>
+                <a href="https://www.temenos.com/en/legal-information/privacy-policy/">Privacy Policy</a>
+                <a href="https://www.temenos.com/en/legal-information/terms-and-conditions/">Terms & Conditions</a>
+              </p>
+            </div>
+      
+            <div class="col-md-6 footer-note right">
+              <p>
+                Copyright &copy; 2017 Temenos Headquarters SA <span>&#183;</span>
+                <a target="_blank" href="https://www.facebook.com/TemenosGroup"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+                <a target="_blank" href="https://twitter.com/Temenos"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a target="_blank" href="http://www.linkedin.com/company/temenos"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a target="_blank" href="//plus.google.com/u/0/100035548059267323447?prsrc=3"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+              </p>
+            </div>
+          </div>
+      
+        </div>
+      </footer>
+      
+      <div class="back-to-top">
+        <a href="#top">
+          <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i></span>
+        </a>
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script id="dsq-count-scr" src="//temenostech.disqus.com/count.js" async=""></script>
+    
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myshareDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.sharedropbtn')) {
+    
+        var dropdowns = document.getElementsByClassName("sharedropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+    
+    <script>
+    	window.onload = function(){
+        	document.getElementById("shareFacebook").href = 'https://www.facebook.com/sharer/sharer.php?u=' + window.location.toString();
+    
+        	document.getElementById("shareTwitter").href = 'https://twitter.com/intent/tweet?text=Temenos+Developer+Portal&url=' + window.location.toString();
+    
+        	document.getElementById("shareGoogle").href = 'https://plus.google.com/share?url=' + window.location.toString();
+    
+        	document.getElementById("shareLinkedin").href = 'https://www.linkedin.com/shareArticle?mini=true&url=' + window.location.toString() + '&title=Temenos+Developer+Portal&summary=&source=';
+    
+        	document.getElementById("shareEmail").href = 'mailto:' + window.location.toString();
+    	}
+    </script>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-38593742-4', 'auto');
+      ga('send', 'pageview');
+    
+    </script>  </body>
+</html>

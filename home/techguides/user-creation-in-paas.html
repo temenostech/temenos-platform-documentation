@@ -1,0 +1,245 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Introduction </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Introduction ">
+    <meta name="generator" content="docfx 2.22.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/woocircle.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" class="Introduction ">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar" role="navigation">
+          <div class="container">
+            <div class="row">
+              <div class="navbar-header col-md-2">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                
+                <a class="navbar-brand" href="/index.html">
+                  <img id="logo" src="/logo.png" alt="">
+                </a>
+              </div>
+              <div class="themainmenu col-md-10">
+              <div class="collapse navbar-collapse" id="navbar">
+                <form class="navbar-form navbar-right" role="search" id="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                  </div>
+                </form>
+              </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="introduction">Introduction</h1>
+
+<p>This document can be used by technical staff who need to create Users on the Temenos Cloud Platfrom and associate to each user a ssh key. </p>
+<h2 id="users"><strong>Users</strong></h2>
+<hr>
+<p>The Administrator can navigate to the Users section on the portal, create more users and invite them to access and use the portal using the URL link. This way the administrator is in control of who receives the URL link and which users can access the Organisation.</p>
+<p>The users can access their organisation only, view their user profiles and change their password. Should the users requires access to the source code repository they need to provide their public SSH Keys on the user profile section to gain access.</p>
+<h1 id="use-putty-ssh-client-for-ssh-key-generation">Use PuTTY ssh client for ssh key generation.</h1>
+<p>You can use any other ssh key generator client.</p>
+<div class="NOTE"><h5>Note</h5><p>If you already have installed a ssh key generator client, you can skip this step.</p>
+</div>
+<p>•   Download the installer from <a href="http://www.putty.org/" title="http://www.putty.org/">http://www.putty.org/</a></p>
+<p><img src="images/putty-download.png" alt="putty download"></p>
+<p>•   Run the installer and click <strong>Next</strong> on each screen, without changing anything in configurations. Click <strong>Finish</strong> once completed.</p>
+<h1 id="create-ssh-keys-pair-public-and-private-keys">Create SSH keys (pair public and private keys)</h1>
+<p>•   Open PuTTYgen and click Generate button:</p>
+<p><img src="images/putty-keygen.png" alt="putty keygen"></p>
+<p>•   This creates a new ssh key by moving the mouse in the blank area(highlighted in red), as per bellow picture.</p>
+<p><img src="images/putty-keygen-random.png" alt="generate ssh key"></p>
+<p>•   After Puttygen finished key generation, you can save your public key/private key in any location from your local machine.</p>
+<div class="NOTE"><h5>Note</h5><p>In order to have a valid ssh key that can be recognized by 
+ Infrastructure, do not use the Save public key button from Puttygen and just select the whole public key from the PuTTYgen screen and save it in your local machine.</p>
+</div>
+<p><img src="images/putty-keygen-publickey.png" alt="save public key"></p>
+<p>•   From PuTTYgen screen, you must also save the private key. Press the Save private key button, choose Yes on the next prompt (save the key without a passphrase to protect it) and indicate a name and location for the private key.</p>
+<p><img src="images/putty-keygen-privatekey.png" alt="save private key"></p>
+<p>•   The public/private key location on your local machine should look like this:</p>
+<p><img src="images/putty-keygen-keyslocation.png" alt="public/private keys location"></p>
+<h1 id="add-users-in-portal-with-ssh-key">Add users in portal with SSH key</h1>
+<p>•   Login to your organisation portal using the link and the credentials provided.</p>
+<p><img src="images/user-login.png" alt="portal login"></p>
+<p>•   Go to the menu on the left and then click Users tab, as below:</p>
+<p><img src="images/users-tab.png" alt="new user"></p>
+<p>The first screen that you will see is the one for the existing user (usually admin).</p>
+<p>Click <strong>New user</strong> button on the top-right corner:</p>
+<p><img src="images/user-new.png" alt="new user"></p>
+<p>This will create a new user in your organisation. This new user will be automatically assigned to all GitLab Repositories from within all environments. If you have already a user created, you can click on the user and update the SSH key box with the one created above.</p>
+<p><strong>Create a new user:</strong></p>
+<div class="NOTE"><h5>Note</h5><p>All fields are mandatory!
+See further below how to generate the SSH key</p>
+</div>
+<p><img src="images/user-details.png" alt="new user"></p>
+<p>•   Public SSH key needs to be pasted in SSH Key text box. Open Windows Explorer and locate your public key generated using PuTTY Key Generator. </p>
+<p><img src="images/putty-keygen-publicselect.png" alt="paste key text"></p>
+<p>• Right click and open it with notepad. Select all and copy to clipboard.</p>
+<p><img src="images/copy-key.png" alt="copy key"></p>
+<p>•   Paste the copied text into the SSH Key text box and click Create user button.</p>
+<ul>
+<li>Your user is now available in the user list:</li>
+</ul>
+<p><img src="images/user-list.png" alt="user"></p>
+<ul>
+<li><p>You have the option to edit or to delete it.</p>
+</li>
+<li><p>Your username will be created in Gitlab server and public SSH key provided will be added to your account being accessible from all the environments created in your organisation.</p>
+</li>
+<li><p>For further details or issues related to Gitlab SSH keys usage, or other operating systems (MAC, Linux), please consult this link:  <a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/">https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/</a></p>
+</li>
+</ul>
+<p><br></p>
+              <hr>
+              
+              <div id="disqus_thread"></div>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 footer-note left">
+              <p>
+                <a href="/"><img src="/logo-bottom.png" alt=""></a>
+                <a href="https://www.temenos.com/en/accessibility/">Accessibility</a>
+                <a href="https://www.temenos.com/en/legal-information/cookie-policy/">Cookie Policy</a>
+                <a href="https://www.temenos.com/en/legal-information/privacy-policy/">Privacy Policy</a>
+                <a href="https://www.temenos.com/en/legal-information/terms-and-conditions/">Terms & Conditions</a>
+              </p>
+            </div>
+      
+            <div class="col-md-6 footer-note right">
+              <p>
+                Copyright &copy; 2017 Temenos Headquarters SA <span>&#183;</span>
+                <a target="_blank" href="https://www.facebook.com/TemenosGroup"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+                <a target="_blank" href="https://twitter.com/Temenos"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a target="_blank" href="http://www.linkedin.com/company/temenos"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a target="_blank" href="//plus.google.com/u/0/100035548059267323447?prsrc=3"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+              </p>
+            </div>
+          </div>
+      
+        </div>
+      </footer>
+      
+      <div class="back-to-top">
+        <a href="#top">
+          <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i></span>
+        </a>
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script id="dsq-count-scr" src="//temenostech.disqus.com/count.js" async=""></script>
+    
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myshareDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.sharedropbtn')) {
+    
+        var dropdowns = document.getElementsByClassName("sharedropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+    
+    <script>
+    	window.onload = function(){
+        	document.getElementById("shareFacebook").href = 'https://www.facebook.com/sharer/sharer.php?u=' + window.location.toString();
+    
+        	document.getElementById("shareTwitter").href = 'https://twitter.com/intent/tweet?text=Temenos+Developer+Portal&url=' + window.location.toString();
+    
+        	document.getElementById("shareGoogle").href = 'https://plus.google.com/share?url=' + window.location.toString();
+    
+        	document.getElementById("shareLinkedin").href = 'https://www.linkedin.com/shareArticle?mini=true&url=' + window.location.toString() + '&title=Temenos+Developer+Portal&summary=&source=';
+    
+        	document.getElementById("shareEmail").href = 'mailto:' + window.location.toString();
+    	}
+    </script>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-38593742-4', 'auto');
+      ga('send', 'pageview');
+    
+    </script>  </body>
+</html>

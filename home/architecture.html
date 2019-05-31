@@ -1,0 +1,309 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Architecture Overview </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Architecture Overview ">
+    <meta name="generator" content="docfx 2.22.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/woocircle.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" class="Architecture Overview ">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar" role="navigation">
+          <div class="container">
+            <div class="row">
+              <div class="navbar-header col-md-2">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                
+                <a class="navbar-brand" href="/index.html">
+                  <img id="logo" src="/logo.png" alt="">
+                </a>
+              </div>
+              <div class="themainmenu col-md-10">
+              <div class="collapse navbar-collapse" id="navbar">
+                <form class="navbar-form navbar-right" role="search" id="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                  </div>
+                </form>
+              </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="architecture-overview">Architecture Overview</h1>
+
+<h3 id="where-does-temenos-continuous-deployment-platform-fit-into-the-enterprise-it-landscape"><strong>Where does Temenos Continuous Deployment Platform fit into the enterprise IT landscape?</strong></h3>
+<hr>
+<p>The Temenos Continuous Deployment Platform (TCD) promotes the concept of simplified and standardised change promotion through the IT landscape.</p>
+<p><img src="images/architecture-arrows.png" alt=""></p>
+<p>Typical organisations have a number of non-production (i.e. development/test) environments, where changes are implemented and checked prior to deployment to production systems. The Devops movement seeks to improve this QA process through means of automation, which both allows an increase in speed in change promotion, and a reduction in the risk of manual errors when promoting changes.</p>
+<p>The Development Platform includes a simple and repeatable method of collating changes (both configuration and customisation) which subsequently is simple to promote from environment to environment.</p>
+<p>In addition, the core function of the Deployment Platform  is to simplify the environment provisioning process, which means if extra stages in the change flow are required (e.g. for additional testing phases), it becomes far simpler to spin up temporary environments for these purposes.</p>
+<p>It should be noted that the Development platfrom only supplies non-production environments (also known as &#39;sandboxes&#39;), which means organisations will still require at least one non-production environment on representative hardware in order to sanity check changes prior to production release (see example below).</p>
+<p><img src="images/architecture-paas-deploy.png" alt=""></p>
+<p>Delegating platform and infrastructure responsibilities to a third party allows organisations to concentrate on what is important to them - applications and data.</p>
+<p><img src="images/architecture-responsabilities.png" alt=""></p>
+<p>The Deployment platform may be used for simple environment provisioning, or may be augmented by additional tools (such as Continuous Integration tooling) to provide a streamlined and automated development experience. The change promotion mechansim within the TCD platform  is simple to plug into standard CI tooling to push code/config/data from environment to environment.  An example development flow is shown below:</p>
+<p><img src="images/architecture-process.png" alt=""></p>
+<h3 id="what-are-the-components-of-temenos-continuous-deployment-platform"><strong>What are the components of Temenos Continuous Deployment Platform?</strong></h3>
+<hr>
+<p>Development &amp; Testing environments are managed by the Development Portal, and are comprised of distinct components as described below:</p>
+<p><img src="images/architecture-customer-facing-systems.png" alt=""></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Component</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Portal</td>
+<td style="text-align:left">The Portal is the front-end component of the Deployment Platform which allows users to perform management functions across development environments.  These functions include user management and environment provisioning/scaling.</td>
+</tr>
+<tr>
+<td style="text-align:left">Configuration Repository</td>
+<td style="text-align:left">The Configuration Repository is the &#39;change hub&#39; for the Deployment Platform.  It supports configuration and customisation (per environment), including T24 updates, custom config/code packages, database imports and third party plug-ins/add-ons.</td>
+</tr>
+<tr>
+<td style="text-align:left">T24 Instance</td>
+<td style="text-align:left">The T24 instance comprises the application and database for T24.  The application tier may be scaled horizontally as required (via the management facility in the Portal).</td>
+</tr>
+<tr>
+<td style="text-align:left">Exports (File Storage)</td>
+<td style="text-align:left">The T24 database may be exported via the management facility in the Portal, as may the &#39;environment&#39; (file system level). These exports are stored per environment and may be downloaded by users via SFTP.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="what-can-you-do-with-temenos-continuous-deployment-platform"><strong>What can you do with Temenos Continuous Deployment Platform?</strong></h3>
+<hr>
+<p>Below is a list of functions which can be performed using Temenos Continuous Deployment Platform.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Function</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Provision a new environment</td>
+<td style="text-align:left">Create an environment</td>
+</tr>
+<tr>
+<td style="text-align:left">Scale an environment</td>
+<td style="text-align:left">Scale a environment horizontally by adding/removing additional T24 instances for a given database instance</td>
+</tr>
+<tr>
+<td style="text-align:left">Delete a environment</td>
+<td style="text-align:left">Delete a environment</td>
+</tr>
+<tr>
+<td style="text-align:left">Manage a user</td>
+<td style="text-align:left">Create/ edit/ delete a user</td>
+</tr>
+<tr>
+<td style="text-align:left">Apply configuration/ customisation</td>
+<td style="text-align:left">Apply the necessary change components to create a customised environment configuration for an organisation</td>
+</tr>
+<tr>
+<td style="text-align:left">Login to T24</td>
+<td style="text-align:left">Use the resultant customised environment</td>
+</tr>
+<tr>
+<td style="text-align:left">Import a database</td>
+<td style="text-align:left">Import a database into a environment</td>
+</tr>
+<tr>
+<td style="text-align:left">Export a database</td>
+<td style="text-align:left">Export a database from a environment (e.g. to re-import into another environment)</td>
+</tr>
+<tr>
+<td style="text-align:left">Export an environment</td>
+<td style="text-align:left">Export a copy of a environment (file system level) for offline perusal</td>
+</tr>
+</tbody>
+</table>
+<h3 id="what-tools-do-i-need-to-use-temenos-continuous-deployment-platform"><strong>What tools do I need to use Temenos Continuous Deployment Platform?</strong></h3>
+<hr>
+<p>Below is a list of tools which may be used to exploit Temenos Continuous Deployment Platform functionality.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Tool</th>
+<th style="text-align:left">Description and Rationale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Git</td>
+<td style="text-align:left">Git (/ɡɪt/) is a version control system for tracking changes in computer files and coordinating work on those files among multiple people.  A client program for Git is required to push artefacts into the configuration repository.</td>
+</tr>
+<tr>
+<td style="text-align:left">SFTP Client</td>
+<td style="text-align:left">SFTP is the protocol used to download file exports (environment or database exports)</td>
+</tr>
+<tr>
+<td style="text-align:left">Continuous Integration Tool (Optional)</td>
+<td style="text-align:left">Continuous Integration tools may be used to help automate change promotion between environments.  There is no CI tool provided as part of the Temenos Continuous Deployment Platform, but these are useful in reducing manual tasks when managing environments.</td>
+</tr>
+<tr>
+<td style="text-align:left">Design Studio (Optional)</td>
+<td style="text-align:left">Design Studio is the IDE (Integrated Development Environment) produced by Temenos for developing changes in T24 systems.  Design Studio itself does not form part of the Deployment Platform, but change outputs from this tool are supported within the Configuration Repository.</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+              <hr>
+              
+              <div id="disqus_thread"></div>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 footer-note left">
+              <p>
+                <a href="/"><img src="/logo-bottom.png" alt=""></a>
+                <a href="https://www.temenos.com/en/accessibility/">Accessibility</a>
+                <a href="https://www.temenos.com/en/legal-information/cookie-policy/">Cookie Policy</a>
+                <a href="https://www.temenos.com/en/legal-information/privacy-policy/">Privacy Policy</a>
+                <a href="https://www.temenos.com/en/legal-information/terms-and-conditions/">Terms & Conditions</a>
+              </p>
+            </div>
+      
+            <div class="col-md-6 footer-note right">
+              <p>
+                Copyright &copy; 2017 Temenos Headquarters SA <span>&#183;</span>
+                <a target="_blank" href="https://www.facebook.com/TemenosGroup"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+                <a target="_blank" href="https://twitter.com/Temenos"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a target="_blank" href="http://www.linkedin.com/company/temenos"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a target="_blank" href="//plus.google.com/u/0/100035548059267323447?prsrc=3"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+              </p>
+            </div>
+          </div>
+      
+        </div>
+      </footer>
+      
+      <div class="back-to-top">
+        <a href="#top">
+          <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i></span>
+        </a>
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script id="dsq-count-scr" src="//temenostech.disqus.com/count.js" async=""></script>
+    
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myshareDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.sharedropbtn')) {
+    
+        var dropdowns = document.getElementsByClassName("sharedropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+    
+    <script>
+    	window.onload = function(){
+        	document.getElementById("shareFacebook").href = 'https://www.facebook.com/sharer/sharer.php?u=' + window.location.toString();
+    
+        	document.getElementById("shareTwitter").href = 'https://twitter.com/intent/tweet?text=Temenos+Developer+Portal&url=' + window.location.toString();
+    
+        	document.getElementById("shareGoogle").href = 'https://plus.google.com/share?url=' + window.location.toString();
+    
+        	document.getElementById("shareLinkedin").href = 'https://www.linkedin.com/shareArticle?mini=true&url=' + window.location.toString() + '&title=Temenos+Developer+Portal&summary=&source=';
+    
+        	document.getElementById("shareEmail").href = 'mailto:' + window.location.toString();
+    	}
+    </script>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-38593742-4', 'auto');
+      ga('send', 'pageview');
+    
+    </script>  </body>
+</html>

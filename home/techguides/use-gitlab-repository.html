@@ -1,0 +1,292 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Introduction </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Introduction ">
+    <meta name="generator" content="docfx 2.22.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/woocircle.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" class="Introduction ">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar" role="navigation">
+          <div class="container">
+            <div class="row">
+              <div class="navbar-header col-md-2">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                
+                <a class="navbar-brand" href="/index.html">
+                  <img id="logo" src="/logo.png" alt="">
+                </a>
+              </div>
+              <div class="themainmenu col-md-10">
+              <div class="collapse navbar-collapse" id="navbar">
+                <form class="navbar-form navbar-right" role="search" id="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                  </div>
+                </form>
+              </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="introduction">Introduction</h1>
+
+<p>This document can be used by technical staff who need to deploy different features on a Temenos Cloud Environment. Each Environment has an associated Repository for uploading different type of features based on Environment Template type, these features being deployed automatically to your Environment.</p>
+<p>Before proceeding, please check the following requirements:</p>
+<ul>
+<li>Make sure you have a GUI Git Client installed in your local machine. This guide uses <em>TortoiseGit</em> Git Client that can be installed from <a href="https://tortoisegit.org/download/" target="blank">here</a>.</li>
+<li>Make sure you have an user created under your organisation that has a public ssh key attached. Please check this <a href="user-creation-in-paas.html" target="blank">guide</a> to understand how you can create an user or how you can generate and attach a ssh key to an user.</li>
+</ul>
+<h1 id="clone-environment-repository">Clone Environment Repository</h1>
+<p>•   Please login to your organisation, select your environment and locate the Endpoint of <strong>Repository</strong> Application (this is the last available endpoint on the environment page). </p>
+<ul>
+<li>Click the <strong>copy to clipboard icon</strong> from the right:</li>
+</ul>
+<p><img src="images/use-git-endpoint.png" alt="repository"></p>
+<p>•   Create a folder in any location from your local machine. In the current example, a folder name GitLabRepo is used.</p>
+<p>•   Go to your local repository folder(GitLabRepo folder in our example), right click inside the folder and choose <strong>Git Clone</strong>.
+<img src="images/gitlab_repo_clone1.png" alt="gitlab repo clone1"></p>
+<p>•   The bellow screen is opened where you have to paste the Endpoint of <strong>Repository</strong> Application of your Environment in URL textbox, set the Directory textbox to your local repository folder(GitLabRepo folder in our example) and load your private key.
+<img src="images/gitlab_repo_clone2.png" alt="gitlab repo clone2"></p>
+<p>•   Content is downloaded from the Repository of your Environment to your local machine.
+<img src="images/gitlab_repo_clone3.png" alt="gitlab repo clone3"></p>
+<h1 id="repository-structure">Repository Structure</h1>
+<p>The repository structure on your local machine should look like this:</p>
+<p><img src="images/use-git-repo.png" alt="gitlab repo structure"></p>
+<div class="WARNING"><h5>Warning</h5><p><strong>Do not delete, change or move the environment folder</strong>. This contains the manifest file.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th><strong>Folder</strong></th>
+<th>Functionality</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>addons</td>
+<td>This folder is designed for AppDynamics. Upload files as JAR.</td>
+</tr>
+<tr>
+<td>client_files\h2db</td>
+<td>Local H2 database that will be uploaded to the Cloud Environment. Database username must be t24 and password t24 (case sensitive). Database name is mandatory to be “TAFJDB.h2.db” (case sensitive) and must be archived as a ZIP with name TAFJDB.zip (case sensitive). If the above conditions are not satisfied, the database will not be uploaded to the Cloud Environment. This procedure will <strong>replace</strong> the existing database in the cloud with this one. The <strong>old database</strong> will be <strong>lost</strong>, including any records loaded manually.</td>
+</tr>
+<tr>
+<td>client_files\helptext</td>
+<td>Custom Help Text files can be uploaded in this folder. The file structure must be the same as HELP.TEXT T24 core. Thus, under client_files\helptext folder, the HelpText folder with subfolders for each component (AA, EB, PP, etc.) is expected.</td>
+</tr>
+<tr>
+<td>packages</td>
+<td>One or more T24 DS (Design Studio) packages can be uploaded into this folder. All packages will be deployed automatically inside T24.</td>
+</tr>
+<tr>
+<td>plugins</td>
+<td>WAR files can be uploaded in this folder. The files will be deployed inside Jboss EAP. In addition to this, endpoints related to plugins can be automatically added to an application. For more details, check this <a href="add-app-endpoint.html" target="blank">guide</a>.</td>
+</tr>
+<tr>
+<td>updates</td>
+<td>The updates files downloaded from the portal in zip format. The files will be copied to the update folder and the T24 Update procedure is triggered.</td>
+</tr>
+<tr>
+<td>wsdl</td>
+<td>WSDL files and folders that are required by plug-ins (war file) need to be uploaded here.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-folders">Additional folders</h2>
+<p>The bellow folders are not present as default in environment repository. In any of the bellow functionalities is required, the folder related to that functionality must be first created in environment repository and only after this the functionality of the folder can be used.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Folder</strong></th>
+<th>Functionality</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>client_files\localjars</td>
+<td>This folder is designed for local JARs (not released by T24 Core) installation.<br>Any JAR file used by T24 or other parties can be uploaded in this folder. During deployment, all JARs present in this folder will be deployed in the environment. If a JAR file is corrupted or some dependencies are missing, the environment will not start.</td>
+</tr>
+<tr>
+<td>client_files\localjars\ext</td>
+<td>This folder is designed for local JARs installation inside <strong>TAFJ/ext</strong> folder from the environment.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="commit--push-features-to-repository">Commit &amp; Push features to Repository</h1>
+<p>•   Go to repository folder from your local machine(GitLabRepo folder in our example) and copy your file/files (related to your required features that must be deployed to your Environment) to the specific folder/folders based on your requirement. In this guide, an update is pushed to the Environment Repository.
+<img src="images/repo_commit_1.png" alt="repo commit 1"></p>
+<p>•   To commit the files/files to Environment Repository, right click inside repository folder from your local machine and choose <strong>Git Commit -&gt; &quot;master&quot;...</strong> option.
+<img src="images/repo_commit_2.png" alt="repo commit 2"></p>
+<p>•   The following screen will appear in which your repository changes can be observed and commited. In order to commit, you have to input a commit message and check the checkbox next to each new file if it is the case.
+<img src="images/repo_commit_3.png" alt="repo commit 3"></p>
+<p>•   The following screen will appear in which you have to push your changes to Environment Repository. In order to push, click the <strong>Push</strong> button.
+<img src="images/repo_commit_4.png" alt="repo commit 4"></p>
+<p>•   In the next screen, you have to click <strong>Ok</strong> button.
+<img src="images/repo_commit_5.png" alt="repo commit 5"></p>
+<p>•   Finally, the status screen for your push action is displayed.
+<img src="images/repo_commit_6.png" alt="repo commit 6"></p>
+<h1 id="trigger-deployment">Trigger Deployment</h1>
+<p>•   After all required features are commited and pushed to Environment Repository, you have to deploy these features in your Environment. To do this, login to your organisation, select your environment, locate <strong>Repository</strong> Application and click the <strong>Deploy</strong> button.</p>
+<p><img src="images/use-git-deploy.png" alt="repo deploy 1"></p>
+<p>•   The Environment and its manageable Applications status will be changed to <span style="color:#4d94ff;font-weight:600;">Deploying</span> during the deployment process and the Deploy button becomes disabled until the deployment is finished.</p>
+<p><img src="images/use-git-deployment.png" alt="repo deploy 1"></p>
+<p>The logs generated by the deployment process can be also observed in the <strong>Events</strong> tab of your Environment where a new event for <em>RepositoryDeploy</em> will be created.
+<img src="images/repo_deploy_2.png" alt="repo deploy 2"></p>
+<div class="NOTE"><h5>Note</h5><p>The deployment process is triggered <strong>manually</strong> by the user after commiting and pushing all the required features in Environment Repository or whenever is appropiate based on the fact that the user can commit and push features to Environment Repository multiple times and choose when to trigger the deployment.</p>
+</div>
+<p><br></p>
+              <hr>
+              
+              <div id="disqus_thread"></div>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 footer-note left">
+              <p>
+                <a href="/"><img src="/logo-bottom.png" alt=""></a>
+                <a href="https://www.temenos.com/en/accessibility/">Accessibility</a>
+                <a href="https://www.temenos.com/en/legal-information/cookie-policy/">Cookie Policy</a>
+                <a href="https://www.temenos.com/en/legal-information/privacy-policy/">Privacy Policy</a>
+                <a href="https://www.temenos.com/en/legal-information/terms-and-conditions/">Terms & Conditions</a>
+              </p>
+            </div>
+      
+            <div class="col-md-6 footer-note right">
+              <p>
+                Copyright &copy; 2017 Temenos Headquarters SA <span>&#183;</span>
+                <a target="_blank" href="https://www.facebook.com/TemenosGroup"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+                <a target="_blank" href="https://twitter.com/Temenos"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a target="_blank" href="http://www.linkedin.com/company/temenos"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a target="_blank" href="//plus.google.com/u/0/100035548059267323447?prsrc=3"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+              </p>
+            </div>
+          </div>
+      
+        </div>
+      </footer>
+      
+      <div class="back-to-top">
+        <a href="#top">
+          <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i></span>
+        </a>
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script id="dsq-count-scr" src="//temenostech.disqus.com/count.js" async=""></script>
+    
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myshareDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.sharedropbtn')) {
+    
+        var dropdowns = document.getElementsByClassName("sharedropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+    
+    <script>
+    	window.onload = function(){
+        	document.getElementById("shareFacebook").href = 'https://www.facebook.com/sharer/sharer.php?u=' + window.location.toString();
+    
+        	document.getElementById("shareTwitter").href = 'https://twitter.com/intent/tweet?text=Temenos+Developer+Portal&url=' + window.location.toString();
+    
+        	document.getElementById("shareGoogle").href = 'https://plus.google.com/share?url=' + window.location.toString();
+    
+        	document.getElementById("shareLinkedin").href = 'https://www.linkedin.com/shareArticle?mini=true&url=' + window.location.toString() + '&title=Temenos+Developer+Portal&summary=&source=';
+    
+        	document.getElementById("shareEmail").href = 'mailto:' + window.location.toString();
+    	}
+    </script>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-38593742-4', 'auto');
+      ga('send', 'pageview');
+    
+    </script>  </body>
+</html>
