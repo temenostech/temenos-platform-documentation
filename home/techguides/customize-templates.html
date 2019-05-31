@@ -87,24 +87,27 @@
 <li>the environment applications (i.e. the scripts to install and configure each application and the information displayed in PaaS Portal for each application);</li>
 <li>the VM specifications in which each application is deployed.</li>
 </ul>
-<div class="NOTE"><h5>Note</h5><p>This guide presumes that a Sandbox is already created and available under an Organisation for which the templates customization functionality is allowed.</p>
+<div class="NOTE"><h5>Note</h5><p>This guide presumes that a environment is already created and available under an Organisation for which the templates customization functionality is allowed.</p>
 </div>
 <h2 id="boost-your-environment">Boost your environment</h2>
-<p>To start customizing your environment built using a PaaS template, login to PaaS portal using your organisation user, go to your environment page and click on the <strong>Boost</strong> button attached to <strong>Repository</strong> application.
-<img src="images/boost_env1.png" alt="boost 1">
-After clicking the Boost button, the status of Repository application is changed to <span style="color:orange">Boosting</span>, as per bellow picture. The operation triggered by the Boost button will copy in environment repository all the template files used to create the environment.
-<img src="images/boost_env2.png" alt="boost 2">
-When the Boosting operation is finished, the message <em>&quot;Scripts are customized for this environment.&quot;</em> is displayed under the name of your environment.
-<img src="images/boost_env3.png" alt="boost 3"></p>
+<p>To start customizing your environment built using a Temenos Cloud template, login to Temenos Continuous Deployment platform using your organisation user, go to your environment page and click on the <strong>Boost</strong> button attached to <strong>Repository</strong> application.</p>
+<p><img src="images/customize-templates-button.png" alt="boost 1"></p>
+<p>After clicking the Boost button, you will receive a notification message - &#39;Customize your scripts&#39; - referring to this user guide and agreeing with the action.</p>
+<p>The message &#39;Repository boosting initiated!&quot; appears on the screen and the status of Repository application is changed to <span style="color:orange">Boosting</span>, as per bellow picture. The operation triggered by the Boost button will copy in environment repository all the template files used to create the environment.
+<img src="images/customize-templates-boost.png" alt="boost 2"></p>
+<div class="NOTE"><h5>Note</h5><p>Click the <strong>Refresh List</strong> button to see when boosting action is completed.</p>
+<p>Also below the environment description, following message is displayed &quot;Scripts are customized for this environment.&quot; and the button <strong>Save as a new template</strong> appears. </p>
+</div>
 <h2 id="repository-structure-after-boost">Repository structure after Boost</h2>
 <p>As stated above, the Boost operation will make changes to environment repository. The difference between the before and after boost environment repository versions is represented by the presence of <span style="color:red">environments</span> folder, as it can be observed bellow.
-<img src="images/boost_env4.png" alt="boost 4">
-The structure of the <span style="color:red">environments</span> folder is represented by 3 folders:</p>
+<img src="images/customize-templates-after-boost.png" alt="boost 4"></p>
+<p>The structure of the <span style="color:red">environments</span> folder is represented by 4 folders <em>(found under common folder)</em>:</p>
 <ul>
+<li>extraPlays</li>
 <li>infra-templates</li>
 <li>playbooks</li>
 <li>roles
-<img src="images/boost_env5.png" alt="boost 5"></li>
+<img src="images/customize-templates-structure.png" alt="boost 5"></li>
 </ul>
 <p>The description of each folder is presented bellow:</p>
 <table>
@@ -115,6 +118,10 @@ The structure of the <span style="color:red">environments</span> folder is repre
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>extraPlays</td>
+<td>This folder yml configuration files related to the template used in the creation of the environment.</td>
+</tr>
 <tr>
 <td>infra-templates</td>
 <td>This folder contains an <strong>infratemplate.yml</strong> file that describes the template of your environment (i.e. information related to the applications that are installed in your environment and VM specifications in which environment applications are deployed.).</td>
@@ -150,7 +157,7 @@ There are several ways in which you can customize your environment template base
 </div>
 <ol>
 <li><p>Changes that will require <span style="color:red;font-weight:600;">the rebuild of your environment</span>:</p>
-<div class="NOTE"><h5>Note</h5><p>The rebuild operation will take around 20 minutes and it will recreate all environment resources(VMs) and run the deployment of all roles defined in environment template.<br>To trigger the rebuild of your environment, login to PaaS portal using your organisation user, go to your environment page and click on the <strong><span style="color:#00bfff;font-weight:600;">Rebuild</span></strong> button attached to your environment main application.</p>
+<div class="NOTE"><h5>Note</h5><p>The rebuild operation will take around 20 minutes and it will recreate all environment resources (VMs) and run the deployment of all roles defined in environment template.<br>To trigger the rebuild of your environment, login to PaaS portal using your organisation user, go to your environment page and click on the <strong><span style="color:#00bfff;font-weight:600;">Rebuild</span></strong> button attached to your environment main application.</p>
 </div>
 <ul>
 <li>Changes related to applications that will be installed under your environment.<br>
@@ -189,8 +196,14 @@ The detailed VM specifications can be viewed <strong><a href="https://docs.micro
 </div>
 </li>
 </ol>
-<p>The PaaS catalogue of available templates can be cheched <strong><a href="../temenos-cloud-templates.html" target="blank">here</a></strong>.</p>
+<p>The PaaS catalogue of available templates can be checked <strong><a href="../temenos-cloud-templates.html" target="blank">here</a></strong>.</p>
 <!-- <br /><span style="font-size:20px">text</span> -->
+<h2 id="save-new-template">Save New Template</h2>
+<p>After doing the above steps (template customization), go to Save as a new template button and fill the required fields, as in the example below:</p>
+<p><img src="images/customize-save-template.png" alt="boost 7"></p>
+<p>You will see a message on the screen &quot;Environment saved as a new template&quot;.</p>
+<p>Go to Templates Catalog and search for the new template, which should be available in the templates list.</p>
+<p><img src="images/customize-search-catalog.png" alt=""></p>
 <p><br></p>
               <hr>
               

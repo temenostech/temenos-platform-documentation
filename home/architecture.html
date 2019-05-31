@@ -81,20 +81,20 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="architecture-overview">Architecture Overview</h1>
 
-<h3 id="where-does-temenos-development-platform-fit-into-the-enterprise-it-landscape"><strong>Where does Temenos Development Platform fit into the enterprise IT landscape?</strong></h3>
+<h3 id="where-does-temenos-continuous-deployment-platform-fit-into-the-enterprise-it-landscape"><strong>Where does Temenos Continuous Deployment Platform fit into the enterprise IT landscape?</strong></h3>
 <hr>
-<p>The Temenos Development Platform promotes the concept of simplified and standardised change promotion through the IT landscape.</p>
+<p>The Temenos Continuous Deployment Platform (TCD) promotes the concept of simplified and standardised change promotion through the IT landscape.</p>
 <p><img src="images/architecture-arrows.png" alt=""></p>
 <p>Typical organisations have a number of non-production (i.e. development/test) environments, where changes are implemented and checked prior to deployment to production systems. The Devops movement seeks to improve this QA process through means of automation, which both allows an increase in speed in change promotion, and a reduction in the risk of manual errors when promoting changes.</p>
 <p>The Development Platform includes a simple and repeatable method of collating changes (both configuration and customisation) which subsequently is simple to promote from environment to environment.</p>
-<p>In addition, the core function of the Development Platform  is to simplify the environment provisioning process, which means if extra stages in the change flow are required (e.g. for additional testing phases), it becomes far simpler to spin up temporary environments for these purposes.</p>
+<p>In addition, the core function of the Deployment Platform  is to simplify the environment provisioning process, which means if extra stages in the change flow are required (e.g. for additional testing phases), it becomes far simpler to spin up temporary environments for these purposes.</p>
 <p>It should be noted that the Development platfrom only supplies non-production environments (also known as &#39;sandboxes&#39;), which means organisations will still require at least one non-production environment on representative hardware in order to sanity check changes prior to production release (see example below).</p>
 <p><img src="images/architecture-paas-deploy.png" alt=""></p>
 <p>Delegating platform and infrastructure responsibilities to a third party allows organisations to concentrate on what is important to them - applications and data.</p>
 <p><img src="images/architecture-responsabilities.png" alt=""></p>
-<p>The Development platform may be used for simple environment provisioning, or may be augmented by additional tools (such as Continuous Integration tooling) to provide a streamlined and automated development experience. The change promotion mechansim within the Development platform  is simple to plug into standard CI tooling to push code/config/data from environment to environment.  An example development flow is shown below:</p>
+<p>The Deployment platform may be used for simple environment provisioning, or may be augmented by additional tools (such as Continuous Integration tooling) to provide a streamlined and automated development experience. The change promotion mechansim within the TCD platform  is simple to plug into standard CI tooling to push code/config/data from environment to environment.  An example development flow is shown below:</p>
 <p><img src="images/architecture-process.png" alt=""></p>
-<h3 id="what-are-the-components-of-temenos-development-platform"><strong>What are the components of Temenos Development Platform?</strong></h3>
+<h3 id="what-are-the-components-of-temenos-continuous-deployment-platform"><strong>What are the components of Temenos Continuous Deployment Platform?</strong></h3>
 <hr>
 <p>Development &amp; Testing environments are managed by the Development Portal, and are comprised of distinct components as described below:</p>
 <p><img src="images/architecture-customer-facing-systems.png" alt=""></p>
@@ -108,11 +108,11 @@
 <tbody>
 <tr>
 <td style="text-align:left">Portal</td>
-<td style="text-align:left">The Portal is the front-end component of the Development Platform which allows users to perform management functions across development environments.  These functions include user management and environment provisioning/scaling.</td>
+<td style="text-align:left">The Portal is the front-end component of the Deployment Platform which allows users to perform management functions across development environments.  These functions include user management and environment provisioning/scaling.</td>
 </tr>
 <tr>
 <td style="text-align:left">Configuration Repository</td>
-<td style="text-align:left">The Configuration Repository is the &#39;change hub&#39; for the Development Platform.  It supports configuration and customisation (per environment), including T24 updates, custom config/code packages, database imports and third party plug-ins/add-ons.</td>
+<td style="text-align:left">The Configuration Repository is the &#39;change hub&#39; for the Deployment Platform.  It supports configuration and customisation (per environment), including T24 updates, custom config/code packages, database imports and third party plug-ins/add-ons.</td>
 </tr>
 <tr>
 <td style="text-align:left">T24 Instance</td>
@@ -124,9 +124,9 @@
 </tr>
 </tbody>
 </table>
-<h3 id="what-can-you-do-with-temenos-development-platform"><strong>What can you do with Temenos Development Platform?</strong></h3>
+<h3 id="what-can-you-do-with-temenos-continuous-deployment-platform"><strong>What can you do with Temenos Continuous Deployment Platform?</strong></h3>
 <hr>
-<p>Below is a list of functions which can be performed using Temenos Development Platform.</p>
+<p>Below is a list of functions which can be performed using Temenos Continuous Deployment Platform.</p>
 <table>
 <thead>
 <tr>
@@ -173,9 +173,9 @@
 </tr>
 </tbody>
 </table>
-<h3 id="what-tools-do-i-need-to-use-temenos-development-platform"><strong>What tools do I need to use Temenos Development Platform?</strong></h3>
+<h3 id="what-tools-do-i-need-to-use-temenos-continuous-deployment-platform"><strong>What tools do I need to use Temenos Continuous Deployment Platform?</strong></h3>
 <hr>
-<p>Below is a list of tools which may be used to exploit Temenos Development Platform functionality.</p>
+<p>Below is a list of tools which may be used to exploit Temenos Continuous Deployment Platform functionality.</p>
 <table>
 <thead>
 <tr>
@@ -194,11 +194,11 @@
 </tr>
 <tr>
 <td style="text-align:left">Continuous Integration Tool (Optional)</td>
-<td style="text-align:left">Continuous Integration tools may be used to help automate change promotion between environments.  There is no CI tool provided as part of the Temenos Development Platform, but these are useful in reducing manual tasks when managing environments.</td>
+<td style="text-align:left">Continuous Integration tools may be used to help automate change promotion between environments.  There is no CI tool provided as part of the Temenos Continuous Deployment Platform, but these are useful in reducing manual tasks when managing environments.</td>
 </tr>
 <tr>
 <td style="text-align:left">Design Studio (Optional)</td>
-<td style="text-align:left">Design Studio is the IDE (Integrated Development Environment) produced by Temenos for developing changes in T24 systems.  Design Studio itself does not form part of the Development Platform, but change outputs from this tool are supported within the Configuration Repository.</td>
+<td style="text-align:left">Design Studio is the IDE (Integrated Development Environment) produced by Temenos for developing changes in T24 systems.  Design Studio itself does not form part of the Deployment Platform, but change outputs from this tool are supported within the Configuration Repository.</td>
 </tr>
 </tbody>
 </table>
