@@ -5,7 +5,7 @@
 
 ## **How Temenos Cloud Templates Work?**
 
-The Temenos PaaS platform has the capability to provision environments in a variety of different configurations. This capability is driven through the concept of 'Templates' - a simplified view of the constituent elements which make up a sandbox configuration, including:
+The Temenos Continuous Deployment Platform has the capability to provision environments in a variety of different configurations. This capability is driven through the concept of 'Templates' - a simplified view of the constituent elements which make up a sandbox configuration, including:
 
 -   Server Size
 -   Basic server setup and technology stack
@@ -21,7 +21,7 @@ By default, new Templates are added with each monthly release of T24. These Temp
 > To see what are the **Azure Prices and Cost of Resources**, please check <a href="https://azure.microsoft.com/en-gb/pricing/calculator/" target="_blank"><u>**here**</u></a>.
 
 
-However, the Temenos Development platform team also offer the ability to create customised Templates for clients. For more information, please contact **CloudPlatformSupport@temenos.com**.
+However, the Temenos Continuous Deployment Platform team also offer the ability to create customised Templates for clients. For more information, please contact **CloudPlatformSupport@temenos.com**.
 
 Furthermore, please find below the current templates catalogue. The standard configuration of each template can be explored by clicking the required template from the list.
 

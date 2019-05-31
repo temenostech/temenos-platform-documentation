@@ -1,6 +1,27 @@
-### What is Temenos Development Platform?
+## **What is Temenos Cloud Continuous Deployment?**
 
 Temenos Development Platform is a product within the Temenos Cloud Platform suite, and is cloud based infrastructure for use during development, test, implementation, and ongoing change with configurable and scalable Temenos Suites on-demand, unless otherwise stated. The Development Platform enables you to create Environments, i.e. Temenos Suites on-demand, for non-production use in the cloud. Environments can be requested and provisioned within minutes rather than weeks helping you accelerate your projects. Retail Suite is readily available, with all other Temenos Suites (Corporate, Wealth, Micro-Finance and Islamic Banking) available on request and allows you to develop and test your proof of concept, share development environments across dispersed teams, replicate production environments or use them for training. The speed, reliability, and agility of these environments will instantly add value to your implementation and scale your project delivery capacity.
+
+What is Temenos Continuous Deployment?
+Temenos Continuous Deployment is an offering from Temenos Cloud that provides client individuals and teams with the ability to manage, configure and assemble client licensed Temenos Software – either fully deployed and supported by Temenos Cloud or utilising the client’s own cloud infrastructure.
+
+
+## **The Temenos Cloud Offering**
+
+![](./images/cloud-offering.png)
+
+
+## **Temenos Continuous Deployment**
+
+![](./images/tcd.png)
+
+![](./images/tcd-details.png)
+
+## **What is the “Assemble” service pack of the Temenos Continuous Deployment?**
+
+“Assemble” service pack provides a DevOps solution to perform continuous integration and delivery of Temenos Products and customisation, thereby enabling faster time to market for features.
+
+The Assemble service pack of Temenos Continuous Deployment is used during the continuous integration (“CI”) and continuous delivery (“CD”) of Temenos solutions. The Assemble service pack can accelerate the pace of change and increase confidence in the software deliveries by managing the Assemble of Components (updates, main release, and Level 3 developments), the provisioning into testing Environments, the execution of tests scripts, and providing detailed dashboards of the results. This Assemble service pack further allows the Client to configure Products and Releases which match their own specific needs. The main objective being to streamline ongoing change and accelerate implementation / upgrade projects.
 
 
 ## **Features**

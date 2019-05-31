@@ -1,4 +1,4 @@
-## **What are the benefits of Temenos Development Platform?**
+## **What are the benefits of Temenos Continuous Deployment Platform?**
 
 ----------
 

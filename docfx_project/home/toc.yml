@@ -1,60 +1,97 @@
-- name: What is Temenos Cloud Development Platform?
+- name: Overview
   href: ./overview.md
 - name: Architecture
   href: ./architecture.md
   items:
     - name: Temenos Cloud Templates
       href: ./temenos-cloud-templates.md
-- name: FAQs
-  href: ./faq.md
-- name: How to...
-  href: ./techguides/index.md
+- name: Extend
+  href: ./extend.md
   items:
-   - name: Create users
-     href: ./techguides/user-creation-in-paas.md
-   - name: Create environments and organisations
-     href: ./techguides/environment-creation-in-paas.md
-   - name: Deploy features to environment
-     href: ./techguides/use-gitlab-repository.md
-   - name: Make Updates on Cloud Environment
-     href: ./techguides/make-updates-cloud.md
-   - name: Customize templates
-     href: ./techguides/customize-templates.md
-   - name: Add new endpoints to an application
-     href: ./techguides/add-app-endpoint.md
-   - name: Develop T24 packages, plugins and Code
-     href: ./techguides/t24-development.md
-   - name: Use Jenkins to Build Pipelines
-     href: ./techguides/jenkins-build-promote-pipelines.md
-   - name: Clone an Environment  
-     href: ./techguides/clone-environment.md
-   - name: Export and Import a Database  
-     href: ./techguides/export-import-database.md
-   - name: Access UD Directories
-     href: ./techguides/access-ud-directories.md
-   - name: Configure and Use FCM Application
-     href: ./techguides/fcm-configuration.md  
+   - name: How to...
+     href: ./how-to-extend.md
+     items:
+       - name: Create users
+         href: ./techguides/user-creation-in-paas.md
+       - name: Create environments and organisations
+         href: ./techguides/environment-creation-in-paas.md
+       - name: Perform Environment Basic Operations
+         href: ./techguides/environment-basic-operations.md
+       - name: Deploy features to environment
+         href: ./techguides/use-gitlab-repository.md
+       - name: Make Updates on Cloud Environment
+         href: ./techguides/make-updates-cloud.md
+       - name: Customize templates
+         href: ./techguides/customize-templates.md
+       - name: Add new endpoints to an application
+         href: ./techguides/add-app-endpoint.md
+       - name: Develop T24 packages, plugins and Code
+         href: ./techguides/t24-development.md
+       - name: Use Jenkins to Build Pipelines
+         href: ./techguides/jenkins-build-promote-pipelines.md
+       - name: Clone an Environment  
+         href: ./techguides/clone-environment.md
+       - name: Export and Import a Database  
+         href: ./techguides/export-import-database.md
+       - name: Access UD Directories
+         href: ./techguides/access-ud-directories.md
+       - name: Configure and Use FCM Application
+         href: ./techguides/fcm-configuration.md 
+   - name: Tutorials
+     href: ./tutorials-extend.md
+     items:
+       - name: Jenkins Build 
+         href: ./jenkins-build-video.md
+       - name: Create and Manage Dev Enviroment
+         href: ./create-dev-env-video.md
+       - name: Export and Import a Database
+         href: ./export-import-database-video.md
+       - name: Add Features to an Environment
+         href: ./add-features-to-environment-video.md
+       - name: Manage Cloud Environments and Customize Templates
+         href: ./cloud-environments-customize-templates.md
+       - name: Clone an Environment  
+         href: ./clone-environment-video.md
+       - name: Access UD Directories
+         href: ./access-ud-directories-video.md
+       - name: FCM Cloud Configuration
+         href: ./fcm-configuration-video.md   
+- name: Assemble
+  href: ./assemble.md
+  items:
+   - name: How to...
+     href: ./how-to-assemble.md
+     items:
+       - name: Setup/Edit/Delete Streams
+         href: ./techguides/stream.md
+       - name: Setup/Edit/Delete Stages
+         href: ./techguides/stage.md
+       - name: Setup/Edit/Delete Components and Products
+         href: ./techguides/components-products.md
+       - name: Setup/Edit/Delete Factories
+         href: ./techguides/factories.md
+       - name: Setup/Edit/Delete Test Cases Upload
+         href: ./techguides/stage-testcases.md
+       - name: Run a Factory with "Run Now" Button and Dashboard
+         href: ./techguides/run-factory.md
+   - name: Tutorials
+     href: ./tutorials-assemble.md
+     items:
+       - name: Setup Streams 
+         href: ./setup-streams-video.md
+       - name: Setup Stages 
+         href: ./setup-stages-video.md
+       - name: Setup Components and Products 
+         href: ./setup-components-products-video.md
+       - name: Setup Factories 
+         href: ./setup-factories-video.md
+       - name: Setup Testcases 
+         href: ./setup-testcases-video.md    
+       - name: Run Factory 
+         href: ./run-factory-video.md         
 - name: Troubleshooting
   href: ./techguides/troubleshooting.md
+- name: FAQs
+  href: ./faq.md
 - name: Getting Support
-  href: ./support.md
-- name: Tutorials
-  items:
-    - name: Jenkins Build 
-      href: ./jenkins-build-video.md
-    - name: Create and Manage Dev Enviroment
-      href: ./create-dev-env-video.md
-    - name: Export and Import a Database
-      href: ./export-import-database-video.md
-    - name: Add Features to an Environment
-      href: ./add-features-to-environment-video.md
-    - name: Manage Cloud Environments and Customize Templates
-      href: ./cloud-environments-customize-templates.md
-    - name: Clone an Environment  
-      href: ./clone-environment-video.md
-    - name: Access UD Directories
-      href: ./access-ud-directories-video.md
-    - name: FCM Cloud Configuration
-      href: ./fcm-configuration-video.md
-      
-      
+  href: ./support.md   

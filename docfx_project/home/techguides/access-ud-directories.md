@@ -20,7 +20,7 @@ Learn how to easily access the T24 UD directories of your sandbox and make updat
 - *Labels field is optional*
 - Click **Create environment**
 
-![new environment](./images/access-ud-new-env.png)
+![new environment](./images/env-new.png)
 
 > [!Note]
 > It will take about 15-20 minutes for the new environment to be created

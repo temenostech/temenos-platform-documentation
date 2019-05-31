@@ -114,7 +114,7 @@ A T24 Server is required in Design Studio to be able to import/export applicatio
 ![server properties](./images/server-properties.png)  
 
 <br>
--> To get the hostname of your sandbox, log-in to your organisation in PaaS Portal, go to your enviroment page and click on the **GO TO Application** Endpoint for the T24 application. The BrowserWeb page of your sandbox is opened and from the URL of this page, you must select the part between _https://_ and _/BrowserWeb/servlet/BrowserServlet_.
+-> To get the hostname of your sandbox, log-in to your organisation in TCD Portal (Temenos Continuous Deployment), go to your enviroment page and click on the **GO TO Application** Endpoint for the T24 application. The BrowserWeb page of your sandbox is opened and from the URL of this page, you must select the part between _https://_ and _/BrowserWeb/servlet/BrowserServlet_.
 ![hostname](./images/hostname.png)
 
 <br>
@@ -219,8 +219,8 @@ For more details about the deployment, check the following [<ins>**steps**</ins>
 
 ## Check jBC routines deployment to Sandbox 
 
-* Log-in to your organisation in PaaS Portal, go to your enviroment page and click on the **Monitor Application** Endpoint for the T24 application.  
-![monitor application](./images/monitor-application.png)  
+* Log-in to your organisation into the Temenos Continuos Deployment Platform, go to your enviroment page and click on the **Monitor Application** Endpoint for the T24 application.  
+![monitor application](./images/t24-monitor-app.png)  
 <br>
 * The TAFJEE page is opened. Click **tShow** to check if your developed routines were deployed in your sandbox. Details like the compilation date or the jar that contains the class of those routines can be checked.  
 ![monitor application](./images/monitor-application-tshow.png)  

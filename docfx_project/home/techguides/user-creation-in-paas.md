@@ -10,7 +10,6 @@ The Administrator can navigate to the Users section on the portal, create more u
 
 The users can access their organisation only, view their user profiles and change their password. Should the users requires access to the source code repository they need to provide their public SSH Keys on the user profile section to gain access.
 
-![](../images/users.png) 
 
 # Use PuTTY ssh client for ssh key generation. #
 
@@ -55,15 +54,28 @@ You can use any other ssh key generator client.
 
 •	Login to your organisation portal using the link and the credentials provided.
 
-![portal login](./images/portal-login.png)
+![portal login](./images/user-login.png)
 
-•	Click User menu and then New user button, as below:
+•	Go to the menu on the left and then click Users tab, as below:
 
-![new user](./images/new-user.png)
+![new user](./images/users-tab.png)
+
+
+The first screen that you will see is the one for the existing user (usually admin).
+
+Click **New user** button on the top-right corner:
+
+![new user](./images/user-new.png)
 
 This will create a new user in your organisation. This new user will be automatically assigned to all GitLab Repositories from within all environments. If you have already a user created, you can click on the user and update the SSH key box with the one created above.
 
-![new user created](./images/new-user-created.png)
+**Create a new user:**
+
+> [!Note]
+> All fields are mandatory!
+> See further below how to generate the SSH key
+
+![new user](./images/user-details.png)
 
 •	Public SSH key needs to be pasted in SSH Key text box. Open Windows Explorer and locate your public key generated using PuTTY Key Generator. 
 
@@ -75,7 +87,11 @@ This will create a new user in your organisation. This new user will be automati
 
 •	Paste the copied text into the SSH Key text box and click Create user button.
 
-![ssh text box](./images/ssh-text-box.png)
+- Your user is now available in the user list:
+
+![user](./images/user-list.png)
+
+- You have the option to edit or to delete it.
 
 - Your username will be created in Gitlab server and public SSH key provided will be added to your account being accessible from all the environments created in your organisation.
 

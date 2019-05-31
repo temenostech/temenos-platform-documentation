@@ -20,38 +20,43 @@ Please see below some explanations on how this process works and what are the re
 
 ## Clone the Environment
 
-- Select the environment that you want to clone and press **Clone environment** button.
+- Select the environment that you want to clone and press **Clone** button.
 
-![](./images/clone-env-press-clone.png) 
+![](./images/clone-button.png) 
 
 <br>
 
-- Input a **Name** and **Description** and optionally, a *Label*, then click **Clone environment**. 
+- Input a **Name** and **Description** and optionally, a *Label*, then click **Clone**. 
+- You will get a notification on the screen that the environment cloning has been initiated.
 
-![](./images/clone-env-new.png) 
+![](./images/clone-env-details.png) 
+
+
+> [!Note]
+> Use the **Refresh List** button in order to see the new actions.
 
  - At this point, there will be created: a New address and a GitHub endpoint with the same content as the cloned one and also a cloned Database (the export of the database is triggered).
  - The new (clone-environment) will have the same template as the source environment.
  - In the Event Tab of the source Environment (the one being cloned), the Event notifications will display the date, time and duration of the Cloning action.
- - The **Clone environment** button will be disabled until the action is completed.
-
-![](./images/clone-env-button-disabled.png) 
+ - The **Clone** button will be disabled until on the left side of the screen you will notice the new cloned environment being created.
 
 <br>
 
 - The new environment will be visible in the Environments list with the status **Creating**:
 
-![](./images/clone-env-creating.png) 
+![](./images/clone-refresh.png) 
 
 <br>
+
+![](./images/clone-env-creating.png) 
+
+
 
 - The target environment (clone) will display the status **Creating** for:
    - T24 application
    - H2 database
    - GitHub repository
-   - The **Clone environment** button will be disabled until the cloning is completed.
 
-![](./images/clone-env-creating-all.png) 
 
 > [!Note]
-> It will take around 15 minutes for the clone environment to be created.
+> It will take around 15-20 minutes for the clone environment to be created.
