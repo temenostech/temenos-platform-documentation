@@ -41,7 +41,7 @@ The parts of the stream are listed below:
 
 ![](./images/streams-create.png)
 
-After the successful creation, your stream will appear on the screen *(in case you already have other streams, the newly created will be the last in chronological order)* and it will automatically have associated the default stage named 'Stable_Dev'.
+After the successful creation, your stream will appear on the screen *(in case you already have other streams, the newly created will be the last in chronological order)* and it will automatically have associated the default stage named 'Stable_Dev' (as in current example). Please **note** that the default stage name is defined in the metadata settings of your organization (On the main menu > General).
 
 ![](./images/streams-created.png)
 
@@ -56,7 +56,8 @@ You can edit anytime the name, the description of the stage or choose the disabl
 
 
 Example 1: 
-- Suppose we have created a stream named Dev2 that has just the default stage (stable_dev) and without adding other stages or configuring further components and products.
+- Suppose we have created a stream named Dev2 that has just the default stage (
+- ) and without adding other stages or configuring further components and products.
 - We can just go and delete this stream (even if it has the stable_dev associated to it).
 
 Example 2:
