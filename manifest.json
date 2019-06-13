@@ -540,7 +540,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/add-app-endpoint.html",
-          "hash": "qEOjCUSVvvXcZzKleQQwpg=="
+          "hash": "Rhg8NsyNfV7AjZ+b71aCVA=="
         }
       },
       "is_incremental": false,
@@ -810,6 +810,28 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/app-endpoint-all.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/app-endpoint-all.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/app-endpoint-append.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/app-endpoint-append.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/app-endpoint-clickable.png",
       "output": {
         "resource": {
@@ -836,6 +858,28 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/app-endpoint-files.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/app-endpoint-grouped.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/app-endpoint-grouped.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/app-endpoint-multi.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/app-endpoint-multi.png"
         }
       },
       "is_incremental": false,
@@ -4568,14 +4612,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "RestApiDocumentProcessor": {

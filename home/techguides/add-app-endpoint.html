@@ -84,7 +84,8 @@
 <p>This document can be used by technical staff who need to add new endpoints to the T24 application of a Environment in case of adding any custom endpoints or deploying a plugin in the application server of the Environment.</p>
 <div class="NOTE"><h5>Note</h5><p>This guide presumes that an Environment is already created and available. <em>(In this example, we have created a Environment named DevEnv).</em></p>
 </div>
-<p><strong>Three</strong> properties are mandatory to create a new endpoint:</p>
+<p><strong>Four</strong> properties are mandatory to create a new endpoint:</p>
+<p><span style="color:orange">(Please note that the user guide contains <span style="color:blue"><strong>examples</strong></span> on how to use each of the properties).</span></p>
 <table>
 <thead>
 <tr>
@@ -94,16 +95,16 @@
 </thead>
 <tbody>
 <tr>
-<td>Endpoint Description</td>
+<td><span style="color:blue">Endpoint Description</span></td>
 <td>The Endpoint Description will be displayed in your Organisation Portal in the Endpoints section of the T24 application from your Environment.</td>
 </tr>
 <tr>
-<td>Endpoint URL</td>
-<td>The Endpoint URL will be: <br> * <strong>opened</strong> in a new tab of your browser when the Endpoint Description is clicked, if the Endpoint type is clickable. <br> * <strong>copied</strong>, if the Endpoint type is copyable. <br>* <strong>downloaded</strong>, if the Endpoint type is a downloadable.</td>
+<td><span style="color:blue">Endpoint URL</span></td>
+<td>The Endpoint URL will be: <br> * <strong>opened</strong> in a new tab of your browser when the Endpoint Description is clicked, if the Endpoint type is clickable. <br> * <strong>copied</strong> if the Endpoint type is copyable. <br>* <strong>downloaded</strong>, if the Endpoint type is a downloadable.</td>
 </tr>
 <tr>
-<td>Endpoint Type</td>
-<td>In order to apply above actions, a type must be defined for each endpoint, based on how you want to be used: clickable, copyable or downloadable.</td>
+<td><span style="color:blue">Endpoint Type</span></td>
+<td>In order to apply above actions, a type must be defined for each endpoint, based on how you want to be used: clickable, copyable or downloadable. <br>-For <strong>clickable</strong> endpoints is <span style="color:red">mandatory</span> to add another parameter, <span style="color:blue">Endpoint Append</span>, which can have two values:<br>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<strong>true</strong> - it indicates if the endpoint is a real URL. <br>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<strong>false</strong> - it indicates if it must be appended to T24 URL.<br>- For <strong>copyable</strong> endpoints is <span style="color:red">mandatory</span> to have the same endpoint description and endpoint URL (Your_Endpoint_Description = Your_Endpoint_URL).</td>
 </tr>
 </tbody>
 </table>
@@ -119,6 +120,7 @@ As a reference, if you want to insert an endpoint which links to your environmen
 </li>
 <li><p>Inside the <strong>.endpoint</strong> file, add a new line for each endpoint with the structure <strong>Your_Endpoint_Description~Your_Endpoint_URL~Your_Endpoint_Type</strong>, as per bellow picture:</p>
 <p><img src="images/app-endpoint-edit.png" alt="edit endpoint file"></p>
+<p><img src="images/app-endpoint-append.png" alt="edit endpoint file"></p>
 <div class="NOTE"><h5>Note</h5><p>&quot;<strong>~</strong>&quot; character is used as a separator between Endpoint Description, URL and Type and it must always be present in each endpoint line.
 Endpoint Description and URL are as per your choice. Type must be one of the options: <strong>clickable</strong>, <strong>copyable</strong> or <strong>downloadable</strong>.</p>
 </div>
@@ -133,18 +135,19 @@ Endpoint Description and URL are as per your choice. Type must be one of the opt
 <ul>
 <li><p>If a plugin has more than one endpoint, create a .endpoint file and add a separate line for each endpoint item, as below:
 <br></p>
-<p><img src="images/endpoint-test.png" alt="multiple endpoints same file">
+<p><img src="images/app-endpoint-all.png" alt="multiple endpoints same file">
+<br>
 <br></p>
 </li>
-<li>After the file is deployed, all 3 endpoints from the example are displayed in the Endpoints section of the T24 application.</li>
+<li>After the file is deployed, all 4 endpoints from the example are displayed in the Endpoints section of the T24 application.</li>
 <li><p>Also note that the endpoints are displayed/ grouped by their type: clickable, copyable and downloadable.</p>
-<p><img src="images/endpoint-grouped.png" alt="multiple endpoints multiples files display"></p>
+<p><img src="images/app-endpoint-grouped.png" alt="multiple endpoints multiples files display"></p>
 </li>
 </ul>
 <h1 id="add-multiple-endpoints-from-multiple-files-at-the-same-time">Add multiple endpoints from multiple files at the same time</h1>
 <ul>
 <li><p>If you want to add endpoints for multiple plugins deployed in your Environment, you can add the endpoints of all plugins in a single file or you can also create a separate .endpoint file for each plugin for a better delimitation.
-<img src="images/app-endpoint-files.png" alt="multiple endpoints multiple files"></p>
+<img src="images/app-endpoint-multi.png" alt="multiple endpoints multiple files"></p>
 </li>
 <li><p>After both files are deployed, the three endpoints for plugin1 and the two endpoints for plugin2 are displayed in the Endpoints section of the T24 application.</p>
 <p><img src="images/endpoint-click.png" alt="multiple endpoints multiple files"></p>
