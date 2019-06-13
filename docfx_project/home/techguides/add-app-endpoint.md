@@ -5,13 +5,16 @@ This document can be used by technical staff who need to add new endpoints to th
 > [!Note]
 > This guide presumes that an Environment is already created and available. *(In this example, we have created a Environment named DevEnv).*
    
-**Three** properties are mandatory to create a new endpoint:
+**Four** properties are mandatory to create a new endpoint:
+
+<span style="color:orange">(Please note that the user guide contains <span style="color:blue">**examples**</span> on how to use each of the properties).</span>
 
 | Property Name        | Property <br />Description	|
 |-					   |-		                |
-|Endpoint Description  | The Endpoint Description will be displayed in your Organisation Portal in the Endpoints section of the T24 application from your Environment. |
-|Endpoint URL          | The Endpoint URL will be: <br /> * **opened** in a new tab of your browser when the Endpoint Description is clicked, if the Endpoint type is clickable. <br /> * **copied**, if the Endpoint type is copyable. <br />* **downloaded**, if the Endpoint type is a downloadable. |
-|Endpoint Type          | In order to apply above actions, a type must be defined for each endpoint, based on how you want to be used: clickable, copyable or downloadable.  |
+|<span style="color:blue">Endpoint Description</span>  | The Endpoint Description will be displayed in your Organisation Portal in the Endpoints section of the T24 application from your Environment. |
+|<span style="color:blue">Endpoint URL</span>          | The Endpoint URL will be: <br /> * **opened** in a new tab of your browser when the Endpoint Description is clicked, if the Endpoint type is clickable. <br /> * **copied** if the Endpoint type is copyable. <br />* **downloaded**, if the Endpoint type is a downloadable. |
+|<span style="color:blue">Endpoint Type</span>          | In order to apply above actions, a type must be defined for each endpoint, based on how you want to be used: clickable, copyable or downloadable. <br />-For **clickable** endpoints is <span style="color:red">mandatory</span> to add another parameter, <span style="color:blue">Endpoint Append</span>, which can have two values:<br>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;**true** - it indicates if the endpoint is a real URL. <br />&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;**false** - it indicates if it must be appended to T24 URL.<br />- For **copyable** endpoints is <span style="color:red">mandatory</span> to have the same endpoint description and endpoint URL (Your_Endpoint_Description = Your_Endpoint_URL). |
+
 
  > [!Note]
  > **The URL must be of type: "https://........"**.
@@ -27,6 +30,8 @@ In order to create new endpoints for the T24 application of your Environment, th
  - Inside the **.endpoint** file, add a new line for each endpoint with the structure **Your_Endpoint_Description~Your_Endpoint_URL~Your_Endpoint_Type**, as per bellow picture:
 
  ![edit endpoint file](./images/app-endpoint-edit.png)
+
+ ![edit endpoint file](./images/app-endpoint-append.png)
  
  > [!Note]
  > "**~**" character is used as a separator between Endpoint Description, URL and Type and it must always be present in each endpoint line.
@@ -44,16 +49,17 @@ In order to create new endpoints for the T24 application of your Environment, th
  - If a plugin has more than one endpoint, create a .endpoint file and add a separate line for each endpoint item, as below:
  <br>
 
- ![multiple endpoints same file](./images/endpoint-test.png)
+ ![multiple endpoints same file](./images/app-endpoint-all.png)
 <br>
- - After the file is deployed, all 3 endpoints from the example are displayed in the Endpoints section of the T24 application.
+<br>
+ - After the file is deployed, all 4 endpoints from the example are displayed in the Endpoints section of the T24 application.
  - Also note that the endpoints are displayed/ grouped by their type: clickable, copyable and downloadable.
  
- ![multiple endpoints multiples files display](./images/endpoint-grouped.png)
+ ![multiple endpoints multiples files display](./images/app-endpoint-grouped.png)
 
 # Add multiple endpoints from multiple files at the same time #
  - If you want to add endpoints for multiple plugins deployed in your Environment, you can add the endpoints of all plugins in a single file or you can also create a separate .endpoint file for each plugin for a better delimitation.
- ![multiple endpoints multiple files](./images/app-endpoint-files.png)
+ ![multiple endpoints multiple files](./images/app-endpoint-multi.png)
 
  - After both files are deployed, the three endpoints for plugin1 and the two endpoints for plugin2 are displayed in the Endpoints section of the T24 application.
 
