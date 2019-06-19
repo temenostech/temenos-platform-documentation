@@ -86,6 +86,7 @@
 <br></p>
 <p><img src="images/buttons-all.png" alt="buttons"></p>
 <p><br></p>
+<h2 id="environment-buttons">Environment buttons:</h2>
 <p><img src="images/button-refresh.png" alt="start"> <strong>Refreshing</strong> the page:</p>
 <ul>
 <li>Use this button to refresh any action in progress (related to an environment but also to a factory).</li>
@@ -110,6 +111,23 @@
 <ul>
 <li>Stops all instances of an Application in the Environment, removes all resources including configuration repository.</li>
 </ul>
+<h2 id="t24-release-section---available-actions">T24 Release section - available actions:</h2>
+<h3 id="span-stylecolororangefont-weight1000endpointsspan"><span style="color:orange;font-weight:1000;"><strong>Endpoints</strong>:</span></h3>
+<ul>
+<li><p>GO TO APPLICATION - clicking this endpoint, a new tab containing the T24 BrowserWeb URL will open in a new browser window. The username and password to be used here will have been sent via email.</p>
+</li>
+<li><p>MONITOR APPLICATION - clicking this endpoint, the TAFJEE Servlets page will open in a new browser tab and from here you can check the following sections:</p>
+<ul>
+<li>Diagnostic section: provides details about your TAFJ environment, get routine compilation details, etc.</li>
+<li>Execution section: run services, etc.</li>
+<li>Troubleshooting section: access log files, commo files, etc.
+<br></li>
+</ul>
+</li>
+<li>tcdSFTP.temenos.cloud - allows you to copy the SFTP link.</li>
+<li>Design Studio Kit - you can start downloading Design Studio tool (DS version is compatible to your environment). </li>
+</ul>
+<h3 id="span-stylecolororangefont-weight1000buttonsspan"><span style="color:orange;font-weight:1000;"><strong>Buttons</strong>:</span></h3>
 <p><img src="images/button-start.png" alt="start"> <strong>Starting</strong> an environment:</p>
 <ul>
 <li><p>After creating an environment, the Start button is automatically disabled as the environment is running. It will be enabled if an environment is stopped and it will start all the instances specified in the Environment configuration.</p>
@@ -130,11 +148,27 @@
 <li>This is used for example when modifying the application templates (like changing the T24 displayed name or addign a new application).</li>
 </ul>
 <p><br></p>
-<p><img src="images/button-export.png" alt="export"> <strong>Exporting</strong> an environment and exporting the database:</p>
+<p><img src="images/button-export.png" alt="export"> <strong>Exporting</strong> an environment:</p>
 <ul>
 <li>Allows to export and import an environment or a database through SFTP server.</li>
 </ul>
+<p>Clicking the &#39;Export Environment&#39; button will generate a zip file on the sftp.temenos.cloud portal containing:</p>
+<ul>
+<li>all jar files deployed in T24 sandbox and the correspondent module.xml file;</li>
+<li>the content of the default folder of T24;</li>
+<li>all war files deployed in the T24 sandbox and the jboss server log.</li>
+</ul>
+<h2 id="database-section---available-actions">Database section - available actions</h2>
+<h3 id="span-stylecolororangefont-weight1000buttonsspan"><span style="color:orange;font-weight:1000;"><strong>Buttons</strong>:</span></h3>
+<p><img src="images/button-export.png" alt="export"> <strong>Exporting</strong> the database:</p>
+<p>By clicking the &quot;Export database&quot; button a zip file will be generated in the sftp.cloud.temenos portal which will contain the current database of the sandbox. Note: This database can be used as a backup that can be deployed later on into the sandbox as a duplicate for testing/development or for local development before deploying to the cloud.</p>
+<h3 id="span-stylecolororangefont-weight1000endpointsspan"><span style="color:orange;font-weight:1000;"><strong>Endpoints</strong>:</span></h3>
+<ul>
+<li>tcdSFTP.temenos.cloud - allows you to copy the SFTP link.</li>
+</ul>
 <p><br></p>
+<h2 id="repository-section---available-actions">Repository section - available actions</h2>
+<h3 id="span-stylecolororangefont-weight1000buttonsspan"><span style="color:orange;font-weight:1000;"><strong>Buttons</strong>:</span></h3>
 <p><img src="images/button-boost.png" alt="boost"> <strong>Boosting</strong> </p>
 <ul>
 <li>Used to apply the changes made to the environments&#39; repository (you can modify the infra-templates, the playbooks or the roles).</li>
@@ -144,7 +178,11 @@
 <ul>
 <li>To be used when deploying newly added plugins, endpoints, updates, web services, packages etc.</li>
 </ul>
-<p><br></p>
+<h3 id="span-stylecolororangefont-weight1000endpointsspan"><span style="color:orange;font-weight:1000;"><strong>Endpoints</strong>:</span></h3>
+<p>This section displays the gitlab repository correspondent to your T24 sandbox that you can copy it in order to clone the repository.</p>
+<ul>
+<li>example: git@tcdGitlab.temenos.cloud:1dyomzt4lxuyo/corebanking.git</li>
+</ul>
 <div class="NOTE"><h5>Note</h5><p><span style="color:RED"><strong>IMPORTANT!</strong></span></p>
 <p><span style="color:RED">As a good practice and in terms of reducing your costs, it is recommended that you don&#39;t keep an environment <strong>unused</strong> for more than 3 days (for internal clients), respectively for more than 7 days (for external clients). Otherwise, the environment will be deleted by the Extend team (with a previous mail notification).<p>
 <p>Also to reduce costs, the environment can be put on <strong>Stop</strong>.</span></p>
