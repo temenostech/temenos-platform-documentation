@@ -9,6 +9,8 @@ After creating an environment, there are several actions (operations) that can b
 
 <br>
 
+## Environment buttons: ##
+
 ![start](./images/button-refresh.png) **Refreshing** the page:
 
 - Use this button to refresh any action in progress (related to an environment but also to a factory).
@@ -39,6 +41,23 @@ After creating an environment, there are several actions (operations) that can b
 - Stops all instances of an Application in the Environment, removes all resources including configuration repository.
 
 
+## T24 Release section - available actions: ##
+
+### <span style="color:orange;font-weight:1000;">**Endpoints**:</span>  ###
+
+- GO TO APPLICATION - clicking this endpoint, a new tab containing the T24 BrowserWeb URL will open in a new browser window. The username and password to be used here will have been sent via email.
+
+- MONITOR APPLICATION - clicking this endpoint, the TAFJEE Servlets page will open in a new browser tab and from here you can check the following sections:
+
+   - Diagnostic section: provides details about your TAFJ environment, get routine compilation details, etc.
+   - Execution section: run services, etc.
+   - Troubleshooting section: access log files, commo files, etc.
+<br>
+- tcdSFTP.temenos.cloud - allows you to copy the SFTP link.
+- Design Studio Kit - you can start downloading Design Studio tool (DS version is compatible to your environment). 
+
+
+### <span style="color:orange;font-weight:1000;">**Buttons**:</span>  ###
 
 ![start](./images/button-start.png) **Starting** an environment:
 
@@ -63,11 +82,33 @@ After creating an environment, there are several actions (operations) that can b
 
 <br>
 
-![export](./images/button-export.png) **Exporting** an environment and exporting the database:
+![export](./images/button-export.png) **Exporting** an environment:
 
 - Allows to export and import an environment or a database through SFTP server.
 
+Clicking the 'Export Environment' button will generate a zip file on the sftp.temenos.cloud portal containing:
+
+   - all jar files deployed in T24 sandbox and the correspondent module.xml file;
+   - the content of the default folder of T24;
+   - all war files deployed in the T24 sandbox and the jboss server log.
+
+## Database section - available actions ##
+
+### <span style="color:orange;font-weight:1000;">**Buttons**:</span>  ###
+
+![export](./images/button-export.png) **Exporting** the database:
+
+By clicking the "Export database" button a zip file will be generated in the sftp.cloud.temenos portal which will contain the current database of the sandbox. Note: This database can be used as a backup that can be deployed later on into the sandbox as a duplicate for testing/development or for local development before deploying to the cloud.
+
+### <span style="color:orange;font-weight:1000;">**Endpoints**:</span>  ###
+
+ - tcdSFTP.temenos.cloud - allows you to copy the SFTP link.
+
 <br>
+
+## Repository section - available actions ##
+
+### <span style="color:orange;font-weight:1000;">**Buttons**:</span>  ###
 
 ![boost](./images/button-boost.png) **Boosting** 
 
@@ -79,9 +120,12 @@ After creating an environment, there are several actions (operations) that can b
 
 - To be used when deploying newly added plugins, endpoints, updates, web services, packages etc.
 
-<br>
 
+### <span style="color:orange;font-weight:1000;">**Endpoints**:</span>  ###
 
+This section displays the gitlab repository correspondent to your T24 sandbox that you can copy it in order to clone the repository.
+
+- example: git@tcdGitlab.temenos.cloud:1dyomzt4lxuyo/corebanking.git
 
 > [!Note]
 > <span style="color:RED">**IMPORTANT!**</span>
