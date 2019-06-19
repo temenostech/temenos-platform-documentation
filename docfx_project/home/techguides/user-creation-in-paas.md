@@ -93,6 +93,11 @@ This will create a new user in your organisation. This new user will be automati
 
 - You have the option to edit or to delete it.
 
+> [!Note]
+> Once created, you **cannot** change the name and the email address, nor the user's password. You can only update (or add) the SSH key through edit button.
+
+
+
 - Your username will be created in Gitlab server and public SSH key provided will be added to your account being accessible from all the environments created in your organisation.
 
 - For further details or issues related to Gitlab SSH keys usage, or other operating systems (MAC, Linux), please consult this link:  [https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
