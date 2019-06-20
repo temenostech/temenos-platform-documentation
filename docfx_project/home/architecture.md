@@ -18,15 +18,18 @@ It should be noted that the Development platfrom only supplies non-production en
 
 ![](./images/architecture-paas-deploy.png)
 
+
+![](./images/architecture-paas-deploy.png)
+
 Delegating platform and infrastructure responsibilities to a third party allows organisations to concentrate on what is important to them - applications and data.
 
 ![](./images/architecture-responsabilities.png)
 
-The Deployment platform may be used for simple environment provisioning, or may be augmented by additional tools (such as Continuous Integration tooling) to provide a streamlined and automated development experience. The change promotion mechansim within the TCD platform  is simple to plug into standard CI tooling to push code/config/data from environment to environment.  An example development flow is shown below:
+The Deployment platform may be used for simple environment provisioning, or may be augmented by additional tools (such as Continuous Integration tooling) to provide a streamlined and automated development experience. The change promotion mechansim within the TCD  is simple to plug into standard CI tooling to push code/config/data from environment to environment.  An example development flow is shown below:
 
 ![](./images/architecture-process.png)
 
-### **What are the components of Temenos Continuous Deployment Platform?**
+### **What are the components of Temenos Continuous Deployment?**
 
 ----------
 
@@ -42,11 +45,11 @@ Development & Testing environments are managed by the Development Portal, and ar
 | Exports (File Storage)			|	The T24 database may be exported via the management facility in the Portal, as may the 'environment' (file system level). These exports are stored per environment and may be downloaded by users via SFTP.|
 
 
-### **What can you do with Temenos Continuous Deployment Platform?**
+### **What can you do with Temenos Continuous Deployment?**
 
 ----------
 
-Below is a list of functions which can be performed using Temenos Continuous Deployment Platform.
+Below is a list of functions which can be performed using Temenos Continuous Deployment.
 
 | Function  				| Description	| 
 | :---  					| :---  	| 
@@ -61,15 +64,48 @@ Below is a list of functions which can be performed using Temenos Continuous Dep
 | Export an environment	|	Export a copy of a environment (file system level) for offline perusal| 
 
 
-### **What tools do I need to use Temenos Continuous Deployment Platform?**
+### **What tools do I need to use Temenos Continuous Deployment?**
 
 ----------
 
-Below is a list of tools which may be used to exploit Temenos Continuous Deployment Platform functionality.
+Below is a list of tools which may be used to exploit Temenos Continuous Deployment functionality.
 
 | Tool  				| Description and Rationale	| 
 | :---  					| :---  	|
 | Git|	Git (/ɡɪt/) is a version control system for tracking changes in computer files and coordinating work on those files among multiple people.  A client program for Git is required to push artefacts into the configuration repository.|
 | SFTP Client|	SFTP is the protocol used to download file exports (environment or database exports) |
-| Continuous Integration Tool (Optional)	|	Continuous Integration tools may be used to help automate change promotion between environments.  There is no CI tool provided as part of the Temenos Continuous Deployment Platform, but these are useful in reducing manual tasks when managing environments.| 
+| Continuous Integration Tool (Optional)	|	Continuous Integration tools may be used to help automate change promotion between environments.  There is no CI tool provided as part of the Temenos Continuous Deployment, but these are useful in reducing manual tasks when managing environments.| 
 | Design Studio (Optional)|	Design Studio is the IDE (Integrated Development Environment) produced by Temenos for developing changes in T24 systems.  Design Studio itself does not form part of the Deployment Platform, but change outputs from this tool are supported within the Configuration Repository. | 
+
+
+### **Enterprise View**
+
+This section provides an overview of what the TCD solution is, and how it fits in with the wider Temenos and bank enterprise.
+
+![](./images/enterprise-view.png)
+*Enterprise View*
+
+The TCD solution is composed of the **Extend** and **Assemble** modules to enable the provision of development and Integration test environments. The current state allows for these two modules only. Roadmap features envisage a Deliver module to cover pre-production and production environments.
+
+
+The **TCD Extend module** is a multi-tenanted provisioning and deployment module that provides Users and/or other systems with self-service management of Environments and provides access to the tools for enhancing Client Licensed Temenos Software. The Extend module enables authorised Users to provision Environments from a list of Templates for non-production use during development, test, integration, implementation and ongoing changes to the Products. The Extend module is a cloud-hosted platform service and manages Environments in either the Temenos cloud or a Client’s Target Cloud account.
+
+Each **Environment** is a standalone instance of one or more Products or approved third-party applications / products running on the middleware defined in the Template.
+
+Each **Factory** is formed of an Environment and one or more Test Clients. The Test Clients have their own Templates, which define their infrastructure, software Components and configuration.
+
+
+The **TCD Assemble module** performs the test pipeline automation, continuous integration (“CI”) and continuous delivery (“CD”) of Client’s changes to Client’s Licensed Temenos Software. The Assemble Module utilises the same technologies as the Extend module, and does:
+
+- deploy Test Clients;
+- execute the Clients’ tests;
+- orchestrate the deployment of Environments with Factories and the promotion of Packages through a workflow;
+- manage storage of test results and application logs;
+- manage the lifecycle of test Environments;
+- provide a dashboard of test results with links to the underlying manifests, templates and, where appropriate, running Environments.
+
+The **TCD test result dashboard** is a multi-tenanted web application hosted and operated by Temenos. The dashboard shows historic test results for a Factory within a configured Release and trends through a web UI pulling data from the Assemble Modules local database and test results and application logs in Target Cloud storage.
+
+
+The **TCD Artefact Repository** is a third-party artefact repository “Artifactory by Jfrog” . The repository holds all the built software Components that are referenced by the Templates at the relevant test and deploy Stages. The Client will push all of its Product packages to the Artefact Repository
+
