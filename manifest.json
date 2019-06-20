@@ -49,12 +49,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/architecture.md",
       "output": {
         ".html": {
           "relative_path": "home/architecture.html",
-          "hash": "ACKl6i2ZLm7p/2sMXyTEfQ=="
+          "hash": "H0XVmwiq0LFN6L1btFGSfQ=="
         }
       },
       "is_incremental": false,
@@ -121,12 +124,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/enterprise-view.md",
       "output": {
         ".html": {
           "relative_path": "home/enterprise-view.html",
-          "hash": "2XJk4kZntkHRIkzgzmEanw=="
+          "hash": "6dma8RKJVT2bPfETV0P4gw=="
         }
       },
       "is_incremental": false,
@@ -265,17 +271,6 @@
       "output": {
         "resource": {
           "relative_path": "home/images/cloud-offering.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/images/enterprise-view.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/images/enterprise-view.png"
         }
       },
       "is_incremental": false,
@@ -4672,15 +4667,6 @@
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "RestApiDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build"
-        },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
@@ -4688,6 +4674,15 @@
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "RestApiDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
           "incrementalPhase": "build"
         }
       }
