@@ -130,6 +130,6 @@ This section displays the gitlab repository correspondent to your T24 sandbox th
 > [!Note]
 > <span style="color:RED">**IMPORTANT!**</span>
 > 
-> <span style="color:RED">As a good practice and in terms of reducing your costs, it is recommended that you don't keep an environment **unused** for more than 3 days (for internal clients), respectively for more than 7 days (for external clients). Otherwise, the environment will be deleted by the Extend team (with a previous mail notification).
+> <span style="color:RED">As a good practice and in terms of reducing your costs, it is recommended that you don't keep an environment **unused**. Even if it's not used, it will still generate costs. The environment will be deleted by the Extend team (with a previous mail notification) when it is unused for more than 3 days (for internal clients), respectively for more than 7 days (for external clients).
 > 
-> Also to reduce costs, the environment can be put on **Stop**.</span>
+> Also to reduce costs, the environment can be put on **Stop** and started only when required. The environments that are stopped will not be deleted.</span>
