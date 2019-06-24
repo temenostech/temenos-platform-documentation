@@ -548,6 +548,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "home/techguides/assemble-sanity-check.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/assemble-sanity-check.html",
+          "hash": "eRdcmMWGhe7IomKAk510RQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "home/techguides/clone-environment.md",
       "output": {
         ".html": {
@@ -3714,6 +3726,39 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/sanity-component-issue.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/sanity-component-issue.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/sanity-general.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/sanity-general.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/sanity-product-issue.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/sanity-product-issue.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/screen-key-generated.png",
       "output": {
         "resource": {
@@ -4547,7 +4592,7 @@
       "output": {
         ".html": {
           "relative_path": "home/toc.html",
-          "hash": "bMtIVcIJiX1doX1jdjgtjg=="
+          "hash": "9dIE4xmUAJef/xueseGL5w=="
         }
       },
       "is_incremental": false,
