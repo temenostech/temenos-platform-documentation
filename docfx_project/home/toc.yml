@@ -74,6 +74,8 @@
          href: ./techguides/stage-testcases.md
        - name: Run a Factory with "Run Now" Button and Dashboard
          href: ./techguides/run-factory.md
+       - name: Do Assemble Sanity Check
+         href: ./techguides/assemble-sanity-check.md
    - name: Tutorials
      href: ./tutorials-assemble.md
      items:
