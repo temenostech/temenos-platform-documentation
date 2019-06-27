@@ -97,9 +97,12 @@ Go to ft-sample-models > click right and select Properties > expand Design Studi
 
 ![uncheck xml](./images/t24-ft-sample-xml.png)
 
-Make sure you save the change CTRL+S.
+Click Apply and OK.
 
 ## Create New T24 Server in Design Studio 
+
+> [!Note]
+> Check first if you already have available the **Servers** tab. If not, follow below steps.
 
 A T24 Server is required in Design Studio to be able to import/export applications/enquiries/versions from/to your sandbox. Follow next steps to create and configure a T24 server:
 * On servers tab, click right and select **Add New T24 Server**.  
