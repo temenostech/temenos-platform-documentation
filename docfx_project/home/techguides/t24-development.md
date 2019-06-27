@@ -87,6 +87,8 @@ In order to accomplish the development actions presented at the beginning of the
 
 ![created projects](./images/t24-created-projects.png)
 
+Make sure you save the change CTRL+S.
+
 <br>
 
 ## Uncheck XML for Local Fields
@@ -94,6 +96,8 @@ In order to accomplish the development actions presented at the beginning of the
 Go to ft-sample-models > click right and select Properties > expand Design Studio > click Code Generation > expand All Categories > Uncheck XML for Local Fields (LT/RTL)
 
 ![uncheck xml](./images/t24-ft-sample-xml.png)
+
+Make sure you save the change CTRL+S.
 
 ## Create New T24 Server in Design Studio 
 
