@@ -32,7 +32,9 @@ temn.tafj.jdbc.url=jdbc:h2:tcp://**ENV_DNS**:9092/TAFJDB;MODE=Oracle;TRACE_LEVEL
 TRACE_LEVEL_SYSTEM_OUT=0;DB_CLOSE_ON_EXIT=FALSE;
 FILE_LOCK=NO;IFEXISTS=TRUE;CACHE_SIZE=131072;
 MVCC=TRUE;LOCK_TIMEOUT=30000   
- <span style="color:red">Replace **ENV_DNS** with **your environment DNS**.</span>
+ <span style="color:red">Replace **ENV_DNS** with **your environment DNS**.</span> See below example:
+
+![design studio template project](./images/ds-dns-example.png)
 
  
 ## Create New Project in Design Studio 
