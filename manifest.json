@@ -548,18 +548,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "home/techguides/assemble-sanity-check.md",
-      "output": {
-        ".html": {
-          "relative_path": "home/techguides/assemble-sanity-check.html",
-          "hash": "eRdcmMWGhe7IomKAk510RQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "home/techguides/clone-environment.md",
       "output": {
         ".html": {
@@ -4666,12 +4654,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "home/toc.yml",
       "output": {
         ".html": {
           "relative_path": "home/toc.html",
-          "hash": "Wm0M0ANTaFlS2FPtHZiucg=="
+          "hash": "9JcrMWc07/C/U+QPc5c0Iw=="
         }
       },
       "is_incremental": false,
