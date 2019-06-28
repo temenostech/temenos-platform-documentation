@@ -92,7 +92,17 @@
        - name: Run Factory 
          href: ./run-factory-video.md         
 - name: Troubleshooting
-  href: ./techguides/troubleshooting.md
+  items:
+   - name: Extend
+     items:
+       - name: Extend Troubleshooting
+         href: ./techguides/troubleshooting.md
+   - name: Assemble
+     items:
+       - name: Fix Issues at Factory Run
+         href: ./techguides/fix-issues-factory-run.md
+       - name: Triage Workflow
+         href: ./techguides/triage-workflow.md
 - name: FAQs
   href: ./faq.md
 - name: Getting Support
