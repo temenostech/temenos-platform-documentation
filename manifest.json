@@ -667,6 +667,18 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "home/techguides/fix-issues-factory-run.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/fix-issues-factory-run.html",
+          "hash": "aRqbBh2nzIIccl80hogf8Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Resource",
       "source_relative_path": "home/techguides/images/abn-package.png",
       "output": {
@@ -4265,6 +4277,50 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/triage-application-logs.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/triage-application-logs.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/triage-overview.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/triage-overview.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/triage-test-results.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/triage-test-results.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/triage-view-results.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/triage-view-results.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/tsa-live-file.png",
       "output": {
         "resource": {
@@ -4539,6 +4595,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "home/techguides/triage-workflow.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/triage-workflow.html",
+          "hash": "1aHhzxIuBNRydDu6tcqEIA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "home/techguides/troubleshooting.md",
       "output": {
         ".html": {
@@ -4603,7 +4671,7 @@
       "output": {
         ".html": {
           "relative_path": "home/toc.html",
-          "hash": "9dIE4xmUAJef/xueseGL5w=="
+          "hash": "Wm0M0ANTaFlS2FPtHZiucg=="
         }
       },
       "is_incremental": false,
@@ -4728,13 +4796,13 @@
           "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
