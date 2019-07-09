@@ -89,7 +89,9 @@ Into the newly added folder (on default location), make sure you create a config
 
 If for example you want to see a specific log for your application, you will be able to see this log into the **log_t24** folder (see below more details). In order to do so, make sure you add a log4j.properties file into the same folder (the newly created) where you specify the path for the logs of your app. 
 
-EXAMPLE: log4j.appender.FileLog.file=/opt/rh/eap7/root/usr/share/wildfly/modules/com/temenos/tafj/main/log_T24/*your_app*.log
+EXAMPLE: 
+
+*<span style="color:#010466;font-size:10pt;">log4j.appender.FileLog.file=/opt/rh/eap7/root/usr/share/wildfly/modules/com/temenos/tafj/main/log_T24/your_app.log</span>*
 
 <br>
 
