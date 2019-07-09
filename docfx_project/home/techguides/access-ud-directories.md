@@ -35,14 +35,19 @@ To see all the steps regarding how to add a new user on the portal and to attach
 
  - In order to have access to the T24/ VM Cloud Application live folders, you can install an FTP client from [https://winscp.net/eng/index.php](https://winscp.net/eng/index.php)
  - Open WinSCP application and fill the mandatory fields:
-   - Host name > copy it from the environment endpoint: sftp.temenos.cloud 
-   - User name > input the exact name of the user added to the portal
- - Click **Advanced**
- - In the new screen, select **SSH Authentication** 
- - Upload the private key previously saved (corresponding to the public key attached to the portal user)
- - Click **OK**
+    - Host name > copy it from the environment endpoint: sftp.temenos.cloud *(see image below)*
+    - User name > input the exact name of the user added to the portal
 
-![sftp fields](./images/access-ud-sftp-fields.png)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![sftp fields](./images/access-ud-endpoint.png)
+
+
+- Click **Advanced**
+- In the new screen, select **SSH Authentication** 
+- Upload the private key previously saved (corresponding to the public key attached to the portal user)
+- Click **OK**
+
+![](./images/access-ud-sftp-fields.png)
 
 <br>
 
@@ -59,18 +64,34 @@ To see all the steps regarding how to add a new user on the portal and to attach
 
 <br>
 
-   - <span style="color:orange">**default**</span> - *for example, here you can push a message file into the application that you need to test*. Here you can create a folder and add some files to it, if you need them to do some specific actions. This folder is supposed to point to the **T24_HOME** location.
+   - <span style="color:orange">**default**</span> - *for example, here you can push a message file into the application that you need to test*. 
+   - Also into the **default** folder, you can create a folder and add some files to it, if you need them to do some specific actions. The folder you create/ add is supposed to point to the **T24_HOME** location.
+   - See below:
+       - how to find which is the T24_HOME path.
+       - how to point to the T24_HOME path in order to get the response that you need for your application.
 
-In order to find out the T24_HOME path:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<span style="color:#010466;font-size:14pt;">Find the T24_HOME path:</span>*
+
  - Go to your environment on the portal 
  - Click on MONITOR APPLICATION
- - Then on tdiag (the path will look similar to this: https://t24-1xxxxxxxxxxxxo.dev.temenos.cloud/TAFJEE/tDiag)  the xxx part represents your environment's id
- - Scroll down a bit until you get to "TAFJ Runtime properties" section
+ - Login with your credentials
+ - Then click on tdiag (the path will look similar to this: https://t24-1xxxxxxxxxxxxo.dev.temenos.cloud/TAFJEE/tDiag)  the xxx part represents your environment's id
+ - Scroll down a bit until you get to "**TAFJ Runtime properties**" section
  - Here you can see: temn.tafj.runtime.directory.current	/opt/rh/eap7/root/usr/share/wildfly/default
 
 
 - If for example, you need to create a folder into the default location (/temenossftp/*yourorgid/yourenvid/yourenvid*/default) named "demo" then, in the T24 area the appropriate path will be **/opt/rh/eap7/root/usr/share/wildfly/default/demo**.
 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<span style="color:#010466;font-size:14pt;">Point to the T24_HOME path:</span>*
+
+Into the newly added folder (on default location), make sure you create a configuration file in which you set also the path to your folder.
+
+If for example you want to see a specific log for your application, you will be able to see this log into the **log_t24** folder (see below more details). In order to do so, make sure you add a log4j.properties file into the same folder (the newly created) where you specify the path for the logs of your app. 
+
+EXAMPLE: log4j.appender.FileLog.file=/opt/rh/eap7/root/usr/share/wildfly/modules/com/temenos/tafj/main/log_T24/*your_app*.log
+
+<br>
 
    - <span style="color:orange">**log_t24**</span>  - contains the T24.log files and also your como logs files when you run TSAs
 
