@@ -523,15 +523,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/access-ud-directories.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/access-ud-directories.html",
-          "hash": "BUR0F9Aglr5BwtCHynHrkw=="
+          "hash": "e3yGAR+lEb3yh9uPm7NhaA=="
         }
       },
       "is_incremental": false,
@@ -544,6 +541,18 @@
         ".html": {
           "relative_path": "home/techguides/add-app-endpoint.html",
           "hash": "ulCBoyhx/Qwz/E395VqGYA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/techguides/artifactory-test-cycle.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/artifactory-test-cycle.html",
+          "hash": "mc7qGJIADbd8s9iLWqeaLA=="
         }
       },
       "is_incremental": false,
@@ -686,6 +695,17 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/access-ud-como.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/access-ud-endpoint.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/access-ud-endpoint.png"
         }
       },
       "is_incremental": false,
@@ -950,6 +970,17 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/app_endp1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/artifactory-test-structure.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/artifactory-test-structure.png"
         }
       },
       "is_incremental": false,
@@ -3905,6 +3936,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/stage-metadata.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/stage-metadata.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/streams-create-stage.png",
       "output": {
         "resource": {
@@ -4542,7 +4584,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/stage.html",
-          "hash": "qrTyI7D9f3aCEFAFN4w9Rg=="
+          "hash": "PG5FIN8ycJUmhpyZEmoozw=="
         }
       },
       "is_incremental": false,
@@ -4662,7 +4704,7 @@
       "output": {
         ".html": {
           "relative_path": "home/toc.html",
-          "hash": "eZpB9Zkh5CPoKPuZTtnB9g=="
+          "hash": "FlyNcJ+DSDIKDauhBw2f8g=="
         }
       },
       "is_incremental": false,

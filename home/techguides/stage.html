@@ -84,17 +84,11 @@
 <p>A Stage is a logical name for a promotional stage. </p>
 <p>Every component/module developed by an organization needs to go through several steps to be declared ready for deployment to product. These steps are exactly what we call stages. </p>
 <p>Each stage has the following fields:</p>
-<ol>
-<li>Name: A simple name for the stage </li>
-</ol>
+<p><strong>1.</strong> Name: A simple name for the stage </p>
 <div class="NOTE"><h5>Note</h5><p>The name can only be set on creation time and <strong>it cannot be updated</strong>.</p>
 </div>
-<ol>
-<li><p>Description: A simple description to be helpful to users.</p>
-</li>
-<li><p>Enabled/ Disabled Flag: A stage can be enabled or disabled at any time provided there are no Factories associated to it.</p>
-</li>
-</ol>
+<p><strong>2.</strong> Description: A simple description to be helpful to users.</p>
+<p><strong>3.</strong> Enabled/ Disabled Flag: A stage can be enabled or disabled at any time provided there are no Factories associated to it.</p>
 <p>When a new stage is created, an isolated folder is created in the Artifactory Server to enable the binary/ installable components to be uploaded. When the components work well with other components/modules, the component is promoted to other stages, as defined by factories. </p>
 <p>The promotion of the components across stages is conditional based on the status of tests that are done during a factory run. If the tests succeed, the components will be promoted to the next stage. </p>
 <h1 id="how-to-set-up-edit-delete-stages">How to Set Up/ Edit/ Delete Stages</h1>
@@ -112,14 +106,21 @@
 <h2 id="edit-a-stage">Edit a Stage</h2>
 <p>Compared to the streams, a stage can have only the description edited/ changed, but not the name. Why? Because when creating a stage, a folder is created automatically in the Artifactory containing the stage name. This folder will contain the components that you may be added for the respective stage.</p>
 <p>Just click the edit button, change the description and then click update.</p>
+<h2 id="default-stage">Default Stage</h2>
+<p>After logging to the portal, go to the <strong>General</strong> button on the left menu. Here you can see and edit the metadata.</p>
+<p>The DEFAULT_STAGE_NAME can be defined after the creation of an organization in order to be able to use the assemble functionalities and <strong>can be editable</strong>.</p>
+<p>In case it has not been defined at the beginning, then when you try to create a stream, a new field about default stage will appear and here you need to insert a name for the default stage. </p>
+<p>This field will be automatically added into the metadata and <strong>will not be editable</strong>.</p>
 <h2 id="delete-a-stage">Delete a Stage</h2>
-<div class="NOTE"><h5>Note</h5><p><span style="color:red">The default stable_dev stage cannot be deleted.</span></p>
+<div class="NOTE"><h5>Note</h5><p><span style="color:red">The default stage cannot be deleted. (This is the stage configured into the metadata).</span></p>
 </div>
 <p>Example: </p>
 <ul>
 <li>Suppose we have created a stage named Primary_stage. No matter if we have configured further components and products, we can just go and delete this stage.</li>
 </ul>
 <p>Any other created stage can be deleted at any moment as it is not dependent of the subsequent features added such as components and products. Components and Products belong to the streams.</p>
+<p>Example of the default stage defined into the metadata (you can set any name you prefer instead of <em>default_stage</em>):</p>
+<p><img src="images/stage-metadata.png" alt=""></p>
 <p><br></p>
               <hr>
               
