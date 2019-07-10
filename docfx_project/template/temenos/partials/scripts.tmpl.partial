@@ -52,7 +52,7 @@ window.onclick = function(event) {
   ga('create', 'UA-38593742-4', 'auto');
   ga('send', 'pageview');
 
-</script> */
+</script> */ 
 
 /* This is the new Google Analytics script from Giorgos */
 
