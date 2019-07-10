@@ -74,6 +74,8 @@
          href: ./techguides/stage-testcases.md
        - name: Run a Factory with "Run Now" Button and Dashboard
          href: ./techguides/run-factory.md
+       - name: Manage Artifactory Test Cycle
+         href: ./techguides/artifactory-test-cycle.md 
    - name: Tutorials
      href: ./tutorials-assemble.md
      items:

@@ -6,14 +6,14 @@ Every component/module developed by an organization needs to go through several 
 
 Each stage has the following fields:
 
-1.	Name: A simple name for the stage 
+**1.** Name: A simple name for the stage 
 
 > [!Note]
 > The name can only be set on creation time and **it cannot be updated**.
 
-2.	Description: A simple description to be helpful to users.
+**2.** Description: A simple description to be helpful to users.
 
-3.	Enabled/ Disabled Flag: A stage can be enabled or disabled at any time provided there are no Factories associated to it.
+**3.** Enabled/ Disabled Flag: A stage can be enabled or disabled at any time provided there are no Factories associated to it.
 
 When a new stage is created, an isolated folder is created in the Artifactory Server to enable the binary/ installable components to be uploaded. When the components work well with other components/modules, the component is promoted to other stages, as defined by factories. 
 
@@ -40,12 +40,27 @@ Compared to the streams, a stage can have only the description edited/ changed, 
 
 Just click the edit button, change the description and then click update.
 
+## Default Stage ##
+
+After logging to the portal, go to the **General** button on the left menu. Here you can see and edit the metadata.
+
+The DEFAULT_STAGE_NAME can be defined after the creation of an organization in order to be able to use the assemble functionalities and **can be editable**.
+
+In case it has not been defined at the beginning, then when you try to create a stream, a new field about default stage will appear and here you need to insert a name for the default stage. 
+
+This field will be automatically added into the metadata and **will not be editable**.
+ 
+
 ## Delete a Stage ##
 
 > [!Note]
-> <span style="color:red">The default stable_dev stage cannot be deleted.</span>
+> <span style="color:red">The default stage cannot be deleted. (This is the stage configured into the metadata).</span>
 
 Example: 
 - Suppose we have created a stage named Primary_stage. No matter if we have configured further components and products, we can just go and delete this stage.
 
 Any other created stage can be deleted at any moment as it is not dependent of the subsequent features added such as components and products. Components and Products belong to the streams.
+
+Example of the default stage defined into the metadata (you can set any name you prefer instead of *default_stage*):
+
+![](./images/stage-metadata.png)
