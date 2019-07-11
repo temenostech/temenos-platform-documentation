@@ -338,6 +338,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/images/tcd-hosting-models.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/tcd-hosting-models.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/images/tcd.png",
       "output": {
         "resource": {
@@ -517,6 +528,18 @@
         ".html": {
           "relative_path": "home/support.html",
           "hash": "2pEz+XToP/7g4ksUdl9cbA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/tcd-hosting-options.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/tcd-hosting-options.html",
+          "hash": "D1EJVWth7XV31CUA4DcTEg=="
         }
       },
       "is_incremental": false,
@@ -4704,7 +4727,7 @@
       "output": {
         ".html": {
           "relative_path": "home/toc.html",
-          "hash": "FlyNcJ+DSDIKDauhBw2f8g=="
+          "hash": "KLw6R2vI/3sgIqq4v8SQsg=="
         }
       },
       "is_incremental": false,
