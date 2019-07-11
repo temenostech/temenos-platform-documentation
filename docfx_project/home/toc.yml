@@ -3,6 +3,8 @@
 - name: Architecture
   href: ./architecture.md
   items:
+    - name: TCD Hosting Options
+      href: ./tcd-hosting-options.md
     - name: Temenos Cloud Templates
       href: ./temenos-cloud-templates.md
 - name: Extend
