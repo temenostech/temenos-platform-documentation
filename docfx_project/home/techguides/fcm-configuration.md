@@ -3,7 +3,7 @@
 Learn how to use FCM application by accessing it via Temenos Cloud Platform.
     
 > [!Note]
-> Check also our <a href="https://www.youtube.com/watch?v=XBsmOZvg-z8" target="_blank">**Video tutorial**
+> Check also our <a href="https://www.youtube.com/watch?v=XBsmOZvg-z8" target="_blank">**Video tutorial** - to be updated.
 </a>
 
 
@@ -11,9 +11,8 @@ Learn how to use FCM application by accessing it via Temenos Cloud Platform.
 
  - Login to your organization on the Temenos Cloud Platform ([https://portal.temenos.cloud/](https://portal.temenos.cloud/)) using the username and password provided by the Temenos team
  - Each time you login, you must accept the Privacy Notice in order to have access to the portal
- - First page that is displayed after login is the **Environments** list, where you can see the available environments or you can create a new one
- - Click the **Templates** tab to see the list of all templates available for your organization
-   - Click **FCM** template to see the short description of the components and also the full template content
+ - Click the **Templates Catalog** on the left-side menu
+   - Choose **the FCM template** version from the available list to see the short description of the components and also the full template content
    - The listed information comes from an infratemplate.yml file that describes the template used for an environment
 
 ![new environment](./images/fcm-show-template.png)
@@ -30,7 +29,7 @@ Learn how to use FCM application by accessing it via Temenos Cloud Platform.
 - Select an application from **Cloud native applications**
 - Choose a template from **Templates** list
 - *Labels field is optional*
-- Click **Create environment**
+- Click **Create**
 
 ![new environment](./images/fcm-environment-fields.png)
 
@@ -104,8 +103,8 @@ To see all the steps regarding how to add a new user on the portal and to attach
 - Go to **Transaction Alert Manager**
 - Check below the latest processed messages and click **Open** button to see the message details
 
-![check messages](./images/fcm-check-messages.png)
-
+![check messages](./images/fcm-check-messages.png) 
+ 
 
 
  
