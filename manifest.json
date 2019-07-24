@@ -546,15 +546,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/access-ud-directories.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/access-ud-directories.html",
-          "hash": "uFZ+5elnFGjvKzb9b+hxrQ=="
+          "hash": "SKyB7QFrRKyBfJvPcI3EZg=="
         }
       },
       "is_incremental": false,
@@ -2346,6 +2343,28 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/env_gotoapplication.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/env_gotoapplication.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/env_tajfruntimeproperties.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/env_tajfruntimeproperties.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/export-environment.png",
       "output": {
         "resource": {
@@ -4051,6 +4070,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/sftp_7.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/sftp_7.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/ssh-agent.png",
       "output": {
         "resource": {
@@ -4795,7 +4825,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/troubleshooting.html",
-          "hash": "HIt771RFHvo+WNmO3sqWKw=="
+          "hash": "n54cVLKmssQMxsobAsf0zQ=="
         }
       },
       "is_incremental": false,
