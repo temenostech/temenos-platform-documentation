@@ -106,7 +106,7 @@
 <div class="NOTE"><h5>Note</h5><p>It will take about 15-20 minutes for the new environment to be created</p>
 </div>
 <h2 id="create-a-user-on-the-portal">Create a User on the Portal</h2>
-<p>This is required later when connecting to T24 through SFTP server connection, because it checks the authentication to the cloud environment with that specific user and the attached SSH key.</p>
+<p>This is required later when connecting to T24 through SFTP server connection, because it checks the authentication to the cloud environment with that specific user and the attached SSH key. </p>
 <p>To see all the steps regarding how to add a new user on the portal and to attach the SSH key, please see the following user guide about how to <a href="user-creation-in-paas.html"><strong>Create Users</strong></a>.</p>
 <h2 id="connect-via-sftp-client">Connect via SFTP Client</h2>
 <ul>
@@ -153,12 +153,21 @@
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em><span style="color:#010466;font-size:14pt;">Find the T24_HOME path:</span></em></p>
 <ul>
 <li>Go to your environment on the portal </li>
-<li>Click on MONITOR APPLICATION</li>
-<li>Login with your credentials</li>
-<li>Then click on tdiag (the path will look similar to this: <a href="https://t24-1xxxxxxxxxxxxo.dev.temenos.cloud/TAFJEE/tDiag">https://t24-1xxxxxxxxxxxxo.dev.temenos.cloud/TAFJEE/tDiag</a>)  the xxx part represents your environment&#39;s id</li>
-<li>Scroll down a bit until you get to &quot;<strong>TAFJ Runtime properties</strong>&quot; section</li>
-<li>Here you can see: temn.tafj.runtime.directory.current    /opt/rh/eap7/root/usr/share/wildfly/default</li>
+<li>Click on MONITOR APPLICATION<br><br>
+<img src="./images/env_gotoapplication.png" alt="access ud directories schema"></li>
 </ul>
+<p><br></p>
+<ul>
+<li><p>Login with your credentials (these will be provided by Temenos)</p>
+</li>
+<li><p>Then click on tdiag (the path will look similar to this: <a href="https://t24-1xxxxxxxxxxxxo.dev.temenos.cloud/TAFJEE/tDiag">https://t24-1xxxxxxxxxxxxo.dev.temenos.cloud/TAFJEE/tDiag</a>)  the xxx part represents your environment&#39;s id</p>
+</li>
+<li>Scroll down a bit until you get to &quot;<strong>TAFJ Runtime properties</strong>&quot; section</li>
+<li>Here you can see: temn.tafj.runtime.directory.current    /opt/rh/eap7/root/usr/share/wildfly/default
+<br>
+<img src="./images/env_tajfruntimeproperties.png" alt="access ud directories schema"></li>
+</ul>
+<p><br></p>
 <ul>
 <li>If for example, you need to create a folder into the default location (/temenossftp/<em>yourorgid/yourenvid/yourenvid</em>/default) named &quot;demo&quot; then, in the T24 area the appropriate path will be <strong>/opt/rh/eap7/root/usr/share/wildfly/default/demo</strong>.</li>
 </ul>
@@ -179,7 +188,7 @@
 <p><br></p>
 <ul>
 <li><span style="color:orange"><strong>standalone</strong></span> - contains the jboss logs
-server.log - shows the Jboss application log</li>
+server.log - shows the Jboss application log (standalone folder appeas only for the Extend Templates, Wildfly Template and Stack01 Template). On the other hand, if you download the Stack02 Template instead of &#39;standalone&#39; you will find the &#39;appserver&#39; folder which shows WebSphere logs such as startServer.log, stopServer.log, and SystemOut.log </li>
 </ul>
 <p><img src="images/access-ud-standalone.png" alt="access ud directories schema">
 <br></p>
