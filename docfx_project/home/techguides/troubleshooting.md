@@ -32,7 +32,7 @@ The Export Environment Details functionality can be triggered from PaaS Portal f
 
  ![export env 3](./images/export_env_3.png)
 
- * Open **WinSCP** SFTP client and create a new site that will allow you to connect to the SFTP server. Make sure you put _sftp.temenos.cloud_ Endpoint as Host name, your _PaaS user_ as User name and instead of password, the SSH key related to your PaaS user must be used.
+ * Open **WinSCP** SFTP client and create a new site that will allow you to connect to the SFTP server. Make sure you put _tcdSFTP.temenos.cloud_ Endpoint as Host name, your _PaaS user_ as User name and instead of password, the SSH key related to your PaaS user must be used.
  ![sftp 1](./images/sftp_1.png)
  * In order to attach the SSH key, press **Advanced** button, go to **Authentification** menu and select the **private key** related to your PaaS user. 
  ![sftp 2](./images/sftp_2.png)
@@ -45,12 +45,19 @@ The Export Environment Details functionality can be triggered from PaaS Portal f
  ![sftp 4](./images/sftp_4.png)  
  * Go inside your environmentID folder and you will see a zip file that contains the Environment Details. In order to download the zip, select it and press F5.  
  ![sftp 5](./images/sftp_5.png)  
- * After downloading the zip file to your local machine, unzip it and you will have the bellow folder structure:  
+ * After downloading the zip file to your local machine, unzip it. Based on the template used, you will be able to see the below scenarios:
+<p>**a) For Extend-Templates** - once you downloaded the file and unzipped it on your local machine, the below folders will appear  
  ![sftp 6](./images/sftp_6.png)  
+      **b) For Wildfly, Stack01 and Stack02 Templates** - once you downloaded the file and unzipped it on your local machine, the below folders will appear:  
+ ![sftp 6](./images/sftp_7.png)  
  Based on the above folder structure, you can check the following:  
  -> If you deployed any update in your sandbox, check if jar/jars related to the update are changed in the jar list from _modules/com/temenos/t24/main_ folder.  
  -> If you deployed any package in your sandbox, check if the jar related to the package is present in _modules/com/temenos/t24/main/localjars_ folder.  
  -> If you deployed any war file in your sandbox, check if the war was deployed with success(a file named war_name.deployed should be present in _standalone\deployments_ folder). The war deployment will be failed if a file named war_name.failed is present in _standalone\deployments_ folder and this file must be checked for details.
+> [!Note]
+> For *Stack02 Template* in the 'appserver' folder you will find 'installed apps' folder instead of 'deployments'.
+
+
 
 # 2. TAFJEE Monitoring Tool #
 TAFJEE Monitoring Tool can be used in the following situations:  
@@ -116,14 +123,14 @@ To view the Como content, go to the TAFJ Monitoring Tool of your Environment fro
 * The next wizard will appear in which you can execute any DBTools command by following the next steps:  
 -> Enter the DBTools user credentials in the **Authentication** section.  
 -> In the **Command** section, select the command type from the **Mode** combo box, enter the command in the **Argument** field and optionally you can enter a name in the **Log file name** field.  
--> Click the **Submit** button to execute the command and a message will be displayed in the page.  
+-> Click the **Execute command** button to execute the command and a message will be displayed in the page.  
 -> Depending on the command, an output will be generated and it will be available in the output list after pressing the **Refresh** button.  
 ![dbtools 3](./images/dbtools_3.png)  
 * For example, a JQL command is entered.  
 ![dbtools 4](./images/dbtools_4.png)  
-* After clicking the **Submit** button, a message is displayed.
+* After clicking the **Execute command** button, a message is displayed.
 ![dbtools 5](./images/dbtools_5.png)  
-* Click the **Refresh** button and in the **Output** section, a log(containing the result of the DBTools command) will be displayed.  
+* Click the **Refresh logs** button and in the **Output** section, a log(containing the result of the DBTools command) will be displayed.  
 ![dbtools 6](./images/dbtools_6.png)  
 * Click the **View** button related to the generated log to view the result of the DBTools command.  
 ![dbtools 7](./images/dbtools_7.png)  
@@ -182,3 +189,4 @@ keytool -keystore ../lib/security/cacerts -importcert -alias sharedSandbox -file
      `<packageEsonAsCsv>true</packageEsonAsCsv>`
 
      >  - Save the file
+ 

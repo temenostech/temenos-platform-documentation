@@ -27,7 +27,7 @@ Learn how to easily access the T24 UD directories of your sandbox and make updat
 
 ## Create a User on the Portal
 
-This is required later when connecting to T24 through SFTP server connection, because it checks the authentication to the cloud environment with that specific user and the attached SSH key.
+This is required later when connecting to T24 through SFTP server connection, because it checks the authentication to the cloud environment with that specific user and the attached SSH key. 
 
 To see all the steps regarding how to add a new user on the portal and to attach the SSH key, please see the following user guide about how to [**Create Users**](../techguides/user-creation-in-paas.md).
 
@@ -73,13 +73,20 @@ To see all the steps regarding how to add a new user on the portal and to attach
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<span style="color:#010466;font-size:14pt;">Find the T24_HOME path:</span>*
 
  - Go to your environment on the portal 
- - Click on MONITOR APPLICATION
- - Login with your credentials
+ - Click on MONITOR APPLICATION  
+ <br>
+![access ud directories schema](./images/env_gotoapplication.png)
+
+<br>
+ - Login with your credentials (these will be provided by Temenos)
+
  - Then click on tdiag (the path will look similar to this: https://t24-1xxxxxxxxxxxxo.dev.temenos.cloud/TAFJEE/tDiag)  the xxx part represents your environment's id
  - Scroll down a bit until you get to "**TAFJ Runtime properties**" section
  - Here you can see: temn.tafj.runtime.directory.current	/opt/rh/eap7/root/usr/share/wildfly/default
-
-
+ <br>
+  ![access ud directories schema](./images/env_tajfruntimeproperties.png)
+ 
+<br>
 - If for example, you need to create a folder into the default location (/temenossftp/*yourorgid/yourenvid/yourenvid*/default) named "demo" then, in the T24 area the appropriate path will be **/opt/rh/eap7/root/usr/share/wildfly/default/demo**.
 
 
@@ -106,7 +113,7 @@ EXAMPLE:
 <br>
 
   - <span style="color:orange">**standalone**</span> - contains the jboss logs
-server.log - shows the Jboss application log
+server.log - shows the Jboss application log (standalone folder appeas only for the Extend Templates, Wildfly Template and Stack01 Template). On the other hand, if you download the Stack02 Template instead of 'standalone' you will find the 'appserver' folder which shows WebSphere logs such as startServer.log, stopServer.log, and SystemOut.log 
 
 ![access ud directories schema](./images/access-ud-standalone.png)
 <br>
