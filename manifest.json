@@ -619,6 +619,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "home/techguides/create-publish-template.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/create-publish-template.html",
+          "hash": "Hp8Oi/P1BZ+yYBVDRuQ6Ug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "home/techguides/customize-templates.md",
       "output": {
         ".html": {
@@ -1510,6 +1522,127 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/copy-key.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/create-template-add-stage.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/create-template-add-stage.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/create-template-artifactory-repo.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/create-template-artifactory-repo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/create-template-artifacts.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/create-template-artifacts.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/create-template-base.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/create-template-base.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/create-template-factory.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/create-template-factory.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/create-template-metadata.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/create-template-metadata.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/create-template-package-type.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/create-template-package-type.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/create-template-principle.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/create-template-principle.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/create-template-repo-key.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/create-template-repo-key.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/create-template-repo-stage.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/create-template-repo-stage.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/create-template-stream.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/create-template-stream.png"
         }
       },
       "is_incremental": false,
