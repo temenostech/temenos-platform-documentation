@@ -7,6 +7,8 @@
       href: ./tcd-hosting-options.md
     - name: Temenos Cloud Templates
       href: ./temenos-cloud-templates.md
+    - name: ​Temenos Implementation Methodology
+      href: ./temenos-implementation-methodology.md
 - name: Extend
   href: ./extend.md
   items:
