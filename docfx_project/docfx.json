@@ -26,7 +26,10 @@
           "home/**.md",
           "home/techguides/**.md",
           "toc.yml",
-          "*.md"
+          "*.md",
+		  "home/**.pdf",
+		  "home/pdf/**.pdf",
+		  "*.pdf"
         ],
        "exclude": [
          "obj/**",
@@ -41,6 +44,9 @@
           "home/images/**",
           "home/techguides/images/**",
           "home/scripts/**",
+		  "home/**.pdf",
+		  "home/pdf/**.pdf",
+		  "*.pdf"
         ],
         "exclude": [
           "obj/**",
