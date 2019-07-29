@@ -417,6 +417,17 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "home/pdf/tcib-guide.pdf",
+      "output": {
+        "resource": {
+          "relative_path": "home/pdf/tcib-guide.pdf"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "home/run-factory-video.md",
       "output": {
