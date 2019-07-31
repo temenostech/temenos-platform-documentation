@@ -9,4 +9,4 @@
 ![](./images/tim.png)
 
 > [!Note]
-> For more information on the TIM please reach out to our team at **CloudPlatformSupport@temenos.com**.
+> For more information on the tim please reach out to our team at **cloudplatformsupport@temenos.com**.
