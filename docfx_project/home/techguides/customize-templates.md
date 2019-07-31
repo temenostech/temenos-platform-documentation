@@ -1,8 +1,8 @@
 
 # Templates Customization
 ## Introduction
-This document can be used by technical staff who need to customize already defined PaaS templates based on specific requirements. Templates customization will allow changes related to:
-- the environment applications (i.e. the scripts to install and configure each application and the information displayed in PaaS Portal for each application);
+This document can be used by technical staff who need to customize already defined templates based on specific requirements. Templates customization will allow changes related to:
+- the environment applications (i.e. the scripts to install and configure each application and the information displayed in the Portal for each application);
 - the VM specifications in which each application is deployed.
 
 > [!Note]
@@ -19,13 +19,17 @@ The message 'Repository boosting initiated!" appears on the screen and the statu
 ![boost 2](./images/customize-templates-boost.png)
 
 > [!Note]
-> Click the **Refresh List** button to see when boosting action is completed.
+> Click the **Refresh** button to see when boosting action is completed.
 > 
 > Also below the environment description, following message is displayed "Scripts are customized for this environment." and the button **Save as a new template** appears. 
 
 
 ## Repository structure after Boost
 As stated above, the Boost operation will make changes to environment repository. The difference between the before and after boost environment repository versions is represented by the presence of <span style="color:red">environments</span> folder, as it can be observed bellow.
+
+Please check also the following <a href="./use-gitlab-repository.md" target="blank">**user guide**</a> to see how to clone an environment locally and see the below repository structure.
+<br>
+
 ![boost 4](./images/customize-templates-after-boost.png)
 
 The structure of the <span style="color:red">environments</span> folder is represented by 4 folders *(found under common folder)*:
@@ -33,6 +37,19 @@ The structure of the <span style="color:red">environments</span> folder is repre
 - infra-templates
 - playbooks
 - roles
+
+> [!Note]
+> Depending on the template type (Extend or Assemble), the **extraPlays** folder may be or may not be present. To check the template type, go to Templates Catalog button on the left side menu and check the template used for your environment. If it contains the Components section, it means this is an Assemble template type and the extraPlays folder will be present after boost action.
+
+
+> [!Important]
+> Depending on the template type (Extend or Assemble), the **infra-templates** and **roles** folders content may differ.
+> For example:
+> 
+> -- for extend templates, to change h2db role you need to change main.yml file from common/roles/h2/tasks/
+> 
+> -- for assemble templates to change h2db role you need to change deploy_main.yml file from common/roles/h2db/tasks/
+
 ![boost 5](./images/customize-templates-structure.png)
 
 The description of each folder is presented bellow:
@@ -53,21 +70,21 @@ A role represents any of your environment applications or it can be a module/plu
 - <code>vars</code> - contains the role variables.
 
 > [!Note]
-> A role definition must include at least one of the above folders. Thus, any unused folders can be excluded. However, any in use folder must include a **main.yml** file that contains the relevant information.
+> A role definition must include at least one of the above folders. Thus, any unused folders can be excluded. However, any in use folder must include a **main.yml** file that contains the relevant information, respectively a **deploy_main.yml** file in case of assemble templates..
 
 > [!Note]
-> Ansible automation tool is used by the PaaS Platform to automate environment creation based on applications with specific requirements and installation steps. For more details about Ansible, please access this **<a href="https://docs.ansible.com/ansible/2.5/user_guide/quickstart.html" target="blank">link</a>**.
+> Ansible automation tool is used by the Cloud Platform to automate environment creation based on applications with specific requirements and installation steps. For more details about Ansible, please access this **<a href="https://docs.ansible.com/ansible/2.5/user_guide/quickstart.html" target="blank">link</a>**.
 
 ## Start template customization
 After boosting your environment, meaning that your environment repository contains all the folders and files related to your environment template, you can start the customization.
 There are several ways in which you can customize your environment template based on the type of your change.
 
 > [!Note]
-> All the changes that must be implemented to a PaaS environment template can be done only in <u>environment repository</u>. Thus, environment repository must be cloned in your local machine. For more information about how to clone an environment repository, please check this **<a href="./use-gitlab-repository.md" target="blank">page</a>**.
+> All the changes that must be implemented to a cloud environment template can be done only in <u>environment repository</u>. Thus, environment repository must be cloned in your local machine. For more information about how to clone an environment repository, please check this **<a href="./use-gitlab-repository.md" target="blank">page</a>**.
 
 1. Changes that will require <span style="color:red;font-weight:600;">the rebuild of your environment</span>:
 > [!Note]
-> The rebuild operation will take around 20 minutes and it will recreate all environment resources (VMs) and run the deployment of all roles defined in environment template.<br />To trigger the rebuild of your environment, login to PaaS portal using your organisation user, go to your environment page and click on the **<span style="color:#00bfff;font-weight:600;">Rebuild</span>** button attached to your environment main application.
+> The rebuild operation will take around 20 minutes and it will recreate all environment resources (VMs) and run the deployment of all roles defined in environment template.<br />To trigger the rebuild of your environment, login to the portal using your organisation user, go to your environment page and click on the **<span style="color:#00bfff;font-weight:600;">Rebuild</span>** button attached to your environment main application.
 
  * Changes related to applications that will be installed under your environment.<br />
    <p style="padding-left: 10px">The applications list is defined in *<span style="color:#010466;font-weight:600;">[services][servers]</span>* component from *<span style="color:#D2940F;font-weight:600;">infratemplate.yml</span>* file located in *<span style="background-color: #858382;color: white;"> /environments/common/infra-templates </span>* &nbsp;folder of environment repository. An example of a template with 2 applications (t24 & h2) is presented bellow.<br />
@@ -79,8 +96,8 @@ There are several ways in which you can customize your environment template base
    If an application must be added to the default application list of the template, then a new item must be added in *<span style="color:#010466;font-weight:600;">[services][servers]</span>* component. After this, a new role must be created for this application in *<span style="background-color: #858382;color: white;"> /environments/common/roles </span>* &nbsp;folder of environment repository and *<span style="color:#D2940F;font-weight:600;">playbook.yml</span>* file from *<span style="background-color: #858382;color: white;"> /environments/common/playbooks </span>* &nbsp;must be updated with a new item for the new application.
    </td></tr></table>
    </p>
- * Changes related to applications information (name, description, etc.) displayed in PaaS Portal.<br />
-   <p style="padding-left: 10px">Each environment application has a related item in *<span style="color:#010466;font-weight:600;">[services][servers]</span>* component from *<span style="color:#D2940F;font-weight:600;">infratemplate.yml</span>* file. Please check the description of each key (e.g. *app_name*, *app_description*, etc.) in *<span style="color:#D2940F;font-weight:600;">infratemplate.yml</span>* file in order to understand which information appear in PaaS Portal.</p>
+ * Changes related to applications information (name, description, etc.) displayed in the Portal.<br />
+   <p style="padding-left: 10px">Each environment application has a related item in *<span style="color:#010466;font-weight:600;">[services][servers]</span>* component from *<span style="color:#D2940F;font-weight:600;">infratemplate.yml</span>* file. Please check the description of each key (e.g. *app_name*, *app_description*, etc.) in *<span style="color:#D2940F;font-weight:600;">infratemplate.yml</span>* file in order to understand which information appear in the Portal.</p>
  * Changes related to VM specifications in which environment applications are deployed.<br />
    <p style="padding-left: 10px">The VM specifications on which each environment application is deployed are defined in *<span style="color:#010466;font-weight:600;">[provider][azure][config]</span>* component from *<span style="color:#D2940F;font-weight:600;">infratemplate.yml</span>* file. <br />
    ![boost 7](./images/boost_env7.png)<br />
@@ -92,7 +109,7 @@ There are several ways in which you can customize your environment template base
 
 2. Changes that will require <span style="color:red;font-weight:600;">the deployment of your environment</span>:
  > [!Note]
- > The deployment operation will take around 5 minutes or more depending on your changes.<br />To trigger the deployment of your environment, login to PaaS portal using your organisation user, go to your environment page and click on the **<span style="color:#00bfff;font-weight:600;">Deploy</span>** button attached to **Repository** application.
+ > The deployment operation will take around 5 minutes or more depending on your changes.<br />To trigger the deployment of your environment, login to the cloud portal using your organisation user, go to your environment page and click on the **<span style="color:#00bfff;font-weight:600;">Deploy</span>** button attached to **Repository** application.
 
  * Changes related to roles already present in template. (i.e. an environment is already created with this template)<br />
    <p style="padding-left: 10px">If an already present role must be updated (for example, the tasks list for a role must be updated), make the required changes for that role, commit and push the changes to the environment repository and trigger the deployment.</p>
@@ -104,13 +121,13 @@ There are several ways in which you can customize your environment template base
    > [!Note]
    > If the deployment operation is not successful for your changes, please rebuild the environment.
 
-The PaaS catalogue of available templates can be checked **<a href="../temenos-cloud-templates.md" target="blank">here</a>**.
+The cloud portal catalogue of available templates can be checked **<a href="../temenos-cloud-templates.md" target="blank">here</a>**.
 
 <!-- <br /><span style="font-size:20px">text</span> -->
 
 ## Save New Template
 
-After doing the above steps (template customization), go to Save as a new template button and fill the required fields, as in the example below:
+After doing the above steps (template customization), go to **Save as a new template** button and fill the required fields, as in the example below:
 
 ![boost 7](./images/customize-save-template.png)
 
