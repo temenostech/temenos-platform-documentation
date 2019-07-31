@@ -371,6 +371,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/images/tim.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/tim.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/images/users.png",
       "output": {
         "resource": {
@@ -4367,6 +4378,28 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/tafj-fb-setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/tafj-fb-setup.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/tafj-fb-setup2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/tafj-fb-setup2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/tafj-packager.png",
       "output": {
         "resource": {
@@ -4817,6 +4850,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "home/techguides/tafj-db-setup.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/tafj-db-setup.html",
+          "hash": "+6xHnmwtYcgn+Kv9pq7TsA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "home/techguides/triage-workflow.md",
       "output": {
         ".html": {
@@ -4891,12 +4936,24 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "home/temenos-implementation-methodology.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/temenos-implementation-methodology.html",
+          "hash": "6WjLWK99KZHBNdiVu67DTQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "home/toc.yml",
       "output": {
         ".html": {
           "relative_path": "home/toc.html",
-          "hash": "LaNxauEm1ok6XBy7UVlThQ=="
+          "hash": "oeUOgaQdNLqsWXbfWYc8Lg=="
         }
       },
       "is_incremental": false,
@@ -5016,15 +5073,6 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build"
-        },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "RestApiDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -5032,6 +5080,15 @@
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "TocDocumentProcessor": {
