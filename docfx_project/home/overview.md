@@ -17,11 +17,11 @@ Temenos Continuous Deployment is an offering from Temenos Cloud that provides cl
 
 ![](./images/tcd-details.png)
 
-## **What is the “Assemble” service pack of the Temenos Continuous Deployment?**
+## **What is the “Assemble” service module of the Temenos Continuous Deployment?**
 
-“Assemble” service pack provides a DevOps solution to perform continuous integration and delivery of Temenos Products and customisation, thereby enabling faster time to market for features.
+“Assemble” service module provides a DevOps solution to perform continuous integration and delivery of Temenos Products and customisation, thereby enabling faster time to market for features.
 
-The Assemble service pack of Temenos Continuous Deployment is used during the continuous integration (“CI”) and continuous delivery (“CD”) of Temenos solutions. The Assemble service pack can accelerate the pace of change and increase confidence in the software deliveries by managing the Assemble of Components (updates, main release, and Level 3 developments), the provisioning into testing Environments, the execution of tests scripts, and providing detailed dashboards of the results. This Assemble service pack further allows the Client to configure Products and Releases which match their own specific needs. The main objective being to streamline ongoing change and accelerate implementation / upgrade projects.
+The Assemble service module of Temenos Continuous Deployment is used during the continuous integration (“CI”) and continuous delivery (“CD”) of Temenos solutions. The Assemble service module can accelerate the pace of change and increase confidence in the software deliveries by managing the Assemble of Components (updates, main release, and Level 3 developments), the provisioning into testing Environments, the execution of tests scripts, and providing detailed dashboards of the results. This Assemble service module further allows the Client to configure Products and Releases which match their own specific needs. The main objective being to streamline ongoing change and accelerate implementation / upgrade projects.
 
 
 ## **Features**
