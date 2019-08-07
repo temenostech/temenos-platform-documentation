@@ -2,58 +2,45 @@
 
 
 > [!Note]
-> Check also our [**Video Tutorial**](https://www.youtube.com/watch?v=NKuOZJURZzg)!
+> Check also our [**Video Tutorial**](https://www.youtube.com/watch?v=NKuOZJURZzg)! *(to be updated)*
 
 
 ## Introduction
 
 This document explains how to configure the Jenkins build and promote pipelines. 
 
-**'Build pipeline'** builds the artifacts and deploys them in test environment. 
+The **'Build pipeline'** job builds the artifacts and deploys them into the test environment. 
 
-Once the testing is successful and it's ready for promotion, **'Promote pipeline'** deploys the tested artifacts into integrated dev environment. 
+Once the testing is successful and it's ready for promotion, the **'Promote pipeline'** deploys the tested artifacts into the integrated dev environment. 
 
 
-For this tutorial, we will be integrating Jenkins with GitHub so that Jenkins can pull the code and build artifacts.
+For this tutorial, we will be integrating Jenkins with GitLab (or Bitbucket - depending on your repository) so that Jenkins can pull the code and build artifacts.
 
 ![](./images/jenkins-build-promote-pipelines-flow.png)
 
+## Main steps
 
+- Merge the team changes to existing code​.
+
+- Run the integrated build​.
+
+- Deploy the changes to a Integrated DEV Environment​.
+
+- Continue with the existing flow.
+
+<br>
 
 To implement the Pipeline as a code we will use Jenkins Pipeline in order to automate tasks associated with building, testing and deploying software.
 
-
-
 ## Access Development Portal
 
-Sign into one of the following URLs (choose the link you have been provided with): [portal.temenos.cloud](https://portal.temenos.cloud/) or [https://tcd-portal.temenos.cloud/](https://tcd-portal.temenos.cloud/) using the credentials provided by Temenos (Username and Password):
+Sign into one of the following URLs (choose the link you have been provided with): [https://portal.temenos.cloud](https://portal.temenos.cloud/) or [https://tcd-portal.temenos.cloud/](https://tcd-portal.temenos.cloud/) using the credentials provided by Temenos (Username and Password):
 
 ![](./images/db-login.png)
 
 <br>
 
-## Create a new environment
-
-- Fill the required fileds and press **Create**
-
-![](./images/env-new.png)
-
-
-> [!Note]
-> You will need to create following three environments:
-> 
-> • A build environment with template "Build resources"
-> 
-> • A source environment with the required template (*in our example is "Retail Suite R18.11"*)
-> 
-> • A target environment with the same template as the last one
-
-
-**Build resources** environment:
-
-Click New Environment button and fill the mandatory fields as in below picture:
-
-![](./images/jenkins-build-resources.png)
+## Create the required environments
 
 Fill the following parameters and press **'Create environment'**:
 
@@ -65,19 +52,29 @@ Fill the following parameters and press **'Create environment'**:
 
 •	*Labels (optional)*
 
-![](./images/jenkins-build-integrated.png)
+- Fill the required fields and press **Create**.
 
 > [!Note]
-> It might take about 15-20
->  minutes to create the enviroment.
+> It might take about 15-20 minutes to create an environment.
 
+> [!Note]
+> You will need to create following three environments:
+> 
+> • A **build** environment with the required template (*in our example is "BuildResources-Jenkins-Jfrog-R18.11"*)
+> 
+> • A **source** environment with the required template (*in our example is "Retail Suite R18.11"*)
+> 
+> • A **target** environment with the same template as the last one.
+
+
+![](./images/jenkins-build-environments.png)
 
 
 ## Login to Jenkins
 
-After the "BuildResources" environment has been created, click on it and go to Jenkins Dashboard:
+After the "BuildServices" environment has been created, click on it and go to Jenkins Dashboard:
 
-![](./images/jenkins-build-dashboard-click.png)
+![](./images/jenkins-build-dashboard1.png)
 
 <br>
 
@@ -118,13 +115,13 @@ Build Pipeline works based on pipeline script (Jenkins file).
 
 **Requirements:**
 
- - It requires valid credentials to pull the code from your Git repository (Github/Gitlab..etc). Users need to add credentials to clone the git repositories. 
+ - It requires valid credentials to pull the code from your GitLab (or Bitbucket) repository (or a different repository that will be made available). Users need to add credentials to clone the git repositories. 
    - For setting up credentials please refer to below section "Add SSH keys inside Jenkins"
 
 
 **Steps during build:**
 
- - Pulls the code from GIT 
+ - Pulls the code from the Gitlab (or Bitbucket) repository 
  - Builds the artifacts using DS binaries
  - Deploys the artifacts in the TEST environments
 
@@ -169,8 +166,8 @@ To use the public key, you need to click right on the key saved *(.ppk format)* 
  - And fill the required fields
 
 > [!Note]
-> Copy-paste the entire public key generated before and then delete the last part until equal sign and press **Create user**
-
+> Copy-paste the entire public key generated before and press **Create user**
+> Don't forget to click **Save private key** from PuTTY Key Generator in order to save the private key that you may use later.
 
 ![](./images/user-details.png)
 
@@ -183,7 +180,8 @@ The same as for the first user added, first make sure you generated a **new** SS
  - And fill the required fields
 
 > [!Note]
-> Copy-paste the entire **public** key generated before and then delete the last part until equal sign and press **Create**
+> Copy-paste the entire **public** key generated before and press **Create**
+> Don't forget to click **Save private key** from PuTTY Key Generator in order to save the private key that you may use later.
 
 ![](./images/user-new-second.png)
 
@@ -196,14 +194,15 @@ In this repository you have to add the ssh keys for the users created in order t
 
 The users created into the https://portal.temenos.cloud/ will be automatically added in the Gitlab repo.
 
-- Log in to GitLab as an **admin** and follow below steps:
+- Log into GitLab ([https://staging-gitlab.temenos.cloud/admin](https://staging-gitlab.temenos.cloud/admin)) as an **admin** and follow below steps:
 
-    - Click on the key for admin area
-    - Go to **users** tab
-    - Search the users created (*example: cristina*) and press enter
-    - Click on the user name and then on the edit button on the right
-    - Set a password of minimum 8 chars and repeat password for confirmation, then Save changes
-    - Logout from admin menu and login with the new user and the password set before
+    - Click on the key for admin area:
+    - ![](./images/jenkins-build-admin.png)
+    - Go to **users** tab.
+    - Search the users created (*example: cristina*) and press enter. In case the user is not automatically added (due to a different platform use), please go to **New user** button and add the required users. 
+    - Click on the user name and then on the edit button on the right.
+    - Set a password of minimum 8 chars and repeat password for confirmation, then Save changes.
+    - Logout from admin menu and login with the new user and the password set before.
 
 
 - **Change user password:**
@@ -234,12 +233,17 @@ You also need to add the created user to your project and give full access:
   3. Then **Manage access** on the right
   4. Then find your member (user), select Master from dropdown list to give full permission for this user and then **Add to project**
 
+![](./images/jenkins-build-project.png)
 
 ![](./images/jenkins-build-user-gitlab-role.png)
 
-## Add credentials and Use ID from 'temenos-ds-demo' Project
+## Add credentials and Use ID from 'Temenos-DS-R18.11-Demo' Project
 
-Inside Jenkins console, go to Credentials from left pane and then click global:
+- Go back to your organisation on TCD portal, click on BuildServices environment and access from there the Jenkins Dashboard.
+- Login with user admin and the password previously changed (see <a href="./jenkins-build-promote-pipelines.md#login-to-jenkins" target="blank">**this step**</a>).
+
+
+- Inside Jenkins console, go to Credentials from left pane and then click global:
 
 ![](./images/jenkins-build-credentials.png)
 
@@ -261,7 +265,7 @@ Then add credentials:
 ![](./images/jenkins-build-fields.png)
 
 > [!Note]
-> The ID field must be completed with the **sshagent credentials** taken from the JenkinsFile available on [https://github.com/temenostech/temenos-ds-demo](https://github.com/temenostech/temenos-ds-demo) as in the picture above.
+> The ID field must be completed with the **sshagent credentials** taken from the JenkinsFile available on [https://staging-gitlab.temenos.cloud/root/Temenos-DS-R18.11-Demo/blob/master/JenkinsFile](https://staging-gitlab.temenos.cloud/root/Temenos-DS-R18.11-Demo/blob/master/JenkinsFile) as in the picture above.
 
 <br>
 
@@ -276,13 +280,13 @@ Then add credentials:
 
 ![](./images/jenkins-build-fields2.png)
 
-Now if you click on credentials, you will see the following screen with both users details:
+Now if you click on credentials, you will see the following screen with both users details (on the Jenkins dashboard from your 'BuildServices' environment):
 
 
-![](./images/jenkins-build-user-id.png)
+![](./images/jenkins-build-users-credentials.png)
 
 > [!Note]
-> This uniqe ID of SSH key will be used in the pipeline scripts (Jenkins File) to clone the repositories. 
+> This unique ID of SSH key will be used in the pipeline scripts (Jenkins File) to clone the repositories. 
 
 
 ## Configure Jenkins pipeline job to use SSH keys
@@ -299,7 +303,7 @@ Now if you click on credentials, you will see the following screen with both use
 
 - And finally click on 'Pipeline'
 
-![](./images/jenkins-build-pipeline.png) 
+![](./images/jenkins-build-pipeline1.png) 
 
   - On the same screen, make sure you have the Jenkins File path in Script Path, then click on Apply and 'Save' 
 
@@ -333,7 +337,8 @@ Click **Build**.
 
 > [!Note] The environment ID is the one that appears on the URL address after you login and you click on your environment:
 > 
->![](./images/jenkins-build-environment-id.png) 
+>![](./images/jenkins-build-environmentid.png) 
+> In this case, we have used the DevEnv_201811 created initially on the platform.
 
 Build should be successful:
 
@@ -348,7 +353,7 @@ Build should be successful:
 
  - And finally click on 'Pipeline'
 
--  Insert your repository URL (*in our example: git@staging-gitlab.temenos.cloud:root/Temenos-DS-Demo.git*)
+-  Insert your repository URL (*in our example: git@staging-gitlab.temenos.cloud:root/Temenos-DS-R18.11-Demo.git*)
 -  Credentials: use the second user that you added to the portal
 -  Script Path: PromoteChangesJenkinsFile
 
@@ -363,3 +368,11 @@ New screen is open:
 ![](./images/jenkins-build-promote-screen.png) 
 
 Click **Build**.
+
+> [!Note] 
+> The image above displays only an example.
+> 
+> **SourceEnvID** is the one of the DevEnv_201811 created on the platform.
+> 
+> **TargetEnvID** is the one of the IntegrationEnv_201811created on the platform.
+> (see <a href="./jenkins-build-promote-pipelines.md#create-the-required-environments" target="blank">**here**</a>).
