@@ -14,60 +14,25 @@ width="100%" height="400" frameborder="0" allowfullscreen></iframe>
 </html>
 
 **2. Menu COS**
-<html>
- <body>
-<iframe src="https://www.youtube.com/embed?v=JACsBLJqm6g&list=PLFOnYXkU0RWMBwlisyMd13Ol0mukQFWGS&index=9"
-width="100%" height="400" frameborder="0" allowfullscreen></iframe>
- </body>
-</html>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/JACsBLJqm6g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **3. LocalFields withEnums**
-<html>
- <body>
-<iframe src="https://www.youtube.com/embed?v=bfgk37pePFI&list=PLFOnYXkU0RWMBwlisyMd13Ol0mukQFWGS&index=13"
-width="100%" height="400" frameborder="0" allowfullscreen></iframe>
- </body>
-</html> 
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/bfgk37pePFI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **4. DATA ESON overview**
-<html>
- <body>
-<iframe src="https://www.youtube.com/embed?v=F24oP_7j_z4&list=PLFOnYXkU0RWMBwlisyMd13Ol0mukQFWGS&index=10"
-width="100%" height="400" frameborder="0" allowfullscreen></iframe>
- </body>
-</html>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/F24oP_7j_z4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **5. Packager overview**
-<html>
- <body>
-<iframe src="https://www.youtube.com/embed?v=wETFA5KEr_g&list=PLFOnYXkU0RWMBwlisyMd13Ol0mukQFWGS&index=15"
-width="100%" height="400" frameborder="0" allowfullscreen></iframe>
- </body>
-</html>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/wETFA5KEr_g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **6. Packager profiles**
-<html>
- <body>
-<iframe src="https://www.youtube.com/embed?v=lN5jjvUTMaA&list=PLFOnYXkU0RWMBwlisyMd13Ol0mukQFWGS&index=12"
-width="100%" height="400" frameborder="0" allowfullscreen></iframe>
- </body>
-</html>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/lN5jjvUTMaA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **7. Packager Jenkins Integration**
-<html>
- <body>
-<iframe src="https://www.youtube.com/embed?v=0zGsSP1vReY&list=PLFOnYXkU0RWMBwlisyMd13Ol0mukQFWGS&index=11"
-width="100%" height="400" frameborder="0" allowfullscreen></iframe>
- </body>
-</html>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/0zGsSP1vReY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **8. EnableSourceControl GIT**
-<html>
- <body>
-<iframe src="https://www.youtube.com/embed?v=3zJaWm7kjPw&list=PLFOnYXkU0RWMBwlisyMd13Ol0mukQFWGS&index=14"
-width="100%" height="400" frameborder="0" allowfullscreen></iframe>
- </body>
-</html>
-
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/3zJaWm7kjPw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ 
 > [!Note]
 > For more information please reach out to our team at **cloudplatformsupport@temenos.com**.
