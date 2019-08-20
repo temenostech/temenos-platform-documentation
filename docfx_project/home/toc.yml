@@ -59,7 +59,9 @@
        - name: Access UD Directories
          href: ./access-ud-directories-video.md
        - name: FCM Cloud Configuration
-         href: ./fcm-configuration-video.md   
+         href: ./fcm-configuration-video.md
+       - name: Design Studio Tutorials
+         href: ./design-studio-tutorials.md         
 - name: Assemble
   href: ./assemble.md
   items:
