@@ -122,6 +122,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "home/design-studio-tutorials.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/design-studio-tutorials.html",
+          "hash": "eYOyrZWa46EveOqWgV2Zxg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "home/enterprise-view.md",
       "output": {
         ".html": {
@@ -5030,7 +5042,7 @@
       "output": {
         ".html": {
           "relative_path": "home/toc.html",
-          "hash": "oeUOgaQdNLqsWXbfWYc8Lg=="
+          "hash": "iUPYMq5spEt1qNoBR/50yQ=="
         }
       },
       "is_incremental": false,
