@@ -69,14 +69,14 @@ b. **Failure Webhook** – Same as Success Webhooks. But are called when the fac
 ## Set-up/ Create a Factory ##
 
 - Click on Settings button on the main menu on the left.
-- Make sure you select first the Stream and Stage where you want to create a factory and then click **New Factory** button on the top-right.
+- Make sure you select first the **Stream** and **Stage** (this is the stage where components are promoted) where you want to create a factory and then click **New Factory** button on the top-right.
 - Fill the required fields (see all definitions above and also below example). All fields are mandatory except the last three *(Base Products, Success Webhook and Failure Webhook)*. 
-    - Name: choose a meaningful name for your factory.
-    - Description: put a description that will help knowing what the factory is about.
-    - Templates: choose an Environment Template from the dropdown list. Based on this template will be created the environments where you will be able to test different products.
-    - Test Environment Template: this is a defaulted test tool available on the Platform in order to be able to run your tests on the Platform interface. Based on the Environment release you should choose the related Test Template.
-    - Source Stage: this is the stage with the stable version of components. 
-    - Base Stage *(target stage)*: this is the stage where components are promoted. When testing the first time, you can choose the same stage for source and base to make sure everything is promoted successfully.
+    - **Name**: choose a meaningful name for your factory.
+    - **Description**: put a description that will help knowing what the factory is about.
+    - **Templates**: choose an Environment Template from the dropdown list. Based on this template will be created the environments where you will be able to test different products.
+    - **Test Environment Template**: this is a defaulted test tool available on the Platform in order to be able to run your tests on the Platform interface. Based on the Environment release you should choose the related Test Template.
+    - **Source Stage**: this is the stage with the stable version of components. 
+    - **Base Stage**: this is the stage with the constituent components. When testing the first time, you can choose the same stage for source and base to make sure everything is promoted successfully.
     - Principle Products - these are promoted to the next stage and belong under Source Stage.
     - Base Products - these are products that don’t need to be promoted but they are required to test the Principle Products and they belong under the Base Stage.
 - Click **Create** button > the factory is successfully created. 

@@ -54,8 +54,10 @@ Fill the following parameters and press **'Create environment'**:
 
 - Fill the required fields and press **Create**.
 
+
 > [!Note]
 > It might take about 15-20 minutes to create an environment.
+
 
 
 > [!Note]
@@ -89,6 +91,7 @@ Sign in with user ***admin*** and password ***changeit***
 
 ![](./images/jenkins-build-login.png)
 
+
 > [!Note]
 > After first login, you will need to change the password.
 
@@ -103,6 +106,7 @@ Sign in with user ***admin*** and password ***changeit***
 - Input a new password, confirm it, click **'Apply'** and then **'Save'**
 
 ![](./images/jenkins-build-change-password.png)
+
 
 > [!Note]
 > ![](./images/jenkins-build-coffee.png) In case of a coffee break during the Jenkins configuration, the session may expire. 

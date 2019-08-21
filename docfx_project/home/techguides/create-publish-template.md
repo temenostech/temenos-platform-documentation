@@ -34,7 +34,7 @@ This feature offers the possibility to baseline a particular version of a produc
 
 ![](./images/create-template-artifacts.png)
 
-## Setting the Stage ##
+## Setting the Default Stage ##
 
 To proceed further with all the configurations required in order to run a factory, you need to have a default stage created.
 
