@@ -56,12 +56,11 @@ You can edit anytime the name, the description of the stage or choose the disabl
 
 
 Example 1: 
-- Suppose we have created a stream named Dev2 that has just the default stage (
-- ) and without adding other stages or configuring further components and products.
+- Suppose we have created a stream named Dev2 that has just the default stage and without adding other stages or configuring further components and products.
 - We can just go and delete this stream (even if it has the stable_dev associated to it).
 
 Example 2:
-- Suppose we have created a stream named Dev that has the default stage (stable_dev) and and also a stage named Primary_stage, without configuring further components and products.
+- Suppose we have created a stream named Dev that has the default stage (stable_dev) and also a stage named Primary_stage, without configuring further components and products.
 - In order to be able to delete a stream that has **more than the stable_dev stage**, we need first to go and delete the stages attached to it.
 - Go first to Stages button on the left menu > Select first your stream (top right) > Select the stage that you want to delete (others then stable_dev - *because this stage cannot be deleted*) > And click the delete button.
 

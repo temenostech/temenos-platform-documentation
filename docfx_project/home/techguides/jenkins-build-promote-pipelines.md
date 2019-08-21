@@ -57,6 +57,7 @@ Fill the following parameters and press **'Create environment'**:
 > [!Note]
 > It might take about 15-20 minutes to create an environment.
 
+
 > [!Note]
 > You will need to create following three environments:
 > 
