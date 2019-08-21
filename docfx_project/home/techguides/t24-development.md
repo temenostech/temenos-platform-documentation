@@ -330,4 +330,4 @@ Before starting to extract/load data files from/to your sandbox database, you mu
 * A success message should be displayed in the console.  
 ![extract data 3](./images/load_data_3.png)  
 
-For more tutorials on how Design Studio works, please check <a href="http://documentation.temenos.cloud/home/design-studio-tutorials.html/" target="_blank"><u>**here.**</u></a> 
+For more tutorials on how Design Studio works, please check <a href="http://documentation.temenos.cloud/home/design-studio-tutorials" target="_blank"><u>**here.**</u></a> 
