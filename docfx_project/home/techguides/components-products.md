@@ -46,7 +46,7 @@ These components have a structure associated and work in a standardized manner a
  - Login to the Temenos Continuous Deployment Platform.
  - Click on Settings button on the left menu > this will expand a menu containing buttons for: Streams, Stages, Products, Factory and General.  
  - Before creating a component, make sure you select first the stream *(top-right)* where you want to add the respective component. 
- - Click on **Products** button. (This button includes creation of the components and then 
+ - Click on **Products** button. (This button includes creation of the components)
  - Click on the **New Component** on the top right.
  - Select the Component Type from the dropdown list (the list displays all the components available for your Organization. This is based on the available templates).
  - Input a Name. *Take into account these conditions (also notified on the screen): Name can start only with a letter or an underscore and it can contain only letters, digits, underscores or hyphens.*
@@ -91,7 +91,7 @@ From here, select the template that you want to use:
  - Then from the available Templates Catalog, select the one that you need in order to check the components.
  - Under Full Template Content, scroll until you see the **components** section.
  - <span style="color:red">**Note:**</span><span style="color:red"> Usually there are at least two **components** sections: one related to T24 and another one refers to Model Bank Database (or other db). Depending on the template type, there could be more components, so please make sure you scroll down to check entirely the template in order to add all required components.</span>
- - Is is required to add at least all the mandatory components.
+ - It is required to add at least all the mandatory components.
  - <span style="color:red">In addition to the mandatory components, you will need to add those components you need to test - not related to your selected template.</span>
  - For all added components, make sure you add the related files archive into the artifactory as explained above.
 
