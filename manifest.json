@@ -429,6 +429,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "home/manage-artifactory-test-cycle-video.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/manage-artifactory-test-cycle-video.html",
+          "hash": "lXb6Re/qLiLmjAhjOshRUA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "home/overview.md",
       "output": {
         ".html": {
@@ -456,7 +468,7 @@
       "output": {
         ".html": {
           "relative_path": "home/run-factory-video.html",
-          "hash": "KakSSN1pJxShP6iwD9RegQ=="
+          "hash": "rya6d8ZVt3/vx9Nx94+y+g=="
         }
       },
       "is_incremental": false,
@@ -501,7 +513,7 @@
       "output": {
         ".html": {
           "relative_path": "home/setup-components-products-video.html",
-          "hash": "UlrXhwmpXaPFyeBUhdwhSg=="
+          "hash": "8+DOzT2Iv4ypSSHGNX6MHg=="
         }
       },
       "is_incremental": false,
@@ -513,7 +525,7 @@
       "output": {
         ".html": {
           "relative_path": "home/setup-factories-video.html",
-          "hash": "bo6VO0Sno7TswpRBau/8GA=="
+          "hash": "gBMe0PqAZmUso+RqiJiZAg=="
         }
       },
       "is_incremental": false,
@@ -525,7 +537,7 @@
       "output": {
         ".html": {
           "relative_path": "home/setup-stages-video.html",
-          "hash": "F0/rf89ch5ZwHYp8yAbemw=="
+          "hash": "V2ExP8MSnAduvtsrzsqRUA=="
         }
       },
       "is_incremental": false,
@@ -549,7 +561,7 @@
       "output": {
         ".html": {
           "relative_path": "home/setup-testcases-video.html",
-          "hash": "NNemdq42vWK1xRkrLk6OnQ=="
+          "hash": "GI9wi2OfaklpJg5WlNusVA=="
         }
       },
       "is_incremental": false,
@@ -5170,17 +5182,9 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build"
-        },
         "RestApiDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
           "incrementalPhase": "build"
         },
         "ResourceDocumentProcessor": {
@@ -5188,9 +5192,17 @@
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
           "incrementalPhase": "build"
         }
       }
