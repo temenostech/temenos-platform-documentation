@@ -12,11 +12,11 @@
 
 <span style="color:#005294">**INFO**</span>:
 <br>
- - <span style="color:#005294">**Create**</span> a new environment.
+ - <span style="color:#005294">**Create**</span> a new environment
 <br>
- - Create <span style="color:#005294">**a user**</span> on the portal and add the public <span style="color:#005294">**SSH key**</span>.
+ - Create <span style="color:#005294">**a user**</span> on the portal and add the public <span style="color:#005294">**SSH key**</span>
 <br>
- - Connect via <span style="color:#005294">**SFTP Client**</span>.
+ - Connect via <span style="color:#005294">**SFTP Client**</span>
 <br>
  - Check and use the <span style="color:#005294">**Live folders**</span>:
    - default 

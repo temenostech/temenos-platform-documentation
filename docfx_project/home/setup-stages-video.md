@@ -12,8 +12,12 @@
 
 <span style="color:#005294">**INFO**</span>:
 <br>
- - <span style="color:#005294">**Set-up/ Create a stage**</span> 
-  </br>
- - <span style="color:#005294">**Edit a stage**</span>
- </br>
- -  <span style="color:#005294">**Delete a stage**</span>
+ - Click on <span style="color:#005294">**Stage**</span> button, make sure you select the <span style="color:#005294">**Stream**</span> where you want to add a stage
+ <br>
+ - Click on <span style="color:#005294">**New Stage**</span> button on top right
+<br>
+ - Fill in the <span style="color:#005294">**Name**</span>
+<br>
+ - Fill in the <span style="color:#005294">**Description**</span>
+ <br>
+ - Click <span style="color:#005294">**Create**</span>.

@@ -7,7 +7,7 @@
 
 <span style="color:#005294">**INFO**</span>:
 <br>
- - Click on the New Component and <span style="color:#005294">**Click**</span>  on the TestCases folder 
+ - Click on the New Component and <span style="color:#005294">**Click**</span>  on the Test Cases folder 
   </br>
  - <span style="color:#005294">**Click**</span> on the Deploy button
  </br>
@@ -15,7 +15,7 @@
 </br>
  -  Choose <span style="color:#005294">**a meaningful name**</span>  for your factory
 </br>
- - <span style="color:#005294">**Choose Single or Multi**</span> based on number of zip folders that you need to upload and drop or select the test cases zip file
+ - Choose  <span style="color:#005294">**Single or Multi**</span> based on number of zip folders that you need to upload and drop or select the test cases zip file
 </br>
  - Click on the <span style="color:#005294">**Deploy**</span> button
 </br>

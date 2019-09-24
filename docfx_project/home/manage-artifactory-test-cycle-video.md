@@ -9,5 +9,5 @@
 <br>
  - After setting-up a factory, go to Dashboard on the main menu and  (in case you have more factories).<span style="color:#005294">**select the factory**</span> you created 
   </br>
- - <span style="color:#005294">**Click Run Now.**</span> 
+ - Click <span style="color:#005294">**Run Now.**</span> 
  </br>

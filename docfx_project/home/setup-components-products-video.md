@@ -19,7 +19,7 @@
 </br>
  -  <span style="color:#005294">**Fill**</span> the display name
 </br>
- -  <span style="color:#005294">**Click**</span> create
+ - <span style="color:#005294">**Click**</span> create.
 
 
 
