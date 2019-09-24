@@ -7,7 +7,7 @@
   "home/export-import-database-video.html": {
     "href": "home/export-import-database-video.html",
     "title": "",
-    "keywords": "Total video time : 18:13 minutes Total demo time : ~ 40 minutes (from which ~ 15 minutes the creation of the environment) INFO : Create two environments . Add a user on the portal and attach to it the public SSH key . Login to T24 from \"source\" environment and change a record in the database. Export the database of the source environment. Connect to SFTP server via WinSCP client using the user and the SFTP endpoint from the portal. Download the DB to the local machine. Clone the target environment. Push the database to the new (target) environment. Deploy the database to the target repository. Check the successful import of the database > Verify the changed record in T24."
+    "keywords": "Total video time : 15:06 minutes Total demo time : ~ 40 minutes (from which ~ 15 minutes the creation of the environment) INFO : Create two environments . Add a user on the portal and attach to it the public SSH key . Login to T24 from \"source\" environment and change a record in the database. Export the database of the source environment. Connect to SFTP server via WinSCP client using the user and the SFTP endpoint from the portal. Download the DB to the local machine. Clone the target environment. Push the database to the new (target) environment. Deploy the database to the target repository. Check the successful import of the database > Verify the changed record in T24."
   },
   "home/extend.html": {
     "href": "home/extend.html",
@@ -22,7 +22,7 @@
   "home/fcm-configuration-video.html": {
     "href": "home/fcm-configuration-video.html",
     "title": "",
-    "keywords": "Total video time : 8:47 minutes Total demo time : ~ 25 minutes (from which ~ 15 minutes the creation of the environment) INFO : Create new environment using FCM template. Check the endpoints : Financial Crime Mitigation and Interfaces Module. Create a user on the portal and attach the public SSH key . Connect to SFTP server with WinSCP client. Drag a message to be processed into the appropriate folder. Check Transaction Alert Manager from FCM application."
+    "keywords": "Total video time : 10:10 minutes Total demo time : ~ 25 minutes (from which ~ 15 minutes the creation of the environment) INFO : Create new environment using FCM template. Check the endpoints : Financial Crime Mitigation and Interfaces Module. Create a user on the portal and attach the public SSH key . Connect to SFTP server with WinSCP client. Drag a message to be processed into the appropriate folder. Check Transaction Alert Manager from FCM application."
   },
   "home/how-to-assemble.html": {
     "href": "home/how-to-assemble.html",
@@ -42,7 +42,7 @@
   "home/jenkins-build-video.html": {
     "href": "home/jenkins-build-video.html",
     "title": "",
-    "keywords": "Total video time : 21:54 minutes Total demo time : ~ 30 minutes (from which ~ 15 minutes the creation of the environments > creation of the environments can be simultaneous ) INFO : Create new environments : Build environment Source environment Target environment Login to Jenkins and change the password. Generate and save two pairs of public and private SSH keys . Create two users on the portal and attach the public SSH keys. Add the two users on the GitLab and attach the related private SSH keys. Add credentials in Jenkins dashboard. Configure the Pipeline Build . Click Pipeline > Build. Click Pipeline Promote Changes > Build."
+    "keywords": "Total video time : 22:51 minutes Total demo time : ~ 30 minutes (from which ~ 15 minutes the creation of the environments > creation of the environments can be simultaneous ) INFO : Create new environments : Build environment Source environment Target environment Login to Jenkins and change the password. Generate and save two pairs of public and private SSH keys . Create two users on the portal and attach the public SSH keys. Add the two users on the GitLab and attach the related private SSH keys. Add credentials in Jenkins dashboard. Configure the Pipeline Build . Click Pipeline > Build. Click Pipeline Promote Changes > Build."
   },
   "home/Legal.html": {
     "href": "home/Legal.html",
@@ -202,12 +202,12 @@
   "home/access-ud-directories-video.html": {
     "href": "home/access-ud-directories-video.html",
     "title": "",
-    "keywords": "Total video time : 6:25 minutes Total demo time : ~ 20 minutes (from which 15 minutes the cloning of the environment) INFO : Create a new environment. Create a user on the portal and add the public SSH key . Connect via SFTP Client . Check and use the Live folders : default log_t24 standalone"
+    "keywords": "Total video time : 7:28 minutes Total demo time : ~ 20 minutes (from which 15 minutes the cloning of the environment) INFO : Create a new environment. Create a user on the portal and add the public SSH key . Connect via SFTP Client . Check and use the Live folders : default log_t24 standalone"
   },
   "home/add-features-to-environment-video.html": {
     "href": "home/add-features-to-environment-video.html",
     "title": "",
-    "keywords": "Total video time : 21:31 minutes Total demo time : ~ 35 minutes (from which 15 minutes the creation of the environment) INFO : Add a user on the portal and attach the public SSH key. Clone an environment in order create a local repository . Add files or packages to each related folder: addons, packages, plugins, updates, wsdls and client files . Commit and push all elements to the environment repository. Deploy the elements by clicking the deploy button under the repository belonging to the environment."
+    "keywords": "Total video time : 20:59 minutes Total demo time : ~ 35 minutes (from which 15 minutes the creation of the environment) INFO : Add a user on the portal and attach the public SSH key. Clone an environment in order create a local repository . Add files or packages to each related folder: addons, packages, plugins, updates, wsdls and client files . Commit and push all elements to the environment repository. Deploy the elements by clicking the deploy button under the repository belonging to the environment."
   },
   "home/architecture.html": {
     "href": "home/architecture.html",
@@ -237,7 +237,7 @@
   "home/create-dev-env-video.html": {
     "href": "home/create-dev-env-video.html",
     "title": "",
-    "keywords": "Total video time : 8:50 minutes Total demo time : ~ 20 minutes (from which ~ 15 minutes the creation of the environment) INFO : Create a new environment . Change environment name and description . Check Monitor Application endpoint. Check Go to Application endpoint to open a T24 instance. Generate an SSH key and attach it to a user on the portal. Clone a repository using Tortoise Git. Use available buttons/ functions : stop, rebuild, scale (up and down), export and delete."
+    "keywords": "Total video time : 9:54 minutes Total demo time : ~ 20 minutes (from which ~ 15 minutes the creation of the environment) INFO : Create a new environment . Change environment name and description . Check Monitor Application endpoint. Check Go to Application endpoint to open a T24 instance. Generate an SSH key and attach it to a user on the portal. Clone a repository using Tortoise Git. Use available buttons/ functions : stop, rebuild, scale (up and down), export and delete."
   },
   "home/design-studio-tutorials.html": {
     "href": "home/design-studio-tutorials.html",
