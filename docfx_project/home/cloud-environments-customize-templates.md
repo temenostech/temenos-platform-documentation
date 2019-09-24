@@ -1,13 +1,12 @@
 <html>
  <body>
-<iframe src="https://www.youtube.com/embed/wEyJOtSrijI"
-width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Bwr4eiy4p1A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
  </body>
 </html>
 
 <br>
 
-<span style="color:#005294">**Total video time**</span>: **22:28 minutes**
+<span style="color:#005294">**Total video time**</span>: **21:02 minutes**
 <br>
 <span style="color:#005294">**Total demo time**</span>: **~ 40 minutes** (from which **15 minutes** the cloning of the environment and **~ 10 minutes** the rebuild action - *the duration depends also on the changes*)
 
