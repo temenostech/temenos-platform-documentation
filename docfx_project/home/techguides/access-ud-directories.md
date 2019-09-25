@@ -55,14 +55,29 @@ To see all the steps regarding how to add a new user on the portal and to attach
 
 ## Check and Use Live Folders 
 
- - After logging in, on the right window, locate your envirnoment ID
- - Double click to access the live folders of the environment
- - You will be able to see and access the following T24 live folders structure:
+ - After logging in, on the right window, locate your environment ID
+
+
+![](./images/environment-id.png)
+<br><br>
+ 
+
+-  Double click to access the live folders of the environment
+
+
+![](./images/open-live-folders.png)
+ 
+
+
+-  You will be able to see and access the following T24 live folders structure:
    - <span style="color:orange">**default**</span>
    - <span style="color:orange">**log_t24**</span>
    - <span style="color:orange">**standalone**</span>
 
-<br>
+
+![](./images/T24-live-folders.png)
+
+
 
    - <span style="color:orange">**default**</span> - *for example, here you can push a message file into the application that you need to test*. 
    - Also into the **default** folder, you can create a folder and add some files to it, if you need them to do some specific actions. The folder you create/ add is supposed to point to the **T24_HOME** location.
@@ -74,7 +89,8 @@ To see all the steps regarding how to add a new user on the portal and to attach
 
  - Go to your environment on the portal 
  - Click on MONITOR APPLICATION  
- <br>
+
+
 ![access ud directories schema](./images/env_gotoapplication.png)
 
 <br>
@@ -83,11 +99,12 @@ To see all the steps regarding how to add a new user on the portal and to attach
  - Then click on tdiag (the path will look similar to this: https://t24-1xxxxxxxxxxxxo.dev.temenos.cloud/TAFJEE/tDiag)  the xxx part represents your environment's id
  - Scroll down a bit until you get to "**TAFJ Runtime properties**" section
  - Here you can see: temn.tafj.runtime.directory.current	/opt/rh/eap7/root/usr/share/wildfly/default
- <br>
+
   ![access ud directories schema](./images/env_tajfruntimeproperties.png)
  
 <br>
-- If for example, you need to create a folder into the default location (/temenossftp/*yourorgid/yourenvid/yourenvid*/default) named "demo" then, in the T24 area the appropriate path will be **/opt/rh/eap7/root/usr/share/wildfly/default/demo**.
+- If for example, you need to create a folder into the default location (/temenossftp/*yourorgid/your
+- id/yourenvid*/default) named "demo" then, in the T24 area the appropriate path will be **/opt/rh/eap7/root/usr/share/wildfly/default/demo**.
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<span style="color:#010466;font-size:14pt;">Point to the T24_HOME path:</span>*
