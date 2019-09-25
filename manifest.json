@@ -597,7 +597,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/access-ud-directories.html",
-          "hash": "SKyB7QFrRKyBfJvPcI3EZg=="
+          "hash": "t9S3K9nJbhry/MstKto4ng=="
         }
       },
       "is_incremental": false,
@@ -754,6 +754,17 @@
         ".html": {
           "relative_path": "home/techguides/fix-issues-factory-run.html",
           "hash": "VhjzSzA+O5jTR7u4XuwUnA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/T24-live-folders.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/T24-live-folders.png"
         }
       },
       "is_incremental": false,
@@ -2411,6 +2422,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/environment-id.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/environment-id.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/export-environment.png",
       "output": {
         "resource": {
@@ -3647,6 +3669,28 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/ok_after_push.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/open-live-folders.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/open-live-folders.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/organisation-id.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/organisation-id.png"
         }
       },
       "is_incremental": false,

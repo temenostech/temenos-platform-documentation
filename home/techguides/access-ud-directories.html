@@ -131,8 +131,15 @@
 </ul>
 <h2 id="check-and-use-live-folders">Check and Use Live Folders</h2>
 <ul>
-<li>After logging in, on the right window, locate your envirnoment ID</li>
+<li>After logging in, on the right window, locate your environment ID</li>
+</ul>
+<p><img src="images/environment-id.png" alt="">
+<br><br></p>
+<ul>
 <li>Double click to access the live folders of the environment</li>
+</ul>
+<p><img src="images/open-live-folders.png" alt=""></p>
+<ul>
 <li>You will be able to see and access the following T24 live folders structure:<ul>
 <li><span style="color:orange"><strong>default</strong></span></li>
 <li><span style="color:orange"><strong>log_t24</strong></span></li>
@@ -140,7 +147,7 @@
 </ul>
 </li>
 </ul>
-<p><br></p>
+<p><img src="images/T24-live-folders.png" alt=""></p>
 <ul>
 <li><span style="color:orange"><strong>default</strong></span> - <em>for example, here you can push a message file into the application that you need to test</em>. </li>
 <li>Also into the <strong>default</strong> folder, you can create a folder and add some files to it, if you need them to do some specific actions. The folder you create/ add is supposed to point to the <strong>T24_HOME</strong> location.</li>
@@ -153,9 +160,9 @@
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em><span style="color:#010466;font-size:14pt;">Find the T24_HOME path:</span></em></p>
 <ul>
 <li>Go to your environment on the portal </li>
-<li>Click on MONITOR APPLICATION<br><br>
-<img src="images/env_gotoapplication.png" alt="access ud directories schema"></li>
+<li>Click on MONITOR APPLICATION  </li>
 </ul>
+<p><img src="images/env_gotoapplication.png" alt="access ud directories schema"></p>
 <p><br></p>
 <ul>
 <li><p>Login with your credentials (these will be provided by Temenos)</p>
@@ -163,13 +170,14 @@
 <li><p>Then click on tdiag (the path will look similar to this: <a href="https://t24-1xxxxxxxxxxxxo.dev.temenos.cloud/TAFJEE/tDiag">https://t24-1xxxxxxxxxxxxo.dev.temenos.cloud/TAFJEE/tDiag</a>)  the xxx part represents your environment&#39;s id</p>
 </li>
 <li>Scroll down a bit until you get to &quot;<strong>TAFJ Runtime properties</strong>&quot; section</li>
-<li>Here you can see: temn.tafj.runtime.directory.current    /opt/rh/eap7/root/usr/share/wildfly/default
-<br>
-<img src="images/env_tajfruntimeproperties.png" alt="access ud directories schema"></li>
+<li><p>Here you can see: temn.tafj.runtime.directory.current    /opt/rh/eap7/root/usr/share/wildfly/default</p>
+<p><img src="images/env_tajfruntimeproperties.png" alt="access ud directories schema"></p>
+</li>
 </ul>
 <p><br></p>
 <ul>
-<li>If for example, you need to create a folder into the default location (/temenossftp/<em>yourorgid/yourenvid/yourenvid</em>/default) named &quot;demo&quot; then, in the T24 area the appropriate path will be <strong>/opt/rh/eap7/root/usr/share/wildfly/default/demo</strong>.</li>
+<li>If for example, you need to create a folder into the default location (/temenossftp/*yourorgid/your</li>
+<li>id/yourenvid<em>/default) named &quot;demo&quot; then, in the T24 area the appropriate path will be **/opt/rh/eap7/root/usr/share/wildfly/default/demo</em>*.</li>
 </ul>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em><span style="color:#010466;font-size:14pt;">Point to the T24_HOME path:</span></em></p>
 <p>Into the newly added folder (on default location), make sure you create a configuration file in which you set also the path to your folder.</p>
