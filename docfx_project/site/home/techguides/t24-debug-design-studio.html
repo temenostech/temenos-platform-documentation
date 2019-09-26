@@ -1,0 +1,388 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>T24 Remote Debug Using Local Design Studio </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="T24 Remote Debug Using Local Design Studio ">
+    <meta name="generator" content="docfx 2.22.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/woocircle.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" class="T24 Remote Debug Using Local Design Studio ">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar" role="navigation">
+          <div class="container">
+            <div class="row">
+              <div class="navbar-header col-md-2">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                
+                <a class="navbar-brand" href="/index.html">
+                  <img id="logo" src="/logo.png" alt="">
+                </a>
+              </div>
+              <div class="themainmenu col-md-10">
+              <div class="collapse navbar-collapse" id="navbar">
+                <form class="navbar-form navbar-right" role="search" id="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                  </div>
+                </form>
+              </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="t24-remote-debug-using-local-design-studio">T24 Remote Debug Using Local Design Studio</h1>
+
+<p>This is an example of how to debug a JBC session from a Cloud T24 environment using a local Design Studio.</p>
+<p>In order to do this, you have to deploy in a T24 environment a method that has some logs in it or some breakpoints added. After deployment, you have to trigger the method call so that you can see the logs or go through the added breakpoints → simplest example is to deploy a method that it is called when a T24 screen is opened.</p>
+<h2 id="steps-to-follow">Steps to follow:</h2>
+<p><strong>1. Create a R18 T24 env</strong></p>
+<p><strong>2. Download Design Studio R18 Kit</strong></p>
+<p><strong>3. Create and deploy the DS package with the debugging code:</strong></p>
+<p>   a. Create New Project in Design Studio</p>
+<p>   b. Uncheck XML for Local Fields</p>
+<p>   c. Create New T24 Server in Design Studio</p>
+<p>   d. Toggle Project to TAFJ project nature</p>
+<p>   e. Create a T24 package based on your project</p>
+<p>   f. Deploy a T24 package to the Environment</p>
+<p>   g. Trigger the deployment</p>
+<p><strong>4. Create/run the JBC Remote Debug Session in Design Studio</strong></p>
+<p><strong>5. Check the Debugging into T24 and DS</strong></p>
+<h2 id="1-create-a-r18-t24-env">1. Create a R18 T24 env</h2>
+<p>For the environment created it has been used a &#39;T24 Release 201811&#39; template.</p>
+<h2 id="2-download-design-studio-r18-kit">2. Download Design Studio R18 Kit</h2>
+<ul>
+<li>Under the T24 Release environment, check the endpoint with the downloadable Design Studio Kit. </li>
+<li>Click the download button in order to save the zip locally. After downloading, extract the zip (click right &gt; extract to...)</li>
+</ul>
+<h2 id="3-create-and-deploy-the-ds-package-with-the-debugging-code">3. Create and deploy the DS package with the debugging code</h2>
+<p>  a. Create New Project in Design Studio</p>
+<p>  b. Uncheck XML for Local Fields</p>
+<p>  c. Create New T24 Server in Design Studio</p>
+<p>  d. Toggle Project to TAFJ project nature</p>
+<p>  e. Create a T24 package based on your project</p>
+<p>  f. Deploy a T24 package to the Environment</p>
+<p>  g. Trigger the deployment</p>
+<p>As main action, you need to take the source code (E.NOFILE.PP.INQ.MAIN) provided by Temenos team, create a Design Studio package with it and deploy it to the R18 T24 env.</p>
+<p>After downloading DS and extracting it in your local machine to any location, the bellow folders should be available:</p>
+<ul>
+<li>DS</li>
+<li>t24Lib</li>
+<li>TAFJ</li>
+</ul>
+<p>To be able to interrogate the environment database, following update must be applied to <strong>tafj.properties</strong> file from Your_DEV_Path\TAFJ\conf:  </p>
+<p>temn.tafj.jdbc.url=jdbc:h2:tcp://<strong>ENV_DNS</strong>:9092/TAFJDB;MODE=Oracle;TRACE_LEVEL_FILE=0;
+TRACE_LEVEL_SYSTEM_OUT=0;DB_CLOSE_ON_EXIT=FALSE;
+FILE_LOCK=NO;IFEXISTS=TRUE;CACHE_SIZE=131072;
+MVCC=TRUE;LOCK_TIMEOUT=30000<br> <span style="color:red">Replace <strong>ENV_DNS</strong> with <strong>your environment DNS</strong>.</span>
+To find out which is your environment DNS, go on the portal, click on your environment, click the endpoint &#39;GO TO APPLICATION&#39; and the ENV_DNS that you need to copy should look similar to this example: t24-1dv8s1ppct07f.dev.temenos.cloud</p>
+<h4 id="a-create-new-project-in-design-studio">a. Create New Project in Design Studio</h4>
+<p>In order to accomplish the development actions presented at the beginning of the guide, you need to create a new project in Design Studio.</p>
+<ul>
+<li>Start Design Studio from <em>DesignStudio</em> folder using <strong>StartDesignStudio.bat</strong> file and choose the default workspace (Your_DEV_Path\DesignStudio\workspace) or any other workspace from your local machine.</li>
+<li>After Design Studio starts, go to <strong>File</strong> &gt; <strong>New</strong> &gt; <strong>Project</strong>.  </li>
+<li>Select <strong>Design Studio Template Project</strong> from <strong>Design Studio</strong> item and click <strong>Next</strong>.<br><img src="images/ds-template-project.png" alt="design studio template project"></li>
+</ul>
+<p><br></p>
+<ul>
+<li>In the next screen, select <strong>t24-packager-tafj</strong> template from the drop down list and set <strong>tafjHome</strong>, <strong>insertDir</strong> and <strong>libDir</strong> parameters according to Your_DEV_Path.  </li>
+</ul>
+<div class="NOTE"><h5>Note</h5><p><span style="color:RED"><strong>VERY IMPORTANT!</strong></span></p>
+<p><span style="color:RED">Make sure you set the following values as per below instructions, otherwise the package installation will fail:</span></p>
+<ul>
+<li><p>project-name - always use small letters as per this standard: xx-name (in current example we used: <strong>ft-sample</strong>)</p>
+</li>
+<li><p>release - use the T24 release (example R17, R18, R19 etc.)</p>
+</li>
+<li><p>product-name: use ony two capital letters. <strong>Note</strong> that it must correspond to your project name: </p>
+<ul>
+<li>Example: if project-name is xx-name, the product-name must be XX </li>
+<li>Example: if project-name is ft-sample, the product-name must be FT </li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>component name - must be the same as in project name, after the &quot;-&quot;. Must start with capital letter.</p>
+<ul>
+<li>Example: if project-name is xx-name, the component-name must be Name </li>
+<li>Example: if project-name is ft-sample, the component-name must be Sample </li>
+</ul>
+</li>
+<li><p>version: make sure you input the correct version (example 18.11)</p>
+</li>
+<li><p>host - login to the portal, go to your Environment &gt; Go to Application &gt; Select the address of your T24 environment (example: <a href="https://t24-1abbbbbccc900.temenos.cloud">https://t24-1abbbbbccc900.temenos.cloud</a>)</p>
+</li>
+</ul>
+</div>
+<p><img src="images/t24-configure-paths.png" alt="tafj package"></p>
+<p><br></p>
+<ul>
+<li><p>Click <strong>Finish</strong> to create the project and 4 modules will be created, as per bellow picture.<br>-&gt; ft-sample-<strong>data-code</strong>: holding basic routines and data files.<br>-&gt; ft-sample-<strong>models</strong>: holding Design Studio models(applications, enquiries, versions) that can be imported/exported from/to your environment.<br>-&gt; ft-sample-<strong>models-gen</strong>: holding files generated by Design Studio from the ft-sample-<strong>models</strong> project.<br>-&gt; ft-sample-<strong>packager</strong>: holding the launcher for creating a T24 package that can be deployed to your environment.</p>
+</li>
+<li><p>Make sure you check the <strong>secured box</strong> as in below picture:</p>
+</li>
+</ul>
+<p><img src="images/t24-created-projects.png" alt="created projects"></p>
+<p>Don&#39;t forget to sabve the change: <strong>CTRL+S</strong></p>
+<p><br></p>
+<h4 id="b-uncheck-xml-for-local-fields">b. Uncheck XML for Local Fields</h4>
+<p>Go to ft-sample-models &gt; click right and select Properties &gt; expand Design Studio &gt; click Code Generation &gt; expand All Categories &gt; Uncheck XML for Local Fields (LT/RTL)</p>
+<p><img src="images/t24-ft-sample-xml.png" alt="uncheck xml"></p>
+<p>Click Apply and OK. Wait for the workspace to be built.</p>
+<h4 id="c-create-new-t24-server-in-design-studio">c. Create New T24 Server in Design Studio</h4>
+<p>A T24 Server is required in Design Studio to be able to import/export applications/enquiries/versions from/to your machine. Follow next steps to create and configure a T24 server:</p>
+<ul>
+<li><p>On servers tab, click right and select <strong>Add New T24 Server</strong>.<br><img src="images/add-server.png" alt="add server">
+<br></p>
+</li>
+<li><p>A new screen is open. Type a <strong>name</strong> for the server(make sure it includes &#39;-server&#39; string) and click <strong>Next</strong>.<br><img src="images/project-name.png" alt="project name"><br><br></p>
+</li>
+<li><p>Choose connection type as <strong>T24 Server-Web Service</strong> and click <strong>Finish</strong>.<br><img src="images/connection-type.png" alt="connection type"><br><br></p>
+</li>
+<li><p>After the server is created, the <em>server.properties</em> must be updated according to your sandox details:<br>-&gt; In <em>T24 User (deployment only)</em> section, <strong>2 users</strong> that you use to connect to your T24 environment must be introduced.<br>-&gt; In <em>WebService (TAFJ) Connection</em> section, <strong>Secured box</strong> must be checked, <strong>Protocol</strong> must be set to <em>ws</em> value, <strong>Hostname</strong> must be set according to the hostname of your environment, <strong>Port</strong> must be set to <em>443</em> value and <strong>Context</strong> to <em>axis2</em> value.<br><img src="images/server-properties.png" alt="server properties">  </p>
+</li>
+</ul>
+<p><br>
+-&gt; To get the hostname of your environment, log-in to your organisation in TCD Portal (Temenos Continuous Deployment), go to your enviroment page and click on the <strong>GO TO Application</strong> Endpoint for the T24 application. The BrowserWeb page of your environment is opened and from the URL of this page, you must select the part between <em>https://</em> and <em>/BrowserWeb/servlet/BrowserServlet</em>.
+<img src="images/hostname.png" alt="hostname"></p>
+<p><br></p>
+<div class="NOTE"><h5>Note</h5><p>For future use, in case T24 Server is not visible, go to: <strong>Window &gt; Show View &gt; Other</strong>:</p>
+<p><img src="images/t24-view-server.png" alt="t24 server"></p>
+<p>Type Server in the search bar and select <strong>Design Studio &gt; Servers</strong>:</p>
+<p><img src="images/t24-view-server-search.png" alt="t24 server"></p>
+</div>
+<h4 id="d-toggle-project-to-tafj-project-nature">d. Toggle Project to TAFJ project nature</h4>
+<p>The <strong>Toggle TAFJ project nature</strong> action must be performed in order to be able to develop, compile and package jBC routines and to interrogate your environment database.  </p>
+<ul>
+<li>Right click on <strong>data-code</strong> module and choose <strong>Toggle TAFJ project nature</strong>.<br><img src="images/tafj-toggle-1.png" alt="tafj toggle 1"><br><br></li>
+<li>In the next screen, import <em>tafj_properties</em> from Your_DEV_Path/TAFJ/conf folder, choose TAFJ_HOME as Your_DEV_Path/TAFJ folder and click <strong>Next</strong>. In the bellow picture, DEV_Path is set to C:\TemenosDEV.
+<img src="images/tafj-toggle-2.png" alt="tafj toggle 2"><br><br></li>
+<li>In the next screens, click <strong>Next</strong> and <strong>Finish</strong>.<br><img src="images/tafj-toggle-3.png" alt="tafj toggle 3"><br><br></li>
+<li>In the end, <strong>data-code</strong> module should be toggled.<br><img src="images/tafj-toggle-4.png" alt="tafj toggle 4"><br><br></li>
+<li>A .properties file was created for your project in Your_DEV_Path/TAFJ/conf folder.<br><img src="images/tafj-toggle-5.png" alt="tafj toggle 5"><br><br></li>
+</ul>
+<div class="NOTE"><h5>Note</h5><p>If TAFJ properties for your project must be updated, make sure you update the .properties related to your project from Your_DEV_Path/TAFJ/conf folder.</p>
+</div>
+<h4 id="e-create-a-t24-package-based-on-your-project">e. Create a T24 package based on your project</h4>
+<p>Take the available code (E.NOFILE.PP.INQ.MAIN.b) and copy paste into the following folder location: D:*Your_Design Studio_kit*\DS\workspace\ft-sample-data-code\src\Source\FT_Sample\Source\Private</p>
+<p>In order to deploy this code into your environment, a T24 package must be created:</p>
+<ul>
+<li><p>Go to <strong>packager</strong> module in Design Studio workspace, right click on <strong>Launch T24 Packager (TAFJ).launch</strong> and choose <strong>Run As</strong> &gt; <strong>Launch T24 Packager (TAFJ)</strong>.
+<img src="images/build-project.png" alt="build-project">
+<br></p>
+</li>
+<li><p>Wait for the workspace to finish the build and check where the <strong>package</strong> was generated.</p>
+</li>
+</ul>
+<p><img src="images/check-build-success.png" alt="check build success">
+<br></p>
+<p>It should be located into the generated target folder: D:*Your_Design Studio_kit*\DS\workspace\ft-sample-packager\target</p>
+<h4 id="f-deploy-a-t24-package-to-environment">f. Deploy a T24 package to Environment</h4>
+<div class="NOTE"><h5>Note</h5><p>Make sure you cloned in your local machine the GitLab repository of your environment. You can check <a href="use-gitlab-repository.html" target="_blank"><strong>this user guide</strong></a> to see how to clone an environment repository locally.  </p>
+</div>
+<ul>
+<li>Copy the generated package into the <strong>packages</strong> folder of the cloned GitLab repository from your local machine:<br><img src="images/packages.png" alt="packages"><br><br></li>
+<li>If the package is a new file in the repository, the package must be first added to the repository:<br><img src="images/tortoise-add.png" alt="tortoise add"><br><br></li>
+<li>A screen will appear saying that the file was added. Press <strong>Commit</strong>:<br><img src="images/tortoise-commit.png" alt="tortoise commit"><br><br></li>
+<li>A new screen will appear. Insert a comment in the upper window and then choose <strong>Commit</strong>.<br><img src="images/commit-push.png" alt="tortoise commit and push"><br><br></li>
+<li>A new screen will appear and choose <strong>Push</strong>.<br><img src="images/push_after_commit.png" alt="tortoise push after commit"><br><br></li>
+<li>A new screen will appear and choose <strong>OK</strong>.<br><img src="images/ok_after_push.png" alt="tortoise ok after push"><br><br></li>
+<li>A success message should be displayed. Press <strong>Close</strong>.
+<br>
+<img src="images/success_after_push.png" alt="tortoise success after push">  </li>
+</ul>
+<h4 id="g-trigger-the-deployment">g. Trigger the deployment</h4>
+<ul>
+<li>After commiting and pushing to Environment Repository all the features, you have to deploy them in your Environment. </li>
+<li>Login to your organisation, select your environment, locate the Repository Application and click the Deploy button. </li>
+</ul>
+<p>For more details about the deployment, check the following <a href="use-gitlab-repository.html#trigger-deployment"><ins><strong>steps</strong></ins></a>.</p>
+<h2 id="4-createrun-the-jbc-remote-debug-session-in-design-studio">4. Create/run the JBC Remote Debug Session in Design Studio</h2>
+<p>Go to Design Studio &gt; RUN &gt; Debug Configurations </p>
+<p><img src="images/debug-configurations.png" alt=""> </p>
+<ul>
+<li><p>Then click on JBC Remote &gt; New Configuration</p>
+</li>
+<li><p>Make sure you have:</p>
+<ul>
+<li><p>Container Project: your project name</p>
+</li>
+<li><p>Host: the DNS of your environment <em>(you can take it if you click on your environment, then Go to Application)</em></p>
+</li>
+<li><p>Port: <strong>leave the default value as it is</strong> (<span style="color:red">don&#39;t change the value that appears on your screen otherwise debug will not work</span>)</p>
+</li>
+</ul>
+</li>
+<li><p>Click <strong>Apply</strong> and then <strong>Debug</strong></p>
+</li>
+</ul>
+<p><img src="images/debug-remote-config.png" alt=""> </p>
+<p>You will be able to see the debug data into the Console</p>
+<h2 id="5-check-the-debugging-into-t24">5. Check the Debugging into T24</h2>
+<ul>
+<li>You can add CRt in your code and you will be able to see it into the console:</li>
+</ul>
+<p><img src="images/add-crt.png" alt=""> </p>
+<ul>
+<li>Also you can toggle a breakpoint in your methog and then trigger the debug as explained below to see the information in the console:</li>
+</ul>
+<p><img src="images/toggle-breakpoint.png" alt=""> </p>
+<ul>
+<li>Log-in to T24 and go to User Menu &gt; Payment Hub &gt; Payment Inquiries &gt; Pending and Processed Payments &gt; Pending Process Payments - Party Wise &gt; click on <strong>Find</strong> button and the logs/breakpoints put in the previous method (E.NOFILE.PP.INQ.MAIN) should appear in debug session console.</li>
+<li>From this step further you can use the above buttons (the F5 - Step Into, F6 - Step Over and F7 Step Return - arrows) to continue the debug check.</li>
+</ul>
+<p><img src="images/console-output.png" alt=""> </p>
+<p><br></p>
+              <hr>
+              
+              <div id="disqus_thread"></div>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 footer-note left">
+              <p>
+                <a href="/"><img src="/logo-bottom.png" alt=""></a>
+                <a href="https://www.temenos.com/en/accessibility/">Accessibility</a>
+                <a href="https://www.temenos.com/en/legal-information/cookie-policy/">Cookie Policy</a>
+                <a href="https://www.temenos.com/en/legal-information/privacy-policy/">Privacy Policy</a>
+                <a href="https://www.temenos.com/en/legal-information/terms-and-conditions/">Terms & Conditions</a>
+              </p>
+            </div>
+      
+            <div class="col-md-6 footer-note right">
+              <p>
+                Copyright &copy; 2017 Temenos Headquarters SA <span>&#183;</span>
+                <a target="_blank" href="https://www.facebook.com/TemenosGroup"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+                <a target="_blank" href="https://twitter.com/Temenos"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a target="_blank" href="http://www.linkedin.com/company/temenos"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a target="_blank" href="//plus.google.com/u/0/100035548059267323447?prsrc=3"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+              </p>
+            </div>
+          </div>
+      
+        </div>
+      </footer>
+      
+      <div class="back-to-top">
+        <a href="#top">
+          <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i></span>
+        </a>
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script id="dsq-count-scr" src="//temenostech.disqus.com/count.js" async=""></script>
+    
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myshareDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.sharedropbtn')) {
+    
+        var dropdowns = document.getElementsByClassName("sharedropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+    
+    <script>
+    	window.onload = function(){
+        	document.getElementById("shareFacebook").href = 'https://www.facebook.com/sharer/sharer.php?u=' + window.location.toString();
+    
+        	document.getElementById("shareTwitter").href = 'https://twitter.com/intent/tweet?text=Temenos+Developer+Portal&url=' + window.location.toString();
+    
+        	document.getElementById("shareGoogle").href = 'https://plus.google.com/share?url=' + window.location.toString();
+    
+        	document.getElementById("shareLinkedin").href = 'https://www.linkedin.com/shareArticle?mini=true&url=' + window.location.toString() + '&title=Temenos+Developer+Portal&summary=&source=';
+    
+        	document.getElementById("shareEmail").href = 'mailto:' + window.location.toString();
+    	}
+    </script>
+    
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-38593742-8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-38593742-8');
+    </script>  
+  </body>
+</html>

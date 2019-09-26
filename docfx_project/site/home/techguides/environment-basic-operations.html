@@ -1,0 +1,295 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Environment Basic Operations </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Environment Basic Operations ">
+    <meta name="generator" content="docfx 2.22.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/woocircle.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" class="Environment Basic Operations ">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar" role="navigation">
+          <div class="container">
+            <div class="row">
+              <div class="navbar-header col-md-2">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                
+                <a class="navbar-brand" href="/index.html">
+                  <img id="logo" src="/logo.png" alt="">
+                </a>
+              </div>
+              <div class="themainmenu col-md-10">
+              <div class="collapse navbar-collapse" id="navbar">
+                <form class="navbar-form navbar-right" role="search" id="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                  </div>
+                </form>
+              </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="environment-basic-operations">Environment Basic Operations</h1>
+
+<p>After logging to the portal, go to the Environments tab on the left menu &gt; you will see available two buttons: Refresh and New Environment.</p>
+<p>After creating an environment, there are several actions (operations) that can be done via the available buttons: clone, edit, delete, start, stop, rebuild, export the database, boost and deploy the repository and also using the endpoints related to T24, the database or to the repository.
+<br></p>
+<p><img src="images/buttons-all.png" alt="buttons"></p>
+<p><br></p>
+<h2 id="environment-buttons">Environment buttons:</h2>
+<p><img src="images/button-refresh.png" alt="start"> <strong>Refreshing</strong> the page:</p>
+<ul>
+<li>Use this button to refresh any action in progress (related to an environment but also to a factory).</li>
+</ul>
+<p><br></p>
+<p><img src="images/button-new-environment.png" alt="start"> <strong>Creating</strong> a new environment:</p>
+<ul>
+<li>Displays the fields required to create an environment. here you can give a name and a description to your environment and choose a template.</li>
+</ul>
+<p><br></p>
+<p><img src="images/button-clone.png" alt="start"> <strong>Cloning</strong> an environment:</p>
+<ul>
+<li>Creates an identical environment by copying the Environment and configuration repository.</li>
+</ul>
+<p><br></p>
+<p><img src="images/button-edit.png" alt="start"> <strong>Editing</strong> an environment:</p>
+<ul>
+<li>Allows you to change the name and the description of an environment.</li>
+</ul>
+<p><br></p>
+<p><img src="images/button-delete.png" alt="delete"> <strong>Deleting</strong> and environment:</p>
+<ul>
+<li>Stops all instances of an Application in the Environment, removes all resources including configuration repository.</li>
+</ul>
+<h2 id="t24-release-section---available-actions">T24 Release section - available actions:</h2>
+<h3 id="span-stylecolororangefont-weight1000endpointsspan"><span style="color:orange;font-weight:1000;"><strong>Endpoints</strong>:</span></h3>
+<ul>
+<li><p>GO TO APPLICATION - clicking this endpoint, a new tab containing the T24 BrowserWeb URL will open in a new browser window. The username and password to be used here will have been sent via email.</p>
+</li>
+<li><p>MONITOR APPLICATION - clicking this endpoint, the TAFJEE Servlets page will open in a new browser tab and from here you can check the following sections:</p>
+<ul>
+<li>Diagnostic section: provides details about your TAFJ environment, get routine compilation details, etc.</li>
+<li>Execution section: run services, etc.</li>
+<li>Troubleshooting section: access log files, commo files, etc.
+<br></li>
+</ul>
+</li>
+<li>tcdSFTP.temenos.cloud - allows you to copy the SFTP link.</li>
+<li>Design Studio Kit - you can start downloading Design Studio tool (DS version is compatible to your environment). </li>
+</ul>
+<h3 id="span-stylecolororangefont-weight1000buttonsspan"><span style="color:orange;font-weight:1000;"><strong>Buttons</strong>:</span></h3>
+<p><img src="images/button-start.png" alt="start"> <strong>Starting</strong> an environment:</p>
+<ul>
+<li><p>After creating an environment, the Start button is automatically disabled as the environment is running. It will be enabled if an environment is stopped and it will start all the instances specified in the Environment configuration.</p>
+</li>
+<li><p>When the environment is stopped, start button is supposed to start the VMs where the database and the application server of a T24 environment are installed and also to start the application server (jboss, wildfly, WebSphere, etc.) so that T24 to be up and running. </p>
+</li>
+<li>However, please <strong>note</strong> that start button is not triggering also the deployment of whatever is present into the associated Git repository (like something that was committed when the environment was stopped or a T24 update package ( L1 development) that was not yet successfully deployed to the T24 area).</li>
+</ul>
+<p><br></p>
+<p><img src="images/button-stop.png" alt="stop"> <strong>Stopping</strong>  an environment:</p>
+<ul>
+<li>Stops all running instances of an Application in an Environment.</li>
+</ul>
+<p><br></p>
+<p><img src="images/button-rebuild.png" alt="rebuild"> <strong>Rebuilding</strong> an environment:</p>
+<ul>
+<li>It recreates the resourses into the cloud and re-installs T24 and H2 db.</li>
+<li>This is used for example when modifying the application templates (like changing the T24 displayed name or addign a new application).</li>
+</ul>
+<p><br></p>
+<p><img src="images/button-export.png" alt="export"> <strong>Exporting</strong> an environment:</p>
+<ul>
+<li>Allows to export and import an environment or a database through SFTP server.</li>
+</ul>
+<p>Clicking the &#39;Export Environment&#39; button will generate a zip file on the sftp.temenos.cloud portal containing:</p>
+<ul>
+<li>all jar files deployed in T24 sandbox and the correspondent module.xml file;</li>
+<li>the content of the default folder of T24;</li>
+<li>all war files deployed in the T24 sandbox and the jboss server log.</li>
+</ul>
+<h2 id="database-section---available-actions">Database section - available actions</h2>
+<h3 id="span-stylecolororangefont-weight1000buttonsspan"><span style="color:orange;font-weight:1000;"><strong>Buttons</strong>:</span></h3>
+<p><img src="images/button-export.png" alt="export"> <strong>Exporting</strong> the database:</p>
+<p>By clicking the &quot;Export database&quot; button a zip file will be generated in the sftp.cloud.temenos portal which will contain the current database of the sandbox. Note: This database can be used as a backup that can be deployed later on into the sandbox as a duplicate for testing/development or for local development before deploying to the cloud.</p>
+<h3 id="span-stylecolororangefont-weight1000endpointsspan"><span style="color:orange;font-weight:1000;"><strong>Endpoints</strong>:</span></h3>
+<ul>
+<li>tcdSFTP.temenos.cloud - allows you to copy the SFTP link.</li>
+</ul>
+<p><br></p>
+<h2 id="repository-section---available-actions">Repository section - available actions</h2>
+<h3 id="span-stylecolororangefont-weight1000buttonsspan"><span style="color:orange;font-weight:1000;"><strong>Buttons</strong>:</span></h3>
+<p><img src="images/button-boost.png" alt="boost"> <strong>Boosting</strong> </p>
+<ul>
+<li>Used to apply the changes made to the environments&#39; repository (you can modify the infra-templates, the playbooks or the roles).</li>
+</ul>
+<p><br></p>
+<p><img src="images/button-deploy.png" alt="deploy"><strong>Deploying</strong></p>
+<ul>
+<li>To be used when deploying newly added plugins, endpoints, updates, web services, packages etc.</li>
+</ul>
+<h3 id="span-stylecolororangefont-weight1000endpointsspan"><span style="color:orange;font-weight:1000;"><strong>Endpoints</strong>:</span></h3>
+<p>This section displays the gitlab repository correspondent to your T24 sandbox that you can copy it in order to clone the repository.</p>
+<ul>
+<li>example: git@tcdGitlab.temenos.cloud:1dyomzt4lxuyo/corebanking.git</li>
+</ul>
+<div class="NOTE"><h5>Note</h5><p><span style="color:RED"><strong>IMPORTANT!</strong></span></p>
+<p><span style="color:RED">As a good practice and in terms of reducing your costs, it is recommended that you don&#39;t keep an environment <strong>unused</strong>. Even if it&#39;s not used, it will still generate costs. The environment will be deleted by the Extend team (with a previous mail notification) when it is unused for more than 3 days (for internal clients), respectively for more than 7 days (for external clients).<p>
+<p>Also to reduce costs, the environment can be put on <strong>Stop</strong> and started only when required. The environments that are stopped will not be deleted.</span></p>
+</div>
+<p><br></p>
+              <hr>
+              
+              <div id="disqus_thread"></div>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 footer-note left">
+              <p>
+                <a href="/"><img src="/logo-bottom.png" alt=""></a>
+                <a href="https://www.temenos.com/en/accessibility/">Accessibility</a>
+                <a href="https://www.temenos.com/en/legal-information/cookie-policy/">Cookie Policy</a>
+                <a href="https://www.temenos.com/en/legal-information/privacy-policy/">Privacy Policy</a>
+                <a href="https://www.temenos.com/en/legal-information/terms-and-conditions/">Terms & Conditions</a>
+              </p>
+            </div>
+      
+            <div class="col-md-6 footer-note right">
+              <p>
+                Copyright &copy; 2017 Temenos Headquarters SA <span>&#183;</span>
+                <a target="_blank" href="https://www.facebook.com/TemenosGroup"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+                <a target="_blank" href="https://twitter.com/Temenos"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a target="_blank" href="http://www.linkedin.com/company/temenos"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a target="_blank" href="//plus.google.com/u/0/100035548059267323447?prsrc=3"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+              </p>
+            </div>
+          </div>
+      
+        </div>
+      </footer>
+      
+      <div class="back-to-top">
+        <a href="#top">
+          <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i></span>
+        </a>
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script id="dsq-count-scr" src="//temenostech.disqus.com/count.js" async=""></script>
+    
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myshareDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.sharedropbtn')) {
+    
+        var dropdowns = document.getElementsByClassName("sharedropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+    
+    <script>
+    	window.onload = function(){
+        	document.getElementById("shareFacebook").href = 'https://www.facebook.com/sharer/sharer.php?u=' + window.location.toString();
+    
+        	document.getElementById("shareTwitter").href = 'https://twitter.com/intent/tweet?text=Temenos+Developer+Portal&url=' + window.location.toString();
+    
+        	document.getElementById("shareGoogle").href = 'https://plus.google.com/share?url=' + window.location.toString();
+    
+        	document.getElementById("shareLinkedin").href = 'https://www.linkedin.com/shareArticle?mini=true&url=' + window.location.toString() + '&title=Temenos+Developer+Portal&summary=&source=';
+    
+        	document.getElementById("shareEmail").href = 'mailto:' + window.location.toString();
+    	}
+    </script>
+    
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-38593742-8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-38593742-8');
+    </script>  
+  </body>
+</html>

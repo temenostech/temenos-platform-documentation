@@ -1,0 +1,5263 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/DocumentationPortal/temenos-platform-documentation/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/Legal.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/Legal.html",
+          "hash": "HweYwC5rLqcTxwDs5uV5OQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/access-ud-directories-video.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/access-ud-directories-video.html",
+          "hash": "dApOQQ8UvaKRoUuJd1Axyg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/add-features-to-environment-video.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/add-features-to-environment-video.html",
+          "hash": "QTP2xTHySphwujjX3xsrvQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/architecture.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/architecture.html",
+          "hash": "t3WKA0D88+6bjcrbAXnU4Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/assemble.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/assemble.html",
+          "hash": "6YutUXQu+aQqNx0CgbcnfA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/benefits.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/benefits.html",
+          "hash": "StBwXZkkqSO3Lf9fRT19yQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/clone-environment-video.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/clone-environment-video.html",
+          "hash": "ny7DZBzoTxNWDb16ccQe7Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/cloud-environments-customize-templates.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/cloud-environments-customize-templates.html",
+          "hash": "4J4unGtKRsCXMyEOfh4D+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/create-dev-env-video.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/create-dev-env-video.html",
+          "hash": "4E97eUq8VC5hTKRe5vEPgw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/design-studio-tutorials.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/design-studio-tutorials.html",
+          "hash": "hKkmr8wep5rAbYd/BHuG9A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/enterprise-view.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/enterprise-view.html",
+          "hash": "gYMZOsfy0a24YUc3YXD+Tg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/export-import-database-video.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/export-import-database-video.html",
+          "hash": "4JG7Uot3x1IAoVHXd42bPg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/extend.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/extend.html",
+          "hash": "a8HZ6vRoQyhl+DbHFwJACg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/faq.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/faq.html",
+          "hash": "oIXaXAnnsPHUGyk0OSuADw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/fcm-configuration-video.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/fcm-configuration-video.html",
+          "hash": "B8TaFbzGG8cTPm/xbi5Tjg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/how-to-assemble.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/how-to-assemble.html",
+          "hash": "kwubSsCEoDa9JD/gahkKMw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/how-to-extend.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/how-to-extend.html",
+          "hash": "QZnm1l8T76zNGhzRvL4afA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/architecture-arrows.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/architecture-arrows.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/architecture-customer-facing-systems.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/architecture-customer-facing-systems.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/architecture-paas-deploy.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/architecture-paas-deploy.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/architecture-process.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/architecture-process.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/architecture-responsabilities.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/architecture-responsabilities.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/cloud-offering.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/cloud-offering.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/enterprise-view.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/enterprise-view.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/login-screen.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/login-screen.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/new-environment-create.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/new-environment-create.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/new-environment.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/new-environment.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/sandbox-templates.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/sandbox-templates.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/tcd-details.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/tcd-details.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/tcd-hosting-models.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/tcd-hosting-models.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/tcd.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/tcd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/templates.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/templates.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/tim.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/tim.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/users.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/users.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/index.html",
+          "hash": "kKccmsWJh63AD/9vwveJ/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/jenkins-build-video.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/jenkins-build-video.html",
+          "hash": "GzcVCXK5SeUicm47bwDqWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/manage-artifactory-test-cycle-video.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/manage-artifactory-test-cycle-video.html",
+          "hash": "T70uWfB+P6FU/dY56a32kg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/overview.html",
+          "hash": "BnTVqJfJzounnzcRn/75vQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/pdf/tcib-guide.pdf",
+      "output": {
+        "resource": {
+          "relative_path": "home/pdf/tcib-guide.pdf"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/run-factory-video.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/run-factory-video.html",
+          "hash": "rya6d8ZVt3/vx9Nx94+y+g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/scripts/getTemplateDetails.js",
+      "output": {
+        "resource": {
+          "relative_path": "home/scripts/getTemplateDetails.js"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/scripts/getTemplates.js",
+      "output": {
+        "resource": {
+          "relative_path": "home/scripts/getTemplates.js"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/scripts/js-yaml.min.js",
+      "output": {
+        "resource": {
+          "relative_path": "home/scripts/js-yaml.min.js"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/setup-components-products-video.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/setup-components-products-video.html",
+          "hash": "ChbEbShCnYmIm/VoNwU5zw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/setup-factories-video.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/setup-factories-video.html",
+          "hash": "gBMe0PqAZmUso+RqiJiZAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/setup-stages-video.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/setup-stages-video.html",
+          "hash": "9/BeFZIwB5XKVwZ9pr+WkA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/setup-streams-video.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/setup-streams-video.html",
+          "hash": "UYceJXwyP29Durf7myPcow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/setup-testcases-video.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/setup-testcases-video.html",
+          "hash": "SO4v2CB/tiRASFCnOi/UZA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/support.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/support.html",
+          "hash": "U6wjH0MM63eEJi19cMSLCg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/tcd-hosting-options.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/tcd-hosting-options.html",
+          "hash": "tgko5Jo3Tsfx+hxvhUhVcg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/techguides/access-ud-directories.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/access-ud-directories.html",
+          "hash": "t9S3K9nJbhry/MstKto4ng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/techguides/add-app-endpoint.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/add-app-endpoint.html",
+          "hash": "6GAQmTGj2K6SGwbrJJhg1Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/techguides/artifactory-test-cycle.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/artifactory-test-cycle.html",
+          "hash": "qCvBTkmF7yLr80olaJJmng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/techguides/clone-environment.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/clone-environment.html",
+          "hash": "ULFb3xtUTmuzgPxLqmQx1A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/techguides/component-product.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/component-product.html",
+          "hash": "cbg1xX0L+vvRYeZWoGXvRw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/techguides/components-products.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/components-products.html",
+          "hash": "x8VNjHFeSLpE0aCKQ70dEQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/techguides/create-publish-template.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/create-publish-template.html",
+          "hash": "UGAbt2oSMpPb2F5mxkd79A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/techguides/customize-templates.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/customize-templates.html",
+          "hash": "GZfDUIkT4sq0z6I5Z9Ms0w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/techguides/environment-basic-operations.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/environment-basic-operations.html",
+          "hash": "173/Gmya9IOJSjysJH64KA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/techguides/environment-creation-in-paas.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/environment-creation-in-paas.html",
+          "hash": "Mz4aOgN3o9EVsHP9M/gOjA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/techguides/export-import-database.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/export-import-database.html",
+          "hash": "0PxCJoOazWGksvdlsy5eaw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/techguides/factories.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/factories.html",
+          "hash": "nKgLIl0Rnku6Q9C5hK+miw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/techguides/fcm-configuration.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/fcm-configuration.html",
+          "hash": "TGeVA4vLEdodVR4Io7YRdg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/techguides/fix-issues-factory-run.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/fix-issues-factory-run.html",
+          "hash": "VhjzSzA+O5jTR7u4XuwUnA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/T24-live-folders.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/T24-live-folders.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/abn-package.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/abn-package.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/access-ud-como.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/access-ud-como.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/access-ud-endpoint.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/access-ud-endpoint.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/access-ud-new-env.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/access-ud-new-env.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/access-ud-schema.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/access-ud-schema.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/access-ud-sftp-fields.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/access-ud-sftp-fields.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/access-ud-standalone.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/access-ud-standalone.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/active-server.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/active-server.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/add-crt.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/add-crt.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/add-ppk-key.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/add-ppk-key.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/add-routine-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/add-routine-1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/add-routine-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/add-routine-2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/add-routine.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/add-routine.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/add-server.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/add-server.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/add-ssh-key.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/add-ssh-key.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/app-endpoint-all.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/app-endpoint-all.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/app-endpoint-append.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/app-endpoint-append.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/app-endpoint-clickable.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/app-endpoint-clickable.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/app-endpoint-edit.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/app-endpoint-edit.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/app-endpoint-files.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/app-endpoint-files.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/app-endpoint-grouped.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/app-endpoint-grouped.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/app-endpoint-multi.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/app-endpoint-multi.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/app-endpoint-multiple.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/app-endpoint-multiple.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/app-endpoint-single.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/app-endpoint-single.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/app-endpoints-deployed-type.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/app-endpoints-deployed-type.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/app-endpoints-multiple.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/app-endpoints-multiple.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/app_endp1.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/app_endp1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/artifactory-test-structure.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/artifactory-test-structure.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/basic-operations-all.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/basic-operations-all.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/blue-ocean-menu.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/blue-ocean-menu.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/blue-ocean-new-pipeline.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/blue-ocean-new-pipeline.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/boost_env1.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/boost_env1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/boost_env2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/boost_env2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/boost_env3.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/boost_env3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/boost_env4.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/boost_env4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/boost_env5.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/boost_env5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/boost_env6.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/boost_env6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/boost_env7.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/boost_env7.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/build-project.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/build-project.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/build-success-final.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/build-success-final.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/build-success.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/build-success.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/building.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/building.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/button-boost.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/button-boost.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/button-clone.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/button-clone.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/button-delete.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/button-delete.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/button-deploy.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/button-deploy.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/button-edit.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/button-edit.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/button-export.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/button-export.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/button-new-environment.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/button-new-environment.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/button-rebuild.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/button-rebuild.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/button-refresh.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/button-refresh.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/button-scale.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/button-scale.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/button-start.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/button-start.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/button-stop.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/button-stop.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/buttons-all.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/buttons-all.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/check-build-success.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/check-build-success.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/check-logs.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/check-logs.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/clone-button.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/clone-button.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/clone-env-button-disabled.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/clone-env-button-disabled.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/clone-env-creating-all.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/clone-env-creating-all.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/clone-env-creating.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/clone-env-creating.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/clone-env-details.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/clone-env-details.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/clone-env-new.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/clone-env-new.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/clone-env-press-clone.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/clone-env-press-clone.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/clone-refresh.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/clone-refresh.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/clone-result.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/clone-result.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/commit-push.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/commit-push.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/como_files_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/como_files_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/como_files_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/como_files_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/como_files_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/como_files_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/connection-type.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/connection-type.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/console-output.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/console-output.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/copy-env.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/copy-env.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/copy-key.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/copy-key.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/create-template-add-stage.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/create-template-add-stage.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/create-template-artifactory-repo.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/create-template-artifactory-repo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/create-template-artifacts.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/create-template-artifacts.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/create-template-base.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/create-template-base.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/create-template-factory.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/create-template-factory.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/create-template-metadata.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/create-template-metadata.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/create-template-package-type.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/create-template-package-type.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/create-template-principle.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/create-template-principle.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/create-template-repo-key.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/create-template-repo-key.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/create-template-repo-stage.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/create-template-repo-stage.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/create-template-stream.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/create-template-stream.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/created-projects.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/created-projects.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/customize-save-template.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/customize-save-template.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/customize-search-catalog.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/customize-search-catalog.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/customize-templates-after-boost.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/customize-templates-after-boost.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/customize-templates-boost.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/customize-templates-boost.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/customize-templates-button.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/customize-templates-button.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/customize-templates-folders.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/customize-templates-folders.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/customize-templates-structure.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/customize-templates-structure.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/data_files_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/data_files_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-amend-customer.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-amend-customer.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-amend-info.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-amend-info.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-authorise-record.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-authorise-record.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-check-record.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-check-record.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-commit-button.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-commit-button.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-copy-repo-endpoint.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-copy-repo-endpoint.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-copy-repo.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-copy-repo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-deploy-button.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-deploy-button.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-deploy.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-deploy.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-export.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-export.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-exporting.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-exporting.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-git-clone.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-git-clone.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-go-t24.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-go-t24.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-go-to-app.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-go-to-app.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-login-portal.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-login-portal.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-login.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-login.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-push-db.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-push-db.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-search-record.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-search-record.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-sftp-connect.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-sftp-connect.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-sftp-screen - Copy.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-sftp-screen - Copy.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-sftp-screen.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-sftp-screen.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-sftp-ssh.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-sftp-ssh.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-sftp.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-sftp.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-t24-signin-author.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-t24-signin-author.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-t24-signin.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-t24-signin.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-tafjdb-zip.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-tafjdb-zip.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-tortoise-clone - Copy.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-tortoise-clone - Copy.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-tortoise-clone.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-tortoise-clone.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-tortoise.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-tortoise.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/dbtools_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/dbtools_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/dbtools_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/dbtools_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/dbtools_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/dbtools_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/dbtools_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/dbtools_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/dbtools_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/dbtools_5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/dbtools_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/dbtools_6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/dbtools_7.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/dbtools_7.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/debug-configurations.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/debug-configurations.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/debug-remote-config.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/debug-remote-config.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/ds-dns-example.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/ds-dns-example.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/ds-template-project.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/ds-template-project.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/dunce-cap.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/dunce-cap.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/endpoint-added.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/endpoint-added.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/endpoint-click.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/endpoint-click.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/endpoint-create.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/endpoint-create.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/endpoint-grouped.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/endpoint-grouped.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/endpoint-test.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/endpoint-test.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/enter-passphrase-again.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/enter-passphrase-again.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/enter-passphrase.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/enter-passphrase.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/env-new.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/env-new.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/env-tab.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/env-tab.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/env-template-list.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/env-template-list.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/env-template-type.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/env-template-type.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/env-template.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/env-template.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/env_gotoapplication.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/env_gotoapplication.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/env_tajfruntimeproperties.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/env_tajfruntimeproperties.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/environment-id.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/environment-id.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/export-environment.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/export-environment.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/export_enquiries_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/export_enquiries_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/export_enquiries_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/export_enquiries_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/export_env_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/export_env_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/export_env_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/export_env_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/export_env_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/export_env_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/extract_data_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/extract_data_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/extract_data_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/extract_data_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/extract_data_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/extract_data_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/extract_data_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/extract_data_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/extract_data_dbtools_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/extract_data_dbtools_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/extract_data_dbtools_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/extract_data_dbtools_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/factory-create.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/factory-create.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/fcm-check-messages.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/fcm-check-messages.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/fcm-create-environment.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/fcm-create-environment.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/fcm-drag-message.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/fcm-drag-message.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/fcm-endpoints.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/fcm-endpoints.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/fcm-environment-fields.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/fcm-environment-fields.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/fcm-sftp-auth.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/fcm-sftp-auth.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/fcm-sftp-fields.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/fcm-sftp-fields.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/fcm-sftp-id.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/fcm-sftp-id.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/fcm-show-template.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/fcm-show-template.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/file-location.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/file-location.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/generate-ssh-key.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/generate-ssh-key.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/generated-jar.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/generated-jar.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/git-add.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/git-add.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/git-clone.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/git-clone.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/git-download.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/git-download.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/gitlab_repo_clone1.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/gitlab_repo_clone1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/gitlab_repo_clone2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/gitlab_repo_clone2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/gitlab_repo_clone3.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/gitlab_repo_clone3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/gitlab_repo_struc.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/gitlab_repo_struc.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/hostname.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/hostname.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/import_enquiries_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/import_enquiries_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/import_enquiries_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/import_enquiries_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/import_enquiries_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/import_enquiries_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/import_enquiries_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/import_enquiries_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/import_enquiries_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/import_enquiries_5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jar-location.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jar-location.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-add-credentials.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-add-credentials.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-admin.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-admin.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-build.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-build.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-built-on.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-built-on.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-change-password.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-change-password.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-coffee.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-coffee.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-configure.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-configure.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-created-environment.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-created-environment.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-credentials.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-credentials.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-dashboard-click.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-dashboard-click.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-dashboard-login.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-dashboard-login.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-dashboard.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-dashboard.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-dashboard1.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-dashboard1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-environment-fields.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-environment-fields.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-environment-id.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-environment-id.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-environmentid.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-environmentid.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-environments.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-environments.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-fields.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-fields.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-fields2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-fields2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-integrated.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-integrated.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-login.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-login.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-new-environment-resources.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-new-environment-resources.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-new-environment.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-new-environment.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-new-portal-user.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-new-portal-user.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-pipeline-build.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-pipeline-build.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-pipeline.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-pipeline.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-pipeline1.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-pipeline1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-portal-login.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-portal-login.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-project.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-project.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-promote-changes.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-promote-changes.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-promote-pipelines-flow.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-promote-pipelines-flow.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-promote-screen.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-promote-screen.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-putty.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-putty.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-resources.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-resources.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-save-key.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-save-key.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-save-private-key.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-save-private-key.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-save-public-key.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-save-public-key.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-script-path.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-script-path.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-second-portal-user.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-second-portal-user.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-ssh.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-ssh.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-start-job.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-start-job.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-success.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-success.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-user-gitlab-public.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-user-gitlab-public.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-user-gitlab-role.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-user-gitlab-role.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-user-gitlab.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-user-gitlab.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-user-id.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-user-id.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-users-credentials.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-users-credentials.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/jenkins-build-views.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/jenkins-build-views.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/load-putty-key.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/load-putty-key.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/load_data_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/load_data_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/load_data_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/load_data_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/load_data_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/load_data_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/log-files.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/log-files.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/log_files_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/log_files_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/log_files_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/log_files_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/log_files_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/log_files_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/log_files_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/log_files_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/make-updates-add-zip.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/make-updates-add-zip.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/make-updates-commit-push.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/make-updates-commit-push.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/make-updates-copy-endpoint.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/make-updates-copy-endpoint.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/make-updates-deploy.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/make-updates-deploy.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/make-updates-git-clone.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/make-updates-git-clone.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/make-updates-git-fields.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/make-updates-git-fields.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/make-updates-monitor-login.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/make-updates-monitor-login.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/make-updates-show-updates.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/make-updates-show-updates.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/make-updates-t24-signin.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/make-updates-t24-signin.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/make-updates-tsa-start.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/make-updates-tsa-start.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/monitor-application-result.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/monitor-application-result.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/monitor-application-submit.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/monitor-application-submit.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/monitor-application-tshow.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/monitor-application-tshow.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/monitor-application.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/monitor-application.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/new-user-created.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/new-user-created.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/new-user.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/new-user.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/ok_after_push.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/ok_after_push.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/open-live-folders.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/open-live-folders.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/organisation-id.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/organisation-id.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/organisation-url.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/organisation-url.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/package-properties.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/package-properties.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/packages.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/packages.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/paste-keytext.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/paste-keytext.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/portal-login-details.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/portal-login-details.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/portal-login.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/portal-login.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/products-add-component.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/products-add-component.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/products-add-product.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/products-add-product.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/products-deploy-artifactory.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/products-deploy-artifactory.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/products-deploy-files.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/products-deploy-files.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/products-templates.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/products-templates.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/project-name.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/project-name.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/push_after_commit.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/push_after_commit.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/putty-download.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/putty-download.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/putty-keygen-keyslocation.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/putty-keygen-keyslocation.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/putty-keygen-privatekey.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/putty-keygen-privatekey.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/putty-keygen-publickey.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/putty-keygen-publickey.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/putty-keygen-publicselect.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/putty-keygen-publicselect.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/putty-keygen-random.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/putty-keygen-random.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/putty-keygen.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/putty-keygen.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/replace-id.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/replace-id.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/repo_commit_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/repo_commit_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/repo_commit_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/repo_commit_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/repo_commit_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/repo_commit_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/repo_commit_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/repo_commit_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/repo_commit_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/repo_commit_5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/repo_commit_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/repo_commit_6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/repo_deploy_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/repo_deploy_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/repo_deploy_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/repo_deploy_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/repository.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/repository.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/routine-name.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/routine-name.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/run-factory-completed.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/run-factory-completed.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/run-factory-create-test.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/run-factory-create-test.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/run-factory-dashboard.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/run-factory-dashboard.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/run-factory-deploy.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/run-factory-deploy.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/run-factory-environment-create.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/run-factory-environment-create.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/run-factory-test-deploy.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/run-factory-test-deploy.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/sample-routine-created.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/sample-routine-created.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/sanity-component-issue.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/sanity-component-issue.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/sanity-general.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/sanity-general.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/sanity-product-issue.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/sanity-product-issue.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/screen-key-generated.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/screen-key-generated.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/server-properties.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/server-properties.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/sftp-ids.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/sftp-ids.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/sftp_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/sftp_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/sftp_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/sftp_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/sftp_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/sftp_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/sftp_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/sftp_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/sftp_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/sftp_5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/sftp_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/sftp_6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/sftp_7.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/sftp_7.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/ssh-agent.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/ssh-agent.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/ssh-keygen.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/ssh-keygen.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/ssh-text-box.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/ssh-text-box.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/stage-metadata.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/stage-metadata.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/streams-create-stage.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/streams-create-stage.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/streams-create.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/streams-create.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/streams-created.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/streams-created.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/streams-delete-stage.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/streams-delete-stage.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/streams-delete-streams.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/streams-delete-streams.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/success_after_push.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/success_after_push.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/t24-configure-paths.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/t24-configure-paths.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/t24-connection.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/t24-connection.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/t24-created-projects.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/t24-created-projects.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/t24-dev-copy-jars.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/t24-dev-copy-jars.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/t24-dev-set-home.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/t24-dev-set-home.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/t24-ft-sample-xml.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/t24-ft-sample-xml.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/t24-monitor-app.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/t24-monitor-app.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/t24-tafj-properties.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/t24-tafj-properties.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/t24-view-server-search.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/t24-view-server-search.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/t24-view-server.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/t24-view-server.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/tDiag_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/tDiag_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/tDiag_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/tDiag_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/tShow_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/tShow_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/tShow_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/tShow_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/tShow_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/tShow_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/tafj-fb-setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/tafj-fb-setup.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/tafj-fb-setup2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/tafj-fb-setup2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/tafj-packager.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/tafj-packager.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/tafj-toggle-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/tafj-toggle-1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/tafj-toggle-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/tafj-toggle-2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/tafj-toggle-3.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/tafj-toggle-3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/tafj-toggle-4.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/tafj-toggle-4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/tafj-toggle-5.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/tafj-toggle-5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/testcases-delete.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/testcases-delete.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/testcases.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/testcases.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/toggle-breakpoint.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/toggle-breakpoint.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/tortoise-add.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/tortoise-add.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/tortoise-alert.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/tortoise-alert.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/tortoise-commit.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/tortoise-commit.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/triage-application-logs.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/triage-application-logs.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/triage-overview.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/triage-overview.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/triage-test-results.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/triage-test-results.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/triage-view-results.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/triage-view-results.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/tsa-live-file.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/tsa-live-file.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/tsa-service.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/tsa-service.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/updates-go-to-app.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/updates-go-to-app.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/use-git-deploy.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/use-git-deploy.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/use-git-deployment.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/use-git-deployment.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/use-git-endpoint.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/use-git-endpoint.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/use-git-repo.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/use-git-repo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/user-details.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/user-details.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/user-list.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/user-list.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/user-login.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/user-login.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/user-new-second.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/user-new-second.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/user-new.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/user-new.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/users-tab.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/users-tab.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/wizard-routine.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/wizard-routine.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/techguides/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/index.html",
+          "hash": "y6wHJYPGLEbrAAap72B1tw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/techguides/jenkins-build-promote-pipelines.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/jenkins-build-promote-pipelines.html",
+          "hash": "uuU6iuQdyET1n/UdfkKALw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/techguides/make-updates-cloud.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/make-updates-cloud.html",
+          "hash": "+/Yo12cwZewfvzDLZ/Ardw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/techguides/metadata.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/metadata.html",
+          "hash": "ZYBsBRbzHIWNv1vNhDcKvg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/techguides/run-factory.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/run-factory.html",
+          "hash": "HQLq/lFqtFlbKUar6x2jWw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/techguides/stage-testcases.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/stage-testcases.html",
+          "hash": "HgtC0u0vb0pj2910aEX2SQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/techguides/stage.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/stage.html",
+          "hash": "JmCHmfZI6DOqlg2zhK9r2g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/techguides/stream.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/stream.html",
+          "hash": "GG1Dc9ghLNAxeVU1gcK9Pw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/techguides/t24-debug-design-studio.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/t24-debug-design-studio.html",
+          "hash": "THP9FQXxNraehKDzF3YQMg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/techguides/t24-development.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/t24-development.html",
+          "hash": "t5HOWX0pl0qh7Pio6cjDxg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/techguides/tafj-db-setup.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/tafj-db-setup.html",
+          "hash": "+6xHnmwtYcgn+Kv9pq7TsA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/techguides/triage-workflow.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/triage-workflow.html",
+          "hash": "DD6On2VcMsfXdAmVFM3HTA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/techguides/troubleshooting.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/troubleshooting.html",
+          "hash": "n54cVLKmssQMxsobAsf0zQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/techguides/use-gitlab-repository.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/use-gitlab-repository.html",
+          "hash": "tF9yFG7IlNWmNKSOaPbyVg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/techguides/user-creation-in-paas.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/user-creation-in-paas.html",
+          "hash": "0t82u6V1YhHR467A2cNWqg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/technical-overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/technical-overview.html",
+          "hash": "ndbudN8JUg4qVsqKQHsMLQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/temenos-cloud-templates.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/temenos-cloud-templates.html",
+          "hash": "FWWdFHa2Vauu2bmzXKTIyQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/temenos-implementation-methodology.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/temenos-implementation-methodology.html",
+          "hash": "6WjLWK99KZHBNdiVu67DTQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "home/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "home/toc.html",
+          "hash": "iUPYMq5spEt1qNoBR/50yQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/tutorials-assemble.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/tutorials-assemble.html",
+          "hash": "39hYd/XnBO3QFD+rPIq+Jw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/tutorials-extend.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/tutorials-extend.html",
+          "hash": "w7tInH757+8V8UFH7HTJgw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/users.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/users.html",
+          "hash": "7Lk7BGg+BrNAV0uHQnh8CQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/what-is-devx.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/what-is-devx.html",
+          "hash": "YzlEfWLNRz5dFXIU35xRSA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/arrow.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/arrow.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/deployment-architecture.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/deployment-architecture.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/docs.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/docs.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "kHyolHpF2X3MtzMOqS/y9g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "hdQ2u7Tr7499NLxWNqnE9A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build"
+      },
+      "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        },
+        "RestApiDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing"
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {}
+}
