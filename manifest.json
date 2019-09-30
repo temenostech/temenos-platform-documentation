@@ -417,18 +417,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "home/jenkins-build-video.md",
-      "output": {
-        ".html": {
-          "relative_path": "home/jenkins-build-video.html",
-          "hash": "GzcVCXK5SeUicm47bwDqWA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "home/manage-artifactory-test-cycle-video.md",
       "output": {
         ".html": {
@@ -549,7 +537,7 @@
       "output": {
         ".html": {
           "relative_path": "home/setup-streams-video.html",
-          "hash": "UYceJXwyP29Durf7myPcow=="
+          "hash": "9jQI2gpU+VwPZqyUW4ssUQ=="
         }
       },
       "is_incremental": false,
@@ -5101,12 +5089,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "home/toc.yml",
       "output": {
         ".html": {
           "relative_path": "home/toc.html",
-          "hash": "iUPYMq5spEt1qNoBR/50yQ=="
+          "hash": "ilf9MZeX3DGvRzqw3AJb4w=="
         }
       },
       "is_incremental": false,
