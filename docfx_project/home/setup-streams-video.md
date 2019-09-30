@@ -3,7 +3,7 @@
 </html>
 
 <br>
-<span style="color:#005294">**Total video time**</span>: **8:51 minutes**
+<span style="color:#005294">**Total video time**</span>: **7:56 minutes**
 <br>
 
 <span style="color:#005294">**INFO**</span>:
