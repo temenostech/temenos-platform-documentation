@@ -1,6 +1,8 @@
 ### Assemble Tutorials
 
-Coming soon!
+Check out our video tutorials!
+
+
 
 
 

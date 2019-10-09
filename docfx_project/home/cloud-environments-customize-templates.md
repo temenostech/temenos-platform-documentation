@@ -14,11 +14,6 @@
 <br>
 
 Actions on the environment:
- - <span style="color:#005294">**Create**</span> 
- - <span style="color:#005294">**Delete**</span>  
- - <span style="color:#005294">**Edit**</span> *(change name and description)*
- - <span style="color:#005294">**Export**</span> 
- - <span style="color:#005294">**Boost**</span>
  - Create a <span style="color:#005294">**user**</span> and attach the<span style="color:#005294">**SSH key**</span>.
  - <span style="color:#005294">**Clone**</span> the environment using Tortoise Git.
  - Check the <span style="color:#005294">**environments**</span> folder > Modify the <span style="color:#005294">**infratemplate.yml**</span> and <span style="color:#005294">**main.yml**</span> files.
