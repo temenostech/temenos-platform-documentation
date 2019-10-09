@@ -18,4 +18,4 @@ Actions on the environment:
  - <span style="color:#005294">**Clone**</span> the environment using Tortoise Git.
  - Check the <span style="color:#005294">**environments**</span> folder > Modify the <span style="color:#005294">**infratemplate.yml**</span> and <span style="color:#005294">**main.yml**</span> files.
  - <span style="color:#005294">**Commit and push**</span> the changes to the repository.
- - <span style="color:#005294">**Rebuild**</span>. 
+ - <span style="color:#005294">**Rebuild**</span> the environment.
