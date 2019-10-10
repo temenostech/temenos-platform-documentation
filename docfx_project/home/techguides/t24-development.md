@@ -19,7 +19,7 @@ A development package (containing Design Studio, T24 libraries and TAFJ) is prov
 
 This package is adapted according to the T24 version of your sandbox and it is provided as a **.zip** file. 
 
-After extracting it in your local machine to any location, the bellow folders should be available:
+After extracting it in your local machine to any location, the bellow foldimers should be available:
 
 - DS
 - t24Lib
@@ -117,7 +117,7 @@ A T24 Server is required in Design Studio to be able to import/export applicatio
 ![connection type](./images/connection-type.png)  
 <br>
 
-* After the server is created, the _server.properties_ must be updated according to your sandox details:  
+* After the server is created, the _server.properties_ must be updated according to your sandbox details:  
 -> In _T24 User (deployment only)_ section, **2 users** that you use to connect to your T24 sandbox must be introduced.  
 -> In _WebService (TAFJ) Connection_ section, **Secured box** must be checked, **Protocol** must be set to _ws_ value, **Hostname** must be set according to the hostname of your sandbox, **Port** must be set to _443_ value and **Context** to _axis2_ value.  
 ![server properties](./images/server-properties.png)  
@@ -144,7 +144,8 @@ The **Toggle TAFJ project nature** action must be performed in order to be able 
 * Right click on **data-code** module and choose **Toggle TAFJ project nature**.  
 ![tafj toggle 1](./images/tafj-toggle-1.png)  
 <br>
-* In the next screen, import _tafj_properties_ from Your_DEV_Path/TAFJ/conf folder, choose TAFJ_HOME as Your_DEV_Path/TAFJ folder and click **Next**. In the bellow picture, DEV_Path is set to C:\TemenosDEV.
+* In the next screen, 
+*  _tafj_properties_ from Your_DEV_Path/TAFJ/conf folder, choose TAFJ_HOME as Your_DEV_Path/TAFJ folder and click **Next**. In the bellow picture, DEV_Path is set to C:\TemenosDEV.
 ![tafj toggle 2](./images/tafj-toggle-2.png)  
 <br>
 * In the next screens, click **Next** and **Finish**.  
@@ -245,6 +246,13 @@ For more details about the deployment, check the following [<ins>**steps**</ins>
 
 > [!Note]
 > In order to import Applications/Enquiries/Versions from your sandbox to your local machine, make sure you have a T24-server created and configured in Design Studio.
+>
+> Hint: When importing artefacts from a T24 Environments on the project you need to disable the XText  RIM in order to speed up the operation and install or after a T24 update/upgrade. 
+
+ ![t24 connection](./images/disable-xtext-rim-compiler.png)
+> Then  Import T24 Core Models or if your DS version has the Import T24 Core Models with the process after T24 update/upgrade (this tool is also available in headless mode).
+
+![t24 connection](./images/import-core-models.png)
 
 * Go to Servers tab, right click on your server state and change state to **active**.
 ![t24 connection](./images/t24-connection.png)  
