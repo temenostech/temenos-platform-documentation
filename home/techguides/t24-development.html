@@ -98,7 +98,7 @@
 </ul>
 <p>A development package (containing Design Studio, T24 libraries and TAFJ) is provided by Temenos  and it is pre-configured in order to be able to introspect T24 application hosted in Temenos Could Development Platform.</p>
 <p>This package is adapted according to the T24 version of your sandbox and it is provided as a <strong>.zip</strong> file. </p>
-<p>After extracting it in your local machine to any location, the bellow folders should be available:</p>
+<p>After extracting it in your local machine to any location, the bellow foldimers should be available:</p>
 <ul>
 <li>DS</li>
 <li>t24Lib</li>
@@ -175,7 +175,7 @@ MVCC=TRUE;LOCK_TIMEOUT=30000<br> <span style="color:red">Replace <strong>ENV_DNS
 </li>
 <li><p>Choose connection type as <strong>T24 Server-Web Service</strong> and click <strong>Finish</strong>.<br><img src="images/connection-type.png" alt="connection type"><br><br></p>
 </li>
-<li><p>After the server is created, the <em>server.properties</em> must be updated according to your sandox details:<br>-&gt; In <em>T24 User (deployment only)</em> section, <strong>2 users</strong> that you use to connect to your T24 sandbox must be introduced.<br>-&gt; In <em>WebService (TAFJ) Connection</em> section, <strong>Secured box</strong> must be checked, <strong>Protocol</strong> must be set to <em>ws</em> value, <strong>Hostname</strong> must be set according to the hostname of your sandbox, <strong>Port</strong> must be set to <em>443</em> value and <strong>Context</strong> to <em>axis2</em> value.<br><img src="images/server-properties.png" alt="server properties">  </p>
+<li><p>After the server is created, the <em>server.properties</em> must be updated according to your sandbox details:<br>-&gt; In <em>T24 User (deployment only)</em> section, <strong>2 users</strong> that you use to connect to your T24 sandbox must be introduced.<br>-&gt; In <em>WebService (TAFJ) Connection</em> section, <strong>Secured box</strong> must be checked, <strong>Protocol</strong> must be set to <em>ws</em> value, <strong>Hostname</strong> must be set according to the hostname of your sandbox, <strong>Port</strong> must be set to <em>443</em> value and <strong>Context</strong> to <em>axis2</em> value.<br><img src="images/server-properties.png" alt="server properties">  </p>
 </li>
 </ul>
 <p><br>
@@ -191,7 +191,8 @@ MVCC=TRUE;LOCK_TIMEOUT=30000<br> <span style="color:red">Replace <strong>ENV_DNS
 <p>The <strong>Toggle TAFJ project nature</strong> action must be performed in order to be able to develop, compile and package jBC routines and to interrogate your sandbox database.  </p>
 <ul>
 <li>Right click on <strong>data-code</strong> module and choose <strong>Toggle TAFJ project nature</strong>.<br><img src="images/tafj-toggle-1.png" alt="tafj toggle 1"><br><br></li>
-<li>In the next screen, import <em>tafj_properties</em> from Your_DEV_Path/TAFJ/conf folder, choose TAFJ_HOME as Your_DEV_Path/TAFJ folder and click <strong>Next</strong>. In the bellow picture, DEV_Path is set to C:\TemenosDEV.
+<li>In the next screen, </li>
+<li><em>tafj_properties</em> from Your_DEV_Path/TAFJ/conf folder, choose TAFJ_HOME as Your_DEV_Path/TAFJ folder and click <strong>Next</strong>. In the bellow picture, DEV_Path is set to C:\TemenosDEV.
 <img src="images/tafj-toggle-2.png" alt="tafj toggle 2"><br><br></li>
 <li>In the next screens, click <strong>Next</strong> and <strong>Finish</strong>.<br><img src="images/tafj-toggle-3.png" alt="tafj toggle 3"><br><br></li>
 <li>In the end, <strong>data-code</strong> module should be toggled.<br><img src="images/tafj-toggle-4.png" alt="tafj toggle 4"><br><br></li>
@@ -256,7 +257,12 @@ MVCC=TRUE;LOCK_TIMEOUT=30000<br> <span style="color:red">Replace <strong>ENV_DNS
 </ul>
 <h2 id="import-t24-applications-enquiries-and-versions">Import T24 Applications, Enquiries and Versions</h2>
 <div class="NOTE"><h5>Note</h5><p>In order to import Applications/Enquiries/Versions from your sandbox to your local machine, make sure you have a T24-server created and configured in Design Studio.</p>
+<p>Hint: When importing artefacts from a T24 Environments on the project you need to disable the XText  RIM in order to speed up the operation and install or after a T24 update/upgrade. </p>
 </div>
+<p> <img src="images/disable-xtext-rim-compiler.png" alt="t24 connection"></p>
+<blockquote><p>Then  Import T24 Core Models or if your DS version has the Import T24 Core Models with the process after T24 update/upgrade (this tool is also available in headless mode).</p>
+</blockquote>
+<p><img src="images/import-core-models.png" alt="t24 connection"></p>
 <ul>
 <li>Go to Servers tab, right click on your server state and change state to <strong>active</strong>.
 <img src="images/t24-connection.png" alt="t24 connection"><br><br></li>

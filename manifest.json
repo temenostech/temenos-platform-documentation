@@ -2223,6 +2223,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/disable-xtext-rim-compiler.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/disable-xtext-rim-compiler.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/ds-dns-example.png",
       "output": {
         "resource": {
@@ -2777,6 +2788,17 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/hostname.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/import-core-models.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/import-core-models.png"
         }
       },
       "is_incremental": false,
@@ -4986,7 +5008,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/t24-development.html",
-          "hash": "t5HOWX0pl0qh7Pio6cjDxg=="
+          "hash": "RMhCRJxy7bNQo/bFWEBO5A=="
         }
       },
       "is_incremental": false,
@@ -5217,14 +5239,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "RestApiDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "RestApiDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
