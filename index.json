@@ -1,9 +1,4 @@
 {
-  "home/cloud-environments-customize-templates.html": {
-    "href": "home/cloud-environments-customize-templates.html",
-    "title": "",
-    "keywords": "Total video time : 21:02 minutes Total demo time : ~ 40 minutes (from which 15 minutes the cloning of the environment and ~ 10 minutes the rebuild action - the duration depends also on the changes ) INFO : Actions on the environment: Create a user and attach the SSH key . Clone the environment using Tortoise Git. Check the environments folder > Modify the infratemplate.yml and main.yml files. Commit and push the changes to the repository. Rebuild the environment."
-  },
   "home/create-dev-env-video.html": {
     "href": "home/create-dev-env-video.html",
     "title": "",
@@ -243,6 +238,11 @@
     "href": "home/clone-environment-video.html",
     "title": "",
     "keywords": "Total video time : 3:32 minutes Total demo time : ~ 20 minutes (from which 15 minutes the cloning of the environment) INFO : All the changes present on an environment are copied to a new identical environment through the cloning function The environment must NOT be in one of the statuses: Stopping, Rebuilding, Scaling, Exporting or if it has a Warning The cloning may take around 15 minutes ."
+  },
+  "home/cloud-environments-customize-templates.html": {
+    "href": "home/cloud-environments-customize-templates.html",
+    "title": "",
+    "keywords": "Total video time : 21:02 minutes Total demo time : ~ 40 minutes (from which 15 minutes the cloning of the environment and ~ 10 minutes the rebuild action - the duration depends also on the changes ) INFO : Actions on the environment: Create a user and attach the SSH key . Clone the environment using Tortoise Git. Check the environments folder > Modify the infratemplate.yml and main.yml files. Commit and push the changes to the repository. Rebuild the environment."
   },
   "home/run-factory-video.html": {
     "href": "home/run-factory-video.html",
