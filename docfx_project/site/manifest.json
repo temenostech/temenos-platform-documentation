@@ -102,7 +102,7 @@
       "output": {
         ".html": {
           "relative_path": "home/cloud-environments-customize-templates.html",
-          "hash": "4J4unGtKRsCXMyEOfh4D+w=="
+          "hash": "D5hPgbrwDIrj2qsoh70TjA=="
         }
       },
       "is_incremental": false,
@@ -417,6 +417,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "home/jenkins-build-video.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/jenkins-build-video.html",
+          "hash": "GzcVCXK5SeUicm47bwDqWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "home/manage-artifactory-test-cycle-video.md",
       "output": {
         ".html": {
@@ -513,7 +525,7 @@
       "output": {
         ".html": {
           "relative_path": "home/setup-factories-video.html",
-          "hash": "gBMe0PqAZmUso+RqiJiZAg=="
+          "hash": "OSDv9iLk2cRXc2UVTMoqaQ=="
         }
       },
       "is_incremental": false,
@@ -537,7 +549,7 @@
       "output": {
         ".html": {
           "relative_path": "home/setup-streams-video.html",
-          "hash": "Df2hjHrcNBKUEBmXdm4cWw=="
+          "hash": "ImsBFkEZFXGOrR44sRNhAg=="
         }
       },
       "is_incremental": false,
@@ -2223,6 +2235,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/disable-xtext-rim-compiler.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/disable-xtext-rim-compiler.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/ds-dns-example.png",
       "output": {
         "resource": {
@@ -2777,6 +2800,17 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/hostname.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/import-core-models.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/import-core-models.png"
         }
       },
       "is_incremental": false,
@@ -4986,7 +5020,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/t24-development.html",
-          "hash": "t5HOWX0pl0qh7Pio6cjDxg=="
+          "hash": "RMhCRJxy7bNQo/bFWEBO5A=="
         }
       },
       "is_incremental": false,
@@ -5070,7 +5104,7 @@
       "output": {
         ".html": {
           "relative_path": "home/temenos-cloud-templates.html",
-          "hash": "FWWdFHa2Vauu2bmzXKTIyQ=="
+          "hash": "wcjacZJ95KzTE1BHVqSdtA=="
         }
       },
       "is_incremental": false,
@@ -5089,15 +5123,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Toc",
       "source_relative_path": "home/toc.yml",
       "output": {
         ".html": {
           "relative_path": "home/toc.html",
-          "hash": "ilf9MZeX3DGvRzqw3AJb4w=="
+          "hash": "iUPYMq5spEt1qNoBR/50yQ=="
         }
       },
       "is_incremental": false,
@@ -5109,7 +5140,7 @@
       "output": {
         ".html": {
           "relative_path": "home/tutorials-assemble.html",
-          "hash": "39hYd/XnBO3QFD+rPIq+Jw=="
+          "hash": "kJBTzPDQytaL+Jrj3RjTPQ=="
         }
       },
       "is_incremental": false,
@@ -5190,7 +5221,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "kHyolHpF2X3MtzMOqS/y9g=="
+          "hash": "GboqC0bxoGq9w1FuzBQZhg=="
         }
       },
       "is_incremental": false,
@@ -5216,14 +5247,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
