@@ -102,7 +102,7 @@
       "output": {
         ".html": {
           "relative_path": "home/cloud-environments-customize-templates.html",
-          "hash": "D5hPgbrwDIrj2qsoh70TjA=="
+          "hash": "uhOwDB8Rf/ziGaxPctSmUA=="
         }
       },
       "is_incremental": false,
@@ -5104,7 +5104,7 @@
       "output": {
         ".html": {
           "relative_path": "home/temenos-cloud-templates.html",
-          "hash": "FWWdFHa2Vauu2bmzXKTIyQ=="
+          "hash": "wcjacZJ95KzTE1BHVqSdtA=="
         }
       },
       "is_incremental": false,
@@ -5248,6 +5248,10 @@
         "incrementalPhase": "build"
       },
       "processors": {
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -5264,10 +5268,6 @@
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build"
-        },
-        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         }
