@@ -1,11 +1,11 @@
 # Components – Feature Description #
 
 
-Components are individually deployable units that are understood by TCP (Temenos Cloud Platform) based on the component type that each component refers to. 
+Components are individually deployable units that are understood by Temenos Continuous Deployment Platform based on the component type that each component refers to. 
 
-Each component is associated to a component type to help TCP deploy the component. 
+Each component is associated to a component type to help Temenos Continuous Deployment Platform deploy the component. 
 
-The **Component Type** field in the component data is the key to help the TCP Controllers deploy the right components in the right way. 
+The **Component Type** field in the component data is the key to help the Temenos Continuous Deployment Platform Controllers deploy the right components in the right way. 
 An organization can define as many components as needed but should have all mandatory components defined in the templates that are assigned to the organization.
 
 Practically when a template is assigned to an organization, a list of component types related to that template is added for that organization.
@@ -33,7 +33,7 @@ The T24 installation may have the following components (No exhaustive or inclusi
 
 Each item in this list is called a **component type**. 
 
-The names of these parts / Component Types are fixed and are not user editable. This is managed internally by the TCP admin/ development group and can only be changed or modified by this group. 
+The names of these parts / Component Types are fixed and are not user editable. This is managed internally by the Temenos Continuous Deployment Platform admin/ development group and can only be changed or modified by this group. 
 
 Each component type represents a deployable unit and has an ansible script associated to it. 
 

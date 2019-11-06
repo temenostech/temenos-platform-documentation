@@ -23,9 +23,9 @@ A secure ftp (SFTP) client is required to download exported log files and data f
 
 ##Support and SLAs
 -	Initial support mechanism: email CloudPlatformSupport@temenos.com
--	Future state support mechanism: Temenos cloud ticketing system
+-	Future state support mechanism: Temenos SaaS ticketing system
 -	SLAs: target 99% Uptime (can go down for maintenance, business hours)
--	Warranties: Other SLAs as per Temenos Cloud
+-	Warranties: Other SLAs as per Temenos SaaS
 -	Data retention: as defined in the Service Definition – data & environments can be deleted immediately by the user.  All client-related data & environments will be deleted by Temenos 60 days after the termination of the agreement.
 
 ##Definitions

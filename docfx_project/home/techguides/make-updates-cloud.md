@@ -1,5 +1,5 @@
 
-# Make Updates on a Cloud Environment #
+# Make Updates on a Temenos Continuous Deployment Environment #
 
 This document describes how to easily make an update of a T24 Cloud environment. Each Environment has an associated Repository for uploading different type of features based on Environment Template type, these features being deployed automatically to your Environment.
 

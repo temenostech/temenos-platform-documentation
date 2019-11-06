@@ -3,7 +3,8 @@
 <script type="text/javascript" language="javascript" src="./scripts/getTemplateDetails.js"></script>
 <script type="text/javascript" language="javascript" src="./scripts/js-yaml.min.js"></script>
 
-## **How Temenos Cloud Templates Work?**
+## **How do the cloud templates work?
+
 
 The Temenos Continuous Deployment Platform has the capability to provision environments in a variety of different configurations. This capability is driven through the concept of 'Templates' - a simplified view of the constituent elements which make up a sandbox configuration, including:
 

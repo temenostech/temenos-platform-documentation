@@ -1,6 +1,6 @@
 # Enterprise View
 
-This section provides an overview of what the TCD solution is, and how it fits in with the wider Temenos and bank enterprise.
+This section provides an overview of what the Temenos Continuous Deployment Platform solution is, and how it fits in with the wider Temenos and bank enterprise.
 
 ![](./images/enterprise-view.png)
 

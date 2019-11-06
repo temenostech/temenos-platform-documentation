@@ -1,6 +1,7 @@
-# Clone a Temenos Cloud Environment
+# Clone a Temenos Continuous Deployment environment
 
-One of the features of the Temenos Cloud Platform is the possibility to create a clone of an environment.
+
+One of the features of the Temenos Platform is the possibility to create a clone of an environment.
 
 In case different changes have been done such as: modifying the database, addition of new endpoints, installing plugins or others, and is needed a copy of that specific environment with all the changes, this can be easily done by clicking the clone button and creating a clone.
 

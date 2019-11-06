@@ -4,7 +4,7 @@
 
 - **How can a customer gain access to Deployment Platform?**
 
-The client should go through the normal procurement process for a Temenos Cloud service.  Temenos regional sales. 
+The client should go through the normal procurement process for a Temenos SaaS service.  Temenos regional sales. 
 
 - **What are the minimum system requirements?**
 
@@ -16,4 +16,4 @@ The clients will be supplied with a URL and initial login, from there they will 
 
 - **Who will handle customers’ queries/issues for Deployment Platform?**
 
-Sales queries will be handled via the Temenos Cloud (CloudPlatformSupport@temenos.com) support team. Support is available through a dedicated online support portal for cloud infrastructure issues.  All Product issues remain through the Temenos Customer Support. 
+Sales queries will be handled via the Temenos SaaS (CloudPlatformSupport@temenos.com) support team. Support is available through a dedicated online support portal for cloud infrastructure issues.  All Product issues remain through the Temenos Customer Support. 

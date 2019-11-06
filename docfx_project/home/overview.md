@@ -1,12 +1,11 @@
 ## **What is Temenos Continuous Deployment?**
 
-Temenos Continuous Deployment is a product within the Temenos Cloud suite, and is cloud based infrastructure for use during development, test, implementation, and ongoing change with configurable and scalable Temenos Suites on-demand, unless otherwise stated. Temenos Continuous Deployment enables you to create Environments, i.e. Temenos Suites on-demand, for non-production use in the cloud. Environments can be requested and provisioned within minutes rather than weeks helping you accelerate your projects. Retail Suite is readily available, with all other Temenos Suites (Corporate, Wealth, Micro-Finance and Islamic Banking) available on request and allows you to develop and test your proof of concept, share development environments across dispersed teams, replicate production environments or use them for training. The speed, reliability, and agility of these environments will instantly add value to your implementation and scale your project delivery capacity.
+Temenos Continuous Deployment is a cloud based infrastructure used during development, test, implementation, and ongoing change with configurable and scalable Temenos Suites on-demand, unless otherwise stated. Temenos Continuous Deployment enables you to create Environments, i.e. Temenos Suites on-demand, for non-production use in the cloud. Environments can be requested and provisioned within minutes rather than weeks helping you accelerate your projects. Retail Suite is readily available, with all other Temenos Suites (Corporate, Wealth, Micro-Finance and Islamic Banking) available on request and allows you to develop and test your proof of concept, share development environments across dispersed teams, replicate production environments or use them for training. The speed, reliability, and agility of these environments will instantly add value to your implementation and scale your project delivery capacity.
 
-What is Temenos Continuous Deployment?
-Temenos Continuous Deployment is an offering from Temenos Cloud that provides client individuals and teams with the ability to manage, configure and assemble client licensed Temenos Software – either fully deployed and supported by Temenos Cloud or utilising the client’s own cloud infrastructure.
+Temenos Continuous Deployment is an offering that provides client individuals and teams with the ability to manage, configure and assemble client licensed Temenos Software – either fully deployed and supported by Temenos SaaS or utilising the client’s own cloud infrastructure.
 
 
-## **The Temenos Cloud Offering**
+
 
 ![](./images/cloud-offering.png)
 
@@ -30,7 +29,7 @@ The Assemble service module of Temenos Continuous Deployment is used during the 
 
 **Self-service environment provisioning**
 
-- An authenticated user, e.g. a developer or tester, has the ability to request an environment from the catalogue of [templates](./temenos-cloud-templates.md); this template will be materialised into compute, storage, and networks on the Temenos Cloud. See [architecture](./architecture.md). The  administrator, e.g. the project manager, is in  control of number of the users and maximum number of running environments, thus having total control of the platform and its usage.
+- An authenticated user, e.g. a developer or tester, has the ability to request an environment from the catalogue of [templates](./temenos-cloud-templates.md); this template will be materialised into compute, storage, and networks on the Temenos SaaS See [architecture](./architecture.md). The  administrator, e.g. the project manager, is in  control of number of the users and maximum number of running environments, thus having total control of the platform and its usage.
 
 **Secure configuration and environment management**
 
@@ -70,7 +69,7 @@ An environment is an instance of an application and the platform provides the fa
 
 The users of the platform can provision and manage the environments within their Organisation.
 
-Please check [**here**](./techguides/environment-creation-in-paas.md) for more details about Temenos Cloud management of Organisations and Environments.
+Please check [**here**](./techguides/environment-creation-in-paas.md) for more details about Temenos SaaS management of Organisations and Environments.
 
 **Templates**
 

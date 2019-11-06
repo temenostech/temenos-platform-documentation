@@ -1,7 +1,7 @@
 <span style="color:#010466;font-weight:1000;font-size:24pt">Welcome to Temenos Continuous Deployment</span>
 
 
-**Temenos Continuous Deployment** is a suite of products offered by Temenos Cloud; it is a *Platform as a Service (PaaS)* that provides individuals and teams with the ability to manage and configure their own instances of Temenos applications and approved 3rd party Plug & Play applications from the Temenos ecosystem. 
+**Temenos Continuous Deployment** is an offering that provides individuals and teams with the ability to manage and configure their own instances of Temenos applications and approved 3rd party Plug & Play applications from the Temenos ecosystem. 
 
 
 <br>
@@ -40,7 +40,7 @@
 &nbsp;
 <span style="color:#010466;font-weight:1000;font-size:16pt">Extend</span>
 
-The Extend module of the TCD is used by the ‘change the bank’ teams for self-service management of Environments and provides access to the tools for enhancing Temenos solutions.  The Extend module is an online software portal, which enables authorised Extends to provision Environments from a list of Templates.  These Environments are for non-production use during development, test, integration, implementation, phases and ongoing changes to the Products.  Self service provisioning of Environments, within minutes rather than weeks, can help accelerate development and ongoing change.  Temenos is able to create production like Templates for any of the Temenos Product Suites (Retail, Corporate, Wealth, Micro-Finance, and Islamic Banking).  This production like Environments enable the Client to develop and test more realistically at proof of concept, demonstrate more representative enhancements across their teams, and perform more life-like scenarios within training.  The speed, reliability, and agility of these Environments will instantly add value to Client’s implementation of Temenos Products and scale your project delivery capacity.  
+The Extend module of the Temenos Continuous Deployment Paltform is used by the ‘change the bank’ teams for self-service management of Environments and provides access to the tools for enhancing Temenos solutions.  The Extend module is an online software portal, which enables authorised Extends to provision Environments from a list of Templates.  These Environments are for non-production use during development, test, integration, implementation, phases and ongoing changes to the Products.  Self service provisioning of Environments, within minutes rather than weeks, can help accelerate development and ongoing change.  Temenos is able to create production like Templates for any of the Temenos Product Suites (Retail, Corporate, Wealth, Micro-Finance, and Islamic Banking).  This production like Environments enable the Client to develop and test more realistically at proof of concept, demonstrate more representative enhancements across their teams, and perform more life-like scenarios within training.  The speed, reliability, and agility of these Environments will instantly add value to Client’s implementation of Temenos Products and scale your project delivery capacity.  
 
 Service Definition - Find out more <span style="color:#010466;font-weight:1000;font-size:14pt"><a href="./home/extend.md" target="blank">**here**</a></span>.
 
@@ -63,7 +63,7 @@ Service definition - Find out more <span style="color:#010466;font-weight:1000;f
 
 This section shows the current state deployment architecture of the TCD  platform.
 
-The deployment allows for some orgs to be hosted within the Temenos cloud and others to be hosted on the Customer's Azure subscription.
+The deployment allows for some organisations to be hosted within the Temenos SaaS and others to be hosted on the Customer's Azure subscription.
 
 ![](./images/deployment-architecture.png)
 *Figure : Deployment View*

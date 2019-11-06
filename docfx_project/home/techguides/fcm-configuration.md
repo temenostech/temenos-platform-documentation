@@ -1,6 +1,6 @@
 # Configure FCM Application
 
-Learn how to use FCM application by accessing it via Temenos Cloud Platform.
+Learn how to use FCM application by accessing it via Temenos Continuous Deployment Platform.
     
 > [!Note]
 > Check also our <a href="https://www.youtube.com/watch?v=XBsmOZvg-z8" target="_blank">**Video tutorial** - to be updated.
@@ -9,7 +9,7 @@ Learn how to use FCM application by accessing it via Temenos Cloud Platform.
 
 ## About FCM Template   
 
- - Login to your organization on the Temenos Cloud Platform ([https://portal.temenos.cloud/](https://portal.temenos.cloud/)) using the username and password provided by the Temenos team
+ - Login to your organization on the Temenos Continuous Deployment Platform ([https://portal.temenos.cloud/](https://portal.temenos.cloud/)) using the username and password provided by the Temenos team
  - Each time you login, you must accept the Privacy Notice in order to have access to the portal
  - Click the **Templates Catalog** on the left-side menu
    - Choose **the FCM template** version from the available list to see the short description of the components and also the full template content

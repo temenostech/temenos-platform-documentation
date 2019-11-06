@@ -9,7 +9,7 @@ This document can be used by technical staff who need to customize already defin
 > This guide presumes that a environment is already created and available under an Organisation for which the templates customization functionality is allowed.
 
 ## Boost your environment
-To start customizing your environment built using a Temenos Cloud template, login to Temenos Continuous Deployment platform using your organisation user, go to your environment page and click on the **Boost** button attached to **Repository** application.
+To start customizing your environment built using a Temenos Continuous Deployment Platform template, login to Temenos Continuous Deployment platform using your organisation user, go to your environment page and click on the **Boost** button attached to **Repository** application.
 
 ![boost 1](./images/customize-templates-button.png)
 
