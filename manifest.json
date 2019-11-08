@@ -4897,10 +4897,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/winscp-error1.png",
+      "source_relative_path": "home/techguides/images/winscp-error1.jpg",
       "output": {
         "resource": {
-          "relative_path": "home/techguides/images/winscp-error1.png"
+          "relative_path": "home/techguides/images/winscp-error1.jpg"
         }
       },
       "is_incremental": false,
@@ -4908,10 +4908,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/winscp-error2.png",
+      "source_relative_path": "home/techguides/images/winscp-error2.jpg",
       "output": {
         "resource": {
-          "relative_path": "home/techguides/images/winscp-error2.png"
+          "relative_path": "home/techguides/images/winscp-error2.jpg"
         }
       },
       "is_incremental": false,
