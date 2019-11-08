@@ -1,5 +1,5 @@
 
-# Templates Customization
+#Boost your environment and customize templates
 ## Introduction
 This document can be used by technical staff who need to customize already defined templates based on specific requirements. Templates customization will allow changes related to:
 - the environment applications (i.e. the scripts to install and configure each application and the information displayed in the Portal for each application);
