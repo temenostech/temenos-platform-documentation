@@ -4391,6 +4391,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/successful-factory-run.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/successful-factory-run.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/t24-configure-paths.png",
       "output": {
         "resource": {
