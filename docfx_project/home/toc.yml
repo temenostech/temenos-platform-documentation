@@ -80,6 +80,8 @@
          href: ./techguides/stage-testcases.md
        - name: Run a Factory with "Run Now" Button and Dashboard
          href: ./techguides/run-factory.md
+       - name: Create & Publish a New Template after a Successful Factory Run
+         href: ./create-publish-template.md  
        - name: Manage Artifactory Test Cycle
          href: ./techguides/artifactory-test-cycle.md 
    - name: Tutorials
@@ -97,8 +99,6 @@
          href: ./setup-testcases-video.md    
        - name: Run Factory 
          href: ./run-factory-video.md   
-       - name: Create & Publish a New Template after a Successful Factory Run
-         href: ./create-publish-new-template.md  
 - name: Troubleshooting
   items:
    - name: Extend
