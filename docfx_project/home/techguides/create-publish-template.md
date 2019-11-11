@@ -93,5 +93,26 @@ Make sure you:
 ![](./images/create-template-factory.png)
 
 *To see all the steps on how to create a factory, please also check the following* <a href="./factories.md" target="blank">user guide</a>.
+*To see all the steps on how to run a factory, please also check the following* <a href="./run-factory.md" target="blank">user guide</a>.
 
+If the factory run is successful, the below will be displayed on the screen:
+
+![](./images/successful-factory-run.png)
+
+## See the new environment ##
+
+Expand the left side menu and click on 'Environments'. You will see the enviroment that was created following the successful factory run:
+
+![](./images/factory-run-environment.png)
+
+
+## Create and Publish the New Template after the Successful Factory Run ##
+
+Click on the newly created environment. On the right side of the page click on 'Save as a new template'. Type in the Template Name and a brief description. 
+
+![](./images/save-new-template.png)
+
+To see the new template, go to the Templates Catalogue tab. Your template is now available in your templates list.
+ 
+![](./images/new-template.png)
 

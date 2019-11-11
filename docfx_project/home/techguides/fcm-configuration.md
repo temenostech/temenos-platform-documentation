@@ -96,6 +96,18 @@ To see all the steps regarding how to add a new user on the portal and to attach
 
 ![drag message](./images/fcm-drag-message.png)
 
+
+ If you receive the 'Permission denied - Error code 3' notification when trying to move the message, please follow the below steps in WinSCP:
+> 
+
+- Go to options, then Preferences
+- Click on Transfer, then select Default and Edit 
+![drag message](./images/winscp-error1.png)
+- Select the ignore permission errors
+![drag message](./images/winscp-error2.png)
+
+
+
 ## Check the Messages in Transaction Alert Manager
 
 - Go to the portal to your environment
