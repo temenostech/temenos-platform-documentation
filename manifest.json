@@ -2587,6 +2587,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/factory-run-environment.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/factory-run-environment.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/fcm-check-messages.png",
       "output": {
         "resource": {
@@ -4171,6 +4182,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/save-new-template.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/save-new-template.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/screen-key-generated.png",
       "output": {
         "resource": {
@@ -5291,13 +5313,13 @@
           "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
