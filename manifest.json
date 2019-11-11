@@ -669,7 +669,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/create-publish-template.html",
-          "hash": "UGAbt2oSMpPb2F5mxkd79A=="
+          "hash": "SQ+CSWyYQBISKB9tylPq5g=="
         }
       },
       "is_incremental": false,
@@ -741,7 +741,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/fcm-configuration.html",
-          "hash": "m5PMZ0ODqAT6D/PSS3IosQ=="
+          "hash": "efEuXneg72id0fIRGgOGwA=="
         }
       },
       "is_incremental": false,
@@ -3676,6 +3676,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/new-template.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/new-template.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/new-user-created.png",
       "output": {
         "resource": {
@@ -5178,12 +5189,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "home/toc.yml",
       "output": {
         ".html": {
           "relative_path": "home/toc.html",
-          "hash": "iUPYMq5spEt1qNoBR/50yQ=="
+          "hash": "zeITQOIZMk2Gv7fGW9P93Q=="
         }
       },
       "is_incremental": false,
