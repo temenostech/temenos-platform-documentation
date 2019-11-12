@@ -81,7 +81,7 @@
        - name: Run a Factory with "Run Now" Button and Dashboard
          href: ./techguides/run-factory.md
        - name: Create & Publish a New Template after a Successful Factory Run
-         href: ./create-publish-template.md  
+         href: ./techguides/create-publish-template.md  
        - name: Manage Artifactory Test Cycle
          href: ./techguides/artifactory-test-cycle.md 
    - name: Tutorials
