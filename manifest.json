@@ -669,7 +669,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/create-publish-template.html",
-          "hash": "dCbz01+N6KZeSua5bBqtTw=="
+          "hash": "Ve3rOoj8zv8pk9k+5ovLcg=="
         }
       },
       "is_incremental": false,
@@ -5314,10 +5314,6 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -5335,6 +5331,10 @@
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
           "incrementalPhase": "build"
         }
       }
