@@ -2,7 +2,7 @@
 
 This feature offers the possibility to baseline a particular version of a product and create a template from that version. Further anybody will be able to create an environment with the baselined version of the product.
 
-#Set up the Factory prerequisites:
+#Prerequisites to set up the Factory:
 #1. Check Metadata on the portal
 
 - Login to the portal with your credentials.
