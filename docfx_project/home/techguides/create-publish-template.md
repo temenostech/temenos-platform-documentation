@@ -1,8 +1,9 @@
-# How to Create and Publish a New Template after a Successful Factory Run #
+# How to Create and Publish a New Template after a Successful Factory Run 
 
 This feature offers the possibility to baseline a particular version of a product and create a template from that version. Further anybody will be able to create an environment with the baselined version of the product.
 
-## Check Metadata on the portal ##
+## Set up the Factory prerequisites: ##
+#1. Check Metadata on the portal
 
 - Login to the portal with your credentials.
 - Click General button on the left side menu in order to see the metadata of your organization, from which you will need:
@@ -11,7 +12,7 @@ This feature offers the possibility to baseline a particular version of a produc
 
 ![](./images/create-template-metadata.png)
 
-## Create a repository into the artifactory  ##
+# 2. Create a repository into the artifactory
 
 - Use the ARTIFACTORY_URL in order to login to the artifactory assigned to your organization.
 - Login with your credentials.
@@ -34,7 +35,7 @@ This feature offers the possibility to baseline a particular version of a produc
 
 ![](./images/create-template-artifacts.png)
 
-## Setting the Default Stage ##
+# 3. Setting the Default Stage
 
 To proceed further with all the configurations required in order to run a factory, you need to have a default stage created.
 
@@ -50,7 +51,7 @@ There are two possibilities to set the stage:
 
 ![](./images/create-template-repo-stage.png)
 
-## Setting the Stream ##
+# 4. Setting the Stream
 
 Go to the **Streams** buttons and click **New Stream**. The default stage will appear automatically associated.
 
@@ -58,14 +59,14 @@ Go to the **Streams** buttons and click **New Stream**. The default stage will a
 
 *To see all the steps on how to create a stream, please also check the following* <a href="./stream.md" target="blank">user guide</a>.
 
-## Setting the Stage ##
+# 5. Setting the Stage
 
 Go to **Stages** button and make sure you create a new stage, the one in the added components will be promoted.
 
 *To see all the steps on how to add components and create products, please also check the following* <a href="./stage.md" target="blank">user guide</a>.
 
 
-## Setting the Components and Products ##
+# 6. Setting the Components and Products
 
 - Go to **Products** button and make sure you add first the mandatory **components** related to the template that you need to use.
 - Then configure the principle and base products. See an example of set-up below:
@@ -78,7 +79,7 @@ Also make sure you upload all the components' binaries and test cases into the r
 
 *To see all the steps on how to add components and create products, please also check the following* <a href="./components-products.md" target="blank">user guide</a>.
 
-## Setting the Factory ##
+# 7. Setting the Factory
 
 Go to **Factories** button and click **New Factory** on the top right. 
 
@@ -99,14 +100,14 @@ If the factory run is successful, the below will be displayed on the screen:
 
 ![](./images/successful-factory-run.png)
 
-## See the new environment ##
+# 8. See the new environment
 
 Expand the left side menu and click on 'Environments'. You will see the enviroment that was created following the successful factory run:
 
 ![](./images/factory-run-environment.png)
 
 
-## Create and Publish the New Template after the Successful Factory Run ##
+##Create and Publish the New Template after the Successful Factory Run 
 
 Click on the newly created environment. On the right side of the page click on 'Save as a new template'. Type in the Template Name and a brief description. 
 
