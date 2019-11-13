@@ -2,7 +2,7 @@
 
 This feature offers the possibility to baseline a particular version of a product and create a template from that version. Further anybody will be able to create an environment with the baselined version of the product.
 
-## Set up the Factory prerequisites: ##
+#Set up the Factory prerequisites:
 #1. Check Metadata on the portal
 
 - Login to the portal with your credentials.
@@ -107,7 +107,7 @@ Expand the left side menu and click on 'Environments'. You will see the envirome
 ![](./images/factory-run-environment.png)
 
 
-##Create and Publish the New Template after the Successful Factory Run 
+# Create and Publish the New Template after the Successful Factory Run 
 
 Click on the newly created environment. On the right side of the page click on 'Save as a new template'. Type in the Template Name and a brief description. 
 
