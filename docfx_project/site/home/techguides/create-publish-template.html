@@ -82,7 +82,8 @@
 <h1 id="how-to-create-and-publish-a-new-template-after-a-successful-factory-run">How to Create and Publish a New Template after a Successful Factory Run</h1>
 
 <p>This feature offers the possibility to baseline a particular version of a product and create a template from that version. Further anybody will be able to create an environment with the baselined version of the product.</p>
-<h2 id="check-metadata-on-the-portal">Check Metadata on the portal</h2>
+<h2 id="set-up-the-factory-prerequisites">Set up the Factory prerequisites:</h2>
+<h1 id="1-check-metadata-on-the-portal">1. Check Metadata on the portal</h1>
 <ul>
 <li>Login to the portal with your credentials.</li>
 <li>Click General button on the left side menu in order to see the metadata of your organization, from which you will need:<ul>
@@ -92,7 +93,7 @@
 </li>
 </ul>
 <p><img src="images/create-template-metadata.png" alt=""></p>
-<h2 id="create-a-repository-into-the-artifactory">Create a repository into the artifactory</h2>
+<h1 id="2-create-a-repository-into-the-artifactory">2. Create a repository into the artifactory</h1>
 <ul>
 <li>Use the ARTIFACTORY_URL in order to login to the artifactory assigned to your organization.</li>
 <li>Login with your credentials.</li>
@@ -113,7 +114,7 @@
 <li>You can check the created repository by clicking the Artifacts button on the left side menu of the JFrog Artifactory:</li>
 </ul>
 <p><img src="images/create-template-artifacts.png" alt=""></p>
-<h2 id="setting-the-default-stage">Setting the Default Stage</h2>
+<h1 id="3-setting-the-default-stage">3. Setting the Default Stage</h1>
 <p>To proceed further with all the configurations required in order to run a factory, you need to have a default stage created.</p>
 <p>There are two possibilities to set the stage:</p>
 <ul>
@@ -127,14 +128,14 @@
 </li>
 </ul>
 <p><img src="images/create-template-repo-stage.png" alt=""></p>
-<h2 id="setting-the-stream">Setting the Stream</h2>
+<h1 id="4-setting-the-stream">4. Setting the Stream</h1>
 <p>Go to the <strong>Streams</strong> buttons and click <strong>New Stream</strong>. The default stage will appear automatically associated.</p>
 <p><img src="images/create-template-stream.png" alt=""></p>
 <p><em>To see all the steps on how to create a stream, please also check the following</em> <a href="stream.html" target="blank">user guide</a>.</p>
-<h2 id="setting-the-stage">Setting the Stage</h2>
+<h1 id="5-setting-the-stage">5. Setting the Stage</h1>
 <p>Go to <strong>Stages</strong> button and make sure you create a new stage, the one in the added components will be promoted.</p>
 <p><em>To see all the steps on how to add components and create products, please also check the following</em> <a href="stage.html" target="blank">user guide</a>.</p>
-<h2 id="setting-the-components-and-products">Setting the Components and Products</h2>
+<h1 id="6-setting-the-components-and-products">6. Setting the Components and Products</h1>
 <ul>
 <li>Go to <strong>Products</strong> button and make sure you add first the mandatory <strong>components</strong> related to the template that you need to use.</li>
 <li>Then configure the principle and base products. See an example of set-up below:</li>
@@ -143,7 +144,7 @@
 <p><img src="images/create-template-base.png" alt=""></p>
 <p>Also make sure you upload all the components&#39; binaries and test cases into the related folders of the artifactory.</p>
 <p><em>To see all the steps on how to add components and create products, please also check the following</em> <a href="components-products.html" target="blank">user guide</a>.</p>
-<h2 id="setting-the-factory">Setting the Factory</h2>
+<h1 id="7-setting-the-factory">7. Setting the Factory</h1>
 <p>Go to <strong>Factories</strong> button and click <strong>New Factory</strong> on the top right. </p>
 <p>Make sure you:</p>
 <ul>
@@ -155,7 +156,18 @@
 <li>click Create.</li>
 </ul>
 <p><img src="images/create-template-factory.png" alt=""></p>
-<p><em>To see all the steps on how to create a factory, please also check the following</em> <a href="factories.html" target="blank">user guide</a>.</p>
+<p><em>To see all the steps on how to create a factory, please also check the following</em> <a href="factories.html" target="blank">user guide</a>.
+<em>To see all the steps on how to run a factory, please also check the following</em> <a href="run-factory.html" target="blank">user guide</a>.</p>
+<p>If the factory run is successful, the below will be displayed on the screen:</p>
+<p><img src="images/successful-factory-run.png" alt=""></p>
+<h1 id="8-see-the-new-environment">8. See the new environment</h1>
+<p>Expand the left side menu and click on &#39;Environments&#39;. You will see the enviroment that was created following the successful factory run:</p>
+<p><img src="images/factory-run-environment.png" alt=""></p>
+<h2 id="create-and-publish-the-new-template-after-the-successful-factory-run">Create and Publish the New Template after the Successful Factory Run</h2>
+<p>Click on the newly created environment. On the right side of the page click on &#39;Save as a new template&#39;. Type in the Template Name and a brief description. </p>
+<p><img src="images/save-new-template.png" alt=""></p>
+<p>To see the new template, go to the Templates Catalogue tab. Your template is now available in your templates list.</p>
+<p><img src="images/new-template.png" alt=""></p>
 <p><br></p>
               <hr>
               

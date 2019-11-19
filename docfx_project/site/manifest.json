@@ -669,7 +669,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/create-publish-template.html",
-          "hash": "UGAbt2oSMpPb2F5mxkd79A=="
+          "hash": "+PdgVG2jSsOE7Y96GAN/RQ=="
         }
       },
       "is_incremental": false,
@@ -681,7 +681,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/customize-templates.html",
-          "hash": "FRDFYlb9hETW2E+TU2J37Q=="
+          "hash": "dk8RbVzWNQrV7OM4cl3AWw=="
         }
       },
       "is_incremental": false,
@@ -741,7 +741,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/fcm-configuration.html",
-          "hash": "m5PMZ0ODqAT6D/PSS3IosQ=="
+          "hash": "efEuXneg72id0fIRGgOGwA=="
         }
       },
       "is_incremental": false,
@@ -2587,6 +2587,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/factory-run-environment.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/factory-run-environment.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/fcm-check-messages.png",
       "output": {
         "resource": {
@@ -3665,6 +3676,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/new-template.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/new-template.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/new-user-created.png",
       "output": {
         "resource": {
@@ -4171,6 +4193,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/save-new-template.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/save-new-template.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/screen-key-generated.png",
       "output": {
         "resource": {
@@ -4384,6 +4417,17 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/success_after_push.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/successful-factory-run.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/successful-factory-run.png"
         }
       },
       "is_incremental": false,
@@ -4897,6 +4941,28 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/winscp-error1.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/winscp-error1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/winscp-error2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/winscp-error2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/wizard-routine.png",
       "output": {
         "resource": {
@@ -5032,7 +5098,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/tafj-db-setup.html",
-          "hash": "+6xHnmwtYcgn+Kv9pq7TsA=="
+          "hash": "9get5zPrleCHp/qA+gAvEA=="
         }
       },
       "is_incremental": false,
@@ -5128,7 +5194,7 @@
       "output": {
         ".html": {
           "relative_path": "home/toc.html",
-          "hash": "iUPYMq5spEt1qNoBR/50yQ=="
+          "hash": "C9R4XIZk2DQMS4rnoPD8Ow=="
         }
       },
       "is_incremental": false,
@@ -5252,6 +5318,11 @@
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
+        "RestApiDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
@@ -5263,11 +5334,6 @@
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "RestApiDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
