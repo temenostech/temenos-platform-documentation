@@ -4820,6 +4820,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/uers-tab.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/uers-tab.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/updates-go-to-app.png",
       "output": {
         "resource": {
@@ -4923,17 +4934,6 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/user-new.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/users-tab.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/users-tab.png"
         }
       },
       "is_incremental": false,
@@ -5141,12 +5141,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/user-creation-in-paas.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/user-creation-in-paas.html",
-          "hash": "09djbIncdLx76A9AynJ7Rw=="
+          "hash": "zQzJs0ZuyM2K0uAaJFtytw=="
         }
       },
       "is_incremental": false,
@@ -5170,7 +5173,7 @@
       "output": {
         ".html": {
           "relative_path": "home/temenos-cloud-templates.html",
-          "hash": "fp4ECo/Qwco+Kiwdj+A3Sw=="
+          "hash": "g4MKRQn57HJgNinQgIU9gg=="
         }
       },
       "is_incremental": false,
