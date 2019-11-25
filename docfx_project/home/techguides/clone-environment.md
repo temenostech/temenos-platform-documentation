@@ -40,16 +40,9 @@ Please see below some explanations on how this process works and what are the re
  - The new (clone-environment) will have the same template as the source environment.
  - In the Event Tab of the source Environment (the one being cloned), the Event notifications will display the date, time and duration of the Cloning action.
  - The **Clone** button will be disabled until on the left side of the screen you will notice the new cloned environment being created.
-
-<br>
-
 - The new environment will be visible in the Environments list with the status **Creating**:
 
 ![](./images/clone-refresh.png) 
-
-<br>
-
-![](./images/clone-env-creating.png) 
 
 
 
