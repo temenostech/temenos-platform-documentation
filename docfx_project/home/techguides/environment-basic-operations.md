@@ -2,7 +2,7 @@
 
 After logging to the portal, go to the Environments tab on the left menu > you will see available two buttons: Refresh and New Environment.
 
-After creating an environment, there are several actions (operations) that can be done via the available buttons: clone, edit, delete, start, stop, rebuild, export the database, boost and deploy the repository and also using the endpoints related to T24, the database or to the repository.
+After creating an environment, there are several actions (operations) that can be done via the available buttons: clone, edit, delete, start, stop, rebuild, export the database and deploy the repository and also using the endpoints related to T24, the database or to the repository.
 <br>
  
 ![buttons](./images/buttons-all.png)
@@ -10,6 +10,14 @@ After creating an environment, there are several actions (operations) that can b
 <br>
 
 ## Environment buttons: ##
+
+![start](./images/start-all-user-env.png) **Start All User Environments** button:
+
+- Use this button to only start all user environments.
+
+![start](./images/stop-all-user-env.png) **Stop All User Environments** button:
+
+- Use this button to only stop all user environments. Not that this action will not stop factory environments.
 
 ![start](./images/button-refresh.png) **Refreshing** the page:
 
@@ -109,12 +117,6 @@ By clicking the "Export database" button a zip file will be generated in the sft
 ## Repository section - available actions ##
 
 ### <span style="color:orange;font-weight:1000;">**Buttons**:</span>  ###
-
-![boost](./images/button-boost.png) **Boosting** 
-
-- Used to apply the changes made to the environments' repository (you can modify the infra-templates, the playbooks or the roles).
-
-<br>
 
 ![deploy](./images/button-deploy.png)**Deploying**
 
