@@ -10,7 +10,7 @@ After creating an environment, there are several actions (operations) that can b
 <br>
 
 ## Environment buttons: ##
-
+ 
 ![start](./images/start-all-user-env.png) **Start All User Environments** button:
 
 - Use this button to only start all user environments.
