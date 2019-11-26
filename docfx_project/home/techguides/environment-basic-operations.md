@@ -11,6 +11,11 @@ After creating an environment, there are several actions (operations) that can b
 
 ## Environment buttons: ##
  
+![start](./images/button-boost.png) **Boost** button:
+
+- Used to apply the changes made to the environments' repository (you can modify the infra-templates, the playbooks or the roles).
+
+
 ![start](./images/start-all-user-env.png) **Start All User Environments** button:
 
 - Use this button to only start all user environments.
@@ -135,3 +140,13 @@ This section displays the gitlab repository correspondent to your T24 sandbox th
 > <span style="color:RED">As a good practice and in terms of reducing your costs, it is recommended that you don't keep an environment **unused**. Even if it's not used, it will still generate costs. The environment will be deleted by the Extend team (with a previous mail notification) when it is unused for more than 3 days (for internal clients), respectively for more than 7 days (for external clients).
 > 
 > Also to reduce costs, the environment can be put on **Stop** and started only when required. The environments that are stopped will not be deleted.</span>
+
+## Schedule Environments ##
+Users have the option to schedule environments at their convenience. To proceed:
+
+-  Go to the left-side menu
+-  Click on General 
+-  Select the 'Schedule Environments' tab
+
+The user can either start or stop all environments on certain dates, days or at a certain hour (UTC time zone). 
+![deploy](./images/environment-schedule.png)
