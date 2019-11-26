@@ -58,10 +58,6 @@ See below example:
 
 ![](./images/products-add-component.png)
 
-After creating it, under Component Details you will notice a link of this type: 
-
-<span style="color:DarkSlateBlue">**Upload URL: http://platformdevartifactory.dev.temenos.cloud:8081/artifactory/stable_dev/Dev/Stable_Dev/T24_Browse**</span>
-
 A folder is automatically created into the repository *(we are using JFrog Artifactory)* with the name of your component and will be always created under the default **stable_dev** stage. This is the path where the components' files should be uploaded as explained on the next steps:
 
 *(Please note that the components' artifacts can be uploaded any time before running a factory).*
@@ -153,3 +149,10 @@ You can edit:
 
 > [!Note]
 > If the respective product is attached to a factory, you will not be able to delete. You need to delete the factory first.
+
+
+# Artifactory view #
+
+The artifactory view displays the uploaded components that are available for the particular stages. By expanding the components, the user triggers a download of the respective component zip file.
+
+![](./images/artifactory_view.png)

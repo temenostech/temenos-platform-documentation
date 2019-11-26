@@ -96,3 +96,10 @@ b. **Failure Webhook** – Same as Success Webhooks. But are called when the fac
 - You can easily delete a factory by clicking the **delete** button.
 - The products, stages and streams created before can be re-used.
 
+## Factory Scheduler ##
+A user has the privilege to configure the schedule of the factory run in order to automatically run the tests and have the results available daily.
+- the scheduler can be configured to run one time per day
+- if the factory run test is successful you can choose to stop/ or keep running the T24 environment
+- the same applies for the Factory Run Failure scenario
+The 'Stop Environment' and 'Keep Running Environment' options are aimed to be used for costs purposes.
+![](./images/factory-scheduler.png)

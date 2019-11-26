@@ -28,7 +28,7 @@ The promotion of the components across stages is conditional based on the status
  - Click on Stage button, make sure you select the Stream where you want to add a stage and then on the **New Stage** on the top right.
  - Fill the name *(mandatory field)*. Take into account these conditions (also notified on the screen): Name can start only with a letter or an underscore and it can contain only letters, digits, underscores or hyphens.
  - Fill the description *(mandatory field)*.
- - Check the Enable option and then click **Create**. 
+ - Click **Create**. 
 
 **Note**: *Instead of choosing the enable option, you can create a disabled stage and enable it later, but the default option should be enable.*
 
@@ -36,7 +36,7 @@ The promotion of the components across stages is conditional based on the status
 
 ## Edit a Stage ##
 
-Compared to the streams, a stage can have only the description edited/ changed, but not the name. Why? Because when creating a stage, a folder is created automatically in the Artifactory containing the stage name. This folder will contain the components that you may be added for the respective stage.
+A stage can have only the description edited/ changed, but not the name. Why? Because when creating a stage, a folder is created automatically in the Artifactory containing the stage name. This folder will contain the components that you may be added for the respective stage.
 
 Just click the edit button, change the description and then click update.
 
@@ -44,7 +44,7 @@ Just click the edit button, change the description and then click update.
 
 After logging to the portal, go to the **General** button on the left menu. Here you can see and edit the metadata.
 
-The DEFAULT_STAGE_NAME can be defined after the creation of an organization in order to be able to use the assemble functionalities and **can be editable**.
+The DEFAULT STAGE NAME can be defined after the creation of an organization in order to be able to use the assemble functionalities and **can be editable**.
 
 In case it has not been defined at the beginning, then when you try to create a stream, a new field about default stage will appear and here you need to insert a name for the default stage. 
 
@@ -54,13 +54,17 @@ This field will be automatically added into the metadata and **will not be edita
 ## Delete a Stage ##
 
 > [!Note]
-> <span style="color:red">The default stage cannot be deleted. (This is the stage configured into the metadata).</span>
+> <span style="color:red">The default stage cannot be deleted (this is the stage configured into the metadata).</span>
 
 Example: 
 - Suppose we have created a stage named Primary_stage. No matter if we have configured further components and products, we can just go and delete this stage.
 
 Any other created stage can be deleted at any moment as it is not dependent of the subsequent features added such as components and products. Components and Products belong to the streams.
 
-Example of the default stage defined into the metadata (you can set any name you prefer instead of *default_stage*):
+Example of the default stage defined into the metadata (you can set any name you prefer instead of *demo_stage*):
 
 ![](./images/stage-metadata.png)
+
+> [!Note]
+The MAX_ENV_COUNT count only applies for User Environments and does not count the factory environments. If the value is not set at the organization level, the value is defaulted to 10. 
+Once created, the values will not be editable / deleteable by the user. 
