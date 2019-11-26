@@ -110,15 +110,22 @@ Expand the left side menu and click on 'Environments'. You will see the envirome
 # Create and Publish the New Template after the Successful Factory Run 
 
 There are two alternatives to Create and Publish the new Template after the Successful Run:
-1. Save the New Template from the Factory Run 
-- go to Dashboard
 
+1. Automated trigger 
+- save the New Template from the Factory Run 
+- go to Dashboard
 - on the Factory Run click on 'Actions' and select from the drop-down 'Create New Template
 
 
 ![](./images/run-factory-completed.png)
 
-Click on the newly created environment. On the right side of the page click on 'Save as a new template'. Type in the Template Name and a brief description. 
+
+
+
+2. Manual trigger 
+- click on the newly created environment
+- on the right side of the page click on 'Save as a new template'
+- type in the Template Name and a brief description 
 
 ![](./images/save-new-template.png)
 
