@@ -15,7 +15,7 @@ Click **Run Now**.
 
 ![](./images/run-factory-dashboard.png)
 
-The process is initiated and it will get immediately to the stage where an environment based on your chosen template is created.
+The process is initiated and it will get immediately to the stage where an environment based on your chosen template is created. 
 
 ![](./images/run-factory-deploy.png)
 
