@@ -133,3 +133,4 @@ To see the new template, go to the Templates Catalogue tab. Your template is now
  
 ![](./images/new-template.png)
 
+ 
