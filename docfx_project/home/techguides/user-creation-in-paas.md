@@ -102,18 +102,3 @@ This will create a new user in your organisation. This new user will be automati
 
 - For further details or issues related to Gitlab SSH keys usage, or other operating systems (MAC, Linux), please consult this link:  [https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
 
-# User Roles Management #
-
-By default, when your organisation is created, Temenos will provide you the link and access instructions to your designated organisation administrator (the first and only user with full rights on the platform).
-The administrator can create more users and navigate to the Roles section on the portal to assign various permissions to each user:
-
-To create a role, the admin will click on 'New Role' and fill in the blanks:
-
-The admin can select which permissions to set to each user.
-
-Once the role is created, the admin can assign it to a specific user:
-
-- go to the 'Users' tab and select the user 
-- choose from the drop-down list the user 
-- click 'Edit' on the user
-- choose from the drop-down list the role that needs to be assigned 
