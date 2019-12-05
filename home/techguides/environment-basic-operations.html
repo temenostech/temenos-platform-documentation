@@ -82,11 +82,23 @@
 <h1 id="environment-basic-operations">Environment Basic Operations</h1>
 
 <p>After logging to the portal, go to the Environments tab on the left menu &gt; you will see available two buttons: Refresh and New Environment.</p>
-<p>After creating an environment, there are several actions (operations) that can be done via the available buttons: clone, edit, delete, start, stop, rebuild, export the database, boost and deploy the repository and also using the endpoints related to T24, the database or to the repository.
+<p>After creating an environment, there are several actions (operations) that can be done via the available buttons: clone, edit, delete, start, stop, rebuild, export the database and deploy the repository and also using the endpoints related to T24, the database or to the repository.
 <br></p>
 <p><img src="images/buttons-all.png" alt="buttons"></p>
 <p><br></p>
 <h2 id="environment-buttons">Environment buttons:</h2>
+<p><img src="images/button-boost.png" alt="start"> <strong>Boost</strong> button:</p>
+<ul>
+<li>Used to apply the changes made to the environments&#39; repository (you can modify the infra-templates, the playbooks or the roles).</li>
+</ul>
+<p><img src="images/start-all-user-env.png" alt="start"> <strong>Start All User Environments</strong> button:</p>
+<ul>
+<li>Use this button to only start all user environments.</li>
+</ul>
+<p><img src="images/stop-all-user-env.png" alt="start"> <strong>Stop All User Environments</strong> button:</p>
+<ul>
+<li>Use this button to only stop all user environments. Not that this action will not stop factory environments.</li>
+</ul>
 <p><img src="images/button-refresh.png" alt="start"> <strong>Refreshing</strong> the page:</p>
 <ul>
 <li>Use this button to refresh any action in progress (related to an environment but also to a factory).</li>
@@ -169,11 +181,6 @@
 <p><br></p>
 <h2 id="repository-section---available-actions">Repository section - available actions</h2>
 <h3 id="span-stylecolororangefont-weight1000buttonsspan"><span style="color:orange;font-weight:1000;"><strong>Buttons</strong>:</span></h3>
-<p><img src="images/button-boost.png" alt="boost"> <strong>Boosting</strong> </p>
-<ul>
-<li>Used to apply the changes made to the environments&#39; repository (you can modify the infra-templates, the playbooks or the roles).</li>
-</ul>
-<p><br></p>
 <p><img src="images/button-deploy.png" alt="deploy"><strong>Deploying</strong></p>
 <ul>
 <li>To be used when deploying newly added plugins, endpoints, updates, web services, packages etc.</li>
@@ -187,6 +194,15 @@
 <p><span style="color:RED">As a good practice and in terms of reducing your costs, it is recommended that you don&#39;t keep an environment <strong>unused</strong>. Even if it&#39;s not used, it will still generate costs. The environment will be deleted by the Extend team (with a previous mail notification) when it is unused for more than 3 days (for internal clients), respectively for more than 7 days (for external clients).<p>
 <p>Also to reduce costs, the environment can be put on <strong>Stop</strong> and started only when required. The environments that are stopped will not be deleted.</span></p>
 </div>
+<h2 id="schedule-environments">Schedule Environments</h2>
+<p>Users have the option to schedule environments at their convenience. To proceed:</p>
+<ul>
+<li>Go to the left-side menu</li>
+<li>Click on General </li>
+<li>Select the &#39;Schedule Environments&#39; tab</li>
+</ul>
+<p>The user can either start or stop all environments on certain dates, days or at a certain hour (UTC time zone). 
+<img src="images/environment-schedule.png" alt="deploy"></p>
 <p><br></p>
               <hr>
               

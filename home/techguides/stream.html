@@ -113,14 +113,18 @@ The parts of the stream are listed below:</p>
 <li>Click on Stream button and then on the <strong>New Stream</strong> on the top right</li>
 <li>Fill the name <em>(mandatory field)</em>. Take into account these conditions (also notified on the screen): Name can start only with a letter or an underscore and it can contain only letters, digits, underscores or hyphens.</li>
 <li>Fill the description <em>(mandatory field)</em>.</li>
-<li>Check the Enable option and then click <strong>Create</strong>. </li>
+<li>Click <strong>Create</strong>. </li>
 </ul>
 <p><strong>Note</strong>: <em>Instead of choosing the enable option, you can create a disabled stream and enable it later, but the default option should be enable.</em></p>
-<p><img src="images/streams-create.png" alt=""></p>
-<p>After the successful creation, your stream will appear on the screen <em>(in case you already have other streams, the newly created will be the last in chronological order)</em> and it will automatically have associated the default stage named &#39;Stable_Dev&#39; (as in current example). Please <strong>note</strong> that the default stage name is defined in the metadata settings of your organization (On the main menu &gt; General).</p>
-<p><img src="images/streams-created.png" alt=""></p>
+<p><img src="./images/streams-create.png" alt=""></p>
+<p>After the successful creation, your stream will appear on the screen <em>(in case you already have other streams, the newly created will be the last in chronological order)</em> and it will automatically have associated the default stage named &#39;demo_stage&#39; (as in current example). Please <strong>note</strong> that the default stage name is defined in the metadata settings of your organization (On the main menu &gt; General).</p>
+<p><img src="./images/streams-created.png" alt=""></p>
 <h2 id="edit-a-stream">Edit a Stream</h2>
 <p>You can edit anytime the name, the description of the stage or choose the disable option by clicking the edit button. </p>
+<p><img src="./images/streams-edited.png" alt=""></p>
+<h2 id="clone-a-stream">Clone a Stream</h2>
+<p>You can clone a stream as well. This action will copy the latest version of all components in the default stage to the new stream. When cloning the stream, you can add a stream name, stream description and enable/disable it.</p>
+<p><img src="./images/streams-cloned.png" alt=""></p>
 <h2 id="delete-a-stream">Delete a Stream</h2>
 <div class="NOTE"><h5>Note</h5><p><span style="color:red">In order to delete a stream, you need to delete first all the subsequent features created. See example and explanations below.</span></p>
 </div>
@@ -131,15 +135,15 @@ The parts of the stream are listed below:</p>
 </ul>
 <p>Example 2:</p>
 <ul>
-<li>Suppose we have created a stream named Dev that has the default stage (stable_dev) and also a stage named Primary_stage, without configuring further components and products.</li>
-<li>In order to be able to delete a stream that has <strong>more than the stable_dev stage</strong>, we need first to go and delete the stages attached to it.</li>
-<li>Go first to Stages button on the left menu &gt; Select first your stream (top right) &gt; Select the stage that you want to delete (others then stable_dev - <em>because this stage cannot be deleted</em>) &gt; And click the delete button.</li>
+<li>Suppose we have created a stream named Dev that has the default stage (demo_stage) and also a stage named Primary_stage, without configuring further components and products.</li>
+<li>In order to be able to delete a stream that has <strong>more than the demo_stage</strong>, we need first to go and delete the stages attached to it.</li>
+<li>Go first to Stages button on the left menu &gt; Select first your stream (top right) &gt; Select the stage that you want to delete (others then demo_stage - <em>because this stage cannot be deleted</em>) &gt; And click the delete button.</li>
 </ul>
-<p><img src="images/streams-delete-stage.png" alt=""></p>
+<p><img src="./images/streams-delete-stage.png" alt=""></p>
 <ul>
-<li>Go back to Streams and you will notice that your stream has only the stable_dev stage associated, therefore you are able to delete the stream. Click the Delete button.</li>
+<li>Go back to Streams and you will notice that your stream has only the demo_stage stage associated, therefore you are able to delete the stream. Click the Delete button.</li>
 </ul>
-<p><img src="images/streams-delete-streams.png" alt=""></p>
+<p><img src="./images/streams-delete-streams.png" alt=""></p>
 <p>If you have added other stages and also components and products, first delete all the products, then the components, then the associated stages and finally you will be able to delete the stream. In case you skip one of these features deletion, the system will notify that is not possible to delete the respective stage.</p>
 <p><br></p>
               <hr>
