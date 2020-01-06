@@ -8,7 +8,7 @@ Each component is associated to a component type to help Temenos Continuous Depl
 The **Component Type** field in the component data is the key to help the Temenos Continuous Deployment Platform Controllers deploy the right components in the right way. 
 An organization can define as many components as needed but should have all mandatory components defined in the templates that are assigned to the organization.
 
-Practically when a template is assigned to an organization, a list of component types related to that template is added for that organization.
+Practically when a template is assigned to an organization, a list of component types related to that template is added for that organization. 
 
 Each component has the following fields *(all mandatory)*:
 
