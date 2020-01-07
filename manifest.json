@@ -669,7 +669,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/components-products.html",
-          "hash": "p8IriL5hy/KcZzO8GToesQ=="
+          "hash": "UReMJkHgvLNvMocp6LFd+w=="
         }
       },
       "is_incremental": false,
@@ -1617,6 +1617,28 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/components-and-products-uploadurl.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/components-products-mobaxterm.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/components-products-mobaxterm.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/components-products-uploaded-binary.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/components-products-uploaded-binary.png"
         }
       },
       "is_incremental": false,
@@ -4220,6 +4242,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/run-factory-abort-factory.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/run-factory-abort-factory.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/run-factory-create-test.png",
       "output": {
         "resource": {
@@ -5199,7 +5232,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/run-factory.html",
-          "hash": "n2ZCgMwXmfNRmQFCcYlSMg=="
+          "hash": "InBxGI0H4gQOE8FG8NS8Ag=="
         }
       },
       "is_incremental": false,
