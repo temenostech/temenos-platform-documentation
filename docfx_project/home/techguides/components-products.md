@@ -130,7 +130,7 @@ Once the command is run, the binary is uploaded on the Artifactory:
 
 
 
-**Pre-requisites and best practices**
+**Pre-requisites and best practices:**
 
 - ensure that the component name also has information about its version;
 - ensure that the component format that you upload is correct and as delivered by the Temenos team;

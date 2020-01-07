@@ -54,7 +54,7 @@ You can edit anytime the name, the description of the stage or choose the disabl
 ## Clone a Stream ##
 You can clone a stream as well. This action will copy the latest version of all components in the default stage to the new stream. When cloning the stream, you can add a stream name, stream description and enable/disable it.
 
-![](./images/streams-cloned.png)
+![](./images/streams-cloned.png) 
 
 ## Delete a Stream ##
 
