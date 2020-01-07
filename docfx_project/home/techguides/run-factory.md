@@ -16,6 +16,8 @@ Click **Run Now**.
 ![](./images/run-factory-dashboard.png)
 
 The process is initiated and it will get immediately to the stage where an environment based on your chosen template is created. 
+> [!Note]
+>  In the event of a mistake, the user can abort a factory run by clicking the 'Abort' button on the top right side of the page. This action prevents you from deploying, testing or promoting the components. The user can edit the factory and then click 'Run now' again to see the results.   
 
 ![](./images/run-factory-deploy.png)
 
@@ -59,3 +61,4 @@ Based on any factory run, the user can take several actions:
 If  you want to have the creation of the new template enabled even when the factory run fails go to General on the left side of the menu and select the 'Setup Factory' tab. Tick the 'Yes' value that corresponds to the key 'Do you want to allow creation of template from failed factories'.
 
 ![](./images/trigger-new-template.png)
+
