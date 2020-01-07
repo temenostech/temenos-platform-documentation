@@ -22,7 +22,7 @@ After creating an environment, there are several actions (operations) that can b
 
 ![start](./images/stop-all-user-env.png) **Stop All User Environments** button:
 
-- Use this button to only stop all user environments. Not that this action will not stop factory environments.
+- Stops all running VMs that are part of the Environment..
 
 ![start](./images/button-refresh.png) **Refreshing** the page:
 
@@ -51,7 +51,8 @@ After creating an environment, there are several actions (operations) that can b
 
 ![delete](./images/button-delete.png) **Deleting** and environment:
 
-- Stops all instances of an Application in the Environment, removes all resources including configuration repository.
+- Removes all resources including VMs and configuration repository that are part of an Environment.
+
 
 
 ## T24 Release section - available actions: ##
