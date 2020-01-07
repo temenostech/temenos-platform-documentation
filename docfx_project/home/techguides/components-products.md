@@ -90,7 +90,7 @@ Every user created in the Temenos Continuous Deployment Platform can log in with
 
 ![](./images/products-deploy-artifactory.png)
 
-Select single or multi depending on the number of archives you need to add, drag and drop or select the archive and then click **deploy**. 
+Select single or multi depending on the number of archives you need to add, drag and drop or select the archive and then click **deploy**.  
 
 ![](./images/products-deploy-files.png)
 
