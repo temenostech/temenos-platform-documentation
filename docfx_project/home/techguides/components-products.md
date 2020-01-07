@@ -58,11 +58,35 @@ See below example:
 
 ![](./images/products-add-component.png)
 
-A folder is automatically created into the repository *(we are using JFrog Artifactory)* with the name of your component and will be always created under the default **stable_dev** stage. This is the path where the components' files should be uploaded as explained on the next steps:
+A folder is automatically created into the repository *(we are using JFrog Artifactory)* with the name of your component and will be always created under the default **stable_dev** stage. This is the path where the components' files should be uploaded as explained on the next steps.
 
 *(Please note that the components' artifacts can be uploaded any time before running a factory).*
 
 *(If the related artifacts are not uploaded, running the factory will not be possible and an error message will be thrown).*
+
+
+### How to log in to the Artifactory Server ###
+Every user created in the Temenos Continuous Deployment Platform can log in with the platform’s credential on the Artifactory server as well. The users are enabled to download the existing artifacts or upload new artifacts that will be used for factories. This process can be done in two ways:
+
+**A. Manually access the artifactory and upload the required binary (recommended).**
+
+- go on the self-side menu on the portal and click on Metadata. Here are displayed the metadata settings. Copy the Artifactory URL and paste on your browser:
+ ![](./images/components-and-products-artifactoryurl.png)
+ 
+
+- to login, please type the credentials from the Temenos Continuous Deployment Plaftorm
+
+
+
+    **Requirements**:
+
+    - **new user**: it is mandatory for the user to have assigned a role which contains CREATE _ COMPONENT and MANAGE _ COMPONENTS permissions
+    - **existing user**: if a user wants to log in to the Artifactory server, the user must change its password and have the CREATE_COMPONENT and MANAGE_COMPONENTS permissions within the role that was assigned to it. To learn how to change the user roles and permissions please refer to this link.
+
+> [!Note]
+-  if the user’s role is updated afterwards , the user still needs to change its password in order to be added to the Artifactory Server
+-  the user cannot delete artifacts from the Artifactory Server.
+
 
 ![](./images/products-deploy-artifactory.png)
 
@@ -76,6 +100,43 @@ You will see a success message and the archive under your component.
 > Components artifacts are delivered to clients by Temenos Distribution team.
 > Also the binaries/ artifacts have to be uploaded each time a component is updated.
 
+**B. Invoke an Artifactory API that will upload the required binary into the appropriate location.**
+
+In order to invoke that Artifactory API a CURL command must be executed (this can be run manually from a linux VM or from a bash script).
+
+    curl -H "X-JFrog-Art-Api:<ArtifactoryKey>" -X PUT "<DestinationURL>" -T <fileToUpload>
+
+
+- The **ArtifactoryKey** can be taken from the TCD portal (go to General and take the value of ARTIFACTORY_KEY record):
+![](./images/components-and-products-artifactorykey.png)
+
+- **DestinationURL** represents the exact location of the file that will be uploaded in the artifactory together with the name of the binary. For this operation, you need to take the exact path of the artifactory from the TCD portal from the Upload URL field that is displayed on the screen after the component is created:
+![](./images/components-and-products-uploadurl.png)
+
+-  **fileToUpload** represents the binary that should be uploaded from your local machine and it must contain also the path where is present.
+
+> [!Note]
+> Open source doesn’t support multiple file uploads at a time, therefore you need to upload the required binaries one by one.
+
+**Example of the curl command based on the above**: 
+curl -H "X-JFrog-Art-Api:AKCp5dKYyM9WMoiacim9yedAZfG6gLwwcYugPmzZhqHkdRe6ex6pZZnRMteQqedLE9Q3qds6V" "https://1dtk4nz95tssg-artifactory.temenos.cloud/artifactory/repo-1dtk4nz95tssg/dev_stream/demo_stage/t24-jars" -T /drives/c/Users/file/t24-jars-63688104355895.zip
+
+For demo purposes, we used MobaXterm to upload the binary into the Artifactory as displayed below:
+![](./images/components-products-mobaxterm.png)
+
+Once the command is run, the binary is uploaded on the Artifactory:
+![](./images/components-products-uploaded-binary.png)
+
+
+
+
+**Pre-requisites and best practices**
+
+- ensure that the component name also has information about its version;
+- ensure that the component format that you upload is correct and as delivered by the Temenos team;
+- ensure that components are uploaded to the appropriate folders (the URL and folder names can be found from the component definition pages of the TCD portal);
+- if the component is uploaded in a .zip format, it it recommended to have a text file describing what is included in the package/ provide reference to the code commit tags to find what is included in the package;
+- do not delete/ edit/ create components/ folders in the artifactory.  TCD Portal’s Product and Component sections must be used to create anything in artifactory.
 
 ### Which Components to Add ###
 
