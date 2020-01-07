@@ -22,9 +22,10 @@ $(window).on("load", function() {
     var templatesList;
     //Get templates.
     var post1 = $.ajax({
-      url: 'https://paascontroller.temenos.cloud/platform/controller-iris.svc/templates',
+      url: 'https://prodplatformcontroller.temenos.cloud/platform/templates',
       headers: {
         'Accept': 'application/json',
+        'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkb2Nwb3J0YWx1c2VyIiwidXNlcklkIjoiMWVhcGkzanRqdWM1YyIsInJvbGUiOiJST0xFX1VTRVIiLCJvcmdJZCI6IjFlNmsxcTh1OHhnNWMiLCJsYXN0UGFzc3dvcmRSZXNldERhdGUiOjE1NzgzODc0NTkxOTMsImlzc3VlVGltZSI6MTU3ODM4NzQ2NzQyNSwiZXhwaXJ5SW5TZWNzIjo4NjQwMDAwMH0.TrU-dKGmqGRyhrTXVTHzD1VAzuEz3tZ5d-E-FoZJyalFXHRzrttadZmZgHHcl4slJ2AmZmBrVywUw6uFlWFMbw',
         'Content-Type': 'application/json'
       },
       type: 'GET',

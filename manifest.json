@@ -653,6 +653,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "home/techguides/components-products-copy.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/components-products-copy.html",
+          "hash": "GYeRBZSeE6eNnbpnQm1csg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "home/techguides/components-products.md",
       "output": {
         ".html": {
@@ -1561,6 +1573,50 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/como_files_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/components-and-products-artifactorykey.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/components-and-products-artifactorykey.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/components-and-products-artifactoryurl.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/components-and-products-artifactoryurl.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/components-and-products-localcompomentpath.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/components-and-products-localcompomentpath.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/components-and-products-uploadurl.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/components-and-products-uploadurl.png"
         }
       },
       "is_incremental": false,
@@ -5440,14 +5496,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "RestApiDocumentProcessor": {
