@@ -22,7 +22,7 @@ After creating an environment, there are several actions (operations) that can b
 
 ![start](./images/stop-all-user-env.png) **Stop All User Environments** button:
 
-- Stops all running VMs that are part of the Environment..
+- Stops all running VMs that are part of the Environment.
 
 ![start](./images/button-refresh.png) **Refreshing** the page:
 
