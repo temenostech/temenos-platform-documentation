@@ -64,8 +64,9 @@ A folder is automatically created into the repository *(we are using JFrog Artif
 
 *(If the related artifacts are not uploaded, running the factory will not be possible and an error message will be thrown).*
 
+## How to upload binaries into the Artifactory ##
 
-### How to log in to the Artifactory Server ###
+### How to upload binaries into the Artifactory ###
 Every user created in the Temenos Continuous Deployment Platform can log in with the platform’s credential on the Artifactory server as well. The users are enabled to download the existing artifacts or upload new artifacts that will be used for factories. This process can be done in two ways:
 
 **A. Manually access the artifactory and upload the required binary (recommended).**
@@ -155,7 +156,7 @@ From here, select the template that you want to use:
 ![](./images/products-templates.png)
 
 
-### Delete a Component ###
+### How to Delete a Component ###
 
 Components fields are not editable, so you have only the options to create or to delete them.
 
@@ -180,7 +181,7 @@ Ultimately, a product is used in a factory and will be used eventually to deploy
 
 ## How to Set Up/ Edit/ Delete Products ##
 
-### Set-up/ Create a Product ###
+### How to Set-up/ Create a Product ###
 
 - If you have created more streams, first make sure you select the stream where you want to create the respective product (see top right).
 - Click on Products tab and then on New Product button on the top right.
@@ -195,7 +196,7 @@ See also below example.
 
 In addition to the principle product which has all template mandatory components, you will need to create other products - Base Products - that will be used to be tested.
 
-### Edit a Product ###
+### How to edit a product ###
 
 You can edit:
 
@@ -203,7 +204,7 @@ You can edit:
 - The components field by adding or removing components.
 - Just click the edit button, do the changes and then click update.
 
-### Delete a Product ###
+### How to delete a product ###
 
 - Go to the Products tab and select the product you want to delete.
 - Click the delete button.
