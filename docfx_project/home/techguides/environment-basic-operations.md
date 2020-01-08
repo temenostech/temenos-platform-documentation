@@ -84,7 +84,7 @@ After creating an environment, there are several actions (operations) that can b
 
 ![stop](./images/button-stop.png) **Stopping**  an environment:
 
-- Stops all running instances of an Application in an Environment.
+- Stops all running VMs that are part of the Environment.
 
 <br>
 
