@@ -25,7 +25,7 @@ The process is initiated and it will get immediately to the stage where an envir
 
 Clicking on the Environments tab on the left menu, you can check the creation of the environment. The name of the environment will be "Env for Factory xxx", where xxx is the name of your factory.
 
-![](./images/run-factory-environment-create.png)
+![](./images/run-factory-environment-create.png) 
 
 > [!Note]
 > 1. The environment creation stage may take between 20 minutes and a few hours depending on the template used. 
