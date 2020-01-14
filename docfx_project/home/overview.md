@@ -5,7 +5,7 @@ Temenos Continuous Deployment is a cloud based infrastructure used during develo
 Temenos Continuous Deployment is an offering that provides client individuals and teams with the ability to manage, configure and assemble client licensed Temenos Software – either fully deployed and supported by Temenos SaaS or utilising the client’s own cloud infrastructure.
 
 
-
+ 
 
 ![](./images/cloud-offering.png)
 
