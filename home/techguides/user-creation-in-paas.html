@@ -111,7 +111,7 @@
 <p>•   Login to your organisation portal using the link and the credentials provided.</p>
 <p><img src="images/user-login.png" alt="portal login"></p>
 <p>•   Go to the menu on the left and then click Users tab, as below:</p>
-<p><img src="images/users-tab.png" alt="new user"></p>
+<p><img src="images/users-tab.png" alt="new user"> </p>
 <p>The first screen that you will see is the one for the existing user (usually admin).</p>
 <p>Click <strong>New user</strong> button on the top-right corner:</p>
 <p><img src="./images/user-new.png" alt="new user"></p>
@@ -141,6 +141,34 @@ See further below how to generate the SSH key</p>
 <li><p>For further details or issues related to Gitlab SSH keys usage, or other operating systems (MAC, Linux), please consult this link:  <a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/">https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/</a></p>
 </li>
 </ul>
+<h1 id="user-roles-management">User Roles Management</h1>
+<p>By default, when your organisation is created, Temenos will provide you the link and access instructions to your designated organisation administrator (the first and only user with full rights on the platform).
+The administrator can create more users and navigate to the Roles section on the portal to assign various permissions to each user. To create a role, the admin will click on &#39;New Role&#39; and fill in the blanks:</p>
+<p><img src="images/create-user-role.png" alt="user"></p>
+<p>The admin can select which permissions to set to each user.
+<img src="images/create-user-role-permissions.png" alt="user"></p>
+<p>Once the role is created, the admin can assign it to a specific user:</p>
+<ul>
+<li>go to the &#39;Users&#39; tab and select the user </li>
+<li>choose from the drop-down list the user </li>
+<li>click &#39;Edit&#39; on the user</li>
+<li>choose from the drop-down list the role that needs to be assigned </li>
+</ul>
+<p>Please find below a set of recommended user roles for your organisation:</p>
+<p><img src="images/create-user-select-role.png" alt="user"></p>
+<h2 id="administrator">Administrator</h2>
+<p>Scope: the user has full overview over the organisation&#39;s capabilities and users (can create users and assign different roles)</p>
+<p>Set permissions: select all permissions</p>
+<h2 id="developer">Developer</h2>
+<p>Scope: the user can create/ run environments/ factories etc. The Developer does not need the metadata or visibility on the users.</p>
+<p>Set permissions (you can customize them at your convenience):  ABORT_FACTORY_RUN, ALLOW_CUSTOM_TEMPLATES, ALLOW_EXPORT_ENVIRONMENT, ASSIGN_ROLE, BOOST_ENVIRONMENT, CLONE_STREAM, CREATE_COMPONENT, CREATE_ENVIRONMENT, CREATE_FACTORY, CREATE_ORG_METADATA, CREATE_PRODUCT, CREATE_ROLE, CREATE_STAGE, CREATE_STREAM, CREATE_USER, CREATE_USER_METADATA, DELETE_COMPONENT, DELETE_ENVIRONMENT, DELETE_STAGE, DELETE_STREAM, DELETE_USER_METADATA, MANAGE_COMPONENTS, MANAGE_PRODUCTS, MANAGE_ROLES, MANAGE_STAGES, MANAGE_STREAMS, REDEPLOY_ENVIRONMENT, SCHEDULE_ENVIRONMENT, SCHEDULE_FACTORY, SCHEDULE_FACTORY, START_ALL_ENVIRONMENT, START_ENVIRONMENT, START_FACTORY_RUN, STOP_ALL_ENVIRONMENT, STOP_ENVIRONMENT, UPDATE_ENVIRONMENT, UPDATE_FACTORY, UPDATE_ORG_METADATA, UPDATE_PRODUCT, UPDATE_ROLE, UPDATE_STAGE, UPDATE_STREAM, UPDATE_USER, UPDATE_USER_METADATA, VIEW_FACTORY_RUN_HISTORY</p>
+<h2 id="reader">Reader</h2>
+<p>Scope: the user has permission to see all records but cannot do any changes.</p>
+<p>Set permissions: MANAGE_STREAM, MANAGE_STAGES, MANAGE_PRODUCTS, MANAGE_FACTORIES, MANAGE_ENVIRONMENTS, MANAGE_USERS, MANAGE_ROLES, VIEW_FACTORY_RUN_HISTORY, MANAGE_ORG_METADATA, MANAGE_COMPONENTS</p>
+<div class="NOTE"><h5>Note</h5><p>Please note that by &#39;manage&#39; the user can only view the streams, stages, products, factories, environments, users, roles, the factory run history, organisation metadata and components. A user with the &#39;reader&#39; role cannot edit anything. </p>
+</div>
+<p>All the roles can be customized to every user&#39;s needs.</p>
+<p>Depending on the organization role, a user may/ may not have serveral permissions (eg. if the organisation does not have the assemble module, then the user will not be able to see the stages, the streams. The user will only see the environments, users and probably the metadata).</p>
 <p><br></p>
               <hr>
               
