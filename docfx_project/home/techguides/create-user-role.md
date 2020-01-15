@@ -3,10 +3,10 @@
 By default, when your organisation is created, Temenos will provide you the link and access instructions to your designated organisation administrator (the first and only user with full rights on the platform).
 The administrator can create more users and navigate to the Roles section on the portal to assign various permissions to each user. To create a role, the admin will click on 'New Role' and fill in the blanks:
 
-![user](./images/create-user-role.png)
+![user](./images/create-user-role.png) 
 
 
-The admin can select which permissions to set to each user.
+From this window the admin can select which permissions to enable to each user.
 ![user](./images/create-user-role-permissions.png)
 
 

@@ -25,4 +25,4 @@ However, the Temenos Continuous Deployment Platform team also offer the ability 
 Furthermore, please find below the current templates catalogue. The standard configuration of each template can be explored by clicking the required template from the list.
 
 <ul id="templatesList" class="list-unstyled">
-</ul>
+</ul> 

@@ -7,7 +7,7 @@ Once logged into the portal, you can check the information related to the artifa
 
 ![](./images/sanity-general.png)
 
-**Note:** If you wish to have a different name for the repository, you need to go to the Artifactory and create yourself a repository and then update it's name in the metadata (ARTIFACTORY_URL).
+**Note:** If you wish to have a different name for the repository, you need to go to the Artifactory and create yourself a repository and then update its name in the metadata (ARTIFACTORY_URL).
 
 **Note:** Make sure you set also the ARTIFACTORY_KEY which allows to download the components' binaries at the moment when running a factory. This is when the components and test cases are used. 
 
