@@ -3,9 +3,10 @@
      //Get template details only if the template details element is not already collapsed.
      if (!document.getElementById(templateId).classList.contains("collapseActive")){
        var post1 = $.ajax({
-         url: 'https://paascontroller.temenos.cloud/platform/controller-iris.svc/templates/' + templateId,
+         url: 'https://prodplatformcontroller.temenos.cloud/platform/orgs/1e6k1q8u8xg5c/templates/' + templateId,
          headers: {
            'Accept': 'application/json',
+           'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkb2Nwb3J0YWx1c2VyIiwidXNlcklkIjoiMWVhcGkzanRqdWM1YyIsInJvbGUiOiJST0xFX1VTRVIiLCJvcmdJZCI6IjFlNmsxcTh1OHhnNWMiLCJsYXN0UGFzc3dvcmRSZXNldERhdGUiOjE1NzgzODc0NTkxOTMsImlzc3VlVGltZSI6MTU3ODM4NzQ2NzQyNSwiZXhwaXJ5SW5TZWNzIjo4NjQwMDAwMH0.TrU-dKGmqGRyhrTXVTHzD1VAzuEz3tZ5d-E-FoZJyalFXHRzrttadZmZgHHcl4slJ2AmZmBrVywUw6uFlWFMbw',
            'Content-Type': 'application/json'
          },
          type: 'GET',
@@ -13,6 +14,7 @@
          contentType: "application/json",
          async: false,
          success: function(response) {
+		   response = response._embedded.item;
            templateYamlContent = response.yamlContents;
            templateVersion = response.version;
            templateName = response.name;
