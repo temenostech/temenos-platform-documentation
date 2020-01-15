@@ -99,28 +99,31 @@
 <li>Click on Stage button, make sure you select the Stream where you want to add a stage and then on the <strong>New Stage</strong> on the top right.</li>
 <li>Fill the name <em>(mandatory field)</em>. Take into account these conditions (also notified on the screen): Name can start only with a letter or an underscore and it can contain only letters, digits, underscores or hyphens.</li>
 <li>Fill the description <em>(mandatory field)</em>.</li>
-<li>Check the Enable option and then click <strong>Create</strong>. </li>
+<li>Click <strong>Create</strong>. </li>
 </ul>
 <p><strong>Note</strong>: <em>Instead of choosing the enable option, you can create a disabled stage and enable it later, but the default option should be enable.</em></p>
-<p><img src="images/streams-create-stage.png" alt=""></p>
+<p><img src="./images/streams-create-stage.png" alt=""></p>
 <h2 id="edit-a-stage">Edit a Stage</h2>
-<p>Compared to the streams, a stage can have only the description edited/ changed, but not the name. Why? Because when creating a stage, a folder is created automatically in the Artifactory containing the stage name. This folder will contain the components that you may be added for the respective stage.</p>
+<p>A stage can have only the description edited/ changed, but not the name. Why? Because when creating a stage, a folder is created automatically in the Artifactory containing the stage name. This folder will contain the components that you may be added for the respective stage.</p>
 <p>Just click the edit button, change the description and then click update.</p>
 <h2 id="default-stage">Default Stage</h2>
 <p>After logging to the portal, go to the <strong>General</strong> button on the left menu. Here you can see and edit the metadata.</p>
-<p>The DEFAULT_STAGE_NAME can be defined after the creation of an organization in order to be able to use the assemble functionalities and <strong>can be editable</strong>.</p>
+<p>The DEFAULT STAGE NAME can be defined after the creation of an organization in order to be able to use the assemble functionalities and <strong>can be editable</strong>.</p>
 <p>In case it has not been defined at the beginning, then when you try to create a stream, a new field about default stage will appear and here you need to insert a name for the default stage. </p>
 <p>This field will be automatically added into the metadata and <strong>will not be editable</strong>.</p>
 <h2 id="delete-a-stage">Delete a Stage</h2>
-<div class="NOTE"><h5>Note</h5><p><span style="color:red">The default stage cannot be deleted. (This is the stage configured into the metadata).</span></p>
+<div class="NOTE"><h5>Note</h5><p><span style="color:red">The default stage cannot be deleted (this is the stage configured into the metadata).</span></p>
 </div>
 <p>Example: </p>
 <ul>
 <li>Suppose we have created a stage named Primary_stage. No matter if we have configured further components and products, we can just go and delete this stage.</li>
 </ul>
 <p>Any other created stage can be deleted at any moment as it is not dependent of the subsequent features added such as components and products. Components and Products belong to the streams.</p>
-<p>Example of the default stage defined into the metadata (you can set any name you prefer instead of <em>default_stage</em>):</p>
-<p><img src="images/stage-metadata.png" alt=""></p>
+<p>Example of the default stage defined into the metadata (you can set any name you prefer instead of <em>demo_stage</em>):</p>
+<p><img src="./images/stage-metadata.png" alt=""></p>
+<div class="NOTE"><h5>Note</h5><p>The MAX_ENV_COUNT count only applies for User Environments and does not count the factory environments. If the value is not set at the organization level, the value is defaulted to 10. 
+Once created, the values will not be editable / deleteable by the user. </p>
+</div>
 <p><br></p>
               <hr>
               

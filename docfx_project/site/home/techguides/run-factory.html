@@ -86,19 +86,42 @@
 </div>
 <p>If the factory has never been run, you will notice the following message on the screen, under the respective factory: <em>The factory has never been run before. Please start the factory process now by clicking on the &quot;Run Now&quot; button.</em></p>
 <p>Click <strong>Run Now</strong>.</p>
-<p><img src="images/run-factory-dashboard.png" alt=""></p>
-<p>The process is initiated and it will get immediately to the stage where an environment based on your chosen template is created.</p>
+<p><img src="images/run-factory-dashboard.png" alt=""> </p>
+<p>The process is initiated and it will get immediately to the stage where an environment based on your chosen template is created. </p>
 <p><img src="images/run-factory-deploy.png" alt=""></p>
+<div class="NOTE"><h5>Note</h5><p> In the event of a mistake, the user can abort a factory run by clicking the &#39;Abort&#39; button on the top right side of the page. This action prevents you from deploying, testing or promoting the components. The user can edit the factory and then click &#39;Run now&#39; again to see the results.
+<img src="images/run-factory-abort-factory.png" alt="">     </p>
+</div>
 <p>Clicking on the Environments tab on the left menu, you can check the creation of the environment. The name of the environment will be &quot;Env for Factory xxx&quot;, where xxx is the name of your factory.</p>
-<p><img src="images/run-factory-environment-create.png" alt=""></p>
-<div class="NOTE"><h5>Note</h5><p>The environment creation stage may take between 20 minutes and a few hours depending on the template used.</p>
+<p><img src="images/run-factory-environment-create.png" alt=""> </p>
+<div class="NOTE"><h5>Note</h5><ol>
+<li><p>The environment creation stage may take between 20 minutes and a few hours depending on the template used. </p>
+<p>A factory can be enabled or disabled at any time. If a factory is disabled, factory runs (both scheduled and user triggered) will not be triggered. </p>
+</li>
+</ol>
 </div>
 <p>After the environment deployment phase is completed, the next phase (stage) is Running Test Deploy. During this phase a test environment is created (you can check it under Environments tab). </p>
 <p><strong>Note</strong> that this environment is automatically deleted after the tests are run and the process is completed.</p>
-<p><img src="images/run-factory-test-deploy.png" alt=""></p>
+<p><img src="./images/run-factory-test-deploy.png" alt=""></p>
 <p><img src="images/run-factory-create-test.png" alt=""></p>
 <p>After running the tests successfully, you will see some details about all stages and the results, as in the example below:</p>
-<p><img src="images/run-factory-completed.png" alt=""></p>
+<p><img src="./images/run-factory-completed.png" alt=""></p>
+<p>Based on any factory run, the user can take several actions:</p>
+<ul>
+<li><p><strong>Trigger New Environment</strong> - trigger a new environment to do triage, demo or ad-hoc testing (this will clone the factory environment)</p>
+</li>
+<li><p><strong>View Environment</strong> - view the environment used for the factory run</p>
+</li>
+<li><p><strong>View Event History</strong> - view the flow of status of the factory run</p>
+</li>
+<li><p><strong>Create New Template</strong> - this contains all the components that were associated with the factory run environment. This new template will be visible in the Templates Catalogue.</p>
+</li>
+</ul>
+<p><img src="images/run-factory-new-environment.png" alt=""></p>
+<div class="NOTE"><h5>Note</h5><p>The &#39;Create New Template&#39; button will be available only if the factory run is successful. </p>
+<p>If  you want to have the creation of the new template enabled even when the factory run fails go to General on the left side of the menu and select the &#39;Setup Factory&#39; tab. Tick the &#39;Yes&#39; value that corresponds to the key &#39;Do you want to allow creation of template from failed factories&#39;.</p>
+</div>
+<p><img src="images/trigger-new-template.png" alt=""></p>
 <p><br></p>
               <hr>
               

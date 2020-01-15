@@ -126,18 +126,65 @@ An organization can define as many components as needed but should have all mand
 </ul>
 <p>See below example:</p>
 <p><img src="images/products-add-component.png" alt=""></p>
-<p>After creating it, under Component Details you will notice a link of this type: </p>
-<p><span style="color:DarkSlateBlue"><strong>Upload URL: <a href="http://platformdevartifactory.dev.temenos.cloud:8081/artifactory/stable_dev/Dev/Stable_Dev/T24_Browse">http://platformdevartifactory.dev.temenos.cloud:8081/artifactory/stable_dev/Dev/Stable_Dev/T24_Browse</a></strong></span></p>
-<p>A folder is automatically created into the repository <em>(we are using JFrog Artifactory)</em> with the name of your component and will be always created under the default <strong>stable_dev</strong> stage. This is the path where the components&#39; files should be uploaded as explained on the next steps:</p>
+<p>A folder is automatically created into the repository <em>(we are using JFrog Artifactory)</em> with the name of your component and will be always created under the default <strong>stable_dev</strong> stage. This is the path where the components&#39; files should be uploaded as explained on the next steps.</p>
 <p><em>(Please note that the components&#39; artifacts can be uploaded any time before running a factory).</em></p>
 <p><em>(If the related artifacts are not uploaded, running the factory will not be possible and an error message will be thrown).</em></p>
+<h2 id="how-to-upload-binaries-into-the-artifactory">How to upload binaries into the Artifactory</h2>
+<h3 id="how-to-upload-binaries-into-the-artifactory">How to upload binaries into the Artifactory</h3>
+<p>Every user created in the Temenos Continuous Deployment Platform can log in with the platform’s credential on the Artifactory server as well. The users are enabled to download the existing artifacts or upload new artifacts that will be used for factories. This process can be done in two ways:</p>
+<p><strong>A. Manually access the artifactory and upload the required binary (recommended).</strong></p>
+<ul>
+<li><p>go on the self-side menu on the portal and click on Metadata. Here are displayed the metadata settings. Copy the Artifactory URL and paste on your browser:
+<img src="images/components-and-products-artifactoryurl.png" alt=""></p>
+</li>
+<li><p>to login, please type the credentials from the Temenos Continuous Deployment Plaftorm</p>
+</li>
+</ul>
+<pre><code>**Requirements**:
+
+- **new user**: it is mandatory for the user to have assigned a role which contains CREATE _ COMPONENT and MANAGE _ COMPONENTS permissions
+- **existing user**: if a user wants to log in to the Artifactory server, the user must change its password and have the CREATE_COMPONENT and MANAGE_COMPONENTS permissions within the role that was assigned to it. To learn how to change the user roles and permissions please refer to this link.
+</code></pre><div class="NOTE"><h5>Note</h5><ul>
+<li>if the user’s role is updated afterwards , the user still needs to change its password in order to be added to the Artifactory Server</li>
+<li>the user cannot delete artifacts from the Artifactory Server.</li>
+</ul>
+</div>
 <p><img src="images/products-deploy-artifactory.png" alt=""></p>
-<p>Select single or multi depending on the number of archives you need to add, drag and drop or select the archive and then click <strong>deploy</strong>. </p>
+<p>Select single or multi depending on the number of archives you need to add, drag and drop or select the archive and then click <strong>deploy</strong>.  </p>
 <p><img src="images/products-deploy-files.png" alt=""></p>
 <p>You will see a success message and the archive under your component.</p>
 <div class="NOTE"><h5>Note</h5><p>Components artifacts are delivered to clients by Temenos Distribution team.
 Also the binaries/ artifacts have to be uploaded each time a component is updated.</p>
 </div>
+<p><strong>B. Invoke an Artifactory API that will upload the required binary into the appropriate location.</strong></p>
+<p>In order to invoke that Artifactory API a CURL command must be executed (this can be run manually from a linux VM or from a bash script).</p>
+<pre><code>curl -H &quot;X-JFrog-Art-Api:&lt;ArtifactoryKey&gt;&quot; -X PUT &quot;&lt;DestinationURL&gt;&quot; -T &lt;fileToUpload&gt;
+</code></pre><ul>
+<li><p>The <strong>ArtifactoryKey</strong> can be taken from the TCD portal (go to General and take the value of ARTIFACTORY_KEY record):
+<img src="images/components-and-products-artifactorykey.png" alt=""></p>
+</li>
+<li><p><strong>DestinationURL</strong> represents the exact location of the file that will be uploaded in the artifactory together with the name of the binary. For this operation, you need to take the exact path of the artifactory from the TCD portal from the Upload URL field that is displayed on the screen after the component is created:
+<img src="images/components-and-products-uploadurl.png" alt=""></p>
+</li>
+<li><p><strong>fileToUpload</strong> represents the binary that should be uploaded from your local machine and it must contain also the path where is present.</p>
+</li>
+</ul>
+<div class="NOTE"><h5>Note</h5><p>Open source doesn’t support multiple file uploads at a time, therefore you need to upload the required binaries one by one.</p>
+</div>
+<p><strong>Example of the curl command based on the above</strong>: 
+curl -H &quot;X-JFrog-Art-Api:AKCp5dKYyM9WMoiacim9yedAZfG6gLwwcYugPmzZhqHkdRe6ex6pZZnRMteQqedLE9Q3qds6V&quot; &quot;<a href="https://1dtk4nz95tssg-artifactory.temenos.cloud/artifactory/repo-1dtk4nz95tssg/dev_stream/demo_stage/t24-jars">https://1dtk4nz95tssg-artifactory.temenos.cloud/artifactory/repo-1dtk4nz95tssg/dev_stream/demo_stage/t24-jars</a>&quot; -T /drives/c/Users/file/t24-jars-63688104355895.zip</p>
+<p>For demo purposes, we used MobaXterm to upload the binary into the Artifactory as displayed below:
+<img src="images/components-products-mobaxterm.png" alt=""></p>
+<p>Once the command is run, the binary is uploaded on the Artifactory:
+<img src="images/components-products-uploaded-binary.png" alt=""></p>
+<p><strong>Pre-requisites and best practices:</strong></p>
+<ul>
+<li>ensure that the component name also has information about its version;</li>
+<li>ensure that the component format that you upload is correct and as delivered by the Temenos team;</li>
+<li>ensure that components are uploaded to the appropriate folders (the URL and folder names can be found from the component definition pages of the TCD portal);</li>
+<li>if the component is uploaded in a .zip format, it it recommended to have a text file describing what is included in the package/ provide reference to the code commit tags to find what is included in the package;</li>
+<li>do not delete/ edit/ create components/ folders in the artifactory.  TCD Portal’s Product and Component sections must be used to create anything in artifactory.</li>
+</ul>
 <h3 id="which-components-to-add">Which Components to Add</h3>
 <p>In order to know which are the minimum required components that you need to add, you must first check the <strong>Templates Catalog</strong> (see button on the left menu).</p>
 <p>From here, select the template that you want to use:</p>
@@ -151,7 +198,7 @@ Also the binaries/ artifacts have to be uploaded each time a component is update
 <li>For all added components, make sure you add the related files archive into the artifactory as explained above.</li>
 </ul>
 <p><img src="images/products-templates.png" alt=""></p>
-<h3 id="delete-a-component">Delete a Component</h3>
+<h3 id="how-to-delete-a-component">How to Delete a Component</h3>
 <p>Components fields are not editable, so you have only the options to create or to delete them.</p>
 <div class="NOTE"><h5>Note</h5><p><span style="color:red">If your component is <strong>attached to a Product</strong>, you will not be able to delete it. <p>
 <p>You need first to delete the product, then return to the component and click <strong>Delete</strong> button.</span></p>
@@ -169,7 +216,7 @@ Also the binaries/ artifacts have to be uploaded each time a component is update
 </ul>
 <p>Ultimately, a product is used in a factory and will be used eventually to deploy the required components.</p>
 <h2 id="how-to-set-up-edit-delete-products">How to Set Up/ Edit/ Delete Products</h2>
-<h3 id="set-up-create-a-product">Set-up/ Create a Product</h3>
+<h3 id="how-to-set-up-create-a-product">How to Set-up/ Create a Product</h3>
 <ul>
 <li>If you have created more streams, first make sure you select the stream where you want to create the respective product (see top right).</li>
 <li>Click on Products tab and then on New Product button on the top right.</li>
@@ -180,20 +227,23 @@ Also the binaries/ artifacts have to be uploaded each time a component is update
 <p><em>For components, the selection order is not important.</em></p>
 <p><img src="images/products-add-product.png" alt=""></p>
 <p>In addition to the principle product which has all template mandatory components, you will need to create other products - Base Products - that will be used to be tested.</p>
-<h3 id="edit-a-product">Edit a Product</h3>
+<h3 id="how-to-edit-a-product">How to edit a product</h3>
 <p>You can edit:</p>
 <ul>
 <li>The product description. </li>
 <li>The components field by adding or removing components.</li>
 <li>Just click the edit button, do the changes and then click update.</li>
 </ul>
-<h3 id="delete-a-product">Delete a Product</h3>
+<h3 id="how-to-delete-a-product">How to delete a product</h3>
 <ul>
 <li>Go to the Products tab and select the product you want to delete.</li>
 <li>Click the delete button.</li>
 </ul>
 <div class="NOTE"><h5>Note</h5><p>If the respective product is attached to a factory, you will not be able to delete. You need to delete the factory first.</p>
 </div>
+<h1 id="artifactory-view">Artifactory view</h1>
+<p>The artifactory view displays the uploaded components that are available for the particular stages. By expanding the components, the user triggers a download of the respective component zip file.</p>
+<p><img src="images/artifactory_view.png" alt=""></p>
 <p><br></p>
               <hr>
               
