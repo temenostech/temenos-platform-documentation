@@ -27,7 +27,7 @@ The message 'Repository boosting initiated!" appears on the screen and the statu
 ## Repository structure after Boost
 As stated above, the Boost operation will make changes to environment repository. The difference between the before and after boost environment repository versions is represented by the presence of <span style="color:red">environments</span> folder, as it can be observed bellow.
 
-Please check also the following <a href="./use-gitlab-repository.md" target="blank">**user guide**</a> to see how to clone an environment locally and see the below repository structure.
+If you want to keep the initial settings of your environment, it is advised to clone the environment and do the changes. Please check the following <a href="./use-gitlab-repository.md" target="blank">**user guide**</a> to see how to clone an environment locally and get familiar with the below repository structure.
 <br>
 
 ![boost 4](./images/customize-templates-after-boost.png)
