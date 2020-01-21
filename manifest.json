@@ -5475,6 +5475,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/cloud-offering.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/cloud-offering.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/deployment-architecture.png",
       "output": {
         "resource": {
@@ -5496,12 +5507,34 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "images/tcd-details.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/tcd-details.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/tcd.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/tcd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "S2TTYjKXKaGsXjxacn+7/A=="
+          "hash": "ogmIa52kLH0MH7ZxmMPgKA=="
         }
       },
       "is_incremental": false,
@@ -5528,14 +5561,13 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
           "incrementalPhase": "build"
         },
         "RestApiDocumentProcessor": {
@@ -5547,8 +5579,9 @@
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
+        "ResourceDocumentProcessor": {
           "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
