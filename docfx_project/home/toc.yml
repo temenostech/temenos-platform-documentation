@@ -14,23 +14,19 @@
      href: ./how-to-extend.md
      items:
        - name: Create users
-         href: ./techguides/user-creation-in-paas.md
-       - name: Create environments and organisations
-         href: ./techguides/environment-creation-in-paas.md
+         href: ./techguides/user-creation-in-paas.md  
+       - name: Manage environments
+         href: ./techguides/manage-environments.md
        - name: Perform Environment Basic Operations
          href: ./techguides/environment-basic-operations.md
        - name: Deploy features to environment
          href: ./techguides/use-gitlab-repository.md
-       - name: Make Updates on Cloud Environment
-         href: ./techguides/make-updates-cloud.md
        - name: Customize templates
          href: ./techguides/customize-templates.md
        - name: Add new endpoints to an application
          href: ./techguides/add-app-endpoint.md
        - name: Develop T24 packages, plugins and Code
          href: ./techguides/t24-development.md
-       - name: Use Jenkins to Build Pipelines
-         href: ./techguides/jenkins-build-promote-pipelines.md
        - name: Clone an Environment  
          href: ./techguides/clone-environment.md
        - name: Export and Import a Database  
