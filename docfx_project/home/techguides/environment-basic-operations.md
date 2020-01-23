@@ -1,19 +1,13 @@
 # Environment Basic Operations
 
-After logging to the portal, go to the Environments tab on the left menu > you will see available two buttons: Refresh and New Environment.
-
-After creating an environment, there are several actions (operations) that can be done via the available buttons: clone, edit, delete, start, stop, rebuild, export the database and deploy the repository and also using the endpoints related to T24, the database or to the repository.
+After creating an environment, there are several actions (operations) that can be done via the available buttons: start all environments, stop all environments, clone, edit, delete, start, stop, rebuild, export the database and deploy the repository and also using the endpoints related to T24, the database or to the repository.
 <br>
- 
+
 ![buttons](./images/buttons-all.png)
 
 <br>
 
 ## Environment buttons: ##
- 
-![start](./images/button-boost.png) **Boost** button:
-
-- Used to apply the changes made to the environments' repository (you can modify the infra-templates, the playbooks or the roles).
 
 
 ![start](./images/start-all-user-env.png) **Start All User Environments** button:
@@ -78,7 +72,7 @@ After creating an environment, there are several actions (operations) that can b
 - After creating an environment, the Start button is automatically disabled as the environment is running. It will be enabled if an environment is stopped and it will start all the instances specified in the Environment configuration.
 
 - When the environment is stopped, start button is supposed to start the VMs where the database and the application server of a T24 environment are installed and also to start the application server (jboss, wildfly, WebSphere, etc.) so that T24 to be up and running. 
-- However, please **note** that start button is not triggering also the deployment of whatever is present into the associated Git repository (like something that was committed when the environment was stopped or a T24 update package ( L1 development) that was not yet successfully deployed to the T24 area).
+- However, please **note** that start button is not triggering also the deployment of whatever is present into the associated Git repository (such as something that was committed when the environment was stopped or a T24 update package ( L1 development) that was not yet successfully deployed to the T24 area).
 
 <br>
 
@@ -91,7 +85,7 @@ After creating an environment, there are several actions (operations) that can b
 ![rebuild](./images/button-rebuild.png) **Rebuilding** an environment:
 
 - It recreates the resourses into the cloud and re-installs T24 and H2 db.
-- This is used for example when modifying the application templates (like changing the T24 displayed name or addign a new application).
+- This is used for example when modifying the application templates (eg. changing the T24 displayed name or adding a new application).
 
 
 <br>
@@ -100,11 +94,11 @@ After creating an environment, there are several actions (operations) that can b
 
 - Allows to export and import an environment or a database through SFTP server.
 
-Clicking the 'Export Environment' button will generate a zip file on the sftp.temenos.cloud portal containing:
+Clicking the 'Export Environment' button will generate a zip file on the tcdSFTP.temenos.cloud portal containing:
 
    - all jar files deployed in T24 sandbox and the correspondent module.xml file;
    - the content of the default folder of T24;
-   - all war files deployed in the T24 sandbox and the jboss server log.
+   - all war files deployed in the T24 sandbox and the Jboss server log.
 
 ## Database section - available actions ##
 
@@ -112,7 +106,7 @@ Clicking the 'Export Environment' button will generate a zip file on the sftp.te
 
 ![export](./images/button-export.png) **Exporting** the database:
 
-By clicking the "Export database" button a zip file will be generated in the sftp.cloud.temenos portal which will contain the current database of the sandbox. Note: This database can be used as a backup that can be deployed later on into the sandbox as a duplicate for testing/development or for local development before deploying to the cloud.
+By clicking the "Export database" button a zip file will be generated in the tcdSFTP.temenos.cloud portal which will contain the current database of the sandbox. Note: This database can be used as a backup that can be deployed later on into the sandbox as a duplicate for testing/development or for local development before deploying to the cloud.
 
 ### <span style="color:orange;font-weight:1000;">**Endpoints**:</span>  ###
 
@@ -131,23 +125,23 @@ By clicking the "Export database" button a zip file will be generated in the sft
 
 ### <span style="color:orange;font-weight:1000;">**Endpoints**:</span>  ###
 
-This section displays the gitlab repository correspondent to your T24 sandbox that you can copy it in order to clone the repository.
+This section displays the GitLab repository correspondent to your T24 sandbox that you can copy it in order to clone the repository.
 
 - example: git@tcdGitlab.temenos.cloud:1dyomzt4lxuyo/corebanking.git
 
 > [!Note]
 > <span style="color:RED">**IMPORTANT!**</span>
 > 
-> <span style="color:RED">As a good practice and in terms of reducing your costs, it is recommended that you don't keep an environment **unused**. Even if it's not used, it will still generate costs. The environment will be deleted by the Extend team (with a previous mail notification) when it is unused for more than 3 days (for internal clients), respectively for more than 7 days (for external clients).
+> <span style="color:RED">As a good practice and in terms of reducing your costs, it is recommended that you don't keep an environment **unused**. Even if it's not used, it will still generate costs. The environment will be deleted by the Extend team (with a prior mail notification) when it is unused for more than 3 days (for internal clients), respectively for more than 7 days (for external clients).
 > 
 > Also to reduce costs, the environment can be put on **Stop** and started only when required. The environments that are stopped will not be deleted.</span>
 
 ## Schedule Environments ##
 Users have the option to schedule environments at their convenience. To proceed:
 
--  Go to the left-side menu
--  Click on General 
--  Select the 'Schedule Environments' tab
+-  go to the left-side menu
+-  click on General 
+-  select the 'Schedule Environments' tab
 
 The user can either start or stop all environments on certain dates, days or at a certain hour (UTC time zone). 
 ![deploy](./images/environment-schedule.png)
