@@ -185,6 +185,34 @@
 <img src="images/repo_deploy_2.png" alt="repo deploy 2"></p>
 <div class="NOTE"><h5>Note</h5><p>The deployment process is triggered <strong>manually</strong> by the user after commiting and pushing all the required features in Environment Repository or whenever is appropiate based on the fact that the user can commit and push features to Environment Repository multiple times and choose when to trigger the deployment.</p>
 </div>
+<h1 id="deploy-an-update-to-an-existing-environment">Deploy an update to an existing environment</h1>
+<ul>
+<li>Go to your environment and click <strong>Go to Application</strong> in order to log to T24 Browser.</li>
+</ul>
+<p><img src="D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/updates-go-to-app.png" alt="go to application"></p>
+<ul>
+<li>Sign in with your T24 user and password.</li>
+</ul>
+<p><img src="D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/make-updates-t24-signin.png" alt=""></p>
+<div class="NOTE"><h5>Note</h5><p>First T24 login will take a bit longer.</p>
+</div>
+<ul>
+<li>In the command line, type TS, BNK/T24.UPDATES and press Go button</li>
+<li>In the new screen, put the service from Stop to <strong>Start</strong> and press <strong>Commit the deal</strong> button on the left. <em>(This will trigger the deployed updates).</em></li>
+</ul>
+<p><img src="D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/make-updates-tsa-start.png" alt=""></p>
+<ul>
+<li>Go back to the portal, click your environment and click <strong>Monitor Application</strong>.</li>
+<li>Sign in with your user and password. </li>
+</ul>
+<p><img src="D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/make-updates-monitor-login.png" alt=""></p>
+<ul>
+<li>Go to <strong>Execute servlet</strong> under Execution.</li>
+<li>Type the command <strong>START.TSM</strong> and then press <strong>Submit</strong>.</li>
+<li>Go back to T24 browser and in the command line type <strong>SPF S SYSTEM</strong> and press go. </li>
+<li>In the new screen, scroll down until you see the updates that were added.</li>
+</ul>
+<p><img src="D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/make-updates-show-updates.png" alt=""></p>
 <p><br></p>
               <hr>
               
