@@ -81,16 +81,11 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="environment-basic-operations">Environment Basic Operations</h1>
 
-<p>After logging to the portal, go to the Environments tab on the left menu &gt; you will see available two buttons: Refresh and New Environment.</p>
-<p>After creating an environment, there are several actions (operations) that can be done via the available buttons: clone, edit, delete, start, stop, rebuild, export the database and deploy the repository and also using the endpoints related to T24, the database or to the repository.
+<p>After creating an environment, there are several actions (operations) that can be done via the available buttons: start all environments, stop all environments, clone, edit, delete, start, stop, rebuild, export the database and deploy the repository and also using the endpoints related to T24, the database or to the repository.
 <br></p>
 <p><img src="images/buttons-all.png" alt="buttons"></p>
 <p><br></p>
 <h2 id="environment-buttons">Environment buttons:</h2>
-<p><img src="images/button-boost.png" alt="start"> <strong>Boost</strong> button:</p>
-<ul>
-<li>Used to apply the changes made to the environments&#39; repository (you can modify the infra-templates, the playbooks or the roles).</li>
-</ul>
 <p><img src="images/start-all-user-env.png" alt="start"> <strong>Start All User Environments</strong> button:</p>
 <ul>
 <li>Use this button to only start all user environments.</li>
@@ -146,7 +141,7 @@
 </li>
 <li><p>When the environment is stopped, start button is supposed to start the VMs where the database and the application server of a T24 environment are installed and also to start the application server (jboss, wildfly, WebSphere, etc.) so that T24 to be up and running. </p>
 </li>
-<li>However, please <strong>note</strong> that start button is not triggering also the deployment of whatever is present into the associated Git repository (like something that was committed when the environment was stopped or a T24 update package ( L1 development) that was not yet successfully deployed to the T24 area).</li>
+<li>However, please <strong>note</strong> that start button is not triggering also the deployment of whatever is present into the associated Git repository (such as something that was committed when the environment was stopped or a T24 update package ( L1 development) that was not yet successfully deployed to the T24 area).</li>
 </ul>
 <p><br></p>
 <p><img src="images/button-stop.png" alt="stop"> <strong>Stopping</strong>  an environment:</p>
@@ -157,23 +152,23 @@
 <p><img src="images/button-rebuild.png" alt="rebuild"> <strong>Rebuilding</strong> an environment:</p>
 <ul>
 <li>It recreates the resourses into the cloud and re-installs T24 and H2 db.</li>
-<li>This is used for example when modifying the application templates (like changing the T24 displayed name or addign a new application).</li>
+<li>This is used for example when modifying the application templates (eg. changing the T24 displayed name or adding a new application).</li>
 </ul>
 <p><br></p>
 <p><img src="images/button-export.png" alt="export"> <strong>Exporting</strong> an environment:</p>
 <ul>
 <li>Allows to export and import an environment or a database through SFTP server.</li>
 </ul>
-<p>Clicking the &#39;Export Environment&#39; button will generate a zip file on the sftp.temenos.cloud portal containing:</p>
+<p>Clicking the &#39;Export Environment&#39; button will generate a zip file on the tcdSFTP.temenos.cloud portal containing:</p>
 <ul>
 <li>all jar files deployed in T24 sandbox and the correspondent module.xml file;</li>
 <li>the content of the default folder of T24;</li>
-<li>all war files deployed in the T24 sandbox and the jboss server log.</li>
+<li>all war files deployed in the T24 sandbox and the Jboss server log.</li>
 </ul>
 <h2 id="database-section---available-actions">Database section - available actions</h2>
 <h3 id="span-stylecolororangefont-weight1000buttonsspan"><span style="color:orange;font-weight:1000;"><strong>Buttons</strong>:</span></h3>
 <p><img src="images/button-export.png" alt="export"> <strong>Exporting</strong> the database:</p>
-<p>By clicking the &quot;Export database&quot; button a zip file will be generated in the sftp.cloud.temenos portal which will contain the current database of the sandbox. Note: This database can be used as a backup that can be deployed later on into the sandbox as a duplicate for testing/development or for local development before deploying to the cloud.</p>
+<p>By clicking the &quot;Export database&quot; button a zip file will be generated in the tcdSFTP.temenos.cloud portal which will contain the current database of the sandbox. Note: This database can be used as a backup that can be deployed later on into the sandbox as a duplicate for testing/development or for local development before deploying to the cloud.</p>
 <h3 id="span-stylecolororangefont-weight1000endpointsspan"><span style="color:orange;font-weight:1000;"><strong>Endpoints</strong>:</span></h3>
 <ul>
 <li>tcdSFTP.temenos.cloud - allows you to copy the SFTP link.</li>
@@ -186,20 +181,20 @@
 <li>To be used when deploying newly added plugins, endpoints, updates, web services, packages etc.</li>
 </ul>
 <h3 id="span-stylecolororangefont-weight1000endpointsspan"><span style="color:orange;font-weight:1000;"><strong>Endpoints</strong>:</span></h3>
-<p>This section displays the gitlab repository correspondent to your T24 sandbox that you can copy it in order to clone the repository.</p>
+<p>This section displays the GitLab repository correspondent to your T24 sandbox that you can copy it in order to clone the repository.</p>
 <ul>
 <li>example: git@tcdGitlab.temenos.cloud:1dyomzt4lxuyo/corebanking.git</li>
 </ul>
 <div class="NOTE"><h5>Note</h5><p><span style="color:RED"><strong>IMPORTANT!</strong></span></p>
-<p><span style="color:RED">As a good practice and in terms of reducing your costs, it is recommended that you don&#39;t keep an environment <strong>unused</strong>. Even if it&#39;s not used, it will still generate costs. The environment will be deleted by the Extend team (with a previous mail notification) when it is unused for more than 3 days (for internal clients), respectively for more than 7 days (for external clients).<p>
+<p><span style="color:RED">As a good practice and in terms of reducing your costs, it is recommended that you don&#39;t keep an environment <strong>unused</strong>. Even if it&#39;s not used, it will still generate costs. The environment will be deleted by the Extend team (with a prior mail notification) when it is unused for more than 3 days (for internal clients), respectively for more than 7 days (for external clients).<p>
 <p>Also to reduce costs, the environment can be put on <strong>Stop</strong> and started only when required. The environments that are stopped will not be deleted.</span></p>
 </div>
 <h2 id="schedule-environments">Schedule Environments</h2>
 <p>Users have the option to schedule environments at their convenience. To proceed:</p>
 <ul>
-<li>Go to the left-side menu</li>
-<li>Click on General </li>
-<li>Select the &#39;Schedule Environments&#39; tab</li>
+<li>go to the left-side menu</li>
+<li>click on General </li>
+<li>select the &#39;Schedule Environments&#39; tab</li>
 </ul>
 <p>The user can either start or stop all environments on certain dates, days or at a certain hour (UTC time zone). 
 <img src="images/environment-schedule.png" alt="deploy"></p>
