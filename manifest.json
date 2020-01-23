@@ -5412,15 +5412,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Toc",
       "source_relative_path": "home/toc.yml",
       "output": {
         ".html": {
           "relative_path": "home/toc.html",
-          "hash": "zoKgj5GcI9v25T0yWVDQCA=="
+          "hash": "QwFmQM6BrcbuqNc9Xg98hA=="
         }
       },
       "is_incremental": false,
