@@ -2,7 +2,7 @@
 
 This user guide explains how to import and export databases of a Temenos cloud environment in order to migrate datasets across environments. 
 
-Login to your organization on the TCD (Temenos Continuous Deployment) portal (<a href="https://portal.temenos.cloud/" target="_blank">**https://portal.temenos.cloud/**</a>), (<a href="https://tcd-portal.temenos.cloud/" target="_blank">**https://tcd-portal.temenos.cloud/**</a>) read and accept the privacy notice.
+Login to your organization on the TCD (Temenos Continuous Deployment) portal (https://newportal.temenos.cloud) read and accept the privacy notice.
 
 <img src="./images/db-login.png" width="450" height="200">
 
@@ -23,40 +23,10 @@ Login to your organization on the TCD (Temenos Continuous Deployment) portal (<a
 > For this user guide, there are two environments created: 
 >   - DevEnv
 >   - DevEnv1
->   
+>
 > They will be used to see how to export the DB from one environment and import it into the other one.
-
-
-## Add a User to the Portal ##
-
- - Go to Users tab and click **New user**
- - Fill all required fields
- - Make sure you attach an SSH key to the user created, as it is required when exporting and importing the database.
-
-> [!Note]
-> This user can be used on both environments (DevEnv and DevEnv1).
+>
 > 
-> Check <a href="./user-creation-in-paas.md" target="_blank">**this**</a>  user guide to see how to create a user on the portal and attach a SSH key.
-
-
-## <span style="color:orange">Change a record into the Database *(for demo purposes)*</span> ##
-
-> [!Note]
-> This section is just an **example** and it can be skipped. 
-> The only purpose is to prove that the export and import of the database has been done correctly by showing that a **changed** record from a source environment can be retrieved in another environment (where the source environment database has been imported).
-
- - Go to your environment
- - Connect to T24 browser (Click **Go to Application**)
-
-![](./images/db-go-t24.png) 
-
-<br>
-
- - And login to T24 with your user and password:
- 
-(Please note that **first** login will be slower) 
-
-<img src="./images/db-t24-signin.png" width="590" height="250">
 
 ## Amend a customer record ##
 
@@ -82,7 +52,7 @@ Login to your organization on the TCD (Temenos Continuous Deployment) portal (<a
 - Click authorise button (*double-check*) > The screen is expanded with the details of the customer > Click again authorise  
 
 ![](./images/db-authorise-record.png) 
- 
+
 ## Export the Database ##
 
 In case you want to export and re-import the database into an environment or do some changes and import it back or to a different environment, please follow the steps below:
@@ -119,7 +89,7 @@ After attaching the SSH key, click on save button – here we can give a site na
     - On the right side - the location of the exported db on the SFTP server; the DB is saved in the folder with the organization id and environment id (*/organisationID/environmentID folder structure*).
 
 ![](./images/sftp-ids.png) 
- 
+
  - The database appears as TAFJDB.zip. In order to download the zip, select it and press F5. After is being downloaded, you can unzip it to see the db file.
  - After this step, you can close the SFTP connection: Session > Disconnect.
 

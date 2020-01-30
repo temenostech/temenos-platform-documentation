@@ -1,10 +1,10 @@
 
-# Create new application endpoint #
+# Add new endpoints to an environment #
 This document can be used by technical staff who need to add new endpoints to the T24 application of a Environment in case of adding any custom endpoints or deploying a plugin in the application server of the Environment.
 
 > [!Note]
 > This guide presumes that an Environment is already created and available. *(In this example, we have created a Environment named DevEnv).*
-   
+
 **Four** properties are mandatory to create a new endpoint:
 
 <span style="color:orange">(Please note that the user guide contains <span style="color:blue">**examples**</span> on how to use each of the properties).</span>
@@ -32,7 +32,7 @@ In order to create new endpoints for the T24 application of your Environment, th
  ![edit endpoint file](./images/app-endpoint-edit.png)
 
  ![edit endpoint file](./images/app-endpoint-append.png)
- 
+
  > [!Note]
  > "**~**" character is used as a separator between Endpoint Description, URL and Type and it must always be present in each endpoint line.
 > Endpoint Description and URL are as per your choice. Type must be one of the options: **clickable**, **copyable** or **downloadable**.
@@ -54,7 +54,7 @@ In order to create new endpoints for the T24 application of your Environment, th
 <br>
  - After the file is deployed, all 4 endpoints from the example are displayed in the Endpoints section of the T24 application.
  - Also note that the endpoints are displayed/ grouped by their type: clickable, copyable and downloadable.
- 
+
  ![multiple endpoints multiples files display](./images/app-endpoint-grouped.png)
 
 # Add multiple endpoints from multiple files at the same time #
@@ -72,4 +72,4 @@ In order to create new endpoints for the T24 application of your Environment, th
 
  > [!Note]
  > To summarize, the list of plugin endpoints displayed in the Endpoints section for an application is updated based on the content of **.endpoint** files available in the **plugins** folder from the GitLab repository of your Environment. If no .endpoint files are available in the GitLab repository of your Environment, then no plugin endpoints will be displayed.
- 
+
