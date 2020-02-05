@@ -23,7 +23,7 @@
          href: ./techguides/use-gitlab-repository.md
        - name: Customize templates
          href: ./techguides/customize-templates.md
-       - name: Add new endpoints to an application
+       - name: Add new endpoints to an environment
          href: ./techguides/add-app-endpoint.md
        - name: Develop T24 packages, plugins and Code
          href: ./techguides/t24-development.md
@@ -31,46 +31,40 @@
          href: ./techguides/clone-environment.md
        - name: Export and Import a Database  
          href: ./techguides/export-import-database.md
-       - name: Access UD Directories
+       - name: Access T24 UD Directories
          href: ./techguides/access-ud-directories.md
-       - name: Configure and Use FCM Application
+       - name: Access FCM Directories and Use FCM Application
          href: ./techguides/fcm-configuration.md 
    - name: Tutorials
      href: ./tutorials-extend.md
      items:
-       - name: Jenkins Build 
-         href: ./jenkins-build-video.md
        - name: Create and Manage Dev Enviroment
          href: ./create-dev-env-video.md
        - name: Export and Import a Database
          href: ./export-import-database-video.md
-       - name: Add Features to an Environment
-         href: ./add-features-to-environment-video.md
-       - name: Manage Cloud Environments and Customize Templates
-         href: ./cloud-environments-customize-templates.md
+       - name: Deploy Features to an Environment
+         href: ./deploy-features-to-an-environment-video.md
        - name: Clone an Environment  
          href: ./clone-environment-video.md
        - name: Access UD Directories
          href: ./access-ud-directories-video.md
        - name: FCM Cloud Configuration
-         href: ./fcm-configuration-video.md
-       - name: Design Studio Tutorials
-         href: ./design-studio-tutorials.md         
+         href: ./fcm-configuration-video.md       
 - name: Assemble
   href: ./assemble.md
   items:
    - name: How to...
      href: ./how-to-assemble.md
      items:
-       - name: Setup/Edit/Delete Streams
+       - name: Manage Streams
          href: ./techguides/stream.md
-       - name: Setup/Edit/Delete Stages
+       - name: Manage Stages
          href: ./techguides/stage.md
-       - name: Setup/Edit/Delete Components and Products
+       - name: Manage Components and Products
          href: ./techguides/components-products.md
-       - name: Setup/Edit/Delete Factories
+       - name: Manage Factories
          href: ./techguides/factories.md
-       - name: Setup/Edit/Delete Test Cases Upload
+       - name: Manage Test Cases Upload
          href: ./techguides/stage-testcases.md
        - name: Run a Factory with "Run Now" Button and Dashboard
          href: ./techguides/run-factory.md
@@ -81,16 +75,16 @@
    - name: Tutorials
      href: ./tutorials-assemble.md
      items:
-       - name: Setup Streams 
-         href: ./setup-streams-video.md
-       - name: Setup Stages 
-         href: ./setup-stages-video.md
-       - name: Setup Components and Products 
-         href: ./setup-components-products-video.md
-       - name: Setup Factories 
-         href: ./setup-factories-video.md
-       - name: Setup Testcases 
-         href: ./setup-testcases-video.md    
+       - name: Manage Streams 
+         href: ./manage-streams-video.md
+       - name: Manage Stages 
+         href: ./manage-stages-video.md
+       - name: Manage Components and Products 
+         href: ./manage-components-products-video.md
+       - name: Manage Factories 
+         href: ./manage-factories-video.md
+       - name: Manage Testcases 
+         href: ./manage-testcases-video.md    
        - name: Run Factory 
          href: ./run-factory-video.md   
 - name: Troubleshooting

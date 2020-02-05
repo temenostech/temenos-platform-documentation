@@ -3,19 +3,18 @@
 Learn how to easily access the T24 UD directories of your sandbox and make updates, without the need of exporting zip files, but using symbolic links on the SFTP server to the T24 VM machines.
 
 > [!Note]
-> Check also our <a href="https://www.youtube.com/watch?v=wqBTV76cAOQ" target="_blank">**Video tutorial**!
-</a> (to be updated)
+> Check also our <a href="https://www.youtube.com/watch?v=wqBTV76cAOQ" target="_blank">**video tutorial**</a>. 
 
 
 ## Create New Environment
 
  - Login to the indicated Temenos Continuous Deployment Platform - either: [**https://portal.temenos.cloud/**](https://portal.temenos.cloud/) or [**https://tcd-portal.temenos.cloud/**](https://tcd-portal.temenos.cloud/).
  - Each time you login, you must accept the Privacy Notice in order to have access to the portal.
- - The first page that is displayed after login is the **Environments** page where you can fill the date to create a **New environment**
+ - The first page that is displayed after login is the **Environments** page where you can fill the date to create a **New environment**.
 - Fill the mandatory fields:
     - **Name**
     - **Description**
-- Select an application from **Cloud native applications**
+- Select an application from **Cloud native applications** (for T24 select T24, for FCM select FCM)
 - Choose a template from **Templates** list
 - *Labels field is optional*
 - Click **Create environment**
@@ -60,13 +59,13 @@ To see all the steps regarding how to add a new user on the portal and to attach
 
 ![](./images/environment-id.png)
 <br><br>
- 
+
 
 -  Double click to access the live folders of the environment
 
 
 ![](./images/open-live-folders.png)
- 
+
 
 
 -  You will be able to see and access the following T24 live folders structure:
@@ -101,7 +100,7 @@ To see all the steps regarding how to add a new user on the portal and to attach
  - Here you can see: temn.tafj.runtime.directory.current	/opt/rh/eap7/root/usr/share/wildfly/default
 
   ![access ud directories schema](./images/env_tajfruntimeproperties.png)
- 
+
 <br>
 - If for example, you need to create a folder into the default location (/temenossftp/*yourorgid/your
 - id/yourenvid*/default) named "demo" then, in the T24 area the appropriate path will be **/opt/rh/eap7/root/usr/share/wildfly/default/demo**.

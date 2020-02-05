@@ -81,7 +81,7 @@ To see all the steps regarding how to add a new user on the portal and to attach
 
 ## Process Messages in the FCM Application
 
-- On the right window, locate your envirnoment ID
+- On the right window, locate your environment ID
 *- Your organisation ID appears also on the top*
 
 ![sftp id](./images/fcm-sftp-id.png)
@@ -116,7 +116,7 @@ To see all the steps regarding how to add a new user on the portal and to attach
 - Check below the latest processed messages and click **Open** button to see the message details
 
 ![check messages](./images/fcm-check-messages.png) 
- 
+
 
 
  

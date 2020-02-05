@@ -16,7 +16,7 @@ The clients will be supplied with a URL and initial login, from there they will 
 
 - **Who will handle customers’ queries/issues for Deployment Platform?**
 
-Sales queries will be handled via the Temenos SaaS (CloudPlatformSupport@temenos.com) support team. Support is available through a dedicated online support portal for cloud infrastructure issues.  All Product issues remain through the Temenos Customer Support. 
+Support is available through a dedicated online support portal for cloud infrastructure issues.  All Product issues remain through the Temenos Customer Support. 
 
 
 - **Data and Security Considerations**
@@ -24,8 +24,6 @@ Sales queries will be handled via the Temenos SaaS (CloudPlatformSupport@temenos
 
 
 The Temenos Continuous Deployment is for **non-production use only**, unless otherwise stated.  No 'personal data'; 'confidential' or 'sensitive' data should be stored on any Environment.
-
-•   Data is stored in UK datacentres
 
 •   Data is encrypted in transit
 
