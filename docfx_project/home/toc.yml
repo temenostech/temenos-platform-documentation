@@ -21,8 +21,6 @@
          href: ./techguides/environment-basic-operations.md
        - name: Deploy features to environment
          href: ./techguides/use-gitlab-repository.md
-       - name: Customize templates
-         href: ./techguides/customize-templates.md
        - name: Add new endpoints to an environment
          href: ./techguides/add-app-endpoint.md
        - name: Develop T24 packages, plugins and Code
