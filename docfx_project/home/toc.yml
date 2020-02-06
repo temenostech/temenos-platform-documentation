@@ -10,7 +10,7 @@
 - name: Extend
   href: ./extend.md
   items:
-   - name: How to...
+   - name: How to... 
      href: ./how-to-extend.md
      items:
        - name: Create users
