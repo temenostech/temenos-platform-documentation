@@ -2384,6 +2384,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/deploy-update-go-to-app.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/deploy-update-go-to-app.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/disable-xtext-rim-compiler.png",
       "output": {
         "resource": {
@@ -5050,17 +5061,6 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/tsa-service.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/updates-go-to-app.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/updates-go-to-app.png"
         }
       },
       "is_incremental": false,
