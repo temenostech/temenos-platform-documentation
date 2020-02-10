@@ -66,7 +66,6 @@ A folder is automatically created into the repository *(we are using JFrog Artif
 
 ## How to upload binaries into the Artifactory ##
 
-### How to upload binaries into the Artifactory ###
 Every user created in the Temenos Continuous Deployment Platform can log in with the platform’s credential on the Artifactory server as well. The users are enabled to download the existing artifacts or upload new artifacts that will be used for factories. This process can be done in two ways:
 
 **A. Manually access the artifactory and upload the required binary (recommended).**
@@ -81,8 +80,9 @@ Every user created in the Temenos Continuous Deployment Platform can log in with
 
     **Requirements**:
 
-    - **new user**: it is mandatory for the user to have assigned a role which contains CREATE _ COMPONENT and MANAGE _ COMPONENTS permissions
-    - **existing user**: if a user wants to log in to the Artifactory server, the user must change its password and have the CREATE_COMPONENT and MANAGE_COMPONENTS permissions within the role that was assigned to it. To learn how to change the user roles and permissions please refer to this link.
+    -  **new user**: it is mandatory for the user to have assigned a role which contains CREATE _ COMPONENT and MANAGE _ COMPONENTS permissions
+    
+    -  **existing user**: if a user wants to log in to the Artifactory server, the user must change its password and have the CREATE_COMPONENT and MANAGE_COMPONENTS permissions within the role that was assigned to it. To learn how to change the user roles and permissions please refer to this link.
 
 > [!Note]
 -  if the user’s role is updated afterwards , the user still needs to change its password in order to be added to the Artifactory Server
