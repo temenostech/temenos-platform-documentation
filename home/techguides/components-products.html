@@ -130,7 +130,8 @@ An organization can define as many components as needed but should have all mand
 <p><em>(Please note that the components&#39; artifacts can be uploaded any time before running a factory).</em></p>
 <p><em>(If the related artifacts are not uploaded, running the factory will not be possible and an error message will be thrown).</em></p>
 <h2 id="how-to-upload-binaries-into-the-artifactory">How to upload binaries into the Artifactory</h2>
-<p>Every user created in the Temenos Continuous Deployment Platform can log in with the platform’s credential on the Artifactory server as well. The users are enabled to download the existing artifacts or upload new artifacts that will be used for factories. This process can be done in two ways:</p>
+<p>Every user created in the Temenos Continuous Deployment Platform can log in with the platform’s credential on the Artifactory server as well. </p>
+<p>The users are enabled to download the existing artifacts or upload new artifacts that will be used for factories. This process can be done in two ways:</p>
 <p><strong>A. Manually access the artifactory and upload the required binary (recommended).</strong></p>
 <ul>
 <li><p>go on the self-side menu on the portal and click on Metadata. Here are displayed the metadata settings. Copy the Artifactory URL and paste on your browser:
@@ -139,12 +140,13 @@ An organization can define as many components as needed but should have all mand
 <li><p>to login, please type the credentials from the Temenos Continuous Deployment Plaftorm</p>
 </li>
 </ul>
-<pre><code>**Requirements**:
-
--  **new user**: it is mandatory for the user to have assigned a role which contains CREATE _ COMPONENT and MANAGE _ COMPONENTS permissions
-
--  **existing user**: if a user wants to log in to the Artifactory server, the user must change its password and have the CREATE_COMPONENT and MANAGE_COMPONENTS permissions within the role that was assigned to it. To learn how to change the user roles and permissions please refer to this link.
-</code></pre><div class="NOTE"><h5>Note</h5><ul>
+<p>Requirements:</p>
+<ul>
+<li><strong>new user</strong>: it is mandatory for the user to have assigned a role which contains CREATE <em> COMPONENT and MANAGE </em> COMPONENTS permissions.</li>
+<li><strong>existing user</strong>: if a user wants to log in to the Artifactory server, the user must change its password and have the CREATE_COMPONENT and MANAGE _COMPONENTS permissions within the role that was assigned to it. To learn how to change the user roles and permissions please refer to this link.</li>
+</ul>
+<div class="NOTE"><h5>Note</h5><ul>
+<li>for an already created user that wants to have access to the Artifactory Server, the user must change its password and if its role has those 2 permissions, the user will be added in Artifactory Server</li>
 <li>if the user’s role is updated afterwards , the user still needs to change its password in order to be added to the Artifactory Server</li>
 <li>the user cannot delete artifacts from the Artifactory Server.</li>
 </ul>
