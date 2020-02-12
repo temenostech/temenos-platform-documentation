@@ -19,8 +19,8 @@
          href: ./techguides/manage-environments.md
        - name: Perform Environment Basic Operations
          href: ./techguides/environment-basic-operations.md
-       - name: Deploy features to environment
-         href: ./techguides/use-gitlab-repository.md
+       - name: Deploy an update to an existing environment
+         href: ./techguides/deploy-an-update-to-an-existing-environment.md
        - name: Add new endpoints to an environment
          href: ./techguides/add-app-endpoint.md
        - name: Develop T24 packages, plugins and Code
@@ -40,8 +40,8 @@
          href: ./create-dev-env-video.md
        - name: Export and Import a Database
          href: ./export-import-database-video.md
-       - name: Deploy Features to an Environment
-         href: ./deploy-features-to-an-environment-video.md
+       - name: Deploy an Update to an Existing Environment
+         href: ./deploy-an-update-to-an-existing-environment-video.md
        - name: Clone an Environment  
          href: ./clone-environment-video.md
        - name: Access UD Directories
