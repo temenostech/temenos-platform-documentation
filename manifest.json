@@ -110,23 +110,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "home/deploy-features-to--an-environment-video.md",
+      "source_relative_path": "home/deploy-an-update-to-an-existing-environment-video.md",
       "output": {
         ".html": {
-          "relative_path": "home/deploy-features-to--an-environment-video.html",
-          "hash": "ZtnUgFu7874Dh3MeAFq6Fg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "home/deploy-features-to-an-environment-video.md",
-      "output": {
-        ".html": {
-          "relative_path": "home/deploy-features-to-an-environment-video.html",
-          "hash": "DsCOOidHbd1670SLgSYCmQ=="
+          "relative_path": "home/deploy-an-update-to-an-existing-environment-video.html",
+          "hash": "0ayMffGf3yQ25l2lNwIcHw=="
         }
       },
       "is_incremental": false,
@@ -616,12 +604,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/add-app-endpoint.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/add-app-endpoint.html",
-          "hash": "OfBwEYzbFQ6CGHhpldF6Rg=="
+          "hash": "Z0kgyno0xbqMr+Zxs2NLog=="
         }
       },
       "is_incremental": false,
@@ -715,12 +706,27 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/customize-templates.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/customize-templates.html",
-          "hash": "dBbdIJ0+9MM2M3+sS7/zsg=="
+          "hash": "47eanomopj/QHIJcvHM9IQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/techguides/deploy-an-update-to-an-existing-environment.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/deploy-an-update-to-an-existing-environment.html",
+          "hash": "WXDzhwXRiDqHBNB7CtjiAA=="
         }
       },
       "is_incremental": false,
@@ -5316,18 +5322,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "home/techguides/t24-debug-design-studio.md",
-      "output": {
-        ".html": {
-          "relative_path": "home/techguides/t24-debug-design-studio.html",
-          "hash": "9I3U/bszwXh5fZH81Uaqqw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "home/techguides/t24-development-appendix.md",
       "output": {
         ".html": {
@@ -5339,12 +5333,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/t24-development.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/t24-development.html",
-          "hash": "lQq+GBbfI1X7qkF4oPD/rg=="
+          "hash": "gUcn2B/YGkWLLHIgBUdhTg=="
         }
       },
       "is_incremental": false,
@@ -5381,18 +5378,6 @@
         ".html": {
           "relative_path": "home/techguides/troubleshooting.html",
           "hash": "8dBr0MSd7gS+ZHdkEEeFkA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "home/techguides/use-gitlab-repository.md",
-      "output": {
-        ".html": {
-          "relative_path": "home/techguides/use-gitlab-repository.html",
-          "hash": "PgCU7TMiYX1xNStwQQoVng=="
         }
       },
       "is_incremental": false,
@@ -5464,7 +5449,7 @@
       "output": {
         ".html": {
           "relative_path": "home/toc.html",
-          "hash": "m0koS0l58qzPcGsGgeTJ6Q=="
+          "hash": "HEC3qlZ4yPqTF8Z84Q74aA=="
         }
       },
       "is_incremental": false,
@@ -5622,11 +5607,6 @@
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "RestApiDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -5638,6 +5618,11 @@
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }

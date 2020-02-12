@@ -81,7 +81,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="introduction">Introduction</h1>
 
-<p>This document can be used by technical staff who need to deploy different features on a Temenos Continuous Deployment Environment. Each Environment has an associated Repository for uploading different type of features based on Environment Template type, these features being deployed automatically to your Environment.</p>
+<p>This document can be used by technical staff who need to deploy different features on a Temenos Continuous Deployment Environment. Each Environment has an associated Repository for uploading different type of features based on the Environment Template type, these features being deployed automatically to your Environment.</p>
 <p>Before proceeding, please check the following requirements:</p>
 <ul>
 <li>Make sure you have a GUI Git Client installed in your local machine. This guide uses <em>TortoiseGit</em> Git Client that can be installed from <a href="https://tortoisegit.org/download/" target="blank">here</a>.</li>
@@ -164,8 +164,13 @@
 </tbody>
 </table>
 <h1 id="commit--push-features-to-repository">Commit &amp; Push features to Repository</h1>
-<p>•   Go to repository folder from your local machine(GitLabRepo folder in our example) and copy your file/files (related to your required features that must be deployed to your Environment) to the specific folder/folders based on your requirement. In this guide, an update is pushed to the Environment Repository.
-<img src="images/repo_commit_1.png" alt="repo commit 1"></p>
+<p>•   Go to repository folder from your local machine(GitLabRepo folder in our example) and copy your file/files (related to your required features that must be deployed to your Environment) to the specific folder/folders based on your requirement. In this guide, an update is pushed to the Environment Repository.</p>
+<p><em>Important: T24 Updates must be packaged as .zip of .zip file while it is deployed through the Git repository (the parent .zip file name can be anything). Example:</em></p>
+<blockquote><p>T24-updates.zip</p>
+<p>&nbsp; &nbsp; &nbsp; |__T24-Updates-2020-X-Y.zip</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |__ *.Jar</p>
+</blockquote>
+<p><img src="images/repo_commit_1.png" alt="repo commit 1"></p>
 <p>•   To commit the files/files to Environment Repository, right click inside repository folder from your local machine and choose <strong>Git Commit -&gt; &quot;master&quot;...</strong> option.
 <img src="images/repo_commit_2.png" alt="repo commit 2"></p>
 <p>•   The following screen will appear in which your repository changes can be observed and commited. In order to commit, you have to input a commit message and check the checkbox next to each new file if it is the case.
@@ -189,30 +194,30 @@
 <ul>
 <li>Go to your environment and click <strong>Go to Application</strong> in order to log to T24 Browser.</li>
 </ul>
-<p><img src="D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/updates-go-to-app.png" alt="go to application"></p>
+<p><img src="images/deploy-update-go-to-app.png" alt="deploy update go to app"></p>
 <ul>
 <li>Sign in with your T24 user and password.</li>
 </ul>
-<p><img src="D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/make-updates-t24-signin.png" alt=""></p>
+<p><img src="images/make-updates-t24-signin.png" alt="make updates t24 signin"></p>
 <div class="NOTE"><h5>Note</h5><p>First T24 login will take a bit longer.</p>
 </div>
 <ul>
 <li>In the command line, type TS, BNK/T24.UPDATES and press Go button</li>
 <li>In the new screen, put the service from Stop to <strong>Start</strong> and press <strong>Commit the deal</strong> button on the left. <em>(This will trigger the deployed updates).</em></li>
 </ul>
-<p><img src="D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/make-updates-tsa-start.png" alt=""></p>
+<p><img src="images/make-updates-tsa-start.png" alt="make updates tsa start"></p>
 <ul>
 <li>Go back to the portal, click your environment and click <strong>Monitor Application</strong>.</li>
 <li>Sign in with your user and password. </li>
 </ul>
-<p><img src="D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/make-updates-monitor-login.png" alt=""></p>
+<p><img src="images/make-updates-monitor-login.png" alt="make updates monitor login"></p>
 <ul>
 <li>Go to <strong>Execute servlet</strong> under Execution.</li>
 <li>Type the command <strong>START.TSM</strong> and then press <strong>Submit</strong>.</li>
 <li>Go back to T24 browser and in the command line type <strong>SPF S SYSTEM</strong> and press go. </li>
 <li>In the new screen, scroll down until you see the updates that were added.</li>
 </ul>
-<p><img src="D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/make-updates-show-updates.png" alt=""></p>
+<p><img src="images/make-updates-show-updates.png" alt="make updates show updates"></p>
 <p><br></p>
               <hr>
               

@@ -100,7 +100,7 @@
 </div>
 <h2 id="repository-structure-after-boost">Repository structure after Boost</h2>
 <p>As stated above, the Boost operation will make changes to environment repository. The difference between the before and after boost environment repository versions is represented by the presence of <span style="color:red">environments</span> folder, as it can be observed bellow.</p>
-<p>If you want to keep the initial settings of your environment, it is advised to clone the environment and do the changes. Please check the following <a href="use-gitlab-repository.html" target="blank"><strong>user guide</strong></a> to see how to clone an environment locally and get familiar with the below repository structure.
+<p>If you want to keep the initial settings of your environment, it is advised to clone the environment and do the changes. Please check the following <a href="./use-gitlab-repository.md" target="blank"><strong>user guide</strong></a> to see how to clone an environment locally and get familiar with the below repository structure.
 <br></p>
 <p><img src="images/customize-templates-after-boost.png" alt="boost 4"></p>
 <p>The structure of the <span style="color:red">environments</span> folder is represented by 4 folders <em>(found under common folder)</em>:</p>
@@ -162,7 +162,7 @@ For example:</p>
 <h2 id="start-template-customization">Start template customization</h2>
 <p>After boosting your environment, meaning that your environment repository contains all the folders and files related to your environment template, you can start the customization.
 There are several ways in which you can customize your environment template based on the type of your change.</p>
-<div class="NOTE"><h5>Note</h5><p>All the changes that must be implemented to a cloud environment template can be done only in <u>environment repository</u>. Thus, environment repository must be cloned in your local machine. For more information about how to clone an environment repository, please check this <strong><a href="use-gitlab-repository.html" target="blank">page</a></strong>.</p>
+<div class="NOTE"><h5>Note</h5><p>All the changes that must be implemented to a cloud environment template can be done only in <u>environment repository</u>. Thus, environment repository must be cloned in your local machine. For more information about how to clone an environment repository, please check this <strong><a href="./use-gitlab-repository.md" target="blank">page</a></strong>.</p>
 </div>
 <ol>
 <li><p>Changes that will require <span style="color:red;font-weight:600;">the rebuild of your environment</span>:</p>
@@ -199,7 +199,7 @@ The detailed VM specifications can be viewed <strong><a href="https://docs.micro
 <li>Changes related to roles tha represent a module/plugin/framework and not an application.
 <p style="padding-left: 10px">New roles that represent a module/plugin/framework and not an application can be added to an application of your environment. In order to accomplish this, a new role along its settings must be created in <em><span style="background-color: #858382;color: white;"> /environments/common/roles </span></em> &nbsp;folder and the new role must be added to the specific application in <em><span style="color:#D2940F;font-weight:600;">playbook.yml</span></em> file from <em><span style="background-color: #858382;color: white;"> /environments/common/playbooks </span></em> &nbsp;folder. After this, push all these changes to environment repository and trigger the deployment.</p></li>
 <li>Changes that are not related to environment template.
-<p style="padding-left: 10px">For the changes described <strong><a href="use-gitlab-repository.html#repository-structure" target="blank">here</a></strong> that are not related to environment template, you just have to commit and push the required changes to your environment repository and trigger the deployment.</p></li>
+<p style="padding-left: 10px">For the changes described <strong><a href="./use-gitlab-repository.md#repository-structure" target="blank">here</a></strong> that are not related to environment template, you just have to commit and push the required changes to your environment repository and trigger the deployment.</p></li>
 </ul>
 <div class="NOTE"><h5>Note</h5><p>If the deployment operation is not successful for your changes, please rebuild the environment.</p>
 </div>

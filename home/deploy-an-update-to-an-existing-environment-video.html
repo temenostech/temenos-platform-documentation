@@ -5,22 +5,22 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Develop T24 Packages, Plugins and Code </title>
+    <title> </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Develop T24 Packages, Plugins and Code ">
+    <meta name="title" content=" ">
     <meta name="generator" content="docfx 2.22.2.0">
     
-    <link rel="shortcut icon" href="../../favicon.ico">
-    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../../styles/docfx.css">
-    <link rel="stylesheet" href="../../styles/main.css">
-    <link rel="stylesheet" href="../../styles/woocircle.css">
-    <meta property="docfx:navrel" content="../../toc.html">
-    <meta property="docfx:tocrel" content="../toc.html">
-    <meta property="docfx:rel" content="../../">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/woocircle.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
     
   </head>
-  <body data-spy="scroll" data-target="#affix" class="Develop T24 Packages, Plugins and Code ">
+  <body data-spy="scroll" data-target="#affix" class=" ">
     <div id="wrapper">
       <header>
         
@@ -79,36 +79,29 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="develop-t24-packages-plugins-and-code">Develop T24 Packages, Plugins and Code</h1>
 
-<h2 id="deploy-a-t24-package-to-sandbox">Deploy a T24 package to Sandbox</h2>
-<div class="NOTE"><h5>Note</h5><p>Make sure you cloned in your local machine the GitLab repository of your sandbox.</p>
-</div>
-<ul>
-<li>Copy the generated package into the <strong>packages</strong> folder of the cloned GitLab repository from your local machine:<br><img src="images/packages.png" alt="packages"><br><br></li>
-<li>If the package is a new file in the repository, the package must be first added to the repository:<br><img src="images/tortoise-add.png" alt="tortoise add"><br><br></li>
-<li>A screen will appear saying that the file was added. Press <strong>Commit</strong>:<br><img src="images/tortoise-commit.png" alt="tortoise commit"><br><br></li>
-<li>A new screen will appear. Insert a comment in the upper window and then choose <strong>Commit</strong>.<br><img src="images/commit-push.png" alt="tortoise commit and push"><br><br></li>
-<li>A new screen will appear and choose <strong>Push</strong>.<br><img src="images/push_after_commit.png" alt="tortoise push after commit"><br><br></li>
-<li>A new screen will appear and choose <strong>OK</strong>.<br><img src="images/ok_after_push.png" alt="tortoise ok after push"><br><br></li>
-<li>A success message should be displayed. Press <strong>Close</strong>.
+<html>
+ <body>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DhxML5u8tz8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+ </body>
+</html>
+
+<p><br></p>
+<p><span style="color:#005294"><strong>Total video time</strong></span>: <strong>20:59 minutes</strong>
 <br>
-<img src="images/success_after_push.png" alt="tortoise success after push">  </li>
-</ul>
-<h2 id="trigger-the-deployment">Trigger the deployment</h2>
+<span style="color:#005294"><strong>Total demo time</strong></span>: <strong>~ 35 minutes</strong> (from which <strong>15 minutes</strong> the creation of the environment)</p>
+<p><br>
+<span style="color:#005294"><strong>INFO</strong></span>:
+<br></p>
 <ul>
-<li>After commiting and pushing to Environment Repository all the features, you have to deploy them in your Environment. </li>
-<li>Login to your organisation, select your environment, locate the Repository Application and click the Deploy button. </li>
+<li>Add a <span style="color:#005294"><strong>user</strong></span> on the portal and attach the public <span style="color:#005294"><strong>SSH</strong></span> key
+<br></li>
+<li><span style="color:#005294"><strong>Clone</strong></span> an environment in order create a <span style="color:#005294"><strong>local repository</strong></span>
+<br></li>
+<li><span style="color:#005294"><strong>Add files or packages</strong></span> to each related folder: <span style="color:#005294"><strong>addons, packages, plugins, updates, wsdls</strong></span> and <span style="color:#005294"><strong>client files</strong></span></li>
+<li><span style="color:#005294"><strong>Commit and push</strong></span> all elements to the environment repository</li>
+<li><span style="color:#005294"><strong>Deploy</strong></span> the elements by clicking the deploy button under the repository belonging to the environment.</li>
 </ul>
-<p>For more details about the deployment, check the following <a href="use-gitlab-repository.md#trigger-deployment"><ins><strong>steps</strong></ins></a>.</p>
-<h2 id="check-jbc-routines-deployment-to-sandbox">Check jBC routines deployment to Sandbox</h2>
-<ul>
-<li>Log-in to your organisation into the Temenos Continuos Deployment Platform, go to your enviroment page and click on the <strong>Monitor Application</strong> Endpoint for the T24 application.<br><img src="images/t24-monitor-app.png" alt="monitor application"><br><br></li>
-<li>The TAFJEE page is opened. Click <strong>tShow</strong> to check if your developed routines were deployed in your sandbox. Details like the compilation date or the jar that contains the class of those routines can be checked.<br><img src="images/monitor-application-tshow.png" alt="monitor application"><br><br></li>
-<li>In the next screen, input your routine name and click <strong>Submit</strong>.<br><img src="images/monitor-application-submit.png" alt="monitor application"><br><br></li>
-<li>In the next screen, the details of your routine can be seen.<br><img src="images/monitor-application-result.png" alt="monitor application"><br><br></li>
-</ul>
-<p>More about the pre-requisites, import / export T24 applications can be found <a href="http://documentation.temenos.cloud/home/techguides/t24-development-appendix" target="_blank"><strong>here</strong></a>.</p>
 <p><br></p>
               <hr>
               
@@ -161,9 +154,9 @@
       </div>
     </div>
     
-    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
     <script id="dsq-count-scr" src="//temenostech.disqus.com/count.js" async=""></script>
     
     <script>
