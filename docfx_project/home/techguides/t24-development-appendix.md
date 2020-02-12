@@ -34,8 +34,7 @@ FILE_LOCK=NO;IFEXISTS=TRUE;CACHE_SIZE=131072;
 MVCC=TRUE;LOCK_TIMEOUT=30000   
  <span style="color:red">Replace **ENV_DNS** with **your environment DNS**.</span> See below example:
 
-![design studio template project](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/ds-dns-example.png)
-
+ ![](./images/ds-dns-example.png)
 
 ## Create New Project in Design Studio 
 
@@ -44,7 +43,7 @@ In order to accomplish the development actions presented at the beginning of the
 * Start Design Studio from _DesignStudio_ folder using **StartDesignStudio.bat** file and choose the default workspace (Your_DEV_Path\DesignStudio\workspace) or any other workspace from your local machine.
 * After Design Studio starts, go to **File** > **New** > **Project**.  
 * Select **Design Studio Template Project** from **Design Studio** item and click **Next**.  
-  ![design studio template project](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/ds-template-project.png)
+  ![](./images/ds-template-project.png)
 
 <br>
 
@@ -75,7 +74,7 @@ In order to accomplish the development actions presented at the beginning of the
 
 
 
-![tafj package](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/t24-configure-paths.png)
+![](./images/t24-configure-paths.png)
 
 <br>
 
@@ -87,7 +86,7 @@ In order to accomplish the development actions presented at the beginning of the
 
 * Make sure you check the **secured box** as in below picture:
 
-![created projects](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/t24-created-projects.png)
+![](./images/t24-created-projects.png)
 
 Make sure you save the change CTRL+S.
 
@@ -97,7 +96,7 @@ Make sure you save the change CTRL+S.
 
 Go to ft-sample-models > click right and select Properties > expand Design Studio > click Code Generation > expand All Categories > Uncheck XML for Local Fields (LT/RTL)
 
-![uncheck xml](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/t24-ft-sample-xml.png)
+![](./images/t24-ft-sample-xml.png)
 
 Click Apply and OK.
 
@@ -109,36 +108,36 @@ Click Apply and OK.
 A T24 Server is required in Design Studio to be able to import/export applications/enquiries/versions from/to your sandbox. Follow next steps to create and configure a T24 server:
 
 * On servers tab, click right and select **Add New T24 Server**.  
-  ![add server](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/add-server.png)
+  ![](./images/add-server.png)
   <br>
 
 * A new screen is open. Type a **name** for the server(make sure it includes '-server' string) and click **Next**.  
-  ![project name](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/project-name.png)  
+  ![](./images/project-name.png)  
   <br>
 
 * Choose connection type as **T24 Server-Web Service** and click **Finish**.  
-  ![connection type](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/connection-type.png)  
+  ![](./images/connection-type.png)  
   <br>
 
 * After the server is created, the _server.properties_ must be updated according to your sandbox details:  
   -> In _T24 User (deployment only)_ section, **2 users** that you use to connect to your T24 sandbox must be introduced.  
   -> In _WebService (TAFJ) Connection_ section, **Secured box** must be checked, **Protocol** must be set to _ws_ value, **Hostname** must be set according to the hostname of your sandbox, **Port** must be set to _443_ value and **Context** to _axis2_ value.  
-  ![server properties](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/server-properties.png)  
+  ![](./images/server-properties.png)  
 
 <br>
 -> To get the hostname of your sandbox, log-in to your organisation in TCD Portal (Temenos Continuous Deployment), go to your enviroment page and click on the **GO TO Application** Endpoint for the T24 application. The BrowserWeb page of your sandbox is opened and from the URL of this page, you must select the part between _https://_ and _/BrowserWeb/servlet/BrowserServlet_.
-![hostname](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/hostname.png)
+![](./images/hostname.png)
 
 <br>
 
 > [!Note]
 > For future use, in case T24 Server is not visible, go to: **Window > Show View > Other**:
 >
-> ![t24 server](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/t24-view-server.png)
+> ![](./images/t24-view-server.png)
 >
 > Type Server in the search bar and select **Design Studio > Servers**:
 >
-> ![t24 server](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/t24-view-server-search.png)
+> ![](./images/t24-view-server-search.png)
 
 
 
@@ -147,20 +146,20 @@ A T24 Server is required in Design Studio to be able to import/export applicatio
 The **Toggle TAFJ project nature** action must be performed in order to be able to develop, compile and package jBC routines and to interrogate your sandbox database.  
 
 * Right click on **data-code** module and choose **Toggle TAFJ project nature**.  
-  ![tafj toggle 1](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/tafj-toggle-1.png)  
+  ![](./images/tafj-toggle-1.png)  
   <br>
 * In the next screen, 
 * _tafj_properties_ from Your_DEV_Path/TAFJ/conf folder, choose TAFJ_HOME as Your_DEV_Path/TAFJ folder and click **Next**. In the bellow picture, DEV_Path is set to C:\TemenosDEV.
-  ![tafj toggle 2](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/tafj-toggle-2.png)  
+  ![](./images/tafj-toggle-2.png)  
   <br>
 * In the next screens, click **Next** and **Finish**.  
-  ![tafj toggle 3](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/tafj-toggle-3.png)  
+  ![](./images/tafj-toggle-3.png)  
   <br>
 * In the end, **data-code** module should be toggled.  
-  ![tafj toggle 4](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/tafj-toggle-4.png)  
+  ![](./images/tafj-toggle-4.png)  
   <br>
 * A .properties file was created for your project in Your_DEV_Path/TAFJ/conf folder.  
-  ![tafj toggle 5](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/tafj-toggle-5.png)  
+  ![](./images/tafj-toggle-5.png)  
   <br>
 
 > [!Note]
@@ -175,13 +174,13 @@ The **Toggle TAFJ project nature** action must be performed in order to be able 
 jBC routines are developed in the **data-code** module which must be toggled to TAFJ project nature by following next steps.  
 
 * In order to create a new jBC routine, expand **data-code** module, go to src->Source->Private, right click on project name (FT_Sample in the above picture), select **New** and then **New T24 routine / component / testcase**.
-  ![add routine](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/add-routine.png) 
+  ![](./images/add-routine.png) 
   <br> 
 * On next screen, type the name of the routine and click **Finish**.  
-  ![add routine name](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/add-routine-1.png)
+  ![](./add-routine-1.png)
   <br>
 * The new routine is created.  
-  ![add routine created](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/add-routine-2.png)
+  ![](./images/add-routine-2.png)
   <br>
 
 ## Create a T24 package based on your project 
@@ -189,16 +188,16 @@ jBC routines are developed in the **data-code** module which must be toggled to 
 In order to deploy your developed routines in the sandbox, a T24 package must be created.
 
  - Go to **packager** module in Design Studio workspace, right click on **Launch T24 Packager (TAFJ).launch** and choose **Run As** > **Launch T24 Packager (TAFJ)**.
-   ![build-project](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/build-project.png)
+   ![](./images/build-project.png)
    <br>
  - **Wait** for successfull build for the project.
 
-![build success](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/build-success-final.png)
+![](./images/build-success-final.png)
 <br>
 
  - Check where the **package** was generated.
 
-![check build success](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/check-build-success.png)
+![](./images/check-build-success.png)
 <br>
 
 ## Import T24 Applications, Enquiries and Versions 
@@ -208,36 +207,36 @@ In order to deploy your developed routines in the sandbox, a T24 package must be
 >
 > Hint: When importing artefacts from a T24 Environments on the project you need to disable the XText  RIM in order to speed up the operation and install or after a T24 update/upgrade. 
 
- ![t24 connection](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/disable-xtext-rim-compiler.png)
+ ![](./images/disable-xtext-rim-compiler.png)
 
 > Then  Import T24 Core Models or if your DS version has the Import T24 Core Models with the process after T24 update/upgrade (this tool is also available in headless mode).
 
-![t24 connection](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/import-core-models.png)
+![](./images/import-core-models.png)
 
 * Go to Servers tab, right click on your server state and change state to **active**.
-  ![t24 connection](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/t24-connection.png)  
+  ![](./images/t24-connection.png)  
   <br>
 * State should become active:  
-  ![active server](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/active-server.png)  
+  ![](./images/active-server.png)  
   <br>
 
 > [!Note]
 > The following example is about importing Enquiries from your sandbox to your local machine. The same steps can be aplied for Applications and Versions.  
 
 * After the T24-server is active, right click on the **models** module and choose **Import**:  
-  ![import enquiries 1](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/import_enquiries_1.png)
+  ![](./images/import_enquiries_1.png)
   <br>
 * Expand **Design Studio** item, choose **Import T24 Enquiries** and click on **Next** button. (you have to wait until the list of enquiries is fetched from the sandbox database).  
-  ![import enquiries 2](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/import_enquiries_2.png)
+  ![](./images/import_enquiries_2.png)
   <br>
 * Select from this list which enquiry you want to import from the sandbox to your local machine and click **Next**.  
-  ![import enquiries 3](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/import_enquiries_3.png)
+  ![](./images/import_enquiries_3.png)
   <br>
 * Choose where to import the enquiry(**Models** folder from **models** module) and click **Finish**(wait until the operation is completed).  
-  ![import enquiries 4](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/import_enquiries_4.png)
+  ![](./images/import_enquiries_4.png)
   <br>
 * A successful message will be displayed at the end and the enquiry will be saved in your local machine.  
-  ![import enquiries 5](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/import_enquiries_5.png)
+  ![](./images/import_enquiries_5.png)
   <br>
 
 ## Export T24 Applications, Enquiries and Versions
@@ -249,10 +248,10 @@ In order to deploy your developed routines in the sandbox, a T24 package must be
 > Make sure your T24 server is set to **active**.
 
 * Right click on the **models** module and choose **Design Studio** -> **Generate Code**:  
-  ![export enquiries 1](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/export_enquiries_1.png)  
+  ![](./images/export_enquiries_1.png)  
   <br>
 * A message should be displayed saying that the enquiry was successfully modified.
-  ![export enquiries 2](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/export_enquiries_2.png)  
+  ![](./images/export_enquiries_2.png)  
   <br>
 
 ## Data (.d) files 
@@ -260,7 +259,7 @@ In order to deploy your developed routines in the sandbox, a T24 package must be
 A data(.d) file represents a details viewer of a record from the database. A data file has 2 columns:  
 -> first column contains the unique number of all table fields of the record;  
 -> second column contains the values for all table fields of the record.  
-![data files 1](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/data_files_1.png)
+![](./images/data_files_1.png)
 <br>
 
 > [!Note]
@@ -268,36 +267,36 @@ A data(.d) file represents a details viewer of a record from the database. A dat
 
 Before starting to extract/load data files from/to your sandbox database, you must login to TAFJ-DBTools.  
 -> Right click on your **data-code** module and select **DBTools login**.
-![extract data dbtools 1](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/extract_data_dbtools_1.png)  
+![](./images/extract_data_dbtools_1.png)  
 <br>
 -> A wizard will appear in which you must type the DBTools credentials(which can be found in Add_DBTools_User.bat file from Your_DEV_Path) and click **Finish**.
-![extract data dbtools 2](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/extract_data_dbtools_2.png)  
+![](./images/extract_data_dbtools_2.png)  
 <br>
 
 ### Extract data files from the database 
 
 * Expand **data-code** module, go to src, right click on **Data** and select **Extract from the database**.  
-  ![extract data 1](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/extract_data_1.png)  
+  ![](./images/extract_data_1.png)  
   <br>
 * The bellow wizard will appear. Make sure the URL of the Database contains the correct database IP of your sandbox. Otherwise, you have update your .properties file related to your project from Your_DEV_Path/TAFJ/conf folder.
-  ![extract data 2](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/extract_data_2.png)  
+  ![](./images/extract_data_2.png)  
   <br>
 * Type the Table Name and Record ID and click **Finish**.  
-  ![extract data 3](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/extract_data_3.png)  
+  ![](./images/extract_data_3.png)  
   <br>
 * Check the console log to see if the data files was extracted.
-  ![extract data 4](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/extract_data_4.png)  
+  ![](./images/extract_data_4.png)  
   <br>
 
 ### Load data files in the database
 
 * Right click on your data file and select **Load in the database**.  
-  ![load data 1](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/load_data_1.png)  
+  ![](./images/load_data_1.png)  
   <br>
 * The bellow wizard will appear and click **Finish**. Make sure the URL of the Database contains the correct database IP of your sandbox. Otherwise, you have update your .properties file related to your project from Your_DEV_Path/TAFJ/conf folder.
-  ![extract data 2](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/load_data_2.png)  
+  ![](./images/load_data_2.png)  
   <br>
 * A success message should be displayed in the console.  
-  ![extract data 3](D:/DocumentationPortal/temenos-platform-documentation/docfx_project/home/techguides/images/load_data_3.png)  
+  ![](./images/load_data_3.png)  
 
 For more tutorials on how Design Studio works, please check <a href="http://documentation.temenos.cloud/home/design-studio-tutorials" target="_blank"><u>**here.**</u></a> 
