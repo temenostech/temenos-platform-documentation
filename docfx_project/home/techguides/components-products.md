@@ -20,7 +20,7 @@ Each component has the following fields *(all mandatory)*:
 
 - Display Name
 
-## Component Type ##
+##  Component Type ##
 
 The TCP uses a convention/ protocol to deploy all parts required to run a full-fledged instance of T24 (Or any other product supported by a template). Such parts to constitute a complete system are called **components**. 
 
@@ -39,9 +39,9 @@ Each component type represents a deployable unit and has an ansible script assoc
 
 These components have a structure associated and work in a standardized manner across different deployment stacks (OS, App server variations, DB variations etc).
 
-## How to Set Up/ Delete Components ##
+# How to Set Up/ Delete Components # 
 
-### Set-up/ Create a Component ###
+## Set-up/ Create a Component ##
 
  - Login to the Temenos Continuous Deployment Platform.
  - Click on Settings button on the left menu > this will expand a menu containing buttons for: Streams, Stages, Products, Factory and General.  
@@ -64,21 +64,24 @@ A folder is automatically created into the repository *(we are using JFrog Artif
 
 *(If the related artifacts are not uploaded, running the factory will not be possible and an error message will be thrown).*
 
-## How to upload binaries into the Artifactory ##
+# How to login to Artifactory #
+Every user created in the Temenos Continuous Deployment Platform can log in with the platform’s credential on the Artifactory server as well. Follow the steps below to login to the Artifactory:
 
-Every user created in the Temenos Continuous Deployment Platform can log in with the platform’s credential on the Artifactory server as well. 
+- go on the self-side menu on the portal and click on **Metadata**. 
+ ![](./images/sanity-general.png)
+- here are displayed the metadata settings:
+ ![](./images/components-and-products-artifactoryurl.png)
+- copy the **Artifactory URL** and open it in another browser. To login use with your credentials from the Temenos Continuous Deployment Platform. This is how your Artifactory will be displayed:
+ ![](./images/artifactory-login.png)
+- to see the artifactory repository, click on the Artifactory icon from the left-side menu. The repository belonging to your organisation will be displayed (to make sure you expand the right repository, always check the naming convention: repo-1dq4zcowcn75s1, where what follows after 'repo-' represents the ID of your organisation:
+ ![](./images/local-repository.png)
+ 
+
+## How to upload binaries into the Artifactory ##
 
 The users are enabled to download the existing artifacts or upload new artifacts that will be used for factories. This process can be done in two ways:
 
 **A. Manually access the artifactory and upload the required binary (recommended).**
-
-- go on the self-side menu on the portal and click on Metadata. Here are displayed the metadata settings. Copy the Artifactory URL and paste on your browser:
- ![](./images/components-and-products-artifactoryurl.png)
- 
-
-- to login, please type the credentials from the Temenos Continuous Deployment Plaftorm
-
-
 
 Requirements:
 
@@ -133,15 +136,143 @@ Once the command is run, the binary is uploaded on the Artifactory:
 
 
 
-**Pre-requisites and best practices:**
+## **Pre-requisites and best practices:** ##
 
 - ensure that the component name also has information about its version;
 - ensure that the component format that you upload is correct and as delivered by the Temenos team;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  the format of the package as delivered by Temenos will as well be supported in TCD.  
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+- if the **Help text** file of T24 is given as a .zip, the templates will expect a .zip file for the same,
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - DS pakages will have the same packaging as bundled by Design Studio
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - T24 updates are bundled in zip;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - you need to get from Temenos distribution team the Toolbox kit that will allow you to generate the system definition file of your T24 environment;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - you will be able to download the T24 updates correspondent to your environments from the Temenos Customer Support Portal by uploading the system definition file generated above;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - once the updates are downloaded from the portal in a .zip file, you must create another .zip of that downloaded .zip file and only then  place it into the artifactory under the correspondent component;
+
 - ensure that components are uploaded to the appropriate folders (the URL and folder names can be found from the component definition pages of the TCD portal);
 - if the component is uploaded in a .zip format, it it recommended to have a text file describing what is included in the package/ provide reference to the code commit tags to find what is included in the package;
 - do not delete/ edit/ create components/ folders in the artifactory.  TCD Portal’s Product and Component sections must be used to create anything in artifactory.
 
-### Which Components to Add ###
+# T24 golden copy pre-requisites  #
+
+## Database - generic ##
+
+- No client data
+
+- Minimal size
+
+- No  archived data or RO database to be provided
+
+- All test credentials present / injected by the tests
+
+- The field name DESTINATION.STATIC in IF.INTEGRATION.SERVICE.PARAM must hold the queue name “queue/t24IFInboundQueue” 
+
+- Sanity testing to be performed to ensure that the users can log in, applications can be input, OFS requests can be run, the T24 services specifically INTEGRATION.SERVICE and COB can be run and any known issues which can be ignored should be reported.
+
+- Once sanity testing is complete, all the TSA services running should be stopped,  locks to be removed and TSA.STATUS records to be cleared
+
+- The t24libs and other jar files (L3,GPACK,CPACK etc) at the time of creating the golden copy should be provided along with the golden copy 
+
+## Database - H2 ##
+
+- H2 database username passwords to be provided for the newly created user
+
+- The DBImport log should be verified to ensure that all the tables, views and the dictionaries in the source  matches with the destination 
+
+- A copy of the DBimport log to be provided for verification 
+
+- H2 version 1.4.199
+
+## Database - ORACLE ##
+
+- The database must be in RPM format
+
+- The database username and passwords to be provided
+
+- To ensure that the database shipped is of optimal size, please make sure that the following files are removed before taking a backup
+
+&nbsp; **1. From T24 Tables**
+
+a) Enormous archived files ($ARC files) which do not form as part of the usual day-today-activities. E.g.: Archived Delivery messages, archived Accounting entries)
+
+b) Contents of the cache and user specific temporary files to be cleared (F.OS.XML.CACHE, F.ENQUIRY.LEVEL, F.ENQUIRY.SELECT, F.OS.TOKEN, F.OS.TOKEN.USE, F.PROTOCOL, OS.REQUEST.DETAIL)
+
+&nbsp; **2.  From UD folders**
+
+a) &COMO&, &HOLD&, &PH&, &SAVEDLISTS&
+
+b) Contents of F.DL.DATA, Contents of SWIFT inward and outward message directories, NR related message directories
+
+c) Contents of any interface log directories (attached to the OFS.SOURCE records)
+
+d) Any other IN and OUT message directories used for interfaces
+
+e) User directories or BPs created by developers and the local source code in them for testing purposes
+
+#  Wealth suite golden  copy pre-requisites # 
+
+## **TAP CORE**  
+
+&nbsp; **Database-generic**
+
+- The golden copy of the TAP DB must be obtained  by doing an extract using the cloning tool (cloning tool version to be used should be the one delivered with Wealth distribution)
+
+- The golden copy of TAP database must be delivered with golden copy of TAP Core binaries (in sync)
+
+- No client data. Only infrastructure data in sync. With T24 demo model bank data will be imported.
+
+- Minimal size
+
+- All data required for tests (including users, data profiles, data security profiles …) must be injected by the tests
+
+- If T24 is used as a back end system, ensure that the database backups of T24 & TAP are synchronized 
+
+- Client to ensure Components L3 packages are in sync for E2E environment deployment.
+
+- DatabaseSybase.
+
+
+
+## **GWPACK - L3** ##
+
+- L3 GWPACK format must suit exact format to be provided by Temenos 
+
+- There’s no L3 extraction mechanism provided by Product at this stage. Waiting for this product feature to be delivered, client must maintain L3 development in his repository mechanism, and publish packages to be testing in TCD
+
+- Distribution must come as a single full distribution (i.e. any update/hotfix must be delivered in TCD platform as a full release to be requested to Distribution team
+
+## **TTI -L3** ##
+
+- L3 GWPACK format must suit exact format to be provided by Temenos 
+
+- There’s no L3 extraction mechanism provided by Product at this stage. Waiting for this product feature to be delivered, client must maintain L3 development in his repository mechanism, and publish packages to be testing in TCD
+
+- Distribution must come as a single full distribution (i.e. any update/hotfix must be delivered in TCD platform as a full release to be requested to Distribution team
+
+## **TAP Web** ##
+
+- TAP Web golden copy consists only on list of L1 updates (hotfixes) and L3 packages (TAP Web Design studio packages)  to be provided
+
+## **Test Script Pre-Requisites** ##
+
+- Single test library to be used across all products
+
+- Single format of test sheet used by all products. (All tests follow same automation mechanism during execution in TCD and we can’t change it)
+
+- Ensure that the test credentials are present in the test sheet (We can’t add passwords before each run)
+
+- All usernames & passwords to be in the golden copy or injected by tests. (We can’t add users & passwords)
+
+- Synchronized Golden copies and ensure that the test strategy for uploading the test data is as well synchronized.
+
+#  Which Components to Add  #
 
 In order to know which are the minimum required components that you need to add, you must first check the **Templates Catalog** (see button on the left menu).
 
