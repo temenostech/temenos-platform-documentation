@@ -218,7 +218,7 @@ e) User directories or BPs created by developers and the local source code in th
 
 #  Wealth suite golden  copy pre-requisites # 
 
-## **TAP CORE**  
+## TAP CORE  
 
 &nbsp; **Database-generic**
 
@@ -240,7 +240,7 @@ e) User directories or BPs created by developers and the local source code in th
 
 
 
-## **GWPACK - L3** ##
+## GWPACK - L3 ##
 
 - L3 GWPACK format must suit exact format to be provided by Temenos 
 
@@ -248,7 +248,7 @@ e) User directories or BPs created by developers and the local source code in th
 
 - Distribution must come as a single full distribution (i.e. any update/hotfix must be delivered in TCD platform as a full release to be requested to Distribution team
 
-## **TTI -L3** ##
+## TTI -L3 ##
 
 - L3 GWPACK format must suit exact format to be provided by Temenos 
 
@@ -256,7 +256,7 @@ e) User directories or BPs created by developers and the local source code in th
 
 - Distribution must come as a single full distribution (i.e. any update/hotfix must be delivered in TCD platform as a full release to be requested to Distribution team
 
-## **TAP Web** ##
+## TAP Web ##
 
 - TAP Web golden copy consists only on list of L1 updates (hotfixes) and L3 packages (TAP Web Design studio packages)  to be provided
 
