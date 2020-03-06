@@ -286,7 +286,7 @@ From here, select the template that you want to use:
  - <span style="color:red">In addition to the mandatory components, you will need to add those components you need to test - not related to your selected template.</span>
  - For all added components, make sure you add the related files archive into the artifactory as explained above.
 
-![](./images/products-templates.png)
+![](./images/products-template.png)
 
 
 ### How to Delete a Component ###

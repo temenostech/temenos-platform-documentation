@@ -40,11 +40,11 @@ A stage can have only the description edited/ changed, but not the name. Why? Be
 
 Just click the edit button, change the description and then click update.
 
-## Default Stage ##
+## Default Stage (CONFIGURATION STAGE) ##
 
 After logging to the portal, go to the **General** button on the left menu. Here you can see and edit the metadata.
 
-The DEFAULT STAGE NAME can be defined after the creation of an organization in order to be able to use the assemble functionalities and **can be editable**.
+The CONFIGURATION STAGE NAME can be defined after the creation of an organization in order to be able to use the assemble functionalities and **can be editable**.
 
 In case it has not been defined at the beginning, then when you try to create a stream, a new field about default stage will appear and here you need to insert a name for the default stage. 
 
@@ -65,6 +65,4 @@ Example of the default stage defined into the metadata (you can set any name you
 
 ![](./images/stage-metadata.png)
 
-> [!Note]
-The MAX_ENV_COUNT count only applies for User Environments and does not count the factory environments. If the value is not set at the organization level, the value is defaulted to 10. 
-Once created, the values will not be editable / deleteable by the user. 
+
