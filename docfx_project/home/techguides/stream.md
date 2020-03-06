@@ -41,7 +41,7 @@ The parts of the stream are listed below:
 
 ![](./images/streams-create.png)
 
-After the successful creation, your stream will appear on the screen *(in case you already have other streams, the newly created will be the last in chronological order)* and it will automatically have associated the default stage named 'demo_stage' (as in current example). Please **note** that the default stage name is defined in the metadata settings of your organization (On the main menu > General).
+After the successful creation, your stream will appear on the screen *(in case you already have other streams, the newly created will be the last in chronological order)* and it will automatically have associated the default stage named 'stable_dev' (as in current example). Please **note** that the default stage name is defined in the metadata settings of your organization (On the main menu > General).
 
 ![](./images/streams-created.png)
 
@@ -63,18 +63,18 @@ You can clone a stream as well. This action will copy the latest version of all 
 
 
 Example 1: 
-- Suppose we have created a stream named Dev2 that has just the default stage and without adding other stages or configuring further components and products.
-- We can just go and delete this stream (even if it has the stable_dev associated to it).
+- Suppose we have created a stream named **demostream** that has just the **default stage** and without adding other stages or configuring further components and products.
+- We can just go and delete this stream (even if it has the **Primary Stage **associated to it).
 
 Example 2:
-- Suppose we have created a stream named Dev that has the default stage (demo_stage) and also a stage named Primary_stage, without configuring further components and products.
-- In order to be able to delete a stream that has **more than the demo_stage**, we need first to go and delete the stages attached to it.
-- Go first to Stages button on the left menu > Select first your stream (top right) > Select the stage that you want to delete (others then demo_stage - *because this stage cannot be deleted*) > And click the delete button.
+- Suppose we have created a stream named **demostream** that has the default stage (Primary Stage) and also a stage named Stable_Dev, without configuring further components and products.
+- In order to be able to delete a stream that has **more than the Primary Stage**, we need first to go and delete the stages attached to it.
+- Go first to Stages button on the left menu > Select first your stream (top right) > Select the stage that you want to delete (others then the Primary Stage - *because this stage cannot be deleted*) > And click the delete button.
 
 
 ![](./images/streams-delete-stage.png)
 
-- Go back to Streams and you will notice that your stream has only the demo_stage stage associated, therefore you are able to delete the stream. Click the Delete button.
+- Go back to Streams and you will notice that your stream has only the Primary Stage associated, therefore you are able to delete the stream. Click the Delete button.
 
 ![](./images/streams-delete-streams.png)
 
