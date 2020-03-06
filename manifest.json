@@ -655,12 +655,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/components-products.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/components-products.html",
-          "hash": "5HfjU8O3wNdTed4RzL85CA=="
+          "hash": "s41Wim+aYLL/mUGy/Kni2Q=="
         }
       },
       "is_incremental": false,
@@ -4556,17 +4559,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/stage_metadata.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/stage_metadata.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/start-all-user-env.png",
       "output": {
         "resource": {
@@ -5309,7 +5301,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/stage.html",
-          "hash": "jqgqvDQnvw9b/0q7Fv0Iww=="
+          "hash": "JjVfv2Mwrr+KNgIKx7Yt6w=="
         }
       },
       "is_incremental": false,
@@ -5324,7 +5316,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/stream.html",
-          "hash": "oa52kONgC6N0N36Lixb2vg=="
+          "hash": "LwqQ+XyRoWEw4+oKFdxDDQ=="
         }
       },
       "is_incremental": false,
