@@ -50,4 +50,5 @@ For more details about the deployment, check the following [<ins>**steps**</ins>
 ![monitor application](./images/monitor-application-result.png)  
 <br>
 
-More about the pre-requisites, import / export T24 applications can be found <a href="http://documentation.temenos.cloud/home/techguides/t24-development-appendix" target="_blank">**here**</a>.
+More about the pre-requisites, import / export T24 applications can be found <a href="develop_T24_packages_plugins_and_code " target="_blank"><u>**here**</u></a>.
+
