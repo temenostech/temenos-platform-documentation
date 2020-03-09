@@ -513,6 +513,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/pdf/Develop_T24_Packages_plugins_and_code.pdf",
+      "output": {
+        "resource": {
+          "relative_path": "home/pdf/Develop_T24_Packages_plugins_and_code.pdf"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/pdf/tcib-guide.pdf",
       "output": {
         "resource": {
@@ -5607,14 +5618,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "RestApiDocumentProcessor": {
