@@ -19,7 +19,8 @@ This page provides information about the monthly Temenos Continuous Deployment P
 
 
 
-
+<br>
+</br>
 
 # **Version 1: January 19** #
 
@@ -35,6 +36,8 @@ This page provides information about the monthly Temenos Continuous Deployment P
 
 - **Environment functionality updates**: pop-up confirmation with check box informing both START and STOP all environments added;	
 
+<br>
+</br>
 ## Role Management	 ##
 - **User access rights**: 
     - user profiles can perform distinct functions on the Temenos Continous Deployment Platform. Administrators, operations, developer and test users for examples require different access rights to perform certain operations. The user permissions are explained on this [**page**](http://documentation.temenos.cloud/home/techguides/user-permissions "page"). Each page from the Documentation Portal will have the access rights displayed for each operation shortly;
@@ -43,17 +46,21 @@ This page provides information about the monthly Temenos Continuous Deployment P
     - users can delete roles as long as no one is assigned that role;
     - users (admins) can assign roles to users;
 
+<br>
+</br>
 ## Security enhancements - Phase 1 ##
 - controller API keys are now managed by platform Operators such that keys are not shared with customers and the impact of a compromised/revoke key is minimised;
 - all vulnerabilities or defects in libraries detected during initial Whitesource scanning of Temenos Continuous Deployment Platform source have been fixed;
 
-
+<br>
+</br>
 ## Security enhancements - Phase 2 ##
 - white source scanning is now automated as part of platform build process that Temenos Continuous Deployment Platform Code is scanned each time we build the platform;
 - all the Temenos Continuous Deployment Platform 3rd parties were White Source scanned;
 - all artifacts pushed in common GitLab and Artifactory are scanned;
 
-
+<br>
+</br>
 ## Self Service Capabilities ##
 
 
