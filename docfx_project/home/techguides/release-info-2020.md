@@ -3,7 +3,7 @@
 
 This page provides information about the monthly Temenos Continuous Deployment Platform features and improvements in each release.
 
-# **19th February Release Notes** #
+# **2020.02 Release Notes** #
 **InfraBuild**: 362 &nbsp;**|**&nbsp; **PortalTag**: cloudPortal_1.79e
 &nbsp;**|**&nbsp; **ControllerBuild**: 26
 ## Technical Enhancements ##
@@ -34,7 +34,7 @@ This page provides information about the monthly Temenos Continuous Deployment P
 <br>
 </br>
 
-# **29th January Release Notes** #
+# **2020.01 Release Notes** #
 **InfraBuild**: 355 &nbsp; **|**  &nbsp;**PortalTag**: cloudPortal_1.78 &nbsp;**|**  &nbsp;**ControllerBuild**: 12
 
 ## Dashboard Enhancements ##
