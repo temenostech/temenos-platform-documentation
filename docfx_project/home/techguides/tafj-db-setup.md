@@ -4,6 +4,3 @@ To see different DB import scenarios and special considerations, please check <a
 
 
 <br>
-> 
-> [!Note]
-The file changes with each monthly build Temenos runs. To get the latest version, contact our support team at CloudPlatformSupport@temenos.com.                
