@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Release information </title>
+    <title>Release Notes </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Release information ">
+    <meta name="title" content="Release Notes ">
     <meta name="generator" content="docfx 2.22.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -20,7 +20,7 @@
     <meta property="docfx:rel" content="../../">
     
   </head>
-  <body data-spy="scroll" data-target="#affix" class="Release information ">
+  <body data-spy="scroll" data-target="#affix" class="Release Notes ">
     <div id="wrapper">
       <header>
         
@@ -79,100 +79,87 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h2 id="release-information">Release information</h2>
+<h2 id="release-notes">Release Notes</h2>
 
 <p>This page provides information about the monthly Temenos Continuous Deployment Platform features and improvements in each release.</p>
-<h1 id="version-2-february-19"><strong>Version 2: February 19</strong></h1>
+<h1 id="19th-february-release-notes"><strong>19th February Release Notes</strong></h1>
+<p><strong>InfraBuild</strong>: 362 &nbsp;<strong>|</strong>&nbsp; <strong>PortalTag</strong>: cloudPortal_1.79e
+&nbsp;<strong>|</strong>&nbsp; <strong>ControllerBuild</strong>: 26</p>
 <h2 id="technical-enhancements">Technical Enhancements</h2>
-<ul>
-<li><p><strong>Exception list added to the Organisation scheduled shutdown</strong>: users with the &quot;UPDATE_ENVIRONMENT&quot; privilege are able to add an &quot;scheduler ignore&quot; for environments. Those environments will not be STOPPED or STARTED by time scheduler;</p>
-</li>
-<li><p><strong>Whitelist IPs that can acces my environments</strong>: users with the &quot;CREATE_ ORG_ METADATA&quot; privilege are able to restrict the access of Temenos Continous Deployment Platform environments of that organisations to the IP addresses added to the metadata &quot;ORG_ IP_ WHITELIST&quot;;</p>
-</li>
-<li><p><strong>Factory Run timeline</strong>: issue has been fixed;</p>
-</li>
-<li><p>Fixed issue with the platform URL included in the System generated email sent to the Org Admins;</p>
-</li>
-</ul>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>1. Exception list added to the Organisation scheduled shutdown</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- users with the &quot;UPDATE_ENVIRONMENT&quot; privilege are able to add an &quot;scheduler ignore&quot; for environments. Those environments will not be STOPPED or STARTED by time scheduler <br>
+ </br></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>2. Whitelist IPs that can acces my environments</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- users with the &quot;CREATE_ ORG_ METADATA&quot; privilege are able to restrict the access of Temenos Continous Deployment Platform environments of that organisations to the IP addresses added to the metadata &quot;ORG_ IP_ WHITELIST&quot;<br>
+</br></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>3. Factory Run timeline</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  issue has been fixed<br>
+</br></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;4.  <strong>Platform URL included in the System generated email sent to the Org Admins</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  issue has been fixed<br>
+</br></p>
 <p><br>
 </br></p>
-<h1 id="version-1-january-19"><strong>Version 1: January 19</strong></h1>
+<h1 id="19th-january-release-notes"><strong>19th January Release Notes</strong></h1>
+<p><strong>InfraBuild</strong>: 355 &nbsp; <strong>|</strong>  &nbsp;<strong>PortalTag</strong>: cloudPortal_1.78 &nbsp;<strong>|</strong>  &nbsp;<strong>ControllerBuild</strong>: 12</p>
 <h2 id="dashboard-enhancements">Dashboard Enhancements</h2>
-<ul>
-<li><p><strong>UI Updates</strong>: Temenos Continuous Deployment Platform UI has been updated to unify look and feel, behavior, and to improve user experience. The UI changes have been updated on all pages across the documentation portal;</p>
-</li>
-<li><p><strong>Component security enhancements</strong>: when creating a template from a factory run, all components are copied in the new template folder that secures this template consistency from factory deletion;</p>
-</li>
-<li><p><strong>Templates visibility improvements</strong>: Template identifier on the environment&#39;s page added;   </p>
-</li>
-<li><p><strong>Environment functionality updates</strong>: pop-up confirmation with check box informing both START and STOP all environments added;   </p>
-</li>
-</ul>
-<p><br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>1. UI Updates</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Temenos Continuous Deployment Platform UI has been updated to unify look and feel, behavior, and to improve user experience. The UI changes have been updated on all pages across the documentation portal<br>
 </br></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>2. Component security enhancements</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- when creating a template from a factory run, all components are copied in the new template folder that secures this template consistency from factory deletion<br>
+</br></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>3. Templates visibility improvements</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- template identifier on the environment&#39;s page added<br>
+</br></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>4. Environment functionality updates</strong>: </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- pop-up confirmation with check box informing both START and STOP all environments added<br><br><br></p>
 <h2 id="role-management">Role Management</h2>
-<ul>
-<li><strong>User access rights</strong>: <ul>
-<li>user profiles can perform distinct functions on the Temenos Continous Deployment Platform. Administrators, operations, developer and test users for examples require different access rights to perform certain operations. The user permissions are explained on this <a href="http://documentation.temenos.cloud/home/techguides/user-permissions" title="page"><strong>page</strong></a>. Each page from the Documentation Portal will have the access rights displayed for each operation shortly;</li>
-<li>users can create roles from permissions;</li>
-<li>users can add or remove permissions to a role;</li>
-<li>users can delete roles as long as no one is assigned that role;</li>
-<li>users (admins) can assign roles to users;</li>
-</ul>
-</li>
-</ul>
-<p><br>
-</br></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>1. User access rights</strong>: </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- user profiles can perform distinct functions on the Temenos Continous Deployment Platform. Administrators, operations, developer and test users for examples require different access rights to perform certain operations. The user permissions are explained on this <a href="http://documentation.temenos.cloud/home/techguides/user-permissions" title="page"><strong>page</strong></a>. Each page from the Documentation Portal will have the access rights displayed for each operation shortly.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- users can create roles from permissions</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- users can add or remove permissions to a role</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- users (admins) can assign roles to users</p>
+<p><br></p>
 <h2 id="security-enhancements---phase-1">Security enhancements - Phase 1</h2>
-<ul>
-<li>controller API keys are now managed by platform Operators such that keys are not shared with customers and the impact of a compromised/revoke key is minimised;</li>
-<li>all vulnerabilities or defects in libraries detected during initial Whitesource scanning of Temenos Continuous Deployment Platform source have been fixed;</li>
-</ul>
-<p><br>
-</br></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>1.</strong> Controller API keys are now managed by platform Operators such that keys are not shared with customers and the impact of a compromised/revoke key is minimised<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>2.</strong> All vulnerabilities or defects in libraries detected during initial Whitesource scanning of Temenos Continuous Deployment Platform source have been fixed</p>
+<p><br></p>
 <h2 id="security-enhancements---phase-2">Security enhancements - Phase 2</h2>
-<ul>
-<li>white source scanning is now automated as part of platform build process that Temenos Continuous Deployment Platform Code is scanned each time we build the platform;</li>
-<li>all the Temenos Continuous Deployment Platform 3rd parties were White Source scanned;</li>
-<li>all artifacts pushed in common GitLab and Artifactory are scanned;</li>
-</ul>
-<p><br>
-</br></p>
-<h2 id="self-service-capabilities">Self Service Capabilities</h2>
-<h3 id="self-service-setup"><strong>Self Service Setup:</strong></h3>
-<ul>
-<li>users who have the Assemble module enabled are able to <a href="http://documentation.temenos.cloud/home/techguides/factories.html">manage their factories</a>, admin <a href="http://documentation.temenos.cloud/home/techguides/components-products.html">product and component</a>s, <a href="http://documentation.temenos.cloud/home/techguides/stream.html">create streams</a>, <a href="http://documentation.temenos.cloud/home/techguides/factories.html?q=schedule%20factory#factory-scheduler">schedule</a> and <a href="http://documentation.temenos.cloud/home/techguides/factories.html?q=schedule%20factory#set-up-create-a-factory">execute factory runs</a>;</li>
-<li>all users have the option to <a href="http://documentation.temenos.cloud/home/techguides/clone-environment.html?q=clone%20envi">clone environments</a>, <a href="http://documentation.temenos.cloud/home/techguides/stage-testcases.html">manage their test cases</a> and connect to Design Studio remotely to any Azure Subscription;</li>
-<li><strong>internal Users can use the Boost function to configure the available templates or build a new template.</strong> <br>
-</br><ul>
-<li>users are now able to request an environment based on any factory run to do triage, demo or ad-hoc testing (learn how <a href="http://documentation.temenos.cloud/home/techguides/run-factory.html">here</a>);</li>
-<li>organisation administrators now can create a template based on any successful factory run to baseline the environment (learn how <a href="http://documentation.temenos.cloud/home/techguides/create-publish-template.html?q=successful">here</a>);</li>
-<li>organisation Admin user now can Stop All Environments of the organisation through a single button to Manage Costs (learn how <a href="http://documentation.temenos.cloud/home/techguides/environment-basic-operations.html?q=stop%20environment">here</a>);</li>
-<li>pop-up confirmation with check box informing both START and STOP all environments added;<br>
-</br></li>
-</ul>
-</li>
-</ul>
-<h3 id="factory-management-learn-more-herehttpdocumentationtemenoscloudhometechguidescomponents-productshtmlhow-to-set-up-edit-delete-products"><strong>Factory Management (learn more <a href="http://documentation.temenos.cloud/home/techguides/components-products.html#how-to-set-up-edit-delete-products">here</a>):</strong></h3>
-<ul>
-<li>ability to redefine factory settings to add/ remove Products;</li>
-<li>ability to delete a product;</li>
-<li>ability to delete a component;</li>
-<li>ability to disable a factory;</li>
-<li>ability to delete a factory; <br>
-</br></li>
-</ul>
-<h3 id="components-management"><strong>Components Management</strong>:</h3>
-<ul>
-<li>an Artifactory folder structure available view (learn more <a href="http://documentation.temenos.cloud/home/techguides/components-products.html#artifactory-view">here</a>);</li>
-<li>a list of all available components in current selected stage;</li>
-<li>list of all component versions available in the Artifactory&quot;;</li>
-</ul>
-<ul>
-<li>users are now able to Abort any Factory Run in case of need (learn how <a href="http://documentation.temenos.cloud/home/techguides/run-factory.html">here</a>);</li>
-<li>users can schedule factory runs (learn how <a href="http://documentation.temenos.cloud/home/techguides/factories.html">here</a>);</li>
-<li>users can clone Streams (learn how <a href="http://documentation.temenos.cloud/home/techguides/stream.html">here</a>).</li>
-</ul>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>1.</strong> White source scanning is now automated as part of platform build process that Temenos Continuous Deployment Platform Code is scanned each time we build the platform <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>2.</strong> All the Temenos Continuous Deployment Platform 3rd parties were White Source scanned <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>3.</strong> All artifacts pushed in common GitLab and Artifactory are scanned</p>
+<p><br></p>
+<h2 id="self-service-capabilities"><strong>Self Service Capabilities</strong></h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>1.</strong> <strong>Self Service Setup:</strong><br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   -   users who have the Assemble module enabled are able to <a href="http://documentation.temenos.cloud/home/techguides/factories.html">manage their factories</a>, admin <a href="http://documentation.temenos.cloud/home/techguides/components-products.html">product and component</a>s, <a href="http://documentation.temenos.cloud/home/techguides/stream.html">create streams</a>, <a href="http://documentation.temenos.cloud/home/techguides/factories.html?q=schedule%20factory#factory-scheduler">schedule</a> and <a href="http://documentation.temenos.cloud/home/techguides/factories.html?q=schedule%20factory#set-up-create-a-factory">execute factory runs</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  all users have the option to <a href="http://documentation.temenos.cloud/home/techguides/clone-environment.html?q=clone%20envi">clone environments</a>, <a href="http://documentation.temenos.cloud/home/techguides/stage-testcases.html">manage their test cases</a> and connect to Design Studio remotely to any Azure Subscription<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  internal Users can use the Boost function to configure the available templates or build a new template. <br>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>2.</strong> Users are now able to <strong>request an environment based on any factory run</strong> to do triage, demo or ad-hoc testing (learn how <a href="http://documentation.temenos.cloud/home/techguides/run-factory.html">here</a>). <br>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>3.</strong> Organisation administrators now can <strong>create a template based on any successful factory run</strong> to baseline the environment (learn how <a href="http://documentation.temenos.cloud/home/techguides/create-publish-template.html?q=successful">here</a>). <br>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>4.</strong> Organisation Admin user now can <strong>Stop All Environments</strong> of the organisation through a single button to Manage Costs (learn how <a href="http://documentation.temenos.cloud/home/techguides/environment-basic-operations.html?q=stop%20environment">here</a>).<br>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>5.</strong> <strong>Pop-up confirmation</strong> with check box informing both START and STOP all environments added.<br>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>6.</strong> <strong>Factory Management</strong> (learn more <a href="http://documentation.temenos.cloud/home/techguides/components-products.html#how-to-set-up-edit-delete-products">here</a>):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  ability to redefine factory settings to add/ remove Products<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ability to delete a product<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ability to delete a component<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ability to disable a factory<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ability to delete a factory <br>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>7. Components Management</strong>:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-   an Artifactory folder structure available view (learn more <a href="http://documentation.temenos.cloud/home/techguides/components-products.html#artifactory-view">here</a>)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- a list of all available components in current selected stage<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- list of all component versions available in the Artifactory<br>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>8.</strong> Users are now able to <strong>Abort any Factory Run</strong> in case of need (learn how <a href="http://documentation.temenos.cloud/home/techguides/run-factory.html">here</a>) <br>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>9.</strong> Users can <strong>schedule factory runs</strong> (learn how <a href="http://documentation.temenos.cloud/home/techguides/factories.html">here</a>) <br>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>10.</strong> Users can <strong>clone Stream</strong>s (learn how <a href="http://documentation.temenos.cloud/home/techguides/stream.html">here</a>).</p>
 <p><br></p>
               <hr>
               
