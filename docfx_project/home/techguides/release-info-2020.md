@@ -34,7 +34,7 @@ This page provides information about the monthly Temenos Continuous Deployment P
 <br>
 </br>
 
-# **19th January Release Notes** #
+# **29th January Release Notes** #
 **InfraBuild**: 355 &nbsp; **|**  &nbsp;**PortalTag**: cloudPortal_1.78 &nbsp;**|**  &nbsp;**ControllerBuild**: 12
 
 ## Dashboard Enhancements ##
