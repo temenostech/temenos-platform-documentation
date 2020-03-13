@@ -22,7 +22,7 @@ This document can be used by technical staff who need to add new endpoints to th
 
 
 In order to create new endpoints for the T24 application of your Environment, the next steps must be followed:
- - Clone the GitLab repository of your Environment in your local machine. For more details on how to clone a repository, check this <a href="./use-gitlab-repository.md" target="_blank">**page**</a>.
+ - Clone the GitLab repository of your Environment in your local machine. For more details on how to clone a repository, check this **[page](http://documentation.temenos.cloud/home/techguides/deploy-an-update-to-an-existing-environment.html)**.
 
  - Create a file with **.endpoint** extension inside **plugins** folder of the cloned repository as in the bellow picture. The name of the file is not important, but it should be relevant for your requirement.
 ![create endpoint file](./images/endpoint-create.png)

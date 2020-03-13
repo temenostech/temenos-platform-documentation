@@ -42,7 +42,7 @@ Learn how to use FCM application by accessing it via Temenos Continuous Deployme
   - Financial Crime Mitigation
   - Interfaces Module
 
-![fcm endpoints](./images/fcm-endpoints.png)
+![fcm endpoints](./images/fcm-endpoint.png)
 
  - A new login is required when accessing the first endpoint (Financial Crime Mitigation) > Next you will see all available modules of the FCM Suite
  - The Interfaces Module displays:
@@ -104,6 +104,8 @@ To see all the steps regarding how to add a new user on the portal and to attach
 - Click on Transfer, then select Default and Edit 
 ![drag message](./images/winscp-error1.png)
 - Select the ignore permission errors
+
+
 ![drag message](./images/winscp-error2.png)
 
 
