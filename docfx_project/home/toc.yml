@@ -30,8 +30,10 @@
        - name: Export and Import a Database  
          href: ./techguides/export-import-database.md
        - name: Access T24 UD Directories
-         href: ./techguides/access-ud-directories.md
-       - name: Access FCM Directories and Use FCM Application
+         href: ./techguides/access-t24-ud-directories.md
+       - name: Access FCM UD Directories
+         href: ./techguides/access-fcm-ud-directories.md  
+       - name: Configure FCM Application
          href: ./techguides/fcm-configuration.md 
    - name: Tutorials
      href: ./tutorials-extend.md
@@ -99,6 +101,10 @@
          href: ./techguides/fix-issues-factory-run.md
        - name: Triage Workflow
          href: ./techguides/triage-workflow.md
+- name: Release information
+  items:
+       - name: 2020 
+         href: ./techguides/release-info-2020.md
 - name: FAQs
   href: ./faq.md
 - name: Getting Support
