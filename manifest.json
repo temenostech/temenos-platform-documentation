@@ -666,15 +666,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/components-products.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/components-products.html",
-          "hash": "s41Wim+aYLL/mUGy/Kni2Q=="
+          "hash": "iQ3V6lkbXaQn0QaQ7u2atQ=="
         }
       },
       "is_incremental": false,
@@ -823,6 +820,28 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/abn-package.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/access-fcm-endpoints.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/access-fcm-endpoints.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/access-fcm-ud-sftp-fields.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/access-fcm-ud-sftp-fields.png"
         }
       },
       "is_incremental": false,
@@ -2612,6 +2631,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/environment-id-fcm.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/environment-id-fcm.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/environment-id.png",
       "output": {
         "resource": {
@@ -2832,6 +2862,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/fcm-endpoint.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/fcm-endpoint.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/fcm-endpoints.png",
       "output": {
         "resource": {
@@ -2847,6 +2888,39 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/fcm-environment-fields.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/fcm-folder-gitlab.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/fcm-folder-gitlab.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/fcm-gitlab-subfolders.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/fcm-gitlab-subfolders.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/fcm-live-folders.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/fcm-live-folders.png"
         }
       },
       "is_incremental": false,
@@ -3932,6 +4006,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/open-live-folders-fcm.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/open-live-folders-fcm.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/open-live-folders.png",
       "output": {
         "resource": {
@@ -4064,10 +4149,32 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/products-template.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/products-template.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/products-templates.png",
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/products-templates.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/products-templates2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/products-templates2.png"
         }
       },
       "is_incremental": false,
@@ -4563,6 +4670,17 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/ssh-text-box.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/stage-metadata.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/stage-metadata.png"
         }
       },
       "is_incremental": false,
@@ -5324,7 +5442,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/stage.html",
-          "hash": "JjVfv2Mwrr+KNgIKx7Yt6w=="
+          "hash": "Hhh+5OI8gcZlx1pojWQ/Jg=="
         }
       },
       "is_incremental": false,
