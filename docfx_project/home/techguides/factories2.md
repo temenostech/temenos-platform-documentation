@@ -75,7 +75,7 @@ b. **Failure Webhook** – Same as Success Webhooks. But are called when the fac
     - **Factory Description**: insert a description that will help knowing what the factory is about.
 ![factory-details](./images/factory-details.png)
 
-   #### Product Configuration ####
+#### Product Configuration ####
 This stage represents the test environment that holds the testing framework and test scripts version of the principle product and source stage that are pre-tested from the perspective of the current factory.
     - **Templates**: choose an Environment Template from the dropdown list. Based on this template will be created the environments where you will be able to test different products
     - **Select Principle Products**: the principle products are promoted to the next stage (the configured one)
@@ -84,7 +84,7 @@ This stage represents the test environment that holds the testing framework and 
     - click **Next**
 ![factory-product-configuration](./images/factory-product-configuration.png) 
 
-    #### Test Configuration
+#### Test Configuration
 The Product Configuration consists in in-build service tasks and is used to provide HTTP API Calls, trigger a test-group for a given factory-run, trigger export of application logs.
     - **Select Workflow**: a drop-down list with factory workflows added by the Temenos team. In the future users will be able to create their own workflows. As of now, there is one default workflow that is assigned to the users. By request, the Temenos Cloud and DevOps team can provide 3 additional workflows (COB Workflow, Full Workflow and Two Steps without COB Workflow). Depending on the user's workflow, additional configuration steps may need to be followed. Below is an example of how the Full Workflow should be configured:
         - **Step 1**: select the test template, component, the number of VMs needed, the test stage and tick if the workflow should stop in case of failure. At the end of this step, when the first round of tests has been finished, the test VM will be deleted, but it will not stop the T24 environment (this will be done at the end of the workflow)
@@ -94,11 +94,11 @@ The Product Configuration consists in in-build service tasks and is used to prov
     - **BPMN File**: a sample which displays the steps (in that exact sequence) that are followed by the selected workflow
 ![factory-test-configuration](./images/factory-test-configuration.png)
 
-   #### Promotion Configuration
+#### Promotion Configuration
     This stage represents a stable version of the principle product and source stage that are pre-tested from the perspective of the current factory.
 ![factory-promotion-configuration](./images/factory-promotion-configuration.png)
 
- #### Factory Scheduler
+#### Factory Scheduler
 A user has the privilege to configure the schedule of the factory run in order to automatically run the tests and have the results available daily
 - the scheduler can be configured to run one time per day
 - if the factory run test is successful you can choose to stop/ or keep running the T24 environment
