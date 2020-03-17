@@ -70,9 +70,12 @@ b. **Failure Webhook** – Same as Success Webhooks. But are called when the fac
 - Click on Settings button on the main menu on the left.
 - Make sure you select first the **Stream** and **Stage** (this is the stage where components are promoted) where you want to create a factory and then click **New Factory** button on the top-right.
 - Fill the required fields (see all definitions above and also below example):
+<b>
+</br>
+
 #### Factory Details ####
-    - **Factory Name**: choose a meaningful name for your factory.
-    - **Factory Description**: insert a description that will help knowing what the factory is about.
+- **Factory Name**: choose a meaningful name for your factory.
+- **Factory Description**: insert a description that will help knowing what the factory is about.
 ![factory-details](./images/factory-details.png)
 
 #### Product Configuration ####
@@ -95,7 +98,7 @@ The Product Configuration consists in in-build service tasks and is used to prov
 ![factory-test-configuration](./images/factory-test-configuration.png)
 
 #### Promotion Configuration
-    This stage represents a stable version of the principle product and source stage that are pre-tested from the perspective of the current factory.
+This stage represents a stable version of the principle product and source stage that are pre-tested from the perspective of the current factory.
 ![factory-promotion-configuration](./images/factory-promotion-configuration.png)
 
 #### Factory Scheduler
