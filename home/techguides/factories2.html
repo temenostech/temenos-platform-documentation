@@ -124,24 +124,27 @@
 <ul>
 <li>Click on Settings button on the main menu on the left.</li>
 <li>Make sure you select first the <strong>Stream</strong> and <strong>Stage</strong> (this is the stage where components are promoted) where you want to create a factory and then click <strong>New Factory</strong> button on the top-right.</li>
-<li><p>Fill the required fields (see all definitions above and also below example):</p>
-<h4 id="factory-details">Factory Details</h4>
-<ul>
+<li>Fill the required fields (see all definitions above and also below example):
+#### Factory Details ####<ul>
 <li><strong>Factory Name</strong>: choose a meaningful name for your factory.</li>
-<li><p><strong>Factory Description</strong>: insert a description that will help knowing what the factory is about.
-<img src="images/factory-details.png" alt="factory-details"></p>
+<li><strong>Factory Description</strong>: insert a description that will help knowing what the factory is about.
+<img src="images/factory-details.png" alt="factory-details"></li>
+</ul>
+</li>
+</ul>
 <h4 id="product-configuration">Product Configuration</h4>
 <p>This stage represents the test environment that holds the testing framework and test scripts version of the principle product and source stage that are pre-tested from the perspective of the current factory.</p>
-</li>
+<ul>
 <li><strong>Templates</strong>: choose an Environment Template from the dropdown list. Based on this template will be created the environments where you will be able to test different products</li>
 <li><strong>Select Principle Products</strong>: the principle products are promoted to the next stage (the configured one)</li>
 <li><strong>Source Stage</strong>: this is the stage with the stable version of components</li>
 <li><strong>Select Other Products</strong>: you can select more products that need to be promoted to the next stage </li>
-<li><p>click <strong>Next</strong>
-<img src="images/factory-product-configuration.png" alt="factory-product-configuration"> </p>
+<li>click <strong>Next</strong>
+<img src="images/factory-product-configuration.png" alt="factory-product-configuration"> </li>
+</ul>
 <h4 id="test-configuration">Test Configuration</h4>
 <p>The Product Configuration consists in in-build service tasks and is used to provide HTTP API Calls, trigger a test-group for a given factory-run, trigger export of application logs.</p>
-</li>
+<ul>
 <li><p><strong>Select Workflow</strong>: a drop-down list with factory workflows added by the Temenos team. In the future users will be able to create their own workflows. As of now, there is one default workflow that is assigned to the users. By request, the Temenos Cloud and DevOps team can provide 3 additional workflows (COB Workflow, Full Workflow and Two Steps without COB Workflow). Depending on the user&#39;s workflow, additional configuration steps may need to be followed. Below is an example of how the Full Workflow should be configured:</p>
 <ul>
 <li><strong>Step 1</strong>: select the test template, component, the number of VMs needed, the test stage and tick if the workflow should stop in case of failure. At the end of this step, when the first round of tests has been finished, the test VM will be deleted, but it will not stop the T24 environment (this will be done at the end of the workflow)</li>
@@ -151,14 +154,14 @@
 </li>
 <li><p><strong>BPMN File</strong>: a sample which displays the steps (in that exact sequence) that are followed by the selected workflow
 <img src="images/factory-test-configuration.png" alt="factory-test-configuration"></p>
-<h4 id="promotion-configuration">Promotion Configuration</h4>
-<p>This stage represents a stable version of the principle product and source stage that are pre-tested from the perspective of the current factory.
-<img src="images/factory-promotion-configuration.png" alt="factory-promotion-configuration"></p>
 </li>
 </ul>
+<h4 id="promotion-configuration">Promotion Configuration</h4>
+<pre><code>This stage represents a stable version of the principle product and source stage that are pre-tested from the perspective of the current factory.
+</code></pre><p><img src="images/factory-promotion-configuration.png" alt="factory-promotion-configuration"></p>
 <h4 id="factory-scheduler">Factory Scheduler</h4>
 <p>A user has the privilege to configure the schedule of the factory run in order to automatically run the tests and have the results available daily</p>
-</li>
+<ul>
 <li>the scheduler can be configured to run one time per day</li>
 <li>if the factory run test is successful you can choose to stop/ or keep running the T24 environment</li>
 <li>the same applies for the Factory Run Failure scenario
