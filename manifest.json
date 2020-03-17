@@ -994,15 +994,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/factories.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/factories.html",
-          "hash": "jcbSOKeKuX/JU1cwlyUieA=="
+          "hash": "G+IzuZ2aedNsgswbC3Z9bw=="
         }
       },
       "is_incremental": false,
@@ -3036,6 +3033,39 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/factory-details.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/factory-details.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/factory-product-configuration.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/factory-product-configuration.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/factory-promotion-configuration.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/factory-promotion-configuration.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/factory-run-environment.png",
       "output": {
         "resource": {
@@ -3047,10 +3077,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/factory_details.png",
+      "source_relative_path": "home/techguides/images/factory-scheduler.png",
       "output": {
         "resource": {
-          "relative_path": "home/techguides/images/factory_details.png"
+          "relative_path": "home/techguides/images/factory-scheduler.png"
         }
       },
       "is_incremental": false,
@@ -3058,43 +3088,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/factory_product_configuration.png",
+      "source_relative_path": "home/techguides/images/factory-test-configuration.png",
       "output": {
         "resource": {
-          "relative_path": "home/techguides/images/factory_product_configuration.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/factory_promotion_configuration.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/factory_promotion_configuration.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/factory_scheduler.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/factory_scheduler.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/factory_test_configuration.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/factory_test_configuration.png"
+          "relative_path": "home/techguides/images/factory-test-configuration.png"
         }
       },
       "is_incremental": false,
@@ -6041,6 +6038,11 @@
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "RestApiDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -6052,11 +6054,6 @@
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
-          "incrementalPhase": "build"
-        },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
