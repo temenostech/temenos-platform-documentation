@@ -284,10 +284,98 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/images/copy-key.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/copy-key.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/create-user-role-permissions.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/create-user-role-permissions.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/create-user-role.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/create-user-role.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/images/enterprise-view.png",
       "output": {
         "resource": {
           "relative_path": "home/images/enterprise-view.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/env-new.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/env-new.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/env-tab.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/env-tab.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/env-template-list.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/env-template-list.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/env-template-type.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/env-template-type.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/env-template.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/env-template.png"
         }
       },
       "is_incremental": false,
@@ -321,6 +409,94 @@
       "output": {
         "resource": {
           "relative_path": "home/images/new-environment.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/organisation-url.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/organisation-url.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/putty-download.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/putty-download.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/putty-keygen-keyslocation.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/putty-keygen-keyslocation.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/putty-keygen-privatekey.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/putty-keygen-privatekey.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/putty-keygen-publickey.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/putty-keygen-publickey.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/putty-keygen-publicselect.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/putty-keygen-publicselect.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/putty-keygen-random.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/putty-keygen-random.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/putty-keygen.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/putty-keygen.png"
         }
       },
       "is_incremental": false,
@@ -394,6 +570,50 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/images/user-details.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/user-details.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/user-list.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/user-list.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/user-login.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/user-login.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/users-tab.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/users-tab.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/images/users.png",
       "output": {
         "resource": {
@@ -446,6 +666,18 @@
         ".html": {
           "relative_path": "home/manage-components-products-video.html",
           "hash": "jecd0lZjSurJ6++UQRY+oQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/manage-environments.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/manage-environments.html",
+          "hash": "/+yzquh8tNyqYBlN3dIQ8g=="
         }
       },
       "is_incremental": false,
@@ -5639,7 +5871,7 @@
       "output": {
         ".html": {
           "relative_path": "home/toc.html",
-          "hash": "P2gum2z+n9Qc6MtYUMKd1g=="
+          "hash": "vvkIE1Xff+NxG01RILdEzg=="
         }
       },
       "is_incremental": false,
@@ -5664,6 +5896,18 @@
         ".html": {
           "relative_path": "home/tutorials-extend.html",
           "hash": "tKyX71uryW8OiuQ19Jr1jg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/user-creation-in-paas.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/user-creation-in-paas.html",
+          "hash": "ycTSuGqjYkrlo+0V1vjIew=="
         }
       },
       "is_incremental": false,
@@ -5797,16 +6041,16 @@
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build"
-        },
         "RestApiDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
