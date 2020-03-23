@@ -2,7 +2,7 @@
 
 This user guide explains how to import and export databases of a Temenos cloud environment in order to migrate datasets across environments. 
 
-Login to your organization on the TCD (Temenos Continuous Deployment) portal (https://newportal.temenos.cloud) read and accept the privacy notice.
+Login to your organization on the TCD (Temenos Continuous Deployment) portal ([portal.temenos.cloud](https://portal.temenos.cloud/)) read and accept the privacy notice.
 
 <img src="./images/db-login.png" width="450" height="200">
 

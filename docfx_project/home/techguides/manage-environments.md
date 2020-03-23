@@ -9,7 +9,7 @@ The Temenos Development Platform support multitenancy and Organisations are desi
 
 Upon subscription you'll receive a **unique** Organisation Id as a URL link. Your Organisation Id will look similar to this: 
 
-![](./images/organisation-url.png)
+![](./images/organisation-url.png) 
 
 The confirmation of your Organisation activation will contain the link and access instructions to your designated Organisation administrator. The administrator is the first and only user.
 
@@ -28,7 +28,7 @@ Create your own environment:
 - Either click the Environments tab on the left menu and then click **New Environment** button on the top right corner.  
 - Or you can already see the environment page open with the fields available to create a new environment.
 
-![](./images/env-tab.png)
+![](./images/env_tab.png)
 
 
 <br>
@@ -56,8 +56,6 @@ Currently, the screen that opens will display an FCM and T24 default template. C
 
 ![](./images/env-template-type.png)
 
-
-![](./images/env-template-list.png)
 
 
 
