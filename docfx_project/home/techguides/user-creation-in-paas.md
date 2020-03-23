@@ -62,7 +62,6 @@ You can use any other SSH key generator client.
 
 •	Download the installer from [http://www.putty.org/](http://www.putty.org/ "http://www.putty.org/")
 
-![putty download](./images/putty-download.png)
 
 •	Run the installer and click **Next** on each screen, without changing anything in configurations. Click **Finish** once completed.
 
@@ -131,3 +130,9 @@ You can use any other SSH key generator client.
 - Your username will be created in Gitlab server and public SSH key provided will be added to your account being accessible from all the environments created in your organisation.
 
 - For further details or issues related to Gitlab SSH keys usage, or other operating systems (MAC, Linux), please consult this link:  [https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/](
+
+
+# User Roles Required#
+To be able to create a user the below permission needs to be enabled for your user:
+
+- CREATE _ USER
