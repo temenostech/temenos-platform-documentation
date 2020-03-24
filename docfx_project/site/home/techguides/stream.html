@@ -117,7 +117,7 @@ The parts of the stream are listed below:</p>
 </ul>
 <p><strong>Note</strong>: <em>Instead of choosing the enable option, you can create a disabled stream and enable it later, but the default option should be enable.</em></p>
 <p><img src="./images/streams-create.png" alt=""></p>
-<p>After the successful creation, your stream will appear on the screen <em>(in case you already have other streams, the newly created will be the last in chronological order)</em> and it will automatically have associated the default stage named &#39;demo_stage&#39; (as in current example). Please <strong>note</strong> that the default stage name is defined in the metadata settings of your organization (On the main menu &gt; General).</p>
+<p>After the successful creation, your stream will appear on the screen <em>(in case you already have other streams, the newly created will be the last in chronological order)</em> and it will automatically have associated the default stage named &#39;stable_dev&#39; (as in current example). Please <strong>note</strong> that the default stage name is defined in the metadata settings of your organization (On the main menu &gt; General).</p>
 <p><img src="./images/streams-created.png" alt=""></p>
 <h2 id="edit-a-stream">Edit a Stream</h2>
 <p>You can edit anytime the name, the description of the stage or choose the disable option by clicking the edit button. </p>
@@ -130,18 +130,18 @@ The parts of the stream are listed below:</p>
 </div>
 <p>Example 1: </p>
 <ul>
-<li>Suppose we have created a stream named Dev2 that has just the default stage and without adding other stages or configuring further components and products.</li>
-<li>We can just go and delete this stream (even if it has the stable_dev associated to it).</li>
+<li>Suppose we have created a stream named <strong>demostream</strong> that has just the <strong>default stage</strong> and without adding other stages or configuring further components and products.</li>
+<li>We can just go and delete this stream (even if it has the **Primary Stage **associated to it).</li>
 </ul>
 <p>Example 2:</p>
 <ul>
-<li>Suppose we have created a stream named Dev that has the default stage (demo_stage) and also a stage named Primary_stage, without configuring further components and products.</li>
-<li>In order to be able to delete a stream that has <strong>more than the demo_stage</strong>, we need first to go and delete the stages attached to it.</li>
-<li>Go first to Stages button on the left menu &gt; Select first your stream (top right) &gt; Select the stage that you want to delete (others then demo_stage - <em>because this stage cannot be deleted</em>) &gt; And click the delete button.</li>
+<li>Suppose we have created a stream named <strong>demostream</strong> that has the default stage (Primary Stage) and also a stage named Stable_Dev, without configuring further components and products.</li>
+<li>In order to be able to delete a stream that has <strong>more than the Primary Stage</strong>, we need first to go and delete the stages attached to it.</li>
+<li>Go first to Stages button on the left menu &gt; Select first your stream (top right) &gt; Select the stage that you want to delete (others then the Primary Stage - <em>because this stage cannot be deleted</em>) &gt; And click the delete button.</li>
 </ul>
 <p><img src="./images/streams-delete-stage.png" alt=""></p>
 <ul>
-<li>Go back to Streams and you will notice that your stream has only the demo_stage stage associated, therefore you are able to delete the stream. Click the Delete button.</li>
+<li>Go back to Streams and you will notice that your stream has only the Primary Stage associated, therefore you are able to delete the stream. Click the Delete button.</li>
 </ul>
 <p><img src="./images/streams-delete-streams.png" alt=""></p>
 <p>If you have added other stages and also components and products, first delete all the products, then the components, then the associated stages and finally you will be able to delete the stream. In case you skip one of these features deletion, the system will notify that is not possible to delete the respective stage.</p>

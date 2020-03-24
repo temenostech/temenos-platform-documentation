@@ -110,8 +110,8 @@ An organization can define as many components as needed but should have all mand
 <p>The names of these parts / Component Types are fixed and are not user editable. This is managed internally by the Temenos Continuous Deployment Platform admin/ development group and can only be changed or modified by this group. </p>
 <p>Each component type represents a deployable unit and has an ansible script associated to it. </p>
 <p>These components have a structure associated and work in a standardized manner across different deployment stacks (OS, App server variations, DB variations etc).</p>
-<h2 id="how-to-set-up-delete-components">How to Set Up/ Delete Components</h2>
-<h3 id="set-up-create-a-component">Set-up/ Create a Component</h3>
+<h1 id="how-to-set-up-delete-components">How to Set Up/ Delete Components</h1>
+<h2 id="set-up-create-a-component">Set-up/ Create a Component</h2>
 <ul>
 <li>Login to the Temenos Continuous Deployment Platform.</li>
 <li>Click on Settings button on the left menu &gt; this will expand a menu containing buttons for: Streams, Stages, Products, Factory and General.  </li>
@@ -129,22 +129,28 @@ An organization can define as many components as needed but should have all mand
 <p>A folder is automatically created into the repository <em>(we are using JFrog Artifactory)</em> with the name of your component and will be always created under the default <strong>stable_dev</strong> stage. This is the path where the components&#39; files should be uploaded as explained on the next steps.</p>
 <p><em>(Please note that the components&#39; artifacts can be uploaded any time before running a factory).</em></p>
 <p><em>(If the related artifacts are not uploaded, running the factory will not be possible and an error message will be thrown).</em></p>
-<h2 id="how-to-upload-binaries-into-the-artifactory">How to upload binaries into the Artifactory</h2>
-<h3 id="how-to-upload-binaries-into-the-artifactory">How to upload binaries into the Artifactory</h3>
-<p>Every user created in the Temenos Continuous Deployment Platform can log in with the platform’s credential on the Artifactory server as well. The users are enabled to download the existing artifacts or upload new artifacts that will be used for factories. This process can be done in two ways:</p>
-<p><strong>A. Manually access the artifactory and upload the required binary (recommended).</strong></p>
+<h1 id="how-to-login-to-artifactory">How to login to Artifactory</h1>
+<p>Every user created in the Temenos Continuous Deployment Platform can log in with the platform’s credential on the Artifactory server as well. Follow the steps below to login to the Artifactory:</p>
 <ul>
-<li><p>go on the self-side menu on the portal and click on Metadata. Here are displayed the metadata settings. Copy the Artifactory URL and paste on your browser:
-<img src="images/components-and-products-artifactoryurl.png" alt=""></p>
-</li>
-<li><p>to login, please type the credentials from the Temenos Continuous Deployment Plaftorm</p>
-</li>
+<li>go on the self-side menu on the portal and click on <strong>Metadata</strong>. 
+<img src="images/sanity-general.png" alt=""></li>
+<li>here are displayed the metadata settings:
+<img src="images/components-and-products-artifactoryurl.png" alt=""></li>
+<li>copy the <strong>Artifactory URL</strong> and open it in another browser. To login use with your credentials from the Temenos Continuous Deployment Platform. This is how your Artifactory will be displayed:
+<img src="images/artifactory-login.png" alt=""></li>
+<li>to see the artifactory repository, click on the Artifactory icon from the left-side menu. The repository belonging to your organisation will be displayed (to make sure you expand the right repository, always check the naming convention: repo-1dq4zcowcn75s1, where what follows after &#39;repo-&#39; represents the ID of your organisation:
+<img src="images/local-repository.png" alt=""></li>
 </ul>
-<pre><code>**Requirements**:
-
-- **new user**: it is mandatory for the user to have assigned a role which contains CREATE _ COMPONENT and MANAGE _ COMPONENTS permissions
-- **existing user**: if a user wants to log in to the Artifactory server, the user must change its password and have the CREATE_COMPONENT and MANAGE_COMPONENTS permissions within the role that was assigned to it. To learn how to change the user roles and permissions please refer to this link.
-</code></pre><div class="NOTE"><h5>Note</h5><ul>
+<h2 id="how-to-upload-binaries-into-the-artifactory">How to upload binaries into the Artifactory</h2>
+<p>The users are enabled to download the existing artifacts or upload new artifacts that will be used for factories. This process can be done in two ways:</p>
+<p><strong>A. Manually access the artifactory and upload the required binary (recommended).</strong></p>
+<p>Requirements:</p>
+<ul>
+<li><strong>new user</strong>: it is mandatory for the user to have assigned a role which contains CREATE <em> COMPONENT and MANAGE </em> COMPONENTS permissions.</li>
+<li><strong>existing user</strong>: if a user wants to log in to the Artifactory server, the user must change its password and have the CREATE_COMPONENT and MANAGE _COMPONENTS permissions within the role that was assigned to it. To learn how to change the user roles and permissions please refer to this link.</li>
+</ul>
+<div class="NOTE"><h5>Note</h5><ul>
+<li>for an already created user that wants to have access to the Artifactory Server, the user must change its password and if its role has those 2 permissions, the user will be added in Artifactory Server</li>
 <li>if the user’s role is updated afterwards , the user still needs to change its password in order to be added to the Artifactory Server</li>
 <li>the user cannot delete artifacts from the Artifactory Server.</li>
 </ul>
@@ -177,15 +183,132 @@ curl -H &quot;X-JFrog-Art-Api:AKCp5dKYyM9WMoiacim9yedAZfG6gLwwcYugPmzZhqHkdRe6ex
 <img src="images/components-products-mobaxterm.png" alt=""></p>
 <p>Once the command is run, the binary is uploaded on the Artifactory:
 <img src="images/components-products-uploaded-binary.png" alt=""></p>
-<p><strong>Pre-requisites and best practices:</strong></p>
+<h2 id="pre-requisites-and-best-practices"><strong>Pre-requisites and best practices:</strong></h2>
 <ul>
 <li>ensure that the component name also has information about its version;</li>
 <li>ensure that the component format that you upload is correct and as delivered by the Temenos team;</li>
+</ul>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  the format of the package as delivered by Temenos will as well be supported in TCD.  </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<ul>
+<li>if the <strong>Help text</strong> file of T24 is given as a .zip, the templates will expect a .zip file for the same,</li>
+</ul>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - DS pakages will have the same packaging as bundled by Design Studio</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - T24 updates are bundled in zip;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - you need to get from Temenos distribution team the Toolbox kit that will allow you to generate the system definition file of your T24 environment;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - you will be able to download the T24 updates correspondent to your environments from the Temenos Customer Support Portal by uploading the system definition file generated above;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - once the updates are downloaded from the portal in a .zip file, you must create another .zip of that downloaded .zip file and only then  place it into the artifactory under the correspondent component;</p>
+<ul>
 <li>ensure that components are uploaded to the appropriate folders (the URL and folder names can be found from the component definition pages of the TCD portal);</li>
 <li>if the component is uploaded in a .zip format, it it recommended to have a text file describing what is included in the package/ provide reference to the code commit tags to find what is included in the package;</li>
 <li>do not delete/ edit/ create components/ folders in the artifactory.  TCD Portal’s Product and Component sections must be used to create anything in artifactory.</li>
 </ul>
-<h3 id="which-components-to-add">Which Components to Add</h3>
+<h1 id="t24-golden-copy-pre-requisites">T24 golden copy pre-requisites</h1>
+<h2 id="database---generic">Database - generic</h2>
+<ul>
+<li><p>No client data</p>
+</li>
+<li><p>Minimal size</p>
+</li>
+<li><p>No  archived data or RO database to be provided</p>
+</li>
+<li><p>All test credentials present / injected by the tests</p>
+</li>
+<li><p>The field name DESTINATION.STATIC in IF.INTEGRATION.SERVICE.PARAM must hold the queue name “queue/t24IFInboundQueue” </p>
+</li>
+<li><p>Sanity testing to be performed to ensure that the users can log in, applications can be input, OFS requests can be run, the T24 services specifically INTEGRATION.SERVICE and COB can be run and any known issues which can be ignored should be reported.</p>
+</li>
+<li><p>Once sanity testing is complete, all the TSA services running should be stopped,  locks to be removed and TSA.STATUS records to be cleared</p>
+</li>
+<li><p>The t24libs and other jar files (L3,GPACK,CPACK etc) at the time of creating the golden copy should be provided along with the golden copy </p>
+</li>
+</ul>
+<h2 id="database---h2">Database - H2</h2>
+<ul>
+<li><p>H2 database username passwords to be provided for the newly created user</p>
+</li>
+<li><p>The DBImport log should be verified to ensure that all the tables, views and the dictionaries in the source  matches with the destination </p>
+</li>
+<li><p>A copy of the DBimport log to be provided for verification </p>
+</li>
+<li><p>H2 version 1.4.199</p>
+</li>
+</ul>
+<h2 id="database---oracle">Database - ORACLE</h2>
+<ul>
+<li><p>The database must be in RPM format</p>
+</li>
+<li><p>The database username and passwords to be provided</p>
+</li>
+<li><p>To ensure that the database shipped is of optimal size, please make sure that the following files are removed before taking a backup</p>
+</li>
+</ul>
+<p>&nbsp; <strong>1. From T24 Tables</strong></p>
+<p>a) Enormous archived files ($ARC files) which do not form as part of the usual day-today-activities. E.g.: Archived Delivery messages, archived Accounting entries)</p>
+<p>b) Contents of the cache and user specific temporary files to be cleared (F.OS.XML.CACHE, F.ENQUIRY.LEVEL, F.ENQUIRY.SELECT, F.OS.TOKEN, F.OS.TOKEN.USE, F.PROTOCOL, OS.REQUEST.DETAIL)</p>
+<p>&nbsp; <strong>2.  From UD folders</strong></p>
+<p>a) &amp;COMO&amp;, &amp;HOLD&amp;, &amp;PH&amp;, &amp;SAVEDLISTS&amp;</p>
+<p>b) Contents of F.DL.DATA, Contents of SWIFT inward and outward message directories, NR related message directories</p>
+<p>c) Contents of any interface log directories (attached to the OFS.SOURCE records)</p>
+<p>d) Any other IN and OUT message directories used for interfaces</p>
+<p>e) User directories or BPs created by developers and the local source code in them for testing purposes</p>
+<h1 id="wealth-suite-golden--copy-pre-requisites">Wealth suite golden  copy pre-requisites</h1>
+<h2 id="tap-core">TAP CORE</h2>
+<p>&nbsp; <strong>Database-generic</strong></p>
+<ul>
+<li><p>The golden copy of the TAP DB must be obtained  by doing an extract using the cloning tool (cloning tool version to be used should be the one delivered with Wealth distribution)</p>
+</li>
+<li><p>The golden copy of TAP database must be delivered with golden copy of TAP Core binaries (in sync)</p>
+</li>
+<li><p>No client data. Only infrastructure data in sync. With T24 demo model bank data will be imported.</p>
+</li>
+<li><p>Minimal size</p>
+</li>
+<li><p>All data required for tests (including users, data profiles, data security profiles …) must be injected by the tests</p>
+</li>
+<li><p>If T24 is used as a back end system, ensure that the database backups of T24 &amp; TAP are synchronized </p>
+</li>
+<li><p>Client to ensure Components L3 packages are in sync for E2E environment deployment.</p>
+</li>
+<li><p>DatabaseSybase.</p>
+</li>
+</ul>
+<h2 id="gwpack---l3">GWPACK - L3</h2>
+<ul>
+<li><p>L3 GWPACK format must suit exact format to be provided by Temenos </p>
+</li>
+<li><p>There’s no L3 extraction mechanism provided by Product at this stage. Waiting for this product feature to be delivered, client must maintain L3 development in his repository mechanism, and publish packages to be testing in TCD</p>
+</li>
+<li><p>Distribution must come as a single full distribution (i.e. any update/hotfix must be delivered in TCD platform as a full release to be requested to Distribution team</p>
+</li>
+</ul>
+<h2 id="tti--l3">TTI -L3</h2>
+<ul>
+<li><p>L3 GWPACK format must suit exact format to be provided by Temenos </p>
+</li>
+<li><p>There’s no L3 extraction mechanism provided by Product at this stage. Waiting for this product feature to be delivered, client must maintain L3 development in his repository mechanism, and publish packages to be testing in TCD</p>
+</li>
+<li><p>Distribution must come as a single full distribution (i.e. any update/hotfix must be delivered in TCD platform as a full release to be requested to Distribution team</p>
+</li>
+</ul>
+<h2 id="tap-web">TAP Web</h2>
+<ul>
+<li>TAP Web golden copy consists only on list of L1 updates (hotfixes) and L3 packages (TAP Web Design studio packages)  to be provided</li>
+</ul>
+<h2 id="test-script-pre-requisites"><strong>Test Script Pre-Requisites</strong></h2>
+<ul>
+<li><p>Single test library to be used across all products</p>
+</li>
+<li><p>Single format of test sheet used by all products. (All tests follow same automation mechanism during execution in TCD and we can’t change it)</p>
+</li>
+<li><p>Ensure that the test credentials are present in the test sheet (We can’t add passwords before each run)</p>
+</li>
+<li><p>All usernames &amp; passwords to be in the golden copy or injected by tests. (We can’t add users &amp; passwords)</p>
+</li>
+<li><p>Synchronized Golden copies and ensure that the test strategy for uploading the test data is as well synchronized.</p>
+</li>
+</ul>
+<h1 id="which-components-to-add">Which Components to Add</h1>
 <p>In order to know which are the minimum required components that you need to add, you must first check the <strong>Templates Catalog</strong> (see button on the left menu).</p>
 <p>From here, select the template that you want to use:</p>
 <ul>
@@ -197,7 +320,7 @@ curl -H &quot;X-JFrog-Art-Api:AKCp5dKYyM9WMoiacim9yedAZfG6gLwwcYugPmzZhqHkdRe6ex
 <li><span style="color:red">In addition to the mandatory components, you will need to add those components you need to test - not related to your selected template.</span></li>
 <li>For all added components, make sure you add the related files archive into the artifactory as explained above.</li>
 </ul>
-<p><img src="images/products-templates.png" alt=""></p>
+<p><img src="images/products-template.png" alt=""></p>
 <h3 id="how-to-delete-a-component">How to Delete a Component</h3>
 <p>Components fields are not editable, so you have only the options to create or to delete them.</p>
 <div class="NOTE"><h5>Note</h5><p><span style="color:red">If your component is <strong>attached to a Product</strong>, you will not be able to delete it. <p>

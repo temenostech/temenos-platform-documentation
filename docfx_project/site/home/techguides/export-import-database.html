@@ -82,7 +82,7 @@
 <h1 id="export-and-import-databases">Export and Import Databases</h1>
 
 <p>This user guide explains how to import and export databases of a Temenos cloud environment in order to migrate datasets across environments. </p>
-<p>Login to your organization on the TCD (Temenos Continuous Deployment) portal (<a href="https://portal.temenos.cloud/" target="_blank"><strong>https://portal.temenos.cloud/</strong></a>), (<a href="https://tcd-portal.temenos.cloud/" target="_blank"><strong>https://tcd-portal.temenos.cloud/</strong></a>) read and accept the privacy notice.</p>
+<p>Login to your organization on the TCD (Temenos Continuous Deployment) portal (<a href="https://portal.temenos.cloud/">portal.temenos.cloud</a>) read and accept the privacy notice.</p>
 <p><img src="images/db-login.png" width="450" height="200"></p>
 <h2 id="create-an-environment">Create an Environment</h2>
 <ul>
@@ -103,30 +103,6 @@
 </ul>
 <p>They will be used to see how to export the DB from one environment and import it into the other one.</p>
 </div>
-<h2 id="add-a-user-to-the-portal">Add a User to the Portal</h2>
-<ul>
-<li>Go to Users tab and click <strong>New user</strong></li>
-<li>Fill all required fields</li>
-<li>Make sure you attach an SSH key to the user created, as it is required when exporting and importing the database.</li>
-</ul>
-<div class="NOTE"><h5>Note</h5><p>This user can be used on both environments (DevEnv and DevEnv1).</p>
-<p>Check <a href="user-creation-in-paas.html" target="_blank"><strong>this</strong></a>  user guide to see how to create a user on the portal and attach a SSH key.</p>
-</div>
-<h2 id="span-stylecolororangechange-a-record-into-the-database-for-demo-purposesspan"><span style="color:orange">Change a record into the Database <em>(for demo purposes)</em></span></h2>
-<div class="NOTE"><h5>Note</h5><p>This section is just an <strong>example</strong> and it can be skipped. 
-The only purpose is to prove that the export and import of the database has been done correctly by showing that a <strong>changed</strong> record from a source environment can be retrieved in another environment (where the source environment database has been imported).</p>
-</div>
-<ul>
-<li>Go to your environment</li>
-<li>Connect to T24 browser (Click <strong>Go to Application</strong>)</li>
-</ul>
-<p><img src="images/db-go-t24.png" alt=""> </p>
-<p><br></p>
-<ul>
-<li>And login to T24 with your user and password:</li>
-</ul>
-<p>(Please note that <strong>first</strong> login will be slower) </p>
-<p><img src="images/db-t24-signin.png" width="590" height="250"></p>
 <h2 id="amend-a-customer-record">Amend a customer record</h2>
 <ul>
 <li>Go to User Menu &gt; Customer &gt; Amend Customer</li>

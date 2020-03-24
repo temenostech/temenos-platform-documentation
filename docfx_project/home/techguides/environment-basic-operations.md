@@ -183,7 +183,7 @@ Users have the option to schedule environments at their convenience. To proceed:
 The user can either start or stop all environments on certain dates, days or at a certain hour (UTC time zone). 
 ![deploy](./images/environment-schedule.png)
 
-# User Roles Required#
+# User Roles Required
 To be able to perform basic  environment operations the below permissions need to be enabled for your user:
 
 - MANAGE _ ENVIRONMENTS

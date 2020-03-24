@@ -149,7 +149,7 @@ After attaching the SSH key, click on save button – here we can give a site na
 ![](./images/db-check-record.png) 
 
 
-# User Roles Required#
+# User Roles Required
 To be able to perform the above operations the below permissions need to be enabled for your user:
 
 - CREATE _ ENVIRONMENT

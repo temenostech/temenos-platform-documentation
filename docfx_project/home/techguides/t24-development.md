@@ -54,7 +54,7 @@ More about the pre-requisites, import / export T24 applications can be found  <a
 
 <br>
 
-# User Roles Required#
+# User Roles Required
 To be able to perform the above operations the below permissions need to be enabled for your user:
 
 

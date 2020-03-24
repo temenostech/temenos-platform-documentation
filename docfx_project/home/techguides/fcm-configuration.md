@@ -121,7 +121,7 @@ To see all the steps regarding how to add a new user on the portal and to attach
 
 <br>
 
-# User Roles Required#
+# User Roles Required
 To be able to perform the above operations the below permissions need to be enabled for your user:
 
 - CREATE _ USER

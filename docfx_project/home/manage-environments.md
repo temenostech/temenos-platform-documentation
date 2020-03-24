@@ -57,7 +57,5 @@ Currently, the screen that opens will display an FCM and T24 default template. C
 ![](./images/env-template-type.png)
 
 
-![](./images/env-template-list.png)
-
 
 

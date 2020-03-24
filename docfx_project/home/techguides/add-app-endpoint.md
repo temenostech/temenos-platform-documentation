@@ -73,7 +73,7 @@ In order to create new endpoints for the T24 application of your Environment, th
  > [!Note]
  > To summarize, the list of plugin endpoints displayed in the Endpoints section for an application is updated based on the content of **.endpoint** files available in the **plugins** folder from the GitLab repository of your Environment. If no .endpoint files are available in the GitLab repository of your Environment, then no plugin endpoints will be displayed.
 
-# User Roles Required#
+# User Roles Required
 To be able to perform the above operations the below permissions need to be enabled for your user:
 
 
