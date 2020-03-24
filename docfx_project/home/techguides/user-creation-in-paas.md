@@ -131,6 +131,7 @@ You can use any other SSH key generator client.
 
 - For further details or issues related to Gitlab SSH keys usage, or other operating systems (MAC, Linux), please consult this link:  [https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/](
 
+<br>
 
 # User Roles Required#
 To be able to create a user the below permission needs to be enabled for your user:
