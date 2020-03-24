@@ -119,7 +119,19 @@ To see all the steps regarding how to add a new user on the portal and to attach
 
 ![check messages](./images/fcm-check-messages.png) 
 
+<br>
 
+# User Roles Required#
+To be able to perform the above operations the below permissions need to be enabled for your user:
+
+- CREATE _ USER
+- MANAGE _ USERS
+- CREATE _ ENVIRONMENT
+- UPDATE _ ENVIRONMENT
+- REDEPLOY _ ENVIRONMENT
+- MANAGE _ ENVIRONMENTS 
+
+To understand what which of the permission does, hover the cursor over the variables and a short description will pop up or click [here](http://documentation.temenos.cloud/home/techguides/user-permissions) to get an overview of the permissions.
 
  
 

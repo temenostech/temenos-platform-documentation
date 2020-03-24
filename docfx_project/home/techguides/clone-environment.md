@@ -54,3 +54,12 @@ Please see below some explanations on how this process works and what are the re
 
 > [!Note]
 > It will take around 15-20 minutes for the clone environment to be created.
+
+# User Roles Required#
+To be able to perform the above operations the below permissions need to be enabled for your user:
+
+
+- CREATE _ ENVIRONMENT
+- MANAGE _ ENVIRONMENTS 
+
+To understand what which of the permission does, hover the cursor over the variables and a short description will pop up or click [here](http://documentation.temenos.cloud/home/techguides/user-permissions) to get an overview of the permissions.

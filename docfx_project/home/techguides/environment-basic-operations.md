@@ -182,3 +182,24 @@ Users have the option to schedule environments at their convenience. To proceed:
 
 The user can either start or stop all environments on certain dates, days or at a certain hour (UTC time zone). 
 ![deploy](./images/environment-schedule.png)
+
+# User Roles Required#
+To be able to perform basic  environment operations the below permissions need to be enabled for your user:
+
+- MANAGE _ ENVIRONMENTS
+- CREATE _ ENVIRONMENT
+- UPDATE _ ENVIRONMENT
+- DELETE _ ENVIRONMENT
+- BOOST _ ENVIRONMENT
+- REDEPLOY _ ENVIRONMENT
+- START _ ENVIRONMENT
+- STOP _ ENVIRONMENT
+- ALLOW _ EXPORT _ ENVIRONMENT
+- START _ ALL _ ENVIRONMENT
+- STOP _ ALL _ ENVIRONMENT
+- SCHEDULE _ ENVIRONMENT
+- ALLOW _ EXPORT _ ENVIRONMENT
+- MANAGE _ ENVIRONMENTS
+
+To understand what which of the permission does, hover the cursor over the variables and a short description will pop up or click [here](http://documentation.temenos.cloud/home/techguides/user-permissions) to get an overview of the permissions.
+

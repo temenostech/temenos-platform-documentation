@@ -82,3 +82,16 @@ Clone the GitLab repository of your Environment in your local machine. For more 
 | updates 	| The updates files downloaded from the portal in zip format. The files will be copied to the update folder and the T24 Update procedure is triggered. 	|
 | wsdl 	| WSDL files and folders that are required by plug-ins (war file) need to be uploaded here. 	|
 
+
+# User Roles Required#
+To be able to perform the above operations the below permissions need to be enabled for your user:
+
+- CREATE _ USER
+- UPDATE _ USER
+- CREATE _ ENVIRONMENT
+- MANAGE _ ENVIRONMENTS
+
+
+
+To understand what which of the permission does, hover the cursor over the variables and a short description will pop up or click [here](http://documentation.temenos.cloud/home/techguides/user-permissions) to get an overview of the permissions.
+
