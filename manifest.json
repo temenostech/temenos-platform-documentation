@@ -985,12 +985,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/export-import-database.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/export-import-database.html",
-          "hash": "NjbqUX9+Ck78Px8fUWpozQ=="
+          "hash": "/JQo1F7ba6Hw49nlGFcGjg=="
         }
       },
       "is_incremental": false,
@@ -2234,43 +2237,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/db-amend-customer.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/db-amend-customer.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/db-amend-info.png",
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/db-amend-info.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/db-authorise-record.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/db-authorise-record.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/db-check-record.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/db-check-record.png"
         }
       },
       "is_incremental": false,
@@ -2355,17 +2325,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/db-git-clone.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/db-git-clone.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/db-go-t24.png",
       "output": {
         "resource": {
@@ -2403,17 +2362,6 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/db-login.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/db-push-db.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/db-push-db.png"
         }
       },
       "is_incremental": false,
@@ -2502,17 +2450,6 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/db-t24-signin.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/db-tafjdb-zip.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/db-tafjdb-zip.png"
         }
       },
       "is_incremental": false,
@@ -4852,17 +4789,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/sftp-ids.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/sftp-ids.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/sftp_1.png",
       "output": {
         "resource": {
@@ -5834,7 +5760,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/user-creation-in-paas.html",
-          "hash": "6JVqm0XMCz+66o88LEG4rw=="
+          "hash": "itfDVPdPBJBugL6x2kL2xQ=="
         }
       },
       "is_incremental": false,
@@ -6059,6 +5985,16 @@
         "incrementalPhase": "build"
       },
       "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "RestApiDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -6068,18 +6004,8 @@
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
-          "incrementalPhase": "build"
-        },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
