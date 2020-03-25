@@ -37,11 +37,6 @@ b. **Test Template** – specifies the template that is required to deploy a tes
 
 <br>
 
-*<span style="background-color: #f4f1ef;color: DarkBlue;"><b>WebHooks</b></span>* &nbsp;
-
-a. **Success Webhook** – This is just a simple callback mechanism that can be utilized by the owner of a factory to callback another API if the factory successfully runs.
-
-b. **Failure Webhook** – Same as Success Webhooks. But are called when the factory fails.
 
 ## Validations ##
 
