@@ -83,7 +83,7 @@ Clone the GitLab repository of your Environment in your local machine. For more 
 | wsdl 	| WSDL files and folders that are required by plug-ins (war file) need to be uploaded here. 	|
 
 
-# User Roles Required
+# User Permissions Required
 To be able to perform the above operations the below permissions need to be enabled for your user:
 
 - CREATE _ USER

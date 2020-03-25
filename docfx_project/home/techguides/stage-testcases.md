@@ -20,3 +20,12 @@ It will not be possible to run a factory without uploading the test-cases into t
 In order to delete the uploaded test cases, click on testcases.zip file, then on the Actions button (under Deploy) and Delete.
 
  ![](./images/testcases-delete.png)
+
+# User Permissions Required
+To be able to perform the above operation the below permission needs to be enabled for your user:
+
+- MANAGE _ STAGES
+
+
+
+To understand what which of the permission does, hover the cursor over the variables and a short description will pop up or click [here](http://documentation.temenos.cloud/home/techguides/user-permissions) to get an overview of the permissions.

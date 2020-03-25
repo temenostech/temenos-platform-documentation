@@ -65,3 +65,22 @@ If  you want to have the creation of the new template enabled even when the fact
 
 ![](./images/trigger-new-template.png)
 
+# User Permissions Required
+To be able to perform the above operations the below permissions need to be enabled for your user:
+
+- MANAGE _ COMPONENTS
+- MANAGE _ STREAMS
+- MANAGE _ STAGES
+- MANAGE _ PRODUCTS
+- CREATE _ FACTORY
+- UPDATE _ FACTORY
+- DELETE _ FACTORY
+- SCHEDULE _ FACTORY
+- START - FACTORY - RUN
+- ABORT - FACTORY - RUN
+- VIEW - FACTORY - RUN - HISTORY
+
+
+
+
+To understand what which of the permission does, hover the cursor over the variables and a short description will pop up or click [here](http://documentation.temenos.cloud/home/techguides/user-permissions) to get an overview of the permissions.

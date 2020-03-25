@@ -12,20 +12,18 @@ To run the factory, follow the steps from [here](http://documentation.temenos.cl
 There are two alternatives to Create and Publish the new Template after the Successful Run:
 
 1. Automated trigger 
-- save the New Template from the Factory Run 
-- go to Dashboard
-- on the Factory Run click on 'Actions' and select from the drop-down 'Create New Template
+ - save the New Template from the Factory Run 
+ - go to Dashboard
+ - on the Factory Run click on 'Actions' and select from the drop-down 'Create New Template
 
 
 ![](./images/run-factory-completed.png)
 
 
-
-
 2. Manual trigger 
-- click on the newly created environment
-- on the right side of the page click on 'Save as a new template'
-- type in the Template Name and a brief description 
+ - click on the newly created environment
+ - on the right side of the page click on 'Save as a new template'
+ - type in the Template Name and a brief description 
 
 ![](./images/save-new-template.png)
 
@@ -33,4 +31,23 @@ To see the new template, go to the Templates Catalogue tab. Your template is now
  
 ![](./images/new-template.png)
 
- 
+ # User Permissions Required
+To be able to perform the above operations the below permissions need to be enabled for your user:
+
+- MANAGE _ COMPONENTS
+- MANAGE _ STREAMS
+- MANAGE _ STAGES
+- MANAGE _ PRODUCTS
+- CREATE _ FACTORY
+- UPDATE _ FACTORY
+- DELETE _ FACTORY
+- SCHEDULE _ FACTORY
+- START  -      FACTORY      -  RUN
+- ABORT  -  FACTORY  -  RUN
+- VIEW  -  FACTORY  -  RUN  _  HISTORY
+- ALLOW  -  CUSTOM  -  TEMPLATES
+
+
+
+
+To understand what which of the permission does, hover the cursor over the variables and a short description will pop up or click [here](http://documentation.temenos.cloud/home/techguides/user-permissions) to get an overview of the permissions.

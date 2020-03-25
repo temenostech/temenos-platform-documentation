@@ -80,6 +80,18 @@ Example 2:
 
 If you have added other stages and also components and products, first delete all the products, then the components, then the associated stages and finally you will be able to delete the stream. In case you skip one of these features deletion, the system will notify that is not possible to delete the respective stage.
 
+# User Permissions Required
+To be able to perform the above operations the below permissions need to be enabled for your user:
+
+- MANAGE _ STREAMS
+- CREATE _ STREAM
+- UPDATE _ STREAM
+- DELETE _ STREAM
+- CLONE _ STREAM
+
+
+
+To understand what which of the permission does, hover the cursor over the variables and a short description will pop up or click [here](http://documentation.temenos.cloud/home/techguides/user-permissions) to get an overview of the permissions.
 
 
 

@@ -133,7 +133,7 @@ You can use any other SSH key generator client.
 
 <br>
 
-# User Roles Required
+# User Permissions Required
 To be able to create a user the below permission needs to be enabled for your user:
 
 - CREATE _ USER

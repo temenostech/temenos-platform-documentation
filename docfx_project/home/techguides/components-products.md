@@ -85,8 +85,8 @@ The users are enabled to download the existing artifacts or upload new artifacts
 
 Requirements:
 
-- **new user**: it is mandatory for the user to have assigned a role which contains CREATE _ COMPONENT and MANAGE _ COMPONENTS permissions.
-- **existing user**: if a user wants to log in to the Artifactory server, the user must change its password and have the CREATE_COMPONENT and MANAGE _COMPONENTS permissions within the role that was assigned to it. To learn how to change the user roles and permissions please refer to this link.
+- **new user**: it is mandatory for the user to have assigned a role which contains CREATE  _  COMPONENT and MANAGE _ COMPONENTS permissions.
+- **existing user**: if a user wants to log in to the Artifactory server, the user must change its password and have the CREATE _ COMPONENT and MANAGE  _ COMPONENTS permissions within the role that was assigned to it. To learn how to change the user roles and permissions please refer to this [link](http://documentation.temenos.cloud/home/user-creation-in-paas.html#user-roles-management).
 
 > [!Note]
 -  for an already created user that wants to have access to the Artifactory Server, the user must change its password and if its role has those 2 permissions, the user will be added in Artifactory Server
@@ -351,3 +351,22 @@ You can edit:
 The artifactory view displays the uploaded components that are available for the particular stages. By expanding the components, the user triggers a download of the respective component zip file.
 
 ![](./images/artifactory_view.png)
+
+# User Permissions Required
+To be able to perform the above operations the following permissions need to be enabled for your user:
+
+- CREATE _ COMPONENT
+- DELETE _ COMPONENT
+- MANAGE _ COMPONENTS
+- MANAGE  - ORG  -  METADATA
+- MANAGE _ STREAMS
+- MANAGE _ STAGES
+- CREATE _ STREAM
+- MANAGE _ PRODUCTS
+- CREATE _ PRODUCT
+- UPDATE _ PRODUCT
+- DELETE _ PRODUCT
+
+
+
+To understand what which of the permission does, hover the cursor over the variables and a short description will pop up or click [here](http://documentation.temenos.cloud/home/techguides/user-permissions) to get an overview of the permissions.

@@ -40,11 +40,11 @@ A stage can have only the description edited/ changed, but not the name. Why? Be
 
 Just click the edit button, change the description and then click update.
 
-## Default Stage (CONFIGURATION STAGE) ##
+## Default Stage (Configuration Stage) ##
 
 After logging to the portal, go to the **General** button on the left menu. Here you can see and edit the metadata.
 
-The CONFIGURATION STAGE NAME can be defined after the creation of an organization in order to be able to use the assemble functionalities and **can be editable**.
+The CONFIGURATION STAGE NAME can be defined after the creation of an organization in order to be able to use the assemble features and **can be editable**.
 
 In case it has not been defined at the beginning, then when you try to create a stream, a new field about default stage will appear and here you need to insert a name for the default stage. 
 
@@ -61,8 +61,20 @@ Example:
 
 Any other created stage can be deleted at any moment as it is not dependent of the subsequent features added such as components and products. Components and Products belong to the streams.
 
-Example of the default stage defined into the metadata (you can set any name you prefer instead of *demo_stage*):
+Example of the default stage defined into the metadata (you can set any name you prefer instead of *devstream*):
 
 ![](./images/stage-metadata.png)
 
 
+# User Permissions Required
+To be able to perform the above operations the below permissions need to be enabled for your user:
+
+- MANAGE _ STAGES
+- CREATE _ STAGE
+- UPDATE _ STAGE
+- DELETE _ STAGE
+
+
+
+
+To understand what which of the permission does, hover the cursor over the variables and a short description will pop up or click [here](http://documentation.temenos.cloud/home/techguides/user-permissions) to get an overview of the permissions.
