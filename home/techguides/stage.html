@@ -106,9 +106,9 @@
 <h2 id="edit-a-stage">Edit a Stage</h2>
 <p>A stage can have only the description edited/ changed, but not the name. Why? Because when creating a stage, a folder is created automatically in the Artifactory containing the stage name. This folder will contain the components that you may be added for the respective stage.</p>
 <p>Just click the edit button, change the description and then click update.</p>
-<h2 id="default-stage-configuration-stage">Default Stage (CONFIGURATION STAGE)</h2>
+<h2 id="default-stage-configuration-stage">Default Stage (Configuration Stage)</h2>
 <p>After logging to the portal, go to the <strong>General</strong> button on the left menu. Here you can see and edit the metadata.</p>
-<p>The CONFIGURATION STAGE NAME can be defined after the creation of an organization in order to be able to use the assemble functionalities and <strong>can be editable</strong>.</p>
+<p>The CONFIGURATION STAGE NAME can be defined after the creation of an organization in order to be able to use the assemble features and <strong>can be editable</strong>.</p>
 <p>In case it has not been defined at the beginning, then when you try to create a stream, a new field about default stage will appear and here you need to insert a name for the default stage. </p>
 <p>This field will be automatically added into the metadata and <strong>will not be editable</strong>.</p>
 <h2 id="delete-a-stage">Delete a Stage</h2>
@@ -119,8 +119,17 @@
 <li>Suppose we have created a stage named Primary_stage. No matter if we have configured further components and products, we can just go and delete this stage.</li>
 </ul>
 <p>Any other created stage can be deleted at any moment as it is not dependent of the subsequent features added such as components and products. Components and Products belong to the streams.</p>
-<p>Example of the default stage defined into the metadata (you can set any name you prefer instead of <em>demo_stage</em>):</p>
+<p>Example of the default stage defined into the metadata (you can set any name you prefer instead of <em>devstream</em>):</p>
 <p><img src="images/stage-metadata.png" alt=""></p>
+<h1 id="user-permissions-required">User Permissions Required</h1>
+<p>To be able to perform the above operations the below permissions need to be enabled for your user:</p>
+<ul>
+<li>MANAGE _ STAGES</li>
+<li>CREATE _ STAGE</li>
+<li>UPDATE _ STAGE</li>
+<li>DELETE _ STAGE</li>
+</ul>
+<p>To understand what which of the permission does, hover the cursor over the variables and a short description will pop up or click <a href="http://documentation.temenos.cloud/home/techguides/user-permissions">here</a> to get an overview of the permissions.</p>
 <p><br></p>
               <hr>
               
