@@ -1027,18 +1027,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "home/techguides/factories2.md",
-      "output": {
-        ".html": {
-          "relative_path": "home/techguides/factories2.html",
-          "hash": "eS74V49yw4qxtdFIgZh/Cg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "home/techguides/fcm-configuration.md",
       "output": {
         ".html": {
