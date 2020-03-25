@@ -48,11 +48,10 @@ b. **Test Template** – specifies the template that is required to deploy a tes
 
     c. The list of components cannot contain a component type that is unknown to the Template.
 
-2. Webhooks – The webhooks need to be valid URLs and can only get called with GET method.
 
-3. Templates – The selection of templates are restricted based on the type of the template and a selection list is already confined to allocated and valid templates.
+2. Templates – The selection of templates are restricted based on the type of the template and a selection list is already confined to allocated and valid templates.
 
-4. Stages – No restriction. The factory can even choose to use the same Stage for all three stage values.
+3. Stages – No restriction. The factory can even choose to use the same Stage for all three stage values.
 
 
 > [!Note]
