@@ -1,7 +1,8 @@
+# Selenium Test Template Implementation 
+
 This page explains the steps needed to be followed in order to do the Java implementation for a Selenium Test Template based on the client's framework.
 
-# Implementation 
-
+## Implementation 
 The Java implementation using Selenium WebDriver automation is using 2 types of browsers:
 
 - Chrome
@@ -11,7 +12,7 @@ The structure of the application will be displayed as below. The main class for 
 
  ![](./images/selenium-test.png)
 
-# Structural design of the application #
+##  Structural design of the application 
 
 The application is using the Factory pattern having a DriverManager class which has 2 implementations for both Firefox and Driver browsers. These are defined in:
 
@@ -19,14 +20,14 @@ The application is using the Factory pattern having a DriverManager class which 
 
 - FirefoxDriverManager.java
 
-## A.	“global.properties” file
+###  A.	“global.properties” file 
 -	there are two **browser.type** options: Chrome and Firefox
 -	**organization.id** represents the organization ID used to test the template
 -	**report.path** represents the path where the report will be saved (HTML format with CSS)
 
  ![](./images/report-path.png) 
 
-## B.	Automation-driver-executable
+### B.	Automation-driver-executable 
 This folder contains all the drivers for the Selenium Webdriver:
 ![](./images/selenium-drivers.png)
 
@@ -38,7 +39,7 @@ This folder contains all the drivers for the Selenium Webdriver:
 
  ![](./images/selenium-automation-driver-libraries.png) 
 
-## C.	Automation-screenshots 
+### C.	Automation-screenshots  
 In this folder will be stored all the screenshots:
  ![](./images/selenium-automation-screenshots.png)
  ![](./images/selenium-automation-screenshots2.png)
@@ -46,11 +47,11 @@ In this folder will be stored all the screenshots:
 Following the completion of the execution a message will be displayed on the screen:
          ![](./images/selenium-message.png)
 
-## D.	Reporting 
+### D.	Reporting 
 The reports will be based on the template below:
          ![](./images/selenium-automation-report.png)
 
-## E.	Execution from command line 
+### E.	Execution from command line 
 Java –jar CLIENTAutomation.jar
 
 Or with parameters
@@ -71,7 +72,7 @@ where
 - the blue parameter represents the folder which stores the report
 
 
-# Packaging JAR file and running with params 
+##  Packaging JAR file and running with params  
 To the Jar file CLIENTAutomation a new automation-driver folder will be added as below:
 
 ![](./images/selenium-client-add-driver.png) 
