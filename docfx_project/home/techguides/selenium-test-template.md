@@ -22,7 +22,7 @@ The application is using the Factory pattern having a DriverManager class which 
 
 ###  A.	“global.properties” file 
 -	there are two **browser.type** options: Chrome and Firefox
--	**organization.id** represents the organization ID used to test the template
+-	**organization.id** represents the Temenos Continuous Deployment Platform organization ID used to test the template
 -	**report.path** represents the path where the report will be saved (HTML format with CSS)
 
  ![](./images/report-path.png) 
@@ -66,7 +66,7 @@ where
 - the green parameter is the browser [firefox | chrome]
 
 
-- the red parameter represents the organization ID
+- the red parameter represents the Temenos Continuous Deployment Platform organization ID
 
 
 - the blue parameter represents the folder which stores the report
