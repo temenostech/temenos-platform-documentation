@@ -1,6 +1,4 @@
-# Selenium test template
-
-This page explains the steps needed to be followed in order to do the Java implementation for a Selenium Test. 
+This page explains the steps needed to be followed in order to do the Java implementation for a Selenium Test Template based on the client's framework.
 
 # Implementation 
 
@@ -26,24 +24,24 @@ The application is using the Factory pattern having a DriverManager class which 
 -	**organization.id** represents the organization ID used to test the template
 -	**report.path** represents the path where the report will be saved (HTML format with CSS)
 
-![](./images/report-path.png) 
+ ![](./images/report-path.png) 
 
 ## B.	Automation-driver-executable
 This folder contains all the drivers for the Selenium Webdriver:
-![](./images/selenium-drivers.png)
+ ![](./images/selenium-drivers.png)
 
 - the automation-driver-executable folder contains:
 
-    ![](./images/selenium-automation-driver-executable.png)
+ ![](./images/selenium-automation-driver-executable.png)
 
 - the automation-driver-libraries folder contains the Java Selenium WebDriver libraries:
 
-    ![](./images/selenium-automation-driver-libraries.png)
+ ![](./images/selenium-automation-driver-libraries.png)
 
 ## C.	Automation-screenshots 
 In this folder will be stored all the screenshots:
-         ![](./images/selenium-automation-screenshots.png)
-         ![](./images/selenium-automation-screenshots2.png)
+ ![](./images/selenium-automation-screenshots.png)
+ ![](./images/selenium-automation-screenshots2.png)
 
 Following the completion of the execution a message will be displayed on the screen:
          ![](./images/selenium-message.png)
