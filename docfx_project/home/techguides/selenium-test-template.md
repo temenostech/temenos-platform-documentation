@@ -9,7 +9,7 @@ The Java implementation using Selenium WebDriver automation is using 2 types of 
 
 The structure of the application will be displayed as below. The main class for the application is **EntryPoint.java**.
 
-![](./images/selenium-test.png)
+ ![](./images/selenium-test.png)
 
 # Structural design of the application #
 
@@ -28,7 +28,7 @@ The application is using the Factory pattern having a DriverManager class which 
 
 ## B.	Automation-driver-executable
 This folder contains all the drivers for the Selenium Webdriver:
- ![](./images/selenium-drivers.png)
+![](./images/selenium-drivers.png)
 
 - the automation-driver-executable folder contains:
 
@@ -36,7 +36,7 @@ This folder contains all the drivers for the Selenium Webdriver:
 
 - the automation-driver-libraries folder contains the Java Selenium WebDriver libraries:
 
- ![](./images/selenium-automation-driver-libraries.png)
+ ![](./images/selenium-automation-driver-libraries.png) 
 
 ## C.	Automation-screenshots 
 In this folder will be stored all the screenshots:
@@ -74,7 +74,7 @@ where
 # Packaging JAR file and running with params 
 To the Jar file CLIENTAutomation a new automation-driver folder will be added as below:
 
-![](./images/selenium-client-add-driver.png)
+![](./images/selenium-client-add-driver.png) 
 
 After the automation-driver has been added, the package will be executed:
 
