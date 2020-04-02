@@ -4802,6 +4802,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/selenium-automation-driver-libraries.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/selenium-automation-driver-libraries.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/selenium-automation-report.png",
       "output": {
         "resource": {
@@ -5742,7 +5753,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/selenium-test-template.html",
-          "hash": "GYT7DTBP1oVdVHPmyBr+RA=="
+          "hash": "D4iOTZ6Dncv2OVp94HYzDQ=="
         }
       },
       "is_incremental": false,
