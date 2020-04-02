@@ -1,0 +1,253 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Selenium test template </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Selenium test template ">
+    <meta name="generator" content="docfx 2.22.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/woocircle.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" class="Selenium test template ">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar" role="navigation">
+          <div class="container">
+            <div class="row">
+              <div class="navbar-header col-md-2">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                
+                <a class="navbar-brand" href="https://www.temenos.com/platform/temenos-continuous-deployment-devops/">
+                  <img id="logo" src="/logo.png" alt="">
+                </a>
+              </div>
+              <div class="themainmenu col-md-10">
+              <div class="collapse navbar-collapse" id="navbar">
+                <form class="navbar-form navbar-right" role="search" id="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                  </div>
+                </form>
+              </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="selenium-test-template">Selenium test template</h1>
+
+<p>This page explains the steps needed to be followed in order to do the Java implementation for a Selenium Test. </p>
+<h1 id="implementation">Implementation</h1>
+<p>The Java implementation using Selenium WebDriver automation is using 2 types of browsers:</p>
+<ul>
+<li>Chrome</li>
+<li>Firefox</li>
+</ul>
+<p>The structure of the application will be displayed as below. The main class for the application is <strong>EntryPoint.java</strong>.</p>
+<p><img src="images/selenium-test.png" alt=""></p>
+<h1 id="structural-design-of-the-application">Structural design of the application</h1>
+<p>The application is using the Factory pattern having a DriverManager class which has 2 implementations for both Firefox and Driver browsers. These are defined in:</p>
+<ul>
+<li><p>ChromeDriverManger.java </p>
+</li>
+<li><p>FirefoxDriverManager.java</p>
+</li>
+</ul>
+<h2 id="a---globalproperties-file">A.   “global.properties” file</h2>
+<ul>
+<li>there are two <strong>browser.type</strong> options: Chrome and Firefox</li>
+<li><strong>organization.id</strong> represents the organization ID used to test the template</li>
+<li><strong>report.path</strong> represents the path where the report will be saved (HTML format with CSS)</li>
+</ul>
+<p><img src="images/report-path.png" alt=""> </p>
+<h2 id="b---automation-driver-executable">B.   Automation-driver-executable</h2>
+<p>This folder contains all the drivers for the Selenium Webdriver:
+<img src="images/selenium-drivers.png" alt=""></p>
+<ul>
+<li><p>the automation-driver-executable folder contains:</p>
+<p>  <img src="images/selenium-automation-driver-executable.png" alt=""></p>
+</li>
+<li><p>the automation-driver-libraries folder contains the Java Selenium WebDriver libraries:</p>
+<p>  <img src="images/selenium-automation-driver-libraries.png" alt=""></p>
+</li>
+</ul>
+<h2 id="c---automation-screenshots">C.   Automation-screenshots</h2>
+<p>In this folder will be stored all the screenshots:
+         <img src="images/selenium-automation-screenshots.png" alt="">
+         <img src="images/selenium-automation-screenshots2.png" alt=""></p>
+<p>Following the completion of the execution a message will be displayed on the screen:
+         <img src="images/selenium-message.png" alt=""></p>
+<h2 id="d---reporting">D.   Reporting</h2>
+<p>The reports will be based on the template below:
+         <img src="images/selenium-automation-report.png" alt=""></p>
+<h2 id="e---execution-from-command-line">E.   Execution from command line</h2>
+<p>Java –jar CLIENTAutomation.jar</p>
+<p>Or with parameters</p>
+<p>java -jar CLIENTAutomation.jar <font color='green'><strong>chrome</strong></font> <font color='red'><strong>e1efgs6bc7ul</strong></font></p>
+<font color='blue'><strong>D:\DevelopmentLast\TestCLIENT\TestCLIENT\</strong></font>
+
+<p>where</p>
+<ul>
+<li><p>the green parameter is the browser [firefox | chrome]</p>
+</li>
+<li><p>the red parameter represents the organization ID</p>
+</li>
+<li><p>the blue parameter represents the folder which stores the report</p>
+</li>
+</ul>
+<h1 id="packaging-jar-file-and-running-with-params">Packaging JAR file and running with params</h1>
+<p>To the Jar file CLIENTAutomation a new automation-driver folder will be added as below:</p>
+<p><img src="images/selenium-client-add-driver.png" alt=""></p>
+<p>After the automation-driver has been added, the package will be executed:</p>
+<p><img src="images/selenium-execute.png" alt=""> </p>
+<p><br></p>
+              <hr>
+              
+              <div id="disqus_thread"></div>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 footer-note left">
+              <p>
+                <a href="/"><img src="/logo-bottom.png" alt=""></a>
+                <a href="https://www.temenos.com/en/accessibility/">Accessibility</a>
+                <a href="https://www.temenos.com/en/legal-information/cookie-policy/">Cookie Policy</a>
+                <a href="https://www.temenos.com/en/legal-information/privacy-policy/">Privacy Policy</a>
+                <a href="https://www.temenos.com/en/legal-information/terms-and-conditions/">Terms & Conditions</a>
+              </p>
+            </div>
+      
+            <div class="col-md-6 footer-note right">
+              <p>
+                Copyright &copy; 2020 Temenos Headquarters SA <span>&#183;</span>
+                <a target="_blank" href="https://www.facebook.com/TemenosGroup"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+                <a target="_blank" href="https://twitter.com/Temenos"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a target="_blank" href="http://www.linkedin.com/company/temenos"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a target="_blank" href="//plus.google.com/u/0/100035548059267323447?prsrc=3"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+              </p>
+            </div>
+          </div>
+      
+        </div>
+      </footer>
+      
+      <div class="back-to-top">
+        <a href="#top">
+          <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i></span>
+        </a>
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script id="dsq-count-scr" src="//temenostech.disqus.com/count.js" async=""></script>
+    
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myshareDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.sharedropbtn')) {
+    
+        var dropdowns = document.getElementsByClassName("sharedropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+    
+    <script>
+    	window.onload = function(){
+        	document.getElementById("shareFacebook").href = 'https://www.facebook.com/sharer/sharer.php?u=' + window.location.toString();
+    
+        	document.getElementById("shareTwitter").href = 'https://twitter.com/intent/tweet?text=Temenos+Developer+Portal&url=' + window.location.toString();
+    
+        	document.getElementById("shareGoogle").href = 'https://plus.google.com/share?url=' + window.location.toString();
+    
+        	document.getElementById("shareLinkedin").href = 'https://www.linkedin.com/shareArticle?mini=true&url=' + window.location.toString() + '&title=Temenos+Developer+Portal&summary=&source=';
+    
+        	document.getElementById("shareEmail").href = 'mailto:' + window.location.toString();
+    	}
+    </script>
+    
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-38593742-8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-38593742-8');
+    </script>  
+  </body>
+</html>

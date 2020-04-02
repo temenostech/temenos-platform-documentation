@@ -4615,6 +4615,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/report-path.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/report-path.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/repository.png",
       "output": {
         "resource": {
@@ -4773,6 +4784,116 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/screen-key-generated.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/selenium-automation-driver-executable.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/selenium-automation-driver-executable.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/selenium-automation-driver-libraries.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/selenium-automation-driver-libraries.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/selenium-automation-report.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/selenium-automation-report.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/selenium-automation-screenshots.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/selenium-automation-screenshots.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/selenium-automation-screenshots2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/selenium-automation-screenshots2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/selenium-client-add-driver.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/selenium-client-add-driver.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/selenium-drivers.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/selenium-drivers.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/selenium-execute.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/selenium-execute.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/selenium-message.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/selenium-message.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/selenium-test.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/selenium-test.png"
         }
       },
       "is_incremental": false,
@@ -5647,6 +5768,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "home/techguides/selenium-test-template.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/selenium-test-template.html",
+          "hash": "v+10vAL/Yk2zhBU9oqwD7Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "home/techguides/stage-testcases.md",
       "output": {
         ".html": {
@@ -5992,11 +6125,6 @@
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "RestApiDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -6008,6 +6136,11 @@
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
