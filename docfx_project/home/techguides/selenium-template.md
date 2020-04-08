@@ -22,9 +22,9 @@ The test script component that can be used by this template must be a .zip file 
 
 - **Test suite 1** (this could be any name - it is assumed this as a suite of tests that needs to be executed)
 
-    - 1 or multiple jar files:
+    - 1 or multiple .jar files:
 
-        - these files contain the selenium test cases to be executed
+        - these files contain the elenium test cases to be executed
 
         - this must copy all the test results to F:/TCD/TestResults folder
 
@@ -39,28 +39,28 @@ The test script component that can be used by this template must be a .zip file 
         - all the libraries that are needed by the test cases must be kept here. This includes the Selenium library, its extension and its dependencies.
 
 
-    - properties file with at least the following  properties  (“sys.t24.IP”, “sys.t24.port", “sys.test.results.folder”, “sys.web.driver.folder”)
+    - property file with at least the following  properties  (“sys.t24.IP”, “sys.t24.port", “sys.test.results.folder”, “sys.web.driver.folder”)
 
-        - while the test VM is provisioned, Temenos Continuous Deployment Platform will alter these values based on the IP and Port of the T24 VM.
+        - while the test VM is provisioned, Temenos Continuous Deployment Platform will alter these values based on the IP and Port of the T24 VM
 
         - it will change the value of “sys.test.results.folder“ to “F://TCD//TestResults”
 
         - it will change the value of “sys.web.driver.folder“ to “F://TCD//WebDriver”
 
-        - it is assumed that the user name and password will be known the clients writing test cases and the same will be present in the golden copy.
+        - it is assumed that the user name and password will be known by the clients writing test cases and the same will be present in the golden copy
 
-        - this property file can have other properties needed by the jar files, but the Temenos Continuous Deployment Platform will not alter these values at run time.
+        - this property file can have other properties needed by the jar files, but the Temenos Continuous Deployment Platform will not alter these values at the run time
 
 
 
 
     - a text file named “CommandsToExceute.txt”
 
-        - the Temenos Continuous Deployment Platform will execute all the commands listed here.
+        - the Temenos Continuous Deployment Platform will execute all the commands listed here
 
-        -  the Temenos Continuous Deployment Platform will validate whether all the commands are  “Java” commands before executing.
+        -  the Temenos Continuous Deployment Platform will validate whether all the commands are  “Java” commands before executing
 
-        - any other commands present here, will result in termination of Factory run saying deployment failure with details mentioning why it failed.
+        - any other commands present here, will result in termination of Factory run saying deployment failure with details mentioning why it failed
 
 
 
@@ -83,29 +83,29 @@ The below shows the test framework folder structure and general expectations:
 <br>
 </br>
 
-**Lib Folder |-->**
+**Lib Folder**
 
-The lib folder contains the libraries used by the selenium framework. We expect all the library must be present the same folder and the relative path should be handled in the test framework.
+The lib folder contains the libraries used by the Selenium framework. We expect all the library to be present in the same folder and the relative path should be handled in the test framework.
 
 ![](./images/selenium-automation-2.png)
 
 <br>
 </br>
 
-**.properties file |-->**
+**.properties file**
 
-The properties file holds the configurable parameters used by the selenium framework. Some of the parameters have static values.
+The properties file holds the configurable parameters used by the Selenium framework. Some of the parameters have static values.
 
-For instance, sys.t24.IP=http://127.0.0.1:9080/BrowserWeb value is something replaced dynamically at the run time. The same applies to all parameters highlighted in the RedBox
+For instance, sys.t24.IP=http://127.0.0.1:9080/BrowserWeb value is replaced dynamically at the run time. The same applies to all parameters highlighted in the RedBox
 
 ![](./images/selenium-automation-3.png)
 
 <br>
 </br>
 
-**TestCase.jar |-->**
+**TestCase.jar**
 
-We expect the test cases must be compiled as an executable file. 
+We expect the test cases to be compiled as an executable file. 
 
 Note: The Selenium_Automation.zip can have multiple *.jar files. 
 
@@ -114,10 +114,10 @@ Note: The Selenium_Automation.zip can have multiple *.jar files.
 <br>
 </br>
 
-**CommandsToExecute.txt |-->**
+**CommandsToExecute.txt**
 
-This file contains the list of commands TCD will execute in sequence. We expect the command should start with “java”, anything other than java command will be considered as deployment failure.
+This file contains the list of commands that the Temenos Continuous Deployment Platform will execute in sequence. We expect the command to start with “java” as anything other than the java command will be considered as deployment failure.
 
-In case if the Test script has more jar files then execution of the files can be handled in the CommandsToExecute file but please remember that we will validate the command and execute it only if it starts with “java” so assuming any other pre-requisites and environment variable will be passed as a runtime parameter.
+In case the Test script has more jar files then the execution of the files can be handled in the CommandsToExecute file. Nonetheless, please remember that will validate the command and execute it only if it starts with “java” so assuming any other pre-requisites and environment variable will be passed as a runtime parameter.
 
 ![](./images/selenium-automation-5.png)
