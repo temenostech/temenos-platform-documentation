@@ -1,0 +1,294 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Selenium Test Template Implementation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Selenium Test Template Implementation ">
+    <meta name="generator" content="docfx 2.22.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/woocircle.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" class="Selenium Test Template Implementation ">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar" role="navigation">
+          <div class="container">
+            <div class="row">
+              <div class="navbar-header col-md-2">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                
+                <a class="navbar-brand" href="https://www.temenos.com/platform/temenos-continuous-deployment-devops/">
+                  <img id="logo" src="/logo.png" alt="">
+                </a>
+              </div>
+              <div class="themainmenu col-md-10">
+              <div class="collapse navbar-collapse" id="navbar">
+                <form class="navbar-form navbar-right" role="search" id="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                  </div>
+                </form>
+              </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="selenium-test-template-implementation">Selenium Test Template Implementation</h1>
+
+<p>This page explains the steps needed to be followed in order to do the Java implementation for a Selenium Test Template based on the client&#39;s framework.</p>
+<h2 id="implementation">Implementation</h2>
+<p>The Selenium Template will provision the following:</p>
+<ul>
+<li><p>Windows 2016 VM with below software/packages pre-installed:</p>
+<ul>
+<li><p>Open JAVA / JDK  1.8</p>
+</li>
+<li><p>the latest version of Google Chrome</p>
+</li>
+<li><p>the latest version of Google Chrome driver (which will be used by Selenium) - this will be present in F:/TCD/WebDriver folder</p>
+</li>
+<li><p>the latest version of Geckodriver (which will be used by Selenium) - this will be present in F:/TCD/WebDriver folder</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><br>
+</br></p>
+<p>The test script component that can be used by this template must be a .zip file with the following folders:</p>
+<ul>
+<li><p><strong>Test suite 1</strong> (this could be any name - it is assumed this as a suite of tests that needs to be executed)</p>
+<ul>
+<li><p>1 or multiple jar files:</p>
+<ul>
+<li><p>these files contain the selenium test cases to be executed</p>
+</li>
+<li><p>this must copy all the test results to F:/TCD/TestResults folder</p>
+<ul>
+<li>Temenos Continuous Deployment Platform will move the results in this folder to a store account and give a download facility from the Temenos Continuous Deployment Platform</li>
+</ul>
+</li>
+<li><p>this must as well create a manifest file (the sample structure will be present in the documentation portal). The same must be uploaded to F:/TCD/TestResults folder</p>
+</li>
+</ul>
+</li>
+<li><p>a folder named &quot;Lib&quot;</p>
+<ul>
+<li>all the libraries that are needed by the test cases must be kept here. This includes the Selenium library, its extension and its dependencies.</li>
+</ul>
+</li>
+<li><p>properties file with at least the following  properties  (“sys.t24.IP”, “sys.t24.port&quot;, “sys.test.results.folder”, “sys.web.driver.folder”)</p>
+<ul>
+<li><p>while the test VM is provisioned, Temenos Continuous Deployment Platform will alter these values based on the IP and Port of the T24 VM.</p>
+</li>
+<li><p>it will change the value of “sys.test.results.folder“ to “F://TCD//TestResults”</p>
+</li>
+<li><p>it will change the value of “sys.web.driver.folder“ to “F://TCD//WebDriver”</p>
+</li>
+<li><p>it is assumed that the user name and password will be known the clients writing test cases and the same will be present in the golden copy.</p>
+</li>
+<li><p>this property file can have other properties needed by the jar files, but the Temenos Continuous Deployment Platform will not alter these values at run time.</p>
+</li>
+</ul>
+</li>
+<li><p>a text file named “CommandsToExceute.txt”</p>
+<ul>
+<li><p>the Temenos Continuous Deployment Platform will execute all the commands listed here.</p>
+</li>
+<li><p>the Temenos Continuous Deployment Platform will validate whether all the commands are  “Java” commands before executing.</p>
+</li>
+<li><p>any other commands present here, will result in termination of Factory run saying deployment failure with details mentioning why it failed.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Test suite 2</strong></p>
+<ul>
+<li>follows the same structure as above. These will be executed in a separate test client if test parallelisation is enabled. Otherwise, these will be executed in the same test client once the first test suite is complete.</li>
+</ul>
+</li>
+<li><p>…</p>
+</li>
+<li><p><strong>Test suite n</strong>
+<br>
+</br></p>
+</li>
+</ul>
+<h2 id="framework-structure-example">Framework structure example</h2>
+<p>The below shows the test framework folder structure and general expectations:</p>
+<p><img src="images/selenium-automation-1.png" alt=""></p>
+<p><br>
+</br></p>
+<p><strong>Lib Folder |--&gt;</strong></p>
+<p>The lib folder contains the libraries used by the selenium framework. We expect all the library must be present the same folder and the relative path should be handled in the test framework.</p>
+<p><img src="images/selenium-automation-2.png" alt=""></p>
+<p><br>
+</br></p>
+<p><strong>.properties file |--&gt;</strong></p>
+<p>The properties file holds the configurable parameters used by the selenium framework. Some of the parameters have static values.</p>
+<p>For instance, sys.t24.IP=<a href="http://127.0.0.1:9080/BrowserWeb">http://127.0.0.1:9080/BrowserWeb</a> value is something replaced dynamically at the run time. The same applies to all parameters highlighted in the RedBox</p>
+<p><img src="images/selenium-automation-3.png" alt=""></p>
+<p><br>
+</br></p>
+<p><strong>TestCase.jar |--&gt;</strong></p>
+<p>We expect the test cases must be compiled as an executable file. </p>
+<p>Note: The Selenium_Automation.zip can have multiple *.jar files. </p>
+<p><img src="images/selenium-automation-4.png" alt=""></p>
+<p><br>
+</br></p>
+<p><strong>CommandsToExecute.txt |--&gt;</strong></p>
+<p>This file contains the list of commands TCD will execute in sequence. We expect the command should start with “java”, anything other than java command will be considered as deployment failure.</p>
+<p>In case if the Test script has more jar files then execution of the files can be handled in the CommandsToExecute file but please remember that we will validate the command and execute it only if it starts with “java” so assuming any other pre-requisites and environment variable will be passed as a runtime parameter.</p>
+<p><img src="images/selenium-automation-5.png" alt=""></p>
+<p><br></p>
+              <hr>
+              
+              <div id="disqus_thread"></div>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 footer-note left">
+              <p>
+                <a href="/"><img src="/logo-bottom.png" alt=""></a>
+                <a href="https://www.temenos.com/en/accessibility/">Accessibility</a>
+                <a href="https://www.temenos.com/en/legal-information/cookie-policy/">Cookie Policy</a>
+                <a href="https://www.temenos.com/en/legal-information/privacy-policy/">Privacy Policy</a>
+                <a href="https://www.temenos.com/en/legal-information/terms-and-conditions/">Terms & Conditions</a>
+              </p>
+            </div>
+      
+            <div class="col-md-6 footer-note right">
+              <p>
+                Copyright &copy; 2020 Temenos Headquarters SA <span>&#183;</span>
+                <a target="_blank" href="https://www.facebook.com/TemenosGroup"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+                <a target="_blank" href="https://twitter.com/Temenos"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a target="_blank" href="http://www.linkedin.com/company/temenos"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a target="_blank" href="//plus.google.com/u/0/100035548059267323447?prsrc=3"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+              </p>
+            </div>
+          </div>
+      
+        </div>
+      </footer>
+      
+      <div class="back-to-top">
+        <a href="#top">
+          <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i></span>
+        </a>
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script id="dsq-count-scr" src="//temenostech.disqus.com/count.js" async=""></script>
+    
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myshareDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.sharedropbtn')) {
+    
+        var dropdowns = document.getElementsByClassName("sharedropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+    
+    <script>
+    	window.onload = function(){
+        	document.getElementById("shareFacebook").href = 'https://www.facebook.com/sharer/sharer.php?u=' + window.location.toString();
+    
+        	document.getElementById("shareTwitter").href = 'https://twitter.com/intent/tweet?text=Temenos+Developer+Portal&url=' + window.location.toString();
+    
+        	document.getElementById("shareGoogle").href = 'https://plus.google.com/share?url=' + window.location.toString();
+    
+        	document.getElementById("shareLinkedin").href = 'https://www.linkedin.com/shareArticle?mini=true&url=' + window.location.toString() + '&title=Temenos+Developer+Portal&summary=&source=';
+    
+        	document.getElementById("shareEmail").href = 'mailto:' + window.location.toString();
+    	}
+    </script>
+    
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-38593742-8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-38593742-8');
+    </script>  
+  </body>
+</html>
