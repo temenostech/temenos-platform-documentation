@@ -5,7 +5,7 @@ This page explains the steps needed to be followed in order to do the Java imple
 ## Implementation 
 The Selenium Template will provision the following:
 
-- Windows 2016 VM with below software/packages pre-installed:
+- Windows 2016 VM with the below software/packages pre-installed:
 
     - Open JAVA / JDK  1.8
 
@@ -24,13 +24,13 @@ The test script component that can be used by this template must be a .zip file 
 
     - 1 or multiple .jar files:
 
-        - these files contain the elenium test cases to be executed
+        - these files contain the Selenium test cases to be executed
 
-        - this must copy all the test results to F:/TCD/TestResults folder
+        - the framework should copy all the test results to F:/TCD/TestResults folder
 
-            - Temenos Continuous Deployment Platform will move the results in this folder to a store account and give a download facility from the Temenos Continuous Deployment Platform
+            - Temenos Continuous Deployment Platform will move the results in this folder to a centralized storage account and provide a download facility from the Temenos Continuous Deployment Platform
 
-        - this must as well create a manifest file (the sample structure will be present in the documentation portal). The same must be uploaded to F:/TCD/TestResults folder
+        - the framework must create a manifest file as well (the sample structure will be present in the documentation portal). The same must be uploaded to F:/TCD/TestResults folder
 
 
 
@@ -39,7 +39,7 @@ The test script component that can be used by this template must be a .zip file 
         - all the libraries that are needed by the test cases must be kept here. This includes the Selenium library, its extension and its dependencies.
 
 
-    - property file with at least the following  properties  (“sys.t24.IP”, “sys.t24.port", “sys.test.results.folder”, “sys.web.driver.folder”)
+    - properties file with at least the following  properties  (“sys.t24.IP”, “sys.t24.port", “sys.test.results.folder”, “sys.web.driver.folder”)
 
         - while the test VM is provisioned, Temenos Continuous Deployment Platform will alter these values based on the IP and Port of the T24 VM
 
@@ -54,7 +54,7 @@ The test script component that can be used by this template must be a .zip file 
 
 
 
-    - a text file named “CommandsToExceute.txt”
+    - a text file named “CommandsToExecute.txt”
 
         - the Temenos Continuous Deployment Platform will execute all the commands listed here
 
@@ -85,7 +85,7 @@ The below shows the test framework folder structure and general expectations:
 
 **Lib Folder**
 
-The lib folder contains the libraries used by the Selenium framework. We expect all the library to be present in the same folder and the relative path should be handled in the test framework.
+The lib folder contains the libraries used by the Selenium framework. We expect all the library files to be present in the same folder and the relative path should be handled in the test framework.
 
 ![](./images/selenium-automation-2.png)
 
@@ -94,9 +94,9 @@ The lib folder contains the libraries used by the Selenium framework. We expect 
 
 **.properties file**
 
-The properties file holds the configurable parameters used by the Selenium framework. Some of the parameters have static values.
+The properties file holds the configurable parameters used by the Selenium framework. Some of the parameters have static values. Thus, the Temenos Continuous Deployment Platform expects them to be present in the properties file.
 
-For instance, sys.t24.IP=http://127.0.0.1:9080/BrowserWeb value is replaced dynamically at the run time. The same applies to all parameters highlighted in the RedBox
+For instance, sys.t24.IP=http://127.0.0.1:9080/BrowserWeb value is replaced dynamically at the run time. The same applies to all parameters highlighted in the RedBox below:
 
 ![](./images/selenium-automation-3.png)
 
@@ -105,7 +105,7 @@ For instance, sys.t24.IP=http://127.0.0.1:9080/BrowserWeb value is replaced dyna
 
 **TestCase.jar**
 
-We expect the test cases to be compiled as an executable file. 
+We expect the test cases to be compiled as an executable .jar file. 
 
 Note: The Selenium_Automation.zip can have multiple *.jar files. 
 
@@ -116,8 +116,112 @@ Note: The Selenium_Automation.zip can have multiple *.jar files.
 
 **CommandsToExecute.txt**
 
-This file contains the list of commands that the Temenos Continuous Deployment Platform will execute in sequence. We expect the command to start with “java” as anything other than the java command will be considered as deployment failure.
+This file contains the list of commands that the Temenos Continuous Deployment Platform will execute in sequence. We expect the command to start with “java” as anything other than the java command will be considered deployment failure.
 
-In case the Test script has more jar files then the execution of the files can be handled in the CommandsToExecute file. Nonetheless, please remember that will validate the command and execute it only if it starts with “java” so assuming any other pre-requisites and environment variable will be passed as a runtime parameter.
+In case the Test script has more jar files then the execution of the files can be handled in the CommandsToExecute file. Nonetheless, please remember that Temenos will validate the command and execute it only if it starts with “java” so assuming any other pre-requisites and environment variable will be passed as a runtime parameter.
 
 ![](./images/selenium-automation-5.png)
+
+## Manifest.xml ##
+The Manifest contains information regarding the test run, i.e. the total number of cases, success count, failed count etc. The Temenos Continuous Deployment Platform will use this information to populate in the dashboard.
+
+> [!Note] The below is an example format.
+
+    <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+    <!-- configured only by authorised user-->
+    <Manifest>
+    <Report>
+    <ScenarioName>Temenos Testing</ScenarioName>
+    <TestCaseName>get <https://t24URL/BrowserWeb</TestCaseName>>
+    <ExpectedResult></ExpectedResult>
+    <ReportStatus>PASS</ReportStatus>
+    </Report>
+    <Report>
+    <ScenarioName>Temenos Testing</ScenarioName>
+    <TestCaseName>setText (id signOnName *****)</TestCaseName>
+    <ExpectedResult></ExpectedResult>
+    <ReportStatus>PASS</ReportStatus>
+    </Report>
+    <Report>
+    <ScenarioName>Temenos Testing</ScenarioName>
+    <TestCaseName>sleep (sec)</TestCaseName>
+    <ExpectedResult></ExpectedResult>
+    <ReportStatus>PASS</ReportStatus>
+    </Report>
+    <Report>
+    <ScenarioName>Temenos Testing</ScenarioName>
+    <TestCaseName>setText (id password )</TestCaseName>
+    <ExpectedResult></ExpectedResult>
+    <ReportStatus>PASS</ReportStatus>
+    </Report>
+    <Report>
+    <ScenarioName>Temenos Testing</ScenarioName>
+    <TestCaseName>sleep (sec)</TestCaseName>
+    <ExpectedResult></ExpectedResult>
+    <ReportStatus>PASS</ReportStatus>
+    </Report>
+    <Report>
+    <ScenarioName>Temenos Testing</ScenarioName>
+    <TestCaseName>sleep (sec)</TestCaseName>
+    <ExpectedResult></ExpectedResult>
+    <ReportStatus>PASS</ReportStatus>
+    </Report>
+    <Report>
+    <ScenarioName>Temenos Testing</ScenarioName>
+    <TestCaseName>sleep (sec)</TestCaseName>
+    <ExpectedResult></ExpectedResult>
+    <ReportStatus>PASS</ReportStatus>
+    </Report>
+    <Report>
+    <ScenarioName>Temenos Testing</ScenarioName>
+    <TestCaseName>sleep (sec)</TestCaseName>
+    <ExpectedResult></ExpectedResult>
+    <ReportStatus>PASS</ReportStatus>
+    </Report>
+    <Report>
+    <ScenarioName>Temenos Testing</ScenarioName>
+    <TestCaseName>switchToFrame()</TestCaseName>
+    <ExpectedResult></ExpectedResult>
+    <ReportStatus>FAIL</ReportStatus>
+    </Report>
+    <Report>
+    <ScenarioName>Temenos Testing</ScenarioName>
+    <TestCaseName>setText (id commandValue CUSTOMER I F3)</TestCaseName>
+    <ExpectedResult></ExpectedResult>
+    <ReportStatus>FAIL</ReportStatus>
+    </Report>
+    <Report>
+    <ScenarioName>Temenos Testing</ScenarioName>
+    <TestCaseName>sleep (sec)</TestCaseName>
+    <ExpectedResult></ExpectedResult>
+    <ReportStatus>PASS</ReportStatus>
+    </Report>
+    <Report>
+    <ScenarioName>Temenos Testing</ScenarioName>
+    <TestCaseName>sleep (sec)</TestCaseName>
+    <ExpectedResult></ExpectedResult>
+    <ReportStatus>FAIL</ReportStatus>
+    </Report>
+    <Report>
+    <ScenarioName>Temenos Testing</ScenarioName>
+    <TestCaseName>sleep (sec)</TestCaseName>
+    <ExpectedResult></ExpectedResult>
+    <ReportStatus>PASS</ReportStatus>
+    </Report>
+    <Report>
+    <ScenarioName>Temenos Testing</ScenarioName>
+    <TestCaseName>sleep (sec)</TestCaseName>
+    <ExpectedResult></ExpectedResult>
+    <ReportStatus>PASS</ReportStatus>
+    <ReportImagePath>F:\TCD\TestResults\automation-screenshots\screenshot4955634319564025885.png</ReportImagePath>
+    </Report>
+    <passedTests>11</passedTests>
+    <failedTests>3</failedTests>
+    <totalTests>14</totalTests>
+    <Name>Temenos Automation Testing Framework</Name>
+    <toolVersion>1.2</toolVersion>
+    <startDate>2020.04.03 09:34:34</startDate>
+    <duration>112.94700</duration>
+    <result>FAIL</result>
+    <hostName></hostName>
+    </Manifest>
