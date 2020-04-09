@@ -167,12 +167,12 @@
 <p><img src="images/selenium-automation-1.png" alt=""></p>
 <p><br>
 </br></p>
-<p><strong>Lib Folder</strong></p>
+<h3 id="lib-folder"><strong>Lib Folder</strong></h3>
 <p>The lib folder contains the libraries used by the Selenium framework. We expect all the library files to be present in the same folder and the relative path should be handled in the test framework.</p>
 <p><img src="images/selenium-automation-2.png" alt=""></p>
 <p><br>
 </br></p>
-<p><strong>.properties file</strong></p>
+<h3 id="properties-file"><strong>.properties file</strong></h3>
 <p>The properties file holds the configurable parameters used by the Selenium framework. Some of the parameters have static values. Thus, the Temenos Continuous Deployment Platform expects them to be present in the properties file.</p>
 <p>For instance, sys.t24.IP=<a href="http://127.0.0.1:9080/BrowserWeb">http://127.0.0.1:9080/BrowserWeb</a> value is replaced dynamically at the run time. The same applies to all parameters highlighted in the RedBox below.</p>
 <div class="NOTE"><h5>Note</h5><p>T24 browser can use any FQDN and Port. However, the endpoint should be reachable by the test client VM in which the test cases will be executed</p>
@@ -181,13 +181,13 @@
 <p><img src="images/selenium-automation-3.png" alt=""></p>
 <p><br>
 </br></p>
-<p><strong>TestCase.jar</strong></p>
+<h3 id="testcasejar"><strong>TestCase.jar</strong></h3>
 <p>We expect the test cases to be compiled as an executable .jar file. </p>
 <p>Note: The Selenium_Automation.zip can have multiple *.jar files. </p>
 <p><img src="images/selenium-automation-4.png" alt=""></p>
 <p><br>
 </br></p>
-<p><strong>CommandsToExecute.txt</strong></p>
+<h3 id="commandstoexecutetxt"><strong>CommandsToExecute.txt</strong></h3>
 <p>This file contains the list of commands that the Temenos Continuous Deployment Platform will execute in sequence. We expect the command to start with “java” as anything other than the java command will be considered deployment failure.</p>
 <p>In case the Test script has more jar files then the execution of the files can be handled in the CommandsToExecute file. Nonetheless, please remember that Temenos will validate the command and execute it only if it starts with “java” so assuming any other pre-requisites and environment variable will be passed as a runtime parameter.</p>
 <p><img src="images/selenium-automation-5.png" alt=""></p>
