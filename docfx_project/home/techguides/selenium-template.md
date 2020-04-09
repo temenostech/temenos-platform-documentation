@@ -86,7 +86,7 @@ The below shows the test framework folder structure and general expectations:
 <br>
 </br>
 
-**Lib Folder**
+### **Lib Folder**
 
 The lib folder contains the libraries used by the Selenium framework. We expect all the library files to be present in the same folder and the relative path should be handled in the test framework.
 
@@ -95,7 +95,7 @@ The lib folder contains the libraries used by the Selenium framework. We expect 
 <br>
 </br>
 
-**.properties file**
+### **.properties file** 
 
 The properties file holds the configurable parameters used by the Selenium framework. Some of the parameters have static values. Thus, the Temenos Continuous Deployment Platform expects them to be present in the properties file.
 
@@ -110,7 +110,7 @@ For instance, sys.t24.IP=http://127.0.0.1:9080/BrowserWeb value is replaced dyna
 <br>
 </br>
 
-**TestCase.jar**
+### **TestCase.jar**
 
 We expect the test cases to be compiled as an executable .jar file. 
 
@@ -121,7 +121,7 @@ Note: The Selenium_Automation.zip can have multiple *.jar files.
 <br>
 </br>
 
-**CommandsToExecute.txt**
+### **CommandsToExecute.txt**
 
 This file contains the list of commands that the Temenos Continuous Deployment Platform will execute in sequence. We expect the command to start with “java” as anything other than the java command will be considered deployment failure.
 
