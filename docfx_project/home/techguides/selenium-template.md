@@ -101,9 +101,9 @@ The properties file holds the configurable parameters used by the Selenium frame
 
 For instance, sys.t24.IP=http://127.0.0.1:9080/BrowserWeb value is replaced dynamically at the run time. The same applies to all parameters highlighted in the RedBox below.
 
-> [!Note] T24 browser can use any FQDN and Port. However, the endpoint should be reachable by the test client VM in which the test cases will be executed
+> [!Note] T24 browser can use any FQDN and Port. However, the endpoint should be reachable by the test client VM in which the test cases will be executed.
 
->Also if the test framework wants to support multiple T24 endpoints then it must be pre-configured same as sys.t24.browser.url
+>Also if the test framework wants to support multiple T24 endpoints then it must be pre-configured same as sys.t24.browser.url.
 
 ![](./images/selenium-automation-3.png)
 
@@ -150,8 +150,8 @@ The test framework should generate the manifest.xml file with the above details.
 | Tag       | Description                                                                            |
 |-------------|----------------------------------------------------------------------------------------|
 | passedTests | It denotes the prorated number of passed test cases in the current run.                |
-| failedTests | Number of failed test cases in the current run                                         |
-| totalTests  | The overall test cases count in the respective run                                     |
+| failedTests | Number of failed test cases in the current run.                                         |
+| totalTests  | The overall test cases count in the respective run.                                     |
 | result      | The overall test result. The value should be “FAIL“ even if there is a single failure. |
 
 **An example of the manifest format:**
