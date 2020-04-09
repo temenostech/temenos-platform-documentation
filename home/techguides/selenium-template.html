@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Selenium Test Template Implementation </title>
+    <title>Selenium Template Implementation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Selenium Test Template Implementation ">
+    <meta name="title" content="Selenium Template Implementation ">
     <meta name="generator" content="docfx 2.22.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -20,7 +20,7 @@
     <meta property="docfx:rel" content="../../">
     
   </head>
-  <body data-spy="scroll" data-target="#affix" class="Selenium Test Template Implementation ">
+  <body data-spy="scroll" data-target="#affix" class="Selenium Template Implementation ">
     <div id="wrapper">
       <header>
         
@@ -79,11 +79,11 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="selenium-test-template-implementation">Selenium Test Template Implementation</h1>
+<h1 id="selenium-template-implementation">Selenium Template Implementation</h1>
 
 <div class="NOTE"><h5>Note</h5><p>The below instructions may be updated shortly.</p>
 </div>
-<p>This page explains the steps needed to be followed in order to do the Java implementation for a Selenium Test Template based on the client&#39;s framework.</p>
+<p>This page provides information about the Selenium Template, the pre-requisites needed to test the template, as well as an example of the framework structure and the manifest file.</p>
 <h2 id="implementation">Implementation</h2>
 <p>The Selenium Template will provision the following:</p>
 <ul>
@@ -174,7 +174,10 @@
 </br></p>
 <p><strong>.properties file</strong></p>
 <p>The properties file holds the configurable parameters used by the Selenium framework. Some of the parameters have static values. Thus, the Temenos Continuous Deployment Platform expects them to be present in the properties file.</p>
-<p>For instance, sys.t24.IP=<a href="http://127.0.0.1:9080/BrowserWeb">http://127.0.0.1:9080/BrowserWeb</a> value is replaced dynamically at the run time. The same applies to all parameters highlighted in the RedBox below:</p>
+<p>For instance, sys.t24.IP=<a href="http://127.0.0.1:9080/BrowserWeb">http://127.0.0.1:9080/BrowserWeb</a> value is replaced dynamically at the run time. The same applies to all parameters highlighted in the RedBox below.</p>
+<div class="NOTE"><h5>Note</h5><p>T24 browser can use any FQDN and Port. However, the endpoint should be reachable by the test client VM in which the test cases will be executed</p>
+<p>Also if the test framework wants to support multiple T24 endpoints then it must be pre-configured same as sys.t24.browser.url</p>
+</div>
 <p><img src="images/selenium-automation-3.png" alt=""></p>
 <p><br>
 </br></p>
@@ -189,9 +192,46 @@
 <p>In case the Test script has more jar files then the execution of the files can be handled in the CommandsToExecute file. Nonetheless, please remember that Temenos will validate the command and execute it only if it starts with “java” so assuming any other pre-requisites and environment variable will be passed as a runtime parameter.</p>
 <p><img src="images/selenium-automation-5.png" alt=""></p>
 <h2 id="manifestxml">Manifest.xml</h2>
-<p>The Manifest contains information regarding the test run, i.e. the total number of cases, success count, failed count etc. The Temenos Continuous Deployment Platform will use this information to populate in the dashboard.</p>
-<div class="NOTE"><h5>Note</h5><p>The below is an example format.</p>
-</div>
+<p>The Manifest contains information regarding the test run, i.e. the total number of cases, success count, failed count etc. The Temenos Continuous Deployment Platform will use this information to populate the dashboard. Below you will find an example format.</p>
+<p> <span style="color:red">From the below structure, the Temenos Continuous Deployment Platform needs to mandate the following information in order to populate in the dashboard:</span></p>
+<pre><code>&lt;passedTests&gt;11&lt;/passedTests&gt;
+&lt;failedTests&gt;3&lt;/failedTests&gt;
+&lt;totalTests&gt;14&lt;/totalTests&gt;
+&lt;Name&gt;Temenos Automation Testing Framework&lt;/Name&gt;
+&lt;toolVersion&gt;1.2&lt;/toolVersion&gt;
+&lt;startDate&gt;2020.04.03 09:34:34&lt;/startDate&gt;
+&lt;duration&gt;112.94700&lt;/duration&gt;
+&lt;result&gt;FAIL&lt;/result&gt;
+&lt;hostName&gt;&lt;/hostName&gt;
+</code></pre><p><br>
+The test framework should generate the manifest.xml file with the above details. The below table describes the manifest tags and its purposes.</p>
+<table>
+<thead>
+<tr>
+<th>Tag</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>passedTests</td>
+<td>It denotes the prorated number of passed test cases in the current run.</td>
+</tr>
+<tr>
+<td>failedTests</td>
+<td>Number of failed test cases in the current run</td>
+</tr>
+<tr>
+<td>totalTests</td>
+<td>The overall test cases count in the respective run</td>
+</tr>
+<tr>
+<td>result</td>
+<td>The overall test result. The value should be “FAIL“ even if there is a single failure.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>An example of the manifest format:</strong></p>
 <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
 &lt;!-- configured only by authorised user--&gt;
 &lt;Manifest&gt;
