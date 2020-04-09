@@ -1,9 +1,9 @@
-# Selenium Test Template Implementation 
+# Selenium Template Implementation 
 
 > [!Note] The below instructions may be updated shortly.
 
 
-This page explains the steps needed to be followed in order to do the Java implementation for a Selenium Test Template based on the client's framework.
+This page provides information about the Selenium Template, the pre-requisites needed to test the template, as well as an example of the framework structure and the manifest file.
 
 ## Implementation 
 The Selenium Template will provision the following:
@@ -99,7 +99,11 @@ The lib folder contains the libraries used by the Selenium framework. We expect 
 
 The properties file holds the configurable parameters used by the Selenium framework. Some of the parameters have static values. Thus, the Temenos Continuous Deployment Platform expects them to be present in the properties file.
 
-For instance, sys.t24.IP=http://127.0.0.1:9080/BrowserWeb value is replaced dynamically at the run time. The same applies to all parameters highlighted in the RedBox below:
+For instance, sys.t24.IP=http://127.0.0.1:9080/BrowserWeb value is replaced dynamically at the run time. The same applies to all parameters highlighted in the RedBox below.
+
+> [!Note] T24 browser can use any FQDN and Port. However, the endpoint should be reachable by the test client VM in which the test cases will be executed
+
+>Also if the test framework wants to support multiple T24 endpoints then it must be pre-configured same as sys.t24.browser.url
 
 ![](./images/selenium-automation-3.png)
 
@@ -126,9 +130,31 @@ In case the Test script has more jar files then the execution of the files can b
 ![](./images/selenium-automation-5.png)
 
 ## Manifest.xml ##
-The Manifest contains information regarding the test run, i.e. the total number of cases, success count, failed count etc. The Temenos Continuous Deployment Platform will use this information to populate in the dashboard.
+The Manifest contains information regarding the test run, i.e. the total number of cases, success count, failed count etc. The Temenos Continuous Deployment Platform will use this information to populate the dashboard. Below you will find an example format.
+ 
+ <span style="color:red">From the below structure, the Temenos Continuous Deployment Platform needs to mandate the following information in order to populate in the dashboard:</span>
 
-> [!Note] The below is an example format.
+    <passedTests>11</passedTests>
+    <failedTests>3</failedTests>
+    <totalTests>14</totalTests>
+    <Name>Temenos Automation Testing Framework</Name>
+    <toolVersion>1.2</toolVersion>
+    <startDate>2020.04.03 09:34:34</startDate>
+    <duration>112.94700</duration>
+    <result>FAIL</result>
+    <hostName></hostName>
+</br>
+The test framework should generate the manifest.xml file with the above details. The below table describes the manifest tags and its purposes.
+
+
+| Tag       | Description                                                                            |
+|-------------|----------------------------------------------------------------------------------------|
+| passedTests | It denotes the prorated number of passed test cases in the current run.                |
+| failedTests | Number of failed test cases in the current run                                         |
+| totalTests  | The overall test cases count in the respective run                                     |
+| result      | The overall test result. The value should be “FAIL“ even if there is a single failure. |
+
+**An example of the manifest format:**
 
     <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
     <!-- configured only by authorised user-->
