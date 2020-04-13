@@ -146,7 +146,9 @@
 <ul>
 <li><strong>Step 1</strong>: select the test template, component, the number of VMs needed, the test stage and tick if the workflow should stop in case of failure. At the end of this step, when the first round of tests has been finished, the test VM will be deleted, but it will not stop the T24 environment (this will be done at the end of the workflow)</li>
 <li><strong>Step 2</strong>: type in the ID of the TSA.SERVICE record for which COB has to be run. The id can be either group specific id (eg: COB-1, COB-001) , company specific id (eg: COB-GB0010001) or COB </li>
-<li><strong>Step 3</strong>:  insert the template, component, the number of VMs needed and the test stage  where you would like to test the components</li>
+<li><strong>Step 3</strong>:  insert the template, component, the number of VMs needed and the test stage  where you would like to test the components
+<br>
+</br></li>
 </ul>
 </li>
 <li><p><strong>Workflow steps</strong>: a sample which displays the steps (in that exact sequence) that are executed by the selected workflow
@@ -165,6 +167,58 @@
 The &#39;Stop Environment&#39; and &#39;Keep Running Environment&#39; options are aimed to be used for costs purposes
 <img src="images/factory-scheduler.png" alt="factory-scheduler"></li>
 </ul>
+<h2 id="factory-migration">Factory Migration</h2>
+<p>Below you will see what are the steps involved to perform the factory migration from an existing platform.  As part of the platform upgrade process, all the existing Factories of the platform (all organizations) are also migrated. The factory migration involves populating appropriate tables with the default values wherever applicable.  </p>
+<p>The end-user will not be able to run a factory until the Test Script component is defined. In order to do so, existing TestCases have to be migrated. The migration is nothing but repackaging existing TestCases in to a format that the platform understands.  Please follow the below steps to migrate the TestCases:</p>
+<ol>
+<li><p>Identify and download the TestCases of the factory in the repository located at {default-stage}/{stream}/{stage}/TestCases/TestCases/testcases.zip.</p>
+<p><img src="images/factory-migration-1.png" alt="factory-migration-1">
+<br>
+</br></p>
+</li>
+<li><p>After the download is complete, leave the zip folder with the same name or rename if required.</p>
+<p><img src="images/factory-migration-2.png" alt="factory-migration-2">
+<br>
+</br></p>
+</li>
+<li><p>Zip again the downloaded zip file from the Artifactory.</p>
+<p><img src="images/factory-migration-3.png" alt="factory-migration-3">
+<br>
+</br></p>
+</li>
+<li><p>Rename the new zip folder if required. This new zip file will be uploaded to the Artifactory. The file&#39;s structure should look as below.</p>
+<p><img src="images/factory-migration-4.png" alt="factory-migration-4">
+<br>
+</br></p>
+</li>
+<li><p>Create a new <strong>Component</strong> (eg. TestCase01) in the portal. The **Component Type **will be ‘TestScript’ </p>
+<p><img src="images/factory-migration-5.png" alt="factory-migration-5">
+<br>
+</br></p>
+</li>
+<li><p>Upload the zip file from the Step 5 on the Artifactory to the required stage</p>
+<p><img src="images/factory-migration-6.png" alt="factory-migration-6">
+<br>
+</br></p>
+</li>
+<li><p>Select the previously created <strong>Component</strong> and <strong>Stage</strong> the in the** Test Configuration** of the factory </p>
+<p><img src="images/factory-migration-7.png" alt="factory-migration-7"></p>
+</li>
+</ol>
+<p><strong>Case 1:</strong>
+Note that a Test case can have multiple scenarios (.zip files) in a <strong>Stream</strong>. In such cases download all of the .zip files and re-package them again in a single zip file so that it can be uploaded to Artifactory. 
+As shown below the multiple .zip files from Artifactory are downloaded and repackaged using a parent zip folder called Accounts.zip. This new zip file will be uploaded to the Artifactory as a component.</p>
+<p> <img src="images/factory-migration-8.png" alt="factory-migration-8"></p>
+<h3 id="other-scenarios">Other Scenarios</h3>
+<p><strong>Case 2:</strong></p>
+<p>It is also possible to have multiple Test cases and each Test Case can have multiple scenarios (.zip files). In such cases download all the zip files and rename to avoid conflicting names, archive them to a parent zip folder. 
+As shown below by colouring the downloaded zip files are renamed since the zip file names are conflicting and moved to a common folder called TestCase01. This folder TestCase01 should be zipped and uploaded to Artifactory. </p>
+<p> <img src="images/factory-migration-9.png" alt="factory-migration-9"></p>
+<blockquote><p><strong>Notes</strong>:</p>
+<p>• There is no constraint on folder names. </p>
+<p>• Upon successful test execution, i.e. if all test cases are passed then the TestCase01 component will be promoted to target stage.</p>
+<p>• Only one Test Script/Test Component can be configured in a factory. Thus, if the user wants to run multiple test scenarios and promote it separately to different stages then it should be added in individual factories. </p>
+</blockquote>
 <h2 id="edit-a-factory">Edit a Factory</h2>
 <ul>
 <li>Click the <strong>Edit</strong> button</li>
