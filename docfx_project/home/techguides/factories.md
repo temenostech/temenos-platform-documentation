@@ -135,7 +135,7 @@ The end-user will not be able to run a factory until the Test Script component i
 <br>
 </br>
 
-5.  Create a new **Component** (eg. TestCase01) in the portal. The **Component Type **will be ‘TestScript’ 
+5.  Create a new **Component** (eg. TestCase01) in the portal. The **Component Type** will be ‘TestScript’ 
 
  ![factory-migration-5](./images/factory-migration-5.png)
 <br>
