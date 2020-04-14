@@ -51,7 +51,7 @@ As shown below the multiple .zip files from Artifactory are downloaded and repac
 
  ![factory-migration-8](./images/factory-migration-8.png)
 
-### Other Scenarios ###
+#### Other Scenarios
 **Case 2:**
 
 It is also possible to have multiple Test cases and each Test Case can have multiple scenarios (.zip files). In such cases download all the zip files and rename to avoid conflicting names, archive them to a parent zip folder. 
