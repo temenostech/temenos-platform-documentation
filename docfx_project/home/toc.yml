@@ -63,6 +63,9 @@
          href: ./techguides/components-products.md
        - name: Manage Factories
          href: ./techguides/factories.md
+       - name: Manage Factory Migrations
+         href: ./techguides/factory-migration.md         
+         
        - name: Manage Test Cases Upload
          href: ./techguides/stage-testcases.md
        - name: Run a Factory with "Run Now" Button and Dashboard
