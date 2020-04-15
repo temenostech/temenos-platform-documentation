@@ -45,13 +45,14 @@ The end-user will not be able to run a factory until the Test Script component i
 
  ![factory-migration-7](./images/factory-migration-7.png)
 
+**Other Scenarios**
+
 **Case 1:**
 Note that a Test case can have multiple scenarios (.zip files) in a **Stream**. In such cases download all of the .zip files and re-package them again in a single zip file so that it can be uploaded to Artifactory. 
 As shown below the multiple .zip files from Artifactory are downloaded and repackaged using a parent zip folder called Accounts.zip. This new zip file will be uploaded to the Artifactory as a component.
 
  ![factory-migration-8](./images/factory-migration-8.png)
 
-**Other Scenarios**
 
 **Case 2:**
 
