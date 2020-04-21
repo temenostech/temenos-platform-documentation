@@ -1,5 +1,5 @@
 
-## **TCD Hosting Option**
+## **Temenos Continuous Deployment Hosting Option**
 The Temenos Continuous Deployment platform has two distinct deployment domains as below:
 
  - 
@@ -20,7 +20,7 @@ The advantages of the various offerings:
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;II. a Service Principal; 
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;III. a Resource Group to which the Service Principal had full privileges;
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;IV. B2B collaboration with the bank’s AAD for the subscription. 
-<br>We  require the subscription to be dedicated to sole use for TCD environments. A service agreement is required with Temenos SaaS for the use of the platform component. The bank will be billed directly by their cloud provider for the infrastructure used in their cloud.
+<br>We  require the subscription to be dedicated to sole use for platform environments. A service agreement is required with Temenos SaaS for the use of the platform component. The bank will be billed directly by their cloud provider for the infrastructure used in their cloud.
 Provisioning to the bank’s AWS account is a bespoke configuration and the Temenos team needs to work through the setup and pre-requisites with the bank.<br>
 <br>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;**c) The bank runs it all on their public cloud (AWS or Azure)** - there is no service element to this; the bank has full responsibility for installing and operating the platform. 
 <brbr><br><br>

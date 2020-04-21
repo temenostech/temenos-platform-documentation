@@ -146,8 +146,8 @@ An organization can define as many components as needed but should have all mand
 <p><strong>A. Manually access the artifactory and upload the required binary (recommended).</strong></p>
 <p>Requirements:</p>
 <ul>
-<li><strong>new user</strong>: it is mandatory for the user to have assigned a role which contains CREATE <em> COMPONENT and MANAGE </em> COMPONENTS permissions.</li>
-<li><strong>existing user</strong>: if a user wants to log in to the Artifactory server, the user must change its password and have the CREATE_COMPONENT and MANAGE _COMPONENTS permissions within the role that was assigned to it. To learn how to change the user roles and permissions please refer to this link.</li>
+<li><strong>new user</strong>: it is mandatory for the user to have assigned a role which contains CREATE  <em>  COMPONENT and MANAGE </em> COMPONENTS permissions.</li>
+<li><strong>existing user</strong>: if a user wants to log in to the Artifactory server, the user must change its password and have the CREATE <em> COMPONENT and MANAGE  </em> COMPONENTS permissions within the role that was assigned to it. To learn how to change the user roles and permissions please refer to this <a href="http://documentation.temenos.cloud/home/user-creation-in-paas.html#user-roles-management">link</a>.</li>
 </ul>
 <div class="NOTE"><h5>Note</h5><ul>
 <li>for an already created user that wants to have access to the Artifactory Server, the user must change its password and if its role has those 2 permissions, the user will be added in Artifactory Server</li>
@@ -367,6 +367,22 @@ curl -H &quot;X-JFrog-Art-Api:AKCp5dKYyM9WMoiacim9yedAZfG6gLwwcYugPmzZhqHkdRe6ex
 <h1 id="artifactory-view">Artifactory view</h1>
 <p>The artifactory view displays the uploaded components that are available for the particular stages. By expanding the components, the user triggers a download of the respective component zip file.</p>
 <p><img src="images/artifactory_view.png" alt=""></p>
+<h1 id="user-permissions-required">User Permissions Required</h1>
+<p>To be able to perform the above operations the following permissions need to be enabled for your user:</p>
+<ul>
+<li>CREATE _ COMPONENT</li>
+<li>DELETE _ COMPONENT</li>
+<li>MANAGE _ COMPONENTS</li>
+<li>MANAGE  - ORG  -  METADATA</li>
+<li>MANAGE _ STREAMS</li>
+<li>MANAGE _ STAGES</li>
+<li>CREATE _ STREAM</li>
+<li>MANAGE _ PRODUCTS</li>
+<li>CREATE _ PRODUCT</li>
+<li>UPDATE _ PRODUCT</li>
+<li>DELETE _ PRODUCT</li>
+</ul>
+<p>To understand what which of the permission does, hover the cursor over the variables and a short description will pop up or click <a href="http://documentation.temenos.cloud/home/techguides/user-permissions">here</a> to get an overview of the permissions.</p>
 <p><br></p>
               <hr>
               

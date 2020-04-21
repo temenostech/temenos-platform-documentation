@@ -1,6 +1,6 @@
 ## **What is Temenos Continuous Deployment?**
 
-Temenos Continuous Deployment (TCD) is an offering from Temenos SaaS that provides client individuals and teams with the ability to manage, configure and assemble client licensed Temenos Software – either fully deployed and supported by Temenos SaaS or utilising the client’s own cloud infrastructure. 
+Temenos Continuous Deployment (TCD) is an offering from Temenos SaaS that provides client individuals and teams with the ability to manage, configure and assemble client licensed Temenos Software.
 
 Temenos Continuous Deployment enables you to create Environments, i.e. Temenos Suites on-demand, for non-production use in the cloud. The speed, reliability, and agility of these environments will instantly add value to your implementation and scale your project delivery capacity. 
 
@@ -21,7 +21,7 @@ The Assemble service module can accelerate the pace of change and increase confi
 
 ## **What is the “Extend” service module of the Temenos Continuous Deployment?**
 
-The Extend module of the Temenos Continuous Deployment is used by the ‘change the bank’ teams for self-service management of Environments and provides access to the tools for enhancing Temenos solutions. The TCD portal enables authorised users to provision Environments from a list of Templates. These Environments are for non-production use during development, test, integration, implementation phases. 
+The Extend module of the Temenos Continuous Deployment is used by the ‘change the bank’ teams for self-service management of Environments and provides access to the tools for enhancing Temenos solutions. The portal enables authorised users to provision Environments from a list of Templates. These Environments are for non-production use during development, test, integration, implementation phases. 
 
 ## **Features**
 
@@ -29,7 +29,7 @@ The Extend module of the Temenos Continuous Deployment is used by the ‘change 
 
 **Self-service environment provisioning**
 
-- An authenticated user, e.g. a developer or tester, has the ability to request an environment from the catalogue of templates; this template will be materialised into compute, storage, and networks on the Temenos SaaS. See architecture. The administrator, e.g. the project manager, is in control of number of the users and maximum number of running environments, thus having total control of the platform and its usage. 
+- An authenticated user, e.g. a developer or tester, has the ability to request an environment from the catalogue of templates; this template will be materialised into compute, storage, and networks on the Temenos SaaS. The administrator, e.g. the project manager, is in control of number of the users and maximum number of running environments, thus having total control of the platform and its usage. 
 
 **Secure configuration and environment management**
 
