@@ -5911,12 +5911,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/selenium-template.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/selenium-template.html",
-          "hash": "NTw0F4m0cEomiGvk+OBRRA=="
+          "hash": "D6WQTnYiCbzIwnkQch1d4A=="
         }
       },
       "is_incremental": false,
