@@ -254,3 +254,6 @@ The test framework should generate the manifest.xml file with the above details.
     <result>FAIL</result>
     <hostName></hostName>
     </Manifest>
+
+By clicking on <a href="selenium-automation" download>**THIS**</a> link you can download a sample Selenium Test framework which is capable of running sample UI based tests.
+
