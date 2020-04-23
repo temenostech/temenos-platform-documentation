@@ -255,5 +255,6 @@ The test framework should generate the manifest.xml file with the above details.
     <hostName></hostName>
     </Manifest>
 
+By clicking <a href="zip/selenium-automation.zip" download="selenium-automation.zip">here</a> you will be able to download a sample of the Selenium Test framework, which is capable of running sample UI based tests. 
 
 
