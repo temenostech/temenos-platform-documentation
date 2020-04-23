@@ -21,4 +21,4 @@ By default, new Templates are added with each monthly release of T24. These Temp
 
 However, the Temenos Continuous Deployment Platform team also offer the ability to create customised Templates for clients. 
 
-Furthermore, please find **[here](http://documentation.temenos.cloud/home/temenos-cloud-templates-list.html?q=templa)** the current templates catalogue. The standard configuration of each template can be explored by clicking the required template from the list. 
+Furthermore, please find **[here](http://documentation.temenos.cloud/home/techguides/templates-list.html)** the current templates catalogue. The standard configuration of each template can be explored by clicking the required template from the list. 
