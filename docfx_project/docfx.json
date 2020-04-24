@@ -44,6 +44,7 @@
           "home/images/**",
           "home/techguides/images/**",
           "home/scripts/**",
+          "home/zip/**",
 		  "home/**.pdf",
 		  "home/pdf/**.pdf",
 		  "*.pdf"
