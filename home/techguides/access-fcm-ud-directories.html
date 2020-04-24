@@ -89,57 +89,62 @@
 <li>From Cloud Native field select <strong>FCM</strong></li>
 <li>Please select the <strong>FCM Template</strong> that was assigned to your organisation</li>
 </ul>
-<p>It will take about 15-20 minutes for the new environment to be created</p>
+<p>It will take about 60-90 minutes for the new environment to be created</p>
 <h2 id="create-a-user-on-the-portal">Create a User on the Portal</h2>
 <p>This is required later when connecting to T24 through SFTP server connection, because it checks the authentication to the cloud environment with that specific user and the attached SSH key. </p>
 <p>To see all the steps regarding how to add a new user on the portal and to attach the SSH key, please see the following user guide about how to <a href="user-creation-in-paas.html"><strong>Create Users</strong></a>.</p>
 <h2 id="connect-via-sftp-client">Connect via SFTP Client</h2>
 <ul>
 <li>In order to have access to the FCM Cloud Application live folders, you can install an FTP client from <a href="https://winscp.net/eng/index.php">https://winscp.net/eng/index.php</a></li>
-<li>Open WinSCP application and fill the mandatory fields:<ul>
+<li><p>Open WinSCP application and fill the mandatory fields:</p>
+<ul>
 <li>Host name &gt; copy it from the environment endpoint: sftp.temenos.cloud <em>(see image below)</em></li>
-<li>User name &gt; input the exact name of the user added to the portal
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/access-fcm-endpoints.png" alt="sftp fields"><ul>
-<li>Click <strong>Advanced</strong></li>
-<li>In the new screen, select <strong>SSH Authentication</strong> </li>
-<li>Upload the private key previously saved (corresponding to the public key attached to the portal user)</li>
-<li>Click <strong>OK</strong></li>
-</ul>
-</li>
-</ul>
-</li>
+<li><p>User name &gt; input the exact name of the user added to the portal
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/access-fcm-endpoints.png" alt="sftp fields"></p>
+<ul>
+<li>click <strong>Advanced</strong></li>
+<li>on the new screen (the right screenshot below), select <strong>SSH -  Authentication</strong> </li>
+<li>upload the private key previously saved (corresponding to the public key attached to the portal user) and click <strong>OK</strong></li>
+<li>now you can click <strong>Login</strong> on the lef-side screenshot</li>
 </ul>
 <p><img src="images/access-fcm-ud-sftp-fields.png" alt=""></p>
-<ul>
-<li>Previous screen pops-up, click <strong>Login</strong></li>
+</li>
+</ul>
+</li>
 </ul>
 <h2 id="check-and-use-live-folders">Check and Use Live Folders</h2>
 <ul>
-<li>After logging in, on the right window, locate your environment ID</li>
+<li>after logging in, on the right window, locate your environment ID</li>
 </ul>
-<p><img src="images/environment-id-fcm.png" alt="">
+<p> <img src="images/environment-id-fcm.png" alt="">
 <br><br></p>
 <ul>
-<li>Double click to access the live folders of the environment</li>
+<li>double click to access the live folders of the environment</li>
 </ul>
-<p><img src="images/open-live-folders-fcm.png" alt=""></p>
+<p> <img src="images/open-live-folders-fcm.png" alt=""></p>
 <ul>
-<li><p>You will be able to see and access the following T24 live folders structure. These folders will be populated by the client with the accounts, customer-information and operations desired. Once processed the formation will dissapear from SFTP and will be visible in the FCM application.</p>
+<li><p>you will be able to see and access the following FCM live folders structure. These folders will be populated by the client with the accounts, customer-information and operations desired. Once processed the formation will dissapear from SFTP and will be visible in the FCM application.</p>
 <ul>
 <li><span style="color:orange"><strong>accounts</strong></span></li>
 <li><span style="color:orange"><strong>customer-information</strong></span></li>
 <li><span style="color:orange"><strong>operations</strong></span></li>
 </ul>
+<p><img src="images/fcm-live-folders.png" alt=""></p>
 </li>
 </ul>
-<p><img src="images/fcm-live-folders.png" alt=""></p>
 <h1 id="access-fcm-ud-directories-via-gitlab">Access FCM UD Directories via GitLab</h1>
 <p>Clone the GitLab repository of your Environment in your local machine. For more details on how to clone a repository, check this <a href="http://documentation.temenos.cloud/home/techguides/deploy-an-update-to-an-existing-environment.html#clone-environment-repository">page</a>. The cloned repo will look as per the screenshot below. 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/fcm-folder-gitlab.png" alt=""></p>
+ <img src="images/fcm-folder-gitlab.png" alt=""></p>
 <ul>
-<li>click to open the folder </li>
+<li>click to open the folder. You will see the following sub-folders:</li>
 </ul>
-<p><img src="images/fcm-gitlab-subfolders.png" alt=""></p>
+<p> <img src="images/fcm-gitlab-subfolders.png" alt=""></p>
+<ul>
+<li><p>if you click on the <strong>client_files</strong> folder you will be able to see the following sub-folders:</p>
+<p><img src="images/fcm-golden-copy.png" alt=""></p>
+</li>
+</ul>
+<p>The below table explains each folder&#39;s role::</p>
 <table>
 <thead>
 <tr>
@@ -153,8 +158,8 @@
 <td>This folder is designed for AppDynamics. Upload files as JAR.</td>
 </tr>
 <tr>
-<td>client_files\h2db</td>
-<td>Local H2 database that will be uploaded to the Cloud Environment. Database username must be t24 and password t24 (case sensitive). Database name is mandatory to be “TAFJDB.h2.db” (case sensitive) and must be archived as a ZIP with name TAFJDB.zip (case sensitive). If the above conditions are not satisfied, the database will not be uploaded to the Cloud Environment. This procedure will <strong>replace</strong> the existing database in the cloud with this one. The <strong>old database</strong> will be <strong>lost</strong>, including any records loaded manually.</td>
+<td>client_files\fcmdb</td>
+<td>Once the cloning process is completed, copy the local FCMDB database in this folder. This will upload your database to the Cloud  Environment. IMPORTANT - the convention name is mandatory “FCMDB” (case sensitive) and must be archived as a ZIP file with name FCMDB.zip (case sensitive). If the above conditions are not satisfied, the database will not be uploaded to the Cloud Environment. This procedure will replace the existing database in the cloud with this one. The old database will be lost, including any records that were loaded manually.</td>
 </tr>
 <tr>
 <td>client_files\helptext</td>
@@ -186,6 +191,9 @@
 </tr>
 </tbody>
 </table>
+<blockquote><p><strong>Note:</strong>
+during the environment creation time the  customer can also upload the FCM-Golden copy to the cloud environment.</p>
+</blockquote>
 <h1 id="user-permissions-required">User Permissions Required</h1>
 <p>To be able to perform the above operations the below permissions need to be enabled for your user:</p>
 <ul>

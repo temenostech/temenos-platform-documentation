@@ -854,7 +854,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/access-fcm-ud-directories.html",
-          "hash": "tvHC0GkWfmVOhh0lYOL3Iw=="
+          "hash": "O8SKgZER+nrThAyIh7PyOQ=="
         }
       },
       "is_incremental": false,
@@ -3256,6 +3256,17 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/fcm-gitlab-subfolders.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/fcm-golden-copy.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/fcm-golden-copy.png"
         }
       },
       "is_incremental": false,
@@ -6305,6 +6316,11 @@
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "RestApiDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -6316,11 +6332,6 @@
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
-          "incrementalPhase": "build"
-        },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
