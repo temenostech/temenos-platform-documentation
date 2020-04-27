@@ -6019,18 +6019,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "home/techguides/tafj-db-setup.md",
-      "output": {
-        ".html": {
-          "relative_path": "home/techguides/tafj-db-setup.html",
-          "hash": "qvyCQCY4/Lf3rY8FgAgXXQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "home/techguides/templates-list.md",
       "output": {
         ".html": {
@@ -6146,7 +6134,7 @@
       "output": {
         ".html": {
           "relative_path": "home/toc.html",
-          "hash": "wcV9CkpLroqIpOuLtdjxVg=="
+          "hash": "ST865SxEINNtUv70Egbclw=="
         }
       },
       "is_incremental": false,
@@ -6327,14 +6315,6 @@
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build"
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -6343,6 +6323,14 @@
         "RestApiDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
           "incrementalPhase": "build"
         }
       }
