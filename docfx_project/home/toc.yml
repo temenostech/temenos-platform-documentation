@@ -95,8 +95,6 @@
      items:
        - name: Extend Troubleshooting
          href: ./techguides/troubleshooting.md
-       - name: DB Conversion Instructions 
-         href: ./techguides/tafj-db-setup.md
    - name: Assemble
      items:
        - name: Fix Issues at Factory Run
