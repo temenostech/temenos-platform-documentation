@@ -3439,6 +3439,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/gwpack-l3.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/gwpack-l3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/hostname.png",
       "output": {
         "resource": {
@@ -5705,6 +5716,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/tti-l3.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/tti-l3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/use-git-deploy.png",
       "output": {
         "resource": {
@@ -6030,18 +6052,6 @@
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "home/techguides/templatesdraft.md",
-      "output": {
-        ".html": {
-          "relative_path": "home/techguides/templatesdraft.html",
-          "hash": "6qQkw2Ek4nkQJH7vjsVtzg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "log_codes": [
         "InvalidFileLink"
       ],
@@ -6099,18 +6109,6 @@
         ".html": {
           "relative_path": "home/technical-overview.html",
           "hash": "5yhFib9D0vlCdRyuxVCcUg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "home/temenos-cloud-templates-list.md",
-      "output": {
-        ".html": {
-          "relative_path": "home/temenos-cloud-templates-list.html",
-          "hash": "FPxLR5Q9uP4EKJVO5m3/ag=="
         }
       },
       "is_incremental": false,
