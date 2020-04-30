@@ -781,10 +781,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/pdf/wealth-components-list.pdf",
+      "source_relative_path": "home/pdf/wealthsuite-components.pdf",
       "output": {
         "resource": {
-          "relative_path": "home/pdf/wealth-components-list.pdf"
+          "relative_path": "home/pdf/wealthsuite-components.pdf"
         }
       },
       "is_incremental": false,
