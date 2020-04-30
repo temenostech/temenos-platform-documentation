@@ -925,7 +925,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/components-products.html",
-          "hash": "oaSFscqE+dv0KjnwPMVQYw=="
+          "hash": "dBVcdF+yUdZLpbwns8mf+w=="
         }
       },
       "is_incremental": false,
@@ -1924,17 +1924,6 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/components-and-products-uploadurl.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/components-list.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/components-list.png"
         }
       },
       "is_incremental": false,
