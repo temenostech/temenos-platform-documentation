@@ -11,7 +11,7 @@ An organization can define as many components as needed but should have all mand
 Practically when a template is assigned to an organization, a list of component types related to that template is added for that organization.
 
 Each component has the following fields *(all mandatory)*:
-
+ 
 - Component Type
 
 - Name
@@ -216,13 +216,29 @@ d) Any other IN and OUT message directories used for interfaces
 
 e) User directories or BPs created by developers and the local source code in them for testing purposes
 
-#  Wealth suite golden  copy pre-requisites # 
+#  Wealth suite golden  copy pre-requisites 
+
+All the wealth templates have the ability to deploy the following components:
+
+![](./images/components-list.png)
+
+| Component description | Can this be client specific | How to change in extend env                                                                                                                                      | How to change in an assemble factory                                                                                                                                                                                                                                          |
+|-----------------------|-----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Tap-core              | Yes                         | Client golden copy / ISB build must be  uploaded into artifactory and the respective template manifest file (i.e. components file) updated with artifactory path | The client binary should be uploaded to the appropriate stream/stage folder in the artifactory. The exact location can be found in the TCD portal components configuration page. After creating components in the TCD portal, the upload URL will be populated automatically. |
+| OCS                   | Yes                         | Same as above                                                                                                                                                    | Same as above                                                                                                                                                                                                                                                                 |
+| OCS-Custom            | Yes                         | Same as above                                                                                                                                                    | Same as above                                                                                                                                                                                                                                                                 |
+| TTI                   | Yes                         | Same as above                                                                                                                                                    | Same as above                                                                                                                                                                                                                                                                 |
+| TTI -L3               | Yes                         | Same as above                                                                                                                                                    | Same as above                                                                                                                                                                                                                                                                 |
+| GWPack                | Yes                         | Same as above                                                                                                                                                    | Same as above                                                                                                                                                                                                                                                                 |
+| GWPack-L3             | Yes                         | Same as above                                                                                                                                                    | Same as above                                                                                                                                                                                                                                                                 |
+| Tap-Wsc               | Yes                         | Same as above                                                                                                                                                    | Same as above                                                                                                                                                                                                                                                                 |
+| Tap- GUI              | Yes                         | Same as above                                                                                                                                                    | Same as above                                                                                                                                                                                                                                                                 |
 
 ## TAP CORE  
 
 &nbsp; **Database-generic**
 
-- The golden copy of the TAP DB must be obtained  by doing an extract using the cloning tool (cloning tool version to be used should be the one delivered with Wealth distribution)
+- The golden copy of the TAP DB must be obtained  by doing an extract using the cloning tool (the cloning tool version to be used should be the one delivered with Wealth distribution)
 
 - The golden copy of TAP database must be delivered with golden copy of TAP Core binaries (in sync)
 
@@ -242,19 +258,50 @@ e) User directories or BPs created by developers and the local source code in th
 
 ## GWPACK - L3 ##
 
-- L3 GWPACK format must suit exact format to be provided by Temenos 
+- **Important!** The L3 GWPACK format must follow the structure below. Any mismatch in folder structure/folder/file name leads to non-processing of L3 deployment files.
 
-- There’s no L3 extraction mechanism provided by Product at this stage. Waiting for this product feature to be delivered, client must maintain L3 development in his repository mechanism, and publish packages to be testing in TCD
+- There’s no L3 extraction mechanism provided by Product at this stage. Waiting for this product feature to be delivered, client must maintain L3 development in his repository mechanism, and publish packages to be testing in TCD.
 
-- Distribution must come as a single full distribution (i.e. any update/hotfix must be delivered in TCD platform as a full release to be requested to Distribution team
+- Distribution must come as a single full distribution (i.e. any update/hotfix must be delivered in TCD platform as a full release to be requested to Distribution team.
+
+ ![](./images/gwpack-l3.png)
+
+ This table explains what each folder and sub-folder from the above screenshot:
+
+| File                          | Details                                                                                                                                                                                                                                                             |
+|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| GWP\GWPACK.cfg                | Customization is required in the environment as part of L3 is listed in GWPACK.cfg file.                                                                                                                                                                            |
+| GWP\ mrn.csv                  | In this file, the WTX executable to be used has to be updated with the variable and value parameters ending with semicolon. It is updated for each line with semi colon separator in the CSV file (variable:value;).  Eg.:  GWPACK_ONLINE_IMPORT_OPTIM:-m -O -B100; |
+| Scripts\ XX_GWPACK_TTI_Att.sh | This file contains shell scripts which will be executed on top of GWP L1 deployment and shell scripts execution sequence will be based on shell script name 01_{.*}.sh, 02_{.*}.sh   Eg.: 01_GWPACK_TTI_Att.sh 02_GWP_Config.sh                                     |
+
+
 
 ## TTI -L3 ##
 
-- L3 GWPACK format must suit exact format to be provided by Temenos 
+
+
+- The TTI L3 Package must follow the below format to follow a correct processing in the given environment. It is mandatory for the main folder to be a ZIP format.
+
+
 
 - There’s no L3 extraction mechanism provided by Product at this stage. Waiting for this product feature to be delivered, client must maintain L3 development in his repository mechanism, and publish packages to be testing in TCD
 
+
+
 - Distribution must come as a single full distribution (i.e. any update/hotfix must be delivered in TCD platform as a full release to be requested to Distribution team
+
+ ![](./images/tti-l3.png)
+
+ See below the description for the above structure:
+
+| Folder Path            | Explanation                                                                                                                                                                                                                                                                                                 |
+|------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| BarFilesConfig Folder  | The bar file which needs to deployed in IIB should have corresponding bar properties file naming convention. Eg: TTI-T24-Jms.bar.properties1 temenos.tti.connectors.B2F_T24toIN#JMS Input.sourceQueueName=jms/queue/t24IFInboundQueue These properties would be overwritten in the Bar file and redeployed. |
+| BusConfig Folder       | This folder contains properties and configuration files of TTI deployment.                                                                                                                                                                                                                                  |
+| Event&Flows_jar folder | This folder contains L3 updates for T24, specifically T24 DS. The L3 update is of jar type which will be compiled and published in T24 upon deployment. If there are no T24 updates, this folder can be left empty                                                                                          |
+| XSLT → CustomerType    | CustomerType folder can consists of xsl files which are present both in L3 package and in L1 deployment. This should be of format “FileName-Custo.xsl”                                                                                                                                                      |
+| XSLT → L3Newflow       | L3Newflow folder can consists of xsl files which are present only in L3 package and not in L1 deployment.                                                                                                                                                                                                   |
+
 
 ## TAP Web ##
 
