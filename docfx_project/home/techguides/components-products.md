@@ -218,9 +218,8 @@ e) User directories or BPs created by developers and the local source code in th
 
 #  Wealth suite golden  copy pre-requisites 
 
-All the wealth templates have the ability to deploy the following components:
+All the wealth templates have the ability to deploy the components from <a href="http://documentation.temenos.cloud/home/pdf/wealth-components-list.pdf " target="_blank"><u>**THIS**</u></a> document. Below you can find a table with additional comments for each component as well:  
 
-![](./images/components-list.png)
 
 | Component description | Can this be client specific | How to change in extend env                                                                                                                                      | How to change in an assemble factory                                                                                                                                                                                                                                          |
 |-----------------------|-----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
