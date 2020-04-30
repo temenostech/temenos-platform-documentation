@@ -220,7 +220,7 @@ e) User directories or BPs created by developers and the local source code in th
 
 All the wealth templates have the ability to deploy the components listed in  <a href="http://documentation.temenos.cloud/home/pdf/wealthsuite-components.pdf " target="_blank"><u>**THIS**</u></a> document. By clicking on the file you will also find a table with additional details for each component.
 
- 
+  
 
 ## TAP CORE  
 
