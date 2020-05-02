@@ -82,23 +82,17 @@
 <h2 id="factories">Factories</h2>
 
 <p>Factories are the core Assemble components that define how, what and when to deploy, test and promote the various components used by an organization. </p>
-<p>A factory is an information bundle that holds the following critical information that is needed to run an assembly factory:</p>
-<p><em><span style="background-color: #f4f1ef;color: DarkBlue;"><b>Name</b></span></em> &nbsp;</p>
-<ul>
-<li>Used just to identify or tag a factory</li>
-</ul>
-<p><br></p>
-<p><em><span style="background-color: #f4f1ef;color: DarkBlue;"><b>Products</b></span></em> &nbsp;</p>
-<p>a. <strong>Principle Products</strong> – Principle products simply mean the list of components that are being tested against a stable set of other pre-tested components. After successfully running the factory, the principle products are promoted to the next stage (the configured one).</p>
-<p>b. <strong>Other products</strong> <em>(Base Products)</em> – Products that are pre-tested (by other factories) and are known to be stage.  These are products that don’t need to be promoted but they are required to test the Principle Products.</p>
-<p><br></p>
-<p><em><span style="background-color: #f4f1ef;color: DarkBlue;"><b>Stages</b></span></em> &nbsp;</p>
-<p>a. From stage (Which stage to get the principle components from) – <strong>Source stage</strong> (The stage from which pre-tested stable components can be picked up).</p>
-<p>b. <strong>Source Stage</strong> – The stage from which the “Other Products” <em>(Base Products)</em> components are fetched. This stage represents a stable version of components that is pre-tested from the perspective of the current factory.</p>
-<p><br></p>
-<p><em><span style="background-color: #f4f1ef;color: DarkBlue;"><b>Templates</b></span></em> &nbsp;</p>
-<p>a. <strong>Environment Template</strong> - holds the details of the template that is to be used to deploy the components selected by the factory</p>
-<p>b. <strong>Test Template</strong> – specifies the template that is required to deploy a test environment that holds the testing framework and test scripts. This is needed to generalize the test tools as a template.</p>
+<p>Below you will find the pre-requisites to run a factory:</p>
+<p><strong>- 1 stream</strong></p>
+<p><strong>- 2 stages within the stream you created</strong></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; a. Source stage - the stage from which pre-tested stable components can be picked up</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; b. Base/Test Stage – the stage from which the “Other Products” <em>(Base Products)</em> components are fetched. This stage represents a stable version of components that is pre-tested from the perspective of the current factory.</p>
+<p><strong>- 2 products</strong></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; a. Principle Products – Principle products simply mean the list of components that are being tested against a stable set of other pre-tested components. After successfully running the factory, the principle products are promoted to the next stage (the configured one).</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; b. Other products <em>(Base Products)</em> – Products that are pre-tested (by other factories) and are known to be stage.  These are products that don’t need to be promoted but they are required to test the Principle Products.</p>
+<p><strong>- 2 templates</strong></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; a. Environment Template - holds the details of the template that is to be used to deploy the components selected by the factory</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; b. Test Template – specifies the template that is required to deploy a test environment that holds the testing framework and test scripts. This is needed to generalize the test tools as a template.</p>
 <p><br></p>
 <h2 id="validations">Validations</h2>
 <ol>
