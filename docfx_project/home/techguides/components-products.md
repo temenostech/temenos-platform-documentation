@@ -64,6 +64,7 @@ A folder is automatically created into the repository *(we are using JFrog Artif
 
 *(If the related artifacts are not uploaded, running the factory will not be possible and an error message will be thrown).*
 
+
 # How to login to Artifactory #
 Every user created in the Temenos Continuous Deployment Platform can log in with the platform’s credential on the Artifactory server as well. Follow the steps below to login to the Artifactory:
 
@@ -332,6 +333,8 @@ You can edit:
 > [!Note]
 > If the respective product is attached to a factory, you will not be able to delete. You need to delete the factory first.
 
+ To see the details of a component please make sure to first select the stream from the top-right-side menu. The list with the components that belong to the respective stream will be displayed on the left side of the page. The same operation applies for the products:
+![](./images/components-see-details.png)
 
 # Artifactory view #
 
