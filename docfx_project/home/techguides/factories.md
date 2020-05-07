@@ -5,6 +5,7 @@ Factories are the core Assemble components that define how, what and when to dep
 
 Below you will find the pre-requisites to run a factory:
 
+# Pre-requisites 
 **- 1 stream**
 
 **- 2 stages within the stream you created**
@@ -50,9 +51,7 @@ Below you will find the pre-requisites to run a factory:
 > [!Note]
 > See below configurations to understand better how to configure correctly and the factory's behavior.
 
-# How to Set-up/ Edit/ Delete Factories 
-
-## Set-up/ Create a Factory ##
+# Set-up/ Create a Factory #
 
 - Click on Settings button on the main menu on the left.
 - Make sure you select first the **Stream** and **Stage** (this is the stage where components are promoted) where you want to create a factory and then click **New Factory** button on the top-right.
@@ -60,12 +59,12 @@ Below you will find the pre-requisites to run a factory:
 <b>
 </br>
 
-#### Factory Details ####
+## Factory Details 
 - **Factory Name**: choose a meaningful name for your factory.
 - **Factory Description**: insert a description that will help knowing what the factory is about.
 ![factory-details](./images/factory-details.png)
 
-#### Product Configuration ####
+## Product Configuration 
 This tab represents the test configuration that holds the template, the products and the source stage that are pre-tested from the perspective of the current factory.
     - **Template**: choose an Environment Template from the dropdown list. Based on this template  the environments will be created where you will be able to test different products
     - **Select Principle Products**: following a successful run, the principle products are promoted to the next stage (the configured one)
@@ -74,9 +73,9 @@ This tab represents the test configuration that holds the template, the products
     - click **Next**
 ![factory-product-configuration](./images/factory-product-configuration.png) 
 
-#### Test Configuration
+## Test Configuration
 The Test Configuration consists in in-build service tasks and is used to  trigger tests for a given factory-run, trigger export of application logs.
-    - **Select Workflow**: a drop-down list with factory workflows added by the Temenos team. In the future users will be able to create their own workflows. As of now, there is one default workflow that is assigned to the users. By request, the Temenos Cloud and DevOps team can provide 3 additional workflows (COB Workflow, Full Workflow and Two Steps without COB Workflow). Depending on the user's workflow, additional configuration steps may need to be followed. Below is an example of how the Full Workflow should be configured:
+    - **Select Workflow**: a drop-down list with factory workflows that is either added by the Temenos team or can be created by the user.  By request, the Temenos Cloud and DevOps team can provide 3 additional workflows (COB Workflow, Full Workflow and Two Steps without COB Workflow). Depending on the user's workflow, additional configuration steps may need to be followed. Below is an example of how the Full Workflow should be configured:
         - **Step 1**: select the test template, component, the number of VMs needed, the test stage and tick if the workflow should stop in case of failure. At the end of this step, when the first round of tests has been finished, the test VM will be deleted, but it will not stop the T24 environment (this will be done at the end of the workflow)
         - **Step 2**: type in the ID of the TSA.SERVICE record for which COB has to be run. The id can be either group specific id (eg: COB-1, COB-001) , company specific id (eg: COB-GB0010001) or COB 
         - **Step 3**:  insert the template, component, the number of VMs needed and the test stage  where you would like to test the components
@@ -86,7 +85,7 @@ The Test Configuration consists in in-build service tasks and is used to  trigge
     - **Workflow steps**: a sample which displays the steps (in that exact sequence) that are executed by the selected workflow
 ![factory-test-configuration](./images/factory-test-configuration.png)
 
-#### Promotion Configuration
+## Promotion Configuration
 This configuration enables the user to select all the required principle products along with the target stage to which they will be promoted after a successful factory run. In addition, the user can select the Test Components along with the target stage if they need promotion as well. 
 ![factory-promotion-configuration](./images/factory-promotion-configuration.png)
 
@@ -97,6 +96,9 @@ A user has the privilege to configure the schedule of the factory run in order t
 - the same applies for the Factory Run Failure scenario
 The 'Stop Environment' and 'Keep Running Environment' options are aimed to be used for costs purposes
 ![factory-scheduler](./images/factory-scheduler.png)
+
+ To see the details of a factory please make sure to first select the stream and the stage from the top-right-side menu. If you have more stages, click on the stage where you created the respective factory. The list with the factories that belong to the respective stage will be displayed on the left side of the page:
+![](./images/factory-see-details.png)
 
 
 ## Edit a Factory ##
@@ -126,4 +128,4 @@ To be able to perform the above operations the following permissions need to be 
 
 
 
-To understand what which of the permission does, hover the cursor over the variables and a short description will pop up or click [here](http://documentation.temenos.cloud/home/techguides/user-permissions) to get an overview of the permissions.
+To understand what each of the permission does, hover the cursor over the variables and a short description will pop up or click [here](http://documentation.temenos.cloud/home/techguides/user-permissions) to get an overview of the permissions.
