@@ -759,10 +759,32 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/pdf/application-server-start-up-script.pdf",
+      "output": {
+        "resource": {
+          "relative_path": "home/pdf/application-server-start-up-script.pdf"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/pdf/develop-T24-packages.pdf",
       "output": {
         "resource": {
           "relative_path": "home/pdf/develop-T24-packages.pdf"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/pdf/standalone-xml-configuration.pdf",
+      "output": {
+        "resource": {
+          "relative_path": "home/pdf/standalone-xml-configuration.pdf"
         }
       },
       "is_incremental": false,
@@ -920,15 +942,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/components-products.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/components-products.html",
-          "hash": "85NvZb78xMl8dmy0PW3lpg=="
+          "hash": "TVrf6uIBOyWCmKP9srVRMw=="
         }
       },
       "is_incremental": false,
@@ -1956,6 +1975,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/components-see-details.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/components-see-details.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/connection-type.png",
       "output": {
         "resource": {
@@ -2671,6 +2701,28 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/edit-delete-workflow.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/edit-delete-workflow.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/end-workflow.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/end-workflow.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/endpoint-added.png",
       "output": {
         "resource": {
@@ -2851,6 +2903,17 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/environment-schedule.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/environment-see-details.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/environment-see-details.png"
         }
       },
       "is_incremental": false,
@@ -3166,6 +3229,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/factory-see-details.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/factory-see-details.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/factory-test-configuration.png",
       "output": {
         "resource": {
@@ -3346,6 +3420,17 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/file-location.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/full-workflow.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/full-workflow.png"
         }
       },
       "is_incremental": false,
@@ -4486,6 +4571,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/product-see-details.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/product-see-details.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/products-add-component.png",
       "output": {
         "resource": {
@@ -5212,10 +5308,43 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/stages-see-details.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/stages-see-details.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/start-all-user-env.png",
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/start-all-user-env.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/start-cob.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/start-cob.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/start-workflow.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/start-workflow.png"
         }
       },
       "is_incremental": false,
@@ -5238,6 +5367,17 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/streams-cloned.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/streams-see-details.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/streams-see-details.png"
         }
       },
       "is_incremental": false,
@@ -5608,6 +5748,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/testpage.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/testpage.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/toggle-breakpoint.png",
       "output": {
         "resource": {
@@ -5700,6 +5851,17 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/trigger-new-template.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/trigger-test.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/trigger-test.png"
         }
       },
       "is_incremental": false,
@@ -5839,6 +6001,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/user-see-details.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/user-see-details.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/users-tab.png",
       "output": {
         "resource": {
@@ -5876,6 +6049,17 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/wizard-routine.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/workflow-tab.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/workflow-tab.png"
         }
       },
       "is_incremental": false,
@@ -6314,6 +6498,11 @@
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "RestApiDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -6325,11 +6514,6 @@
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
-          "incrementalPhase": "build"
-        },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
