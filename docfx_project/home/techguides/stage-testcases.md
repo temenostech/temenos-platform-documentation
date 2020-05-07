@@ -1,5 +1,7 @@
 # Upload and Delete Test Cases #
 
+>**Note: Due to the latest Temenos Continuous Deployment platform upgrades this page will shortly be removed from the documentation portal. You should refer to the [Factory Migration](http://documentation.temenos.cloud/home/techguides/factory-migration.html) instructions instead.**
+
 ## Upload Test Cases ##
 
 For any new created stage, there is automatically created into the Artifactory a **TestCase** folder where the tests can be manually uploaded.
