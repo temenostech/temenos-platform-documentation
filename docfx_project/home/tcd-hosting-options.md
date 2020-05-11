@@ -2,15 +2,15 @@
 ## **Temenos Continuous Deployment Hosting Option**
 The Temenos Continuous Deployment platform has two distinct deployment domains as below:
 
- - 
- the “Platform Cloud” where the provisioning software runs;
- - 
- the “Target Cloud” where the T24 environments are provisioned.
+ - the “Platform Cloud” where the provisioning software runs;
+ 
+ - the “Target Cloud” where the T24 environments are provisioned.
 
-<br>There are a number of options:
-<br>&nbsp; &nbsp;1. All hosted on Temenos SaaS - this is Azure;
-<br>&nbsp; &nbsp;2. The Platform component is hosted on Temenos SaaS. The Target Cloud is a bank’s public cloud - the hybrid model (target cloud is an Azure subscription owned by the bank);  <br />
-&nbsp; &nbsp;3. All hosted on the bank’s cloud - all hosted on the bank’s AWS account.  <br />
+<br>There are a number of options: 
+
+&nbsp; &nbsp;1. All hosted on Temenos SaaS - this is Azure;
+
+&nbsp; &nbsp;2. All hosted on the bank’s cloud - all hosted on the bank’s AWS account.  <br />
 
 <br>
 The advantages of the various offerings:
