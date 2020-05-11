@@ -8,7 +8,6 @@
 
 <span style="color:#005294">**Total video time**</span>: **20:59 minutes**
 <br>
-<span style="color:#005294">**Total demo time**</span>: **~ 35 minutes** (from which **15 minutes** the creation of the environment)
 
 <br>
 <span style="color:#005294">**INFO**</span>:

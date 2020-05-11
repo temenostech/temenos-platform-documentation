@@ -8,7 +8,7 @@
 
 <span style="color:#005294">**Total video time**</span>: **7:28 minutes**
 <br>
-<span style="color:#005294">**Total demo time**</span>: **~ 20 minutes** (from which **15 minutes** the cloning of the environment)
+<span style="color:#005294">**Total demo time**</span>: **~ 20 minutes** (depending on the time used to clone the environment)
 
 <span style="color:#005294">**INFO**</span>:
 <br>

@@ -43,7 +43,7 @@ All fields are mandatory except 'Labels'.
 <br>
 
 > [!Note]
-> The environment creation may take around 20 minutes or more, depending on the selected template.
+> The environment creation time will vary depending on the selected template.
 
 
 - **Templates**
