@@ -4,7 +4,6 @@
 This page provides information about the monthly Temenos Continuous Deployment Platform features and improvements in each release.
 
 # **2020.05 Release Notes** 
-**InfraBuild**: 362 &nbsp;| **PortalTag**: cloudPortal_1.79e &nbsp; |  **ControllerBuild**: 26
 
 ## Technical enhancements
 &nbsp;&nbsp;&nbsp;&nbsp;**1. The STOP environments button displays an error after rebuild**
