@@ -141,3 +141,5 @@ You can use any other SSH key generator client.
 To be able to create a user the below permission needs to be enabled for your user:
 
 - CREATE _ USER
+
+To have a better understanding of the user permissions, hover the cursor over the variables and a short description will pop up or click [here](http://documentation.temenos.cloud/home/techguides/user-permissions) to read more.

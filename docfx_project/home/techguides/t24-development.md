@@ -63,4 +63,4 @@ To be able to perform the above operations the below permissions need to be enab
 - REDEPLOY _ ENVIRONMENT
 - MANAGE _ ENVIRONMENTS 
 
-To understand what each of the permission does, hover the cursor over the variables and a short description will pop up or click [here](http://documentation.temenos.cloud/home/techguides/user-permissions) to get an overview of the permissions.
+To have a better understanding of the user permissions, hover the cursor over the variables and a short description will pop up or click [here](http://documentation.temenos.cloud/home/techguides/user-permissions) to read more.
