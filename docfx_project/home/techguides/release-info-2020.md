@@ -35,7 +35,11 @@ Check the  [**Manage Factories**](http://documentation.temenos.cloud/home/techgu
 ## User experience improvements
 
 &nbsp;&nbsp;&nbsp;&nbsp; User selection is mandatory to display details. .
+<br>
+</br>
 
+<br>
+</br>
 # **2020.02 Release Notes** #
 **InfraBuild**: 362 &nbsp;**|**&nbsp; **PortalTag**: cloudPortal_1.79e
 &nbsp;**|**&nbsp; **ControllerBuild**: 26
