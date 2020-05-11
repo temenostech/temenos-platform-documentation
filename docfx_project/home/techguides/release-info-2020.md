@@ -3,7 +3,9 @@
 
 This page provides information about the monthly Temenos Continuous Deployment Platform features and improvements in each release.
 
-# **2020.05 Release Notes** 
+# **2020.04 Release Notes** 
+**InfraBuild**: 28 &nbsp;**|**&nbsp; **PortalBuild**: 1658
+&nbsp;**|**&nbsp; **ControllerBuild**: 99 &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202004.1 
 
 ## Technical enhancements
 &nbsp;&nbsp;&nbsp;&nbsp;**1. The STOP environments button displays an error after rebuild**
@@ -25,7 +27,7 @@ This page provides information about the monthly Temenos Continuous Deployment P
 
 Check the  [**Manage Factories**](http://documentation.temenos.cloud/home/techguides/factories.html "page") documentation to see the latest updates.
 
-&nbsp;&nbsp;&nbsp;&nbsp; The **Test script** is now a component and is promoted from one stage to another. With this release, all the factories need reconfiguration to include the test script component, otherwise the factory run will not be successful. Learn how to configure the Test Script component [**here**](http://documentation.temenos.cloud/home/techguides/factory-migration.html "page").
+&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red">**IMPORTANT**:</span> the **Test script** is now a component and is promoted from one stage to another. With this release, all the factories need reconfiguration to include the test script component, otherwise the factory run will not be successful. Learn how to configure the Test Script component [**here**](http://documentation.temenos.cloud/home/techguides/factory-migration.html "page").
 
 ## Platform security enhancements
 &nbsp;&nbsp;&nbsp;&nbsp; Security improvements made to minimize potential attacks. 
