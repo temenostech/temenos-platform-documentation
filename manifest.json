@@ -6396,6 +6396,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/zip/TestCases.zip",
+      "output": {
+        "resource": {
+          "relative_path": "home/zip/TestCases.zip"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/zip/selenium-automation.zip",
       "output": {
         "resource": {
