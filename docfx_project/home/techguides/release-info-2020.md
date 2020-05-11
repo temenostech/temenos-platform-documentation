@@ -3,10 +3,43 @@
 
 This page provides information about the monthly Temenos Continuous Deployment Platform features and improvements in each release.
 
+# **2020.05 Release Notes** 
+**InfraBuild**: 362 &nbsp;| **PortalTag**: cloudPortal_1.79e &nbsp; |  **ControllerBuild**: 26
+
+## Technical enhancements
+&nbsp;&nbsp;&nbsp;&nbsp;**1. The STOP environments button displays an error after rebuild**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **START** and **STOP** environments are handled differently to provide faster feedback to the user
+<br>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;**2. Isuse on the user accounts page - the "EDITING" status is not displayed in the portal**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - user experience improvements have been added on the Users Page in the portal
+
+## Factory Run enhancements
+&nbsp;&nbsp;&nbsp;&nbsp; The **Factory Run** functionality is now enhanced with the ability to run tests with multiple steps (workflows), in a designated sequence. Factory configuration screen layout was changed and split into 4 parts:
+
+- Factory Definition and Products
+- Test Configuration
+- Promotion Configuration
+- Factory Schedule
+
+Check the  [**Manage Factories**](http://documentation.temenos.cloud/home/techguides/factories.html "page") documentation to see the latest updates.
+
+&nbsp;&nbsp;&nbsp;&nbsp; The **Test script** is now a component and is promoted from one stage to another. With this release, all the factories need reconfiguration to include the test script component, otherwise the factory run will not be successful. Learn how to configure the Test Script component [**here**](http://documentation.temenos.cloud/home/techguides/factory-migration.html "page").
+
+## Platform security enhancements
+&nbsp;&nbsp;&nbsp;&nbsp; Security improvements made to minimize potential attacks. 
+
+## User experience improvements
+
+&nbsp;&nbsp;&nbsp;&nbsp; User selection is mandatory to display details. .
+
 # **2020.02 Release Notes** #
 **InfraBuild**: 362 &nbsp;**|**&nbsp; **PortalTag**: cloudPortal_1.79e
 &nbsp;**|**&nbsp; **ControllerBuild**: 26
-## Technical Enhancements ##
+
+## Technical enhancements ##
 
 &nbsp;&nbsp;&nbsp;&nbsp;**1. Exception list added to the Organisation scheduled shutdown**
   
@@ -37,7 +70,7 @@ This page provides information about the monthly Temenos Continuous Deployment P
 # **2020.01 Release Notes** #
 **InfraBuild**: 355 &nbsp; **|**  &nbsp;**PortalTag**: cloudPortal_1.78 &nbsp;**|**  &nbsp;**ControllerBuild**: 12
 
-## Dashboard Enhancements ##
+## Dashboard enhancements ##
 
 &nbsp;&nbsp;&nbsp;&nbsp;**1. UI Updates**
 

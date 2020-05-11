@@ -52,8 +52,6 @@ Please see below some explanations on how this process works and what are the re
    - GitHub repository
 
 
-> [!Note]
-> It will take around 15-20 minutes for the clone environment to be created.
 
 # User Permissions Required
 To be able to perform the above operations the below permissions need to be enabled for your user:

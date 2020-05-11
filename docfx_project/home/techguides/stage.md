@@ -65,6 +65,8 @@ Example of the default stage defined into the metadata (you can set any name you
 
 ![](./images/stage-metadata.png)
 
+ To see the details of a stage please make sure to first select the stream from the top-right-side menu. The list with the stages that belong to the respective stream will be displayed on the left side of the page:
+![](./images/stages-see-details.png)
 
 # User Permissions Required
 To be able to perform the above operations the below permissions need to be enabled for your user:
@@ -77,4 +79,4 @@ To be able to perform the above operations the below permissions need to be enab
 
 
 
-To understand what which of the permission does, hover the cursor over the variables and a short description will pop up or click [here](http://documentation.temenos.cloud/home/techguides/user-permissions) to get an overview of the permissions.
+To understand what each of the permission does, hover the cursor over the variables and a short description will pop up or click [here](http://documentation.temenos.cloud/home/techguides/user-permissions) to get an overview of the permissions.

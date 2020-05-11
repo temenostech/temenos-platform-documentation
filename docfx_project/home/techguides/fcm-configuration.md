@@ -33,9 +33,6 @@ Learn how to use FCM application by accessing it via Temenos Continuous Deployme
 
 ![new environment](./images/fcm-environment-fields.png)
 
-> [!Note]
-> It will take about 15 minutes for the new environment to be created
-
 ##  FCM Endpoints
 
 - Check the two endpoints available in the FCM application:
@@ -131,7 +128,7 @@ To be able to perform the above operations the below permissions need to be enab
 - REDEPLOY _ ENVIRONMENT
 - MANAGE _ ENVIRONMENTS 
 
-To understand what which of the permission does, hover the cursor over the variables and a short description will pop up or click [here](http://documentation.temenos.cloud/home/techguides/user-permissions) to get an overview of the permissions.
+To understand what each of the permission does, hover the cursor over the variables and a short description will pop up or click [here](http://documentation.temenos.cloud/home/techguides/user-permissions) to get an overview of the permissions.
 
  
 

@@ -133,6 +133,10 @@ You can use any other SSH key generator client.
 
 <br>
 
+ To see the details of a user please make sure to first select the user from the left-side users list:
+![](./images/user-see-details.png)
+
+
 # User Permissions Required
 To be able to create a user the below permission needs to be enabled for your user:
 

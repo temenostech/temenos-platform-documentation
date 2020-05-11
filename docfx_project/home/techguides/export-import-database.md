@@ -14,7 +14,7 @@ Login to your organization on the TCD (Temenos Continuous Deployment) portal ([p
  - And then choose a T24 template with the version that you need (in current example R18.11).
  - *Labels field is optional*.
  - Click **Create** button.
- - Wait about 15-20 minutes to see the action completed and to have your environment available.
+
 
 > [!Note]
 > To see how to create an environment, please also check <a href="./environment-creation-in-paas.md" target="_blank">**this**</a> user guide.
@@ -159,4 +159,4 @@ To be able to perform the above operations the below permissions need to be enab
 - ALLOW -  EXPORT  - ENVIRONMENT
 
 
-To understand what which of the permission does, hover the cursor over the variables and a short description will pop up or click [here](http://documentation.temenos.cloud/home/techguides/user-permissions) to get an overview of the permissions.
+To understand what each of the permission does, hover the cursor over the variables and a short description will pop up or click [here](http://documentation.temenos.cloud/home/techguides/user-permissions) to get an overview of the permissions.

@@ -21,8 +21,6 @@ Learn how to easily access the T24 UD directories of your sandbox and make updat
 
 ![new environment](./images/env-new.png)
 
-> [!Note]
-> It will take about 15-20 minutes for the new environment to be created
 
 ## Create a User on the Portal
 

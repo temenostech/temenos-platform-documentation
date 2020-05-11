@@ -42,8 +42,9 @@ All fields are mandatory except 'Labels'.
 
 <br>
 
-> [!Note]
-> The environment creation may take around 20 minutes or more, depending on the selected template.
+
+ To see the details of an environment please make sure to first select it from the top-right-side menu:
+![](./images/environment-see-details.png)
 
 
 - **Templates**
@@ -63,7 +64,7 @@ To be able to create an environment the below permissions need to be enabled for
 - CREATE _ ENVIRONMENT
 - MANAGE _ ENVIRONMENTS
 
-To understand what which of the permission does, hover the cursor over the variables and a short description will pop up or click [here](http://documentation.temenos.cloud/home/techguides/user-permissions) to get an overview of the permissions.
+To understand what each of the permission does, hover the cursor over the variables and a short description will pop up or click [here](http://documentation.temenos.cloud/home/techguides/user-permissions) to get an overview of the permissions.
 
 
 
