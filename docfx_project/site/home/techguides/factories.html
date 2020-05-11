@@ -82,23 +82,18 @@
 <h2 id="factories">Factories</h2>
 
 <p>Factories are the core Assemble components that define how, what and when to deploy, test and promote the various components used by an organization. </p>
-<p>A factory is an information bundle that holds the following critical information that is needed to run an assembly factory:</p>
-<p><em><span style="background-color: #f4f1ef;color: DarkBlue;"><b>Name</b></span></em> &nbsp;</p>
-<ul>
-<li>Used just to identify or tag a factory</li>
-</ul>
-<p><br></p>
-<p><em><span style="background-color: #f4f1ef;color: DarkBlue;"><b>Products</b></span></em> &nbsp;</p>
-<p>a. <strong>Principle Products</strong> – Principle products simply mean the list of components that are being tested against a stable set of other pre-tested components. After successfully running the factory, the principle products are promoted to the next stage (the configured one).</p>
-<p>b. <strong>Other products</strong> <em>(Base Products)</em> – Products that are pre-tested (by other factories) and are known to be stage.  These are products that don’t need to be promoted but they are required to test the Principle Products.</p>
-<p><br></p>
-<p><em><span style="background-color: #f4f1ef;color: DarkBlue;"><b>Stages</b></span></em> &nbsp;</p>
-<p>a. From stage (Which stage to get the principle components from) – <strong>Source stage</strong> (The stage from which pre-tested stable components can be picked up).</p>
-<p>b. <strong>Source Stage</strong> – The stage from which the “Other Products” <em>(Base Products)</em> components are fetched. This stage represents a stable version of components that is pre-tested from the perspective of the current factory.</p>
-<p><br></p>
-<p><em><span style="background-color: #f4f1ef;color: DarkBlue;"><b>Templates</b></span></em> &nbsp;</p>
-<p>a. <strong>Environment Template</strong> - holds the details of the template that is to be used to deploy the components selected by the factory</p>
-<p>b. <strong>Test Template</strong> – specifies the template that is required to deploy a test environment that holds the testing framework and test scripts. This is needed to generalize the test tools as a template.</p>
+<p>Below you will find the pre-requisites to run a factory:</p>
+<h1 id="pre-requisites">Pre-requisites</h1>
+<p><strong>- 1 stream</strong></p>
+<p><strong>- 2 stages within the stream you created</strong></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; a. Source stage - the stage from which pre-tested stable components can be picked up</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; b. Base/Test Stage – the stage from which the “Other Products” <em>(Base Products)</em> components are fetched. This stage represents a stable version of components that is pre-tested from the perspective of the current factory.</p>
+<p><strong>- 2 products</strong></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; a. Principle Products – Principle products simply mean the list of components that are being tested against a stable set of other pre-tested components. After successfully running the factory, the principle products are promoted to the next stage (the configured one).</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; b. Other products <em>(Base Products)</em> – Products that are pre-tested (by other factories) and are known to be stage.  These are products that don’t need to be promoted but they are required to test the Principle Products.</p>
+<p><strong>- 2 templates</strong></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; a. Environment Template - holds the details of the template that is to be used to deploy the components selected by the factory</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; b. Test Template – specifies the template that is required to deploy a test environment that holds the testing framework and test scripts. This is needed to generalize the test tools as a template.</p>
 <p><br></p>
 <h2 id="validations">Validations</h2>
 <ol>
@@ -114,8 +109,7 @@
 </ol>
 <div class="NOTE"><h5>Note</h5><p>See below configurations to understand better how to configure correctly and the factory&#39;s behavior.</p>
 </div>
-<h1 id="how-to-set-up-edit-delete-factories">How to Set-up/ Edit/ Delete Factories</h1>
-<h2 id="set-up-create-a-factory">Set-up/ Create a Factory</h2>
+<h1 id="set-up-create-a-factory">Set-up/ Create a Factory</h1>
 <ul>
 <li>Click on Settings button on the main menu on the left.</li>
 <li>Make sure you select first the <strong>Stream</strong> and <strong>Stage</strong> (this is the stage where components are promoted) where you want to create a factory and then click <strong>New Factory</strong> button on the top-right.</li>
@@ -123,13 +117,13 @@
 <b>
 <br></b></li>
 </ul>
-<h4 id="factory-details">Factory Details</h4>
+<h2 id="factory-details">Factory Details</h2>
 <ul>
 <li><strong>Factory Name</strong>: choose a meaningful name for your factory.</li>
 <li><strong>Factory Description</strong>: insert a description that will help knowing what the factory is about.
 <img src="images/factory-details.png" alt="factory-details"></li>
 </ul>
-<h4 id="product-configuration">Product Configuration</h4>
+<h2 id="product-configuration">Product Configuration</h2>
 <p>This tab represents the test configuration that holds the template, the products and the source stage that are pre-tested from the perspective of the current factory.</p>
 <ul>
 <li><strong>Template</strong>: choose an Environment Template from the dropdown list. Based on this template  the environments will be created where you will be able to test different products</li>
@@ -139,10 +133,10 @@
 <li>click <strong>Next</strong>
 <img src="images/factory-product-configuration.png" alt="factory-product-configuration"> </li>
 </ul>
-<h4 id="test-configuration">Test Configuration</h4>
+<h2 id="test-configuration">Test Configuration</h2>
 <p>The Test Configuration consists in in-build service tasks and is used to  trigger tests for a given factory-run, trigger export of application logs.</p>
 <ul>
-<li><p><strong>Select Workflow</strong>: a drop-down list with factory workflows added by the Temenos team. In the future users will be able to create their own workflows. As of now, there is one default workflow that is assigned to the users. By request, the Temenos Cloud and DevOps team can provide 3 additional workflows (COB Workflow, Full Workflow and Two Steps without COB Workflow). Depending on the user&#39;s workflow, additional configuration steps may need to be followed. Below is an example of how the Full Workflow should be configured:</p>
+<li><p><strong>Select Workflow</strong>: a drop-down list with factory workflows that is either added by the Temenos team or can be created by the user.  By request, the Temenos Cloud and DevOps team can provide 3 additional workflows (COB Workflow, Full Workflow and Two Steps without COB Workflow). Depending on the user&#39;s workflow, additional configuration steps may need to be followed. Below is an example of how the Full Workflow should be configured:</p>
 <ul>
 <li><strong>Step 1</strong>: select the test template, component, the number of VMs needed, the test stage and tick if the workflow should stop in case of failure. At the end of this step, when the first round of tests has been finished, the test VM will be deleted, but it will not stop the T24 environment (this will be done at the end of the workflow)</li>
 <li><strong>Step 2</strong>: type in the ID of the TSA.SERVICE record for which COB has to be run. The id can be either group specific id (eg: COB-1, COB-001) , company specific id (eg: COB-GB0010001) or COB </li>
@@ -155,7 +149,7 @@
 <img src="images/factory-test-configuration.png" alt="factory-test-configuration"></p>
 </li>
 </ul>
-<h4 id="promotion-configuration">Promotion Configuration</h4>
+<h2 id="promotion-configuration">Promotion Configuration</h2>
 <p>This configuration enables the user to select all the required principle products along with the target stage to which they will be promoted after a successful factory run. In addition, the user can select the Test Components along with the target stage if they need promotion as well. 
 <img src="images/factory-promotion-configuration.png" alt="factory-promotion-configuration"></p>
 <h4 id="factory-scheduler">Factory Scheduler</h4>
@@ -163,9 +157,12 @@
 <ul>
 <li>the scheduler can be configured to run one time per day</li>
 <li>if the factory run test is successful you can choose to stop/ or keep running the T24 environment</li>
-<li>the same applies for the Factory Run Failure scenario
+<li><p>the same applies for the Factory Run Failure scenario
 The &#39;Stop Environment&#39; and &#39;Keep Running Environment&#39; options are aimed to be used for costs purposes
-<img src="images/factory-scheduler.png" alt="factory-scheduler"></li>
+<img src="images/factory-scheduler.png" alt="factory-scheduler"></p>
+<p>To see the details of a factory please make sure to first select the stream and the stage from the top-right-side menu. If you have more stages, click on the stage where you created the respective factory. The list with the factories that belong to the respective stage will be displayed on the left side of the page:
+<img src="images/factory-see-details.png" alt=""></p>
+</li>
 </ul>
 <h2 id="edit-a-factory">Edit a Factory</h2>
 <ul>
@@ -190,7 +187,7 @@ The &#39;Stop Environment&#39; and &#39;Keep Running Environment&#39; options ar
 <li>UPDATE _ FACTORY</li>
 <li>DELETE _ FACTORY</li>
 </ul>
-<p>To understand what which of the permission does, hover the cursor over the variables and a short description will pop up or click <a href="http://documentation.temenos.cloud/home/techguides/user-permissions">here</a> to get an overview of the permissions.</p>
+<p>To have a better understanding of the user permissions, hover the cursor over the variables and a short description will pop up or click <a href="http://documentation.temenos.cloud/home/techguides/user-permissions">here</a> to read more.</p>
 <p><br></p>
               <hr>
               
