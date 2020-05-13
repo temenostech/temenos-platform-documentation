@@ -6,7 +6,9 @@ This document can be used by technical staff who need to create Users on the Tem
 
 The Administrator can navigate to the Users section on the portal, create more users and invite them to access and use the portal using the URL link. In this way the administrator is in control of who receives the URL link and which users can access the Organisation.
 
-The users can access their organisation only, view their user profiles and change their password. Note that only the users with the 'Amin' permission can create more users. To create a new user, please refer to the below:
+The users can access their organisation only, view their user profiles and perform various operations according to the set of user permissions set by the Organisation Administrator.
+
+ Note that only the users with the 'Amin' permission can create more users. To create a new user, please refer to the below:
 
 •	Login to your organisation portal using the link and the credentials provided.
 
@@ -24,6 +26,8 @@ Click **New user** button on the top-right corner:
 ![](D:\DocumentationPortal\temenos-platform-documentation\docfx_project\home\techguides\images\users-tab.png)
 
 This will create a new user in your organisation. This new user will be automatically assigned to all GitLab Repositories from within all environments. If you have already a user created, you can click on the user and update the SSH key box with the one created above.
+
+>**Important!**: It is the Organisation Admin's responsibility to inform the new user about its credentials and set of permissions granted on the portal.
 
 # User Roles Management #
 
