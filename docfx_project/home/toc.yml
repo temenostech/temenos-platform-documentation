@@ -4,9 +4,7 @@
   href: ./architecture.md
   items:
     - name: TCD Hosting Options
-      href: ./tcd-hosting-options.md
-    - name: Temenos Cloud Templates
-      href: ./temenos-cloud-templates.md
+      href: ./tcd-hosting-options.md   
 - name: Extend
   href: ./extend.md
   items:
@@ -34,6 +32,15 @@
          href: ./techguides/access-fcm-ud-directories.md  
        - name: Configure FCM Application
          href: ./techguides/fcm-configuration.md 
+   - name: Templates
+     href: ./temenos-cloud-templates.md 
+     items:
+       - name: Available Templates
+         href: ./techguides/templates-list.md
+       - name: Transact Templates Overview
+         href: http://documentation.temenos.cloud/home/pdf/transact-components.pdf 
+       - name: WealthSuite Templates Overview
+         href: http://documentation.temenos.cloud/home/pdf/wealthsuite-components.pdf 
    - name: Tutorials
      href: ./tutorials-extend.md
      items:
@@ -52,28 +59,24 @@
 - name: Assemble
   href: ./assemble.md
   items:
-   - name: How to...
-     href: ./how-to-assemble.md
-     items:
-       - name: Manage Streams
-         href: ./techguides/stream.md
-       - name: Manage Stages
-         href: ./techguides/stage.md
-       - name: Manage Components and Products
-         href: ./techguides/components-products.md
-       - name: Manage Factories
-         href: ./techguides/factories.md
-       - name: Manage Factory Migrations
-         href: ./techguides/factory-migration.md         
-         
-       - name: Manage Test Cases Upload
-         href: ./techguides/stage-testcases.md
-       - name: Run a Factory with "Run Now" Button and Dashboard
-         href: ./techguides/run-factory.md
-       - name: Create & Publish a New Template after a Successful Factory Run
-         href: ./techguides/create-publish-template.md  
-       - name: Manage Artifactory Test Cycle
-         href: ./techguides/artifactory-test-cycle.md 
+   - name: Manage Streams
+     href: ./techguides/stream.md
+   - name: Manage Stages
+     href: ./techguides/stage.md
+   - name: Manage Components and Products
+     href: ./techguides/components-products.md
+   - name: Manage Factories
+     href: ./techguides/factories.md
+   - name: Manage Factory Migrations
+     href: ./techguides/factory-migration.md          
+   - name: Manage Test Cases Upload
+     href: ./techguides/stage-testcases.md
+   - name: Run a Factory with "Run Now" Button and Dashboard
+     href: ./techguides/run-factory.md
+   - name: Create & Publish a New Template after a Successful Factory Run
+     href: ./techguides/create-publish-template.md  
+   - name: Manage Artifactory Test Cycle
+     href: ./techguides/artifactory-test-cycle.md 
    - name: Tutorials
      href: ./tutorials-assemble.md
      items:
