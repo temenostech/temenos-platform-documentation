@@ -958,7 +958,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/components-products.html",
-          "hash": "TVrf6uIBOyWCmKP9srVRMw=="
+          "hash": "P1tOYoln4tI9ZFVxwuTlRw=="
         }
       },
       "is_incremental": false,
@@ -2188,6 +2188,17 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/create-user-select-role.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/create-workflow.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/create-workflow.png"
         }
       },
       "is_incremental": false,
@@ -6241,7 +6252,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/templates-list.html",
-          "hash": "JRgy4NDABBopi3yiteQyjw=="
+          "hash": "9H4ykZySJsQqoeZPwLltiA=="
         }
       },
       "is_incremental": false,
@@ -6328,7 +6339,7 @@
       "output": {
         ".html": {
           "relative_path": "home/toc.html",
-          "hash": "ST865SxEINNtUv70Egbclw=="
+          "hash": "AaGbxlJD92hCiVK391UXPg=="
         }
       },
       "is_incremental": false,
@@ -6515,19 +6526,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
+        "RestApiDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "RestApiDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
@@ -6536,6 +6542,11 @@
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
