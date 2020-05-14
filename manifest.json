@@ -893,15 +893,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/access-fcm-ud-directories.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/access-fcm-ud-directories.html",
-          "hash": "0Lx7mqrJJ7Flb4Mkbf1BQg=="
+          "hash": "gNMsZ+3bUDcOeGKzajJXIg=="
         }
       },
       "is_incremental": false,
@@ -1007,15 +1004,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/environment-basic-operations.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/environment-basic-operations.html",
-          "hash": "u37iIJM5RRIIL11LwvqUTg=="
+          "hash": "V6en25N0xq9mJew4DWrQVg=="
         }
       },
       "is_incremental": false,
@@ -1116,6 +1110,17 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/abn-package.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/access-fcm-endpoints.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/access-fcm-endpoints.png"
         }
       },
       "is_incremental": false,
@@ -6521,13 +6526,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
           "incrementalPhase": "build"
         },
         "RestApiDocumentProcessor": {
@@ -6539,9 +6545,8 @@
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "ResourceDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
