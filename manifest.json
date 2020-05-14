@@ -893,12 +893,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/access-fcm-ud-directories.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/access-fcm-ud-directories.html",
-          "hash": "gNMsZ+3bUDcOeGKzajJXIg=="
+          "hash": "0Lx7mqrJJ7Flb4Mkbf1BQg=="
         }
       },
       "is_incremental": false,
@@ -1004,12 +1007,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/environment-basic-operations.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/environment-basic-operations.html",
-          "hash": "32GqsArxHDTjRbi/g1jO8g=="
+          "hash": "u37iIJM5RRIIL11LwvqUTg=="
         }
       },
       "is_incremental": false,
@@ -1110,17 +1116,6 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/abn-package.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/access-fcm-endpoints.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/access-fcm-endpoints.png"
         }
       },
       "is_incremental": false,
@@ -1612,17 +1607,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/button-boost.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/button-boost.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/button-clone.png",
       "output": {
         "resource": {
@@ -1634,32 +1618,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/button-delete.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/button-delete.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/button-deploy.png",
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/button-deploy.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/button-edit.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/button-edit.png"
         }
       },
       "is_incremental": false,
@@ -2239,6 +2201,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/customize-template.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/customize-template.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/customize-templates-after-boost.png",
       "output": {
         "resource": {
@@ -2668,6 +2641,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/delete-button.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/delete-button.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/deploy-update-go-to-app.png",
       "output": {
         "resource": {
@@ -2727,6 +2711,17 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/edit-delete-workflow.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/edit-environment.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/edit-environment.png"
         }
       },
       "is_incremental": false,
