@@ -203,94 +203,6 @@ curl -H &quot;X-JFrog-Art-Api:AKCp5dKYyM9WMoiacim9yedAZfG6gLwwcYugPmzZhqHkdRe6ex
 <li>if the component is uploaded in a .zip format, it it recommended to have a text file describing what is included in the package/ provide reference to the code commit tags to find what is included in the package;</li>
 <li>do not delete/ edit/ create components/ folders in the artifactory.  TCD Portal’s Product and Component sections must be used to create anything in artifactory.</li>
 </ul>
-<h1 id="t24-golden-copy-pre-requisites">T24 golden copy pre-requisites</h1>
-<h2 id="database---generic">Database - generic</h2>
-<ul>
-<li><p>No client data</p>
-</li>
-<li><p>Minimal size</p>
-</li>
-<li><p>No  archived data or RO database to be provided</p>
-</li>
-<li><p>All test credentials present / injected by the tests</p>
-</li>
-<li><p>The field name DESTINATION.STATIC in IF.INTEGRATION.SERVICE.PARAM must hold the queue name “queue/t24IFInboundQueue” </p>
-</li>
-<li><p>Sanity testing to be performed to ensure that the users can log in, applications can be input, OFS requests can be run, the T24 services specifically INTEGRATION.SERVICE and COB can be run and any known issues which can be ignored should be reported.</p>
-</li>
-<li><p>Once sanity testing is complete, all the TSA services running should be stopped,  locks to be removed and TSA.STATUS records to be cleared</p>
-</li>
-<li><p>The t24libs and other jar files (L3,GPACK,CPACK etc) at the time of creating the golden copy should be provided along with the golden copy </p>
-</li>
-</ul>
-<h2 id="database---h2">Database - H2</h2>
-<ul>
-<li><p>H2 database username passwords to be provided for the newly created user</p>
-</li>
-<li><p>The DBImport log should be verified to ensure that all the tables, views and the dictionaries in the source  matches with the destination </p>
-</li>
-<li><p>A copy of the DBimport log to be provided for verification </p>
-</li>
-<li><p>H2 version 1.4.199</p>
-</li>
-</ul>
-<h2 id="database---oracle">Database - ORACLE</h2>
-<ul>
-<li><p>The database must be in RPM format</p>
-</li>
-<li><p>The database username and passwords to be provided</p>
-</li>
-<li><p>To ensure that the database shipped is of optimal size, please make sure that the following files are removed before taking a backup</p>
-</li>
-</ul>
-<p>&nbsp; <strong>1. From T24 Tables</strong></p>
-<p>a) Enormous archived files ($ARC files) which do not form as part of the usual day-today-activities. E.g.: Archived Delivery messages, archived Accounting entries)</p>
-<p>b) Contents of the cache and user specific temporary files to be cleared (F.OS.XML.CACHE, F.ENQUIRY.LEVEL, F.ENQUIRY.SELECT, F.OS.TOKEN, F.OS.TOKEN.USE, F.PROTOCOL, OS.REQUEST.DETAIL)</p>
-<p>&nbsp; <strong>2.  From UD folders</strong></p>
-<p>a) &amp;COMO&amp;, &amp;HOLD&amp;, &amp;PH&amp;, &amp;SAVEDLISTS&amp;</p>
-<p>b) Contents of F.DL.DATA, Contents of SWIFT inward and outward message directories, NR related message directories</p>
-<p>c) Contents of any interface log directories (attached to the OFS.SOURCE records)</p>
-<p>d) Any other IN and OUT message directories used for interfaces</p>
-<p>e) User directories or BPs created by developers and the local source code in them for testing purposes</p>
-<h1 id="wealth-suite-golden--copy-pre-requisites">Wealth suite golden  copy pre-requisites</h1>
-<p>All the wealth templates have the ability to deploy the components listed in  <a href="http://documentation.temenos.cloud/home/pdf/wealthsuite-components.pdf " target="_blank"><u><strong>THIS</strong></u></a> document. By clicking on the file you will also find a table with additional details for each component.</p>
-<h2 id="tap-core">TAP CORE</h2>
-<p>&nbsp; <strong>Database-generic</strong></p>
-<ul>
-<li><p>The golden copy of the TAP DB must be obtained  by doing an extract using the cloning tool (the cloning tool version to be used should be the one delivered with Wealth distribution)</p>
-</li>
-<li><p>The golden copy of TAP database must be delivered with golden copy of TAP Core binaries (in sync)</p>
-</li>
-<li><p>No client data. Only infrastructure data in sync. With T24 demo model bank data will be imported.</p>
-</li>
-<li><p>Minimal size</p>
-</li>
-<li><p>All data required for tests (including users, data profiles, data security profiles …) must be injected by the tests</p>
-</li>
-<li><p>If T24 is used as a back end system, ensure that the database backups of T24 &amp; TAP are synchronized </p>
-</li>
-<li><p>Client to ensure Components L3 packages are in sync for E2E environment deployment.</p>
-</li>
-<li><p>DatabaseSybase.</p>
-</li>
-</ul>
-<h2 id="tap-web">TAP Web</h2>
-<ul>
-<li>TAP Web golden copy consists only on list of L1 updates (hotfixes) and L3 packages (TAP Web Design studio packages)  to be provided</li>
-</ul>
-<h2 id="test-script-pre-requisites"><strong>Test Script Pre-Requisites</strong></h2>
-<ul>
-<li><p>Single test library to be used across all products</p>
-</li>
-<li><p>Single format of test sheet used by all products. (All tests follow same automation mechanism during execution in TCD and we can’t change it)</p>
-</li>
-<li><p>Ensure that the test credentials are present in the test sheet (We can’t add passwords before each run)</p>
-</li>
-<li><p>All usernames &amp; passwords to be in the golden copy or injected by tests. (We can’t add users &amp; passwords)</p>
-</li>
-<li><p>Synchronized Golden copies and ensure that the test strategy for uploading the test data is as well synchronized.</p>
-</li>
-</ul>
 <h1 id="which-components-to-add">Which Components to Add</h1>
 <p>In order to know which are the minimum required components that you need to add, you must first check the <strong>Templates Catalog</strong> (see button on the left menu).</p>
 <p>From here, select the template that you want to use:</p>
@@ -347,6 +259,8 @@ curl -H &quot;X-JFrog-Art-Api:AKCp5dKYyM9WMoiacim9yedAZfG6gLwwcYugPmzZhqHkdRe6ex
 </ul>
 <div class="NOTE"><h5>Note</h5><p>If the respective product is attached to a factory, you will not be able to delete. You need to delete the factory first.</p>
 </div>
+<p> To see the details of a component please make sure to first select the stream from the top-right-side menu. The list with the components that belong to the respective stream will be displayed on the left side of the page. The same operation applies for the products:
+<img src="images/components-see-details.png" alt=""></p>
 <h1 id="artifactory-view">Artifactory view</h1>
 <p>The artifactory view displays the uploaded components that are available for the particular stages. By expanding the components, the user triggers a download of the respective component zip file.</p>
 <p><img src="images/artifactory_view.png" alt=""></p>
@@ -365,7 +279,7 @@ curl -H &quot;X-JFrog-Art-Api:AKCp5dKYyM9WMoiacim9yedAZfG6gLwwcYugPmzZhqHkdRe6ex
 <li>UPDATE _ PRODUCT</li>
 <li>DELETE _ PRODUCT</li>
 </ul>
-<p>To understand what which of the permission does, hover the cursor over the variables and a short description will pop up or click <a href="http://documentation.temenos.cloud/home/techguides/user-permissions">here</a> to get an overview of the permissions.</p>
+<p>To have a better understanding of the user permissions, hover the cursor over the variables and a short description will pop up or click <a href="http://documentation.temenos.cloud/home/techguides/user-permissions">here</a> to read more.</p>
 <p><br></p>
               <hr>
               

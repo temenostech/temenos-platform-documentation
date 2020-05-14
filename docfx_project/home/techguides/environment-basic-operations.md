@@ -51,18 +51,20 @@ After creating an environment, there are several actions (operations) that can b
 
 
 
-- **Editing** an environment - allows you to change the name and the description of an environment
+- **Edit environment** an environment - allows you to change the name and the description of an environment
 
- ![start](./images/button-edit.png) 
+ ![](./images/edit-environment.png) 
 
 <br>
 
 
-- **Deleting** and environment - removes all resources including VMs and configuration repository that are part of an Environment
+- **Delete environment** - removes all resources including VMs and configuration repository that are part of an Environment
  
- ![delete](./images/button-delete.png) 
+ ![](./images/delete-button.png) 
 
-
+- **Customize template** - the operation triggered by the button will copy in the environment repository all the template files used to create the environment
+ 
+ ![](./images/customize-template.png) 
 
 
 
