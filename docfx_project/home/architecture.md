@@ -99,6 +99,6 @@ Below is a list of tools which may be used to exploit Temenos Continuous Deploym
 |----------------------------	|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
 | Git 	| Git   (/ɡɪt/) is a version control system for tracking changes in computer files   and coordinating work on those files among multiple people. A client program   for Git is required to push artifacts into the configuration repository. 	|
 | SFTP   Client 	| SFTP   is the protocol used to download file exports (environment or database   exports) 	|
-| Design   Studio (Optional) 	| Design   Studio is the IDE (Integrated Development Environment) produced by Temenos   for developing changes in T24 systems. Design Studio itself does not form   part of the Deployment Platform, but change outputs from this tool are   supported within the Configuration Repository. 	|
+| Design   Studio | Design   Studio is the IDE (Integrated Development Environment) produced by Temenos   for developing changes in T24 systems. Design Studio itself does not form   part of the Deployment Platform, but change outputs from this tool are   supported within the Configuration Repository. 	|
 
 
