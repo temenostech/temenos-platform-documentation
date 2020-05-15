@@ -82,14 +82,14 @@
 <h1 id="architecture-overview">Architecture Overview</h1>
 
 <h3 id="overview"><strong>Overview</strong></h3>
-<p>This section provides an overview of what the TCD solution is, and how it fits in with the wider Temenos and bank enterprise.</p>
+<p>This section provides an overview of what the Temenos Continuous Deployment solution is, and how it fits in with the wider Temenos and bank enterprise.</p>
 <p><img src="images/enterprise-view.png" alt="">
 <em>Enterprise View</em></p>
-<p>The TCD solution is composed of the <strong>Extend</strong> and <strong>Assemble</strong> modules to enable the provision of development and Integration test environments. The current state allows for these two modules only. Roadmap features envisage a Deliver module to cover pre-production and production environments.</p>
-<p>The <strong>TCD Extend module</strong> is a multi-tenanted provisioning and deployment module that provides Users and/or other systems with self-service management of Environments and provides access to the tools for enhancing Client Licensed Temenos Software. The Extend module enables authorised Users to provision Environments from a list of Templates for non-production use during development, test, integration, implementation and ongoing changes to the Products. The Extend module is a cloud-hosted platform service and manages Environments in either the Temenos cloud or a Client’s Target Cloud account.</p>
+<p>The Temenos Continuous Deployment solution is composed of the <strong>Extend</strong> and <strong>Assemble</strong> modules to enable the provision of development and Integration test environments. The current state allows for these two modules only. Roadmap features envisage a Deliver module to cover pre-production and production environments.</p>
+<p>The <strong>The  Extend module</strong> is a multi-tenanted provisioning and deployment module that provides Users and/or other systems with self-service management of Environments and provides access to the tools for enhancing Client Licensed Temenos Software. The Extend module enables authorised Users to provision Environments from a list of Templates for non-production use during development, test, integration, implementation and ongoing changes to the Products. The Extend module is a cloud-hosted platform service and manages Environments in either the Temenos cloud or a Client’s Target Cloud account.</p>
 <p>Each <strong>Environment</strong> is a standalone instance of one or more Products or approved third-party applications / products running on the middleware defined in the Template.</p>
 <p>Each <strong>Factory</strong> is formed of an Environment and one or more Test Clients. The Test Clients have their own Templates, which define their infrastructure, software Components and configuration.</p>
-<p>The <strong>TCD Assemble module</strong> performs the test pipeline automation, continuous integration (“CI”) and continuous delivery (“CD”) of Client’s changes to Client’s Licensed Temenos Software. The Assemble Module utilises the same technologies as the Extend module, and does:</p>
+<p>The <strong>The  Assemble module</strong> performs the test pipeline automation, continuous integration (“CI”) and continuous delivery (“CD”) of Client’s changes to Client’s Licensed Temenos Software. The Assemble Module utilises the same technologies as the Extend module, and does:</p>
 <ul>
 <li>deploy Test Clients;</li>
 <li>execute the Clients’ tests;</li>
@@ -98,8 +98,8 @@
 <li>manage the lifecycle of test Environments;</li>
 <li>provide a dashboard of test results with links to the underlying manifests, templates and, where appropriate, running Environments.</li>
 </ul>
-<p>The <strong>TCD test result dashboard</strong> is a multi-tenanted web application hosted and operated by Temenos. The dashboard shows historic test results for a Factory within a configured Release and trends through a web UI pulling data from the Assemble Modules local database and test results and application logs in Target Cloud storage.</p>
-<p>The <strong>TCD Artifact Repository</strong> is a third-party artifact repository “Artifactory by Jfrog” . The repository holds all the built software Components that are referenced by the Templates at the relevant test and deploy Stages. The Client will push all of its Product packages to the Artifact Repository</p>
+<p>The <strong>Temenos Continuous Deployment test result dashboard</strong> is a multi-tenanted web application hosted and operated by Temenos. The dashboard shows historic test results for a Factory within a configured Release and trends through a web UI pulling data from the Assemble Modules local database and test results and application logs in Target Cloud storage.</p>
+<p>The <strong>Temenos Continuous Deployment  Artifact Repository</strong> is a third-party artifact repository “Artifactory by Jfrog” . The repository holds all the built software Components that are referenced by the Templates at the relevant test and deploy Stages. The Client will push all of its Product packages to the Artifact Repository</p>
 <p>The Temenos Continuous Deployment platform has two distinct deployment domains as below:</p>
 <ul>
 <li><p>the “Platform Cloud” where the provisioning software runs;</p>
@@ -111,7 +111,7 @@
 </br></p>
 <h3 id="where-does-temenos-continuous-deployment-platform-fit-into-the-enterprise-it-landscape"><strong>Where does Temenos Continuous Deployment Platform fit into the enterprise IT landscape?</strong></h3>
 <hr>
-<p>The Temenos Continuous Deployment Platform (TCD) promotes the concept of simplified and standardised change promotion through the IT landscape.</p>
+<p>The Temenos Continuous Deployment Platform promotes the concept of simplified and standardised change promotion through the IT landscape.</p>
 <p><img src="images/architecture-arrows.png" alt=""></p>
 <p>Typical organisations have a number of non-production (i.e. development/test) environments, where changes are implemented and checked prior to deployment to production systems. The Devops movement seeks to improve this QA process through means of automation, which both allows an increase in speed in change promotion, and a reduction in the risk of manual errors when promoting changes.</p>
 <p>The Development Platform includes a simple and repeatable method of collating changes (both configuration and customisation) which subsequently is simple to promote from environment to environment.</p>
@@ -120,7 +120,7 @@
 <p><img src="images/architecture-paas-deploy.png" alt=""></p>
 <p>Delegating platform and infrastructure responsibilities to a third party allows organisations to concentrate on what is important to them - applications and data.</p>
 <p><img src="images/architecture-responsabilities.png" alt=""></p>
-<p>The Deployment platform may be used for simple environment provisioning, or may be augmented by additional tools (such as Continuous Integration tooling) to provide a streamlined and automated development experience. The change promotion mechansim within the TCD  is simple to plug into standard CI tooling to push code/config/data from environment to environment.  An example development flow is shown below:</p>
+<p>The Deployment platform may be used for simple environment provisioning, or may be augmented by additional tools (such as Continuous Integration tooling) to provide a streamlined and automated development experience. The change promotion mechansim within the Temenos Continuous Deployment  is simple to plug into standard CI tooling to push code/config/data from environment to environment.  An example development flow is shown below:</p>
 <p><img src="images/architecture-process.png" alt=""></p>
 <p><br>
 </br></p>
