@@ -68,12 +68,15 @@ A folder is automatically created into the repository *(we are using JFrog Artif
 # How to login to Artifactory #
 Every user created in the Temenos Continuous Deployment Platform can log in with the platform’s credential on the Artifactory server as well. Follow the steps below to login to the Artifactory:
 
-- go on the self-side menu on the portal and click on **Metadata**. 
+- go on the left-side menu on the portal and click on **Metadata**. 
  ![](./images/sanity-general.png)
-- here are displayed the metadata settings:
+
+- here are the metadata settings:
  ![](./images/components-and-products-artifactoryurl.png)
+
 - copy the **Artifactory URL** and open it in another browser. To login use with your credentials from the Temenos Continuous Deployment Platform. This is how your Artifactory will be displayed:
  ![](./images/artifactory-login.png)
+
 - to see the artifactory repository, click on the Artifactory icon from the left-side menu. The repository belonging to your organisation will be displayed (to make sure you expand the right repository, always check the naming convention: repo-1dq4zcowcn75s1, where what follows after 'repo-' represents the ID of your organisation:
  ![](./images/local-repository.png)
  
