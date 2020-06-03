@@ -8,7 +8,7 @@ This page provides information about the monthly Temenos Continuous Deployment P
 &nbsp;**|**&nbsp; **ControllerBuild**: tba &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202005 
 
 ## Technical enhancements
-&nbsp;&nbsp;&nbsp;&nbsp;**1.Receive notifications when a template is assigned/removed from an organisation**
+&nbsp;&nbsp;&nbsp;&nbsp;**1. Receive notifications when a template is assigned/removed from an organisation**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- organization administrators are informed  when a template is assigned or unassigned to their organization 
 <br>
@@ -27,7 +27,7 @@ This page provides information about the monthly Temenos Continuous Deployment P
 </br>
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;**4. "No Test Steps found for the FactoryRun" should not be displayed during RUNNING_ENV_DEPLOY stage**
+&nbsp;&nbsp;&nbsp;&nbsp;**4. "No Test Steps found for the FactoryRun" should not be displayed during RUNNING_ ENV_ DEPLOY stage**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- the Platform has been enhanced not to display error message  "No Test Steps found for the FactoryRun" when not appropriate
 <br>
