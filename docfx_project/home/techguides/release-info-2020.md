@@ -3,6 +3,62 @@
 
 This page provides information about the monthly Temenos Continuous Deployment Platform features and improvements in each release.
 
+# **2020.05 Release Notes** 
+**InfraBuild**: 28 &nbsp;**|**&nbsp; **PortalVersion**: cloudPortal_1.80d
+&nbsp;**|**&nbsp; **ControllerBuild**: 140 &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202005 
+
+## Technical enhancements
+&nbsp;&nbsp;&nbsp;&nbsp;**1.Receive notifications when a template is assigned/ removed from an organisation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- organization administrators are informed  when a template is assigned or unassigned to their organization 
+<br>
+</br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;**2. Delete an environment that is still creating**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- the current release provides the ability to delete an environment which is still under creation.
+<br>
+</br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;**3. Display of wrong error messages in the factory dashboard**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- the factory configuration message is corrected
+<br>
+</br>
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;**4. "No Test Steps found for the FactoryRun" should not be displayed during RUNNING_ENV_DEPLOY stage**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- the Platform has been enhanced not to display the error message  "No Test Steps found for the FactoryRun" when not appropriate
+<br>
+</br>
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;**5. Issue while promoting a component with multiple packages**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- the Platform has been enhanced to ensure the deployment and promotion of a product which has multiple components of same type
+
+
+## TCD Admin Portal
+&nbsp;&nbsp;&nbsp;&nbsp;**1. As an Organisation Admin, I'd like to easily find the date when a template has been installed**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- the Platform now displays the installation date of each template in the template details page
+
+
+
+## Create custom templates from Model bank templates
+&nbsp;&nbsp;&nbsp;&nbsp;**1. Further documentation on the process**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- online documentation has been enhanced in order to describe how to create custom templates from model bank templates
+<br>
+</br>
+
+
+
+
+
+
 # **2020.04 Release Notes** 
 **InfraBuild**: 28 &nbsp;**|**&nbsp; **PortalBuild**: 1658
 &nbsp;**|**&nbsp; **ControllerBuild**: 99 &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202004.1 
