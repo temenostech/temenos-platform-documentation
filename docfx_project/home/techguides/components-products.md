@@ -42,7 +42,7 @@ Each component type represents a deployable unit and has an ansible script assoc
 These components have a structure associated and work in a standardized manner across different deployment stacks (OS, App server variations, DB variations etc).
 
 ><p style="font-size:18px"><span style="color:red">**WARNING:**</span><span style="color:red">
-<span style="color:red"></span><span style="color:red">make sure to follow the naming convention as defined by the Temenos team. Any adjustments to the components' title such as adding special characters or spaces will cause a failed factory run.
+<span style="color:red"></span><span style="color:red">make sure to follow the naming convention as defined by the Temenos team. Any adjustments to the components' title such as adding special characters or spaces will result in a failed factory run.
 
 >Example: downloading the same file multiple times auto-numbers the file name from 1 onwards - t24-jars-63688104355895 **(1)**.zip and adds a space as well. Please use the .zip file that has the original title - **t24-jars-63688104355895.zip**. 
 
