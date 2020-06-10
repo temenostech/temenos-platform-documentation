@@ -20,6 +20,8 @@ Each component has the following fields *(all mandatory)*:
 
 - Display Name
 
+<br>
+</br>
 ##  Component Type ##
 
 The TCP uses a convention/ protocol to deploy all parts required to run a full-fledged instance of T24 (Or any other product supported by a template). Such parts to constitute a complete system are called **components**. 
@@ -38,6 +40,14 @@ The names of these parts / Component Types are fixed and are not user editable. 
 Each component type represents a deployable unit and has an ansible script associated to it. 
 
 These components have a structure associated and work in a standardized manner across different deployment stacks (OS, App server variations, DB variations etc).
+
+><p style="font-size:18px"><span style="color:red">**WARNING:**</span><span style="color:red">
+<span style="color:red"></span><span style="color:red">make sure to follow the naming convention as defined by the Temenos team. Any adjustments to the components' title such as adding special characters or spaces will cause a failed factory run.
+
+>Example: downloading the same file multiple times auto-numbers the file name from 1 onwards - t24-jars-63688104355895 **(1)**.zip and adds a space as well. Please use the .zip file that has the original title - **t24-jars-63688104355895.zip**. 
+
+<br>
+</br>
 
 # How to Set Up/ Delete Components # 
 
@@ -64,7 +74,8 @@ A folder is automatically created into the repository *(we are using JFrog Artif
 
 *(If the related artifacts are not uploaded, running the factory will not be possible and an error message will be thrown).*
 
-
+<br>
+</br>
 # How to login to Artifactory #
 Every user created in the Temenos Continuous Deployment Platform can log in with the platform’s credential on the Artifactory server as well. Follow the steps below to login to the Artifactory:
 
@@ -80,15 +91,10 @@ Every user created in the Temenos Continuous Deployment Platform can log in with
 - to see the artifactory repository, click on the Artifactory icon from the left-side menu. The repository belonging to your organisation will be displayed (to make sure you expand the right repository, always check the naming convention: repo-1dq4zcowcn75s1, where what follows after 'repo-' represents the ID of your organisation:
  ![](./images/local-repository.png)
  
-
+<br>
+</br>
 ## How to upload binaries into the Artifactory ##
 
-<p style="font-size:18px"><span style="color:red">**WARNING:**</span><span style="color:red">
-<span style="color:red"></span><span style="color:red">make sure to follow the naming convention as defined by the Temenos team. Any adjustments to the components' title such as adding special characters or spaces will cause a failed factory run.
-
->Example: downloading the same file multiple times auto-numbers the file name from 1 onwards - t24-jars-63688104355895 **(1)**.zip and adds a space as well. Please use the .zip file that has the original title - **t24-jars-63688104355895.zip**. 
-
-<br>
 The users are enabled to download the existing artifacts or upload new artifacts that will be used for factories. This process can be done in two ways:
 
 **A. Manually access the artifactory and upload the required binary (recommended).**
@@ -143,8 +149,8 @@ For demo purposes, we used MobaXterm to upload the binary into the Artifactory a
 Once the command is run, the binary is uploaded on the Artifactory:
 ![](./images/components-products-uploaded-binary.png)
 
-
-
+<br>
+</br>
 
 ## **Pre-requisites and best practices:** ##
 
@@ -170,6 +176,9 @@ Once the command is run, the binary is uploaded on the Artifactory:
 - if the component is uploaded in a .zip format, it it recommended to have a text file describing what is included in the package/ provide reference to the code commit tags to find what is included in the package;
 - do not delete/ edit/ create components/ folders in the artifactory.  TCD Portal’s Product and Component sections must be used to create anything in artifactory.
 
+<br>
+</br>
+
 #  Which Components to Add  #
 
 In order to know which are the minimum required components that you need to add, you must first check the **Templates Catalog** (see button on the left menu).
@@ -186,6 +195,8 @@ From here, select the template that you want to use:
 
 ![](./images/products-template.png)
 
+<br>
+</br>
 
 ### How to Delete a Component ###
 
@@ -195,6 +206,9 @@ Components fields are not editable, so you have only the options to create or to
 > <span style="color:red">If your component is **attached to a Product**, you will not be able to delete it. 
 > 
 > You need first to delete the product, then return to the component and click **Delete** button.</span>
+
+<br>
+</br>
 
 # Products – Feature Description #
 
@@ -209,6 +223,10 @@ A product has the following fields *(all mandatory)*:
 - List of constituent components - at least one component is required 
 
 Ultimately, a product is used in a factory and will be used eventually to deploy the required components.
+
+<br>
+</br>
+
 
 ## How to Set Up/ Edit/ Delete Products ##
 
@@ -227,6 +245,9 @@ See also below example.
 
 In addition to the principle product which has all template mandatory components, you will need to create other products - Base Products - that will be used to be tested.
 
+<br>
+</br>
+
 ### How to edit a product ###
 
 You can edit:
@@ -234,6 +255,10 @@ You can edit:
 - The product description. 
 - The components field by adding or removing components.
 - Just click the edit button, do the changes and then click update.
+
+
+<br>
+</br>
 
 ### How to delete a product ###
 
@@ -246,11 +271,17 @@ You can edit:
  To see the details of a component please make sure to first select the stream from the top-right-side menu. The list with the components that belong to the respective stream will be displayed on the left side of the page. The same operation applies for the products:
 ![](./images/components-see-details.png)
 
+<br>
+</br>
+
 # Artifactory view #
 
 The artifactory view displays the uploaded components that are available for the particular stages. By expanding the components, the user triggers a download of the respective component zip file.
 
 ![](./images/artifactory_view.png)
+
+<br>
+</br>
 
 # User Permissions Required
 To be able to perform the above operations the following permissions need to be enabled for your user:
