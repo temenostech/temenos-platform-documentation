@@ -146,7 +146,12 @@ An organization can define as many components as needed but should have all mand
 </li>
 </ul>
 <h2 id="how-to-upload-binaries-into-the-artifactory">How to upload binaries into the Artifactory</h2>
-<p>The users are enabled to download the existing artifacts or upload new artifacts that will be used for factories. This process can be done in two ways:</p>
+<p><p style="font-size:18px"><span style="color:red"><strong>WARNING:</strong></span><span style="color:red">
+<span style="color:red"></span><span style="color:red">make sure to follow the naming convention as defined by the Temenos team. Any adjustments to the components&#39; title such as adding special characters or spaces will cause a failed factory run.<p>
+<blockquote><p>Example: downloading the same file multiple times auto-numbers the file name from 1 onwards - t24-jars-63688104355895 <strong>(1)</strong>.zip and adds a space as well. Please use the .zip file that has the original title - <strong>t24-jars-63688104355895.zip</strong>. </p>
+</blockquote>
+<p><br>
+The users are enabled to download the existing artifacts or upload new artifacts that will be used for factories. This process can be done in two ways:</p>
 <p><strong>A. Manually access the artifactory and upload the required binary (recommended).</strong></p>
 <p>Requirements:</p>
 <ul>
@@ -284,7 +289,7 @@ curl -H &quot;X-JFrog-Art-Api:AKCp5dKYyM9WMoiacim9yedAZfG6gLwwcYugPmzZhqHkdRe6ex
 <li>DELETE _ PRODUCT</li>
 </ul>
 <p>To have a better understanding of the user permissions, hover the cursor over the variables and a short description will pop up or click <a href="http://documentation.temenos.cloud/home/techguides/user-permissions">here</a> to read more.</p>
-<p><br></p>
+</span></span><p><br></p>
               <hr>
               
               <div id="disqus_thread"></div>
