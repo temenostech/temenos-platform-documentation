@@ -82,7 +82,18 @@
 <h2 id="release-notes">Release Notes</h2>
 
 <p>This page provides information about the monthly Temenos Continuous Deployment Platform features and improvements in each release.</p>
-<h1 id="202005-release-notes"><strong>2020.05 Release Notes</strong></h1>
+<h1 id="20200501"><strong>202005.01</strong></h1>
+<p><strong>InfraBuild</strong>: tba &nbsp;<strong>|</strong>&nbsp; <strong>PortalBuild</strong>: tba
+&nbsp;<strong>|</strong>&nbsp; <strong>ControllerBuild</strong>: tba &nbsp;<strong>|</strong>&nbsp;  <strong>ReleaseNumber</strong>: TCD202005 .01</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>1. Key vault not assigned to the correct subscription</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- the Platform has been enhanced to automate the assignment of  the key vault for client dedicated subscription 
+<br>
+</br> </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>1. Inconsistent factory run scheduling pattern</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- the scheduler bug has been fixed. 
+<br>
+</br></p>
+<h1 id="202005"><strong>2020.05</strong></h1>
 <p><strong>InfraBuild</strong>: tba &nbsp;<strong>|</strong>&nbsp; <strong>PortalBuild</strong>: tba
 &nbsp;<strong>|</strong>&nbsp; <strong>ControllerBuild</strong>: tba &nbsp;<strong>|</strong>&nbsp;  <strong>ReleaseNumber</strong>: TCD202005 </p>
 <h2 id="technical-enhancements">Technical enhancements</h2>
@@ -112,7 +123,7 @@
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- online documentation has been enhanced in order to describe how to create custom templates from model bank templates
 <br>
 </br></p>
-<h1 id="202004-release-notes"><strong>2020.04 Release Notes</strong></h1>
+<h1 id="202004"><strong>2020.04</strong></h1>
 <p><strong>InfraBuild</strong>: 28 &nbsp;<strong>|</strong>&nbsp; <strong>PortalBuild</strong>: 1658
 &nbsp;<strong>|</strong>&nbsp; <strong>ControllerBuild</strong>: 99 &nbsp;<strong>|</strong>&nbsp;  <strong>ReleaseNumber</strong>: TCD202004.1 </p>
 <h2 id="technical-enhancements">Technical enhancements</h2>
@@ -140,7 +151,7 @@
 </br></p>
 <p><br>
 </br></p>
-<h1 id="202002-release-notes"><strong>2020.02 Release Notes</strong></h1>
+<h1 id="202002"><strong>2020.02</strong></h1>
 <p><strong>InfraBuild</strong>: 362 &nbsp;<strong>|</strong>&nbsp; <strong>PortalTag</strong>: cloudPortal_1.79e
 &nbsp;<strong>|</strong>&nbsp; <strong>ControllerBuild</strong>: 26</p>
 <h2 id="technical-enhancements">Technical enhancements</h2>
@@ -158,7 +169,7 @@
 </br></p>
 <p><br>
 </br></p>
-<h1 id="202001-release-notes"><strong>2020.01 Release Notes</strong></h1>
+<h1 id="202001"><strong>2020.01</strong></h1>
 <p><strong>InfraBuild</strong>: 355 &nbsp; <strong>|</strong>  &nbsp;<strong>PortalTag</strong>: cloudPortal_1.78 &nbsp;<strong>|</strong>  &nbsp;<strong>ControllerBuild</strong>: 12</p>
 <h2 id="dashboard-enhancements">Dashboard enhancements</h2>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>1. UI Updates</strong></p>
@@ -218,6 +229,99 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>9.</strong> Users can <strong>schedule factory runs</strong> (learn how <a href="http://documentation.temenos.cloud/home/techguides/factories.html">here</a>) <br>
 </br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>10.</strong> Users can <strong>clone Stream</strong>s (learn how <a href="http://documentation.temenos.cloud/home/techguides/stream.html">here</a>).</p>
+<details>
+  <summary>2020.01</summary>
+
+<strong>InfraBuild</strong>: 355 &nbsp; <strong>|</strong>  &nbsp;<strong>PortalTag</strong>: cloudPortal_1.78 &nbsp;<strong>|</strong>  &nbsp;<strong>ControllerBuild</strong>: 12
+
+<br>
+</br>
+
+# Dashboard enhancements #
+
+&nbsp;&nbsp;&nbsp;&nbsp;<strong>1. UI Updates</strong>
+
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Temenos Continuous Deployment Platform UI has been updated to unify look and feel, behavior, and to improve user experience. The UI changes have been updated on all pages across the documentation portal<br>
+</br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;<strong>2. Component security enhancements</strong>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- when creating a template from a factory run, all components are copied in the new template folder that secures this template consistency from factory deletion<br>
+</br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;<strong>3. Templates visibility improvements</strong>
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- template identifier on the environment&#39;s page added<br>
+</br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;<strong>4. Environment functionality updates</strong>: 
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- pop-up confirmation with check box informing both START and STOP all environments added<br><br><br>
+
+## Role Management   ##
+&nbsp;&nbsp;&nbsp;&nbsp;<strong>1. User access rights</strong>: 
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- user profiles can perform distinct functions on the Temenos Continous Deployment Platform. Administrators, operations, developer and test users for examples require different access rights to perform certain operations. The user permissions are explained on this <a href="http://documentation.temenos.cloud/home/techguides/user-permissions" title="page"><strong>page</strong></a>. Each page from the Documentation Portal will have the access rights displayed for each operation shortly.
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- users can create roles from permissions
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- users can add or remove permissions to a role
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- users (admins) can assign roles to users
+
+<br>
+## Security enhancements - Phase 1 ##
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>1.</strong> Controller API keys are now managed by platform Operators such that keys are not shared with customers and the impact of a compromised/revoke key is minimised<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>2.</strong> All vulnerabilities or defects in libraries detected during initial Whitesource scanning of Temenos Continuous Deployment Platform source have been fixed
+
+<br>
+
+## Security enhancements - Phase 2 ##
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>1.</strong> White source scanning is now automated as part of platform build process that Temenos Continuous Deployment Platform Code is scanned each time we build the platform <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>2.</strong> All the Temenos Continuous Deployment Platform 3rd parties were White Source scanned <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>3.</strong> All artifacts pushed in common GitLab and Artifactory are scanned
+
+<br>
+
+## Self Service Capabilities
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>1.</strong> <strong>Self Service Setup:</strong><br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   -   users who have the Assemble module enabled are able to <a href="http://documentation.temenos.cloud/home/techguides/factories.html">manage their factories</a>, admin <a href="http://documentation.temenos.cloud/home/techguides/components-products.html">product and component</a>s, <a href="http://documentation.temenos.cloud/home/techguides/stream.html">create streams</a>, <a href="http://documentation.temenos.cloud/home/techguides/factories.html?q=schedule%20factory#factory-scheduler">schedule</a> and <a href="http://documentation.temenos.cloud/home/techguides/factories.html?q=schedule%20factory#set-up-create-a-factory">execute factory runs</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  all users have the option to <a href="http://documentation.temenos.cloud/home/techguides/clone-environment.html?q=clone%20envi">clone environments</a>, <a href="http://documentation.temenos.cloud/home/techguides/stage-testcases.html">manage their test cases</a> and connect to Design Studio remotely to any Azure Subscription<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  internal Users can use the Boost function to configure the available templates or build a new template. <br>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>2.</strong> Users are now able to <strong>request an environment based on any factory run</strong> to do triage, demo or ad-hoc testing (learn how <a href="http://documentation.temenos.cloud/home/techguides/run-factory.html">here</a>). <br>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>3.</strong> Organisation administrators now can <strong>create a template based on any successful factory run</strong> to baseline the environment (learn how <a href="http://documentation.temenos.cloud/home/techguides/create-publish-template.html?q=successful">here</a>). <br>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>4.</strong> Organisation Admin user now can <strong>Stop All Environments</strong> of the organisation through a single button to Manage Costs (learn how <a href="http://documentation.temenos.cloud/home/techguides/environment-basic-operations.html?q=stop%20environment">here</a>).<br>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>5.</strong> <strong>Pop-up confirmation</strong> with check box informing both START and STOP all environments added.<br>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>6.</strong> <strong>Factory Management</strong> (learn more <a href="http://documentation.temenos.cloud/home/techguides/components-products.html#how-to-set-up-edit-delete-products">here</a>):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  ability to redefine factory settings to add/ remove Products<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ability to delete a product<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ability to delete a component<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ability to disable a factory<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ability to delete a factory <br>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>7. Components Management</strong>:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-   an Artifactory folder structure available view (learn more <a href="http://documentation.temenos.cloud/home/techguides/components-products.html#artifactory-view">here</a>)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- a list of all available components in current selected stage<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- list of all component versions available in the Artifactory<br>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>8.</strong> Users are now able to <strong>Abort any Factory Run</strong> in case of need (learn how <a href="http://documentation.temenos.cloud/home/techguides/run-factory.html">here</a>) <br>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>9.</strong> Users can <strong>schedule factory runs</strong> (learn how <a href="http://documentation.temenos.cloud/home/techguides/factories.html">here</a>) <br>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>10.</strong> Users can <strong>clone Stream</strong>s (learn how <a href="http://documentation.temenos.cloud/home/techguides/stream.html">here</a>).
+
+
+</details>
 <p><br></p>
               <hr>
               
