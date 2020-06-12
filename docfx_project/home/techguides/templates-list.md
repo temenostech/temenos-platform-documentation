@@ -73,11 +73,11 @@ Below you can find the current templates catalogue:
 # WealthSuite - Front Office only
 | Template   Name                          | Version | Description                                        |
 |------------------------------------------|---------|----------------------------------------------------|
-| MB-TAPWeb-Only-OpenLiberty-Sybase-202003 | 202003  | WealthSuite ModelBank 202003 - (Front Office only) |
-| MB-TAPWeb-Only-OpenLiberty-Sybase-202002 | 202002  | WealthSuite ModelBank 202002 - (Front Office only) |
-| MB-TAPWeb-Only-OpenLiberty-Sybase-202001 | 202001  | WealthSuite ModelBank 202001 - (Front Office only) |
-| MB-TAPWeb-Only-OpenLiberty-Sybase-201912 | 201912  | WealthSuite ModelBank 201912 - (Front Office only) |
-| MB-TAPWeb-Only-OpenLiberty-Sybase-201911 | 201911  | WealthSuite ModelBank 201911 - (Front Office only) |
+| MB-TAPWeb-Only-OpenLiberty-Sybase-202003 | 202003  | WealthSuite 202003 - Front Office only |
+| MB-TAPWeb-Only-OpenLiberty-Sybase-202002 | 202002  | WealthSuite 202002 - Front Office only |
+| MB-TAPWeb-Only-OpenLiberty-Sybase-202001 | 202001  | WealthSuite 202001 - Front Office only |
+| MB-TAPWeb-Only-OpenLiberty-Sybase-201912 | 201912  | WealthSuite 201912 - Front Office only |
+| MB-TAPWeb-Only-OpenLiberty-Sybase-201911 | 201911  | WealthSuite 201911 - Front Office only |
 
 # TestTools #
 | Template   Name 	| Description 	|
