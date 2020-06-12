@@ -60,14 +60,14 @@ Below you can find the current templates catalogue:
 | MB-FCMT24-Jboss-SQL-201909 | 201909  | FCM Standalone for 201909      |
 | MB-FCMT24-Jboss-SQL-201907 | 201907  | FCM T24 201907 (Jboss and SQL) |	
 
-# FCM - GENSAAS/ US SAAS  #
+# FCM - GEN SAAS/ US SAAS  
 | Template   Name                    | Version | Description                                     |
 |------------------------------------|---------|-------------------------------------------------|
 | MB-GENSAAS-FCMT24-Jboss-SQL-201912 | 201912  | MB GENSAAS FCM T24 201912 (Jboss and SQL)       |
 | MB-USSAAS-FCMT24-Jboss-SQL-201912  | 201912  | MB US SAAS FCM T24 SQL 201912 (Jboss and MSSQL) |
 
 
-# Wealthsuite ModelBank#
+# Wealthsuite ModelBank
 | Template   Name                     | Version | Description                  |
 |-------------------------------------|---------|------------------------------|
 | MB-TAPT24-OpenLiberty-Sybase-202003 | 202003  | WealthSuite ModelBank 202003 |
@@ -76,7 +76,7 @@ Below you can find the current templates catalogue:
 | MB-TAPT24-OpenLiberty-Sybase-201912 | 201912  | WealthSuite ModelBank 201912 |
 | MB-TAPT24-OpenLiberty-Sybase-201911 | 201911  | WealthSuite ModelBank 201911 |
 
-# WealthSuite - Front Office only#
+# WealthSuite - Front Office only
 | Template   Name                          | Version | Description                                        |
 |------------------------------------------|---------|----------------------------------------------------|
 | MB-TAPWeb-Only-OpenLiberty-Sybase-202003 | 202003  | WealthSuite ModelBank 202003 - (Front Office only) |
