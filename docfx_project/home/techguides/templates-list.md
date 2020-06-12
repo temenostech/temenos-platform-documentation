@@ -17,7 +17,7 @@ Below you can find the current templates catalogue:
 | MB-T24-Jboss-SQL-201909 | 201909  | TSS-R19Template for Stack06 - 201909 |
 | MB-T24-Jboss-SQL-201908 | 201908  | TSS-R19Template for Stack06 - 201908 |
 | MB-T24-Jboss-SQL-201904 | 201904  | TSS-R19Template for Stack06 - 201904 |
-| MB-T24-Jboss-SQL-201804 | 201904  | TSS-R18Template for Stack06 - 201804 |
+| MB-T24-Jboss-SQL-201804 | 201804  | TSS-R18Template for Stack06 - 201804 |
 
 ## OSS ##
 | Template   Name          | Version | Description                                 |
@@ -35,15 +35,15 @@ Below you can find the current templates catalogue:
 | MB-T24-Wildfly-H2-201904 | 201904  | This is template for T24 with Widfly and H2 |
 | MB-T24-Wildfly-H2-201812 | 201812  | T24 R18.12 (Open Source)                    |
 
-
+ 
 # FCM Standalone #
 | Template   Name              | Version | Description                    |
 |------------------------------|---------|--------------------------------|
 | MB-FCM-ONLY-Jboss-SQL-202003 | 202003  | FCM Standalone for 202003      |
 | MB-FCM-ONLY-Jboss-SQL-202002 | 202002  | FCM Standalone for 202002      |
 | MB-FCM-ONLY-Jboss-SQL-202001 | 202001  | FCM Standalone for 202001      |
-| MB-FCM-ONLY-Jboss-SQL-201912 | 201912  | FCM Standalone for 201911      |
-| MB-FCM-ONLY-Jboss-SQL-201911 | 201911  | FCM T24 201911 (Jboss and SQL) |
+| MB-FCM-ONLY-Jboss-SQL-201912 | 201912  | FCM Standalone for 201912      |
+| MB-FCM-ONLY-Jboss-SQL-201911 | 201911  | FCM Standalone for 201911      |
 | MB-FCM-ONLY-Jboss-SQL-201910 | 201910  | FCM Standalone for 201910      |
 | MB-FCM-ONLY-Jboss-SQL-201909 | 201909  | FCM Standalone for 201909      |
 | MB-FCM-ONLY-Jboss-SQL-201907 | 201907  | FCM Standalone for 201907      |
@@ -57,12 +57,8 @@ Below you can find the current templates catalogue:
 | MB-FCMT24-Jboss-SQL-201912 | 201912  | FCM T24 201912 (Jboss and SQL) |
 | MB-FCMT24-Jboss-SQL-201911 | 201911  | FCM T24 201911 (Jboss and SQL) |
 | MB-FCMT24-Jboss-SQL-201910 | 201910  | FCM T24 201910 (Jboss and SQL) |
-| MB-FCMT24-Jboss-SQL-201909 | 201909  | FCM Standalone for 201909      |
+| MB-FCMT24-Jboss-SQL-201909 | 201909  | FCM T24 201909  (Jboss and SQL) |
 | MB-FCMT24-Jboss-SQL-201907 | 201907  | FCM T24 201907 (Jboss and SQL) |	
-
-# FCM - GEN SAAS/ US SAAS  
-| Template   Name                    | Version | Description                                     |
-|------------------------------------|---------|-------------------------------------------------|
 | MB-GENSAAS-FCMT24-Jboss-SQL-201912 | 201912  | MB GENSAAS FCM T24 201912 (Jboss and SQL)       |
 | MB-USSAAS-FCMT24-Jboss-SQL-201912  | 201912  | MB US SAAS FCM T24 SQL 201912 (Jboss and MSSQL) |
 
@@ -88,7 +84,6 @@ Below you can find the current templates catalogue:
 # TestTools #
 | Template   Name 	| Description 	|
 |-	|-	|
-| TC-HP-UFT-ATAF 	| HP UFT with ATAF parallel tests 	|
 | TestClient-HP-UFT 	| HP UFT Test Client (Windows) 	|
 | TestClient-Selenium 	| Selenium Test Client (Windows) 	|
 
