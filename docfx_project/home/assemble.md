@@ -17,9 +17,11 @@ Bring together configuration and local developments, with published versions of 
 
 ## Assemble Proposition: ##
 
-Extend gives you the ability to leverage the extensive list of published Temenos APIs to integrated to other systems, make commercially differentiating system extensions and engage in the Fintech ecosystem. Extend module provides you access to cloud based, self-provisioned, self-managed environments populated with configurable and scalable Temenos software. Test your proof of concept, share development environments across dispersed teams, replicate production environments or use them for training. The speed, reliability, and agility of these environments will instantly add value to your implementation and scale your project delivery capacity.
+Assemble provides a DevOps solution to perform continuous integration and delivery of Temenos Products, its customisation and thereby enabling faster time to market.
 
-Extend is designed and built for specific needs of the banking and financial service industry, and comes with the full support of the Temenos SaaS team, whether or not you use the Temenos SaaS or a self-provided cloud subscription.
+The Assemble service module can accelerate the pace of change and increase confidence in the software deliveries by managing the Assemble of Components (updates, main release, and Level 3 developments), the provisioning into testing Environments, the execution of tests scripts, and providing detailed dashboards of the results. The Assemble service module further allows the Client to configure Products and Releases, which match their own specific needs. The main objective being to streamline ongoing change and accelerate implementation / upgrade projects.
+
+
 
 
 
