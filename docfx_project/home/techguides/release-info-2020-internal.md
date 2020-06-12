@@ -7,6 +7,7 @@ This page provides information about the monthly Temenos Continuous Deployment P
 **InfraBuild**: 28 &nbsp;**|**&nbsp; **PortalBuild**: 202005.HF1
 &nbsp;**|**&nbsp; **ControllerBuild**: 2020051 &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202005.1
 
+## Technical enhancements
 &nbsp;&nbsp;&nbsp;&nbsp;**1. Key vault not assigned to the correct subscription**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- the Platform has been enhanced to automate the assignment of  the key vault for client dedicated subscription 
