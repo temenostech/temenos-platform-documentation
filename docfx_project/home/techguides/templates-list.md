@@ -59,8 +59,6 @@ Below you can find the current templates catalogue:
 | MB-FCMT24-Jboss-SQL-201910 | 201910  | FCM T24 201910 (Jboss and SQL) |
 | MB-FCMT24-Jboss-SQL-201909 | 201909  | FCM T24 201909  (Jboss and SQL) |
 | MB-FCMT24-Jboss-SQL-201907 | 201907  | FCM T24 201907 (Jboss and SQL) |	
-| MB-GENSAAS-FCMT24-Jboss-SQL-201912 | 201912  | MB GENSAAS FCM T24 201912 (Jboss and SQL)       |
-| MB-USSAAS-FCMT24-Jboss-SQL-201912  | 201912  | MB US SAAS FCM T24 SQL 201912 (Jboss and MSSQL) |
 
 
 # Wealthsuite ModelBank
