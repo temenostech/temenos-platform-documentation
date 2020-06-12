@@ -13,11 +13,11 @@ Below you can find the current templates catalogue:
 | MB-T24-Jboss-SQL-202001 | 202001  | TSS-R19Template for Stack06 - 202001 |
 | MB-T24-Jboss-SQL-201912 | 201912  | TSS-R19Template for Stack06 - 201912 |
 | MB-T24-Jboss-SQL-201911 | 201911  | TSS-R19Template for Stack06 - 201911 |
-| MB-T24-Jboss-SQL-201910 | 201910  |                                      |
-| MB-T24-Jboss-SQL-201909 | 201909  |                                      |
-| MB-T24-Jboss-SQL-201908 | 201908  |                                      |
-| MB-T24-Jboss-SQL-201904 | 201904  |                                      |
-| MB-T24-Jboss-SQL-201804 | 201904  |                                      |
+| MB-T24-Jboss-SQL-201910 | 201910  | TSS-R19Template for Stack06 - 201910 |
+| MB-T24-Jboss-SQL-201909 | 201909  | TSS-R19Template for Stack06 - 201909 |
+| MB-T24-Jboss-SQL-201908 | 201908  | TSS-R19Template for Stack06 - 201908 |
+| MB-T24-Jboss-SQL-201904 | 201904  | TSS-R19Template for Stack06 - 201904 |
+| MB-T24-Jboss-SQL-201804 | 201904  | TSS-R18Template for Stack06 - 201804 |
 
 ## OSS ##
 | Template   Name          | Version | Description                                 |
