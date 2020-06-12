@@ -83,19 +83,33 @@
 
 <p>This page provides information about the monthly Temenos Continuous Deployment Platform features and improvements in each release.</p>
 <h1 id="20200501"><strong>202005.01</strong></h1>
-<p><strong>InfraBuild</strong>: tba &nbsp;<strong>|</strong>&nbsp; <strong>PortalBuild</strong>: tba
-&nbsp;<strong>|</strong>&nbsp; <strong>ControllerBuild</strong>: tba &nbsp;<strong>|</strong>&nbsp;  <strong>ReleaseNumber</strong>: TCD202005 .01</p>
+<p><strong>InfraBuild</strong>: 28 &nbsp;<strong>|</strong>&nbsp; <strong>PortalBuild</strong>: 202005.HF1
+&nbsp;<strong>|</strong>&nbsp; <strong>ControllerBuild</strong>: 2020051 &nbsp;<strong>|</strong>&nbsp;  <strong>ReleaseNumber</strong>: TCD202005.1</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>1. Key vault not assigned to the correct subscription</strong></p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- the Platform has been enhanced to automate the assignment of  the key vault for client dedicated subscription 
 <br>
 </br> </p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>1. Inconsistent factory run scheduling pattern</strong></p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- the scheduler bug has been fixed. 
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>2. &#39;Update Factory&#39; not working properly</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- the product configurations on the factory runs are fixed</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- the user can select all products as Principle Products</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- it is not mandatory to have 1 product in the &quot;Select other products&quot; field when setting up a factory 
 <br>
 </br></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>3. Wrong manifest file for Template created from a Factory configured with 2 different stages for the Base and Principle products.</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- the Artifactory URLs are now correctly set for all components in the manifest of a template created from a factory which is configured with different stages for the Other/ Principle products.
+<br>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;<strong>4. Inconsistent factory run scheduling pattern</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- the factory run scheduler behaviour follows the pattern defined by the user
+<br>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;<strong>5. UI Issues on filters</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- the UI filtering feature has been fixed</p>
+<p><br>
+</br></p>
 <h1 id="202005"><strong>2020.05</strong></h1>
-<p><strong>InfraBuild</strong>: tba &nbsp;<strong>|</strong>&nbsp; <strong>PortalBuild</strong>: tba
-&nbsp;<strong>|</strong>&nbsp; <strong>ControllerBuild</strong>: tba &nbsp;<strong>|</strong>&nbsp;  <strong>ReleaseNumber</strong>: TCD202005 </p>
+<p><strong>InfraBuild</strong>: 28 &nbsp;<strong>|</strong>&nbsp; <strong>PortalVersion</strong>: cloudPortal_1.80d
+&nbsp;<strong>|</strong>&nbsp; <strong>ControllerBuild</strong>: 140 &nbsp;<strong>|</strong>&nbsp;  <strong>ReleaseNumber</strong>: TCD202005 </p>
 <h2 id="technical-enhancements">Technical enhancements</h2>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>1. Receive notifications when a template is assigned/removed from an organisation</strong></p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- organization administrators are informed  when a template is assigned or unassigned to their organization 
