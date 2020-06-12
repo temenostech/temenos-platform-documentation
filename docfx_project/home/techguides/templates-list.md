@@ -66,17 +66,6 @@ Below you can find the current templates catalogue:
 | MB-GENSAAS-FCMT24-Jboss-SQL-201912 | 201912  | MB GENSAAS FCM T24 201912 (Jboss and SQL)       |
 | MB-USSAAS-FCMT24-Jboss-SQL-201912  | 201912  | MB US SAAS FCM T24 SQL 201912 (Jboss and MSSQL) |
 
-# IIB Server for TTI installation
-| Template   Name   | Version | Description                     |
-|-------------------|---------|---------------------------------|
-| IIB-Server-202003 | 202003  | IIB Server for TTI installation |
-| IIB-Server-202002 | 202002  | IIB Server for TTI installation |
-| IIB-Server-202001 | 202001  | IIB Server for TTI installation |
-| IIB-Server-201912 | 201912  | IIB Server for TTI installation |
-| IIB-Server-201911 | 201911  | IIB Server for TTI installation |
-| IIB-Server-201910 | 201910  | IIB Server for TTI installation |
-| IIB-Server-201904 | 201904  | IIB Server for TTI installation |
-| IIB-Server-201804 | 201804  | IIB Server for TTI installation |
 
 # Wealthsuite ModelBank#
 | Template   Name                     | Version | Description                  |
