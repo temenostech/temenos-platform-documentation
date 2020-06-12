@@ -9,8 +9,8 @@ Below you can find the current templates catalogue:
 | Template   Name         | Version | Description                          |
 |-------------------------|---------|--------------------------------------|
 | MB-T24-Jboss-SQL-202003 | 202003  | TSS-R20Template for Stack06 - 202003 |
-| MB-T24-Jboss-SQL-202002 | 202002  | TSS-R19Template for Stack06 - 202002 |
-| MB-T24-Jboss-SQL-202001 | 202001  | TSS-R19Template for Stack06 - 202001 |
+| MB-T24-Jboss-SQL-202002 | 202002  | TSS-R20Template for Stack06 - 202002 |
+| MB-T24-Jboss-SQL-202001 | 202001  | TSS-R20Template for Stack06 - 202001 |
 | MB-T24-Jboss-SQL-201912 | 201912  | TSS-R19Template for Stack06 - 201912 |
 | MB-T24-Jboss-SQL-201911 | 201911  | TSS-R19Template for Stack06 - 201911 |
 | MB-T24-Jboss-SQL-201910 | 201910  | TSS-R19Template for Stack06 - 201910 |
@@ -42,8 +42,8 @@ Below you can find the current templates catalogue:
 | MB-FCM-ONLY-Jboss-SQL-202003 | 202003  | FCM Standalone for 202003      |
 | MB-FCM-ONLY-Jboss-SQL-202002 | 202002  | FCM Standalone for 202002      |
 | MB-FCM-ONLY-Jboss-SQL-202001 | 202001  | FCM Standalone for 202001      |
-| MB-FCM-ONLY-Jboss-SQL-201912 | 201912  | FCM Standalone for 201912      |
-| MB-FCM-ONLY-Jboss-SQL-201911 | 201911  | FCM T24 201909 (Jboss and SQL) |
+| MB-FCM-ONLY-Jboss-SQL-201912 | 201912  | FCM Standalone for 201911      |
+| MB-FCM-ONLY-Jboss-SQL-201911 | 201911  | FCM T24 201911 (Jboss and SQL) |
 | MB-FCM-ONLY-Jboss-SQL-201910 | 201910  | FCM Standalone for 201910      |
 | MB-FCM-ONLY-Jboss-SQL-201909 | 201909  | FCM Standalone for 201909      |
 | MB-FCM-ONLY-Jboss-SQL-201907 | 201907  | FCM Standalone for 201907      |
