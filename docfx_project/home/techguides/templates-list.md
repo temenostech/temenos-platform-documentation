@@ -35,7 +35,8 @@ Below you can find the current templates catalogue:
 | MB-T24-Wildfly-H2-201904 | 201904  | This is template for T24 with Widfly and H2 |
 | MB-T24-Wildfly-H2-201812 | 201812  | T24 R18.12 (Open Source)                    |
 
- 
+ <br>
+</br>
 # FCM Standalone #
 | Template   Name              | Version | Description                    |
 |------------------------------|---------|--------------------------------|
@@ -48,6 +49,10 @@ Below you can find the current templates catalogue:
 | MB-FCM-ONLY-Jboss-SQL-201909 | 201909  | FCM Standalone for 201909      |
 | MB-FCM-ONLY-Jboss-SQL-201907 | 201907  | FCM Standalone for 201907      |
 
+>Note: the FCM templates are only available for the Extend module.
+
+ <br>
+</br>
 # FCM + T24 #
 | Template   Name            | Version | Description                    |
 |----------------------------|---------|--------------------------------|
@@ -60,25 +65,10 @@ Below you can find the current templates catalogue:
 | MB-FCMT24-Jboss-SQL-201909 | 201909  | FCM T24 201909  (Jboss and SQL) |
 | MB-FCMT24-Jboss-SQL-201907 | 201907  | FCM T24 201907 (Jboss and SQL) |	
 
+>Note: the FCM templates are only available for the Extend module.
 
-# Wealthsuite ModelBank
-| Template   Name                     | Version | Description                  |
-|-------------------------------------|---------|------------------------------|
-| MB-TAPT24-OpenLiberty-Sybase-202003 | 202003  | WealthSuite ModelBank 202003 |
-| MB-TAPT24-OpenLiberty-Sybase-202002 | 202002  | WealthSuite ModelBank 202002 |
-| MB-TAPT24-OpenLiberty-Sybase-202001 | 202001  | WealthSuite ModelBank 202001 |
-| MB-TAPT24-OpenLiberty-Sybase-201912 | 201912  | WealthSuite ModelBank 201912 |
-| MB-TAPT24-OpenLiberty-Sybase-201911 | 201911  | WealthSuite ModelBank 201911 |
-
-# WealthSuite - Front Office only
-| Template   Name                          | Version | Description                                        |
-|------------------------------------------|---------|----------------------------------------------------|
-| MB-TAPWeb-Only-OpenLiberty-Sybase-202003 | 202003  | WealthSuite 202003 - Front Office only |
-| MB-TAPWeb-Only-OpenLiberty-Sybase-202002 | 202002  | WealthSuite 202002 - Front Office only |
-| MB-TAPWeb-Only-OpenLiberty-Sybase-202001 | 202001  | WealthSuite 202001 - Front Office only |
-| MB-TAPWeb-Only-OpenLiberty-Sybase-201912 | 201912  | WealthSuite 201912 - Front Office only |
-| MB-TAPWeb-Only-OpenLiberty-Sybase-201911 | 201911  | WealthSuite 201911 - Front Office only |
-
+ <br>
+</br>
 # TestTools #
 | Template   Name 	| Description 	|
 |-	|-	|
