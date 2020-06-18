@@ -146,10 +146,6 @@ To understand better how the SFTP connection works, check below schema:
 > Make sure you place the files in the appropriate folder belonging to the specific application that you want to use
 
 
-## DES - Data Event Streaming
-
-Please follow the instructions from this [link](http://gva2flare.temenosgroup.com/R19ID/R19ID.htm#../Subsystems/R19TechUG/Content/Integration%20Framework/User%20Guides/DataEventStreaming201902/Data%20Event%20Streaming.htm%3FTocPath%3DUser%2520Guides%7CEnterprise%2520Frameworks%7CIntegration%2520Framework%7CData%2520Event%2520Streaming%7C_____0) to learn how to access the events.
-
 # User Permissions Required
 To be able to perform the above operations the below permissions need to be enabled for your user:
 
