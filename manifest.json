@@ -898,7 +898,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/access-t24-ud-directories.html",
-          "hash": "/8iZeodON2AonwnOIRuL/w=="
+          "hash": "6DPHbaIExqhisAQGJlEEeQ=="
         }
       },
       "is_incremental": false,
@@ -1027,7 +1027,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/export-import-database.html",
-          "hash": "3wcTu3r3/KeXSixCAQL1Pw=="
+          "hash": "SG74SZ/EnCZdaQtDB0uGBw=="
         }
       },
       "is_incremental": false,
@@ -2282,6 +2282,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-check-record.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-check-record.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/db-commit-button.png",
       "output": {
         "resource": {
@@ -2359,6 +2370,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-git-clone.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-git-clone.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/db-go-t24.png",
       "output": {
         "resource": {
@@ -2396,6 +2418,17 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/db-login.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-push-db.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-push-db.png"
         }
       },
       "is_incremental": false,
@@ -2484,6 +2517,17 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/db-t24-signin.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-tafjdb-zip.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-tafjdb-zip.png"
         }
       },
       "is_incremental": false,
@@ -2825,6 +2869,39 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/env-template-list.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/env-template-type-componentslist.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/env-template-type-componentslist.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/env-template-type-releasenotes.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/env-template-type-releasenotes.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/env-template-type-templatecontent.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/env-template-type-templatecontent.png"
         }
       },
       "is_incremental": false,
@@ -5197,6 +5274,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/sftp-ids.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/sftp-ids.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/sftp_1.png",
       "output": {
         "resource": {
@@ -6526,19 +6614,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "RestApiDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
@@ -6547,6 +6630,11 @@
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
