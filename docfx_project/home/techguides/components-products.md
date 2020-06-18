@@ -185,12 +185,18 @@ In order to know which are the minimum required components that you need to add,
 
 From here, select the template that you want to use:
 
- - Make sure you select first the Template Type (FCM, T24, Tools, Wealth etc.). 
- - Then from the available Templates Catalog, select the one that you need in order to check the components.
- - Under Full Template Content, scroll until you see the **components** section.
- - <span style="color:red">**Note:**</span><span style="color:red"> Usually there are at least two **components** sections: one related to T24 and another one refers to Model Bank Database (or other db). Depending on the template type, there could be more components, so please make sure you scroll down to check entirely the template in order to add all required components.</span>
- - It is required to add at least all the mandatory components.
- - <span style="color:red">In addition to the mandatory components, you will need to add those components you need to test - not related to your selected template.</span>
+ - make sure you select first the Template Type (FCM, T24, Tools, Wealth etc.). 
+ - from the available Templates Catalog, select the one that you need in order to check the components.
+ - under Full Template Content, scroll until you see the **components** section.
+ - <span style="color:red">**Note:**</span><span style="color:red"> usually there are at least two **components** sections: one related to T24 and another one refers to Model Bank Database (or other db). Depending on the template type, there could be more components, so please make sure you scroll down to check entirely the template in order to add all required components.</span>
+ - it is required to add at least all the mandatory components.
+ - <span style="color:red">In addition to the mandatory components, you will need to add those components you need to test in the **TestScript** component - this not related to your selected template and the user needs to create it manually.</span>
+ ><p style="font-size:18px"><span style="color:red">**WARNING:** the TestScript component needs to be a .zip file within a .zip, otherwise the factory run will fail. See example below:</span><span style="color:red">
+<span style="color:red"></span><span style="color:red">
+
+    >![](./images/components-test-script.png)
+
+
  - For all added components, make sure you add the related files archive into the artifactory as explained above.
 
 ![](./images/products-template.png)
