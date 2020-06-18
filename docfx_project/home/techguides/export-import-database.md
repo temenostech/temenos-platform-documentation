@@ -122,8 +122,8 @@ After attaching the SSH key, click on save button – here we can give a site na
 
 ![](./images/db-tafjdb-zip.png) 
 
-> [!Note]
-> In case you made changes to the db file, please make sure you archive it as a ZIP and rename it as TAFJDB - *capital letters are case sensitive* - before pushing it into the repository).
+><p style="color:red;">[!Note]
+>In case you made changes to the db file, please make sure you archive it as a .zip and rename it TAFJDB before pushing it into the repository. **The naming convention is always TAFJDB.zip  where TAFJDB is case sensitive and the extension -.zip- is lowercase**. If this condition is not satisfied, the database will not be uploaded to the Cloud Environment.</p> 
 
  > Also note that this procedure will replace the existing database in the cloud with this one. The old database will be lost, including any records loaded manually.
 
