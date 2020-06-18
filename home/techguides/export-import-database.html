@@ -203,9 +203,11 @@
 <li>The TAFJDB.zip must be placed into client_files &gt; h2db folder:</li>
 </ul>
 <p><img src="images/db-tafjdb-zip.png" alt=""> </p>
-<div class="NOTE"><h5>Note</h5><p>In case you made changes to the db file, please make sure you archive it as a ZIP and rename it as TAFJDB - <em>capital letters are case sensitive</em> - before pushing it into the repository).</p>
+<blockquote><p style="color:red;">[!Note]
+In case you made changes to the db file, please make sure you archive it as a .zip and rename it TAFJDB before pushing it into the repository. <strong>The naming convention is always TAFJDB.zip  where TAFJDB is case sensitive and the extension -.zip- is lowercase</strong>. If this condition is not satisfied, the database will not be uploaded to the Cloud Environment.</p> 
+
 <p>Also note that this procedure will replace the existing database in the cloud with this one. The old database will be lost, including any records loaded manually.</p>
-</div>
+</blockquote>
 <h2 id="commit-and-push-the-db">Commit and Push the DB</h2>
 <ul>
 <li>Click right inside the <strong>h2db</strong> folder and choose <strong>Git commit master</strong>, check the not versioned files that you want to push (in this case TAFJDB.zip), put a comment in the box, then commit and push. </li>
