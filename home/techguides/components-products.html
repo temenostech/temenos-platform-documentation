@@ -227,13 +227,19 @@ curl -H &quot;X-JFrog-Art-Api:AKCp5dKYyM9WMoiacim9yedAZfG6gLwwcYugPmzZhqHkdRe6ex
 <p>In order to know which are the minimum required components that you need to add, you must first check the <strong>Templates Catalog</strong> (see button on the left menu).</p>
 <p>From here, select the template that you want to use:</p>
 <ul>
-<li>Make sure you select first the Template Type (FCM, T24, Tools, Wealth etc.). </li>
-<li>Then from the available Templates Catalog, select the one that you need in order to check the components.</li>
-<li>Under Full Template Content, scroll until you see the <strong>components</strong> section.</li>
-<li><span style="color:red"><strong>Note:</strong></span><span style="color:red"> Usually there are at least two <strong>components</strong> sections: one related to T24 and another one refers to Model Bank Database (or other db). Depending on the template type, there could be more components, so please make sure you scroll down to check entirely the template in order to add all required components.</span></li>
-<li>It is required to add at least all the mandatory components.</li>
-<li><span style="color:red">In addition to the mandatory components, you will need to add those components you need to test - not related to your selected template.</span></li>
-<li>For all added components, make sure you add the related files archive into the artifactory as explained above.</li>
+<li>make sure you select first the Template Type (FCM, T24, Tools, Wealth etc.). </li>
+<li>from the available Templates Catalog, select the one that you need in order to check the components.</li>
+<li>under Full Template Content, scroll until you see the <strong>components</strong> section.</li>
+<li><span style="color:red"><strong>Note:</strong></span><span style="color:red"> usually there are at least two <strong>components</strong> sections: one related to T24 and another one refers to Model Bank Database (or other db). Depending on the template type, there could be more components, so please make sure you scroll down to check entirely the template in order to add all required components.</span></li>
+<li>it is required to add at least all the mandatory components.</li>
+<li><p><span style="color:red">In addition to the mandatory components, you will need to add those components you need to test in the <strong>TestScript</strong> component - this not related to your selected template and the user needs to create it manually.</span></p>
+<blockquote><p><p style="font-size:18px"><span style="color:red"><strong>WARNING:</strong> the TestScript component needs to be a .zip file within a .zip, otherwise the factory run will fail. See example below:</span><span style="color:red">
+<span style="color:red"></span><span style="color:red"><p>
+<p><img src="images/components-test-script.png" alt=""></p>
+</span></span></blockquote>
+</li>
+<li><p>For all added components, make sure you add the related files archive into the artifactory as explained above.</p>
+</li>
 </ul>
 <p><img src="images/products-template.png" alt=""></p>
 <p><br>
