@@ -1047,18 +1047,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "home/techguides/factory-migration.md",
-      "output": {
-        ".html": {
-          "relative_path": "home/techguides/factory-migration.html",
-          "hash": "SOZ2PU0sY6uw2GhAK6JYHg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "home/techguides/fcm-configuration.md",
       "output": {
         ".html": {
@@ -6422,12 +6410,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "home/toc.yml",
       "output": {
         ".html": {
           "relative_path": "home/toc.html",
-          "hash": "+X+ggw1/NDzdxiRM8HerVg=="
+          "hash": "ZnGrRqg2PYtQWFMiOQ3pkA=="
         }
       },
       "is_incremental": false,
@@ -6623,13 +6614,13 @@
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
           "incrementalPhase": "build"
         },
         "RestApiDocumentProcessor": {
