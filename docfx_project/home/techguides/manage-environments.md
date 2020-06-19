@@ -53,10 +53,19 @@ Check the list with all available templates. Click the **Templates Catalog** on 
 
 ![](./images/env-template.png)
 
-Currently, the screen that opens will display an FCM and T24 default template. Click on the Template Type and select for one of the applications, for example T24 to see the latest retail Suites versions and other available templates.
+Click on the Template Type and select for one of the applications, for example T24 to see the templates that are available for your organisation. The templates details is split into three tabs:
 
-![](./images/env-template-type.png)
+- Release Notes
 
+![](./images/env-template-releasenotes.png)
+
+- a comprehensive Components List
+
+![](./images/env-template-componentslist.png)
+
+- Template Content 
+
+![](./images/env-template-templatecontent.png)
 
 # User Roles Required#
 To be able to create an environment the below permissions need to be enabled for your user:
