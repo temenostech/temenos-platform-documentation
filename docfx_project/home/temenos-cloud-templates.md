@@ -1,7 +1,3 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" language="javascript" src="./scripts/getTemplates.js"></script>
-<script type="text/javascript" language="javascript" src="./scripts/getTemplateDetails.js"></script>
-<script type="text/javascript" language="javascript" src="./scripts/js-yaml.min.js"></script>
 ## How do the cloud templates work?
 
 
@@ -21,4 +17,3 @@ By default, new Templates are added with each monthly release of T24. These Temp
 
 However, the Temenos Continuous Deployment Platform team also offer the ability to create customised Templates for clients. 
 
-Furthermore, please find **[here](http://documentation.temenos.cloud/home/techguides/templates-list.html)** the current templates catalogue. The standard configuration of each template can be explored by clicking the required template from the list. 

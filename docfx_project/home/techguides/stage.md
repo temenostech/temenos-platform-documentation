@@ -61,7 +61,7 @@ Example:
 
 Any other created stage can be deleted at any moment as it is not dependent of the subsequent features added such as components and products. Components and Products belong to the streams.
 
-Example of the default stage defined into the metadata (you can set any name you prefer instead of *devstream*):
+Example of the default stage defined into the metadata (you can set any name you prefer instead of *Primary_stage*):
 
 ![](./images/stage-metadata.png)
 

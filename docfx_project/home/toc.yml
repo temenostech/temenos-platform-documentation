@@ -36,8 +36,6 @@
          href: ./techguides/templates-list.md
        - name: Transact Templates Overview
          href: http://documentation.temenos.cloud/home/pdf/transact-components.pdf 
-       - name: WealthSuite Templates Overview
-         href: http://documentation.temenos.cloud/home/pdf/wealthsuite-components.pdf 
        - name: Selenium Template overview
          href: http://documentation.temenos.cloud/home/techguides/selenium-template.html 
          
