@@ -55,18 +55,20 @@ Login to your organization on the TCD (Temenos Continuous Deployment) portal ([p
 
 ## Export the Database ##
 
-In case you want to export and re-import the database into an environment or do some changes and import it back or to a different environment, please follow the steps below:
+To export and re-import the database into an environment or do some changes and import it back or to a different environment, check the steps below:
+
+>[!Note] To avoid database corruption, all TSA and user activity needs to be stopped so a DB Export can be taken safely.
 
  - To trigger the export, click the **Export** button under Database (also confirm the action on the pop-up to be able to proceed).
 
- - After clicking, it will start exporting (the action should take less than a minute or more minutes based on the DB size). While exporting, the button is disabled, after the export is done, the button gets enabled back.
+ - After clicking the export starts (the action takes around a few minutes based on the DB size). While exporting, the button is disabled, after the export is done, the button gets enabled back.
 
 ![](./images/db-exporting.png) 
 
 > [!Note]
 > Please note that the same steps showed in this demo can be followed to export an environment. Start exporting by using the **Export** button (check the available buttons under T24 Release).
 
- - During this action, the db is exported through SFTP server to which you have to connect in order to download the related content on your local machine. 
+ - During this action, the DB is exported through SFTP server to which you have to connect in order to download the related content on your local machine. 
  - Download WinSCP from <a href="https://winscp.net/eng/index.php" target="_blank">**here**</a>.
  - Open WinSCP and create a new site which will allow the connection through SFTP server:
    - For host name, use the endpoint of the db. *(You can copy it from your portal by clicking the copy icon near the endpoint of the database - 'sftp.temenos.cloud').*
