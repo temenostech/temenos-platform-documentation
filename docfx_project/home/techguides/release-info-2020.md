@@ -3,7 +3,44 @@
 
 This page provides information about the monthly Temenos Continuous Deployment Platform features and improvements in each release.
 
-# **2020.05 Release Notes** 
+# **202005.01** 
+**InfraBuild**: 28 &nbsp;**|**&nbsp; **PortalBuild**: 202005.HF1
+&nbsp;**|**&nbsp; **ControllerBuild**: 2020051 &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202005.1
+
+## Technical enhancements
+&nbsp;&nbsp;&nbsp;&nbsp;**1. Key vault not assigned to the correct subscription**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- the Platform has been enhanced to automate the assignment of  the key vault for client dedicated subscription 
+<br>
+</br> 
+
+&nbsp;&nbsp;&nbsp;&nbsp;**2. 'Update Factory' not working properly**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- the product configurations on the factory runs are fixed
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- the user can select all products as Principle Products
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- it is not mandatory to have 1 product in the "Select other products" field when setting up a factory 
+<br>
+</br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;**3. Wrong manifest file for Template created from a Factory configured with 2 different stages for the Base and Principle products.**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- the Artifactory URLs are now correctly set for all components in the manifest of a template created from a factory which is configured with different stages for the Other/ Principle products.
+<br>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;**4. Inconsistent factory run scheduling pattern**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- the factory run scheduler behaviour follows the pattern defined by the user
+<br>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;**5. UI Issues on filters**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- the UI filtering feature has been fixed
+<br>
+</br>
+
+# **202005** 
 **InfraBuild**: 28 &nbsp;**|**&nbsp; **PortalVersion**: cloudPortal_1.80d
 &nbsp;**|**&nbsp; **ControllerBuild**: 140 &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202005 
 
@@ -59,7 +96,7 @@ This page provides information about the monthly Temenos Continuous Deployment P
 
 
 
-# **2020.04 Release Notes** 
+# **202004** 
 **InfraBuild**: 28 &nbsp;**|**&nbsp; **PortalBuild**: 1658
 &nbsp;**|**&nbsp; **ControllerBuild**: 99 &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202004.1 
 
@@ -96,7 +133,9 @@ Check the  [**Manage Factories**](http://documentation.temenos.cloud/home/techgu
 
 <br>
 </br>
-# **2020.02 Release Notes** #
+
+
+# **202002** #
 **InfraBuild**: 362 &nbsp;**|**&nbsp; **PortalTag**: cloudPortal_1.79e
 &nbsp;**|**&nbsp; **ControllerBuild**: 26
 
@@ -128,7 +167,7 @@ Check the  [**Manage Factories**](http://documentation.temenos.cloud/home/techgu
 <br>
 </br>
 
-# **2020.01 Release Notes** #
+# **202001** #
 **InfraBuild**: 355 &nbsp; **|**  &nbsp;**PortalTag**: cloudPortal_1.78 &nbsp;**|**  &nbsp;**ControllerBuild**: 12
 
 ## Dashboard enhancements ##
