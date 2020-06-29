@@ -34,4 +34,4 @@ By clicking the **Download** button, you can have locally a zip file which conta
 > [!Note]
 > Into **t24home** you can find T24.log referring to the T24 BrowserWeb processes, where you can identify the exact errors during the test run.
 
-Also please check <a href="./access-ud-directories.md" target="blank">**this user guide**</a> in order to see how you can access the UD directories. 
+Also please check <a href="http://documentation.temenos.cloud/home/techguides/access-t24-ud-directories.html" target="blank">**this user guide**</a> in order to see how you can access the UD directories. 
