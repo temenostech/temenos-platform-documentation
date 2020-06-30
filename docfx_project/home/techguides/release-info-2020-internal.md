@@ -3,6 +3,29 @@
 
 This page provides information about the monthly Temenos Continuous Deployment Platform features and improvements in each release.
 
+# **202006** 
+**InfraBuild**: TBA  &nbsp;**|**&nbsp; **PortalBuild**: TBA
+&nbsp;**|**&nbsp; **ControllerBuild**: TBA  &nbsp;**|**&nbsp;  **ReleaseNumber**: TBA
+
+## Technical enhancements
+&nbsp;&nbsp;&nbsp;&nbsp;**1. Additional enhancements**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- dashboards now show the Test Workflow name for easy correlation
+<br>
+</br> 
+
+&nbsp;&nbsp;&nbsp;&nbsp;**2. Customizable workflow**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- users have the ability to create new test workflows that can be assigned to the  factories
+
+
+## Admin portal
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- users are forced to reset password after first login
+
+<br>
+</br>
+
 # **202005.01** 
 **InfraBuild**: 28 &nbsp;**|**&nbsp; **PortalBuild**: 202005.HF1
 &nbsp;**|**&nbsp; **ControllerBuild**: 2020051 &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202005.1
@@ -41,7 +64,7 @@ This page provides information about the monthly Temenos Continuous Deployment P
 <br>
 </br>
 
-# **2020.05** 
+# **202005** 
 **InfraBuild**: 28 &nbsp;**|**&nbsp; **PortalVersion**: cloudPortal_1.80d
 &nbsp;**|**&nbsp; **ControllerBuild**: 140 &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202005 
 
@@ -97,7 +120,7 @@ This page provides information about the monthly Temenos Continuous Deployment P
 
 
 
-# **2020.04** 
+# **202004** 
 **InfraBuild**: 28 &nbsp;**|**&nbsp; **PortalBuild**: 1658
 &nbsp;**|**&nbsp; **ControllerBuild**: 99 &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202004.1 
 
@@ -134,7 +157,7 @@ Check the  [**Manage Factories**](http://documentation.temenos.cloud/home/techgu
 
 <br>
 </br>
-# **2020.02** #
+# **202002** #
 **InfraBuild**: 362 &nbsp;**|**&nbsp; **PortalTag**: cloudPortal_1.79e
 &nbsp;**|**&nbsp; **ControllerBuild**: 26
 
@@ -166,7 +189,7 @@ Check the  [**Manage Factories**](http://documentation.temenos.cloud/home/techgu
 <br>
 </br>
 
-# **2020.01** #
+# **202001** #
 **InfraBuild**: 355 &nbsp; **|**  &nbsp;**PortalTag**: cloudPortal_1.78 &nbsp;**|**  &nbsp;**ControllerBuild**: 12
 
 ## Dashboard enhancements ##
