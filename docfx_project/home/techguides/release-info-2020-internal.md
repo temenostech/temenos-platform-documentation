@@ -8,7 +8,7 @@ This page provides information about the monthly Temenos Continuous Deployment P
 &nbsp;**|**&nbsp; **ControllerBuild**: TBA  &nbsp;**|**&nbsp;  **ReleaseNumber**: TBA
 
 ## Technical enhancements
-&nbsp;&nbsp;&nbsp;&nbsp;**1. Additional enhancements**
+&nbsp;&nbsp;&nbsp;&nbsp;**1. Dashboard enhancements**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- dashboards now show the Test Workflow name for easy correlation
 <br>
