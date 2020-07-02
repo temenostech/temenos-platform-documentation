@@ -42,7 +42,7 @@ The test script component that can be used by this template must be a .zip file 
         - all the libraries that are needed by the test cases must be kept here. This includes the Selenium library, its extension and its dependencies.
 
 
-    - properties file with at least the following  properties  (“sys.t24.IP”, “sys.t24.port", “sys.test.results.folder”, “sys.web.driver.folder”)
+    - properties file with at least the following  properties  (“sys.t24.browser.url”, “sys.test.results.folder", “sys.web.driver.folder”, “sys.t24.login.username1”,  “sys.t24.login.password1”, “sys.t24.login.username2”, “sys.t24.login.password2”) 
 
         - while the test VM is provisioned, Temenos Continuous Deployment Platform will alter these values based on the IP and Port of the T24 VM
 
@@ -255,7 +255,9 @@ The test framework should generate the manifest.xml file with the above details.
     <hostName></hostName>
     </Manifest>
 
-By clicking <a href="./../zip/TestCases.zip">HERE</a>  you can download the sample of the Selenium Test framework, which is capable of running sample UI based tests.
+Click  **<a href="./../zip/TestCases.zip">HERE</a>**  to download the sample of the Selenium Test framework, which is capable of running sample UI based tests.
 
+
+Click **<a href="./../zip/testresults.zip">HERE</a>**  to download the Selenium source code.
 
  
