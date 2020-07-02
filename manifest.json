@@ -6259,7 +6259,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/selenium-template.html",
-          "hash": "A8k2ESuMGsuXBKZuHWDezQ=="
+          "hash": "/AP/pCqt0IQmIYmA62yCNA=="
         }
       },
       "is_incremental": false,
@@ -6510,6 +6510,17 @@
       "output": {
         "resource": {
           "relative_path": "home/zip/selenium-automation.zip"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/zip/testresults.zip",
+      "output": {
+        "resource": {
+          "relative_path": "home/zip/testresults.zip"
         }
       },
       "is_incremental": false,
