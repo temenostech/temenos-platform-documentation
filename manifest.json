@@ -121,12 +121,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/design-studio-tutorials.md",
       "output": {
         ".html": {
           "relative_path": "home/design-studio-tutorials.html",
-          "hash": "qupzO2Vx1UHq2QbZH0fAxQ=="
+          "hash": "zIa1XA6CSLydf2Szg4NHvg=="
         }
       },
       "is_incremental": false,
@@ -819,28 +822,6 @@
         ".html": {
           "relative_path": "home/run-factory-video.html",
           "hash": "KkvoY+SZV0c/tfUL2bNTmg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/scripts/getTemplateDetails.js",
-      "output": {
-        "resource": {
-          "relative_path": "home/scripts/getTemplateDetails.js"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/scripts/getTemplates.js",
-      "output": {
-        "resource": {
-          "relative_path": "home/scripts/getTemplates.js"
         }
       },
       "is_incremental": false,
