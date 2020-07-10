@@ -108,38 +108,42 @@
 <table>
 <thead>
 <tr>
-<th><strong>Folder</strong></th>
+<th>Folder</th>
 <th>Functionality</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>addons</td>
-<td>This folder is designed for AppDynamics. Upload files as JAR.</td>
+<td>This   folder is designed for AppDynamics. Upload files as JAR.</td>
 </tr>
 <tr>
 <td>client_files\h2db</td>
-<td>Local H2 database that will be uploaded to the Cloud Environment. Database username must be t24 and password t24 (case sensitive). Database name is mandatory to be “TAFJDB.h2.db” (case sensitive) and must be archived as a ZIP with name TAFJDB.zip (case sensitive). If the above conditions are not satisfied, the database will not be uploaded to the Cloud Environment. This procedure will <strong>replace</strong> the existing database in the cloud with this one. The <strong>old database</strong> will be <strong>lost</strong>, including any records loaded manually.</td>
+<td>Local   H2 database that will be uploaded to the Cloud Environment. Database username   must be t24 and password t24 (case sensitive). Database name is mandatory to   be “TAFJDB.h2.db” (case sensitive) and must be archived as a ZIP with name   TAFJDB.zip (case sensitive). If the above conditions are not satisfied, the   database will not be uploaded to the Cloud Environment. This procedure   will replace the   existing database in the cloud with this one. The old database will be lost, including any records loaded   manually.</td>
 </tr>
 <tr>
 <td>client_files\helptext</td>
-<td>Custom Help Text files can be uploaded in this folder. The file structure must be the same as HELP.TEXT T24 core. Thus, under client_files\helptext folder, the HelpText folder with subfolders for each component (AA, EB, PP, etc.) is expected.</td>
+<td>Custom   Help Text files can be uploaded in this folder. The file structure must be   the same as HELP.TEXT T24 core. Thus, under client_files\helptext folder, the   HelpText folder with subfolders for each component (AA, EB, PP, etc.) is   expected.</td>
+</tr>
+<tr>
+<td>packages</td>
+<td>If you intend to upload one or more Design Studio packages, add it here as a .jar file</td>
 </tr>
 <tr>
 <td>packages\l3</td>
-<td>One or more T24 DS (Design Studio) packages can be uploaded into this folder. All packages will be deployed automatically inside T24.</td>
+<td>One or more Design Studio packages can be bundled in a .zip file format and uploaded in this folder.</td>
 </tr>
 <tr>
 <td>plugins</td>
-<td>WAR files can be uploaded in this folder. The files will be deployed inside Jboss EAP. In addition to this, endpoints related to plugins can be automatically added to an application. For more details, check this <a href="add-app-endpoint.html" target="blank">guide</a>.</td>
+<td>WAR files can be uploaded in   this folder. The files will be deployed inside Jboss EAP. In addition to   this, endpoints related to plugins can be automatically added to an   application. For more details, check this guide.</td>
 </tr>
 <tr>
 <td>updates</td>
-<td>The updates files downloaded from the portal in zip format. The files will be copied to the update folder and the T24 Update procedure is triggered.</td>
+<td>The updates   files downloaded from the portal in zip format. The files will be copied to   the update folder and the T24 Update procedure is triggered.</td>
 </tr>
 <tr>
 <td>wsdl</td>
-<td>WSDL files and folders that are required by plug-ins (war file) need to be uploaded here.</td>
+<td>WSDL   files and folders that are required by plug-ins (war file) need to be   uploaded here.</td>
 </tr>
 </tbody>
 </table>
