@@ -103,7 +103,7 @@ Test Stage: represents a stable version of components that is pre-tested from th
 
 At the end of this step, when the first round of tests is completed, the test VM will be deleted, but it will not stop the T24 environment (this will be done at the end of the workflow)
 
-
+![factory-product-configuration](./images/factory-test-configuration.png) 
 <br>
 </br>
 
