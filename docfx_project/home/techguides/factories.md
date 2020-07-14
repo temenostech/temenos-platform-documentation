@@ -28,7 +28,7 @@ Below you will find the pre-requisites to run a factory:
 
 
 
-- **2 templates **
+- **2 templates**
 
  a. Environment Template - holds the details of the template that is to be used to deploy the components selected by the factory
 
