@@ -57,15 +57,15 @@ Click on the Template Type and select for one of the applications, for example T
 
 - Release Notes
 
-![](./images/env-template-releasenotes.png)
+![env-template-releasenotes](./images/env-template-releasenotes.png)
 
 - a comprehensive Components List
 
-![](./images/env-template-componentslist.png)
+![env-template-componentslist](./images/env-template-componentslist.png)
 
 - Template Content 
 
-![](./images/env-template-templatecontent.png)
+![env-template-templatecontent](./images/env-template-templatecontent.png)
 
 # User Roles Required#
 To be able to create an environment the below permissions need to be enabled for your user:
