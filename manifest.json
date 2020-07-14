@@ -651,18 +651,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "home/jenkins-build-video.md",
-      "output": {
-        ".html": {
-          "relative_path": "home/jenkins-build-video.html",
-          "hash": "zE62Ak5yjQOGKGmT7Rl/zg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "home/manage-artifactory-test-cycle-video.md",
       "output": {
         ".html": {
@@ -6157,18 +6145,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "home/techguides/jenkins-build-promote-pipelines.md",
-      "output": {
-        ".html": {
-          "relative_path": "home/techguides/jenkins-build-promote-pipelines.html",
-          "hash": "JAwyNvTZED8LCmAEBqqnKQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "home/techguides/manage-environments.md",
       "output": {
         ".html": {
@@ -6606,14 +6582,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "RestApiDocumentProcessor": {
