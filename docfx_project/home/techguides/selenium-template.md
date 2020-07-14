@@ -258,6 +258,6 @@ The test framework should generate the manifest.xml file with the above details.
 Click  **<a href="./../zip/TestCases.zip">HERE</a>**  to download the sample of the Selenium Test framework, which is capable of running sample UI based tests.
 
 
-Click **<a href="./../zip/sample-selenium-source-code.zip">HERE</a>**  to download the Selenium source code.
+Click **<a href="./../zip/sample-selenium-source-code.zip">HERE</a>**  to download the Selenium source code. 
 
  
