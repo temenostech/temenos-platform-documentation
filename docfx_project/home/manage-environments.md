@@ -81,7 +81,7 @@ Create your own environment:
  - Select one of the available templates from dropdown list, based on your requirements
  - Click **Create environment**
 All fields are mandatory except 'Labels'
-
+ 
 ![](./images/env-new.png)
 
 <br>
