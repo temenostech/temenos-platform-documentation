@@ -21,7 +21,9 @@ The Selenium Template will provision the following:
 <br>
 </br>
 
-The test script component that can be used by this template must be a .zip file with the following folders:
+The test script component that can be used by this template must be a .zip within a .zip file (see screenshot below) with the following folders:
+
+![](./images/components-test-script.png)
 
 - **Test suite 1** (this could be any name - it is assumed this as a suite of tests that needs to be executed)
 
