@@ -124,7 +124,10 @@ The 'Stop Environment' and 'Keep Running Environment' options are aimed to be us
  To see the details of a factory please make sure to first select the stream and the stage from the top-right-side menu. If you have more stages, click on the stage where you created the respective factory. The list with the factories that belong to the respective stage will be displayed on the left side of the page:
 ![](./images/factory-see-details.png)
 
-**Limitation**: The user is not able to edit existing factories with a scheduler having start date set in the past. No option to disable the factory scheduler.
+
+>**Limitation:** The user is not able to edit existing factories with a scheduler having start date set in the past. No option to disable the factory scheduler. As a workaround set the scheduler Start & End dates to a future date in order to update the factory configuration.
+
+
 
 
 ## Edit a Factory ##
