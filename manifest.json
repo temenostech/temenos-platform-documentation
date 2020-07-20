@@ -949,15 +949,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/deploy-an-update-to-an-existing-environment.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/deploy-an-update-to-an-existing-environment.html",
-          "hash": "0XGah4NDfDtQGY2udKMNSA=="
+          "hash": "m8J6UmlcMW0WOuCCOO7oKA=="
         }
       },
       "is_incremental": false,
@@ -2649,6 +2646,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/define-workflow.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/define-workflow.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/delete-button.png",
       "output": {
         "resource": {
@@ -2686,6 +2694,28 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/ds-dns-example.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/ds-installation-l3packages.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/ds-installation-l3packages.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/ds-installation.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/ds-installation.png"
         }
       },
       "is_incremental": false,
@@ -3016,6 +3046,17 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/export_env_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/external-connectivity-tcd-org-services.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/external-connectivity-tcd-org-services.png"
         }
       },
       "is_incremental": false,
@@ -6136,10 +6177,65 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/workflow-add-edge.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/workflow-add-edge.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/workflow-cob.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/workflow-cob.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/workflow-create-wf.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/workflow-create-wf.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/workflow-edit-delete.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/workflow-edit-delete.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/workflow-tab.png",
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/workflow-tab.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/workflow-test.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/workflow-test.png"
         }
       },
       "is_incremental": false,
@@ -6176,6 +6272,21 @@
         ".html": {
           "relative_path": "home/techguides/manage-test-scripts.html",
           "hash": "Yd2tF3DtA42K0X/kJQpiAQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "home/techguides/manage-workflows.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/manage-workflows.html",
+          "hash": "yhypjQC+oYHeg9YwsxyhaQ=="
         }
       },
       "is_incremental": false,
@@ -6604,19 +6715,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
+        "RestApiDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "RestApiDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
@@ -6625,6 +6731,11 @@
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
