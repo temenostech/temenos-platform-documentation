@@ -6089,6 +6089,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/user-change-password.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/user-change-password.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/user-details.png",
       "output": {
         "resource": {
@@ -6477,7 +6488,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/user-creation-in-paas.html",
-          "hash": "IEMrDkKnRlNDCQ34SHgvBg=="
+          "hash": "rUCvwM9FsVmL0ZJlggh7fA=="
         }
       },
       "is_incremental": false,
