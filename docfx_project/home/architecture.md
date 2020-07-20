@@ -101,4 +101,85 @@ Below is a list of tools which may be used to exploit Temenos Continuous Deploym
 | SFTP   Client 	| SFTP   is the protocol used to download file exports (environment or database   exports) 	|
 | Design   Studio | Design   Studio is the IDE (Integrated Development Environment) produced by Temenos   for developing changes in T24 systems. Design Studio itself does not form   part of the Deployment Platform, but change outputs from this tool are   supported within the Configuration Repository. 	|
 
+<br>
+</br>
+
+# How a bank connects to the Temenos Continuous Deployment Platform 
+
+![](./images/external-connectivity-tcd-org-services.png) 
+
+## Connectivity to Temenos Continuous Deployment  Services
+
+**1.	Bank Server to Artifactory**
+
+ •	URL & port: https://clientsubartifactory.temenos.cloud:443
+
+ •	Protocol: https 
+
+ •	Actions: get and post  through API
+
+<br>
+
+**2.	Bank desktop to Artifactory**
+
+ •	URL & port: https://clientsubartifactory.temenos.cloud:443
+
+ •	Protocol: https 
+
+ •	Actions: Browse UI
+
+<br>
+
+**3.	Bank desktop to Git Repositories**
+	
+ •	URL & port: https://clientsubGitlab.temenos.cloud:443
+
+ •	Protocol: https
+
+ •	Actions: view web UI, git clone
+
+<br>
+
+**4.	Bank desktop to File Server**
+
+ a.	URL & port: https://clientsubsftp.temenos.cloud:443
+
+ b.	Protocol: https & WebDav
+
+c.	Actions: view files through Web Browser, push files through curl and WebDav (WinSCP)
+
+<br>
+</br>
+
+## Connectivity to the Temenos Continuous Deployment Environments ##
+
+**5.	Bank desktop to Environments applications UI & API endpoints**
+
+ a.	URL & port: https://[envID].dev.temenos.cloud/[Application]:443
+
+ b.	Protocol: https
+
+ c.	Actions: Use web applications through Web Browser.
+
+<br>
+
+**6.	Bank desktop to Environments JMS endpoints**
+
+ a.	URL & port: https-remoting://[envID].dev.temenos.cloud:443
+
+ b.	Protocol: https-remoting
+
+c.	Actions: Send/receive JMS messages from AAB’s ATAF test client to remote JMS queues
+
+<br>
+
+**7.	Bank desktop to Environments debug endpoint**
+
+ a.	URL & port: [envID].dev.temenos.cloud:80
+
+ b.	Protocol: bespoke tcp/ip protocol
+
+ c.	Actions: debug functionality from Design Studio (Eclipse) to environment 
+
+
 

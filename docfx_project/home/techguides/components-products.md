@@ -152,37 +152,25 @@ Once the command is run, the binary is uploaded on the Artifactory:
 <br>
 </br>
 
-## **Pre-requisites and best practices:** ##
+# Pre-requisites and best practices
 
-- ensure that the component name also has information about its version;
-- ensure that the component format that you upload is correct and as delivered by the Temenos team;
+•	ensure that the component name also has information about its version;
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  the format of the package as delivered by Temenos will as well be supported in TCD.  
+•	ensure that the component format that you upload is as expected by TCD. (Every product has got an template overview page (<<Give a link to the transact template overview page>>), which gives this info)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-- if the **Help text** file of T24 is given as a .zip, the templates will expect a .zip file for the same,
+•	ensure that components are uploaded to the appropriate folders (the URL and folder names can be found from the component definition pages of the TCD portal);
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - DS pakages will have the same packaging as bundled by Design Studio
+•	if the component is uploaded in a .zip format, it is recommended to have a text file describing what is included in the package/ provide reference to the code commit tags to find what is included in the package;
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - T24 updates are bundled in zip;
+•	do not delete/ edit/ create components/ folders in the artifactory. TCD Portal’s Product and Component sections must be used to create anything in artifactory;
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - you need to get from Temenos distribution team the Toolbox kit that will allow you to generate the system definition file of your T24 environment;
+•	our recommendation is to retain the last 25 components in every stage.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - you will be able to download the T24 updates correspondent to your environments from the Temenos Customer Support Portal by uploading the system definition file generated above;
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - once the updates are downloaded from the portal in a .zip file, you must create another .zip of that downloaded .zip file and only then  place it into the artifactory under the correspondent component;
-
-
-
-- ensure that components are uploaded to the appropriate folders (the URL and folder names can be found from the component definition pages of the TCD portal);
-- if the component is uploaded in a .zip format, it it recommended to have a text file describing what is included in the package/ provide reference to the code commit tags to find what is included in the package;
-- do not delete/ edit/ create components/ folders in the artifactory.  TCD Portal’s Product and Component sections must be used to create anything in artifactory;
-- our recommendation is to retain the last 10 components in every stage;
 
 <br>
 </br>
 
-#  Which Components to Add  #
+#  Which Components to Add  
 
 In order to know which are the minimum required components that you need to add, you must first check the **Templates Catalog** (see button on the left menu).
 
