@@ -65,8 +65,8 @@
      href: ./techguides/components-products.md
    - name: Manage Workflows
      href: ./techguides/manage-workflows.md   
-   - name: Manage Factories
-     href: ./techguides/factories.md
+   - name: Manage Automated Factories
+     href: ./techguides/automated-factories.md
    - name: Manage Test Scripts
      href: ./techguides/manage-test-scripts.md          
    - name: Manage Test Cases Upload
