@@ -886,12 +886,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/artifactory-test-cycle.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/artifactory-test-cycle.html",
-          "hash": "IcUT2aNfBgi9NFAj4EzIew=="
+          "hash": "Vn4YqLPq/STIdM35atRdFg=="
         }
       },
       "is_incremental": false,
@@ -1004,18 +1007,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "home/techguides/factories.md",
-      "output": {
-        ".html": {
-          "relative_path": "home/techguides/factories.html",
-          "hash": "afgx81cmjJTpIXw75yb7bw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "home/techguides/fcm-configuration.md",
       "output": {
         ".html": {
@@ -1027,12 +1018,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/fix-issues-factory-run.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/fix-issues-factory-run.html",
-          "hash": "igHCR8cJv4TsJTIFNbSC5w=="
+          "hash": "oz6DnGCSUMOm3rKbvxTg5A=="
         }
       },
       "is_incremental": false,
@@ -6356,7 +6350,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/run-factory.html",
-          "hash": "QtKmUkWbJF9hkh1zyASACw=="
+          "hash": "08s/Es5l54yteDOzx8jugA=="
         }
       },
       "is_incremental": false,
@@ -6531,12 +6525,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "home/toc.yml",
       "output": {
         ".html": {
           "relative_path": "home/toc.html",
-          "hash": "0vA9C5+MEWIyKfJiTAMNlQ=="
+          "hash": "H4A059MHUI4L4II3vhaYPA=="
         }
       },
       "is_incremental": false,
@@ -6739,11 +6736,6 @@
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "RestApiDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -6755,6 +6747,11 @@
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
