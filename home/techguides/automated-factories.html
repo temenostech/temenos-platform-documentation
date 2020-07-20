@@ -1,0 +1,316 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Automated Factories </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Automated Factories ">
+    <meta name="generator" content="docfx 2.22.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/woocircle.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" class="Automated Factories ">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar" role="navigation">
+          <div class="container">
+            <div class="row">
+              <div class="navbar-header col-md-2">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                
+                <a class="navbar-brand" href="https://www.temenos.com/platform/temenos-continuous-deployment-devops/">
+                  <img id="logo" src="/logo.png" alt="">
+                </a>
+              </div>
+              <div class="themainmenu col-md-10">
+              <div class="collapse navbar-collapse" id="navbar">
+                <form class="navbar-form navbar-right" role="search" id="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                  </div>
+                </form>
+              </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h2 id="automated-factories">Automated Factories</h2>
+
+<p>Factories are the core Assemble components that define how, what and when to deploy, test and promote the various components used by an organization. </p>
+<p>Below you will find the pre-requisites to run a Automated factory:</p>
+<h1 id="pre-requisites">Pre-requisites</h1>
+<ul>
+<li><p><strong>1 stream</strong></p>
+</li>
+<li><p><strong>2 stages</strong> within the stream you created (learn how to create streams <a href="http://documentation.temenos.cloud/home/techguides/stream.html">here</a>)</p>
+<p> a. Source stage - the stage from which pre-tested stable components can be picked up</p>
+<p>b. Base/Test Stage – the stage from which the “Other Products” (Base Products) components are fetched. This stage represents a stable version of components that is pre-tested from the perspective of the current factory.</p>
+</li>
+<li><p><strong>the list of mandatory components from the environment template</strong> (learn how to deploy the components <a href="http://documentation.temenos.cloud/home/techguides/components-products.html">here</a>)</p>
+</li>
+<li><p><strong>2 products</strong> (learn how to create a product <a href="http://documentation.temenos.cloud/home/techguides/components-products.html#products--feature-description">here</a>)</p>
+<p>a. Principle Products – Principle products simply mean the list of components that are being tested against a stable set of other pre-tested components. After successfully running the factory, the principle products are promoted to the next stage (the configured one).</p>
+<p>b. Other products (Base Products) – Products that are pre-tested (by other factories). These are products that don’t need to be promoted but they are required to test the Principle Products.</p>
+</li>
+<li><p><strong>2 templates</strong></p>
+<p>a. Environment Template - holds the details of the template that is to be used to deploy the components selected by the factory</p>
+<p>b. Test Template – specifies the template that is required to deploy a test environment that holds the testing framework and test scripts. This is needed to generalize the test tools as a template.</p>
+</li>
+</ul>
+<p><br></p>
+<h2 id="validations">Validations</h2>
+<ol>
+<li><p>The list of selected products cannot contain components that are not understood by the selected Environment Template. </p>
+<p> a. The list of components contained in the principle and other products needs to match a bare minimum of all mandatory components specified in the template.</p>
+<p> b. The list of components can possibly have more than one component of the same type if the template allows more than one count of the same type.</p>
+<p> c. The list of components cannot contain a component type that is unknown to the Template.</p>
+</li>
+<li><p>Templates – The selection of templates are restricted based on the type of the template and a selection list is already confined to allocated and valid templates.</p>
+</li>
+<li><p>Stages – No restriction. The factory can even choose to use the same Stage for all three stage values.</p>
+</li>
+</ol>
+<div class="NOTE"><h5>Note</h5><p>See below configurations to understand better how to configure correctly and the factory&#39;s behavior.</p>
+</div>
+<h1 id="set-up-create-a-automated-factory">Set-up/ Create a Automated Factory</h1>
+<ul>
+<li>Click on Settings button on the main menu on the left.</li>
+<li>Make sure you select first the <strong>Stream</strong> and <strong>Stage</strong> (this is the stage where components are promoted) where you want to create a factory and then click <strong>New Factory</strong> button on the top-right.</li>
+<li>Fill the required fields (see all definitions above and also below example):
+<b>
+<br></b></li>
+</ul>
+<h2 id="factory-details">Factory Details</h2>
+<ul>
+<li><strong>Factory Name</strong>: choose a meaningful name for your factory.</li>
+<li><strong>Factory Description</strong>: insert a description that will help knowing what the factory is about.
+<img src="images/factory-details.png" alt="factory-details"></li>
+</ul>
+<h2 id="product-configuration">Product Configuration</h2>
+<p>This tab represents the test configuration that holds the template, the products and the source stage that are pre-tested from the perspective of the current factory.</p>
+<ul>
+<li><strong>Template</strong>: choose an Environment Template from the dropdown list. Based on this template  the environments will be created where you will be able to test different products</li>
+<li><strong>Select Principle Products</strong>: following a successful run, the principle products are promoted to the next stage (the configured one)</li>
+<li><strong>Source Stage</strong>: this is the stage with the stable version of components</li>
+<li><strong>Select Other Products</strong>: you can select more products that are required to test the Principle products</li>
+<li>click <strong>Next</strong>
+<img src="images/factory-product-configuration.png" alt="factory-product-configuration"> </li>
+</ul>
+<h2 id="test-configuration">Test Configuration</h2>
+<p>The Test Configuration consists in in-build service tasks and is used to  trigger tests for a given factory-run, trigger export of application logs.</p>
+<p>Depending on you organisation settings, you may/ may not have a Default Workflow or the option to select from a list of workflows defined by the users from your organisation. During this phase, you have to fill in the Workflow steps - a sample which displays the steps (in that exact sequence) that are executed by the selected workflow. Assuming that you select the Default Workflow, you need to fill in the following fields:</p>
+<ul>
+<li><p><strong>Test template</strong>: specifies the template that is required to deploy a test environment that holds the testing framework and test scripts. This is needed to generalize the test tools as a template.</p>
+</li>
+<li><p><strong>Component</strong>: this is the component that holds the test scripts which runs against the T24 VM</p>
+</li>
+<li><p><strong>No of VMs</strong>: number of test VM&#39;s to be created during factory run
+Test Stage: represents a stable version of components that is pre-tested from the perspective of the current factory</p>
+</li>
+<li><p><strong>optional</strong>: tick if the workflow should stop in case of failure</p>
+</li>
+<li><p>Click <strong>Next</strong></p>
+</li>
+</ul>
+<p>At the end of this step, when the first round of tests is completed, the test VM will be deleted, but it will not stop the T24 environment (this will be done at the end of the workflow)</p>
+<p><img src="images/factory-test-configuration.png" alt="factory-product-configuration"> </p>
+<p>Assuming that you select a customized workflow with COB you need to fill in additional steps, such as:</p>
+<ul>
+<li>type in the ID of the TSA.SERVICE record for which COB has to be run. The id can be either group specific id (eg: COB-1, COB-001) , company specific id (eg: COB-GB0010001) or COB. Important: currently the platform can handle 20 agents at max, including the online services.</li>
+</ul>
+<p><br>
+</br></p>
+<h2 id="promotion-configuration">Promotion Configuration</h2>
+<p>This configuration enables the user to select all the required principle products along with the target stage to which they will be promoted after a successful factory run. In addition, the user can select the Test Components along with the target stage if they need promotion as well. 
+<img src="images/factory-promotion-configuration.png" alt="factory-promotion-configuration"></p>
+<blockquote><p>Note: it is not mandatory to fill in the Tests to Promote field and the associated Select target stage for Tests from the right side. </p>
+</blockquote>
+<h4 id="factory-scheduler">Factory Scheduler</h4>
+<p>A user has the privilege to configure the schedule of the factory run in order to automatically run the tests and have the results available daily.</p>
+<ul>
+<li>the scheduler can be configured to run one time per day</li>
+<li>if the factory run test is successful you can choose to stop/ or keep running the T24 environment</li>
+<li><p>the same applies for the Factory Run Failure scenario
+The &#39;Stop Environment&#39; and &#39;Keep Running Environment&#39; options are aimed to be used for costs purposes
+<img src="images/factory-scheduler.png" alt="factory-scheduler"></p>
+<p>To see the details of a factory please make sure to first select the stream and the stage from the top-right-side menu. If you have more stages, click on the stage where you created the respective factory. The list with the factories that belong to the respective stage will be displayed on the left side of the page:
+<img src="images/factory-see-details.png" alt=""></p>
+</li>
+</ul>
+<blockquote><p><strong>Limitation:</strong> The user is not able to edit existing factories with a scheduler having start date set in the past. No option to disable the factory scheduler. As a workaround set the scheduler Start &amp; End dates to a future date in order to update the factory configuration.</p>
+</blockquote>
+<h2 id="edit-a-factory">Edit a Factory</h2>
+<ul>
+<li>Click the <strong>Edit</strong> button</li>
+<li>Any field can be changed/ edited as long as the entire Factory configuration complies with the validation rules</li>
+<li>Click the <strong>Update</strong> button</li>
+</ul>
+<h2 id="delete-a-factory">Delete a Factory</h2>
+<ul>
+<li>You can easily delete a factory by clicking the <strong>delete</strong> button</li>
+<li>The products, stages and streams created before can be re-used.</li>
+</ul>
+<p><img src="images/factory-edit-delete.png" alt="factory-scheduler"></p>
+<h1 id="user-permissions-required">User Permissions Required</h1>
+<p>To be able to perform the above operations the following permissions need to be enabled for your user:</p>
+<ul>
+<li>MANAGE _ COMPONENTS</li>
+<li>MANAGE _ STREAMS</li>
+<li>MANAGE _ STAGES</li>
+<li>MANAGE _ PRODUCTS</li>
+<li>CREATE _ FACTORY</li>
+<li>UPDATE _ FACTORY</li>
+<li>DELETE _ FACTORY</li>
+</ul>
+<p>To have a better understanding of the user permissions, hover the cursor over the variables and a short description will pop up or click <a href="http://documentation.temenos.cloud/home/techguides/user-permissions">here</a> to read more.</p>
+<p><br></p>
+              <hr>
+              
+              <div id="disqus_thread"></div>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 footer-note left">
+              <p>
+                <a href="/"><img src="/logo-bottom.png" alt=""></a>
+                <a href="https://www.temenos.com/en/accessibility/">Accessibility</a>
+                <a href="https://www.temenos.com/en/legal-information/cookie-policy/">Cookie Policy</a>
+                <a href="https://www.temenos.com/en/legal-information/privacy-policy/">Privacy Policy</a>
+                <a href="https://www.temenos.com/en/legal-information/terms-and-conditions/">Terms & Conditions</a>
+              </p>
+            </div>
+      
+            <div class="col-md-6 footer-note right">
+              <p>
+                Copyright &copy; 2020 Temenos Headquarters SA <span>&#183;</span>
+                <a target="_blank" href="https://www.facebook.com/TemenosGroup"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+                <a target="_blank" href="https://twitter.com/Temenos"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a target="_blank" href="http://www.linkedin.com/company/temenos"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a target="_blank" href="//plus.google.com/u/0/100035548059267323447?prsrc=3"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+              </p>
+            </div>
+          </div>
+      
+        </div>
+      </footer>
+      
+      <div class="back-to-top">
+        <a href="#top">
+          <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i></span>
+        </a>
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script id="dsq-count-scr" src="//temenostech.disqus.com/count.js" async=""></script>
+    
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myshareDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.sharedropbtn')) {
+    
+        var dropdowns = document.getElementsByClassName("sharedropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+    
+    <script>
+    	window.onload = function(){
+        	document.getElementById("shareFacebook").href = 'https://www.facebook.com/sharer/sharer.php?u=' + window.location.toString();
+    
+        	document.getElementById("shareTwitter").href = 'https://twitter.com/intent/tweet?text=Temenos+Developer+Portal&url=' + window.location.toString();
+    
+        	document.getElementById("shareGoogle").href = 'https://plus.google.com/share?url=' + window.location.toString();
+    
+        	document.getElementById("shareLinkedin").href = 'https://www.linkedin.com/shareArticle?mini=true&url=' + window.location.toString() + '&title=Temenos+Developer+Portal&summary=&source=';
+    
+        	document.getElementById("shareEmail").href = 'mailto:' + window.location.toString();
+    	}
+    </script>
+    
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-38593742-8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-38593742-8');
+    </script>  
+  </body>
+</html>
