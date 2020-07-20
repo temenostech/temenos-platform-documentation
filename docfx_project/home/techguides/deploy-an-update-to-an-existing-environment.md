@@ -190,7 +190,7 @@ Temenos Continuous Deployment provides users the ability to deploy one or more D
 <br>
 </br>
 
-# How a bank installs updates to Temenos Continuous Deployment Platform
+# How Temenos Continuous Deployment Platform installs updates
  When a T24 update is deployed into a Temenos Continuous Deployment environment, either via the [Deploy button](http://documentation.temenos.cloud/home/techguides/deploy-an-update-to-an-existing-environment.html) or during a [factory run](http://documentation.temenos.cloud/home/techguides/run-factory.html), the following steps take place in sequence in the background.
 
 > **Note**: **$T24_HOME corresponds to UD folder.** The environment variables and paths correspond to Linux based environment. Nonetheless, the same set of steps are executed for Windows templates. $T24_HOME corresponds to the path to UD folder. The $T24_HOME/&SAVEDLISTS& contains the UpdateLog and the REL files corresponding to the updates. 
