@@ -27,7 +27,12 @@ Click **New user** button on the top-right corner:
 
 This will create a new user in your organisation. This new user will be automatically assigned to all GitLab Repositories from within all environments. If you have already a user created, you can click on the user and update the SSH key box with the one created above.
 
->**Important!**: It is the Organisation Admin's responsibility to inform the new user about its credentials and set of permissions granted on the portal.
+>**Important!**: It is the Organisation Admin's 
+>responsibility to inform the new user about its credentials and set of permissions granted on the portal.
+
+On their first login, all new users will be forced to reset the password that was initially created by the Organisation Admin.
+
+![user-change-password](./images/user-change-password.png)
 
 # User Roles Management #
 
