@@ -181,6 +181,47 @@
 </tr>
 </tbody>
 </table>
+<p><br>
+</br></p>
+<h1 id="how-a-bank-connects-to-the-temenos-continuous-deployment-platform">How a bank connects to the Temenos Continuous Deployment Platform</h1>
+<p><img src="images/external-connectivity-tcd-org-services.png" alt=""> </p>
+<h2 id="connectivity-to-temenos-continuous-deployment--services">Connectivity to Temenos Continuous Deployment  Services</h2>
+<p><strong>1.    Bank Server to Artifactory</strong></p>
+<p> •  URL &amp; port: <a href="https://clientsubartifactory.temenos.cloud:443">https://clientsubartifactory.temenos.cloud:443</a></p>
+<p> •  Protocol: https </p>
+<p> •  Actions: get and post  through API</p>
+<p><br></p>
+<p><strong>2.    Bank desktop to Artifactory</strong></p>
+<p> •  URL &amp; port: <a href="https://clientsubartifactory.temenos.cloud:443">https://clientsubartifactory.temenos.cloud:443</a></p>
+<p> •  Protocol: https </p>
+<p> •  Actions: Browse UI</p>
+<p><br></p>
+<p><strong>3.    Bank desktop to Git Repositories</strong></p>
+<p> •  URL &amp; port: <a href="https://clientsubGitlab.temenos.cloud:443">https://clientsubGitlab.temenos.cloud:443</a></p>
+<p> •  Protocol: https</p>
+<p> •  Actions: view web UI, git clone</p>
+<p><br></p>
+<p><strong>4.    Bank desktop to File Server</strong></p>
+<p> a. URL &amp; port: <a href="https://clientsubsftp.temenos.cloud:443">https://clientsubsftp.temenos.cloud:443</a></p>
+<p> b. Protocol: https &amp; WebDav</p>
+<p>c.  Actions: view files through Web Browser, push files through curl and WebDav (WinSCP)</p>
+<p><br>
+</br></p>
+<h2 id="connectivity-to-the-temenos-continuous-deployment-environments">Connectivity to the Temenos Continuous Deployment Environments</h2>
+<p><strong>5.    Bank desktop to Environments applications UI &amp; API endpoints</strong></p>
+<p> a. URL &amp; port: https://[envID].dev.temenos.cloud/[Application]:443</p>
+<p> b. Protocol: https</p>
+<p> c. Actions: Use web applications through Web Browser.</p>
+<p><br></p>
+<p><strong>6.    Bank desktop to Environments JMS endpoints</strong></p>
+<p> a. URL &amp; port: https-remoting://[envID].dev.temenos.cloud:443</p>
+<p> b. Protocol: https-remoting</p>
+<p>c.  Actions: Send/receive JMS messages from AAB’s ATAF test client to remote JMS queues</p>
+<p><br></p>
+<p><strong>7.    Bank desktop to Environments debug endpoint</strong></p>
+<p> a. URL &amp; port: [envID].dev.temenos.cloud:80</p>
+<p> b. Protocol: bespoke tcp/ip protocol</p>
+<p> c. Actions: debug functionality from Design Studio (Eclipse) to environment </p>
 <p><br></p>
               <hr>
               

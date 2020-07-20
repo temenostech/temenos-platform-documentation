@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Introduction </title>
+    <title>Deploy an update to an existing environment </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Introduction ">
+    <meta name="title" content="Deploy an update to an existing environment ">
     <meta name="generator" content="docfx 2.22.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -20,7 +20,7 @@
     <meta property="docfx:rel" content="../../">
     
   </head>
-  <body data-spy="scroll" data-target="#affix" class="Introduction ">
+  <body data-spy="scroll" data-target="#affix" class="Deploy an update to an existing environment ">
     <div id="wrapper">
       <header>
         
@@ -79,7 +79,7 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="introduction">Introduction</h1>
+<h1 id="deploy-an-update-to-an-existing-environment">Deploy an update to an existing environment</h1>
 
 <p>This document can be used by technical staff who need to deploy different features on a Temenos Continuous Deployment Environment. Each Environment has an associated Repository for uploading different type of features based on the Environment Template type, these features being deployed automatically to your Environment.</p>
 <p>Before proceeding, please check the following requirements:</p>
@@ -167,6 +167,8 @@
 </tr>
 </tbody>
 </table>
+<p><br>
+</br></p>
 <h1 id="commit--push-features-to-repository">Commit &amp; Push features to Repository</h1>
 <p>•   Go to repository folder from your local machine(GitLabRepo folder in our example) and copy your file/files (related to your required features that must be deployed to your Environment) to the specific folder/folders based on your requirement. In this guide, an update is pushed to the Environment Repository.</p>
 <p><em>Important: T24 Updates must be packaged as .zip of .zip file while it is deployed through the Git repository (the parent .zip file name can be anything). Example:</em></p>
@@ -185,6 +187,8 @@
 <img src="images/repo_commit_5.png" alt="repo commit 5"></p>
 <p>•   Finally, the status screen for your push action is displayed.
 <img src="images/repo_commit_6.png" alt="repo commit 6"></p>
+<p><br>
+</br></p>
 <h1 id="trigger-deployment">Trigger Deployment</h1>
 <p>•   After all required features are commited and pushed to Environment Repository, you have to deploy these features in your Environment. To do this, login to your organisation, select your environment, locate <strong>Repository</strong> Application and click the <strong>Deploy</strong> button.</p>
 <p><img src="images/use-git-deploy.png" alt="repo deploy 1"></p>
@@ -194,6 +198,8 @@
 <img src="images/repo_deploy_2.png" alt="repo deploy 2"></p>
 <div class="NOTE"><h5>Note</h5><p>The deployment process is triggered <strong>manually</strong> by the user after commiting and pushing all the required features in Environment Repository or whenever is appropiate based on the fact that the user can commit and push features to Environment Repository multiple times and choose when to trigger the deployment.</p>
 </div>
+<p><br>
+</br></p>
 <h1 id="deploy-an-update-to-an-existing-environment">Deploy an update to an existing environment</h1>
 <ul>
 <li>Go to your environment and click <strong>Go to Application</strong> in order to log to T24 Browser.</li>
@@ -222,6 +228,82 @@
 <li>In the new screen, scroll down until you see the updates that were added.</li>
 </ul>
 <p><img src="images/make-updates-show-updates.png" alt="make updates show updates"></p>
+<p><br>
+</br></p>
+<h1 id="how-temenos-continuous-deployment-platform-installs-ds-packages">How Temenos Continuous Deployment Platform installs DS packages</h1>
+<p>Temenos Continuous Deployment provides users the ability to deploy one or more Design Studio packages into the environment. This pages explains what happens in the background when packages are deployed to the environment.</p>
+<ul>
+<li><p>one or more DS packages which with the .jar extension can be added directly into the Git folder packages as shown below.
+<img src="./images/ds-installation.png" alt=""></p>
+</li>
+<li><p>one or more DS packages can be bundled into a .zip file and put under the Git folder packages/l3 folder </p>
+<p><img src="./images/ds-installation-l3packages.png" alt=""></p>
+</li>
+<li><p>the following files are cleared from the environment:</p>
+<pre><code>    &lt;T24_HOME&gt;/packages
+
+    &lt;T24_HOME/REL.*.ESON
+
+    &lt;T24_HOME&gt;/REL.*.XML
+</code></pre></li>
+<li><p>Any existing <strong><tafj_home>/log/packageDataInstaller.txt</tafj_home></strong> will be renamed to <strong><tafj_home>/log/packageDataInstaller-<datetime>.txt</datetime></tafj_home></strong></p>
+</li>
+<li><p>all the packages files with the .zip format are unziped to the <strong>package</strong> folder</p>
+</li>
+<li><p>a backup of the <strong>&amp;SAVEDLISTS&amp; f</strong>older is created</p>
+</li>
+<li><p>the <strong>T24PackageInstaller</strong> command is run for all the files under the <strong>package</strong> folder</p>
+</li>
+<li><p>an error message is displayed if the output of the above command is not successful</p>
+</li>
+<li><p>all the  files released to DSPackageInstaller folder are copied to l3lib folder</p>
+</li>
+<li><p>a module.xml is regenerated based on all the JAR files</p>
+</li>
+<li><p>run the packageDataInstaller command. We retry this command until the records from the packages are all deployed or some records cannot be deployed further besides iteration. </p>
+</li>
+<li><p>the output of the command above command is saved into a file in <strong>TAFJ/log</strong> named <strong>packageDataInstaller.txt</strong>. An overall result of retries will be written at the end of packageDataInstaller.txt, which is X0 or X1.</p>
+</li>
+<li><p>an error message is displayed in the events log  if the output of the <strong>packageDataInstaller</strong> command gives error X1</p>
+</li>
+<li><p>a information message appears in the events log  if the output of the packageDataInstaller command is successful X0</p>
+</li>
+<li><p>once the above steps are completed,  an automated task is run to authorize all the exception records</p>
+</li>
+<li><p>the <strong>appserver</strong> is restarted and the environment is accesible.
+<br>
+</br></p>
+</li>
+</ul>
+<h1 id="how-a-bank-installs-updates-to-temenos-continuous-deployment-platform">How a bank installs updates to Temenos Continuous Deployment Platform</h1>
+<p> When a T24 update is deployed into a Temenos Continuous Deployment environment, either via the <a href="http://documentation.temenos.cloud/home/techguides/deploy-an-update-to-an-existing-environment.html">Deploy button</a> or during a <a href="http://documentation.temenos.cloud/home/techguides/run-factory.html">factory run</a>, the following steps take place in sequence in the background.</p>
+<blockquote><p><strong>Note</strong>: <strong>$T24_HOME corresponds to UD folder.</strong> The environment variables and paths correspond to Linux based environment. Nonetheless, the same set of steps are executed for Windows templates. $T24_HOME corresponds to the path to UD folder. The $T24_HOME/&amp;SAVEDLISTS&amp; contains the UpdateLog and the REL files corresponding to the updates. </p>
+<p>Please check the files under $T24_HOME/&amp;SAVEDLISTS&amp; along with TAFJ/Log folder in SFTP in case of update failures.</p>
+</blockquote>
+<ul>
+<li><p><strong>$T24_HOME/updater/bin</strong> is given proper rights</p>
+</li>
+<li><p>(if it does not exist already) a folder called <strong>T24Updates</strong> is created under <strong>$T24_HOME/../JARS</strong> folder </p>
+</li>
+<li><p>a backup of the  <strong>$T24_HOME/&amp;SAVEDLISTS&amp;</strong> folder is taken and the folder is created again as type UD</p>
+</li>
+<li><p>the <strong>T24Version</strong> and the updater command is run from updater/bin</p>
+</li>
+<li><p>in the <strong>tafj.properties</strong> file, the precompile path is updated with the <strong>T24Updates</strong> folder path. The path will be $T24_HOME/../JARS/T24Updates:$T24_HOME/../JARS/t24lib</p>
+</li>
+<li><p>the automated script stops all the TSA.SERVICE that are in AUTO and START mode. Please check the logs $T24_HOME/SER.LIST for more details on the services that are stopped during this step</p>
+</li>
+<li><p>the updates released are copied from the <strong>updates</strong> folder to <strong>T24Updates</strong> folder. In case of service updates, the automated script copies the libraries under the main update folder and not the ones from extensions</p>
+</li>
+<li><p><strong>T24.UPDATE.SERVICE</strong> is run in the environment</p>
+</li>
+<li><p>the automated script authorises the exceptions </p>
+</li>
+<li><p>the automated script reverts the <strong>TSA.SERVICES</strong> to their previous state. Please refer to <strong>$T24_HOME/SER.LIST</strong> for the list of services that will be restored during this process.</p>
+</li>
+</ul>
+<p><br>
+</br></p>
 <h1 id="user-permissions-required">User Permissions Required</h1>
 <p>To be able to perform the above operations the below permissions need to be enabled for your user:</p>
 <ul>
