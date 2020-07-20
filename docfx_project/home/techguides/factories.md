@@ -82,7 +82,10 @@ This tab represents the test configuration that holds the template, the products
 
 ## Test Configuration
 The Test Configuration consists in in-build service tasks and is used to  trigger tests for a given factory-run, trigger export of application logs.
-Assuming that you select the Default Workflow, you need to fill in the following fields:
+
+Depending on you organisation settings, you may/ may not have a Default Workflow or the option to select from a list of workflows defined by the users from your organisation. During this phase, you have to fill in the Workflow steps - a sample which displays the steps (in that exact sequence) that are executed by the selected workflow. Assuming that you select the Default Workflow, you need to fill in the following fields:
+
+
 
 
 
@@ -104,6 +107,11 @@ Test Stage: represents a stable version of components that is pre-tested from th
 At the end of this step, when the first round of tests is completed, the test VM will be deleted, but it will not stop the T24 environment (this will be done at the end of the workflow)
 
 ![factory-product-configuration](./images/factory-test-configuration.png) 
+
+Assuming that you select a customized workflow with COB you need to fill in additional steps, such as:
+
+- type in the ID of the TSA.SERVICE record for which COB has to be run. The id can be either group specific id (eg: COB-1, COB-001) , company specific id (eg: COB-GB0010001) or COB. Important: currently the platform can handle 20 agents at max, including the online services.
+
 <br>
 </br>
 
@@ -113,8 +121,12 @@ At the end of this step, when the first round of tests is completed, the test VM
 This configuration enables the user to select all the required principle products along with the target stage to which they will be promoted after a successful factory run. In addition, the user can select the Test Components along with the target stage if they need promotion as well. 
 ![factory-promotion-configuration](./images/factory-promotion-configuration.png)
 
+>Note: it is not mandatory to fill in the Tests to Promote field and the associated Select target stage for Tests from the right side. 
+
+
+
 #### Factory Scheduler
-A user has the privilege to configure the schedule of the factory run in order to automatically run the tests and have the results available daily
+A user has the privilege to configure the schedule of the factory run in order to automatically run the tests and have the results available daily.
 - the scheduler can be configured to run one time per day
 - if the factory run test is successful you can choose to stop/ or keep running the T24 environment
 - the same applies for the Factory Run Failure scenario
