@@ -3,9 +3,26 @@
 
 This page provides information about the monthly Temenos Continuous Deployment Platform features and improvements in each release.
 
-# **202006** 
+# **202006.1** 
 **InfraBuild**: TBA  &nbsp;**|**&nbsp; **PortalBuild**: TBA
-&nbsp;**|**&nbsp; **ControllerBuild**: TBA  &nbsp;**|**&nbsp;  **ReleaseNumber**: TBA
+&nbsp;**|**&nbsp; **ControllerBuild**: TBA &nbsp;**|**&nbsp;  **ReleaseNumber**: TBA
+
+## Technical enhancements
+&nbsp;&nbsp;&nbsp;&nbsp;**1. Environment enhancements**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- for security reasons, all application environments now communicate with the Temenos Continuous Deployment infrastructure VMs only through private IPs 
+<br>
+</br> 
+
+&nbsp;&nbsp;&nbsp;&nbsp;**1. Artifactory access**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- the JFrog Artifactory access through private IP is now done on HTTPs and not TLS
+<br>
+</br> 
+
+# **202006** 
+**InfraBuild**: 28  &nbsp;**|**&nbsp; **PortalBuild**: 202006.RC6
+&nbsp;**|**&nbsp; **ControllerBuild**: 176  &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202006
 
 ## Technical enhancements
 &nbsp;&nbsp;&nbsp;&nbsp;**1. Dashboard enhancements**
@@ -26,7 +43,7 @@ This page provides information about the monthly Temenos Continuous Deployment P
 <br>
 </br>
 
-# **202005.01** 
+# **202005.1** 
 **InfraBuild**: 28 &nbsp;**|**&nbsp; **PortalBuild**: 202005.HF1
 &nbsp;**|**&nbsp; **ControllerBuild**: 2020051 &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202005.1
 
