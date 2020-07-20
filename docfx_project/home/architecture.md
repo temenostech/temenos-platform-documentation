@@ -40,7 +40,7 @@ The Temenos Continuous Deployment platform has two distinct deployment domains a
 <br>
 </br>
 
-### **Where does Temenos Continuous Deployment Platform fit into the enterprise IT landscape?**
+# **Where does Temenos Continuous Deployment Platform fit into the enterprise IT landscape?** 
 
 ----------
 The Temenos Continuous Deployment Platform promotes the concept of simplified and standardised change promotion through the IT landscape.
@@ -70,7 +70,7 @@ The Deployment platform may be used for simple environment provisioning, or may 
 <br>
 </br>
 
-### **What are the components of Temenos Continuous Deployment?**
+# **What are the components of Temenos Continuous Deployment?** 
 
 ----------
 
@@ -89,7 +89,7 @@ Development & Testing environments are managed by the Development Portal, and ar
 </br>
 
 
-### **What tools do I need to use Temenos Continuous Deployment?**
+# **What tools do I need to use Temenos Continuous Deployment?** #
 
 ----------
 

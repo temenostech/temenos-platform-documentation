@@ -52,7 +52,7 @@ To create your own workflow in the Temenos Continuous Deployment Platform you ne
 
 - to connect the elements click on Add Edge; to delete any edge or element, select the item first then click on Delete Selected:
 
- ![](./images/add-edge.png) 
+ ![](./images/add-edge.png)
 
 
 - when the elements have been placed and connected accordingly, click Save Workflow. Based on the above diagram, a particular workflow will be sent to workflow service to proceed with the steps defined by the user
