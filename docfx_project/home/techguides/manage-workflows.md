@@ -36,16 +36,24 @@ The workflow diagram consists of the following elements that can be dragged into
 To create your own workflow in the Temenos Continuous Deployment Platform you need to follow the below steps:
 
 - select the **Workflow** tab from the left menu and click on **New Workflow**:
- ![](./images/workflow-tab.png) 
+
+  ![](./images/workflow-tab.png) 
+
 
 -  a new window opens. Add a **name** and a **description** to the workflow:
-![](./images/workflow-create-wf.png) 
+
+ ![](./images/workflow-create-wf.png) 
+
 
 -  to define the workflow, simply drag and drop the shapes onto the canvas and connect them with arrows:
-![](./images/define-workflow.png) 
+
+ ![](./images/define-workflow.png) 
+
 
 - to connect the elements click on Add Edge; to delete any edge or element, select the item first then click on Delete Selected:
-![](./images/add-edge.png) 
+
+ ![](./images/add-edge.png) 
+
 
 - when the elements have been placed and connected accordingly, click Save Workflow. Based on the above diagram, a particular workflow will be sent to workflow service to proceed with the steps defined by the user
 - after the workflow is created, the user can add this workflow to any factory within his organisation (learn here how to set up factories)
