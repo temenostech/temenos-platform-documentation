@@ -154,15 +154,15 @@ Once the command is run, the binary is uploaded on the Artifactory:
 
 # Pre-requisites and best practices
 
-•	ensure that the component name also has information about its version;
+•	ensure that the component name also has information about its version
 
-•	ensure that the component format that you upload is as expected by TCD. (Every product has got an template overview page (<<Give a link to the transact template overview page>>), which gives this info)
+•	ensure that the component format that you upload is as expected by Temenos Continuous Deployment - every product has a template overview page (see [here](http://documentation.temenos.cloud/home/pdf/transact-components.pdf) the expected components' format)
 
-•	ensure that components are uploaded to the appropriate folders (the URL and folder names can be found from the component definition pages of the TCD portal);
+•	ensure that the components are uploaded to the appropriate folders (the URL and folder names can be found from the component definition pages of the Temenos Continuous Deployment portal)
 
-•	if the component is uploaded in a .zip format, it is recommended to have a text file describing what is included in the package/ provide reference to the code commit tags to find what is included in the package;
+•	if the component is uploaded in a .zip format, it is recommended to have a text file describing what is included in the package/ provide reference to the code commit tags to find what is included in the package
 
-•	do not delete/ edit/ create components/ folders in the artifactory. TCD Portal’s Product and Component sections must be used to create anything in artifactory;
+•	do not delete/ edit/ create components/ folders in the artifactory. The Temenos Continuous Deployment Portal’s Product and Component sections must be used to create anything in artifactory
 
 •	our recommendation is to retain the last 25 components in every stage.
 
