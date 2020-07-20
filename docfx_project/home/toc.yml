@@ -63,6 +63,8 @@
      href: ./techguides/stage.md
    - name: Manage Components and Products
      href: ./techguides/components-products.md
+   - name: Manage Workflows
+     href: ./techguides/manage-workflows.md   
    - name: Manage Factories
      href: ./techguides/factories.md
    - name: Manage Test Scripts
