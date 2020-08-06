@@ -3,9 +3,9 @@
 
 This page provides information about the monthly Temenos Continuous Deployment Platform features and improvements in each release.
 
-# **202007** 
-**InfraBuild**: TBA  &nbsp;**|**&nbsp; **PortalBuild**: TBA
-&nbsp;**|**&nbsp; **ControllerBuild**: TBA &nbsp;**|**&nbsp;  **ReleaseNumber**: TBA
+# **202007**
+**InfraBuild**: 28  &nbsp;**|**&nbsp; **PortalTag**: 202007.RC9
+&nbsp;**|**&nbsp; **ControllerBuild**: 209 &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202007** |**&nbsp; **WorkflowServiceTag**: 202007.RC8 
 
 ## Technical enhancements
 &nbsp;&nbsp;&nbsp;&nbsp;**1. Automate enablement of HTTPS for external access to Gitlab environment repos**
@@ -14,7 +14,7 @@ This page provides information about the monthly Temenos Continuous Deployment P
 <br>
 </br> 
 
-&nbsp;&nbsp;&nbsp;&nbsp;**2. Factories bug fixes**
+&nbsp;&nbsp;&nbsp;&nbsp;**2. Enhancements to factory definition, especially Scheduler**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- users are not able to edit existing factories with a scheduler having start date set in the past 
 
@@ -23,8 +23,11 @@ This page provides information about the monthly Temenos Continuous Deployment P
 </br> 
 
 ## Admin Portal
-&nbsp;&nbsp;&nbsp;&nbsp; 1. UI has been reviewed in order to provide more information in single screen.
-
+&nbsp;&nbsp;&nbsp;&nbsp; **1. UI has been reviewed in order to provide more information in single screen.**
+<br>
+</br> 
+<br>
+</br> 
 
 # **202006.1** 
 **InfraBuild**: TBA  &nbsp;**|**&nbsp; **PortalBuild**: TBA
