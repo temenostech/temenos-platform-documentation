@@ -3,6 +3,29 @@
 
 This page provides information about the monthly Temenos Continuous Deployment Platform features and improvements in each release.
 
+# **202007** 
+**InfraBuild**: TBA  &nbsp;**|**&nbsp; **PortalBuild**: TBA
+&nbsp;**|**&nbsp; **ControllerBuild**: TBA &nbsp;**|**&nbsp;  **ReleaseNumber**: TBA
+
+## Technical enhancements
+&nbsp;&nbsp;&nbsp;&nbsp;**1. Automate enablement of HTTPS for external access to Gitlab environment repos**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Gitlab will be now accessible through HTTPS as well (on top of SSH) for external accesses. 
+<br>
+</br> 
+
+&nbsp;&nbsp;&nbsp;&nbsp;**2. Factories bug fixes**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- users are not able to edit existing factories with a scheduler having start date set in the past 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- users are able to Enable/ Disable the factory Scheduler 
+<br>
+</br> 
+
+## Admin Portal
+&nbsp;&nbsp;&nbsp;&nbsp; 1. UI has been reviewed in order to provide more information in single screen.
+
+
 # **202006.1** 
 **InfraBuild**: TBA  &nbsp;**|**&nbsp; **PortalBuild**: TBA
 &nbsp;**|**&nbsp; **ControllerBuild**: TBA &nbsp;**|**&nbsp;  **ReleaseNumber**: TBA
@@ -14,7 +37,7 @@ This page provides information about the monthly Temenos Continuous Deployment P
 <br>
 </br> 
 
-&nbsp;&nbsp;&nbsp;&nbsp;**1. Artifactory access**
+&nbsp;&nbsp;&nbsp;&nbsp;**2. Artifactory access**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- the JFrog Artifactory access through private IP is now done on HTTPs and not TLS
 <br>
