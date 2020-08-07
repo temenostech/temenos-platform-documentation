@@ -14,7 +14,7 @@ This page provides information about the monthly Temenos Continuous Deployment P
 <br>
 </br> 
 
-&nbsp;&nbsp;&nbsp;&nbsp;**2. Enhancements to factory definition, especially Scheduler**
+&nbsp;&nbsp;&nbsp;&nbsp;**2. Enhancements to the factory definition**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- users are not able to edit existing factories with a scheduler having start date set in the past 
 
@@ -22,7 +22,7 @@ This page provides information about the monthly Temenos Continuous Deployment P
 <br>
 </br> 
 
-## Admin Portal
+## General enhancements
 &nbsp;&nbsp;&nbsp;&nbsp; **1. UI has been reviewed in order to provide more information in single screen.**
 <br>
 </br> 
