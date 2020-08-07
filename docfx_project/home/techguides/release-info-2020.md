@@ -29,6 +29,25 @@ This page provides information about the monthly Temenos Continuous Deployment P
 <br>
 </br> 
 
+# **202006.1** 
+**InfraBuild**: 28  &nbsp;**|**&nbsp; **PortalTag**: 202006.1.RC2
+&nbsp;**|**&nbsp; **PortalBuild**: 1876 &nbsp;**|**&nbsp;**ControllerBuild**: 187 &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202006.1 &nbsp;**|**&nbsp; **WorkflowServiceTar**: 202006.1.RC2
+
+## Technical enhancements
+&nbsp;&nbsp;&nbsp;&nbsp;**1. Environment enhancements**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- for security reasons, all application environments now communicate with the Temenos Continuous Deployment infrastructure VMs only through private IPs 
+<br>
+</br> 
+
+&nbsp;&nbsp;&nbsp;&nbsp;**2. Artifactory access**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- the JFrog Artifactory access through private IP is now done on HTTPs and not TLS
+<br>
+</br> 
+<br>
+</br> 
+
 # **202006** 
 **InfraBuild**: 28  &nbsp;**|**&nbsp; **PortalBuild**: 202006.RC6
 &nbsp;**|**&nbsp; **ControllerBuild**: 176  &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202006
