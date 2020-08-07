@@ -31,7 +31,7 @@ This page provides information about the monthly Temenos Continuous Deployment P
 
 # **202006.1** 
 **InfraBuild**: 28  &nbsp;**|**&nbsp; **PortalTag**: 202006.1.RC2
-&nbsp;**|**&nbsp; **PortalBuild**: 1876 &nbsp;**|**&nbsp;**ControllerBuild**: 187 &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202006.1 &nbsp;**|**&nbsp; **WorkflowServiceTar**: 202006.1.RC2
+&nbsp;**|**&nbsp; **PortalBuild**: 1876 &nbsp;**|**&nbsp;**ControllerBuild**: 187 &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202006.1 &nbsp;**|**&nbsp; **WorkflowServiceTag**: 202006.1.RC2
 
 ## Technical enhancements
 &nbsp;&nbsp;&nbsp;&nbsp;**1. Environment enhancements**
