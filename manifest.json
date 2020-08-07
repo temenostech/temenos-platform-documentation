@@ -862,12 +862,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/access-t24-ud-directories.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/access-t24-ud-directories.html",
-          "hash": "6DPHbaIExqhisAQGJlEEeQ=="
+          "hash": "GnqIvESBG1K85Ee7X+XYRA=="
         }
       },
       "is_incremental": false,
@@ -901,36 +904,45 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/automated-factories.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/automated-factories.html",
-          "hash": "JxLH8anfE+KcXC4q3CwOBA=="
+          "hash": "G4IPYKPBM2+RRWjCc8G8mw=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/clone-environment.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/clone-environment.html",
-          "hash": "RYAKi1koPwNFEtLv86As7Q=="
+          "hash": "fzXH05g/r/TZgo0ZhZ4rFw=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/components-products.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/components-products.html",
-          "hash": "TL1p56ad2HmTMbw+DsiLgA=="
+          "hash": "4xvkPZUEHjX77NjAzDnqmA=="
         }
       },
       "is_incremental": false,
@@ -952,36 +964,45 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/create-user-role.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/create-user-role.html",
-          "hash": "qVAPNNGIzEi+w8A2/+zf3w=="
+          "hash": "6w3mv5WGsNjOx68xo9RaxA=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/deploy-an-update-to-an-existing-environment.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/deploy-an-update-to-an-existing-environment.html",
-          "hash": "Qg5XtuOLU4QZdh/cbQXq7Q=="
+          "hash": "UlpsSfYCjDhTC9F10a1kjg=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/environment-basic-operations.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/environment-basic-operations.html",
-          "hash": "V6en25N0xq9mJew4DWrQVg=="
+          "hash": "beEedryiQdGBAZNE6jEvoQ=="
         }
       },
       "is_incremental": false,
@@ -996,7 +1017,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/environment-creation-in-paas.html",
-          "hash": "RE++pbex8pGpXsJugqLL9w=="
+          "hash": "vLcDXtzfRgEF6ru/1Y4LYg=="
         }
       },
       "is_incremental": false,
@@ -1011,7 +1032,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/export-import-database.html",
-          "hash": "QDf3hKY4T+i5sZlupy2eDA=="
+          "hash": "M/xNAxzFSecnSRQ5kc2kzw=="
         }
       },
       "is_incremental": false,
@@ -1101,17 +1122,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/access-ud-endpoint.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/access-ud-endpoint.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/access-ud-new-env.png",
       "output": {
         "resource": {
@@ -1171,17 +1181,6 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/add-crt.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/add-edge.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/add-edge.png"
         }
       },
       "is_incremental": false,
@@ -1402,17 +1401,6 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/artifactory-test-structure.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/artifactory_view.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/artifactory_view.png"
         }
       },
       "is_incremental": false,
@@ -1673,17 +1661,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/buttons-all.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/buttons-all.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/check-build-success.png",
       "output": {
         "resource": {
@@ -1750,17 +1727,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/clone-env-details.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/clone-env-details.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/clone-env-new.png",
       "output": {
         "resource": {
@@ -1776,17 +1742,6 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/clone-env-press-clone.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/clone-refresh.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/clone-refresh.png"
         }
       },
       "is_incremental": false,
@@ -1875,17 +1830,6 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/components-and-products-localcompomentpath.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/components-and-products-uploadurl.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/components-and-products-uploadurl.png"
         }
       },
       "is_incremental": false,
@@ -2113,17 +2057,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/create-user-role.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/create-user-role.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/create-user-select-role.png",
       "output": {
         "resource": {
@@ -2300,54 +2233,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/db-copy-repo.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/db-copy-repo.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/db-deploy-button.png",
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/db-deploy-button.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/db-deploy.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/db-deploy.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/db-export.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/db-export.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/db-exporting.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/db-exporting.png"
         }
       },
       "is_incremental": false,
@@ -2685,17 +2574,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/deploy-update-go-to-app.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/deploy-update-go-to-app.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/disable-xtext-rim-compiler.png",
       "output": {
         "resource": {
@@ -2883,17 +2761,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/env-new.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/env-new.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/env-template-list.png",
       "output": {
         "resource": {
@@ -2920,17 +2787,6 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/env-template.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/env_gotoapplication.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/env_gotoapplication.png"
         }
       },
       "is_incremental": false,
@@ -3158,28 +3014,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/factory-details.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/factory-details.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/factory-edit-delete.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/factory-edit-delete.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/factory-migration-1.png",
       "output": {
         "resource": {
@@ -3217,17 +3051,6 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/factory-migration-4.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/factory-migration-5.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/factory-migration-5.png"
         }
       },
       "is_incremental": false,
@@ -3279,28 +3102,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/factory-product-configuration.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/factory-product-configuration.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/factory-promotion-configuration.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/factory-promotion-configuration.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/factory-run-environment.png",
       "output": {
         "resource": {
@@ -3312,32 +3113,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/factory-scheduler.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/factory-scheduler.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/factory-see-details.png",
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/factory-see-details.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/factory-test-configuration.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/factory-test-configuration.png"
         }
       },
       "is_incremental": false,
@@ -4676,28 +4455,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/products-add-component.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/products-add-component.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/products-add-product.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/products-add-product.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/products-deploy-artifactory.png",
       "output": {
         "resource": {
@@ -4713,17 +4470,6 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/products-deploy-files.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/products-template.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/products-template.png"
         }
       },
       "is_incremental": false,
@@ -4933,17 +4679,6 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/repo_deploy_1.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/repo_deploy_2.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/repo_deploy_2.png"
         }
       },
       "is_incremental": false,
@@ -5413,17 +5148,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/stages-see-details.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/stages-see-details.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/start-all-user-env.png",
       "output": {
         "resource": {
@@ -5461,94 +5185,6 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/stop-all-user-env.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/streams-cloned.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/streams-cloned.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/streams-delete-streams.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/streams-delete-streams.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/streams-see-details.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/streams-see-details.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/streams_create.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/streams_create.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/streams_create_stage.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/streams_create_stage.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/streams_created.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/streams_created.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/streams_delete_stage.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/streams_delete_stage.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/streams_edited.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/streams_edited.png"
         }
       },
       "is_incremental": false,
@@ -5637,17 +5273,6 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/t24-ft-sample-xml.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/t24-monitor-app.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/t24-monitor-app.png"
         }
       },
       "is_incremental": false,
@@ -5831,39 +5456,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/template-componentslist.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/template-componentslist.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/template-content.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/template-content.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/template-releasenotes.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/template-releasenotes.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/testcases-delete.png",
       "output": {
         "resource": {
@@ -6040,32 +5632,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/use-git-deploy.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/use-git-deploy.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/use-git-deployment.png",
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/use-git-deployment.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/use-git-endpoint.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/use-git-endpoint.png"
         }
       },
       "is_incremental": false,
@@ -6106,17 +5676,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/user-details.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/user-details.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/user-list.png",
       "output": {
         "resource": {
@@ -6143,17 +5702,6 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/user-new-second.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/user-see-details.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/user-see-details.png"
         }
       },
       "is_incremental": false,
@@ -6249,17 +5797,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/workflow-tab.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/workflow-tab.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/workflow-test.png",
       "output": {
         "resource": {
@@ -6282,36 +5819,45 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/manage-environments.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/manage-environments.html",
-          "hash": "5heWnTHaFUK/oOt3J4nfnQ=="
+          "hash": "kG89e8afMiR5dwaUaEFoOw=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/manage-test-scripts.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/manage-test-scripts.html",
-          "hash": "Yd2tF3DtA42K0X/kJQpiAQ=="
+          "hash": "BmccW5OwJnyGckHVQVoi8Q=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/manage-workflows.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/manage-workflows.html",
-          "hash": "vCHdaIgrRfF5Blfb5LZrVg=="
+          "hash": "cK+mIk0zkVligYqFRsvk+w=="
         }
       },
       "is_incremental": false,
@@ -6335,7 +5881,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/release-info-2020-internal.html",
-          "hash": "Hl+dOEN4jR3SpVl5PFkYJg=="
+          "hash": "etVxbY6PWTRc2hONBUrUXQ=="
         }
       },
       "is_incremental": false,
@@ -6401,7 +5947,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/stage.html",
-          "hash": "++x+RNIIJC09B7XSF/xuBQ=="
+          "hash": "HnO+Y5anyWiAA1eL8ytt1A=="
         }
       },
       "is_incremental": false,
@@ -6416,7 +5962,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/stream.html",
-          "hash": "Kt35KVWi2oIDtz5g9Ux6Lw=="
+          "hash": "vR3eHC10X4dNu0XwGLsEtA=="
         }
       },
       "is_incremental": false,
@@ -6446,7 +5992,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/t24-development.html",
-          "hash": "Vrodx/n7OYU271oAUFEOUQ=="
+          "hash": "m1fa+tF5HiUnuB2RjagWuw=="
         }
       },
       "is_incremental": false,
@@ -6489,12 +6035,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/user-creation-in-paas.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/user-creation-in-paas.html",
-          "hash": "rUCvwM9FsVmL0ZJlggh7fA=="
+          "hash": "0vKCZ8vRRFH0Y2N9Kbgp2g=="
         }
       },
       "is_incremental": false,
@@ -6756,6 +6305,11 @@
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "RestApiDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -6767,11 +6321,6 @@
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
-          "incrementalPhase": "build"
-        },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
