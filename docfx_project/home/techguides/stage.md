@@ -23,22 +23,32 @@ The promotion of the components across stages is conditional based on the status
 
 ## Set-up/ Create a Stage ##
 
- - Login to the Temenos Continuous Deployment Platform.
- - Click on Settings button on the left menu > this will expand a menu containing buttons for: Streams, Stages, Products, Factory and General.  
- - Click on Stage button, make sure you select the Stream where you want to add a stage and then on the **New Stage** on the top right.
- - Fill the name *(mandatory field)*. Take into account these conditions (also notified on the screen): Name can start only with a letter or an underscore and it can contain only letters, digits, underscores or hyphens.
- - Fill the description *(mandatory field)*.
- - Click **Create**. 
+ Login to the Temenos Continuous Deployment Platform:
+1. Click on **Settings** button on the left menu > this will expand a menu containing buttons - click on **Stage** icon
+
+2. From the top-right  select the **Stream** where you want to add a stage
+
+3. Click on  **New Stage** on the top right
+
+4. Fill the **Stage Name** and ** Stage Description**
+ 
+5. Click **Create Stage**. 
 
 **Note**: *Instead of choosing the enable option, you can create a disabled stage and enable it later, but the default option should be enable.*
 
 ![](./images/streams-create-stage.png)
+
+<br>
 
 ## Edit a Stage ##
 
 A stage can have only the description edited/ changed, but not the name. Why? Because when creating a stage, a folder is created automatically in the Artifactory containing the stage name. This folder will contain the components that you may be added for the respective stage.
 
 Just click the edit button, change the description and then click update.
+
+![](./images/edit-stage.png)
+
+<br>
 
 ## Default Stage (Configuration Stage) ##
 
@@ -65,8 +75,16 @@ Example of the default stage defined into the metadata (you can set any name you
 
 ![](./images/stage-metadata.png)
 
- To see the details of a stage please make sure to first select the stream from the top-right-side menu. The list with the stages that belong to the respective stream will be displayed on the left side of the page:
+ To see the details of a stage:
+
+1. Select the **Stream** icon from the top-right-side menu
+ 
+2.  From the top-right select the **Stream** name you are interested in
+
+3. The list with the stages that belong to the respective stream will be displayed on the left side of the page:
 ![](./images/stages-see-details.png)
+
+Hover over the **Name** to sort the streams alphabetically.
 
 # User Permissions Required
 To be able to perform the above operations the below permissions need to be enabled for your user:

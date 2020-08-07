@@ -21,16 +21,16 @@ Please see below some explanations on how this process works and what are the re
 
 ## Clone the Environment
 
-- Select the environment that you want to clone and press **Clone** button.
+1. On the environment screen click on **Actions** and select the **Clone** button from the drop-down.
 
-![](./images/clone-button.png) 
+2. Fill in the **Name** and **Description**. It is optional to add a **Label**.
 
-<br>
+3. Click **Clone**. 
 
-- Input a **Name** and **Description** and optionally, a *Label*, then click **Clone**. 
-- You will get a notification on the screen that the environment cloning has been initiated.
+You will receive a notification on the screen that the environment cloning has been initiated.
 
 ![](./images/clone-env-details.png) 
+
 
 
 > [!Note]
@@ -40,9 +40,9 @@ Please see below some explanations on how this process works and what are the re
  - The new (clone-environment) will have the same template as the source environment.
  - In the Event Tab of the source Environment (the one being cloned), the Event notifications will display the date, time and duration of the Cloning action.
  - The **Clone** button will be disabled until on the left side of the screen you will notice the new cloned environment being created.
-- The new environment will be visible in the Environments list with the status **Creating**:
+- The new environment will be visible in the Environments list with the status **Cloning**:
 
-![](./images/clone-refresh.png) 
+![](./images/clone-refresh.png)
 
 
 

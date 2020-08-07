@@ -36,7 +36,7 @@ The users are not able to run a factory until the Test Script component is defin
 <br>
 </br>
 
-7. Select the previously created **Component** and **Stage** the in the** Test Configuration** of the factory 
+7. Select the previously created **Component** and **Stage** the in the **Test Configuration** of the factory 
 
  ![factory-migration-7](./images/factory-migration-7.png)
 

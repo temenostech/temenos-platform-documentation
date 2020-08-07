@@ -67,8 +67,9 @@ Below you will find the pre-requisites to run a Automated factory:
 </br>
 
 ## Factory Details 
-- **Factory Name**: choose a meaningful name for your factory.
-- **Factory Description**: insert a description that will help knowing what the factory is about.
+1. Add a **Factory Name**: choose a meaningful name for your factory
+2. Add a **Factory Description**: insert a description that will help knowing what the factory is about
+3. Click **Next**
 ![factory-details](./images/factory-details.png)
 
 ## Product Configuration 

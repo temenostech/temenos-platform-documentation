@@ -1,15 +1,20 @@
 # Environment Basic Operations
 
-After creating an environment, there are several actions (operations) that can be done via the available buttons: start all environments, stop all environments, clone, edit, delete, start, stop, rebuild, export the database and deploy the repository and also using the endpoints related to T24, the database or to the repository.
-<br>
+After creating an environment, there are several actions (operations) that can be done via the available buttons: 
 
-![buttons](./images/buttons-all.png)
+1. Filter the Environment by typing in the keywords
+
+2. Filter the environments' list  by ticking the **Extend**, **Manual factory** or **Automated Factory**.
+
+3. **Start All User Environments**, **Stop All User Environments**, **Refresh**, Create **New Environment**
+
+![](./images/buttons-all.png)
 
 <br>
 
 ## Environment buttons ##
 
-
+The user can also **clone**, **edit**, **delete**, **start**, **stop**, **rebuild**, **export the database** and **deploy the repository** and use the endpoints related to T24, the database or to the repository:
 
 - **Start All User Environments** button - use this button to only start all user environments
 
@@ -33,39 +38,20 @@ After creating an environment, there are several actions (operations) that can b
 <br>
 
 
-
-
-- **Creating a new environment** - displays the fields required to create an environment. here you can give a name and a description to your environment and choose a template
+- Create a **New Environment** - displays the fields required to create an environment. here you can give a name and a description to your environment and choose a template
 
  ![start](./images/button-new-environment.png) 
 
+- the **Actions** button from the right-side of the screen is expandable and allows the user to:
 
+    - **Edit the environment**  - allows you to change the name and the description of an environment
+
+    - **Clone** the environment - creates an identical environment by copying the Environment and configuration repository
+
+    - **Delete environment** - removes all resources including VMs and configuration repository that are part of an Environment
+
+ ![](./images/actions-button.png) 
 <br>
-
-
-- **Cloning** an environment - creates an identical environment by copying the Environment and configuration repository
-
- ![start](./images/button-clone.png) 
-
-<br>
-
-
-
-- **Edit environment** an environment - allows you to change the name and the description of an environment
-
- ![](./images/edit-environment.png) 
-
-<br>
-
-
-- **Delete environment** - removes all resources including VMs and configuration repository that are part of an Environment
- 
- ![](./images/delete-button.png) 
-
-- **Customize template** - the operation triggered by the button will copy in the environment repository all the template files used to create the environment
- 
- ![](./images/customize-template.png) 
-
 
 
 ## T24 Release section - available actions ##
@@ -154,6 +140,9 @@ Clicking the 'Export Environment' button will generate a zip file on the tcdSFTP
 ### <span style="color:orange;font-weight:1000;">**Buttons**</span>  ###
 
 
+- **Customize template** - the operation triggered by the button will copy in the environment repository all the template files used to create the environment
+ 
+ ![](./images/customize-template.png) 
 
 - **Deploy** button - used when deploying newly added plugins, endpoints, updates, web services, packages etc.
 

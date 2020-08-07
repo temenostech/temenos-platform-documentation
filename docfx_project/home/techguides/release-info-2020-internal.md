@@ -5,7 +5,7 @@ This page provides information about the monthly Temenos Continuous Deployment P
 
 # **202007**
 **InfraBuild**: 28  &nbsp;**|**&nbsp; **PortalTag**: 202007.RC9
-&nbsp;**|**&nbsp; **ControllerBuild**: 209 &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202007** |**&nbsp; **WorkflowServiceTag**: 202007.RC8 
+&nbsp;**|**&nbsp; **ControllerBuild**: 209 &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202007 |&nbsp; **WorkflowServiceTag**: 202007.RC8 
 
 ## Technical enhancements
 &nbsp;&nbsp;&nbsp;&nbsp;**1. Automate enablement of HTTPS for external access to Gitlab environment repos**
@@ -30,8 +30,8 @@ This page provides information about the monthly Temenos Continuous Deployment P
 </br> 
 
 # **202006.1** 
-**InfraBuild**: TBA  &nbsp;**|**&nbsp; **PortalBuild**: TBA
-&nbsp;**|**&nbsp; **ControllerBuild**: TBA &nbsp;**|**&nbsp;  **ReleaseNumber**: TBA
+**InfraBuild**: 28  &nbsp;**|**&nbsp; **PortalTag**: 202006.1.RC2
+&nbsp;**|**&nbsp; **PortalBuild**: 1876 &nbsp;**|**&nbsp;**ControllerBuild**: 187 &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202006.1 &nbsp;**|**&nbsp; **WorkflowServiceTar**: 202006.1.RC2
 
 ## Technical enhancements
 &nbsp;&nbsp;&nbsp;&nbsp;**1. Environment enhancements**

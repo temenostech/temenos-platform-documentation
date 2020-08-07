@@ -54,21 +54,28 @@ All fields are mandatory except 'Labels'
 
 Check the list with all available templates. Click the **Templates Catalog** on the left menu.
 
-![](./images/env-template.png)
+![](./images/template-details.png)
 
-Click on the Template Type and select for one of the applications, for example T24 to see the templates that are available for your organisation. The templates details is split into three tabs that provide:
+1. Click on the **Template Type** and select for one of the applications, for example T24 to see the templates that are available for your organisation. 
 
-- the release notes
+2. If you are looking for a specific template, type in the **Filter** field the keywords 
 
- ![](./images/template-releasenotes.png) 
+3. Hover over the **Name** field to list all the available templates alphabetically
 
-- a comprehensive list of components
+4. Select the number of **items per page** you want to display
 
- ![](./images/template-componentslist.png) 
 
-- the template content 
+5. Click on a template - on the right you will see the name of the template, its version, installation and expiration dates as well as:
 
- ![](./images/template-content.png) 
+6. The **Release Notes**
+
+7. The **Components List** - these can be filtered as the user wants
+
+![](./images/template-components-list.png)
+
+8. The **Template Content**
+
+![](./images/templates-content.png)
 
 # User Roles Required#
 To be able to create an environment the below permissions need to be enabled for your user:

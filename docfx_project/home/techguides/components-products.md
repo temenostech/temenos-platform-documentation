@@ -54,15 +54,15 @@ These components have a structure associated and work in a standardized manner a
 ## Set-up/ Create a Component ##
 
  - Login to the Temenos Continuous Deployment Platform.
- - Click on Settings button on the left menu > this will expand a menu containing buttons for: Streams, Stages, Products, Factory and General.  
- - Before creating a component, make sure you select first the stream *(top-right)* where you want to add the respective component. 
- - Click on **Products** button. (This button includes creation of the components)
- - Click on the **New Component** on the top right.
- - Select the Component Type from the dropdown list (the list displays all the components available for your Organization. This is based on the available templates).
- - Input a Name. *Take into account these conditions (also notified on the screen): Name can start only with a letter or an underscore and it can contain only letters, digits, underscores or hyphens.*
- - Fill the Description.
- - Fill the Display Name.
- - Click **Create**.
+1. Click on **Settings** button on the left menu > this will expand a menu containing buttons for: Streams, Stages, Products, Factory and General
+
+2. Select the **Stream** *(top-right)* where you want to add the respective component
+
+3. Click on **New Components**
+
+4. Select the Component Type from the dropdown list (the list displays all the components available for your Organization. This is based on the available templates). Then fill in the **Name**, **Description**, and **Display Name**
+
+5. Click **Create**.
 
 See below example:
 
@@ -73,6 +73,10 @@ A folder is automatically created into the repository *(we are using JFrog Artif
 *(Please note that the components' artifacts can be uploaded any time before running a factory).*
 
 *(If the related artifacts are not uploaded, running the factory will not be possible and an error message will be thrown).*
+
+ To see the details of a component please make sure to first select the stream from the top-right-side menu. The list with the components that belong to the respective stream will be displayed on the left side of the page. The same operation applies for the products.
+
+
 
 <br>
 </br>
@@ -199,6 +203,8 @@ From here, select the template that you want to use:
 
 Components fields are not editable, so you have only the options to create or to delete them.
 
+ ![](./images/delete-component.png)
+
 > [!Note]
 > <span style="color:red">If your component is **attached to a Product**, you will not be able to delete it. 
 > 
@@ -229,10 +235,17 @@ Ultimately, a product is used in a factory and will be used eventually to deploy
 
 ### How to Set-up/ Create a Product ###
 
-- If you have created more streams, first make sure you select the stream where you want to create the respective product (see top right).
-- Click on Products tab and then on New Product button on the top right.
-- Input a name, description and select the mandatory components from dropdown button. This should represent the Principle Product (or one of the principle products) you will use when creating a factory.
-- Click **Create** button.
+1. From the left-side menu click on the **Components** icon
+
+2. Navigate to the **Products** tab 
+
+3. If you have created more streams,  select the **Stream** where you want to create the respective product (see top right)
+
+3. Click on **New Product** on top-right
+
+4. Add a **name**, **description** and **select** the mandatory components from drop-down button. This should represent the Principle Product (or one of the principle products) you will use when creating a factory
+
+5. Click **Create Product** 
 
 See also below example. 
 
@@ -241,6 +254,8 @@ See also below example.
 ![](./images/products-add-product.png)
 
 In addition to the principle product which has all template mandatory components, you will need to create other products - Base Products - that will be used to be tested.
+
+To sort the products alphabetically, hover over the **Name** field from the top of the Products List.
 
 <br>
 </br>
@@ -264,9 +279,6 @@ You can edit:
 
 > [!Note]
 > If the respective product is attached to a factory, you will not be able to delete. You need to delete the factory first.
-
- To see the details of a component please make sure to first select the stream from the top-right-side menu. The list with the components that belong to the respective stream will be displayed on the left side of the page. The same operation applies for the products:
-![](./images/components-see-details.png)
 
 <br>
 </br>

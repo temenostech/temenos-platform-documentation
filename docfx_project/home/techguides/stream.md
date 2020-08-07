@@ -29,25 +29,27 @@ The parts of the stream are listed below:
 
 ## Set-up/ Create a Stream ##
 
- - Login to the Temenos Continuous Deployment Platform
- - Click on Settings button on the left menu > this will expand a menu containing buttons for: Streams, Stages, Products, Factory and General.  
- - Click on Stream button and then on the **New Stream** on the top right
- - Fill the name *(mandatory field)*. Take into account these conditions (also notified on the screen): Name can start only with a letter or an underscore and it can contain only letters, digits, underscores or hyphens.
- - Fill the description *(mandatory field)*.
- - Click **Create**. 
+1. Click on **Settings** button on the left menu > this will expand a menu containing buttons for: **Streams**, Stages, Products, Automated Factories, Workflows, Users, General, Release Notes
+ 
+2. Click on **Stream** button and then on the **New Stream** on the top right
 
-**Note**: *Instead of choosing the enable option, you can create a disabled stream and enable it later, but the default option should be enable.*
+3. Fill the name and description *(mandatory fields)*. Take into account these conditions (also notified on the screen): name can start only with a letter or an underscore and it can contain only letters, digits, underscores or hyphens.
 
+4. Click **Create**
 
 ![](./images/streams-create.png)
 
-After the successful creation, your stream will appear on the screen *(in case you already have other streams, the newly created will be the last in chronological order)* and it will automatically have associated the default stage named 'stable_dev' (as in current example). Please **note** that the default stage name is defined in the metadata settings of your organization (On the main menu > General).
+5. After the successful creation, your stream will appear on the screen *(in case you already have other streams, the newly created will be the last in chronological order)* and it will automatically have associated the default stage named 'Primary_stage' (as in the current example). Please note that the default stage name is defined in the metadata settings of your organization (On the main menu > General).
+
+6. You can list the associated stages by typing in the **Filter** field keywords related to the respective stage. 
+
+7. You can choose which details of the stream you need to be displayed click on the **Columns** field and select from the drop-down the information you need to see.
 
 ![](./images/streams-created.png)
 
 ## Edit a Stream ##
 
-You can edit anytime the name, the description of the stage or choose the disable option by clicking the edit button. 
+You can edit anytime the name, the description of the stage or choose the enable/ disable option. Click on **Update Stream** and the changes will be visible instantly.
 
 ![](./images/streams_edited.png)
 
@@ -63,16 +65,15 @@ You can clone a stream as well. This action will copy the latest version of all 
 
 
 Example 1: 
-- Suppose we have created a stream named **demostream** that has just the **default stage** and without adding other stages or configuring further components and products.
-- We can just go and delete this stream (even if it has the **Primary Stage **associated to it).
+- Suppose we have created a stream named **demostream** that has just the **Primary_stage** and without adding other stages or configuring further components and products.
+- We can just go and delete this stream (even if it has the **Primary Stage**associated to it).
 
 Example 2:
-- Suppose we have created a stream named **demostream** that has the default stage (Primary Stage) and also a stage named Stable_Dev, without configuring further components and products.
+- Suppose we have created a stream named **demostream** that has the default stage (Primary Stage) and also a stage named Secondary_stage, without configuring further components and products.
 - In order to be able to delete a stream that has **more than the Primary Stage**, we need first to go and delete the stages attached to it.
-- Go first to Stages button on the left menu > Select first your stream (top right) > Select the stage that you want to delete (others then the Primary Stage - *because this stage cannot be deleted*) > And click the delete button.
+- Go first to Stages button on the left menu > Select first your stream (top right) > Select the stage that you want to delete (others then the Primary Stage - *because this stage cannot be deleted*) > And click the **delete** button.
 
-
-![](./images/streams-delete-stage.png)
+![](./images/streams-delete-stage.png) 
 
 - Go back to Streams and you will notice that your stream has only the Primary Stage associated, therefore you are able to delete the stream. Click the Delete button.
 

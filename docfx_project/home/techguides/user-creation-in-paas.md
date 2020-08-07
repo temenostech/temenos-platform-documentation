@@ -8,22 +8,28 @@ The Administrator can navigate to the Users section on the portal, create more u
 
 The users can access their organisation only, view their user profiles and perform various operations according to the set of user permissions set by the Organisation Administrator.
 
- Note that only the users with the 'Amin' permission can create more users. To create a new user, please refer to the below:
+ Note that only the users with the 'Admin' permission can create more users. To manage/ see the users please refer to the below:
 
 •	Login to your organisation portal using the link and the credentials provided.
 
 ![portal login](./images/user-login.png)
 
-•	Go to the menu on the left and then click Users tab, as below:
 
-![new user](./images/users-tab.png) 
+![](./images/users-tab.png)
 
+1. Go to the menu on the left and then click Users tab, as below:
 
-The first screen that you will see is the one for the existing user (usually admin).
+2. Click on the **Users** tab
 
-Click **New user** button on the top-right corner:
+3. To order the users' list hover over the **Name** tab - the users will be listed in an alphabetical order
 
-![](D:\DocumentationPortal\temenos-platform-documentation\docfx_project\home\techguides\images\users-tab.png)
+4. Click on the **Status** tab to see the status of each user (i.e. the user status can be **creating, editing, failed, deleting**)
+
+5. Create a new user by clicking the **New user** button on the top-right corner. Fill in the username, email, password and the user role (the SSH Key can be added later on if needed):
+
+![](./images/create-user.png)
+
+6. Click **Create**
 
 This will create a new user in your organisation. This new user will be automatically assigned to all GitLab Repositories from within all environments. If you have already a user created, you can click on the user and update the SSH key box with the one created above.
 
@@ -38,9 +44,17 @@ On their first login, all new users will be forced to reset the password that wa
 
 By default, when your organisation is created, Temenos will provide you the link and access instructions to your designated organisation administrator (the first and only user with full rights on the platform).
 
-The administrator can create more users and navigate to the Roles section on the portal to assign various permissions to each user. To create a role, the admin will click on 'New Role' and fill in the blanks:
+![](./images/see-user-role.png)
 
-![user](./images/create-user-role.png)
+1. Click on the **Roles** tab to see the available list of roles within your organisation
+
+2. Hover over the **Name** tab to display the alphabetical order of the available roles
+
+3. Select the number of items you'd like to have listed on the page (this is applicable for the users' tab as well)
+
+4. The administrator can create more users and navigate to the Roles section on the portal to assign various permissions to each user. To create a role, click on **New Role** on top-right and fill in the blanks:
+
+![](./images/create-user-role.png)
 
 
 The admin can select which permissions to set to each user.
@@ -113,8 +127,6 @@ You can use any other SSH key generator client.
 > All fields are mandatory!
 > See further below how to generate the SSH key
 
-![new user](./images/user-details.png)
-
 •	Public SSH key needs to be pasted in SSH Key text box. Open Windows Explorer and locate your public key generated using PuTTY Key Generator. 
 
 ![paste key text](./images/putty-keygen-publicselect.png)
@@ -125,9 +137,7 @@ You can use any other SSH key generator client.
 
 •	Paste the copied text into the SSH Key text box and click Create user button.
 
-- Your user is now available in the user list:
-
-![user](./images/user-list.png)
+- Your user is now available in the user list.
 
 - You have the option to edit or to delete it.
 

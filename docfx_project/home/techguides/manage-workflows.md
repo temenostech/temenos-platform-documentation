@@ -35,28 +35,24 @@ The workflow diagram consists of the following elements that can be dragged into
 # Create workflow 
 To create your own workflow in the Temenos Continuous Deployment Platform you need to follow the below steps:
 
-- select the **Workflow** tab from the left menu and click on **New Workflow**:
+1. Select the **Workflow** tab from the left menu
+
+2. Click on **New Workflow** from top-right
+
+3. A new window opens. Add a **name** and a **description** to the workflow
+
+4. To define the workflow, simply drag and drop the shapes onto the canvas and connect them with arrows
 
   ![](./images/workflow-tab.png) 
 
 
--  a new window opens. Add a **name** and a **description** to the workflow:
+5. To connect the elements click on Add Edge; to delete any edge or element, select the item first then click on Delete Selected
 
- ![](./images/workflow-create-wf.png) 
-
-
--  to define the workflow, simply drag and drop the shapes onto the canvas and connect them with arrows:
-
- ![](./images/define-workflow.png) 
-
-
-- to connect the elements click on Add Edge; to delete any edge or element, select the item first then click on Delete Selected:
+6. When the elements have been placed and connected accordingly, click Save Workflow. Based on the above diagram, a particular workflow will be sent to workflow service to proceed with the steps defined by the user
 
  ![](./images/add-edge.png)
 
-
-- when the elements have been placed and connected accordingly, click Save Workflow. Based on the above diagram, a particular workflow will be sent to workflow service to proceed with the steps defined by the user
-- after the workflow is created, the user can add this workflow to any factory within his organisation (learn here how to set up factories)
+After the workflow is created, the user can add this workflow to any factory within his organisation (learn [here](http://documentation.temenos.cloud/home/techguides/automated-factories.html) how to set up factories)
 
 # Edit and delete a workflow
 Users can edit and delete workflows only if these are not assigned to a factory.
