@@ -126,18 +126,20 @@
 </ul>
 <p><img src="./images/db-authorise-record.png" alt=""> </p>
 <h2 id="export-the-database">Export the Database</h2>
-<p>In case you want to export and re-import the database into an environment or do some changes and import it back or to a different environment, please follow the steps below:</p>
+<p>To export and re-import the database into an environment or do some changes and import it back or to a different environment, check the steps below:</p>
+<div class="NOTE"><h5>Note</h5><p>To avoid database corruption, all TSA and user activity needs to be stopped so a DB Export can be taken safely.</p>
+</div>
 <ul>
 <li><p>To trigger the export, click the <strong>Export</strong> button under Database (also confirm the action on the pop-up to be able to proceed).</p>
 </li>
-<li><p>After clicking, it will start exporting (the action should take less than a minute or more minutes based on the DB size). While exporting, the button is disabled, after the export is done, the button gets enabled back.</p>
+<li><p>After clicking the export starts (the action takes around a few minutes based on the DB size). While exporting, the button is disabled, after the export is done, the button gets enabled back.</p>
 </li>
 </ul>
 <p><img src="images/db-exporting.png" alt=""> </p>
 <div class="NOTE"><h5>Note</h5><p>Please note that the same steps showed in this demo can be followed to export an environment. Start exporting by using the <strong>Export</strong> button (check the available buttons under T24 Release).</p>
 </div>
 <ul>
-<li>During this action, the db is exported through SFTP server to which you have to connect in order to download the related content on your local machine. </li>
+<li>During this action, the DB is exported through SFTP server to which you have to connect in order to download the related content on your local machine. </li>
 <li>Download WinSCP from <a href="https://winscp.net/eng/index.php" target="_blank"><strong>here</strong></a>.</li>
 <li>Open WinSCP and create a new site which will allow the connection through SFTP server:<ul>
 <li>For host name, use the endpoint of the db. <em>(You can copy it from your portal by clicking the copy icon near the endpoint of the database - &#39;sftp.temenos.cloud&#39;).</em></li>
@@ -162,7 +164,7 @@
 </ul>
 </li>
 </ul>
-<p><img src="./images/sftp-ids.png" alt=""> </p>
+<p><img src="images/sftp-ids.png" alt=""> </p>
 <ul>
 <li>The database appears as TAFJDB.zip. In order to download the zip, select it and press F5. After is being downloaded, you can unzip it to see the db file.</li>
 <li>After this step, you can close the SFTP connection: Session &gt; Disconnect.</li>
@@ -186,7 +188,7 @@
 </ul>
 </li>
 </ul>
-<p><img src="./images/db-git-clone.png" alt=""> </p>
+<p><img src="images/db-git-clone.png" alt=""> </p>
 <ul>
 <li>In the screen that opens, fill the following:<ul>
 <li>in the URL textbox, paste the Endpoint of Repository Application of your Environment (previously copied)</li>
@@ -202,16 +204,18 @@
 <li>You will be able to see the <strong>corebanking</strong> repository structure with several folders like: addons, client_files, packages, plugins, updates, wsdl etc.</li>
 <li>The TAFJDB.zip must be placed into client_files &gt; h2db folder:</li>
 </ul>
-<p><img src="./images/db-tafjdb-zip.png" alt=""> </p>
-<div class="NOTE"><h5>Note</h5><p>In case you made changes to the db file, please make sure you archive it as a ZIP and rename it as TAFJDB - <em>capital letters are case sensitive</em> - before pushing it into the repository).</p>
+<p><img src="images/db-tafjdb-zip.png" alt=""> </p>
+<blockquote><p style="color:red;">[!Note]
+In case you made changes to the db file, please make sure you archive it as a .zip and rename it TAFJDB before pushing it into the repository. <strong>The naming convention is always TAFJDB.zip  where TAFJDB is case sensitive and the extension -.zip- is lowercase</strong>. If this condition is not satisfied, the database will not be uploaded to the Cloud Environment.</p> 
+
 <p>Also note that this procedure will replace the existing database in the cloud with this one. The old database will be lost, including any records loaded manually.</p>
-</div>
+</blockquote>
 <h2 id="commit-and-push-the-db">Commit and Push the DB</h2>
 <ul>
 <li>Click right inside the <strong>h2db</strong> folder and choose <strong>Git commit master</strong>, check the not versioned files that you want to push (in this case TAFJDB.zip), put a comment in the box, then commit and push. </li>
 <li>After the success message, close the box.</li>
 </ul>
-<p><img src="./images/db-push-db.png" alt=""> </p>
+<p><img src="images/db-push-db.png" alt=""> </p>
 <h2 id="deploy-db-and-check-the-change">Deploy DB and Check the Change</h2>
 <ul>
 <li>Go back to the portal to the target environment and click the <strong>Deploy</strong> button under the Repository</li>
@@ -226,7 +230,7 @@
 </ul>
 </li>
 </ul>
-<p><img src="./images/db-check-record.png" alt=""> </p>
+<p><img src="images/db-check-record.png" alt=""> </p>
 <h1 id="user-permissions-required">User Permissions Required</h1>
 <p>To be able to perform the above operations the below permissions need to be enabled for your user:</p>
 <ul>
