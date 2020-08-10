@@ -40,11 +40,12 @@ Below you can find the current templates catalogue:
 # FCM Standalone #
 | Template   Name              | Version | Description                    |
 |------------------------------|---------|--------------------------------|
+| MB-FCM-ONLY-Jboss-SQL-202004 | 202004  | FCM Standalone for 202004      |
 | MB-FCM-ONLY-Jboss-SQL-202003 | 202003  | FCM Standalone for 202003      |
 | MB-FCM-ONLY-Jboss-SQL-202002 | 202002  | FCM Standalone for 202002      |
 | MB-FCM-ONLY-Jboss-SQL-202001 | 202001  | FCM Standalone for 202001      |
-| MB-FCM-ONLY-Jboss-SQL-201912 | 201912  | FCM Standalone for 201912      |
-| MB-FCM-ONLY-Jboss-SQL-201911 | 201911  | FCM Standalone for 201911      |
+| MB-FCM-ONLY-Jboss-SQL-201912 | 201912  | FCM T24 201912 (Jboss and SQL) |
+| MB-FCM-ONLY-Jboss-SQL-201911 | 201911  | FCM T24 201911                 |
 | MB-FCM-ONLY-Jboss-SQL-201910 | 201910  | FCM Standalone for 201910      |
 | MB-FCM-ONLY-Jboss-SQL-201909 | 201909  | FCM Standalone for 201909      |
 | MB-FCM-ONLY-Jboss-SQL-201907 | 201907  | FCM Standalone for 201907      |
