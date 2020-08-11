@@ -121,22 +121,27 @@ An organization can define as many components as needed but should have all mand
 <h1 id="how-to-set-up-delete-components">How to Set Up/ Delete Components</h1>
 <h2 id="set-up-create-a-component">Set-up/ Create a Component</h2>
 <ul>
-<li>Login to the Temenos Continuous Deployment Platform.</li>
-<li>Click on Settings button on the left menu &gt; this will expand a menu containing buttons for: Streams, Stages, Products, Factory and General.  </li>
-<li>Before creating a component, make sure you select first the stream <em>(top-right)</em> where you want to add the respective component. </li>
-<li>Click on <strong>Products</strong> button. (This button includes creation of the components)</li>
-<li>Click on the <strong>New Component</strong> on the top right.</li>
-<li>Select the Component Type from the dropdown list (the list displays all the components available for your Organization. This is based on the available templates).</li>
-<li>Input a Name. <em>Take into account these conditions (also notified on the screen): Name can start only with a letter or an underscore and it can contain only letters, digits, underscores or hyphens.</em></li>
-<li>Fill the Description.</li>
-<li>Fill the Display Name.</li>
-<li>Click <strong>Create</strong>.</li>
+<li>Login to the Temenos Continuous Deployment Platform.<ol>
+<li>Click on <strong>Settings</strong> button on the left menu &gt; this will expand a menu containing buttons for: Streams, Stages, Products, Factory and General</li>
+</ol>
+</li>
 </ul>
+<ol>
+<li><p>Select the <strong>Stream</strong> <em>(top-right)</em> where you want to add the respective component</p>
+</li>
+<li><p>Click on <strong>New Components</strong></p>
+</li>
+<li><p>Select the Component Type from the dropdown list (the list displays all the components available for your Organization. This is based on the available templates). Then fill in the <strong>Name</strong>, <strong>Description</strong>, and <strong>Display Name</strong></p>
+</li>
+<li><p>Click <strong>Create</strong>.</p>
+</li>
+</ol>
 <p>See below example:</p>
 <p><img src="images/products-add-component.png" alt=""></p>
 <p>A folder is automatically created into the repository <em>(we are using JFrog Artifactory)</em> with the name of your component and will be always created under the default <strong>stable_dev</strong> stage. This is the path where the components&#39; files should be uploaded as explained on the next steps.</p>
 <p><em>(Please note that the components&#39; artifacts can be uploaded any time before running a factory).</em></p>
 <p><em>(If the related artifacts are not uploaded, running the factory will not be possible and an error message will be thrown).</em></p>
+<p> To see the details of a component please make sure to first select the stream from the top-right-side menu. The list with the components that belong to the respective stream will be displayed on the left side of the page. The same operation applies for the products.</p>
 <p><br>
 </br></p>
 <h1 id="how-to-login-to-artifactory">How to login to Artifactory</h1>
@@ -201,27 +206,13 @@ curl -H &quot;X-JFrog-Art-Api:AKCp5dKYyM9WMoiacim9yedAZfG6gLwwcYugPmzZhqHkdRe6ex
 <img src="images/components-products-uploaded-binary.png" alt=""></p>
 <p><br>
 </br></p>
-<h2 id="pre-requisites-and-best-practices"><strong>Pre-requisites and best practices:</strong></h2>
-<ul>
-<li>ensure that the component name also has information about its version;</li>
-<li>ensure that the component format that you upload is correct and as delivered by the Temenos team;</li>
-</ul>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  the format of the package as delivered by Temenos will as well be supported in TCD.  </p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-<ul>
-<li>if the <strong>Help text</strong> file of T24 is given as a .zip, the templates will expect a .zip file for the same,</li>
-</ul>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - DS pakages will have the same packaging as bundled by Design Studio</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - T24 updates are bundled in zip;</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - you need to get from Temenos distribution team the Toolbox kit that will allow you to generate the system definition file of your T24 environment;</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - you will be able to download the T24 updates correspondent to your environments from the Temenos Customer Support Portal by uploading the system definition file generated above;</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - once the updates are downloaded from the portal in a .zip file, you must create another .zip of that downloaded .zip file and only then  place it into the artifactory under the correspondent component;</p>
-<ul>
-<li>ensure that components are uploaded to the appropriate folders (the URL and folder names can be found from the component definition pages of the TCD portal);</li>
-<li>if the component is uploaded in a .zip format, it it recommended to have a text file describing what is included in the package/ provide reference to the code commit tags to find what is included in the package;</li>
-<li>do not delete/ edit/ create components/ folders in the artifactory.  TCD Portal’s Product and Component sections must be used to create anything in artifactory;</li>
-<li>our recommendation is to retain the last 10 components in every stage;</li>
-</ul>
+<h1 id="pre-requisites-and-best-practices">Pre-requisites and best practices</h1>
+<p>•   ensure that the component name also has information about its version</p>
+<p>•   ensure that the component format that you upload is as expected by Temenos Continuous Deployment - every product has a template overview page (see <a href="http://documentation.temenos.cloud/home/pdf/transact-components.pdf">here</a> the expected components&#39; format)</p>
+<p>•   ensure that the components are uploaded to the appropriate folders (the URL and folder names can be found from the component definition pages of the Temenos Continuous Deployment portal)</p>
+<p>•   if the component is uploaded in a .zip format, it is recommended to have a text file describing what is included in the package/ provide reference to the code commit tags to find what is included in the package</p>
+<p>•   do not delete/ edit/ create components/ folders in the artifactory. The Temenos Continuous Deployment Portal’s Product and Component sections must be used to create anything in artifactory</p>
+<p>•   our recommendation is to retain the last 25 components in every stage.</p>
 <p><br>
 </br></p>
 <h1 id="which-components-to-add">Which Components to Add</h1>
@@ -247,6 +238,7 @@ curl -H &quot;X-JFrog-Art-Api:AKCp5dKYyM9WMoiacim9yedAZfG6gLwwcYugPmzZhqHkdRe6ex
 </br></p>
 <h3 id="how-to-delete-a-component">How to Delete a Component</h3>
 <p>Components fields are not editable, so you have only the options to create or to delete them.</p>
+<p> <img src="images/delete-component.png" alt=""></p>
 <div class="NOTE"><h5>Note</h5><p><span style="color:red">If your component is <strong>attached to a Product</strong>, you will not be able to delete it. <p>
 <p>You need first to delete the product, then return to the component and click <strong>Delete</strong> button.</span></p>
 </div>
@@ -268,16 +260,25 @@ curl -H &quot;X-JFrog-Art-Api:AKCp5dKYyM9WMoiacim9yedAZfG6gLwwcYugPmzZhqHkdRe6ex
 </br></p>
 <h2 id="how-to-set-up-edit-delete-products">How to Set Up/ Edit/ Delete Products</h2>
 <h3 id="how-to-set-up-create-a-product">How to Set-up/ Create a Product</h3>
-<ul>
-<li>If you have created more streams, first make sure you select the stream where you want to create the respective product (see top right).</li>
-<li>Click on Products tab and then on New Product button on the top right.</li>
-<li>Input a name, description and select the mandatory components from dropdown button. This should represent the Principle Product (or one of the principle products) you will use when creating a factory.</li>
-<li>Click <strong>Create</strong> button.</li>
-</ul>
+<ol>
+<li><p>From the left-side menu click on the <strong>Components</strong> icon</p>
+</li>
+<li><p>Navigate to the <strong>Products</strong> tab </p>
+</li>
+<li><p>If you have created more streams,  select the <strong>Stream</strong> where you want to create the respective product (see top right)</p>
+</li>
+<li><p>Click on <strong>New Product</strong> on top-right</p>
+</li>
+<li><p>Add a <strong>name</strong>, <strong>description</strong> and <strong>select</strong> the mandatory components from drop-down button. This should represent the Principle Product (or one of the principle products) you will use when creating a factory</p>
+</li>
+<li><p>Click <strong>Create Product</strong> </p>
+</li>
+</ol>
 <p>See also below example. </p>
 <p><em>For components, the selection order is not important.</em></p>
 <p><img src="images/products-add-product.png" alt=""></p>
 <p>In addition to the principle product which has all template mandatory components, you will need to create other products - Base Products - that will be used to be tested.</p>
+<p>To sort the products alphabetically, hover over the <strong>Name</strong> field from the top of the Products List.</p>
 <p><br>
 </br></p>
 <h3 id="how-to-edit-a-product">How to edit a product</h3>
@@ -296,8 +297,6 @@ curl -H &quot;X-JFrog-Art-Api:AKCp5dKYyM9WMoiacim9yedAZfG6gLwwcYugPmzZhqHkdRe6ex
 </ul>
 <div class="NOTE"><h5>Note</h5><p>If the respective product is attached to a factory, you will not be able to delete. You need to delete the factory first.</p>
 </div>
-<p> To see the details of a component please make sure to first select the stream from the top-right-side menu. The list with the components that belong to the respective stream will be displayed on the left side of the page. The same operation applies for the products:
-<img src="images/components-see-details.png" alt=""></p>
 <p><br>
 </br></p>
 <h1 id="artifactory-view">Artifactory view</h1>

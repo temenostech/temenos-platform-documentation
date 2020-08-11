@@ -93,19 +93,27 @@
 <p>The promotion of the components across stages is conditional based on the status of tests that are done during a factory run. If the tests succeed, the components will be promoted to the next stage. </p>
 <h1 id="how-to-set-up-edit-delete-stages">How to Set Up/ Edit/ Delete Stages</h1>
 <h2 id="set-up-create-a-stage">Set-up/ Create a Stage</h2>
-<ul>
-<li>Login to the Temenos Continuous Deployment Platform.</li>
-<li>Click on Settings button on the left menu &gt; this will expand a menu containing buttons for: Streams, Stages, Products, Factory and General.  </li>
-<li>Click on Stage button, make sure you select the Stream where you want to add a stage and then on the <strong>New Stage</strong> on the top right.</li>
-<li>Fill the name <em>(mandatory field)</em>. Take into account these conditions (also notified on the screen): Name can start only with a letter or an underscore and it can contain only letters, digits, underscores or hyphens.</li>
-<li>Fill the description <em>(mandatory field)</em>.</li>
-<li>Click <strong>Create</strong>. </li>
-</ul>
+<p> Login to the Temenos Continuous Deployment Platform:</p>
+<ol>
+<li><p>Click on <strong>Settings</strong> button on the left menu &gt; this will expand a menu containing buttons - click on <strong>Stage</strong> icon</p>
+</li>
+<li><p>From the top-right  select the <strong>Stream</strong> where you want to add a stage</p>
+</li>
+<li><p>Click on  <strong>New Stage</strong> on the top right</p>
+</li>
+<li><p>Fill the <strong>Stage Name</strong> and ** Stage Description**</p>
+</li>
+<li><p>Click <strong>Create Stage</strong>. </p>
+</li>
+</ol>
 <p><strong>Note</strong>: <em>Instead of choosing the enable option, you can create a disabled stage and enable it later, but the default option should be enable.</em></p>
-<p><img src="./images/streams-create-stage.png" alt=""></p>
+<p><img src="images/streams-create-stage.png" alt=""></p>
+<p><br></p>
 <h2 id="edit-a-stage">Edit a Stage</h2>
 <p>A stage can have only the description edited/ changed, but not the name. Why? Because when creating a stage, a folder is created automatically in the Artifactory containing the stage name. This folder will contain the components that you may be added for the respective stage.</p>
 <p>Just click the edit button, change the description and then click update.</p>
+<p><img src="images/edit-stage.png" alt=""></p>
+<p><br></p>
 <h2 id="default-stage-configuration-stage">Default Stage (Configuration Stage)</h2>
 <p>After logging to the portal, go to the <strong>General</strong> button on the left menu. Here you can see and edit the metadata.</p>
 <p>The CONFIGURATION STAGE NAME can be defined after the creation of an organization in order to be able to use the assemble features and <strong>can be editable</strong>.</p>
@@ -121,8 +129,17 @@
 <p>Any other created stage can be deleted at any moment as it is not dependent of the subsequent features added such as components and products. Components and Products belong to the streams.</p>
 <p>Example of the default stage defined into the metadata (you can set any name you prefer instead of <em>Primary_stage</em>):</p>
 <p><img src="images/stage-metadata.png" alt=""></p>
-<p> To see the details of a stage please make sure to first select the stream from the top-right-side menu. The list with the stages that belong to the respective stream will be displayed on the left side of the page:
+<p> To see the details of a stage:</p>
+<ol>
+<li><p>Select the <strong>Stream</strong> icon from the top-right-side menu</p>
+</li>
+<li><p>From the top-right select the <strong>Stream</strong> name you are interested in</p>
+</li>
+<li><p>The list with the stages that belong to the respective stream will be displayed on the left side of the page:
 <img src="images/stages-see-details.png" alt=""></p>
+</li>
+</ol>
+<p>Hover over the <strong>Name</strong> to sort the streams alphabetically.</p>
 <h1 id="user-permissions-required">User Permissions Required</h1>
 <p>To be able to perform the above operations the below permissions need to be enabled for your user:</p>
 <ul>
