@@ -19,7 +19,7 @@ The users can access their organisation only, view their user profiles and perfo
 
 1. Go to the menu on the left and then click Users tab, as below:
 
-2. Click on the **Users** tab
+2. Click on the **Users** tab 
 
 3. To order the users' list hover over the **Name** tab - the users will be listed in an alphabetical order
 
