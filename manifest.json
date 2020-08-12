@@ -320,6 +320,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/images/create-user.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/create-user.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/images/enterprise-view.png",
       "output": {
         "resource": {
@@ -529,6 +540,28 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/images/see-user-role.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/see-user-role.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/stages-see-details.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/stages-see-details.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/images/tcd-details.png",
       "output": {
         "resource": {
@@ -584,6 +617,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/images/user-change-password.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/user-change-password.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/images/user-details.png",
       "output": {
         "resource": {
@@ -610,6 +654,17 @@
       "output": {
         "resource": {
           "relative_path": "home/images/user-login.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/user-see-details.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/user-see-details.png"
         }
       },
       "is_incremental": false,
@@ -6781,14 +6836,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "RestApiDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
