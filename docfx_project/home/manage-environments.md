@@ -9,50 +9,6 @@ The Temenos Development Platform support multitenancy and Organisations are desi
 
 Upon subscription you'll receive a **unique** Organisation Id as a URL link. Your Organisation Id will look similar to this: 
 
-![](./images/organisation-url.png)
-
-The confirmation of your Organisation activation will contain the link and access instructions to your designated Organisation administrator. The administrator is the first and only user.
-
-<br>
-
-
-- **Environments**
-
-The Development platform (Extend) has the capability to provision environments in a variety of different configurations. Users can initiate a new environment and select from a predefined list of templates the application, the release and stack they wish to provision. Each month we host a new template with the latest release of Temenos suite. 
-
-The environments are customisable in terms of Name and brief description to explain their purpose. The templates follow the official Temenos configuration stack but they can be customised for Releases 2016 onwards.   
-
-
-Create your own environment:
-
-- Either click the Environments tab on the left menu and then click **New Environment** button on the top right corner.  
-- Or you can already see the environment page open with the fields available to create a new environment.
-
-![](./images/env-tab.png)
-
-
-<br>
-
- - Fill Name and Description fields
- - Select one of the available templates from dropdown list, based on your requirements
- - Click **Create environment**
-All fields are mandatory except 'Labels'.
-
-![](./images/env-new.png)
-
-<br>
-
-> [!Note]
-> The environment creation time will vary depending on the selected template.
-
-
-- **Templates**
-- **Organisation ID**
-
-The Temenos Development Platform support multitenancy and Organisations are designed to be distinctive accounts.  
-
-Upon subscription you'll receive a **unique** Organisation Id as a URL link. Your Organisation Id will look similar to this: 
-
 ![](./images/organisation-url.png) 
 
 The confirmation of your Organisation activation will contain the link and access instructions to your designated Organisation administrator. The administrator is the first and only user.
@@ -81,7 +37,7 @@ Create your own environment:
  - Select one of the available templates from dropdown list, based on your requirements
  - Click **Create environment**
 All fields are mandatory except 'Labels'
- 
+
 ![](./images/env-new.png)
 
 <br>
@@ -98,21 +54,28 @@ All fields are mandatory except 'Labels'
 
 Check the list with all available templates. Click the **Templates Catalog** on the left menu.
 
-![](./images/env-template.png)
+![](./images/template-details.png)
 
-Click on the Template Type and select for one of the applications, for example T24 to see the templates that are available for your organisation. The templates details is split into three tabs that provide:
+1. Click on the **Template Type** and select for one of the applications, for example T24 to see the templates that are available for your organisation. 
 
-- the release notes
+2. If you are looking for a specific template, type in the **Filter** field the keywords 
 
-![](./images/env-template-type-releasenotes.png)
+3. Hover over the **Name** field to list all the available templates alphabetically
 
-- a comprehensive list of components
+4. Select the number of **items per page** you want to display
 
-![](./images/env-template-type-componentslist.png)
 
-- the template content 
+5. Click on a template - on the right you will see the name of the template, its version, installation and expiration dates as well as:
 
-![](./images/env-template-type-templatecontent.png)
+6. The **Release Notes**
+
+7. The **Components List** - these can be filtered as the user wants
+
+![](./images/template-components-list.png)
+
+8. The **Template Content**
+
+![](./images/templates-content.png)
 
 # User Roles Required#
 To be able to create an environment the below permissions need to be enabled for your user:
@@ -121,6 +84,8 @@ To be able to create an environment the below permissions need to be enabled for
 - MANAGE _ ENVIRONMENTS
 
 To have a better understanding of the user permissions, hover the cursor over the variables and a short description will pop up or click [here](http://documentation.temenos.cloud/home/techguides/user-permissions) to read more.
+
+
 
 
 
