@@ -342,6 +342,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/images/env-list.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/env-list.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/images/env-new.png",
       "output": {
         "resource": {
@@ -595,6 +606,39 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/images/template-components-list.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/template-components-list.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/template-details.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/template-details.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/templates-content.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/templates-content.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/images/templates.png",
       "output": {
         "resource": {
@@ -740,15 +784,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "home/manage-environments.md",
       "output": {
         ".html": {
           "relative_path": "home/manage-environments.html",
-          "hash": "K2dj0LSJ5dk9dSXZHGz2QQ=="
+          "hash": "5DKZu5YDW/0q/Y80lmcgrg=="
         }
       },
       "is_incremental": false,
@@ -6836,9 +6877,18 @@
         "incrementalPhase": "build"
       },
       "processors": {
+        "RestApiDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
@@ -6848,15 +6898,6 @@
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "RestApiDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
           "incrementalPhase": "build"
         }
       }
