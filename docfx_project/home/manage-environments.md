@@ -71,11 +71,12 @@ Check the list with all available templates. Click the **Templates Catalog** on 
 
 7. The **Components List** - these can be filtered as the user wants
 
-![](./images/template-components-list.png)
+ ![](./images/template-components-list.png)
+
 
 8. The **Template Content**
 
-![](./images/templates-content.png)
+ ![](./images/templates-content.png)
 
 # User Roles Required#
 To be able to create an environment the below permissions need to be enabled for your user:
