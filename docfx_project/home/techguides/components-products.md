@@ -1,4 +1,4 @@
-# Components – Feature Description #
+                                                                 # Components – Feature Description #
 
 
 Components are individually deployable units that are understood by Temenos Continuous Deployment Platform based on the component type that each component refers to. 
@@ -54,6 +54,7 @@ These components have a structure associated and work in a standardized manner a
 ## Set-up/ Create a Component ##
 
  - Login to the Temenos Continuous Deployment Platform.
+ 
 1. Click on **Settings** button on the left menu > this will expand a menu containing buttons for: Streams, Stages, Products, Factory and General
 
 2. Select the **Stream** *(top-right)* where you want to add the respective component
