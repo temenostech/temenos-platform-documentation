@@ -43,7 +43,7 @@ The repository structure on your local machine should look like this:
 | packages 	| If you intend to upload one or more Design Studio packages, add it here as a .jar file 	|
 | packages\l3 	| One or more Design Studio packages can be bundled in a .zip file format and uploaded in this folder. 	|
 | plugins 	| WAR files can be uploaded in   this folder. The files will be deployed inside Jboss EAP. In addition to   this, endpoints related to plugins can be automatically added to an   application. For more details, check this guide. 	|
-| updates 	| The updates   files downloaded from the portal in zip format. The files will be copied to   the update folder and the T24 Update procedure is triggered. 	|
+| updates 	| The updates   files downloaded from the portal in .zip of .zip format. The files will be copied to   the update folder and the T24 Update procedure is triggered. 	|
 | wsdl 	| WSDL   files and folders that are required by plug-ins (war file) need to be   uploaded here. 	|
 
 ## Additional folders
@@ -221,15 +221,15 @@ Temenos Continuous Deployment provides users the ability to deploy one or more D
 # User Permissions Required
 To be able to perform the above operations the below permissions need to be enabled for your user:
 
-- UPDATE _ USER (to add the SSH Key if this hasn't been done after creating the user)
-- CREATE _ ENVIRONMENT
-- UPDATE _ ENVIRONMENT
-- DELETE _ ENVIRONMENT
-- BOOST _ ENVIRONMENT
-- REDEPLOY _ ENVIRONMENT
-- START _ ENVIRONMENT
-- STOP _ ENVIRONMENT
-- MANAGE _ ENVIRONMENTS
+- UPDATE_USER (it is required to add the SSH Key if this hasn't been done after creating the user)
+- CREATE_ENVIRONMENT
+- UPDATE_ENVIRONMENT
+- DELETE_ENVIRONMENT
+- BOOST_ENVIRONMENT
+- REDEPLOY_ENVIRONMENT
+- START_ENVIRONMENT
+- STOP_ENVIRONMENT
+- MANAGE_ENVIRONMENTS
 
 To have a better understanding of the user permissions, hover the cursor over the variables and a short description will pop up or click [here](http://documentation.temenos.cloud/home/techguides/user-permissions) to read more.
 
