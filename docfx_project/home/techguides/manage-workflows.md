@@ -12,7 +12,7 @@ The workflow diagram consists of the following elements that can be dragged into
 
  - **COB** -  runs various processes that are split into 5 stages (Individual application processes,  system wide processes, main system reports,  start of day such as standing orders, split month end events, cash flow maintenance and so on-, and online -any non-critical reports and processes which can be run after the system has returned to online mode)
   -  based on your contract, the COB button may/ may not appear to all users in the workflow customization stage. 
-  -  see what happens when COB is triggered in a Temenos Continuous Deployment environment **[here](http://documentation.temenos.cloud/home/techguides/trigger-cob.html)**
+  -  see what happens when COB is triggered during a factory run **[here](http://documentation.temenos.cloud/home/techguides/trigger-cob.html)**
  
  ![](./images/workflow-cob.png) 
 
