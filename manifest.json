@@ -1002,7 +1002,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/automated-factories.html",
-          "hash": "9D2QFBGTyJyCrGApIutkLQ=="
+          "hash": "+yJzvXou/C6mJw5CWSE+sw=="
         }
       },
       "is_incremental": false,
@@ -1029,7 +1029,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/components-products.html",
-          "hash": "h+EotdMB/P4743RpNriKnw=="
+          "hash": "Qfo03sAintyb1bZlLRLmDw=="
         }
       },
       "is_incremental": false,
@@ -6680,7 +6680,7 @@
       "output": {
         ".html": {
           "relative_path": "home/toc.html",
-          "hash": "dMDup88Rom9ipSR8Jn5mqQ=="
+          "hash": "6532mKR1yipkmvcsXQSGRg=="
         }
       },
       "is_incremental": false,
@@ -6889,14 +6889,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "RestApiDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
