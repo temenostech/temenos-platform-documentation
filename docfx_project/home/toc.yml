@@ -65,12 +65,12 @@
      href: ./techguides/components-products.md
    - name: Manage Workflows
      href: ./techguides/manage-workflows.md   
+   - name: What Happens when COB is triggered
+     href: ./techguides/trigger-cob.md    
    - name: Manage Automated Factories
      href: ./techguides/automated-factories.md
    - name: Manage Test Scripts
      href: ./techguides/manage-test-scripts.md          
-   - name: Manage Test Cases Upload
-     href: ./techguides/stage-testcases.md
    - name: Run a Factory with "Run Now" Button and Dashboard
      href: ./techguides/run-factory.md
    - name: Create & Publish a New Template after a Successful Factory Run
