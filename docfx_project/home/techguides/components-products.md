@@ -24,7 +24,7 @@ Each component has the following fields *(all mandatory)*:
 </br>
 ##  Component Type ##
 
-The TCP uses a convention/ protocol to deploy all parts required to run a full-fledged instance of T24 (Or any other product supported by a template). Such parts to constitute a complete system are called **components**. 
+The platform uses a convention/ protocol to deploy all parts required to run a full-fledged instance of T24 (Or any other product supported by a template). Such parts to constitute a complete system are called **components**. 
 
 The T24 installation may have the following components (No exhaustive or inclusive):
 
@@ -40,6 +40,8 @@ The names of these parts / Component Types are fixed and are not user editable. 
 Each component type represents a deployable unit and has an ansible script associated to it. 
 
 These components have a structure associated and work in a standardized manner across different deployment stacks (OS, App server variations, DB variations etc).
+
+ The components are sorted from A to Z and you are able to search/filter the component by name. The list displays all the components available for your Organization. This is based on the available templates).
 
 ><p style="font-size:18px"><span style="color:red">**WARNING:**</span><span style="color:red">
 <span style="color:red"></span><span style="color:red">make sure to follow the naming convention as defined by the Temenos team. Any adjustments to the components' title such as adding special characters or spaces will result in a failed factory run.
@@ -61,7 +63,7 @@ These components have a structure associated and work in a standardized manner a
 
 3. Click on **New Components**
 
-4. Select the Component Type from the dropdown list (the list displays all the components available for your Organization. This is based on the available templates). Then fill in the **Name**, **Description**, and **Display Name**
+4. Select the Component Type from the dropdown list and fill in the **Component Name**, **Component Description**, and **Component Display Name**
 
 5. Click **Create**.
 

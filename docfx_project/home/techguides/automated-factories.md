@@ -113,6 +113,8 @@ Assuming that you select a customized workflow with COB you need to fill in addi
 
 - type in the ID of the TSA.SERVICE record for which COB has to be run. The id can be either group specific id (eg: COB-1, COB-001) , company specific id (eg: COB-GB0010001) or COB. Important: currently the platform can handle 20 agents at max, including the online services.
 
+To get a better understanding of what happens when COB is triggered please refer to [THIS](http://documentation.temenos.cloud/home/techguides/trigger-cob.html) user guide.
+
 <br>
 </br>
 
