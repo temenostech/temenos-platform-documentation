@@ -65,7 +65,7 @@
      href: ./techguides/components-products.md
    - name: Manage Workflows
      href: ./techguides/manage-workflows.md   
-   - name: What Happens when COB is triggered
+   - name: What happens when COB is triggered
      href: ./techguides/trigger-cob.md    
    - name: Manage Automated Factories
      href: ./techguides/automated-factories.md
