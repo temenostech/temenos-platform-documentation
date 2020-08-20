@@ -81,158 +81,113 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="selenium-template-implementation">Selenium Template Implementation</h1>
 
-<div class="NOTE"><h5>Note</h5><p>The below instructions may be updated shortly.</p>
-</div>
 <p>This page provides information about the Selenium Template, the pre-requisites needed to test the template, as well as an example of the framework structure and the manifest file.</p>
 <h2 id="implementation">Implementation</h2>
 <p>The Selenium Template will provision the following:</p>
 <ul>
-<li><p>Windows 2016 VM with the below software/packages pre-installed:</p>
+<li><p>Windows 2017 VM with the below software/packages pre-installed:</p>
 <ul>
 <li><p>Open JAVA / JDK  1.8</p>
 </li>
-<li><p>the latest version of Google Chrome</p>
+<li><p>the latest version of Google Chrome and Firefox Browsers</p>
 </li>
-<li><p>the latest version of Google Chrome driver (which will be used by Selenium) - this will be present in F:/TCD/WebDriver folder</p>
+<li><p>the latest version of Google Chrome driver</p>
 </li>
-<li><p>the latest version of Geckodriver (which will be used by Selenium) - this will be present in F:/TCD/WebDriver folder</p>
-</li>
-</ul>
-</li>
-</ul>
-<p><br>
-</br></p>
-<p>The test script component that can be used by this template must be a .zip within a .zip file (see screenshot below) with the following folders:</p>
-<p><img src="./images/components-test-script.png" alt=""></p>
-<ul>
-<li><p><strong>Test suite 1</strong> (this could be any name - it is assumed this as a suite of tests that needs to be executed)</p>
-<ul>
-<li><p>1 or multiple .jar files:</p>
-<ul>
-<li><p>these files contain the Selenium test cases to be executed</p>
-</li>
-<li><p>the framework should copy all the test results to F:/TCD/TestResults folder</p>
-<ul>
-<li>Temenos Continuous Deployment Platform will move the results in this folder to a centralized storage account and provide a download facility from the Temenos Continuous Deployment Platform</li>
-</ul>
-</li>
-<li><p>the framework must create a manifest file as well (the sample structure will be present in the documentation portal). The same must be uploaded to F:/TCD/TestResults folder</p>
-</li>
-</ul>
-</li>
-<li><p>a folder named &quot;Lib&quot;</p>
-<ul>
-<li>all the libraries that are needed by the test cases must be kept here. This includes the Selenium library, its extension and its dependencies.</li>
-</ul>
-</li>
-<li><p>properties file with at least the following  properties  (“sys.t24.browser.url”, “sys.test.results.folder&quot;, “sys.web.driver.folder”, “sys.t24.login.username1”,  “sys.t24.login.password1”, “sys.t24.login.username2”, “sys.t24.login.password2”) </p>
-<ul>
-<li><p>while the test VM is provisioned, Temenos Continuous Deployment Platform will alter these values based on the IP and Port of the T24 VM</p>
-</li>
-<li><p>it will change the value of “sys.test.results.folder“ to “F://TCD//TestResults”</p>
-</li>
-<li><p>it will change the value of “sys.web.driver.folder“ to “F://TCD//WebDriver”</p>
-</li>
-<li><p>it is assumed that the user name and password will be known by the clients writing test cases and the same will be present in the golden copy</p>
-</li>
-<li><p>this property file can have other properties needed by the jar files, but the Temenos Continuous Deployment Platform will not alter these values at the run time</p>
-</li>
-</ul>
-</li>
-<li><p>a text file named “CommandsToExecute.txt”</p>
-<ul>
-<li><p>the Temenos Continuous Deployment Platform will execute all the commands listed here</p>
-</li>
-<li><p>the Temenos Continuous Deployment Platform will validate whether all the commands are  “Java” commands before executing</p>
-</li>
-<li><p>any other commands present here, will result in termination of Factory run saying deployment failure with details mentioning why it failed</p>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><strong>Test suite 2</strong></p>
-<ul>
-<li>follows the same structure as above. These will be executed in a separate test client if test parallelisation is enabled. Otherwise, these will be executed in the same test client once the first test suite is complete.</li>
-</ul>
-</li>
-<li><p>…</p>
-</li>
-<li><p><strong>Test suite n</strong>
+<li><p>the latest version of Gecko Driver 
 <br>
 </br></p>
 </li>
 </ul>
-<h2 id="framework-structure-example">Framework structure example</h2>
-<p>The below shows the test framework folder structure and general expectations:</p>
-<p><img src="images/selenium-automation-1.png" alt=""></p>
-<p><br>
-</br></p>
-<h3 id="lib-folder"><strong>Lib Folder</strong></h3>
+</li>
+</ul>
+<p>The Google Chrome Driver and the Gecko Driver are downloaded to the F:/TCD/WebDriver folder in the provisioned VM.</p>
+<h1 id="test-script-structure">Test Script Structure</h1>
+<p>The test script component that can be used by the Selenium Template must be a .zip file within a .zip. The parent .zip file can contain multiple zips of tets (see screenshot below):</p>
+<p><img src="./images/components-test-script.png" alt=""></p>
+<p>Each test suite is assumed to be a suite of tests that can be executed.  Name of the test suite can by of any name.  Each test suite should contain the following files/folders:</p>
+<p><img src="./images/components-test-structure.png" alt=""></p>
+<h2 id="one-or-more-executable-jar-files">One or more Executable .jar files</h2>
+<p><img src="./images/executable-jar-file.png" alt=""></p>
+<ul>
+<li><p>The jar files contain the binaries of  Selenium+Junit test cases or Selenium only test cases to be executed.</p>
+</li>
+<li><p>If the test framework makes use of junit, it must generate all the junit test results to a “junit” folder under the folder specified in the global.properties (sys.test.results.folder).</p>
+</li>
+<li><p>If the test framework is Selenium only framework, it should generate the consolidated results in a file called ‘consolidated-results.xml’ under the folder specified in global.properties (sys.test.results.folder).</p>
+</li>
+</ul>
+<blockquote><p>Note:</p>
+<ul>
+<li><p>The Selenium Template will consolidate all the junit results from this folder and produce consolidated results in case of Junit based test framework. </p>
+</li>
+<li><p>The Temenos Continuous Deployment Platform will move these consolidated results to a centralized storage account and provide a download facility from the dashboard.</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="lib-folder">Lib Folder</h3>
 <p>The lib folder contains the libraries used by the Selenium framework. We expect all the library files to be present in the same folder and the relative path should be handled in the test framework.</p>
-<p><img src="images/selenium-automation-2.png" alt=""></p>
+<p><img src="./images/selenium-lib-folder.png" alt=""></p>
+<p>All the libraries (.jar) referenced or required by the testcase jars must be included in the Lib folder.</p>
 <p><br>
 </br></p>
-<h3 id="properties-file"><strong>.properties file</strong></h3>
+<h3 id="globalproperties-file">global.properties file</h3>
 <p>The properties file holds the configurable parameters used by the Selenium framework. Some of the parameters have static values. Thus, the Temenos Continuous Deployment Platform expects them to be present in the properties file.</p>
 <p>For instance, sys.t24.IP=<a href="http://127.0.0.1:9080/BrowserWeb">http://127.0.0.1:9080/BrowserWeb</a> value is replaced dynamically at the run time. The same applies to all parameters highlighted in the RedBox below.</p>
-<div class="NOTE"><h5>Note</h5><p>T24 browser can use any FQDN and Port. However, the endpoint should be reachable by the test client VM in which the test cases will be executed.</p>
-<p>Also if the test framework wants to support multiple T24 endpoints then it must be pre-configured same as sys.t24.browser.url.</p>
-</div>
-<p><img src="images/selenium-automation-3.png" alt=""></p>
+<p><img src="./images/selenium-global-properties.png" alt=""></p>
+<ul>
+<li><p>The name of the properties file must be global.properties and it must have the following mandatory properties:</p>
+<ul>
+<li><p>sys.t24.browser.url=<a href="http://localhost:9080/WebBrowser">http://localhost:9080/WebBrowser</a></p>
+</li>
+<li><p>sys.test.results.folder=F:/TCD/TestResults</p>
+</li>
+<li><p>sys.web.driver.folder=F:/TCD/WebDriver</p>
+</li>
+<li><p>The Selenium template will change the values for the above properties at the runtime after the test VM is provisioned</p>
+</li>
+</ul>
+</li>
+<li><p>Optional properties like the following can also me mentioned in it</p>
+<ul>
+<li><p>sys.t24.login.username1=XXXXXX</p>
+</li>
+<li><p>sys.t24.login.password1=XXXXXX</p>
+</li>
+<li><p>sys.t24.login.username2=XXXXXX</p>
+</li>
+<li><p>sys.t24.login.password2=XXXXXX</p>
+</li>
+<li><p>It is assumed that the usernames and passwords will be known to the clients while writing the test cases and the same will be present in the golden copy.</p>
+</li>
+<li><p>This property file can have any other properties needed by the jar files. The Selenium Template will not alter/change the values for these properties.</p>
+</li>
+</ul>
+</li>
+</ul>
 <p><br>
 </br></p>
-<h3 id="testcasejar"><strong>TestCase.jar</strong></h3>
-<p>We expect the test cases to be compiled as an executable .jar file. </p>
-<p>Note: The Selenium_Automation.zip can have multiple *.jar files. </p>
-<p><img src="images/selenium-automation-4.png" alt=""></p>
-<p><br>
-</br></p>
-<h3 id="commandstoexecutetxt"><strong>CommandsToExecute.txt</strong></h3>
-<p>This file contains the list of commands that the Temenos Continuous Deployment Platform will execute in sequence. We expect the command to start with “java” as anything other than the java command will be considered deployment failure.</p>
-<p>In case the Test script has more jar files then the execution of the files can be handled in the CommandsToExecute file. Nonetheless, please remember that Temenos will validate the command and execute it only if it starts with “java” so assuming any other pre-requisites and environment variable will be passed as a runtime parameter.</p>
-<p><img src="images/selenium-automation-5.png" alt=""></p>
-<h2 id="manifestxml">Manifest.xml</h2>
-<p>The Manifest contains information regarding the test run, i.e. the total number of cases, success count, failed count etc. The Temenos Continuous Deployment Platform will use this information to populate the dashboard. Below you will find an example format.</p>
-<p> <span style="color:red">From the below structure, the Temenos Continuous Deployment Platform needs to mandate the following information in order to populate in the dashboard:</span></p>
-<pre><code>&lt;passedTests&gt;11&lt;/passedTests&gt;
-&lt;failedTests&gt;3&lt;/failedTests&gt;
-&lt;totalTests&gt;14&lt;/totalTests&gt;
-&lt;Name&gt;Temenos Automation Testing Framework&lt;/Name&gt;
-&lt;toolVersion&gt;1.2&lt;/toolVersion&gt;
-&lt;startDate&gt;2020.04.03 09:34:34&lt;/startDate&gt;
-&lt;duration&gt;112.94700&lt;/duration&gt;
-&lt;result&gt;FAIL&lt;/result&gt;
-&lt;hostName&gt;&lt;/hostName&gt;
-</code></pre><p><br>
-The test framework should generate the manifest.xml file with the above details. The below table describes the manifest tags and its purposes.</p>
-<table>
-<thead>
-<tr>
-<th>Tag</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>passedTests</td>
-<td>It denotes the prorated number of passed test cases in the current run.</td>
-</tr>
-<tr>
-<td>failedTests</td>
-<td>Number of failed test cases in the current run.</td>
-</tr>
-<tr>
-<td>totalTests</td>
-<td>The overall test cases count in the respective run.</td>
-</tr>
-<tr>
-<td>result</td>
-<td>The overall test result. The value should be “FAIL“ even if there is a single failure.</td>
-</tr>
-</tbody>
-</table>
-<p><strong>An example of the manifest format:</strong></p>
+<h2 id="commandstoexecutetxt">CommandsToExecute.txt</h2>
+<p><img src="./images/selenium-commands-to-execute.png" alt=""></p>
+<ul>
+<li><p>A text file that contains the list of all the java commands to run/execute the test cases in separate lines</p>
+<ul>
+<li><p>The expectation is that each command to start with “java” as anything other than a Java command will be considered as deployment failure.</p>
+</li>
+<li><p>The Selenium Template will execute all the java commands reading this text file line by line.</p>
+</li>
+<li><p>The Selenium Template will also validate the lines in this file whether they are java commands before execution</p>
+</li>
+<li><p>If any of the line in the text file is not a valid java command, results in the termination of Factory Run.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="test-results-consolidation">Test Results Consolidation</h1>
+<h2 id="1-selenium--junit-test-framework">1. Selenium + Junit Test Framework</h2>
+<p>The test framework should write all the test results to the “junit” folder under the  default test results folder specified in the global.properties (sys.test.results.folder).  The Selenium Template looks for the junit test results in specified folder for consolidation. </p>
+<p>After the execution of all commands for each test suite, the Selenium Template runs a consolidation utility that consolidates all the junit test results and produces a consolidated-results.xml file and a corresponding html file.</p>
+<h2 id="2-selenium-only-test-framework">2. Selenium Only Test Framework</h2>
+<p>The test framework should generate a consolidated-results.xml which contains information regarding the test run, i.e. the total number of cases, success count, failed count etc.  The generated file should follow the sample specified below.</p>
 <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
 &lt;!-- configured only by authorised user--&gt;
 &lt;Manifest&gt;
@@ -331,8 +286,60 @@ The test framework should generate the manifest.xml file with the above details.
 &lt;result&gt;FAIL&lt;/result&gt;
 &lt;hostName&gt;&lt;/hostName&gt;
 &lt;/Manifest&gt;
-</code></pre><p>Click  <strong><a href="../zip/TestCases.zip">HERE</a></strong>  to download the sample of the Selenium Test framework, which is capable of running sample UI based tests.</p>
-<p>Click <strong><a href="../zip/sample-selenium-source-code.zip">HERE</a></strong>  to download the Selenium source code. </p>
+</code></pre><p>From the below structure, the Temenos Continuous Deployment Platform needs to mandate the following information in order to populate in the dashboard:</p>
+<pre><code>&lt;passedTests&gt;11&lt;/passedTests&gt;
+&lt;failedTests&gt;3&lt;/failedTests&gt;
+&lt;totalTests&gt;14&lt;/totalTests&gt;
+&lt;Name&gt;Temenos Automation Testing Framework&lt;/Name&gt;
+&lt;toolVersion&gt;1.2&lt;/toolVersion&gt;
+&lt;startDate&gt;2020.04.03 09:34:34&lt;/startDate&gt;
+&lt;duration&gt;112.94700&lt;/duration&gt;
+&lt;result&gt;FAIL&lt;/result&gt;
+&lt;hostName&gt;&lt;/hostName&gt;
+</code></pre><p>The consolidation util will generate the cosolidated-results.xml file with the above details. The below table describes the manifest tags and its purposes.</p>
+<table>
+<thead>
+<tr>
+<th>Tag</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>passedTests</td>
+<td>It denotes the prorated number of passed test cases in the current run.</td>
+</tr>
+<tr>
+<td>failedTests</td>
+<td>Number of failed test cases in the current run.</td>
+</tr>
+<tr>
+<td>totalTests</td>
+<td>The overall test cases count in the respective run.</td>
+</tr>
+<tr>
+<td>result</td>
+<td>The overall test result. The value should be “FAIL“ even if there is a single failure.</td>
+</tr>
+</tbody>
+</table>
+<p>The Temenos Continuous Deployment Platform will use this information to populate the dashboard. Below you will find an example format.</p>
+<p><img src="./images/selenium-dashboard-example.png" alt=""></p>
+<p>The Temenos Continuous Deployment Platform will move these consolidated results to a centralized storage account and provide a download facility from the dashboard for each test suite.</p>
+<p><img src="./images/selenium-consolidated-test-restuls.png" alt=""></p>
+<h1 id="attachments">Attachments</h1>
+<ul>
+<li><p>Click  <strong><a href="../zip/test-framework.zip">HERE</a></strong>  to download the sources of the sample selenium-junit test framework, which is based on selenium and Junit and produces the test results in an xml format specified by junit.  This is a java project which can be imported into an IDE for further enhancements.</p>
+</li>
+<li><p>Also click <strong><a href="../zip/TestCase.zip">HERE</a></strong> to download the TestCase.zip with the structure mentioned above that includes Lib folder that contains all the dependencies to run the TestCase, a global properties file and a CommandsToExecute.txt file.</p>
+</li>
+<li><p>Source for the Sample TestCase Java Project can be found <strong><a href="../zip/sample-test.zip">HERE</a></strong>.  The test cases in this project can be adapted and can be used as part of the factory run.</p>
+</li>
+<li><p>The zip file comprising the consolidated test results that the Temenos Continuous Deployment platform will archive is available <strong><a href="../zip/testresults1.zip">here (testresults1)</a></strong> and <strong><a href="../zip/testresults2.zip">here (testresults2)</a></strong></p>
+</li>
+<li><p>A sample of the consolidated results from the junit test results can be retrieved from this <strong><a href="../zip/consolidated-results.xml">link </a></strong> and the html page is available <strong><a href="../zip/run_results.html">here </a></strong></p>
+</li>
+</ul>
 <p><br></p>
               <hr>
               
