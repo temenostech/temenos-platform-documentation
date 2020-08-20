@@ -29,11 +29,7 @@ Each test suite is assumed to be a suite of tests that can be executed.  Name of
 
 ![](./images/components-test-structure.png)
 
-
-
 ## One or more Executable .jar files 
-
-
 ![](./images/executable-jar-file.png)
 
 - The jar files contain the binaries of  Selenium+Junit test cases or Selenium only test cases to be executed.
@@ -42,12 +38,13 @@ Each test suite is assumed to be a suite of tests that can be executed.  Name of
 
 - If the test framework is Selenium only framework, it should generate the consolidated results in a file called ‘consolidated-results.xml’ under the folder specified in global.properties (sys.test.results.folder).
 
-> Note:
-
+>[Note:]
+>
 >- The Selenium Template will consolidate all the junit results from this folder and produce consolidated results in case of Junit based test framework. 
-
+>
 >- The Temenos Continuous Deployment Platform will move these consolidated results to a centralized storage account and provide a download facility from the dashboard.
-
+>
+>
 
 ### Lib Folder
 
