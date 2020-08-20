@@ -28,6 +28,8 @@ The test script component that can be used by the Selenium Template must be a .z
 Each test suite is assumed to be a suite of tests that can be executed.  Name of the test suite can by of any name.  Each test suite should contain the following files/folders:
 
 ![](./images/components-test-structure.png)
+<br>
+</br>
 
 ## One or more Executable .jar files 
 ![](./images/executable-jar-file.png)
@@ -43,8 +45,9 @@ Each test suite is assumed to be a suite of tests that can be executed.  Name of
 >- The Selenium Template will consolidate all the junit results from this folder and produce consolidated results in case of Junit based test framework. 
 >
 >- The Temenos Continuous Deployment Platform will move these consolidated results to a centralized storage account and provide a download facility from the dashboard.
->
->
+
+<br>
+</br>
 
 ### Lib Folder
 
@@ -53,13 +56,10 @@ The lib folder contains the libraries used by the Selenium framework. We expect 
 ![](./images/selenium-lib-folder.png)
 
 All the libraries (.jar) referenced or required by the testcase jars must be included in the Lib folder.
-
-
-
 <br>
 </br>
 
-### global.properties file
+## global.properties file
 
 The properties file holds the configurable parameters used by the Selenium framework. Some of the parameters have static values. Thus, the Temenos Continuous Deployment Platform expects them to be present in the properties file.
 
@@ -116,6 +116,8 @@ For instance, sys.t24.IP=http://127.0.0.1:9080/BrowserWeb value is replaced dyna
 
  - If any of the line in the text file is not a valid java command, results in the termination of Factory Run.
 
+<br>
+</br>
 
 # Test Results Consolidation #
 
@@ -256,6 +258,9 @@ The Temenos Continuous Deployment Platform will use this information to populate
 The Temenos Continuous Deployment Platform will move these consolidated results to a centralized storage account and provide a download facility from the dashboard for each test suite.
 
 ![](./images/selenium-consolidated-test-restuls.png)
+
+<br>
+</br>
 
 # Attachments 
 
