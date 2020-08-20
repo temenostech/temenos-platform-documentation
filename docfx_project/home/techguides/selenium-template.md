@@ -49,7 +49,7 @@ Each test suite is assumed to be a suite of tests that can be executed.  Name of
 <br>
 </br>
 
-### Lib Folder
+## Lib Folder
 
 The lib folder contains the libraries used by the Selenium framework. We expect all the library files to be present in the same folder and the relative path should be handled in the test framework.
 
