@@ -5,7 +5,7 @@ This page provides information about the Selenium Template, the pre-requisites n
 ## Implementation 
 The Selenium Template will provision the following:
 
-- Windows 2017 VM with the below software/packages pre-installed:
+- Windows Server 2016 Datacenter Edition with the below software/packages pre-installed:
 
     - Open JAVA / JDK  1.8
 
