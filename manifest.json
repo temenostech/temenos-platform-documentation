@@ -1024,15 +1024,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/components-products.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/components-products.html",
-          "hash": "rqLRmiO0wyNYKwf1eWrIXQ=="
+          "hash": "Qfo03sAintyb1bZlLRLmDw=="
         }
       },
       "is_incremental": false,
@@ -2021,6 +2018,28 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/components-see-details.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/components-test-script.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/components-test-script.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/components-test-structure.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/components-test-structure.png"
         }
       },
       "is_incremental": false,
@@ -3110,6 +3129,17 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/environment-see-details.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/executable-jar-file.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/executable-jar-file.png"
         }
       },
       "is_incremental": false,
@@ -5361,10 +5391,54 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/selenium-commands-to-execute.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/selenium-commands-to-execute.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/selenium-consolidated-test-results.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/selenium-consolidated-test-results.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/selenium-drivers.png",
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/selenium-drivers.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/selenium-global-properties.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/selenium-global-properties.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/selenium-lib-folder.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/selenium-lib-folder.png"
         }
       },
       "is_incremental": false,
@@ -6501,7 +6575,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/selenium-template.html",
-          "hash": "lYE6lGOHufIoWvWveZsGCA=="
+          "hash": "79gfqAPKvnMVDU6i8Ivffw=="
         }
       },
       "is_incremental": false,
@@ -6961,18 +7035,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "RestApiDocumentProcessor": {
@@ -6981,6 +7051,10 @@
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         }

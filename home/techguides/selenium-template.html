@@ -103,11 +103,11 @@
 <p>The Google Chrome Driver and the Gecko Driver are downloaded to the F:/TCD/WebDriver folder in the provisioned VM.</p>
 <h1 id="test-script-structure">Test Script Structure</h1>
 <p>The test script component that can be used by the Selenium Template must be a .zip file within a .zip. The parent .zip file can contain multiple zips of tets (see screenshot below):</p>
-<p><img src="./images/components-test-script.png" alt=""></p>
+<p><img src="images/components-test-script.png" alt=""></p>
 <p>Each test suite is assumed to be a suite of tests that can be executed.  Name of the test suite can by of any name.  Each test suite should contain the following files/folders:</p>
-<p><img src="./images/components-test-structure.png" alt=""></p>
+<p><img src="images/components-test-structure.png" alt=""></p>
 <h2 id="one-or-more-executable-jar-files">One or more Executable .jar files</h2>
-<p><img src="./images/executable-jar-file.png" alt=""></p>
+<p><img src="images/executable-jar-file.png" alt=""></p>
 <ul>
 <li><p>The jar files contain the binaries of  Selenium+Junit test cases or Selenium only test cases to be executed.</p>
 </li>
@@ -116,7 +116,7 @@
 <li><p>If the test framework is Selenium only framework, it should generate the consolidated results in a file called ‘consolidated-results.xml’ under the folder specified in global.properties (sys.test.results.folder).</p>
 </li>
 </ul>
-<blockquote><p>Note:</p>
+<blockquote><p>[Note:]</p>
 <ul>
 <li><p>The Selenium Template will consolidate all the junit results from this folder and produce consolidated results in case of Junit based test framework. </p>
 </li>
@@ -126,14 +126,14 @@
 </blockquote>
 <h3 id="lib-folder">Lib Folder</h3>
 <p>The lib folder contains the libraries used by the Selenium framework. We expect all the library files to be present in the same folder and the relative path should be handled in the test framework.</p>
-<p><img src="./images/selenium-lib-folder.png" alt=""></p>
+<p><img src="images/selenium-lib-folder.png" alt=""></p>
 <p>All the libraries (.jar) referenced or required by the testcase jars must be included in the Lib folder.</p>
 <p><br>
 </br></p>
 <h3 id="globalproperties-file">global.properties file</h3>
 <p>The properties file holds the configurable parameters used by the Selenium framework. Some of the parameters have static values. Thus, the Temenos Continuous Deployment Platform expects them to be present in the properties file.</p>
 <p>For instance, sys.t24.IP=<a href="http://127.0.0.1:9080/BrowserWeb">http://127.0.0.1:9080/BrowserWeb</a> value is replaced dynamically at the run time. The same applies to all parameters highlighted in the RedBox below.</p>
-<p><img src="./images/selenium-global-properties.png" alt=""></p>
+<p><img src="images/selenium-global-properties.png" alt=""></p>
 <ul>
 <li><p>The name of the properties file must be global.properties and it must have the following mandatory properties:</p>
 <ul>
@@ -167,7 +167,7 @@
 <p><br>
 </br></p>
 <h2 id="commandstoexecutetxt">CommandsToExecute.txt</h2>
-<p><img src="./images/selenium-commands-to-execute.png" alt=""></p>
+<p><img src="images/selenium-commands-to-execute.png" alt=""></p>
 <ul>
 <li><p>A text file that contains the list of all the java commands to run/execute the test cases in separate lines</p>
 <ul>
