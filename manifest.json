@@ -1024,12 +1024,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/components-products.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/components-products.html",
-          "hash": "Qfo03sAintyb1bZlLRLmDw=="
+          "hash": "rqLRmiO0wyNYKwf1eWrIXQ=="
         }
       },
       "is_incremental": false,
@@ -2018,17 +2021,6 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/components-see-details.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/components-test-script.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/components-test-script.png"
         }
       },
       "is_incremental": false,
@@ -6501,12 +6493,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/selenium-template.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/selenium-template.html",
-          "hash": "w7SWVxqJr4gb6Vw3ORXh8A=="
+          "hash": "OU6pNeQUY4h+QbLK3sYSQw=="
         }
       },
       "is_incremental": false,
@@ -6759,10 +6754,43 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/zip/TestCase.zip",
+      "output": {
+        "resource": {
+          "relative_path": "home/zip/TestCase.zip"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/zip/TestCases.zip",
       "output": {
         "resource": {
           "relative_path": "home/zip/TestCases.zip"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/zip/consolidated-results.xml",
+      "output": {
+        "resource": {
+          "relative_path": "home/zip/consolidated-results.xml"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/zip/run_results.html",
+      "output": {
+        "resource": {
+          "relative_path": "home/zip/run_results.html"
         }
       },
       "is_incremental": false,
@@ -6781,10 +6809,54 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/zip/sample-test.zip",
+      "output": {
+        "resource": {
+          "relative_path": "home/zip/sample-test.zip"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/zip/selenium-automation.zip",
       "output": {
         "resource": {
           "relative_path": "home/zip/selenium-automation.zip"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/zip/test-framework.zip",
+      "output": {
+        "resource": {
+          "relative_path": "home/zip/test-framework.zip"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/zip/testresults1.zip",
+      "output": {
+        "resource": {
+          "relative_path": "home/zip/testresults1.zip"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/zip/testresults2.zip",
+      "output": {
+        "resource": {
+          "relative_path": "home/zip/testresults2.zip"
         }
       },
       "is_incremental": false,

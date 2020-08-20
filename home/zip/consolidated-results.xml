@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- configured only by authorised user-->
+<Manifest>
+    <Report>
+        <ScenarioName>A_testBrowerLogin</ScenarioName>
+        <TestCaseName>com.temenos.t24.selenium.TestAuthorizeCustomerInT24Browser</TestCaseName>
+        <ExpectedResult></ExpectedResult>
+        <ReportStatus>FAIL</ReportStatus>
+        <ReportLog>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#signOnName"}
+  (Session info: headless chrome=84.0.4147.125)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 's1ew86v2he94t1', ip: '10.2.114.52', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212-3-redhat'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.125, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\mpadmin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49836}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: aa340cb7a3e24d5a36c4da2c643eecaa
+*** Element info: {Using=id, value=signOnName}
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.temenos.t24.selenium.util.DriverWrapper.setText(DriverWrapper.java:50)
+	at com.temenos.t24.selenium.util.DriverWrapper.setUsername(DriverWrapper.java:67)
+	at com.temenos.t24.selenium.TestAuthorizeCustomerInT24Browser.A_testBrowerLogin(TestAuthorizeCustomerInT24Browser.java:20)
+	at com.temenos.testautomation.testrunner.SeleniumJUnitTestRunner.execute(SeleniumJUnitTestRunner.java:111)
+	at com.temenos.testautomation.testrunner.SeleniumJUnitTestRunner.run(SeleniumJUnitTestRunner.java:61)
+	at com.temenos.t24.selenium.TestRunner.main(TestRunner.java:8)
+</ReportLog>
+    </Report>
+    <Report>
+        <ScenarioName>B_testAddCustomer</ScenarioName>
+        <TestCaseName>com.temenos.t24.selenium.TestAuthorizeCustomerInT24Browser</TestCaseName>
+        <ExpectedResult></ExpectedResult>
+        <ReportStatus>PASS</ReportStatus>
+    </Report>
+    <Report>
+        <ScenarioName>C_testAuthorizeCustomer</ScenarioName>
+        <TestCaseName>com.temenos.t24.selenium.TestAuthorizeCustomerInT24Browser</TestCaseName>
+        <ExpectedResult></ExpectedResult>
+        <ReportStatus>FAIL</ReportStatus>
+        <ReportLog>junit.framework.AssertionFailedError: No message after authorize deal commit
+	at com.temenos.t24.selenium.TestAuthorizeCustomerInT24Browser.C_testAuthorizeCustomer(TestAuthorizeCustomerInT24Browser.java:90)
+	at com.temenos.testautomation.testrunner.SeleniumJUnitTestRunner.execute(SeleniumJUnitTestRunner.java:111)
+	at com.temenos.testautomation.testrunner.SeleniumJUnitTestRunner.run(SeleniumJUnitTestRunner.java:61)
+	at com.temenos.t24.selenium.TestRunner.main(TestRunner.java:8)
+</ReportLog>
+    </Report>
+    <passedTests>1</passedTests>
+    <failedTests>2</failedTests>
+    <totalTests>3</totalTests>
+    <Name>SELENIUM Automation Testing Framework</Name>
+    <toolVersion>1.2</toolVersion>
+    <startDate>2020.08.11 11:47:02</startDate>
+    <duration>149.681</duration>
+    <result>FAIL</result>
+    <hostName>s1ew86v2he94t1 </hostName>
+</Manifest>
