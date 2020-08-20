@@ -105,7 +105,9 @@
 <p>The test script component that can be used by the Selenium Template must be a .zip file within a .zip. The parent .zip file can contain multiple zips of tets (see screenshot below):</p>
 <p><img src="images/components-test-script.png" alt=""></p>
 <p>Each test suite is assumed to be a suite of tests that can be executed.  Name of the test suite can by of any name.  Each test suite should contain the following files/folders:</p>
-<p><img src="images/components-test-structure.png" alt=""></p>
+<p><img src="images/components-test-structure.png" alt="">
+<br>
+</br></p>
 <h2 id="one-or-more-executable-jar-files">One or more Executable .jar files</h2>
 <p><img src="images/executable-jar-file.png" alt=""></p>
 <ul>
@@ -124,13 +126,15 @@
 </li>
 </ul>
 </blockquote>
+<p><br>
+</br></p>
 <h3 id="lib-folder">Lib Folder</h3>
 <p>The lib folder contains the libraries used by the Selenium framework. We expect all the library files to be present in the same folder and the relative path should be handled in the test framework.</p>
 <p><img src="images/selenium-lib-folder.png" alt=""></p>
-<p>All the libraries (.jar) referenced or required by the testcase jars must be included in the Lib folder.</p>
-<p><br>
+<p>All the libraries (.jar) referenced or required by the testcase jars must be included in the Lib folder.
+<br>
 </br></p>
-<h3 id="globalproperties-file">global.properties file</h3>
+<h2 id="globalproperties-file">global.properties file</h2>
 <p>The properties file holds the configurable parameters used by the Selenium framework. Some of the parameters have static values. Thus, the Temenos Continuous Deployment Platform expects them to be present in the properties file.</p>
 <p>For instance, sys.t24.IP=<a href="http://127.0.0.1:9080/BrowserWeb">http://127.0.0.1:9080/BrowserWeb</a> value is replaced dynamically at the run time. The same applies to all parameters highlighted in the RedBox below.</p>
 <p><img src="images/selenium-global-properties.png" alt=""></p>
@@ -182,6 +186,8 @@
 </ul>
 </li>
 </ul>
+<p><br>
+</br></p>
 <h1 id="test-results-consolidation">Test Results Consolidation</h1>
 <h2 id="1-selenium--junit-test-framework">1. Selenium + Junit Test Framework</h2>
 <p>The test framework should write all the test results to the “junit” folder under the  default test results folder specified in the global.properties (sys.test.results.folder).  The Selenium Template looks for the junit test results in specified folder for consolidation. </p>
@@ -327,6 +333,8 @@
 <p><img src="./images/selenium-dashboard-example.png" alt=""></p>
 <p>The Temenos Continuous Deployment Platform will move these consolidated results to a centralized storage account and provide a download facility from the dashboard for each test suite.</p>
 <p><img src="./images/selenium-consolidated-test-restuls.png" alt=""></p>
+<p><br>
+</br></p>
 <h1 id="attachments">Attachments</h1>
 <ul>
 <li><p>Click  <strong><a href="../zip/test-framework.zip">HERE</a></strong>  to download the sources of the sample selenium-junit test framework, which is based on selenium and Junit and produces the test results in an xml format specified by junit.  This is a java project which can be imported into an IDE for further enhancements.</p>
