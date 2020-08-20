@@ -257,7 +257,7 @@ The Temenos Continuous Deployment Platform will use this information to populate
 
 The Temenos Continuous Deployment Platform will move these consolidated results to a centralized storage account and provide a download facility from the dashboard for each test suite.
 
-![](./images/selenium-consolidated-test-restuls.png)
+![](./images/selenium-consolidated-results.png)
 
 <br>
 </br>
