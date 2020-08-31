@@ -73,9 +73,9 @@ To have access to the T24/ VM Cloud Application live folders, you need to instal
 
 
 
-# 5. Connect to the environment using a Curl command #
-
-**See below an example:**
+# 4. Connect to the environment using a CURL command #
+You can also connect to a Temenos Continuous Deployment Environment using a curl command.
+See below an example:
 
     $ curl.exe --insecure -u demouser01:T3m3n0s2o2o#! -T "Desktop/Tasklists.txt" https://jpplatformsftp.dev.temenos.cloud/testupload/
 
