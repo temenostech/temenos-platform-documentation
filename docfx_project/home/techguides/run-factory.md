@@ -19,14 +19,32 @@ The process is initiated and it will get immediately to the stage where an envir
 
 ![](./images/run-factory-deploy.png)
 
-> [!Note]
->  In the event of a mistake, the user can abort a factory run by clicking the 'Abort' button on the top right side of the page. This action prevents you from deploying, testing or promoting the components. The user can edit the factory and then click 'Run now' again to see the results.
-> ![](./images/run-factory-abort-factory.png)     
-> 
+During the factory run you are able to:
+
+1. See the duration of total time between different stages and the status of the current stage
+
+2. Click on the **Actions** button to:
+
+     2.1 **View Environment** -  check the creation of the environment. The name of the environment will be "Env _ for _ Factory _ xxx", where xxx is the name of your factory (in our case Env _ for _ Factory _ Demo _ Factory)
+
+      ![](./images/run-factory-environment-create.png) 
+ 
+     2.2 View Event History - see the logs of the factory run
+
+      ![](./images/run-factory-environment-event-history.png) 
+
+     2.3. **Abort** a factory run by clicking the 'Abort' button on the top right side of the page (i.e. in case of a mistake). This action prevents you from deploying, testing or promoting the components. By clicking on **Abort** a confirmation pops-up which asks you to confirm the action. You can edit the factory and then click 'Run now' again to see the results.
+
+     ![](./images/run-factory-abort-factory.png)     
+
+3. Refresh the timeline by clicking on the **Refresh** icon
+
+![](./images/run-factory-deploy2.png)
+ 
 
 Clicking on the Environments tab on the left menu, you can check the creation of the environment. The name of the environment will be "Env for Factory xxx", where xxx is the name of your factory.
 
-![](./images/run-factory-environment-create.png) 
+
 
 > [!Note]
 > 1. The environment creation stage may take between 20 minutes and a few hours depending on the template used. 
