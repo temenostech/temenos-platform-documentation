@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>How to Create and Publish a New Template after a Successful Factory Run </title>
+    <title>How to access the SFTP using HTTPs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="How to Create and Publish a New Template after a Successful Factory Run ">
+    <meta name="title" content="How to access the SFTP using HTTPs ">
     <meta name="generator" content="docfx 2.22.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -20,7 +20,7 @@
     <meta property="docfx:rel" content="../../">
     
   </head>
-  <body data-spy="scroll" data-target="#affix" class="How to Create and Publish a New Template after a Successful Factory Run ">
+  <body data-spy="scroll" data-target="#affix" class="How to access the SFTP using HTTPs ">
     <div id="wrapper">
       <header>
         
@@ -79,51 +79,82 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="how-to-create-and-publish-a-new-template-after-a-successful-factory-run">How to Create and Publish a New Template after a Successful Factory Run</h1>
+<h1 id="how-to-access-the-sftp-using-https">How to access the SFTP using HTTPs</h1>
 
-<p>This feature offers the possibility to baseline a particular version of a product and create a template from that version. Further anybody will be able to create an environment with the baselined version of the product.</p>
-<p>To set up the factory, follow the steps from <a href="http://documentation.temenos.cloud/home/techguides/factories.html" title="here">here</a>.</p>
-<p>To run the factory, follow the steps from <a href="http://documentation.temenos.cloud/home/techguides/run-factory.html" title="here">here</a>.</p>
-<h1 id="create-and-publish-the-new-template-after-the-successful-factory-run">Create and Publish the New Template after the Successful Factory Run</h1>
-<p>There are two alternatives to Create and Publish the new Template after the Successful Run:</p>
-<ol>
-<li>Automated trigger <ul>
-<li>save the New Template from the Factory Run </li>
-<li>go to Dashboard</li>
-<li>on the Factory Run click on &#39;Actions&#39; and select from the drop-down &#39;Create New Template</li>
-</ul>
-</li>
-</ol>
-<p><img src="images/run-factory-completed.png" alt=""></p>
-<ol>
-<li>Manual trigger <ul>
-<li>click on the newly created environment</li>
-<li>on the right side of the page click on &#39;Save as a new template&#39;</li>
-<li>type in the Template Name and a brief description </li>
-</ul>
-</li>
-</ol>
-<p><img src="images/save-new-template.png" alt=""></p>
-<p>To see the new template, go to the Templates Catalogue tab. Your template is now available in your templates list.</p>
-<p><img src="images/new-template.png" alt=""></p>
-<h1 id="user-permissions-required">User Permissions Required</h1>
-<p>To be able to perform the above operations the below permissions need to be enabled for your user:</p>
+<p>This guide shows describes how to easily access the T24 UD directories of your environment and make updates, using symbolic links on the Web server to the T24 VM machines.</p>
+<p>Pre-requisites:</p>
 <ul>
-<li>MANAGE _ COMPONENTS</li>
-<li>MANAGE _ STREAMS</li>
-<li>MANAGE _ STAGES</li>
-<li>MANAGE _ PRODUCTS</li>
-<li>CREATE _ FACTORY</li>
-<li>UPDATE _ FACTORY</li>
-<li>DELETE _ FACTORY</li>
-<li>SCHEDULE _ FACTORY</li>
-<li>START  -      FACTORY      -  RUN</li>
-<li>ABORT  -  FACTORY  -  RUN</li>
-<li>VIEW  -  FACTORY  -  RUN  _  HISTORY</li>
-<li>ALLOW  -  CUSTOM  -  TEMPLATES</li>
+<li><p>access to the Temenos Continuous Deployment Platform </p>
+</li>
+<li><p>WEB client (i.e. <a href="https://winscp.net/eng/index.php">WinSCP</a> or a Browser)</p>
+</li>
 </ul>
-<p>To have a better understanding of the user permissions, hover the cursor over the variables and a short description will pop up or click <a href="http://documentation.temenos.cloud/home/techguides/user-permissions">here</a> to read more.</p>
 <p><br></p>
+<p>Follow the steps below to access the UD directories:</p>
+<h1 id="1-change-user-password">1. Change user password</h1>
+<p>In order to access the SFTP using HTTPs you need to reset your password (learn how to change it <a href="http://documentation.temenos.cloud/home/user-creation-in-paas.html">here</a>)</p>
+<h1 id="2-access-sftp">2. Access SFTP</h1>
+<p>After the password is updated the SFTP server can be accessed via a browser:</p>
+<ol>
+<li><p>Open a new page and type in the following URL <strong>https://{sftp_url}/{orgId}</strong> where: </p>
+<p> 1.1. <strong>sftp_url</strong> is retrieved from the environment endpoints</p>
+<p> 1.2. the organisation ID that is found on the platform URL 
+<br></p>
+</li>
+<li><p>Type in the Temenos Continuous Deployment user credentials 
+  <img src="images/sftp-url.png" alt=""> </p>
+</li>
+<li><p>Identify your <strong>environment ID</strong> and click on it to access the environment&#39;s folders</p>
+<p><img src="images/sftp-url-envs.png" alt=""> </p>
+</li>
+<li><p>Now you are able to access the environment</p>
+<p><img src="images/sftp-url-envs-folder.png" alt=""> </p>
+</li>
+</ol>
+<h1 id="3-connect-to-an-environment-via-web-client">3. Connect to an environment via WEB client</h1>
+<p>To have access to the T24/ VM Cloud Application live folders, you need to install a Web client (i.e. <a href="https://winscp.net/eng/index.php">https://winscp.net/eng/index.php</a>). Open WinSCP application and fill the mandatory fields:</p>
+<ul>
+<li><p>File Protocol - **WebDAV **</p>
+</li>
+<li><p>Encryption - <strong>TLS/SSL</strong></p>
+</li>
+<li><p>Host name - copy it from your environment endpoint</p>
+</li>
+<li><p>Port Number - <strong>443</strong></p>
+</li>
+<li><p>User name &amp; Password – contact your Org Admin to get these details</p>
+</li>
+<li><p>Click on Advanced </p>
+<p> <img src="images/winscp-login.png" alt=""> </p>
+</li>
+<li><p>Paste your ORG ID into the Remote directory box and add a slash in front of it (ie: /1d5ap6fv5j4sg)</p>
+<p><img src="images/winscp-remote-directory.png" alt=""> </p>
+</li>
+<li><p>Click OK </p>
+</li>
+<li><p>Save your site settings using the Save button</p>
+</li>
+<li><p>Login using the Login button</p>
+<p>  <img src="images/winscp-env-login.png" alt=""> </p>
+</li>
+<li><p>After successful login user can see the folders and files of organisation (right window below)</p>
+<p>  <img src="images/winscp-env-loggedin.png" alt=""> </p>
+</li>
+</ul>
+<h1 id="5-connect-to-the-environment-using-a-curl-command">5. Connect to the environment using a Curl command</h1>
+<p><strong>See below an example:</strong></p>
+<pre><code>$ curl.exe --insecure -u demouser01:T3m3n0s2o2o#! -T &quot;Desktop/Tasklists.txt&quot; https://jpplatformsftp.dev.temenos.cloud/testupload/
+</code></pre><p><strong>Output</strong></p>
+<pre><code>% Total % Received % Xferd Average Speed Time Time Time Current
+Dload Upload Total Spent Left Speed
+100 424k 100 197 100 424k 47 101k 0:00:04 0:00:04 --:--:-- 101k&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;201 Created&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Created&lt;/h1&gt;
+&lt;p&gt;Resource /testupload/Tasklists.txt has been created.&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;
+</code></pre><p><br></p>
               <hr>
               
               <div id="disqus_thread"></div>
