@@ -3,6 +3,17 @@
 
 This page provides information about the monthly Temenos Continuous Deployment Platform features and improvements in each release.
 
+# **202008**
+**InfraBuild**: TBA  &nbsp;**|**&nbsp; **PortalTag**: TBA
+&nbsp;**|**&nbsp; **ControllerBuild**: TBA  &nbsp;**|**&nbsp;  **ReleaseNumber**: TBA |&nbsp; **WorkflowServiceTag**: TBA
+
+## Technical enhancements
+&nbsp;&nbsp;&nbsp;&nbsp;**1. Technical Enhancements**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Access to SFTP server is now available through HTTPs (read more [here](http://documentation.temenos.cloud/home/techguides/https-in-front-of-sftp.html?q=https))
+
+
+
 # **202007**
 **InfraBuild**: 28  &nbsp;**|**&nbsp; **PortalTag**: 202007.RC9
 &nbsp;**|**&nbsp; **ControllerBuild**: 209 &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202007 |&nbsp; **WorkflowServiceTag**: 202007.RC8 
