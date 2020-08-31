@@ -1075,12 +1075,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/environment-basic-operations.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/environment-basic-operations.html",
-          "hash": "P8HFPyZCrqpm/K5l8Sq29w=="
+          "hash": "hINvVAn6Rv4axQ7XLlY0IQ=="
         }
       },
       "is_incremental": false,
@@ -1248,17 +1251,6 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/access-ud-standalone.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/techguides/images/actions-button.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/actions-button.png"
         }
       },
       "is_incremental": false,
@@ -3129,6 +3121,28 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/environment-see-details.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/environment-upgrade-button.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/environment-upgrade-button.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/environment-upgrading.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/environment-upgrading.png"
         }
       },
       "is_incremental": false,
@@ -5127,17 +5141,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/run-factory-abort-factory.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/run-factory-abort-factory.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/run-factory-create-test.png",
       "output": {
         "resource": {
@@ -5160,10 +5163,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/run-factory-deploy.png",
+      "source_relative_path": "home/techguides/images/run-factory-deploy2.png",
       "output": {
         "resource": {
-          "relative_path": "home/techguides/images/run-factory-deploy.png"
+          "relative_path": "home/techguides/images/run-factory-deploy2.png"
         }
       },
       "is_incremental": false,
@@ -5171,10 +5174,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/run-factory-environment-create.png",
+      "source_relative_path": "home/techguides/images/run-factory-environment-event-history.png",
       "output": {
         "resource": {
-          "relative_path": "home/techguides/images/run-factory-environment-create.png"
+          "relative_path": "home/techguides/images/run-factory-environment-event-history.png"
         }
       },
       "is_incremental": false,
@@ -6315,6 +6318,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/user-change password2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/user-change password2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/user-change-password.png",
       "output": {
         "resource": {
@@ -6582,7 +6596,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/run-factory.html",
-          "hash": "08s/Es5l54yteDOzx8jugA=="
+          "hash": "Hgy7rKfTccPnJbGa//U4uQ=="
         }
       },
       "is_incremental": false,
@@ -7054,18 +7068,9 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "RestApiDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
@@ -7075,6 +7080,15 @@
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "RestApiDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
           "incrementalPhase": "build"
         }
       }

@@ -88,12 +88,24 @@
 <p>Click <strong>Run Now</strong>.</p>
 <p><img src="images/run-factory-dashboard.png" alt=""> </p>
 <p>The process is initiated and it will get immediately to the stage where an environment based on your chosen template is created. </p>
-<p><img src="images/run-factory-deploy.png" alt=""></p>
-<div class="NOTE"><h5>Note</h5><p> In the event of a mistake, the user can abort a factory run by clicking the &#39;Abort&#39; button on the top right side of the page. This action prevents you from deploying, testing or promoting the components. The user can edit the factory and then click &#39;Run now&#39; again to see the results.
-<img src="images/run-factory-abort-factory.png" alt="">     </p>
-</div>
+<p><img src="./images/run-factory-deploy.png" alt=""></p>
+<p>During the factory run you are able to:</p>
+<ol>
+<li><p>See the duration of total time between different stages and the status of the current stage</p>
+</li>
+<li><p>Click on the <strong>Actions</strong> button to:</p>
+<p>  2.1 <strong>View Environment</strong> -  check the creation of the environment. The name of the environment will be &quot;Env <em> for </em> Factory <em> xxx&quot;, where xxx is the name of your factory (in our case Env </em> for <em> Factory </em> Demo _ Factory)</p>
+<p>   <img src="./images/run-factory-environment-create.png" alt=""> </p>
+<p>  2.2 View Event History - see the logs of the factory run</p>
+<p>   <img src="images/run-factory-environment-event-history.png" alt=""> </p>
+<p>  2.3. <strong>Abort</strong> a factory run by clicking the &#39;Abort&#39; button on the top right side of the page (i.e. in case of a mistake). This action prevents you from deploying, testing or promoting the components. By clicking on <strong>Abort</strong> a confirmation pops-up which asks you to confirm the action. You can edit the factory and then click &#39;Run now&#39; again to see the results.</p>
+<p>  <img src="./images/run-factory-abort-factory.png" alt="">     </p>
+</li>
+<li><p>Refresh the timeline by clicking on the <strong>Refresh</strong> icon</p>
+</li>
+</ol>
+<p><img src="images/run-factory-deploy2.png" alt=""></p>
 <p>Clicking on the Environments tab on the left menu, you can check the creation of the environment. The name of the environment will be &quot;Env for Factory xxx&quot;, where xxx is the name of your factory.</p>
-<p><img src="images/run-factory-environment-create.png" alt=""> </p>
 <div class="NOTE"><h5>Note</h5><ol>
 <li><p>The environment creation stage may take between 20 minutes and a few hours depending on the template used. </p>
 <p>A factory can be enabled or disabled at any time. If a factory is disabled, factory runs (both scheduled and user triggered) will not be triggered. </p>
