@@ -36,9 +36,17 @@ This will create a new user in your organisation. This new user will be automati
 >**Important!**: It is the Organisation Admin's 
 >responsibility to inform the new user about its credentials and set of permissions granted on the portal.
 
-On their first login, all new users will be forced to reset the password that was initially created by the Organisation Admin.
+<br>
 
-![user-change-password](./images/user-change-password.png)
+# Recover Password
+
+If you have forgotten or lost your password, you can recover it by contacting the below:
+
+- If your Org is on a PROD platform contact CloudPlatformSupport@temenos.com 
+
+-  If your Org is on a EU or TSS platform contact Global Cloud Platform Support (gcp@temenos.com) 
+
+<br>
 
 # User Roles Management #
 
@@ -91,8 +99,6 @@ You can use any other SSH key generator client.
 
 
 ## How to create the SSH keys (pair public and private keys) ##
-
-
 
 •	Open PuTTYgen and click Generate button:
 
