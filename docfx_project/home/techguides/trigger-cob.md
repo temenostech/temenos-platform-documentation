@@ -26,4 +26,4 @@ Below you will see what happens behind the scenes when a COB is triggered using 
 
 - Once COB is started, the monitoring job monitors the COB to see if it gets completed. The routine AR.CobcheckProcess. The following statuses are reported in the Events log in case of problem. CRASHED, STOPPED or COMPLETED. If more than one TSA.SERVICE is triggered, the COB step will be completed only if all the services are completed successfully. 
 
-Click **<a href="./../zip/RegressionLog-TODAYsDATE.zip">HERE</a>** the RegressionLog  and TODAYsDATE.txt samples. 
+Click **<a href="./../zip/RegressionLog-TODAYsDATE.zip">HERE</a>** to download the RegressionLog  and TODAYsDATE.txt samples. 
