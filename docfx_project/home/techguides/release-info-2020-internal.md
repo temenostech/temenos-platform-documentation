@@ -4,8 +4,8 @@
 This page provides information about the monthly Temenos Continuous Deployment Platform features and improvements in each release.
 
 # **202008**
-**InfraBuild**: TBA  &nbsp;**|**&nbsp; **PortalTag**: TBA
-&nbsp;**|**&nbsp; **ControllerBuild**: TBA  &nbsp;**|**&nbsp;  **ReleaseNumber**: TBA |&nbsp; **WorkflowServiceTag**: TBA
+**InfraBuild**: 33  &nbsp;**|**&nbsp; **PortalTag**: 202008.RC9
+&nbsp;**|**&nbsp; **ControllerBuild**: 233  &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202008 |&nbsp; **WorkflowServiceTag**: 202008.RC7
 
 ## Technical enhancements
 &nbsp;&nbsp;&nbsp;&nbsp;**1. Technical Enhancements**
