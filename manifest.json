@@ -661,6 +661,39 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/images/user-change password2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/user-change password2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/user-change password3.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/user-change password3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/user-change password4.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/user-change password4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/images/user-change-password.png",
       "output": {
         "resource": {
@@ -6940,12 +6973,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/user-creation-in-paas.md",
       "output": {
         ".html": {
           "relative_path": "home/user-creation-in-paas.html",
-          "hash": "AqFUfrDO8nH3sfpq4zp3jw=="
+          "hash": "hA87bsFnHwB0B/pBjkHuRA=="
         }
       },
       "is_incremental": false,
