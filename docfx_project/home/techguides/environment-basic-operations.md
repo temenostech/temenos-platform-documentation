@@ -60,31 +60,6 @@ The user can also **clone**, **edit**, **delete**, **start**, **stop**, **rebuil
 
  - **Clone environment** - creates an identical environment by copying the Environment and configuration repository
 
- - **Upgrade** - the feature is only available for the **Extend** environments. By clicking on **Upgrade** the user can upgrade to the target template version ). 
- 
-       - Upon clicking on the button a pop-up appears which prompts to select another template from the list of available template:
-                      ![](./images/environment-upgrade-button.png) 
-
-       - Click on **Upgrade** to proceed.
-       
-       - The environment status changes to **Upgrading**:
-       
-           ![](./images/environment-upgrading.png) 
-
-
-     > [!Note]
-> The **Upgrade** button is enabled at the organisation level. Only organisations having this org role will be able to use this upgrade feature.  
-> Only users with the oermission UPGRADE_TEMPLATE will have the **Upgrade** button enabled on their environment.
-
-<br> 
-
- - **Delete environment** - removes all resources including VMs and configuration repository that are part of an Environment
-
-
-
-
-<br>
-
 
 ## T24 Release section - available actions ##
 
