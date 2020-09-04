@@ -117,18 +117,41 @@
 <p><img src="images/button-new-environment.png" alt="start"> </p>
 </li>
 <li><p>the <strong>Actions</strong> button from the right-side of the screen is expandable and allows the user to:</p>
+</li>
+</ul>
+<p> <img src="images/actions-button.png" alt=""> </p>
 <ul>
+<li><p><strong>Start</strong> an environment - after creating an environment, the Start button is automatically disabled as the environment is running. It will be enabled if an environment is stopped and it will start all the instances specified in the Environment configuration.</p>
+<pre><code>    - When the environment is stopped, start button is supposed to start the VMs where the database and the application server of a T24 environment are installed and also to start the application server (jboss, wildfly, WebSphere, etc.) so that T24 to be up and running. 
+    - However, please **note** that start button is not triggering also the deployment of whatever is present into the associated Git repository (such as something that was committed when the environment was stopped or a T24 update package ( L1 development) that was not yet successfully deployed to the T24 area).
+</code></pre></li>
+<li><p><strong>Stop</strong> an environment  - stops all running VMs that are part of the Environment.</p>
+</li>
+<li><p><strong>Rebuild</strong> an environment - it recreates the resources into the cloud and re-installs T24 and H2 db. This is used for example when modifying the application templates (i.e. changing the T24 displayed name or adding a new application).</p>
+</li>
 <li><p><strong>Edit the environment</strong>  - allows you to change the name and the description of an environment</p>
 </li>
-<li><p><strong>Clone</strong> the environment - creates an identical environment by copying the Environment and configuration repository</p>
+<li><p><strong>Clone environment</strong> - creates an identical environment by copying the Environment and configuration repository</p>
 </li>
-<li><p><strong>Delete environment</strong> - removes all resources including VMs and configuration repository that are part of an Environment</p>
-</li>
+<li><p><strong>Upgrade</strong> - the feature is only available for the <strong>Extend</strong> environments. By clicking on <strong>Upgrade</strong> the user can upgrade to the target template version ). </p>
+<pre><code>- Upon clicking on the button a pop-up appears which prompts to select another template from the list of available template:
+               ![](./images/environment-upgrade-button.png) 
+
+- Click on **Upgrade** to proceed.
+
+- The environment status changes to **Upgrading**:
+
+    ![](./images/environment-upgrading.png) 
+</code></pre></li>
 </ul>
-<p><img src="images/actions-button.png" alt=""> 
-<br></p>
-</li>
+<pre><code> &gt; [!Note]
+</code></pre><blockquote><p>The <strong>Upgrade</strong> button is enabled at the organisation level. Only organisations having this org role will be able to use this upgrade feature.<br>Only users with the oermission UPGRADE_TEMPLATE will have the <strong>Upgrade</strong> button enabled on their environment.</p>
+</blockquote>
+<p><br> </p>
+<ul>
+<li><strong>Delete environment</strong> - removes all resources including VMs and configuration repository that are part of an Environment</li>
 </ul>
+<p><br></p>
 <h2 id="t24-release-section---available-actions">T24 Release section - available actions</h2>
 <h3 id="span-stylecolororangefont-weight1000endpointsspan"><span style="color:orange;font-weight:1000;"><strong>Endpoints</strong>:</span></h3>
 <ul>
@@ -146,29 +169,6 @@
 <li>Design Studio Kit - you can start downloading Design Studio tool (DS version is compatible to your environment). </li>
 </ul>
 <h3 id="span-stylecolororangefont-weight1000buttonsspan"><span style="color:orange;font-weight:1000;"><strong>Buttons</strong></span></h3>
-<ul>
-<li><strong>Starting</strong> an environment:</li>
-<li><p>After creating an environment, the Start button is automatically disabled as the environment is running. It will be enabled if an environment is stopped and it will start all the instances specified in the Environment configuration.</p>
-</li>
-<li><p>When the environment is stopped, start button is supposed to start the VMs where the database and the application server of a T24 environment are installed and also to start the application server (jboss, wildfly, WebSphere, etc.) so that T24 to be up and running. </p>
-</li>
-<li><p>However, please <strong>note</strong> that start button is not triggering also the deployment of whatever is present into the associated Git repository (such as something that was committed when the environment was stopped or a T24 update package ( L1 development) that was not yet successfully deployed to the T24 area).</p>
-<p><img src="images/button-start.png" alt="start"> </p>
-</li>
-</ul>
-<p><br></p>
-<ul>
-<li><p><strong>Stopping</strong>  an environment - stops all running VMs that are part of the Environment.</p>
-<p><img src="images/button-stop.png" alt="stop"> </p>
-</li>
-</ul>
-<p><br></p>
-<ul>
-<li><p><strong>Rebuilding</strong> an environment - it recreates the resourses into the cloud and re-installs T24 and H2 db. This is used for example when modifying the application templates (eg. changing the T24 displayed name or adding a new application).</p>
-<p><img src="images/button-rebuild.png" alt="rebuild"> </p>
-</li>
-</ul>
-<p><br></p>
 <ul>
 <li><p><strong>Exporting</strong> an environment  allows to export and import an environment or a database through SFTP server</p>
 <p><img src="images/button-export.png" alt="export"> </p>

@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Components &#8211; Feature Description </title>
+    <title>Component Type </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Components &#8211; Feature Description ">
+    <meta name="title" content="Component Type ">
     <meta name="generator" content="docfx 2.22.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -20,7 +20,7 @@
     <meta property="docfx:rel" content="../../">
     
   </head>
-  <body data-spy="scroll" data-target="#affix" class="Components &#8211; Feature Description ">
+  <body data-spy="scroll" data-target="#affix" class="Component Type ">
     <div id="wrapper">
       <header>
         
@@ -79,9 +79,9 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="components--feature-description">Components – Feature Description</h1>
 
-<p>Components are individually deployable units that are understood by Temenos Continuous Deployment Platform based on the component type that each component refers to. </p>
+<pre><code>                                                             # Components – Feature Description #
+</code></pre><p>Components are individually deployable units that are understood by Temenos Continuous Deployment Platform based on the component type that each component refers to. </p>
 <p>Each component is associated to a component type to help Temenos Continuous Deployment Platform deploy the component. </p>
 <p>The <strong>Component Type</strong> field in the component data is the key to help the Temenos Continuous Deployment Platform Controllers deploy the right components in the right way. 
 An organization can define as many components as needed but should have all mandatory components defined in the templates that are assigned to the organization.</p>
@@ -100,7 +100,7 @@ An organization can define as many components as needed but should have all mand
 <p><br>
 </br></p>
 <h2 id="component-type">Component Type</h2>
-<p>The TCP uses a convention/ protocol to deploy all parts required to run a full-fledged instance of T24 (Or any other product supported by a template). Such parts to constitute a complete system are called <strong>components</strong>. </p>
+<p>The platform uses a convention/ protocol to deploy all parts required to run a full-fledged instance of T24 (Or any other product supported by a template). Such parts to constitute a complete system are called <strong>components</strong>. </p>
 <p>The T24 installation may have the following components (No exhaustive or inclusive):</p>
 <ul>
 <li>T24-Jars</li>
@@ -112,6 +112,7 @@ An organization can define as many components as needed but should have all mand
 <p>The names of these parts / Component Types are fixed and are not user editable. This is managed internally by the Temenos Continuous Deployment Platform admin/ development group and can only be changed or modified by this group. </p>
 <p>Each component type represents a deployable unit and has an ansible script associated to it. </p>
 <p>These components have a structure associated and work in a standardized manner across different deployment stacks (OS, App server variations, DB variations etc).</p>
+<p> The components are sorted from A to Z and you are able to search/filter the component by name. The list displays all the components available for your Organization. This is based on the available templates).</p>
 <blockquote><p><p style="font-size:18px"><span style="color:red"><strong>WARNING:</strong></span><span style="color:red">
 <span style="color:red"></span><span style="color:red">make sure to follow the naming convention as defined by the Temenos team. Any adjustments to the components&#39; title such as adding special characters or spaces will result in a failed factory run.<p>
 <p>Example: downloading the same file multiple times auto-numbers the file name from 1 onwards - t24-jars-63688104355895 <strong>(1)</strong>.zip and adds a space as well. Please use the .zip file that has the original title - <strong>t24-jars-63688104355895.zip</strong>. </p>
@@ -121,17 +122,16 @@ An organization can define as many components as needed but should have all mand
 <h1 id="how-to-set-up-delete-components">How to Set Up/ Delete Components</h1>
 <h2 id="set-up-create-a-component">Set-up/ Create a Component</h2>
 <ul>
-<li>Login to the Temenos Continuous Deployment Platform.<ol>
-<li>Click on <strong>Settings</strong> button on the left menu &gt; this will expand a menu containing buttons for: Streams, Stages, Products, Factory and General</li>
-</ol>
-</li>
+<li>Login to the Temenos Continuous Deployment Platform.</li>
 </ul>
 <ol>
+<li><p>Click on <strong>Settings</strong> button on the left menu &gt; this will expand a menu containing buttons for: Streams, Stages, Products, Factory and General</p>
+</li>
 <li><p>Select the <strong>Stream</strong> <em>(top-right)</em> where you want to add the respective component</p>
 </li>
 <li><p>Click on <strong>New Components</strong></p>
 </li>
-<li><p>Select the Component Type from the dropdown list (the list displays all the components available for your Organization. This is based on the available templates). Then fill in the <strong>Name</strong>, <strong>Description</strong>, and <strong>Display Name</strong></p>
+<li><p>Select the Component Type from the dropdown list and fill in the <strong>Component Name</strong>, <strong>Component Description</strong>, and <strong>Component Display Name</strong></p>
 </li>
 <li><p>Click <strong>Create</strong>.</p>
 </li>

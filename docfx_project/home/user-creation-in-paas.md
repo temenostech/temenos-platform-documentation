@@ -36,7 +36,27 @@ This will create a new user in your organisation. This new user will be automati
 >**Important!**: It is the Organisation Admin's 
 >responsibility to inform the new user about its credentials and set of permissions granted on the portal.
 
-<br>
+
+# Change Password
+To change the password you need to follow the next steps:
+
+1. Click on your user name (top-right)
+
+2.  Click on **Profile**
+
+ ![user-change-password2](./images/user-change-password2.png)
+
+3. Click on **Change Password**
+
+ ![user-change-password3](./images/user-change-password3.png)
+
+4. Fill in the **Current Password**, **New Password** and **Confirm Password** and click **Confirm**
+ 
+ ![user-change-password4](./images/user-change-password4.png)
+
+>Note: On their first login, all new users will be forced to reset the password that was initially created by the Organisation Admin.
+
+ ![user-change-password](./images/user-change-password.png)
 
 # Recover Password
 
@@ -99,6 +119,8 @@ You can use any other SSH key generator client.
 
 
 ## How to create the SSH keys (pair public and private keys) ##
+
+
 
 •	Open PuTTYgen and click Generate button:
 
