@@ -3,6 +3,29 @@
 
 This page provides information about the monthly Temenos Continuous Deployment Platform features and improvements in each release.
 
+
+# **202008**
+**InfraBuild**: 33  &nbsp;**|**&nbsp; **PortalTag**: 202008.RC9
+&nbsp;**|**&nbsp; **ControllerBuild**: 233  &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202008 |&nbsp; **WorkflowServiceTag**: 202008.RC7
+
+## Technical enhancements
+&nbsp;&nbsp;&nbsp;&nbsp;**1. HTTP server in front of SFTP Server**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Access to SFTP server is now available through HTTPs (read more here)
+
+&nbsp;&nbsp;&nbsp;&nbsp;**2. Promote to SIT**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- new Manifest Info  added in Environment details page (feature not available for environments resulted from automated factories)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- user are able to rollback to any environment database state and can backup the database (feature not available for environments resulted from automated factories)
+<br>
+</br> 
+
+&nbsp;&nbsp;&nbsp;&nbsp;**3. T24 Upgrade Automation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Extend users are now able to run T24 upgrades through the Temenos Continuous Deployment platform (click here to learn more)
+
+
 # **202007**
 **InfraBuild**: 28  &nbsp;**|**&nbsp; **PortalTag**: 202007.RC9
 &nbsp;**|**&nbsp; **ControllerBuild**: 209 &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202007 |&nbsp; **WorkflowServiceTag**: 202007.RC8 

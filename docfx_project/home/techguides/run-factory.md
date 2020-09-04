@@ -26,29 +26,29 @@ During the factory run you are able to:
 2. Click on the **Actions** button to:
 
      2.1 **View Environment** -  check the creation of the environment. The name of the environment will be "Env _ for _ Factory _ xxx", where xxx is the name of your factory (in our case Env _ for _ Factory _ Demo _ Factory)
-
       ![](./images/run-factory-environment-create.png) 
- 
-     2.2 View Event History - see the logs of the factory run
 
+ <br>
+
+     2.2 **View Event History** - see the logs of the factory run
       ![](./images/run-factory-environment-event-history.png) 
 
-     2.3. **Abort** a factory run by clicking the 'Abort' button on the top right side of the page (i.e. in case of a mistake). This action prevents you from deploying, testing or promoting the components. By clicking on **Abort** a confirmation pops-up which asks you to confirm the action. You can edit the factory and then click 'Run now' again to see the results.
+ <br>
+     2.3 **Abort** a factory run by clicking the 'Abort' button on the top right side of the page (i.e. in case of a mistake). This action prevents you from deploying, testing or promoting the components. By clicking on **Abort** a confirmation pops-up which asks you to confirm the action. You can edit the factory and then click 'Run now' again to see the results.
+       ![](./images/run-factory-abort-factory.png)     
+ <br>
 
-     ![](./images/run-factory-abort-factory.png)     
 
 3. Refresh the timeline by clicking on the **Refresh** icon
 
 ![](./images/run-factory-deploy2.png)
  
 
-Clicking on the Environments tab on the left menu, you can check the creation of the environment. The name of the environment will be "Env for Factory xxx", where xxx is the name of your factory.
-
 
 
 > [!Note]
 > 1. The environment creation stage may take between 20 minutes and a few hours depending on the template used. 
-> 
+
 >  A factory can be enabled or disabled at any time. If a factory is disabled, factory runs (both scheduled and user triggered) will not be triggered. 
 
 
@@ -68,8 +68,6 @@ After running the tests successfully, you will see some details about all stages
 Based on any factory run, the user can take several actions:
 
 - **Trigger New Environment** - trigger a new environment to do triage, demo or ad-hoc testing (this will clone the factory environment)
-
-- **View Environment** - view the environment used for the factory run
 
 - **View Event History** - view the flow of status of the factory run
 

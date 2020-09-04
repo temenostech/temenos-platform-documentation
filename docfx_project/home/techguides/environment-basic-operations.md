@@ -44,13 +44,45 @@ The user can also **clone**, **edit**, **delete**, **start**, **stop**, **rebuil
 
 - the **Actions** button from the right-side of the screen is expandable and allows the user to:
 
-    - **Edit the environment**  - allows you to change the name and the description of an environment
-
-    - **Clone** the environment - creates an identical environment by copying the Environment and configuration repository
-
-    - **Delete environment** - removes all resources including VMs and configuration repository that are part of an Environment
 
  ![](./images/actions-button.png) 
+
+ - **Start** an environment - after creating an environment, the Start button is automatically disabled as the environment is running. It will be enabled if an environment is stopped and it will start all the instances specified in the Environment configuration.
+    
+           - When the environment is stopped, start button is supposed to start the VMs where the database and the application server of a T24 environment are installed and also to start the application server (jboss, wildfly, WebSphere, etc.) so that T24 to be up and running. 
+           - However, please **note** that start button is not triggering also the deployment of whatever is present into the associated Git repository (such as something that was committed when the environment was stopped or a T24 update package ( L1 development) that was not yet successfully deployed to the T24 area).
+
+ - **Stop** an environment  - stops all running VMs that are part of the Environment.
+
+ - **Rebuild** an environment - it recreates the resources into the cloud and re-installs T24 and H2 db. This is used for example when modifying the application templates (i.e. changing the T24 displayed name or adding a new application).
+
+ - **Edit the environment**  - allows you to change the name and the description of an environment
+
+ - **Clone environment** - creates an identical environment by copying the Environment and configuration repository
+
+ - **Upgrade** - the feature is only available for the **Extend** environments. By clicking on **Upgrade** the user can upgrade to the target template version ). 
+ 
+       - Upon clicking on the button a pop-up appears which prompts to select another template from the list of available template:
+                      ![](./images/environment-upgrade-button.png) 
+
+       - Click on **Upgrade** to proceed.
+       
+       - The environment status changes to **Upgrading**:
+       
+           ![](./images/environment-upgrading.png) 
+
+
+     > [!Note]
+> The **Upgrade** button is enabled at the organisation level. Only organisations having this org role will be able to use this upgrade feature.  
+> Only users with the oermission UPGRADE_TEMPLATE will have the **Upgrade** button enabled on their environment.
+
+<br> 
+
+ - **Delete environment** - removes all resources including VMs and configuration repository that are part of an Environment
+
+
+
+
 <br>
 
 
@@ -71,39 +103,6 @@ The user can also **clone**, **edit**, **delete**, **start**, **stop**, **rebuil
 
 
 ### <span style="color:orange;font-weight:1000;">**Buttons**</span>  ###
-
-
-- **Starting** an environment:
-- After creating an environment, the Start button is automatically disabled as the environment is running. It will be enabled if an environment is stopped and it will start all the instances specified in the Environment configuration.
-
-- When the environment is stopped, start button is supposed to start the VMs where the database and the application server of a T24 environment are installed and also to start the application server (jboss, wildfly, WebSphere, etc.) so that T24 to be up and running. 
-- However, please **note** that start button is not triggering also the deployment of whatever is present into the associated Git repository (such as something that was committed when the environment was stopped or a T24 update package ( L1 development) that was not yet successfully deployed to the T24 area).
-
- ![start](./images/button-start.png) 
-
-
-<br>
-
-
-- **Stopping**  an environment - stops all running VMs that are part of the Environment.
-
- ![stop](./images/button-stop.png) 
-
-
-
-<br>
-
-
-- **Rebuilding** an environment - it recreates the resourses into the cloud and re-installs T24 and H2 db. This is used for example when modifying the application templates (eg. changing the T24 displayed name or adding a new application).
-    
- ![rebuild](./images/button-rebuild.png) 
-
-
-
-
-<br>
-
-
 
 - **Exporting** an environment  allows to export and import an environment or a database through SFTP server
 

@@ -14,7 +14,9 @@ Follow the steps below to access the UD directories:
 
 # 1. Change user password 
 
-In order to access the SFTP using HTTPs you need to reset your password (learn how to change it [here](http://documentation.temenos.cloud/home/user-creation-in-paas.html))
+In order to access the SFTP using HTTPs you need to reset your password (learn how to change it [here](http://documentation.temenos.cloud/home/user-creation-in-paas.html)).
+
+By changing the password, your entry is added in the HTTP server and enables you to access SFTP over the HTTP server. 
 
 # 2. Access SFTP
 
