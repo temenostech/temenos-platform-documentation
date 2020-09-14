@@ -9,7 +9,7 @@ Below you can find the current templates catalogue:
 | Template   Name             | Version | Description                                                |
 |-----------------------------|---------|------------------------------------------------------------|
 | MB-T24-Jboss-SQL-202008     | 202008  | TSS-R20 Template for Stack06 - 202008 using ARM   template |
-| MB-T24-Jboss-SQL-202004-ARM | 202004  | TSS-R19Template for Stack06 - 202004 using ARM   template  |
+| MB-T24-Jboss-SQL-202004-ARM | 202004  | TSS-R20Template for Stack06 - 202004 using ARM   template  |
 | MB-T24-Jboss-SQL-202003     | 202003  | TSS-R20Template for Stack06 - 202003                       |
 | MB-T24-Jboss-SQL-202002     | 202002  | TSS-R20Template for Stack06 - 202002                       |
 | MB-T24-Jboss-SQL-202001     | 202001  | TSS-R20Template for Stack06 - 202001                       |
