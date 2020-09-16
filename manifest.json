@@ -716,6 +716,28 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/images/user-change password2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/user-change password2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/user-change password3.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/user-change password3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/images/user-change password4.png",
       "output": {
         "resource": {
