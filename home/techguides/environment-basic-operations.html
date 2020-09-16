@@ -122,9 +122,14 @@
 <p> <img src="images/actions-button.png" alt=""> </p>
 <ul>
 <li><p><strong>Start</strong> an environment - after creating an environment, the Start button is automatically disabled as the environment is running. It will be enabled if an environment is stopped and it will start all the instances specified in the Environment configuration.</p>
-<pre><code>    - When the environment is stopped, start button is supposed to start the VMs where the database and the application server of a T24 environment are installed and also to start the application server (jboss, wildfly, WebSphere, etc.) so that T24 to be up and running. 
-    - However, please **note** that start button is not triggering also the deployment of whatever is present into the associated Git repository (such as something that was committed when the environment was stopped or a T24 update package ( L1 development) that was not yet successfully deployed to the T24 area).
-</code></pre></li>
+<ul>
+<li><p>When the environment is stopped, start button is supposed to start the VMs where the database and the application server of a T24 environment are installed and also to start the application server (jboss, wildfly, WebSphere, etc.) so that T24 to be up and running. </p>
+<ul>
+<li>However, please <strong>note</strong> that start button is not triggering also the deployment of whatever is present into the associated Git repository (such as something that was committed when the environment was stopped or a T24 update package ( L1 development) that was not yet successfully deployed to the T24 area).</li>
+</ul>
+</li>
+</ul>
+</li>
 <li><p><strong>Stop</strong> an environment  - stops all running VMs that are part of the Environment.</p>
 </li>
 <li><p><strong>Rebuild</strong> an environment - it recreates the resources into the cloud and re-installs T24 and H2 db. This is used for example when modifying the application templates (i.e. changing the T24 displayed name or adding a new application).</p>
