@@ -147,7 +147,7 @@
 </tr>
 <tr>
 <td>client_files\sqldb</td>
-<td>The SQL database will be   uploaded to the client_files\sqldb folder. The file extensions of the   database must be .bak, .zip or both (i.e. in case of more .bak files need to   uploaded, you can add them under a .zip which would also reduce the size   during Git deploy). Each file must contain the database name, the database   credentials, one or many DBs as well as the SQL server version.</td>
+<td>The SQL database will be   uploaded to the client_files\sqldb folder. The file extensions of the   database must be .bak, .zip or both (i.e. in case of more .bak files need to be uploaded, you can add them under a .zip which would also reduce the size   during Git deploy). Note: the .zip or .bak file can have any name. Nonetheless, the database name within the SQL database backup file must be UTPSQLDB. If the database name is other than UTPSQLDB, the database deployment will not work. The database credentials, schema  security group access, logical/physical file names, etc, should be followed as in UTP SQL model bank database. By default, the Recovery model parameter is ‘FULL’, incase of a larger database/more transactions involved, then it is preferred to set the parameter as ‘SIMPLE’. This parameter will be retained after DB import/cloned to a new environment. In case you need to convert the database from H2 to SQL DB, please raise a PACS ticket.</td>
 </tr>
 </tbody>
 </table>
