@@ -273,8 +273,8 @@ The Temenos Continuous Deployment Platform will move these consolidated results 
 
 - Source for the Sample TestCase Java Project can be found **<a href="./../zip/sample-test.zip">HERE</a>**.  The test cases in this project can be adapted and can be used as part of the factory run.
 
-- The zip file comprising the consolidated test results that the Temenos Continuous Deployment platform will archive is available **<a href="./../zip/testresults1.zip">here (testresults1)</a>** and **<a href="./../zip/testresults2.zip">here (testresults2)</a>**
+- The zip file comprising the consolidated test results that the Temenos Continuous Deployment platform will archive is available **<a href="./../zip/testresults1.zip">here (testresults1)</a>** and **<a href="./../zip/testresults2.zip">here (testresults2)</a>**.
 
 
-- A sample of the consolidated results from the junit test results can be retrieved from this **<a href="./../zip/consolidated-results.xml">link </a>** and the html page is available **<a href="./../zip/run_results.html">here </a>**
+- A sample of the consolidated results from the junit test results can be retrieved from this **<a href="./../zip/consolidated-results.xml">link </a>** and the html page is available **<a href="./../zip/run_results.html">here </a>**.
 
