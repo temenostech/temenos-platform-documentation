@@ -136,21 +136,16 @@
 </br></p>
 <h2 id="globalproperties-file">global.properties file</h2>
 <p>The properties file holds the configurable parameters used by the Selenium framework. Some of the parameters have static values. Thus, the Temenos Continuous Deployment Platform expects them to be present in the properties file.</p>
-<p>For instance, sys.t24.IP=<a href="http://127.0.0.1:9080/BrowserWeb">http://127.0.0.1:9080/BrowserWeb</a> value is replaced dynamically at the run time. The same applies to all parameters highlighted in the RedBox below.</p>
+<p>For instance, sys.tcdenv.transact.host=127.0.0.1 value is replaced dynamically at the run time. The same applies to all parameters highlighted in the RedBox below.  The property sys.tcdenv.transact.host can be used to build the URL (browser, browserweb,…) to test.</p>
 <p><img src="images/selenium-global-properties.png" alt=""></p>
 <ul>
 <li><p>The name of the properties file must be global.properties and it must have the following mandatory properties:</p>
-<ul>
-<li><p>sys.t24.browser.url=<a href="http://localhost:9080/WebBrowser">http://localhost:9080/WebBrowser</a></p>
-</li>
-<li><p>sys.test.results.folder=F:/TCD/TestResults</p>
-</li>
-<li><p>sys.web.driver.folder=F:/TCD/WebDriver</p>
-</li>
-<li><p>The Selenium template will change the values for the above properties at the runtime after the test VM is provisioned</p>
-</li>
-</ul>
-</li>
+<p>•  sys.tcdenv.transact.host=127.0.0.1 </p>
+<p>•  sys.test.results.folder=F:/TCD/TestResults</p>
+<p>•  sys.web.driver.folder=F:/TCD/WebDriver</p>
+<p>•  The Selenium template will change the values for the above properties at the runtime after the test VM is provisioned</p>
+<p>The above three properties are also available as Environment Variables on the Test VM, so that the values for these properties can be accessed as System.getEnv(“&lt;<propertykey>&gt;”) in java code or as %<propertykey>% as java arguments.<p>
+</propertykey></propertykey></li>
 <li><p>Optional properties like the following can also me mentioned in it</p>
 <ul>
 <li><p>sys.t24.login.username1=XXXXXX</p>
