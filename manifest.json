@@ -716,6 +716,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/images/update-ssh-key.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/update-ssh-key.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/images/user-change-password.png",
       "output": {
         "resource": {
@@ -764,6 +775,17 @@
       "output": {
         "resource": {
           "relative_path": "home/images/user-details.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/user-edit-ssh.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/user-edit-ssh.png"
         }
       },
       "is_incremental": false,
@@ -5400,6 +5422,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/run-factory-see-results.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/run-factory-see-results.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/sample-routine-created.png",
       "output": {
         "resource": {
@@ -5954,6 +5987,17 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/stages-see-details.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/stages-tool-tip.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/stages-tool-tip.png"
         }
       },
       "is_incremental": false,
@@ -7426,14 +7470,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "RestApiDocumentProcessor": {
