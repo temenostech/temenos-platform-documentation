@@ -63,7 +63,7 @@ All the libraries (.jar) referenced or required by the testcase jars must be inc
 
 The properties file holds the configurable parameters used by the Selenium framework. Some of the parameters have static values. Thus, the Temenos Continuous Deployment Platform expects them to be present in the properties file.
 
-For instance, sys.t24.IP=http://127.0.0.1:9080/BrowserWeb value is replaced dynamically at the run time. The same applies to all parameters highlighted in the RedBox below.
+For instance, sys.tcdenv.transact.host=127.0.0.1 value is replaced dynamically at the run time. The same applies to all parameters highlighted in the RedBox below.  The property sys.tcdenv.transact.host can be used to build the URL (browser, browserweb,…) to test.
 
 
 
@@ -71,16 +71,19 @@ For instance, sys.t24.IP=http://127.0.0.1:9080/BrowserWeb value is replaced dyna
 
 
 
+
+
 - The name of the properties file must be global.properties and it must have the following mandatory properties:
 
- - sys.t24.browser.url=http://localhost:9080/WebBrowser
+ •	sys.tcdenv.transact.host=127.0.0.1 
 
- - sys.test.results.folder=F:/TCD/TestResults
+ •	sys.test.results.folder=F:/TCD/TestResults
 
- - sys.web.driver.folder=F:/TCD/WebDriver
+ •	sys.web.driver.folder=F:/TCD/WebDriver
 
- - The Selenium template will change the values for the above properties at the runtime after the test VM is provisioned
+ •	The Selenium template will change the values for the above properties at the runtime after the test VM is provisioned
 
+ The above three properties are also available as Environment Variables on the Test VM, so that the values for these properties can be accessed as System.getEnv(“<<propertykey>>”) in java code or as %<propertykey>% as java arguments.
 
 
 - Optional properties like the following can also me mentioned in it
