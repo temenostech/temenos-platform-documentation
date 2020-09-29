@@ -3,6 +3,32 @@
 
 This page provides information about the monthly Temenos Continuous Deployment Platform features and improvements in each release.
 
+# **202009**
+**InfraBuild**: TBA  &nbsp;**|**&nbsp; **PortalTag**: TBA
+&nbsp;**|**&nbsp; **ControllerBuild**: TBA  &nbsp;**|**&nbsp;  **ReleaseNumber**: TBA |&nbsp; **WorkflowServiceTag**: TBA
+
+## Technical enhancements
+&nbsp;&nbsp;&nbsp;&nbsp;**1. The SFTP servers can now be accessed over HTTPS**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- This enhancement directs the user to reset the password if required to enable HTTPS based access (read more [here](http://documentation.temenos.cloud/home/techguides/https-in-front-of-sftp.html?q=https)).
+<br>
+</br> 
+
+&nbsp;&nbsp;&nbsp;&nbsp;**2. Implementation of portal proxy**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Security Enhancements  to remove any public IP in the URLs. Read more here.
+<br>
+</br> 
+
+&nbsp;&nbsp;&nbsp;&nbsp;**3. Provide ability to skip target environment creation for an already executed factory run.**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Temenos Continuous Deployment Platform enables users to reuse existing environments on factory runs to rerun the tests. User guide available [here](http://documentation.temenos.cloud/home/techguides/run-factory.html).
+<br>
+</br> 
+<br>
+</br> 
+
+
 # **202008**
 **InfraBuild**: 33  &nbsp;**|**&nbsp; **PortalTag**: 202008.RC9
 &nbsp;**|**&nbsp; **ControllerBuild**: 233  &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202008 |&nbsp; **WorkflowServiceTag**: 202008.RC7
@@ -11,6 +37,10 @@ This page provides information about the monthly Temenos Continuous Deployment P
 &nbsp;&nbsp;&nbsp;&nbsp;**1. Technical Enhancements**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Access to SFTP server is now available through HTTPs (read more [here](http://documentation.temenos.cloud/home/techguides/https-in-front-of-sftp.html?q=https))
+<br>
+</br> 
+<br>
+</br> 
 
 
 
