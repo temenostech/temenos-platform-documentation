@@ -1217,7 +1217,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/export-import-database.html",
-          "hash": "WkvBA6ivuc6zsuCBDwUXOg=="
+          "hash": "VhozalkrVC9MKh038xktrg=="
         }
       },
       "is_incremental": false,
@@ -2573,6 +2573,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/db-export-logs.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db-export-logs.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/db-exporting.png",
       "output": {
         "resource": {
@@ -3281,6 +3292,17 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/executable-jar-file.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/export-db.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/export-db.png"
         }
       },
       "is_incremental": false,
@@ -5730,6 +5752,39 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/sftp-access-environment-files.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/sftp-access-environment-files.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/sftp-access-environment.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/sftp-access-environment.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/sftp-add-credentials.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/sftp-add-credentials.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/sftp-artifactory-url.png",
       "output": {
         "resource": {
@@ -7475,16 +7530,16 @@
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build"
-        },
         "RestApiDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },

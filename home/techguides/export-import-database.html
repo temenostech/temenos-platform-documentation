@@ -85,16 +85,7 @@
 <p>Login to your organization on the TCD (Temenos Continuous Deployment) portal (<a href="https://portal.temenos.cloud/">portal.temenos.cloud</a>) read and accept the privacy notice.</p>
 <p><img src="images/db-login.png" width="450" height="200"></p>
 <h2 id="create-an-environment">Create an Environment</h2>
-<ul>
-<li>Once logged, go to the Environments tab on the left and then click <strong>New environment</strong> button on the right.</li>
-<li>Fill Name and Description fields.</li>
-<li>Select T24 from Cloud Native Applications (dropdown list).</li>
-<li>And then choose a T24 template with the version that you need (in current example R18.11).</li>
-<li><em>Labels field is optional</em>.</li>
-<li>Click <strong>Create</strong> button.</li>
-</ul>
-<div class="NOTE"><h5>Note</h5><p>To see how to create an environment, please also check <a href="environment-creation-in-paas.html" target="_blank"><strong>this</strong></a> user guide.</p>
-</div>
+<p>To see how to create an environment, please also check <a href="environment-creation-in-paas.html" target="_blank"><strong>this</strong></a> user guide.</p>
 <div class="NOTE"><h5>Note</h5><p>For this user guide, there are two environments created: </p>
 <ul>
 <li>DevEnv</li>
@@ -132,18 +123,23 @@
 </ul>
 <h2 id="export-the-database">Export the Database</h2>
 <p>To export and re-import the database into an environment or do some changes and import it back or to a different environment, check the steps below:</p>
-<div class="NOTE"><h5>Note</h5><p>To avoid database corruption, all TSA and user activity needs to be stopped so a DB Export can be taken safely.</p>
-</div>
-<ul>
-<li><p>To trigger the export, click the <strong>Export</strong> button under Database (also confirm the action on the pop-up to be able to proceed).</p>
+<ol>
+<li><p>Click the <strong>Export</strong> button under Database</p>
 </li>
-<li><p>After clicking the export starts (the action takes around a few minutes based on the DB size). While exporting, the button is disabled, after the export is done, the button gets enabled back.</p>
-<p> <img src="images/db-exporting.png" alt=""> 
+<li><p>Confirm the action on the pop-up to be able to proceed</p>
+</li>
+<li><p>Click <strong>Confirm</strong></p>
+<p>  <img src="images/export-db.png" alt=""> </p>
+</li>
+</ol>
+<p>After clicking the export starts (the action takes around a few minutes based on the DB size). While exporting, the button is disabled, after the export is done, the button gets enabled back.</p>
+<p><img src="images/db-exporting.png" alt=""> </p>
+<p>To see the logs sequence for the Database Export go the <strong>Events</strong> tab on your environment:</p>
+<p><img src="images/db-export-logs.png" alt=""> </p>
+<div class="NOTE"><h5>Note</h5><p>To avoid database corruption, all TSA and user activity needs to be stopped so a DB Export can be taken safely.
 <br></p>
-</li>
-</ul>
-<div class="NOTE"><h5>Note</h5><p>Please note that the same steps showed in this demo can be followed to export an environment. Start exporting by using the <strong>Export</strong> button (check the available buttons under T24 Release).</p>
 </div>
+<p>Please note that the same steps showed in this demo can be followed to export an environment. Start exporting by using the <strong>Export</strong> button (check the available buttons under **T24 Release **section).</p>
 <ul>
 <li>During this action, the DB is exported through SFTP server to which you have to connect in order to download the related content on your local machine. </li>
 <li>Download WinSCP from <a href="https://winscp.net/eng/index.php" target="_blank"><strong>here</strong></a>.</li>
