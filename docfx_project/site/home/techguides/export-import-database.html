@@ -85,16 +85,7 @@
 <p>Login to your organization on the TCD (Temenos Continuous Deployment) portal (<a href="https://portal.temenos.cloud/">portal.temenos.cloud</a>) read and accept the privacy notice.</p>
 <p><img src="images/db-login.png" width="450" height="200"></p>
 <h2 id="create-an-environment">Create an Environment</h2>
-<ul>
-<li>Once logged, go to the Environments tab on the left and then click <strong>New environment</strong> button on the right.</li>
-<li>Fill Name and Description fields.</li>
-<li>Select T24 from Cloud Native Applications (dropdown list).</li>
-<li>And then choose a T24 template with the version that you need (in current example R18.11).</li>
-<li><em>Labels field is optional</em>.</li>
-<li>Click <strong>Create</strong> button.</li>
-</ul>
-<div class="NOTE"><h5>Note</h5><p>To see how to create an environment, please also check <a href="environment-creation-in-paas.html" target="_blank"><strong>this</strong></a> user guide.</p>
-</div>
+<p>To see how to create an environment, please also check <a href="environment-creation-in-paas.html" target="_blank"><strong>this</strong></a> user guide.</p>
 <div class="NOTE"><h5>Note</h5><p>For this user guide, there are two environments created: </p>
 <ul>
 <li>DevEnv</li>
@@ -108,12 +99,14 @@
 <li>In the new screen, type a customer number from your db (ex. 190094) and click <strong>Find</strong></li>
 <li>Then click amend button</li>
 </ul>
-<p><img src="./images/db-amend-customer.png" alt=""> </p>
+<p><img src="./images/db-amend-customer.png" alt=""> 
+<br></p>
 <ul>
 <li>Change the GB Town/City from the Physical Address tab and then press <strong>Commit the deal</strong> button <img src="images/db-commit-button.png" alt=""> in order to save the change. </li>
 </ul>
-<p><em>(</em><em>Note</em><em>: You can do any change on any record type)</em></p>
-<p><img src="images/db-amend-info.png" alt=""> </p>
+<p><strong>Note</strong>: You can do any change on any record type)*</p>
+<p>   <img src="images/db-amend-info.png" alt=""> 
+<br></p>
 <ul>
 <li>Two notifications about Customer&#39;s documents will pop up &gt; Mark them as &#39;<strong>Received</strong>&#39; and Click &quot;<strong>Accept Overrides</strong>&quot; &gt; Transaction is complete</li>
 <li>The next step is to authorize the record change:</li>
@@ -122,52 +115,67 @@
 <p><img src="images/db-t24-signin-author.png" width="590" height="250"></p>
 <ul>
 <li>Go to User Menu &gt; Customer &gt; click <strong>Authorise/ Delete Customer</strong> menu</li>
-<li>Click authorise button (<em>double-check</em>) &gt; The screen is expanded with the details of the customer &gt; Click again authorise  </li>
+<li><p>Click authorise button (<em>double-check</em>) &gt; The screen is expanded with the details of the customer &gt; Click again authorise  </p>
+<p>   <img src="./images/db-authorise-record.png" alt=""> 
+<br>
+</br></p>
+</li>
 </ul>
-<p><img src="./images/db-authorise-record.png" alt=""> </p>
 <h2 id="export-the-database">Export the Database</h2>
 <p>To export and re-import the database into an environment or do some changes and import it back or to a different environment, check the steps below:</p>
-<div class="NOTE"><h5>Note</h5><p>To avoid database corruption, all TSA and user activity needs to be stopped so a DB Export can be taken safely.</p>
-</div>
-<ul>
-<li><p>To trigger the export, click the <strong>Export</strong> button under Database (also confirm the action on the pop-up to be able to proceed).</p>
+<ol>
+<li><p>Click the <strong>Export</strong> button under Database</p>
 </li>
-<li><p>After clicking the export starts (the action takes around a few minutes based on the DB size). While exporting, the button is disabled, after the export is done, the button gets enabled back.</p>
+<li><p>Confirm the action on the pop-up to be able to proceed</p>
 </li>
-</ul>
+<li><p>Click <strong>Confirm</strong></p>
+<p>  <img src="images/export-db.png" alt=""> </p>
+</li>
+</ol>
+<p>After clicking the export starts (the action takes around a few minutes based on the DB size). While exporting, the button is disabled, after the export is done, the button gets enabled back.</p>
 <p><img src="images/db-exporting.png" alt=""> </p>
-<div class="NOTE"><h5>Note</h5><p>Please note that the same steps showed in this demo can be followed to export an environment. Start exporting by using the <strong>Export</strong> button (check the available buttons under T24 Release).</p>
+<p>To see the logs sequence for the Database Export go the <strong>Events</strong> tab on your environment:</p>
+<p><img src="images/db-export-logs.png" alt=""> </p>
+<div class="NOTE"><h5>Note</h5><p>To avoid database corruption, all TSA and user activity needs to be stopped so a DB Export can be taken safely.
+<br></p>
 </div>
+<p>Please note that the same steps showed in this demo can be followed to export an environment. Start exporting by using the <strong>Export</strong> button (check the available buttons under **T24 Release **section).</p>
 <ul>
 <li>During this action, the DB is exported through SFTP server to which you have to connect in order to download the related content on your local machine. </li>
 <li>Download WinSCP from <a href="https://winscp.net/eng/index.php" target="_blank"><strong>here</strong></a>.</li>
-<li>Open WinSCP and create a new site which will allow the connection through SFTP server:<ul>
+<li><p>Open WinSCP and create a new site which will allow the connection through SFTP server:</p>
+<ul>
 <li>For host name, use the endpoint of the db. <em>(You can copy it from your portal by clicking the copy icon near the endpoint of the database - &#39;sftp.temenos.cloud&#39;).</em></li>
 <li>For the user name, put the PaaS user name that you have created on the portal. <em>(Check Users tab to see the available users).</em></li>
-<li>Instead of password, click <strong>Advanced</strong></li>
+<li><p>Instead of password, click <strong>Advanced</strong></p>
+<p><img src="images/db-sftp.png" alt=""> 
+<br></p>
+</li>
+<li><p>A new screen is open</p>
+</li>
+<li><p>Choose SSH &gt; Authentication &gt; and browse for the private key related to your portal user &gt; click OK.</p>
+<p><img src="images/db-sftp-ssh.png" alt=""> 
+<br></p>
+</li>
 </ul>
 </li>
 </ul>
-<p><img src="images/db-sftp.png" alt=""> </p>
-<ul>
-<li>A new screen is open</li>
-<li>Choose SSH &gt; Authentication &gt; and browse for the private key related to your portal user &gt; click OK.</li>
-</ul>
-<p><img src="images/db-sftp-ssh.png" alt=""> </p>
 <p>After attaching the SSH key, click on save button – here we can give a site name that we want for future use.</p>
 <ul>
 <li>Previous screen will appear - click <strong>login</strong> to connect to the SFTP server.</li>
 <li>It will search for host and connect to it.</li>
-<li>A successful connection will display two sides as follows:<ul>
+<li><p>A successful connection will display two sides as follows:</p>
+<ul>
 <li>On the left side - the location from your local machine where the db will be downloaded.</li>
-<li>On the right side - the location of the exported db on the SFTP server; the DB is saved in the folder with the organization id and environment id (<em>/organisationID/environmentID folder structure</em>).</li>
+<li><p>On the right side - the location of the exported db on the SFTP server; the DB is saved in the folder with the organization id and environment id (<em>/organisationID/environmentID folder structure</em>).</p>
+<p><img src="images/sftp-ids.png" alt=""> 
+<br></p>
+</li>
+<li><p>The database appears as TAFJDB.zip. In order to download the zip, select it and press F5. After is being downloaded, you can unzip it to see the db file.</p>
+</li>
+<li>After this step, you can close the SFTP connection: Session &gt; Disconnect.</li>
 </ul>
 </li>
-</ul>
-<p><img src="images/sftp-ids.png" alt=""> </p>
-<ul>
-<li>The database appears as TAFJDB.zip. In order to download the zip, select it and press F5. After is being downloaded, you can unzip it to see the db file.</li>
-<li>After this step, you can close the SFTP connection: Session &gt; Disconnect.</li>
 </ul>
 <h2 id="clone-the-target-environment">Clone the Target Environment</h2>
 <ul>
@@ -177,60 +185,93 @@
 </li>
 <li><p>Also, during cloning, it will be necessary to attach the private ssh key related to your portal user. (If needed, please check <a href="http://documentation.temenos.cloud/home/techguides/user-creation-in-paas.html" target="_blank"><strong>this</strong></a> user guide).</p>
 </li>
-<li>Login to your environment on the portal, locate the endpoint of the repository and copy it by selecting it OR clicking the icon on the right.</li>
-</ul>
+<li><p>Login to your environment on the portal, locate the endpoint of the repository and copy it by selecting it OR clicking the icon on the right.</p>
+<p> <img src="images/db-copy-repo.png" alt=""> 
+<br></p>
+</li>
+<li><p>Create a folder on your computer (you can place it anywhere on your local machine). In this example is named &#39;GitDemo&#39;</p>
 </li>
 </ul>
-<p><img src="images/db-copy-repo.png" alt=""> </p>
-<ul>
-<li>Create a folder on your computer (you can place it anywhere on your local machine). In this example is named &#39;GitDemo&#39;<ul>
-<li>Click right inside the folder and choose <strong>Git Clone</strong> (this command belongs to TortoiseGit)</li>
-</ul>
 </li>
-</ul>
-<p><img src="images/db-git-clone.png" alt=""> </p>
+<li><p>Click right inside the folder and choose <strong>Git Clone</strong> (this command belongs to TortoiseGit)</p>
+<p>  <img src="images/db-git-clone.png" alt=""> 
+<br></p>
 <ul>
-<li>In the screen that opens, fill the following:<ul>
+<li><p>In the screen that opens, fill the following:</p>
+<ul>
 <li>in the URL textbox, paste the Endpoint of Repository Application of your Environment (previously copied)</li>
 <li>the Directory textbox to your local repository folder should be automatically determined as current folder location</li>
 <li>load the private key (this is the private key corresponding to the public key of your portal user)</li>
-<li>click OK</li>
+<li><p>click OK</p>
+<p>  <img src="images/db-tortoise.png" alt=""> 
+<br></p>
+</li>
+</ul>
+</li>
+<li><p>The content is downloaded from the repository of your environment to your computer, displaying a success message if the cloning was correct.</p>
+</li>
+<li><p>You will be able to see the <strong>corebanking</strong> repository structure with several folders like: addons, client_files, packages, plugins, updates, wsdl etc.</p>
+<p>   <img src="images/sql-db.png" alt=""> </p>
+</li>
+<li><p><strong>The TAFJDB.zip must be placed into client_files &gt; h2db folder:</strong></p>
+<p> <img src="images/db-tafjdb-zip.png" alt=""> 
+<br></p>
+ <p style="color:red;">In case you made changes to the db file, please make sure you archive it as a .zip and rename it TAFJDB before pushing it into the repository. <strong>The naming convention is always TAFJDB.zip  where TAFJDB is case sensitive and the extension -.zip- is lowercase</strong>. If this condition is not satisfied, the database will not be uploaded to the Cloud Environment.</p> 
+
+<blockquote><p>Also note that this procedure will replace the existing database in the cloud with this one. The old database will be lost, including any records loaded manually.</p>
+</blockquote>
+</li>
+<li><p><strong>The SQL database must be uploaded to the client_files\sqldb folder:</strong></p>
+<p> <img src="images/sql-db.png" alt=""> </p>
+<p>  <p style="color:red;">The file extensions of the database must be .bak, .zip or both (i.e. in case of more .bak files need to uploaded, you can add them under a .zip which would also reduce the size during the Git deploy operation). See below how the <strong>sqlb</strong> folder structure will be:</p>
+<p>  <img src="images/sqldb-folder-structure.png" alt=""></p>
+<blockquote><p>Note: the .zip or .bak file can have any name. Nonetheless, the database name within the SQL database backup file must be UTPSQLDB. If the database name is other than UTPSQLDB, the database deployment will not work.</p>
+<p><img src="images/sqlback-up.png" alt=""></p>
+<p>The database credentials, schema  security group access, logical/physical file names, etc, should be followed as in UTP SQL model bank database.</p>
+<p>By default, the Recovery model parameter is ‘FULL’, incase of a larger database/more transactions involved, then it is preferred to set the parameter as ‘SIMPLE’. This parameter will be retained after DB import/cloned to a new environment.</p>
+</blockquote>
+<ul>
+<li><p>one or more databases (each file must contain the database name, the database credentials, one or more DBs as well as the SQL server version). For this user guide we added two databases with a .bak file extension that were zipped and placed into the <strong>sqlb</strong> folder</p>
+<p>  <img src="images/sqldb-zip.png" alt="">  </p>
+<blockquote><p>UTPDLMDB database is not mandatory, users can have a single database(UTPSQLDB) within the backup file (.bak).</p>
+<p>In case you need to convert the database from H2 to SQL DB, please raise a PACS ticket.</p>
+</blockquote>
+</li>
 </ul>
 </li>
 </ul>
-<p><img src="images/db-tortoise.png" alt=""> </p>
-<ul>
-<li>The content is downloaded from the repository of your environment to your computer, displaying a success message if the cloning was correct.</li>
-<li>You will be able to see the <strong>corebanking</strong> repository structure with several folders like: addons, client_files, packages, plugins, updates, wsdl etc.</li>
-<li>The TAFJDB.zip must be placed into client_files &gt; h2db folder:</li>
+</li>
 </ul>
-<p><img src="images/db-tafjdb-zip.png" alt=""> </p>
-<blockquote><p style="color:red;">[!Note]
-In case you made changes to the db file, please make sure you archive it as a .zip and rename it TAFJDB before pushing it into the repository. <strong>The naming convention is always TAFJDB.zip  where TAFJDB is case sensitive and the extension -.zip- is lowercase</strong>. If this condition is not satisfied, the database will not be uploaded to the Cloud Environment.</p> 
-
-<p>Also note that this procedure will replace the existing database in the cloud with this one. The old database will be lost, including any records loaded manually.</p>
-</blockquote>
+<p><br>
+</br></p>
 <h2 id="commit-and-push-the-db">Commit and Push the DB</h2>
 <ul>
 <li>Click right inside the <strong>h2db</strong> folder and choose <strong>Git commit master</strong>, check the not versioned files that you want to push (in this case TAFJDB.zip), put a comment in the box, then commit and push. </li>
-<li>After the success message, close the box.</li>
+<li><p>After the success message, close the box.</p>
+<p> <img src="images/db-push-db.png" alt=""> 
+<br>
+</br></p>
+</li>
 </ul>
-<p><img src="images/db-push-db.png" alt=""> </p>
 <h2 id="deploy-db-and-check-the-change">Deploy DB and Check the Change</h2>
 <ul>
-<li>Go back to the portal to the target environment and click the <strong>Deploy</strong> button under the Repository</li>
-</ul>
-<p><img src="images/db-deploy.png" alt="deployment"> </p>
+<li><p>Go back to the portal to the target environment and click the <strong>Deploy</strong> button under the Repository</p>
+<p> <img src="images/db-deploy.png" alt="deployment"> 
+<br></p>
+</li>
+<li><p>After the deployment is done, you can check the change of the database as follows:</p>
 <ul>
-<li>After the deployment is done, you can check the change of the database as follows:<ul>
 <li>Click Go to Application to open a T24 Browser</li>
 <li>Login with your T24 user and password</li>
 <li>Under User Menu, go to Customer &gt; Individual Customer &gt; More Actions &gt; Search Live File (from dropdown arrow) and click Go</li>
-<li>The searched record is displayed &gt; Click on the search/selection button on the left  &gt; The GB Town Country line should be changed into <em>Portland</em> confirming the correct import of the database</li>
+<li><p>The searched record is displayed &gt; Click on the search/selection button on the left  &gt; The GB Town Country line should be changed into <em>Portland</em> confirming the correct import of the database</p>
+<p><img src="images/db-check-record.png" alt=""> 
+<br>
+</br></p>
+</li>
 </ul>
 </li>
 </ul>
-<p><img src="images/db-check-record.png" alt=""> </p>
 <h1 id="user-permissions-required">User Permissions Required</h1>
 <p>To be able to perform the above operations the below permissions need to be enabled for your user:</p>
 <ul>
