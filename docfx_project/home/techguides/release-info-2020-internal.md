@@ -14,17 +14,26 @@ This page provides information about the monthly Temenos Continuous Deployment P
 <br>
 </br> 
 
-&nbsp;&nbsp;&nbsp;&nbsp;**2. Implementation of portal proxy**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Security Enhancements  to remove any public IP in the URLs. Read more here.
-<br>
-</br> 
 
-&nbsp;&nbsp;&nbsp;&nbsp;**3. Provide ability to skip target environment creation for an already executed factory run.**
+&nbsp;&nbsp;&nbsp;&nbsp;**2. Provide ability to skip target environment creation for an already executed factory run.**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Temenos Continuous Deployment Platform enables users to reuse existing environments on factory runs to rerun the tests. User guide available [here](http://documentation.temenos.cloud/home/techguides/run-factory.html).
 <br>
 </br> 
+
+&nbsp;&nbsp;&nbsp;&nbsp;**3. Forgot password documentation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- To recover a forgotten password please refer to the documentation available at [this](http://documentation.temenos.cloud/home/user-creation-in-paas.html#recover-password) link.
+<br>
+</br> 
+
+&nbsp;&nbsp;&nbsp;&nbsp;**4. Reduce session timeout for inactive users on the Temenos Continuous Deployment Platform**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- For security purposes, if you are inactive for more than 5 minutes on the Temenos Continuous Deployment Platform a dialog box pop up prompts on the screen in the last minute of your inactive session which asks to choose whether you want to extend the session or logout. Read more [here](http://documentation.temenos.cloud/home/user-creation-in-paas.html).
+<br>
+</br> 
+
 <br>
 </br> 
 
