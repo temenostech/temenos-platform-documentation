@@ -1,4 +1,4 @@
-                                                                 # Components – Feature Description #
+# Components – Feature Description #
 
 
 Components are individually deployable units that are understood by Temenos Continuous Deployment Platform based on the component type that each component refers to. 
@@ -137,7 +137,7 @@ In order to invoke that Artifactory API a CURL command must be executed (this ca
 
 
 - The **ArtifactoryKey** can be taken from the TCD portal (go to General and take the value of ARTIFACTORY_KEY record):
-![](./images/components-and-products-artifactorykey.png)
+
 
 - **DestinationURL** represents the exact location of the file that will be uploaded in the artifactory together with the name of the binary. For this operation, you need to take the exact path of the artifactory from the TCD portal from the Upload URL field that is displayed on the screen after the component is created:
 ![](./images/components-and-products-uploadurl.png)
