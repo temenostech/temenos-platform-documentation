@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Component Type </title>
+    <title>Components &#8211; Feature Description </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Component Type ">
+    <meta name="title" content="Components &#8211; Feature Description ">
     <meta name="generator" content="docfx 2.22.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -20,7 +20,7 @@
     <meta property="docfx:rel" content="../../">
     
   </head>
-  <body data-spy="scroll" data-target="#affix" class="Component Type ">
+  <body data-spy="scroll" data-target="#affix" class="Components &#8211; Feature Description ">
     <div id="wrapper">
       <header>
         
@@ -79,9 +79,9 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h1 id="components--feature-description">Components – Feature Description</h1>
 
-<pre><code>                                                             # Components – Feature Description #
-</code></pre><p>Components are individually deployable units that are understood by Temenos Continuous Deployment Platform based on the component type that each component refers to. </p>
+<p>Components are individually deployable units that are understood by Temenos Continuous Deployment Platform based on the component type that each component refers to. </p>
 <p>Each component is associated to a component type to help Temenos Continuous Deployment Platform deploy the component. </p>
 <p>The <strong>Component Type</strong> field in the component data is the key to help the Temenos Continuous Deployment Platform Controllers deploy the right components in the right way. 
 An organization can define as many components as needed but should have all mandatory components defined in the templates that are assigned to the organization.</p>
@@ -187,11 +187,10 @@ Also the binaries/ artifacts have to be uploaded each time a component is update
 <p>In order to invoke that Artifactory API a CURL command must be executed (this can be run manually from a linux VM or from a bash script).</p>
 <pre><code>curl -H &quot;X-JFrog-Art-Api:&lt;ArtifactoryKey&gt;&quot; -X PUT &quot;&lt;DestinationURL&gt;&quot; -T &lt;fileToUpload&gt;
 </code></pre><ul>
-<li><p>The <strong>ArtifactoryKey</strong> can be taken from the TCD portal (go to General and take the value of ARTIFACTORY_KEY record):
-<img src="images/components-and-products-artifactorykey.png" alt=""></p>
+<li><p>The <strong>ArtifactoryKey</strong> can be taken from the TCD portal (go to General and take the value of ARTIFACTORY_KEY record):</p>
 </li>
 <li><p><strong>DestinationURL</strong> represents the exact location of the file that will be uploaded in the artifactory together with the name of the binary. For this operation, you need to take the exact path of the artifactory from the TCD portal from the Upload URL field that is displayed on the screen after the component is created:
-<img src="images/components-and-products-uploadurl.png" alt=""></p>
+<img src="./images/components-and-products-uploadurl.png" alt=""></p>
 </li>
 <li><p><strong>fileToUpload</strong> represents the binary that should be uploaded from your local machine and it must contain also the path where is present.</p>
 </li>
