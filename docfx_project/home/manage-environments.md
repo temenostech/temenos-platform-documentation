@@ -78,7 +78,7 @@ Check the list with all available templates. Click the **Templates Catalog** on 
 
  ![](./images/templates-content.png)
 
-# User Roles Required#
+# User Roles Required
 To be able to create an environment the below permissions need to be enabled for your user:
 
 - CREATE _ ENVIRONMENT

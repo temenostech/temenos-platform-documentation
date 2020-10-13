@@ -3,6 +3,40 @@
 
 This page provides information about the monthly Temenos Continuous Deployment Platform features and improvements in each release.
 
+# **202009**
+**InfraBuild**: 39  &nbsp;**|**&nbsp; **PortalTag**: 202009.RC4
+&nbsp;**|**&nbsp; **ControllerBuild**: 273  &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202009 |&nbsp; **WorkflowServiceTag**: 202009.RC5
+
+## Technical enhancements
+&nbsp;&nbsp;&nbsp;&nbsp;**1. The SFTP servers can now be accessed over HTTPS**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- This enhancement directs the user to reset the password if required to enable HTTPS based access (read more [here](http://documentation.temenos.cloud/home/techguides/https-in-front-of-sftp.html?q=https)).
+<br>
+</br> 
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;**2. Provide ability to skip target environment creation for an already executed factory run.**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Temenos Continuous Deployment Platform enables users to reuse existing environments on factory runs to rerun the tests. User guide available [here](http://documentation.temenos.cloud/home/techguides/run-factory.html).
+<br>
+</br> 
+
+&nbsp;&nbsp;&nbsp;&nbsp;**3. Forgot password documentation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- To recover a forgotten password please refer to the documentation available at [this](http://documentation.temenos.cloud/home/user-creation-in-paas.html#recover-password) link.
+<br>
+</br> 
+
+&nbsp;&nbsp;&nbsp;&nbsp;**4. Reduce session timeout for inactive users on the Temenos Continuous Deployment Platform**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- For security purposes, if you are inactive for more than 5 minutes on the Temenos Continuous Deployment Platform a dialog box pop up prompts on the screen in the last minute of your inactive session which asks to choose whether you want to extend the session or logout. Read more [here](http://documentation.temenos.cloud/home/user-creation-in-paas.html).
+<br>
+</br> 
+
+<br>
+</br> 
+
 
 # **202008**
 **InfraBuild**: 33  &nbsp;**|**&nbsp; **PortalTag**: 202008.RC9

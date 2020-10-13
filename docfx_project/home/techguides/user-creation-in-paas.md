@@ -14,7 +14,6 @@ The users can access their organisation only, view their user profiles and perfo
 
 ![portal login](./images/user-login.png)
 
-
 ![](./images/users-tab.png)
 
 1. Go to the menu on the left and then click Users tab, as below:
@@ -70,6 +69,13 @@ Once the role is created, the admin can assign it to a specific user:
 
 To understand what which of the permission does, hover the cursor over the variables and a short description will pop up or click **[here](http://documentation.temenos.cloud/home/techguides/user-permissions)** to get an overview of the permissions.
 
+For security purposes, if you are inactive for more than 5 minutes on the Temenos Continuous Deployment Platform a dialog box pop up prompts on the screen in the last minute of your inactive session which asks to choose whether you want to extend the session or logout.
+ 
+![](./images/idler-session-timeout.png)
+
+- By clicking **Extend** your session will still be active
+
+- If you opt to **Logout** or don’t take any action on the pop-up your session will expire. Note that the environment creation, factory runs or other organization operations will still be running. 
 
 
 # How to use PuTTY SSH client for SSH key generation. #

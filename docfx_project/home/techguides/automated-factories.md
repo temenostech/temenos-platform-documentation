@@ -15,7 +15,6 @@ Below you will find the pre-requisites to run a Automated factory:
   b. Base/Test Stage – the stage from which the “Other Products” (Base Products) components are fetched. This stage represents a stable version of components that is pre-tested from the perspective of the current factory.
 
 
-
 - **the list of mandatory components from the environment template** (learn how to deploy the components [here](http://documentation.temenos.cloud/home/techguides/components-products.html))
 
 

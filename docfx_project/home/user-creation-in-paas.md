@@ -25,13 +25,14 @@ The users can access their organisation only, view their user profiles and perfo
 
 4. Click on the **Status** tab to see the status of each user (i.e. the user status can be **creating, editing, failed, deleting**)
 
-5. Create a new user by clicking the **New user** button on the top-right corner. Fill in the username, email, password and the user role (the SSH Key can be added later on if needed):
-
-![](./images/create-user.png)
+5. Create a new user by clicking the **New user** button on the top-right corner. Fill in the username, email, password and the user role (the SSH Key can be added later on if needed).
 
 6. Click **Create**
 
+![](./images/create-user.png)
+
 This will create a new user in your organisation. This new user will be automatically assigned to all GitLab Repositories from within all environments. If you have already a user created, you can click on the user and update the SSH key box with the one created above.
+
 
 >**Important!**: It is the Organisation Admin's 
 >responsibility to inform the new user about its credentials and set of permissions granted on the portal.
@@ -44,31 +45,46 @@ To change the password you need to follow the next steps:
 
 2.  Click on **Profile**
 
- ![user-change-password2](./images/user-change-password2.png)
+ ![](./images/user-change-password2.png)
 
 3. Click on **Change Password**
 
- ![user-change-password3](./images/user-change-password3.png)
+ ![](./images/user-change-password3.png)
 
 4. Fill in the **Current Password**, **New Password** and **Confirm Password** and click **Confirm**
  
- ![user-change-password4](./images/user-change-password4.png)
+ ![](./images/user-change-password4.png)
 
->Note: On their first login, all new users will be forced to reset the password that was initially created by the Organisation Admin.
+ >Note: On their first login, all new users will be forced to reset the password that was initially created by the Organisation Admin.
 
- ![user-change-password](./images/user-change-password.png)
+  ![](./images/user-change-password.png)
 
 # Recover Password
 
 If you have forgotten or lost your password, you can recover it by contacting the below:
 
-- If your Org is on a PROD platform contact CloudPlatformSupport@temenos.com 
+- If your Org is on a PROD platform contact us at CloudPlatformSupport@temenos.com 
 
--  If your Org is on a EU or TSS platform contact Global Cloud Platform Support (gcp@temenos.com) 
+-  If your Org is on a EU or TSS platform contact the Global Cloud Platform Support team (gcp@temenos.com) 
+<br>
+</br>
+
+# Update SSH Key
+To Update the SSH Key, follow the instructions below:
+
+1. Click on your **user name** (top-right) and then on **Profile**
+
+2. Click on **Edit SSH** button 
+
+  ![](./images/user-edit-ssh.png)
+
+3. Do the necessary changes and click on **Update SSH** / if no changes are required click on **Cancel**
+
+  ![](./images/update-ssh-key.png)
 
 <br>
 
-# User Roles Management #
+# User Roles Management 
 
 By default, when your organisation is created, Temenos will provide you the link and access instructions to your designated organisation administrator (the first and only user with full rights on the platform).
 

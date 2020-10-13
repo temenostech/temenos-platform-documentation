@@ -37,7 +37,7 @@ The parts of the stream are listed below:
 
 4. Click **Create**
 
-![](./images/streams-create.png)
+ ![](./images/streams-create.png)
 
 5. After the successful creation, your stream will appear on the screen *(in case you already have other streams, the newly created will be the last in chronological order)* and it will automatically have associated the default stage named 'Primary_stage' (as in the current example). Please note that the default stage name is defined in the metadata settings of your organization (On the main menu > General).
 
@@ -45,7 +45,7 @@ The parts of the stream are listed below:
 
 7. You can choose which details of the stream you need to be displayed click on the **Columns** field and select from the drop-down the information you need to see.
 
-![](./images/streams-created.png)
+ ![](./images/streams-created.png)
 
 ## Edit a Stream ##
 

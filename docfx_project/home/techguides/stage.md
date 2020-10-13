@@ -1,4 +1,4 @@
-# Stage API/UI – Feature Description #
+# Stages
 
 A Stage is a logical name for a promotional stage. 
 
@@ -28,6 +28,8 @@ The promotion of the components across stages is conditional based on the status
 
 2. From the top-right  select the **Stream** where you want to add a stage
 
+   >Note: if the stream does not have any stage, a tool tip indicates that there is no entry in the respective drop-down
+   >![](./images/stages-tool-tip.png)
 3. Click on  **New Stage** on the top right
 
 4. Fill the **Stage Name** and ** Stage Description**
