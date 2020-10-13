@@ -92,30 +92,27 @@
 <p><br></p>
 <p>Follow the steps below to access the UD directories:</p>
 <h1 id="1-change-user-password">1. Change user password</h1>
-<p>In order to access the SFTP using HTTPs you need to reset your password (learn how to change it <a href="http://documentation.temenos.cloud/home/user-creation-in-paas.html">here</a>).</p>
-<p>By changing the password, your entry is added in the HTTP server and enables you to access SFTP over the HTTP server. </p>
-<h1 id="2-access-sftp">2. Access SFTP</h1>
-<p>After the password is updated the SFTP server can be accessed via a browser:</p>
-<ol>
-<li><p>Open a new page and type in the following URL <strong>https://{sftp_url}/{orgId}</strong> where: </p>
-<p> 1.1. <strong>sftp_url</strong> is retrieved from the environment endpoints</p>
-<p> 1.2. the organisation ID that is found on the platform URL 
-<br></p>
+<p>For the existing users, the access to the SFTP server is available only after the password has been changed. A pop-up message informs you to update it. Click <strong>Change Password</strong> to proceed.</p>
+<p><img src="images/sftp-change-password.png" alt=""> </p>
+<p>Learn how to change the password <a href="http://documentation.temenos.cloud/home/user-creation-in-paas.html">here</a>. By changing the password, your entry is added in the HTTP server and enables you to access SFTP over the HTTP server. </p>
+<h1 id="2-access-the-sftp-server">2. Access the SFTP server</h1>
+<ul>
+<li><p>After the password is updated the SFTP server can be accessed via the endpoints present in the environment details: <strong>Access Environment Files</strong> in the T24 Release section and <strong>Access DB Files</strong> in the Database section:</p>
+<p><img src="images/sftp-access-environment.png" alt=""></p>
 </li>
-<li><p>Type in the Temenos Continuous Deployment user credentials 
-  <img src="images/sftp-url.png" alt=""> </p>
+<li><p>Click on each of them and you are prompted to insert your Temenos Continuous Deployment credentials: </p>
+<p><img src="images/sftp-add-credentials.png" alt=""></p>
 </li>
-<li><p>Identify your <strong>environment ID</strong> and click on it to access the environment&#39;s folders</p>
-<p><img src="images/sftp-url-envs.png" alt=""> </p>
+<li><p>Following the successful login, you are now able to access the environment folders.</p>
+<p><img src="images/sftp-access-environment-files.png" alt=""></p>
+<blockquote><p>Note: at this stage you have only view only access to the environment files. Click <a href="http://documentation.temenos.cloud/home/techguides/export-import-database.html">here</a> to learn how to  export and import a database.</p>
+</blockquote>
 </li>
-<li><p>Now you are able to access the environment</p>
-<p><img src="images/sftp-url-envs-folder.png" alt=""> </p>
-</li>
-</ol>
+</ul>
 <h1 id="3-connect-to-an-environment-via-web-client">3. Connect to an environment via WEB client</h1>
 <p>To have access to the T24/ VM Cloud Application live folders, you need to install a Web client (i.e. <a href="https://winscp.net/eng/index.php">https://winscp.net/eng/index.php</a>). Open WinSCP application and fill the mandatory fields:</p>
 <ul>
-<li><p>File Protocol - **WebDAV **</p>
+<li><p>File Protocol - <strong>WebDAV</strong></p>
 </li>
 <li><p>Encryption - <strong>TLS/SSL</strong></p>
 </li>

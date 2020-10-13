@@ -138,7 +138,52 @@
 </li>
 <li><p><strong>Clone environment</strong> - creates an identical environment by copying the Environment and configuration repository</p>
 </li>
+<li><p><strong>Upgrade</strong> - the feature is only available for the <strong>Model Bank/ OSS Stack Template</strong> environments. By clicking on <strong>Upgrade</strong> the user can upgrade the environment to the target template version). </p>
+<ul>
+<li><p>Upon clicking on the button a pop-up appears which prompts to select another template from the list of available template:
+<img src="images/environment-upgrade-button.png" alt=""> </p>
+</li>
+<li><p>Click on <strong>Upgrade</strong> to proceed.</p>
+</li>
+<li><p>The environment status changes to <strong>Upgrading</strong>:</p>
+<p>   <img src="images/environment-upgrading.png" alt=""> 
+<br>
+</br></p>
+</li>
 </ul>
+<p><strong>T24 Upgrade Validations:</strong></p>
+</li>
+</ul>
+<ol>
+<li><p>The <strong>Upgrade</strong> button is enabled at the organisation level. </p>
+</li>
+<li><p>Once the <strong>Upgrade</strong> is initiated all the environment action buttons are disabled except <strong>Edit Environment</strong> and <strong>Delete Environment</strong> buttons.</p>
+</li>
+<li><p>Only organisations having this organisation role will be able to use the <strong>Upgrade</strong> feature.  Only users with the permission UPGRADE_TEMPLATE will have the <strong>Upgrade</strong> button enabled on their environment.</p>
+</li>
+<li><p>The <strong>Upgrade</strong> button is not available on a stopped environment.</p>
+</li>
+<li><p>Make sure you have a Database Backup before the upgrade.</p>
+</li>
+<li><p>L3 or other plugins present in the current template are not auto deployed, and you have to upload them back to GIT and deploy it post upgrade.</p>
+</li>
+<li><p>The new app server won’t have any additional queues.</p>
+</li>
+<li><p>The upgrade pipeline will not deploy anything on the GIT folder to the upgraded environment automatically, therefore you have to manually trigger this post upgrade.
+<br>
+</br></p>
+<p><strong>After the upgrade is completed you can:</strong></p>
+</li>
+<li><p><strong>Rebuild</strong> the upgraded environment from the  <strong>Actions</strong> button - a pop-up informs that <em>Any changes made to the environment will be lost and the environment will be reset to its original state.</em>. To proceed, tick the checkbok and click <strong>Confirm</strong></p>
+<p><img src="images/upgrade-rebuild-env.png" alt=""> </p>
+</li>
+<li><p><strong>Clone</strong> the upgraded environment from the <strong>Actions</strong> button -  a pop-up appears where you need to insert the <strong>Environment Name</strong>, <strong>Environment Description</strong> and <strong>Labels</strong>. The pop-up informs that if L3 packages are manually altered, then they will not be copied and the clone may not work if the T24 environment is upgraded:</p>
+<p><img src="images/upgrade-rebuild-env.png" alt=""> </p>
+</li>
+<li><p><strong>Customize Template</strong> from the Repository Section - a pop-up informs where you can find the template customization user guide and that the <em>Customize My Template will not work if T24 environment is upgraded</em>. To proceed, tick the checkbox and click <strong>Confirm</strong>:</p>
+<p><img src="images/upgrade-customize-template.png" alt=""> </p>
+</li>
+</ol>
 <h2 id="t24-release-section---available-actions">T24 Release section - available actions</h2>
 <h3 id="span-stylecolororangefont-weight1000endpointsspan"><span style="color:orange;font-weight:1000;"><strong>Endpoints</strong>:</span></h3>
 <ul>
