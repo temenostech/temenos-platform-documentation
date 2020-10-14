@@ -23,6 +23,8 @@
          href: ./techguides/clone-environment.md
        - name: Export and Import a Database  
          href: ./techguides/export-import-database.md
+       - name: How to access the SFTP using HTTPs
+         href: ./techguides/https-in-front-of-sftp.md         
        - name: Access T24 UD Directories
          href: ./techguides/access-t24-ud-directories.md
        - name: Access FCM UD Directories
