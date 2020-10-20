@@ -2,7 +2,7 @@
 ## Run Factory ##
 
 
-After setting-up a factory (see configuration steps in <a href="./factories.md#set-up-create-a-factory" target="blank"><b>this user guide</b></a>), go to **Dashboard** on the main menu and select the factory you created (in case you have more factories). 
+After setting-up a factory (see configuration steps [here](http://documentation.temenos.cloud/home/techguides/automated-factories.html#set-up-create-a-automated-factory), go to **Dashboard** on the main menu and select the factory you created (in case you have more factories). 
 
 > [!Note]
 > In order to run your factory, make sure first you select the stream and stage where you created the factory *(top right)*.
