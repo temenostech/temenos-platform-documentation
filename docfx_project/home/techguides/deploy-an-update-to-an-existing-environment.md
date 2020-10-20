@@ -53,7 +53,8 @@ The bellow folders are not present as default in environment repository. In any 
 
 | **Folder**  				| Functionality	|
 |-					|-		|
-|client_files\localjars	|	This folder is designed for local JARs (not released by T24 Core) installation.<br />Any JAR file used by T24 or other parties can be uploaded in this folder. During deployment, all JARs present in this folder will be deployed in the environment. If a JAR file is corrupted or some dependencies are missing, the environment will not start.   |
+|client_files\localjars	|	This folder is designed for local JARs (not released by T24 Core) installation.<br />Any JAR file used by T24 or other parties can be uploaded in this folder. During deployment, all JARs present in this folder will be deployed in the environment. If a JAR file is corrupted or some dependencies are missing, the environment will not start. A module.xml file is regenerated based on all the JAR files.
+   |
 |client_files\localjars\ext	|	This folder is designed for local JARs installation inside **TAFJ/ext** folder from the environment. |
 <br>
 </br>
