@@ -1139,7 +1139,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/components-products.html",
-          "hash": "TzhQi3UecpPLlIixHHvorw=="
+          "hash": "8cb7DM+Sbz9WFle2ZTNlrg=="
         }
       },
       "is_incremental": false,
@@ -1198,26 +1198,11 @@
         "InvalidFileLink"
       ],
       "type": "Conceptual",
-      "source_relative_path": "home/techguides/environment-creation-in-paas.md",
-      "output": {
-        ".html": {
-          "relative_path": "home/techguides/environment-creation-in-paas.html",
-          "hash": "RE++pbex8pGpXsJugqLL9w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
-      "type": "Conceptual",
       "source_relative_path": "home/techguides/export-import-database.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/export-import-database.html",
-          "hash": "VhozalkrVC9MKh038xktrg=="
+          "hash": "p7lDRjqSdStxUPBtHLEkCw=="
         }
       },
       "is_incremental": false,
@@ -1609,6 +1594,17 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/app_endp1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/arrow-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/arrow-icon.png"
         }
       },
       "is_incremental": false,
@@ -2947,6 +2943,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/download-component.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/download-component.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/downloadable-icon2.png",
       "output": {
         "resource": {
@@ -3981,6 +3988,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/i-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/i-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/idler-session-timeout.png",
       "output": {
         "resource": {
@@ -4997,6 +5015,17 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/paste-keytext.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/platform-artifactory-login.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/platform-artifactory-login.png"
         }
       },
       "is_incremental": false,
@@ -7007,18 +7036,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "home/techguides/manage-environments.md",
-      "output": {
-        ".html": {
-          "relative_path": "home/techguides/manage-environments.html",
-          "hash": "2KijWfaqhHIWVCDoHIRDVg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "home/techguides/manage-workflows.md",
       "output": {
         ".html": {
@@ -7551,6 +7568,11 @@
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
+        "RestApiDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
@@ -7562,11 +7584,6 @@
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "RestApiDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
