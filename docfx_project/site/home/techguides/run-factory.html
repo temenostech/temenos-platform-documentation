@@ -81,13 +81,31 @@
             <article class="content wrap" id="_content" data-uid="">
 <h2 id="run-factory">Run Factory</h2>
 
-<p>After setting-up a factory (see configuration steps in <a href="./factories.md#set-up-create-a-factory" target="blank"><b>this user guide</b></a>), go to <strong>Dashboard</strong> on the main menu and select the factory you created (in case you have more factories). </p>
+<p>After setting-up a factory (see configuration steps <a href="http://documentation.temenos.cloud/home/techguides/automated-factories.html#set-up-create-a-automated-factory">here</a>, go to <strong>Dashboard</strong> on the main menu and select the factory you created (in case you have more factories). </p>
 <div class="NOTE"><h5>Note</h5><p>In order to run your factory, make sure first you select the stream and stage where you created the factory <em>(top right)</em>.</p>
 </div>
-<p>If the factory has never been run, you will notice the following message on the screen, under the respective factory: <em>The factory has never been run before. Please start the factory process now by clicking on the &quot;Run Now&quot; button.</em></p>
-<p>Click <strong>Run Now</strong>.</p>
-<p><img src="images/run-factory-dashboard.png" alt=""> </p>
-<p>The process is initiated and it will get immediately to the stage where an environment based on your chosen template is created. </p>
+<p>If the factory has never been run, you will notice the following message on the screen, under the respective factory: <em>The factory has never been run before. Please start the factory process now by clicking on the Run Now button.</em> Click on the <strong>Run now</strong> button.</p>
+<p><img src="images/run-factory-dashboard.png" alt=""> 
+<br></p>
+<p>If the factory has been run at least once, a pop-up appears which enables you to proceed with the factory run by creating a new transact environment or skipping the factory environment creation for the current factory run. This functionality is useful when you want to change the tests and use the same Transact environment used for a previous factory run.</p>
+<p><img src="images/skip-environment.png" alt="">
+<br></p>
+<p> <strong>- Option 1</strong>: If you want to skip the factory environment creation and reuse the environment from the previous factory run, select the option <strong>Reuse the existing environment from previous factory run without overwriting it</strong> and click on <strong>Run</strong> button.</p>
+<p> <strong>- Option 2</strong>: If you don&#39;t want to skip the factory environment creation just click on <strong>Run</strong> button.</p>
+<p>See the following scenarios if you choose to skip the factory environment creation:</p>
+<ul>
+<li><p><strong>Scenario 1</strong> - If the factory environment status is <strong>STARTED</strong>, the factory run will trigger directly the test environment. See below an example of the factory run timeline for this scenario:</p>
+<p><img src="images/factory_run_started_env.png" alt="">
+<br></p>
+</li>
+<li><p><strong>Scenario 2</strong> - If the factory environment status is <strong>STOPPED</strong> and previous environment status is <strong>STARTED</strong> - the factory run automatically starts the environment and once it is <strong>STARTED</strong>, it triggers the test environment. See below an example of the factory run timeline for this scenario:</p>
+<p><img src="images/factory_run_stopped_env.png" alt=""></p>
+</li>
+</ul>
+<blockquote><p>Note: if the factory environment creation has failed during the previous factory run, it is not possible to use it for your current factory run. You need to first identify and solve the issue in order to see the <strong>Reuse the existing environment from previous factory run without overwriting it</strong> in the pop-up. Otherwise this checkbox will not appear in the pop-up.</p>
+</blockquote>
+<p><br></p>
+<p>Once the <strong>Run</strong> button is clicked, the process is initiated and it gets immediately to the stage where an environment based on your chosen template is created. </p>
 <p><img src="images/run-factory-deploy.png" alt=""></p>
 <p>During the factory run you are able to:</p>
 <ol>
@@ -104,27 +122,35 @@
     <img src="images/run-factory-abort-factory.png" alt=""><br><br></p>
 </li>
 <li><p>Refresh the timeline by clicking on the <strong>Refresh</strong> icon</p>
+<p><img src="images/run-factory-deploy2.png" alt=""></p>
 </li>
 </ol>
-<p><img src="images/run-factory-deploy2.png" alt=""></p>
-<p>Clicking on the Environments tab on the left menu, you can check the creation of the environment. The name of the environment will be &quot;Env for Factory xxx&quot;, where xxx is the name of your factory.</p>
 <div class="NOTE"><h5>Note</h5><ol>
 <li><p>The environment creation stage may take between 20 minutes and a few hours depending on the template used. </p>
-<p>A factory can be enabled or disabled at any time. If a factory is disabled, factory runs (both scheduled and user triggered) will not be triggered. </p>
+</li>
+<li><p>A factory can be enabled or disabled at any time. If a factory is disabled, factory runs (both scheduled and user triggered) will not be triggered. </p>
 </li>
 </ol>
 </div>
 <p>After the environment deployment phase is completed, the next phase (stage) is Running Test Deploy. During this phase a test environment is created (you can check it under Environments tab). </p>
 <p><strong>Note</strong> that this environment is automatically deleted after the tests are run and the process is completed.</p>
-<p><img src="./images/run-factory-test-deploy.png" alt=""></p>
 <p><img src="images/run-factory-create-test.png" alt=""></p>
-<p>After running the tests successfully, you will see some details about all stages and the results, as in the example below:</p>
-<p><img src="./images/run-factory-completed.png" alt=""></p>
+<p> After running the tests successfully, you will see some details about all stages and the results, as in the example below. You can either download the test results or open them in a new page:</p>
+<p><img src="images/run-factory-completed.png" alt=""></p>
+<ul>
+<li><p>click on <img src="images/downloadable-icon2.png" alt=""> to store the results on your local machine</p>
+</li>
+<li><p>click on <img src="./images/modular-eye.png" alt=""> to view the test results in a new page</p>
+<p><img src="images/run-factory-see-results.png" alt=""></p>
+<blockquote><p>Note: The Test Results URL is accessible as long as the portal login session is valid. When the portal session expires, the test results page throws a 401 error.</p>
+</blockquote>
+</li>
+</ul>
 <p>Based on any factory run, the user can take several actions:</p>
 <ul>
 <li><p><strong>Trigger New Environment</strong> - trigger a new environment to do triage, demo or ad-hoc testing (this will clone the factory environment)</p>
 </li>
-<li><p><strong>View Environment</strong> - view the environment used for the factory run</p>
+<li><p><strong>View Environment</strong> - directs you to the environment created during the factory run</p>
 </li>
 <li><p><strong>View Event History</strong> - view the flow of status of the factory run</p>
 </li>
@@ -133,9 +159,9 @@
 </ul>
 <p><img src="images/run-factory-new-environment.png" alt=""></p>
 <div class="NOTE"><h5>Note</h5><p>The &#39;Create New Template&#39; button will be available only if the factory run is successful. </p>
-<p>If  you want to have the creation of the new template enabled even when the factory run fails go to General on the left side of the menu and select the &#39;Setup Factory&#39; tab. Tick the &#39;Yes&#39; value that corresponds to the key &#39;Do you want to allow creation of template from failed factories&#39;.</p>
+<p> If  you want to have the creation of the new template enabled even when the factory run fails go to General on the left side of the menu and select the &#39;Setup Factory&#39; tab. Tick the &#39;Yes&#39; value that corresponds to the key &#39;Do you want to allow creation of template from failed factories&#39;.</p>
 </div>
-<p><img src="images/trigger-new-template.png" alt=""></p>
+<p>   <img src="images/trigger-new-template.png" alt=""></p>
 <h1 id="user-permissions-required">User Permissions Required</h1>
 <p>To be able to perform the above operations the below permissions need to be enabled for your user:</p>
 <ul>
