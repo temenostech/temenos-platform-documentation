@@ -19,7 +19,6 @@
 </br>
  - Click on the <span style="color:#005294">**Deploy**</span> button
 </br>
- - To delete the uploaded test cases <span style="color:#005294">**click on testcases.zip file, then on the Actions button (under Deploy) and Delete.**</span> 
-</br>
+
 
 
