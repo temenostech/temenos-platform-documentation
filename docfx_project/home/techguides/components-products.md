@@ -288,9 +288,15 @@ You can edit:
 
 # Artifactory view #
 
-The artifactory view displays the uploaded components that are available for the particular stages. By expanding the components, the user triggers a download of the respective component zip file.
-
+The artifactory view displays the uploaded components that are available for the particular stages. 
 ![](./images/artifactory_view.png)
+
+- Click on the ![](./images/i-icon.png) icon to go to the artifactory page. You will be asked to insert the login details of the Artifactory:
+ ![](./images/platform-artifactory-login.png)
+
+- Click on the ![](./images/arrow-icon.png) to expand the Component details. By clicking on the component.zip you can download the file to your local machine.
+![](./images/download-component.png)
+
 
 <br>
 </br>
