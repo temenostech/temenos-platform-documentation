@@ -121,12 +121,29 @@ responsibility to inform the new user about its credentials and set of permissio
 </li>
 <li><p>Fill in the <strong>Current Password</strong>, <strong>New Password</strong> and <strong>Confirm Password</strong> and click <strong>Confirm</strong></p>
 <p><img src="images/user-change-password4.png" alt=""></p>
-<blockquote><p>Note: On their first login, all new users will be forced to reset the password that was initially created by the Organisation Admin.</p>
+<blockquote><p>Note: on your first login, you need to reset the password that was initially created by the Organisation Admin.</p>
 </blockquote>
 <p><img src="images/user-change-password.png" alt=""></p>
 </li>
 </ol>
 <h1 id="recover-password">Recover Password</h1>
+<p><br></p>
+<h2 id="ask-the-organisation-admin-to-change-your-password">Ask the Organisation Admin to change your password</h2>
+<p>If you lost your password, your Organisation Admin can change it from his/ her end. To do this, the Organiation Admin needs to:</p>
+<ol>
+<li><p>Click on the <strong>User</strong> tab from the left menu and select the user</p>
+</li>
+<li><p>Click on <strong>Change Password</strong></p>
+</li>
+<li><p>Fill in the <strong>New Password</strong> and <strong>Confirm Password</strong> fields, then click <strong>Confirm</strong></p>
+<p><img src="./images/change-user-password-admin.png" alt=""></p>
+<blockquote><p>Note: upon login with the password set by the organisation admin, you need to reset your password. </p>
+</blockquote>
+</li>
+</ol>
+<p><br>
+</br></p>
+<h2 id="raise-a-support-ticket">Raise a support ticket</h2>
 <p>If you have forgotten or lost your password, you can recover it by contacting the below:</p>
 <ul>
 <li><p>If your Org is on a PROD platform contact us at CloudPlatformSupport@temenos.com </p>
@@ -167,18 +184,22 @@ responsibility to inform the new user about its credentials and set of permissio
 <img src="images/create-user-role-permissions.png" alt="user"></p>
 <p>Once the role is created, the admin can assign it to a specific user:</p>
 <ul>
-<li>go to the &#39;Users&#39; tab and select the user </li>
+<li>go to the <strong>Users</strong> tab and select the user </li>
 <li>choose from the drop-down list the user </li>
-<li>click &#39;Edit&#39; on the user</li>
+<li>click <strong>Edit</strong> on the user</li>
 <li>choose from the drop-down list the role that needs to be assigned </li>
 </ul>
 <p>To understand what which of the permission does, hover the cursor over the variables and a short description will pop up or click <strong><a href="http://documentation.temenos.cloud/home/techguides/user-permissions">here</a></strong> to get an overview of the permissions.</p>
-<h1 id="how-to-use-putty-ssh-client-for-ssh-key-generation">How to use PuTTY SSH client for SSH key generation.</h1>
-<p>Should the users requires access to the source code repository they need to provide their public SSH Keys on the user profile section to gain access.</p>
+<p>For security purposes, if you are inactive for more than 5 minutes on the Temenos Continuous Deployment Platform a dialog box pop up prompts on the screen in the last minute of your inactive session which asks to choose whether you want to extend the session or logout.</p>
+<p><img src="./images/idler-session-timeout.png" alt=""></p>
 <ul>
-<li><a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/">https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/</a>)</li>
+<li><p>By clicking <strong>Extend</strong> your session will still be active</p>
+</li>
+<li><p>If you opt to <strong>Logout</strong> or don’t take any action on the pop-up your session will expire. Note that the environment creation, factory runs or other organization operations will still be running. </p>
+</li>
 </ul>
-<p>You can use any other SSH key generator client.</p>
+<h1 id="how-to-use-putty-ssh-client-for-ssh-key-generation">How to use PuTTY SSH client for SSH key generation.</h1>
+<p>If you need access to the source code repository you must provide the public SSH Keys on the user profile section to gain access. You can use any other SSH key generator client.</p>
 <div class="NOTE"><h5>Note</h5><p>If you already have installed a SSH key generator client, you can skip this step.</p>
 </div>
 <p>•   Download the installer from <a href="http://www.putty.org/" title="http://www.putty.org/">http://www.putty.org/</a></p>
