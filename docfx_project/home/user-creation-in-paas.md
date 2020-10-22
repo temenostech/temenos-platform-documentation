@@ -55,12 +55,29 @@ To change the password you need to follow the next steps:
  
  ![](./images/user-change-password4.png)
 
- >Note: On their first login, all new users will be forced to reset the password that was initially created by the Organisation Admin.
+ >Note: on your first login, you need to reset the password that was initially created by the Organisation Admin.
 
   ![](./images/user-change-password.png)
 
 # Recover Password
+<br>
+## Ask the Organisation Admin to change your password 
 
+If you lost your password, your Organisation Admin can change it from his/ her end. To do this, the Organiation Admin needs to:
+
+1. Click on the **User** tab from the left menu and select the user
+
+2. Click on **Change Password**
+
+3. Fill in the **New Password** and **Confirm Password** fields, then click **Confirm**
+
+  ![](./images/change-user-password-admin.png)
+>Note: upon login with the password set by the organisation admin, you need to reset your password. 
+
+<br>
+</br>
+
+## Raise a support ticket 
 If you have forgotten or lost your password, you can recover it by contacting the below:
 
 - If your Org is on a PROD platform contact us at CloudPlatformSupport@temenos.com 
@@ -107,22 +124,24 @@ The admin can select which permissions to set to each user.
 
 Once the role is created, the admin can assign it to a specific user:
 
-- go to the 'Users' tab and select the user 
+- go to the **Users** tab and select the user 
 - choose from the drop-down list the user 
-- click 'Edit' on the user
+- click **Edit** on the user
 - choose from the drop-down list the role that needs to be assigned 
 
 To understand what which of the permission does, hover the cursor over the variables and a short description will pop up or click **[here](http://documentation.temenos.cloud/home/techguides/user-permissions)** to get an overview of the permissions.
 
+For security purposes, if you are inactive for more than 5 minutes on the Temenos Continuous Deployment Platform a dialog box pop up prompts on the screen in the last minute of your inactive session which asks to choose whether you want to extend the session or logout.
+ 
+![](./images/idler-session-timeout.png)
 
+- By clicking **Extend** your session will still be active
+
+- If you opt to **Logout** or don’t take any action on the pop-up your session will expire. Note that the environment creation, factory runs or other organization operations will still be running. 
 
 # How to use PuTTY SSH client for SSH key generation. #
 
-Should the users requires access to the source code repository they need to provide their public SSH Keys on the user profile section to gain access.
-
-- https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
-
-You can use any other SSH key generator client.
+If you need access to the source code repository you must provide the public SSH Keys on the user profile section to gain access. You can use any other SSH key generator client.
 
 > [!Note]
 > If you already have installed a SSH key generator client, you can skip this step.
@@ -131,6 +150,7 @@ You can use any other SSH key generator client.
 
 
 •	Run the installer and click **Next** on each screen, without changing anything in configurations. Click **Finish** once completed.
+
 
 
 
