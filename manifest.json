@@ -309,28 +309,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/images/create-user-role.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/images/create-user-role.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/images/create-user.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/images/create-user.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/images/enterprise-view.png",
       "output": {
         "resource": {
@@ -346,17 +324,6 @@
       "output": {
         "resource": {
           "relative_path": "home/images/env-list.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/images/env-new.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/images/env-new.png"
         }
       },
       "is_incremental": false,
@@ -661,17 +628,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/images/template-components-list.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/images/template-components-list.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/images/template-details.png",
       "output": {
         "resource": {
@@ -894,12 +850,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/manage-environments.md",
       "output": {
         ".html": {
           "relative_path": "home/manage-environments.html",
-          "hash": "j6Cyl9nPNBjxJPuP00kV+A=="
+          "hash": "droaEO3a4ul4MQHGQjQwZw=="
         }
       },
       "is_incremental": false,
@@ -1755,6 +1714,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/boosting-notification.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/boosting-notification.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/build-project.png",
       "output": {
         "resource": {
@@ -2397,6 +2367,28 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/customize-search-catalog.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/customize-template-button.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/customize-template-button.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/customize-template-notification.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/customize-template-notification.png"
         }
       },
       "is_incremental": false,
@@ -5561,6 +5553,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/selenium-autmation-test-results.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/selenium-autmation-test-results.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/selenium-automation-1.png",
       "output": {
         "resource": {
@@ -5664,6 +5667,17 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/selenium-automation-screenshots2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/selenium-automation-test-results.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/selenium-automation-test-results.png"
         }
       },
       "is_incremental": false,
@@ -7098,12 +7112,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/selenium-template.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/selenium-template.html",
-          "hash": "VGN+iBObv26m3Zi3yKriQA=="
+          "hash": "SLDXf5wCeaM18gXnsJ4OYA=="
         }
       },
       "is_incremental": false,
@@ -7316,7 +7333,7 @@
       "output": {
         ".html": {
           "relative_path": "home/user-creation-in-paas.html",
-          "hash": "y/n/282uNLfurTjYMYpZCg=="
+          "hash": "UgrNSu16vTMf+UxmIzxxMA=="
         }
       },
       "is_incremental": false,
@@ -7359,21 +7376,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/zip/TestCase.zip",
+      "source_relative_path": "home/zip/TestSuite.zip",
       "output": {
         "resource": {
-          "relative_path": "home/zip/TestCase.zip"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/zip/TestCases.zip",
-      "output": {
-        "resource": {
-          "relative_path": "home/zip/TestCases.zip"
+          "relative_path": "home/zip/TestSuite.zip"
         }
       },
       "is_incremental": false,
@@ -7566,18 +7572,9 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "RestApiDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
@@ -7587,6 +7584,15 @@
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "RestApiDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
           "incrementalPhase": "build"
         }
       }
