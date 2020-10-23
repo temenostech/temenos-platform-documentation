@@ -262,6 +262,10 @@ The Temenos Continuous Deployment Platform will move these consolidated results 
 
 ![](./images/selenium-consolidated-results.png)
 
+Below you can see how the Automation Test Results (summary and packages)
+
+![](./images/selenium-automation-test-results.png)
+
 <br>
 </br>
 
@@ -269,7 +273,7 @@ The Temenos Continuous Deployment Platform will move these consolidated results 
 
 - Click  **<a href="./../zip/test-framework.zip">HERE</a>**  to download the sources of the sample selenium-junit test framework, which is based on selenium and Junit and produces the test results in an xml format specified by junit.  This is a java project which can be imported into an IDE for further enhancements.
 
-- Also click **<a href="./../zip/TestCase.zip">HERE</a>** to download the TestCase.zip with the structure mentioned above that includes Lib folder that contains all the dependencies to run the TestCase, a global properties file and a CommandsToExecute.txt file.
+- Also click **<a href="./../zip/TestSuite.zip">HERE</a>** to download the TestCase.zip with the structure mentioned above that includes the Lib folder containing all the dependencies to run the TestCase, a global properties file and a CommandsToExecute.txt file.
 
 - Source for the Sample TestCase Java Project can be found **<a href="./../zip/sample-test.zip">HERE</a>**.  The test cases in this project can be adapted and can be used as part of the factory run.
 
@@ -278,3 +282,4 @@ The Temenos Continuous Deployment Platform will move these consolidated results 
 
 - A sample of the consolidated results from the junit test results can be retrieved from this **<a href="./../zip/consolidated-results.xml">link </a>** and the html page is available **<a href="./../zip/run_results.html">here </a>**.
 
+  
