@@ -274,13 +274,13 @@ To deploy DSF packages, the following components must be present in  Extend/ Ass
 
  ### DSF Deployment Notes ###
 
-- For the factory run, the components mentioned in 1, 2 and 3 from the **How to deploy the DSF packages** should be defined in the factory
+- For the factory run, the components mentioned in 1, 2 and 3 from the **How to deploy the DSF packages** should be defined in the factory.
 
-- In an Extend environment, there will be two new folders named **pre-dsf-packages** and **post-dsf-packages**
+- In an Extend environment, there will be two new folders named **pre-dsf-packages** and **post-dsf-packages**:
 
      ![](./images/dsf-pre-post-packages.png)
 
-- In case you only have one set of DSF package to be installed into a Temenos Continuous Deployment Extend environment, please include the package in** pre-dsf-packages** folder in the GIT
+- In case you only have one set of DSF package to be installed into a Temenos Continuous Deployment Extend environment, please include the package in** pre-dsf-packages** folder in the GIT.
 
 - We currently support a single file inside the pre-dsf / post-dsf folders. Bundle all your DSF Packages into a .zip file before uploading them. 
 
