@@ -150,11 +150,11 @@
 <td>The   SQL database will be uploaded to the client_files\sqldb folder. The file   extensions of the database must be .bak, .zip or both (i.e. in case of more   .bak files need to be uploaded, you can add them under a .zip which would   also reduce the size during Git deploy). Note: the .zip or .bak file can have   any name. Nonetheless, the database name within the SQL database backup file   must be UTPSQLDB. If the database name is other than UTPSQLDB, the database   deployment will not work. The database credentials, schema security group   access, logical/physical file names, etc, should be followed as in UTP SQL   model bank database. By default, the Recovery model parameter is ‘FULL’,   incase of a larger database/more transactions involved, then it is preferred   to set the parameter as ‘SIMPLE’. This parameter will be retained after DB   import/cloned to a new environment. In case you need to convert the database   from H2 to SQL DB, please raise a PACS ticket.</td>
 </tr>
 <tr>
-<td>l3-pre-dsf-packages</td>
+<td>client_files\l3-pre-dsf-packages</td>
 <td>To make changes to T24 records we use l3-pre-dsf and   l3-post-dsf packages. The priority and order of deployment can be specified   in pre and post packages. Go to the <a href="http://documentation.temenos.cloud/home/techguides/deploy-an-update-to-an-existing-environment.html#how-to-deploy-the-dsf-packages">How to deploy the DSF packages </a>  instructions to learn more.</td>
 </tr>
 <tr>
-<td>l3-post-dsf-packages</td>
+<td>client_files\l3-post-dsf-packages</td>
 <td>Same functionality as above.</td>
 </tr>
 </tbody>
@@ -185,7 +185,7 @@
 </tbody>
 </table>
 <p><br>
-</br></p>
+</br> </p>
 <h1 id="commit--push-features-to-repository">Commit &amp; Push features to Repository</h1>
 <p>•   Go to repository folder from your local machine(GitLabRepo folder in our example) and copy your file/files (related to your required features that must be deployed to your Environment) to the specific folder/folders based on your requirement. In this guide, an update is pushed to the Environment Repository.</p>
 <p><em>Important: T24 Updates must be packaged as .zip of .zip file while it is deployed through the Git repository (the parent .zip file name can be anything). Example:</em></p>
