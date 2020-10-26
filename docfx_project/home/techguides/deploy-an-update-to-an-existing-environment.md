@@ -291,7 +291,6 @@ To be able to perform the above operations the below permissions need to be enab
 - CREATE_ENVIRONMENT
 - UPDATE_ENVIRONMENT
 - DELETE_ENVIRONMENT
-- BOOST_ENVIRONMENT
 - REDEPLOY_ENVIRONMENT
 - START_ENVIRONMENT
 - STOP_ENVIRONMENT
