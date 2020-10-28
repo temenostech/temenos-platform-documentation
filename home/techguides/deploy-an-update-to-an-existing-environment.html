@@ -216,36 +216,6 @@
 </div>
 <p><br>
 </br></p>
-<h1 id="deploy-an-update-to-an-existing-environment">Deploy an update to an existing environment</h1>
-<ul>
-<li>Go to your environment and click <strong>Go to Application</strong> in order to log to T24 Browser.</li>
-</ul>
-<p><img src="images/deploy-update-go-to-app.png" alt="deploy update go to app"></p>
-<ul>
-<li>Sign in with your T24 user and password.</li>
-</ul>
-<p><img src="images/make-updates-t24-signin.png" alt="make updates t24 signin"></p>
-<div class="NOTE"><h5>Note</h5><p>First T24 login will take a bit longer.</p>
-</div>
-<ul>
-<li>In the command line, type TS, BNK/T24.UPDATES and press Go button</li>
-<li>In the new screen, put the service from Stop to <strong>Start</strong> and press <strong>Commit the deal</strong> button on the left. <em>(This will trigger the deployed updates).</em></li>
-</ul>
-<p><img src="images/make-updates-tsa-start.png" alt="make updates tsa start"></p>
-<ul>
-<li>Go back to the portal, click your environment and click <strong>Monitor Application</strong>.</li>
-<li>Sign in with your user and password. </li>
-</ul>
-<p><img src="images/make-updates-monitor-login.png" alt="make updates monitor login"></p>
-<ul>
-<li>Go to <strong>Execute servlet</strong> under Execution.</li>
-<li>Type the command <strong>START.TSM</strong> and then press <strong>Submit</strong>.</li>
-<li>Go back to T24 browser and in the command line type <strong>SPF S SYSTEM</strong> and press go. </li>
-<li>In the new screen, scroll down until you see the updates that were added.</li>
-</ul>
-<p><img src="images/make-updates-show-updates.png" alt="make updates show updates"></p>
-<p><br>
-</br></p>
 <h1 id="how-temenos-continuous-deployment-platform-installs-ds-packages">How Temenos Continuous Deployment Platform installs DS packages</h1>
 <p>Temenos Continuous Deployment provides users the ability to deploy one or more Design Studio packages into the environment. This pages explains what happens in the background when packages are deployed to the environment.</p>
 <ul>
@@ -363,9 +333,13 @@
 </li>
 <li><p>In case you only have one set of DSF package to be installed into a Temenos Continuous Deployment Extend environment, please include the package in** pre-dsf-packages** folder in the GIT.</p>
 </li>
-<li><p>We currently support a single file inside the pre-dsf / post-dsf folders. Bundle all your DSF Packages into a .zip file before uploading them. </p>
+<li><p>We currently support a single file inside the pre-dsf / post-dsf folders. Bundle all your DSF Packages into a .zip file before uploading them
+<br>
+</br></p>
 </li>
 </ul>
+<h1 id="how-does-the-bulk-deploy-functionality-work">How does the bulk deploy functionality work</h1>
+<p>The Bulk upload functionality is used to </p>
 <h1 id="user-permissions-required">User Permissions Required</h1>
 <p>To be able to perform the above operations the below permissions need to be enabled for your user:</p>
 <ul>
