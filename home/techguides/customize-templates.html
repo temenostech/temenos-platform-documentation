@@ -99,10 +99,10 @@
 <p>Also below the environment description, following message is displayed &quot;Scripts are customized for this environment.&quot; and the button <strong>Save as a new template</strong> appears. </p>
 </div>
 <h2 id="repository-structure-after-template-customization">Repository structure after template customization</h2>
-<p> The difference in the environment repository after the template customization  is represented by the presence of the  <span style="color:red">environments</span> folder, as it can be observed bellow.</p>
+<p> The difference in the environment repository after the template customization  is the presence of the  <span style="color:red">environments</span> folder, as it can be observed bellow.</p>
 <p>If you want to keep the initial settings of your environment, it is advised to clone the environment and do the changes. Please check the following <a href="./http:/deploy-an-update-to-an-existing-environment.md" target="blank"><strong>user guide</strong></a> to see how to clone an environment locally and get familiar with the below repository structure.
 <br></p>
-<p><img src="images/customize-templates-after-boost.png" alt=""></p>
+<p><img src="images/customize-templates-environments.png" alt=""></p>
 <p>The structure of the <span style="color:red">environments</span> folder is represented by 4 folders <em>(found under common folder)</em>:</p>
 <ul>
 <li>extraPlays</li>
@@ -110,7 +110,7 @@
 <li>playbooks</li>
 <li>roles</li>
 </ul>
-<div class="NOTE"><h5>Note</h5><p>Depending on the template type (Extend or Assemble), the <strong>extraPlays</strong> folder may be or may not be present. To check the template type, go to Templates Catalog button on the left side menu and check the template used for your environment. If it contains the Components section, it means this is an Assemble template type and the extraPlays folder will be present after boost action.</p>
+<div class="NOTE"><h5>Note</h5><p>Depending on the template type (Extend or Assemble), the <strong>extraPlays</strong> folder may be or may not be present. To check the template type, go to Templates Catalog button on the left side menu and check the template used for your environment. If it contains the Components section, it means this is an Assemble template type and the extraPlays folder will be present after customize template action.</p>
 </div>
 <div class="IMPORTANT"><h5>Important</h5><p>Depending on the template type (Extend or Assemble), the <strong>infra-templates</strong> and <strong>roles</strong> folders content may differ.
 For example:</p>
@@ -160,8 +160,7 @@ For example:</p>
 <div class="NOTE"><h5>Note</h5><p>Ansible automation tool is used by the Platform to automate the environment creation based on applications with specific requirements and installation steps. For more details about Ansible, please access this <strong><a href="https://docs.ansible.com/ansible/2.5/user_guide/quickstart.html" target="blank">link</a></strong>.</p>
 </div>
 <h2 id="start-template-customization">Start template customization</h2>
-<p>After boosting your environment, meaning that your environment repository contains all the folders and files related to your environment template, you can start the customization.
-There are several ways in which you can customize your environment template based on the type of your change.</p>
+<p>There are several ways in which you can customize your environment template based on the type of your change.</p>
 <div class="NOTE"><h5>Note</h5><p>All the changes that must be implemented to a cloud environment template can be done only in <u>environment repository</u>. Thus, environment repository must be cloned in your local machine. For more information about how to clone an environment repository, please check this <strong><a href="./use-gitlab-repository.md" target="blank">page</a></strong>.</p>
 </div>
 <ol>

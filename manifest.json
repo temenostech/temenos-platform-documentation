@@ -1137,7 +1137,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/customize-templates.html",
-          "hash": "SH0ZpdQNXrtqlm+7nfwiHg=="
+          "hash": "3nUie7tWJ+dBoJTLJkxhwg=="
         }
       },
       "is_incremental": false,
@@ -2422,17 +2422,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/techguides/images/customize-templates-after-boost.png",
-      "output": {
-        "resource": {
-          "relative_path": "home/techguides/images/customize-templates-after-boost.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/techguides/images/customize-templates-boost.png",
       "output": {
         "resource": {
@@ -2448,6 +2437,17 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/customize-templates-button.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/customize-templates-environments.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/customize-templates-environments.png"
         }
       },
       "is_incremental": false,
