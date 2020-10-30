@@ -27,12 +27,12 @@ The message **Customize Template initiated** appears on the screen and the statu
 
 
 ## Repository structure after template customization
- The difference in the environment repository after the template customization  is represented by the presence of the  <span style="color:red">environments</span> folder, as it can be observed bellow.
+ The difference in the environment repository after the template customization  is the presence of the  <span style="color:red">environments</span> folder, as it can be observed bellow.
 
 If you want to keep the initial settings of your environment, it is advised to clone the environment and do the changes. Please check the following <a href="./http:/deploy-an-update-to-an-existing-environment.md" target="blank">**user guide**</a> to see how to clone an environment locally and get familiar with the below repository structure.
 <br>
 
-![](./images/customize-templates-after-boost.png)
+![](./images/customize-templates-environments.png)
 
 The structure of the <span style="color:red">environments</span> folder is represented by 4 folders *(found under common folder)*:
 - extraPlays
@@ -41,7 +41,7 @@ The structure of the <span style="color:red">environments</span> folder is repre
 - roles
 
 > [!Note]
-> Depending on the template type (Extend or Assemble), the **extraPlays** folder may be or may not be present. To check the template type, go to Templates Catalog button on the left side menu and check the template used for your environment. If it contains the Components section, it means this is an Assemble template type and the extraPlays folder will be present after boost action.
+> Depending on the template type (Extend or Assemble), the **extraPlays** folder may be or may not be present. To check the template type, go to Templates Catalog button on the left side menu and check the template used for your environment. If it contains the Components section, it means this is an Assemble template type and the extraPlays folder will be present after customize template action.
 
 
 > [!Important]
@@ -78,7 +78,7 @@ A role represents any of your environment applications or it can be a module/plu
 > Ansible automation tool is used by the Platform to automate the environment creation based on applications with specific requirements and installation steps. For more details about Ansible, please access this **<a href="https://docs.ansible.com/ansible/2.5/user_guide/quickstart.html" target="blank">link</a>**.
 
 ## Start template customization
-After boosting your environment, meaning that your environment repository contains all the folders and files related to your environment template, you can start the customization.
+
 There are several ways in which you can customize your environment template based on the type of your change.
 
 > [!Note]
