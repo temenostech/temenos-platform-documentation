@@ -252,8 +252,6 @@ To deploy DSF packages, the following components must be present in  Extend/ Ass
 <br>
 </br>
  
-# How does the bulk deploy functionality work
-The Bulk upload functionality is used to 
 
 # User Permissions Required
 To be able to perform the above operations the below permissions need to be enabled for your user:
