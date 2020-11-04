@@ -1,5 +1,5 @@
 
-# Deploy an update to an existing environment
+# Deploy an update to an existing environment 
 This document can be used by technical staff who need to deploy different features on a Temenos Continuous Deployment Environment. Each Environment has an associated Repository for uploading different type of features based on the Environment Template type, these features being deployed automatically to your Environment.
 
 Before proceeding, please check the following requirements:
