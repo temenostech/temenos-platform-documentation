@@ -43,7 +43,7 @@ This page provides information about the monthly Temenos Continuous Deployment P
 &nbsp;**|**&nbsp; **ControllerBuild**: 233  &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202008 |&nbsp; **WorkflowServiceTag**: 202008.RC7
 
 ## Technical enhancements
-&nbsp;&nbsp;&nbsp;&nbsp;**1. HTTPs server in front of SFTP Server**
+&nbsp;&nbsp;&nbsp;&nbsp;**1. The SFTP servers can now be accessed over HTTPS**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Access to SFTP server is now available through HTTPs (read more [here](http://documentation.temenos.cloud/home/techguides/https-in-front-of-sftp.html))
 
