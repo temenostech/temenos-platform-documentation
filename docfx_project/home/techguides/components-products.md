@@ -288,14 +288,17 @@ You can edit:
 
 # Artifactory view #
 
-The artifactory view displays the uploaded components that are available for the particular stages. 
+The artifactory view displays the uploaded components that are available for the all stages within a stream. 
 ![](./images/artifactory_view.png)
 
-- Click on the ![](./images/i-icon.png) icon to go to the artifactory page. You will be asked to insert the login details of the Artifactory:
+- Click on the ![](./images/i-icon.png) icon to go to the Artifactory page. You need to login with your portal credentials to the Artifactory:
+
  ![](./images/platform-artifactory-login.png)
 
-- Click on the ![](./images/arrow-icon.png) to expand the Component details. By clicking on the component.zip you can download the file to your local machine.
+- Click on the ![](./images/arrow-icon.png) icon to expand the Component details. Click on the *component.zip* to download the binary to your local machine:
 ![](./images/download-component.png)
+
+
 
 
 <br>
