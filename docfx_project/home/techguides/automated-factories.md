@@ -53,34 +53,49 @@ Below you will find the pre-requisites to run a Automated factory:
 
 3. Stages – No restriction. The factory can even choose to use the same Stage for all three stage values.
 
+4. During the factory setup all the mandatory fields need to be filled in the current tab. Otherwise you are not able to move to the next phases and the **Next** button is disabled.
 
-> [!Note]
-> See below configurations to understand better how to configure correctly and the factory's behavior.
+
+See below configurations to understand better how to configure correctly and the factory's behavior.
 
 # Set-up/ Create a Automated Factory #
 
 - Click on Settings button on the main menu on the left.
+
 - Make sure you select first the **Stream** and **Stage** (this is the stage where components are promoted) where you want to create a factory and then click **New Factory** button on the top-right.
+
 - Fill the required fields (see all definitions above and also below example):
 <b>
 </br>
 
 ## Factory Details 
-1. Add a **Factory Name**: choose a meaningful name for your factory
-2. Add a **Factory Description**: insert a description that will help knowing what the factory is about
+
+1. Add a **Factory Name**: choose a meaningful name for your factory.
+
+2. Add a **Factory Description**: insert a description that will help knowing what the factory is about.
+
 3. Click **Next**
-![factory-details](./images/factory-details.png)
+
+![](./images/factory-details.png)
 
 ## Product Configuration 
+
 This tab represents the test configuration that holds the template, the products and the source stage that are pre-tested from the perspective of the current factory.
+
     - **Template**: choose an Environment Template from the dropdown list. Based on this template  the environments will be created where you will be able to test different products
+   
     - **Select Principle Products**: following a successful run, the principle products are promoted to the next stage (the configured one)
+   
     - **Source Stage**: this is the stage with the stable version of components
+    
     - **Select Other Products**: you can select more products that are required to test the Principle products
+    
     - click **Next**
-![factory-product-configuration](./images/factory-product-configuration.png) 
+    
+![](./images/factory-product-configuration.png) 
 
 ## Test Configuration
+
 The Test Configuration consists in in-build service tasks and is used to  trigger tests for a given factory-run, trigger export of application logs.
 
 Depending on you organisation settings, you may/ may not have a Default Workflow or the option to select from a list of workflows defined by the users from your organisation. During this phase, you have to fill in the Workflow steps - a sample which displays the steps (in that exact sequence) that are executed by the selected workflow. Assuming that you select the Default Workflow, you need to fill in the following fields:
@@ -99,14 +114,14 @@ Depending on you organisation settings, you may/ may not have a Default Workflow
 Test Stage: represents a stable version of components that is pre-tested from the perspective of the current factory
 
 
-- **optional**: tick if the workflow should stop in case of failure
+- **Optional**: tick if the workflow should stop in case of failure
 
 
 - Click **Next**
 
 At the end of this step, when the first round of tests is completed, the test VM will be deleted, but it will not stop the T24 environment (this will be done at the end of the workflow)
 
-![factory-product-configuration](./images/factory-test-configuration.png) 
+![](./images/factory-test-configuration.png) 
 
 Assuming that you select a customized workflow with COB you need to fill in additional steps, such as:
 
@@ -132,7 +147,7 @@ A user has the privilege to configure the schedule of the factory run in order t
 - the scheduler can be configured to run one time per day
 - if the factory run test is successful you can choose to stop/ or keep running the T24 environment
 - the same applies for the Factory Run Failure scenario
-The 'Stop Environment' and 'Keep Running Environment' options are aimed to be used for costs purposes
+The **Stop Environment** and **Keep Running Environment** options are aimed to be used for costs purposes
 ![factory-scheduler](./images/factory-scheduler.png)
 
  To see the details of a factory please make sure to first select the stream and the stage from the top-right-side menu. If you have more stages, click on the stage where you created the respective factory. The list with the factories that belong to the respective stage will be displayed on the left side of the page:
