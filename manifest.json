@@ -1078,15 +1078,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/clone-environment.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/clone-environment.html",
-          "hash": "YQOpg3OkKyyY+t1maqMSVg=="
+          "hash": "VNToIHeNaMLBPNAH9G7SLA=="
         }
       },
       "is_incremental": false,
@@ -1993,6 +1990,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/clone-refresh.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/clone-refresh.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/clone-result.png",
       "output": {
         "resource": {
@@ -2173,6 +2181,17 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/copy-key.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/copy-sftp-url.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/copy-sftp-url.png"
         }
       },
       "is_incremental": false,
@@ -4908,6 +4927,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/modular-eye.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/modular-eye.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/monitor-application-result.png",
       "output": {
         "resource": {
@@ -5583,6 +5613,17 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/sanity-product-issue.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/save-as-new-template.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/save-as-new-template.png"
         }
       },
       "is_incremental": false,
@@ -6514,6 +6555,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/tafj-login.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/tafj-login.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/tafj-packager.png",
       "output": {
         "resource": {
@@ -6573,6 +6625,17 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/tafj-toggle-5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/tafj-web-application.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/tafj-web-application.png"
         }
       },
       "is_incremental": false,
@@ -7167,15 +7230,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/run-factory.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/run-factory.html",
-          "hash": "Hc2JCJalVfDgfhEbje3KwA=="
+          "hash": "Yndxmgdp4k/CIgdZsLtXMg=="
         }
       },
       "is_incremental": false,
@@ -7639,9 +7699,19 @@
         "incrementalPhase": "build"
       },
       "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "RestApiDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
@@ -7650,16 +7720,6 @@
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
-          "incrementalPhase": "build"
-        },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "RestApiDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
