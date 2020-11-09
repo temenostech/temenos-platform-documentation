@@ -114,34 +114,43 @@
 </li>
 <li><p>Stages – No restriction. The factory can even choose to use the same Stage for all three stage values.</p>
 </li>
+<li><p>During the factory setup all the mandatory fields need to be filled in the current tab. Otherwise you are not able to move to the next phases and the <strong>Next</strong> button is disabled.</p>
+</li>
 </ol>
-<div class="NOTE"><h5>Note</h5><p>See below configurations to understand better how to configure correctly and the factory&#39;s behavior.</p>
-</div>
+<p>See below configurations to understand better how to configure correctly and the factory&#39;s behavior.</p>
 <h1 id="set-up-create-a-automated-factory">Set-up/ Create a Automated Factory</h1>
 <ul>
-<li>Click on Settings button on the main menu on the left.</li>
-<li>Make sure you select first the <strong>Stream</strong> and <strong>Stage</strong> (this is the stage where components are promoted) where you want to create a factory and then click <strong>New Factory</strong> button on the top-right.</li>
-<li>Fill the required fields (see all definitions above and also below example):
+<li><p>Click on Settings button on the main menu on the left.</p>
+</li>
+<li><p>Make sure you select first the <strong>Stream</strong> and <strong>Stage</strong> (this is the stage where components are promoted) where you want to create a factory and then click <strong>New Factory</strong> button on the top-right.</p>
+</li>
+<li><p>Fill the required fields (see all definitions above and also below example):
 <b>
-<br></b></li>
+<br><p>
+</b></li>
 </ul>
 <h2 id="factory-details">Factory Details</h2>
 <ol>
-<li>Add a <strong>Factory Name</strong>: choose a meaningful name for your factory</li>
-<li>Add a <strong>Factory Description</strong>: insert a description that will help knowing what the factory is about</li>
-<li>Click <strong>Next</strong>
-<img src="images/factory-details.png" alt="factory-details"></li>
+<li><p>Add a <strong>Factory Name</strong>: choose a meaningful name for your factory.</p>
+</li>
+<li><p>Add a <strong>Factory Description</strong>: insert a description that will help knowing what the factory is about.</p>
+</li>
+<li><p>Click <strong>Next</strong></p>
+</li>
 </ol>
+<p><img src="images/factory-details.png" alt=""></p>
 <h2 id="product-configuration">Product Configuration</h2>
 <p>This tab represents the test configuration that holds the template, the products and the source stage that are pre-tested from the perspective of the current factory.</p>
-<ul>
-<li><strong>Template</strong>: choose an Environment Template from the dropdown list. Based on this template  the environments will be created where you will be able to test different products</li>
-<li><strong>Select Principle Products</strong>: following a successful run, the principle products are promoted to the next stage (the configured one)</li>
-<li><strong>Source Stage</strong>: this is the stage with the stable version of components</li>
-<li><strong>Select Other Products</strong>: you can select more products that are required to test the Principle products</li>
-<li>click <strong>Next</strong>
-<img src="images/factory-product-configuration.png" alt="factory-product-configuration"> </li>
-</ul>
+<pre><code>- **Template**: choose an Environment Template from the dropdown list. Based on this template  the environments will be created where you will be able to test different products
+
+- **Select Principle Products**: following a successful run, the principle products are promoted to the next stage (the configured one)
+
+- **Source Stage**: this is the stage with the stable version of components
+
+- **Select Other Products**: you can select more products that are required to test the Principle products
+
+- click **Next**
+</code></pre><p><img src="images/factory-product-configuration.png" alt=""> </p>
 <h2 id="test-configuration">Test Configuration</h2>
 <p>The Test Configuration consists in in-build service tasks and is used to  trigger tests for a given factory-run, trigger export of application logs.</p>
 <p>Depending on you organisation settings, you may/ may not have a Default Workflow or the option to select from a list of workflows defined by the users from your organisation. During this phase, you have to fill in the Workflow steps - a sample which displays the steps (in that exact sequence) that are executed by the selected workflow. Assuming that you select the Default Workflow, you need to fill in the following fields:</p>
@@ -153,13 +162,13 @@
 <li><p><strong>No of VMs</strong>: number of test VM&#39;s to be created during factory run
 Test Stage: represents a stable version of components that is pre-tested from the perspective of the current factory</p>
 </li>
-<li><p><strong>optional</strong>: tick if the workflow should stop in case of failure</p>
+<li><p><strong>Optional</strong>: tick if the workflow should stop in case of failure</p>
 </li>
 <li><p>Click <strong>Next</strong></p>
 </li>
 </ul>
 <p>At the end of this step, when the first round of tests is completed, the test VM will be deleted, but it will not stop the T24 environment (this will be done at the end of the workflow)</p>
-<p><img src="images/factory-test-configuration.png" alt="factory-product-configuration"> </p>
+<p><img src="images/factory-test-configuration.png" alt=""> </p>
 <p>Assuming that you select a customized workflow with COB you need to fill in additional steps, such as:</p>
 <ul>
 <li>type in the ID of the TSA.SERVICE record for which COB has to be run. The id can be either group specific id (eg: COB-1, COB-001) , company specific id (eg: COB-GB0010001) or COB. Important: currently the platform can handle 20 agents at max, including the online services.</li>
@@ -178,7 +187,7 @@ Test Stage: represents a stable version of components that is pre-tested from th
 <li>the scheduler can be configured to run one time per day</li>
 <li>if the factory run test is successful you can choose to stop/ or keep running the T24 environment</li>
 <li><p>the same applies for the Factory Run Failure scenario
-The &#39;Stop Environment&#39; and &#39;Keep Running Environment&#39; options are aimed to be used for costs purposes
+The <strong>Stop Environment</strong> and <strong>Keep Running Environment</strong> options are aimed to be used for costs purposes
 <img src="images/factory-scheduler.png" alt="factory-scheduler"></p>
 <p>To see the details of a factory please make sure to first select the stream and the stage from the top-right-side menu. If you have more stages, click on the stage where you created the respective factory. The list with the factories that belong to the respective stage will be displayed on the left side of the page:
 <img src="images/factory-see-details.png" alt=""></p>

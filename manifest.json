@@ -1071,7 +1071,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/automated-factories.html",
-          "hash": "CppGOM1SDLnYRt/pmlE4yw=="
+          "hash": "p4vjX/6xnvTjiZsb1Ey4kQ=="
         }
       },
       "is_incremental": false,
@@ -1565,6 +1565,17 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/app_endp1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/application-logs.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/application-logs.png"
         }
       },
       "is_incremental": false,
@@ -7021,6 +7032,17 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/users-tab.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/view-test-scripts-location.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/view-test-scripts-location.png"
         }
       },
       "is_incremental": false,
