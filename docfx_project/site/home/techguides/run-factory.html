@@ -105,10 +105,10 @@
 <br></p>
 </li>
 <li><p><strong>Scenario 2</strong> - If the factory environment status is <strong>STOPPED</strong> and previous environment status is <strong>STARTED</strong> - the factory run automatically starts the environment and once it is <strong>STARTED</strong>, it triggers the test environment. </p>
-<blockquote><p>Note: if the factory environment creation has failed during the previous factory run, it is not possible to use it for your current factory run. You need to first identify and solve the issue in order to see the <strong>Reuse the existing environment from previous factory run without overwriting it</strong> in the pop-up. Otherwise this checkbox will not appear in the pop-up.</p>
-</blockquote>
 </li>
 </ul>
+<div class="NOTE"><h5>Note</h5><p>If the factory environment creation has failed during the previous factory run, it is not possible to use it for your current factory run. You need to first identify and solve the issue in order to see the <strong>Reuse the existing environment from previous factory run without overwriting it</strong> in the pop-up. Otherwise this checkbox will not appear in the pop-up.</p>
+</div>
 <p><br> </p>
 <p>Once the <strong>Run</strong> button is clicked, the process is initiated and it gets immediately to the stage where an environment based on your chosen template is created:</p>
 <p><img src="images/run-factory-deploy.png" alt=""></p>
@@ -152,10 +152,10 @@
 </li>
 <li><p><img src="images/modular-eye.png" alt=""> - click on the modular eye icon to view the test results in a new page as below:</p>
 <p><img src="images/run-factory-see-results.png" alt=""></p>
-<blockquote><p>Note: The Test Results URL is accessible as long as the portal login session is valid. When the portal session expires, the test results page throws a 401 error.</p>
-</blockquote>
 </li>
 </ul>
+<div class="NOTE"><h5>Note</h5><p>The Test Results URL is accessible as long as the portal login session is valid. When the portal session expires, the test results page throws a 401 error.</p>
+</div>
 <p>Based on any factory run, the user can take several actions:</p>
 <ul>
 <li><p><strong>Trigger New Environment</strong> - trigger a new environment to do triage, demo or ad-hoc testing (this will clone the factory environment)</p>
@@ -169,8 +169,8 @@
 </ul>
 <p><img src="images/run-factory-new-environment.png" alt=""></p>
 <div class="NOTE"><h5>Note</h5><p>The &#39;Create New Template&#39; button will be available only if the factory run is successful. </p>
-<p> If  you want to have the creation of the new template enabled even when the factory run fails go to General on the left side of the menu and select the &#39;Setup Factory&#39; tab. Tick the &#39;Yes&#39; value that corresponds to the key &#39;Do you want to allow creation of template from failed factories&#39;.</p>
 </div>
+<p> If  you want to have the creation of the new template enabled even when the factory run fails go to General on the left side of the menu and select the &#39;Setup Factory&#39; tab. Tick the &#39;Yes&#39; value that corresponds to the key &#39;Do you want to allow creation of template from failed factories&#39;.</p>
 <p>   <img src="images/trigger-new-template.png" alt=""></p>
 <h1 id="user-permissions-required">User Permissions Required</h1>
 <p>To be able to perform the above operations the below permissions need to be enabled for your user:</p>

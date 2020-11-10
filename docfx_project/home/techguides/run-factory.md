@@ -14,32 +14,35 @@ If the factory has never been run, you will notice the following message on the 
 
 If the factory has been run at least once, a pop-up appears which enables you to proceed with the factory run by creating a new transact environment or skipping the factory environment creation for the current factory run. This functionality is useful when you want to change the tests and use the same Transact environment used for a previous factory run.
 
-![](./images/skip-environment.png)
+   ![](./images/skip-environment.png)
 <br>
 
- **- Option 1**: If you want to skip the factory environment creation and reuse the environment from the previous factory run, select the option **Reuse the existing environment from previous factory run without overwriting it** and click on **Run** button.
+-  **Option 1**: If you want to skip the factory environment creation and reuse the environment from the previous factory run, select the option **Reuse the existing environment from previous factory run without overwriting it** and click on **Run** button.
 
- **- Option 2**: If you don't want to skip the factory environment creation just click on **Run** button.
+
+
+-  **Option 2**: If you don't want to skip the factory environment creation just click on **Run** button.
+<br>
+</br>
 
 See the following scenarios if you choose to skip the factory environment creation:
 
-  - **Scenario 1** - If the factory environment status is **STARTED**, the factory run will trigger directly the test environment. See below an example of the factory run timeline for this scenario:
+  - **Scenario 1** - If the factory environment status is **STARTED**, the factory run will trigger directly the test environment. 
 
   ![](./images/factory_run_started_env.png)
 <br>
 
 
-  - **Scenario 2** - If the factory environment status is **STOPPED** and previous environment status is **STARTED** - the factory run automatically starts the environment and once it is **STARTED**, it triggers the test environment. See below an example of the factory run timeline for this scenario:
+  - **Scenario 2** - If the factory environment status is **STOPPED** and previous environment status is **STARTED** - the factory run automatically starts the environment and once it is **STARTED**, it triggers the test environment. 
 
-  ![](./images/factory_run_stopped_env.png)
-
-
- >Note: if the factory environment creation has failed during the previous factory run, it is not possible to use it for your current factory run. You need to first identify and solve the issue in order to see the **Reuse the existing environment from previous factory run without overwriting it** in the pop-up. Otherwise this checkbox will not appear in the pop-up.
+> [!Note]
+> If the factory environment creation has failed during the previous factory run, it is not possible to use it for your current factory run. You need to first identify and solve the issue in order to see the **Reuse the existing environment from previous factory run without overwriting it** in the pop-up. Otherwise this checkbox will not appear in the pop-up.
  
-<br>
+
+<br> 
 
 
-Once the **Run** button is clicked, the process is initiated and it gets immediately to the stage where an environment based on your chosen template is created. 
+Once the **Run** button is clicked, the process is initiated and it gets immediately to the stage where an environment based on your chosen template is created:
 
 ![](./images/run-factory-deploy.png)
 
@@ -76,23 +79,30 @@ During the factory run you are able to:
  > 2. A factory can be enabled or disabled at any time. If a factory is disabled, factory runs (both scheduled and user triggered) will not be triggered. 
 
 
-After the environment deployment phase is completed, the next phase (stage) is Running Test Deploy. During this phase a test environment is created (you can check it under Environments tab). 
+After the environment deployment phase is complete, the next phase (stage) is Running Test Deploy. During this phase a test environment is created (you can check it under Environments tab). 
 
 **Note** that this environment is automatically deleted after the tests are run and the process is completed.
 
 ![](./images/run-factory-create-test.png)
 
- After running the tests successfully, you will see some details about all stages and the results, as in the example below. You can either download the test results or open them in a new page:
+ After running the tests successfully, you will see some details about all stages and the results, as in the example below 
 
 ![](./images/run-factory-completed.png)
 
-- click on ![](./images/downloadable-icon2.png) to store the results on your local machine
+You are able to do the following:
 
-- click on ![](./images/modular-eye.png) to view the test results in a new page
+- ![](./images/view-test-scripts-location.png) - click to view the test scripts location in the Artifactory (you need to login with your user credentials)
+
+-  ![](./images/application-logs.png) - click to download the factory logs
+
+-  ![](./images/downloadable-icon2.png) - click on the downloadable icon to store the results on your local machine
+
+-   ![](./images/modular-eye.png) - click on the modular eye icon to view the test results in a new page as below:
 
  ![](./images/run-factory-see-results.png)
 
- >Note: The Test Results URL is accessible as long as the portal login session is valid. When the portal session expires, the test results page throws a 401 error.
+> [!Note]
+>The Test Results URL is accessible as long as the portal login session is valid. When the portal session expires, the test results page throws a 401 error.
 
 
 Based on any factory run, the user can take several actions:
@@ -107,8 +117,9 @@ Based on any factory run, the user can take several actions:
 
 ![](./images/run-factory-new-environment.png)
 
-> [!Note] The 'Create New Template' button will be available only if the factory run is successful. 
-> 
+> [!Note] 
+> The 'Create New Template' button will be available only if the factory run is successful. 
+
  If  you want to have the creation of the new template enabled even when the factory run fails go to General on the left side of the menu and select the 'Setup Factory' tab. Tick the 'Yes' value that corresponds to the key 'Do you want to allow creation of template from failed factories'.
 
    ![](./images/trigger-new-template.png)

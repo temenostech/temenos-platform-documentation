@@ -31,7 +31,7 @@ Below you will find the pre-requisites to run a Automated factory:
 
  a. Environment Template - holds the details of the template that is to be used to deploy the components selected by the factory
 
- b. Test Template – specifies the template that is required to deploy a test environment that holds the testing framework and test scripts. This is needed to generalize the test tools as a template.
+ b. Test Template – specifies the template that is required to deploy a test environment that holds the testing framework.
 
 
 
@@ -82,15 +82,15 @@ See below configurations to understand better how to configure correctly and the
 
 This tab represents the test configuration that holds the template, the products and the source stage that are pre-tested from the perspective of the current factory.
 
-    - **Template**: choose an Environment Template from the dropdown list. Based on this template  the environments will be created where you will be able to test different products
+   - **Template**: choose an Environment Template from the dropdown list. Based on this template  the environments will be created where you will be able to test different products
    
-    - **Select Principle Products**: following a successful run, the principle products are promoted to the next stage (the configured one)
+   - **Select Principle Products**: following a successful run, the principle products are promoted to the next stage (the configured one)
+  
+   - **Source Stage**: this is the stage with the stable version of components
+    
+   - **Select Other Products**: you can select more products that are required to test the Principle products
    
-    - **Source Stage**: this is the stage with the stable version of components
-    
-    - **Select Other Products**: you can select more products that are required to test the Principle products
-    
-    - click **Next**
+   - click **Next**
     
 ![](./images/factory-product-configuration.png) 
 
@@ -98,7 +98,7 @@ This tab represents the test configuration that holds the template, the products
 
 The Test Configuration consists in in-build service tasks and is used to  trigger tests for a given factory-run, trigger export of application logs.
 
-Depending on you organisation settings, you may/ may not have a Default Workflow or the option to select from a list of workflows defined by the users from your organisation. During this phase, you have to fill in the Workflow steps - a sample which displays the steps (in that exact sequence) that are executed by the selected workflow. Assuming that you select the Default Workflow, you need to fill in the following fields:
+Depending on your organisation settings, you may / may not have a Default Workflow or the option to select from a list of workflows defined by the users from your organisation. During this phase, you have to fill in the **Workflow** steps - a sample which displays the steps (in that exact sequence) that are executed by the selected workflow. Assuming that you select the **Default Workflow**, you need to fill in the following fields:
 
 
 
@@ -110,7 +110,7 @@ Depending on you organisation settings, you may/ may not have a Default Workflow
 - **Component**: this is the component that holds the test scripts which runs against the T24 VM
 
 
-- **No of VMs**: number of test VM's to be created during factory run
+- **No. of VMs**: number of test VM's to be created during factory run
 Test Stage: represents a stable version of components that is pre-tested from the perspective of the current factory
 
 
@@ -125,7 +125,7 @@ At the end of this step, when the first round of tests is completed, the test VM
 
 Assuming that you select a customized workflow with COB you need to fill in additional steps, such as:
 
-- type in the ID of the TSA.SERVICE record for which COB has to be run. The id can be either group specific id (eg: COB-1, COB-001) , company specific id (eg: COB-GB0010001) or COB. Important: currently the platform can handle 20 agents at max, including the online services.
+- type in the ID of the TSA.SERVICE record for which COB has to be run. The ID can be either group specific ID (eg: COB-1, COB-001) , company specific ID (eg: COB-GB0010001) or COB. Important: currently the platform can handle 20 agents at max, including the online services.
 
 To get a better understanding of what happens when COB is triggered please refer to [THIS](http://documentation.temenos.cloud/home/techguides/trigger-cob.html) user guide.
 
@@ -143,14 +143,19 @@ This configuration enables the user to select all the required principle product
 
 
 #### Factory Scheduler
-A user has the privilege to configure the schedule of the factory run in order to automatically run the tests and have the results available daily.
+A user has the privilege to configure the factory run schedule to automatically run the tests and have the results available daily.
+
 - the scheduler can be configured to run one time per day
-- if the factory run test is successful you can choose to stop/ or keep running the T24 environment
+
+- if the factory run test is successful you can choose to stop, or keep running the T24 environment
+
 - the same applies for the Factory Run Failure scenario
+
 The **Stop Environment** and **Keep Running Environment** options are aimed to be used for costs purposes
+
 ![factory-scheduler](./images/factory-scheduler.png)
 
- To see the details of a factory please make sure to first select the stream and the stage from the top-right-side menu. If you have more stages, click on the stage where you created the respective factory. The list with the factories that belong to the respective stage will be displayed on the left side of the page:
+ To see the details of a factory first select the stream and the stage from the top-right-side menu. If you have more stages, click on the stage where you created the respective factory. The list with the factories that belong to the respective stage will be displayed on the left side of the page:
 ![](./images/factory-see-details.png)
 
 

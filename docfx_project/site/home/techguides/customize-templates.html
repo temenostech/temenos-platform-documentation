@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Boost your environment and customize templates </title>
+    <title>Customize templates </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Boost your environment and customize templates ">
+    <meta name="title" content="Customize templates ">
     <meta name="generator" content="docfx 2.22.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -20,7 +20,7 @@
     <meta property="docfx:rel" content="../../">
     
   </head>
-  <body data-spy="scroll" data-target="#affix" class="Boost your environment and customize templates ">
+  <body data-spy="scroll" data-target="#affix" class="Customize templates ">
     <div id="wrapper">
       <header>
         
@@ -79,7 +79,7 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="boost-your-environment-and-customize-templates">Boost your environment and customize templates</h1>
+<h1 id="customize-templates">Customize templates</h1>
 
 <h2 id="introduction">Introduction</h2>
 <p>This document can be used by technical staff who need to customize already defined templates based on specific requirements. Templates customization will allow changes related to:</p>
@@ -89,20 +89,20 @@
 </ul>
 <div class="NOTE"><h5>Note</h5><p>This guide presumes that a environment is already created and available under an Organisation for which the templates customization functionality is allowed.</p>
 </div>
-<h2 id="boost-your-environment">Boost your environment</h2>
-<p>To start customizing your environment built using a Temenos Continuous Deployment Platform template, login to Temenos Continuous Deployment platform using your organisation user, go to your environment page and click on the <strong>Boost</strong> button attached to <strong>Repository</strong> application.</p>
-<p><img src="images/customize-templates-button.png" alt="boost 1"></p>
-<p>After clicking the Boost button, you will receive a notification message - &#39;Customize your scripts&#39; - referring to this user guide and agreeing with the action.</p>
-<p>The message &#39;Repository boosting initiated!&quot; appears on the screen and the status of Repository application is changed to <span style="color:orange">Boosting</span>, as per bellow picture. The operation triggered by the Boost button will copy in environment repository all the template files used to create the environment.
-<img src="images/customize-templates-boost.png" alt="boost 2"></p>
-<div class="NOTE"><h5>Note</h5><p>Click the <strong>Refresh</strong> button to see when boosting action is completed.</p>
+<p>To start customizing your environment built using a Temenos Continuous Deployment Platform template, login to Temenos Continuous Deployment platform using your organisation user, go to your environment page and click on the <strong>Customize Template</strong> button attached to <strong>Repository</strong> application.</p>
+<p><img src="images/customize-template-button.png" alt=""></p>
+<p>After clicking the <strong>Customize Template</strong> button, a notification appears which informs that <em>This will initiate template customization based on environment specifications and also change the automation scripts. Please review the Templates Customization guide.</em> Tick the box and click <strong>Confirm</strong> to proceed.</p>
+<p><img src="images/customize-template-notification.png" alt=""></p>
+<p>The message <strong>Customize Template initiated</strong> appears on the screen and the status of Repository application is changed to <span style="color:orange">Customizing</span>, as per bellow picture. The operation triggered by the <strong>Customize Template</strong> button copies in the environment repository all the template files used to create the environment.</p>
+<p><img src="images/boosting-notification.png" alt=""></p>
+<div class="NOTE"><h5>Note</h5><p>Click the <strong>Refresh</strong> button to see when the template customization is completed.</p>
 <p>Also below the environment description, following message is displayed &quot;Scripts are customized for this environment.&quot; and the button <strong>Save as a new template</strong> appears. </p>
 </div>
-<h2 id="repository-structure-after-boost">Repository structure after Boost</h2>
-<p>As stated above, the Boost operation will make changes to environment repository. The difference between the before and after boost environment repository versions is represented by the presence of <span style="color:red">environments</span> folder, as it can be observed bellow.</p>
-<p>If you want to keep the initial settings of your environment, it is advised to clone the environment and do the changes. Please check the following <a href="use-gitlab-repository.md" target="blank"><strong>user guide</strong></a> to see how to clone an environment locally and get familiar with the below repository structure.
+<h2 id="repository-structure-after-template-customization">Repository structure after template customization</h2>
+<p> The difference in the environment repository after the template customization  is the presence of the  <span style="color:red">environments</span> folder, as it can be observed bellow.</p>
+<p>If you want to keep the initial settings of your environment, it is advised to clone the environment and do the changes. Please check the following <a href="./http:/deploy-an-update-to-an-existing-environment.md" target="blank"><strong>user guide</strong></a> to see how to clone an environment locally and get familiar with the below repository structure.
 <br></p>
-<p><img src="images/customize-templates-after-boost.png" alt="boost 4"></p>
+<p><img src="images/customize-templates-environments.png" alt=""></p>
 <p>The structure of the <span style="color:red">environments</span> folder is represented by 4 folders <em>(found under common folder)</em>:</p>
 <ul>
 <li>extraPlays</li>
@@ -110,14 +110,14 @@
 <li>playbooks</li>
 <li>roles</li>
 </ul>
-<div class="NOTE"><h5>Note</h5><p>Depending on the template type (Extend or Assemble), the <strong>extraPlays</strong> folder may be or may not be present. To check the template type, go to Templates Catalog button on the left side menu and check the template used for your environment. If it contains the Components section, it means this is an Assemble template type and the extraPlays folder will be present after boost action.</p>
+<div class="NOTE"><h5>Note</h5><p>Depending on the template type (Extend or Assemble), the <strong>extraPlays</strong> folder may be or may not be present. To check the template type, go to Templates Catalog button on the left side menu and check the template used for your environment. If it contains the Components section, it means this is an Assemble template type and the extraPlays folder will be present after customize template action.</p>
 </div>
 <div class="IMPORTANT"><h5>Important</h5><p>Depending on the template type (Extend or Assemble), the <strong>infra-templates</strong> and <strong>roles</strong> folders content may differ.
 For example:</p>
-<p>-- for extend templates, to change h2db role you need to change main.yml file from common/roles/h2/tasks/</p>
-<p>-- for assemble templates to change h2db role you need to change deploy_main.yml file from common/roles/h2db/tasks/</p>
+<p>-- for <strong>Extend</strong> templates, to change the h2db role you need to change the  main.yml file from common/roles/h2/tasks/</p>
+<p>-- for <strong>Assemble</strong> templates to change the h2db role you need to change the deploy_main.yml file from common/roles/h2db/tasks/</p>
 </div>
-<p><img src="images/customize-templates-structure.png" alt="boost 5"></p>
+<p><img src="images/customize-templates-structure.png" alt=""></p>
 <p>The description of each folder is presented bellow:</p>
 <table>
 <thead>
@@ -157,12 +157,11 @@ For example:</p>
 </ul>
 <div class="NOTE"><h5>Note</h5><p>A role definition must include at least one of the above folders. Thus, any unused folders can be excluded. However, any in use folder must include a <strong>main.yml</strong> file that contains the relevant information, respectively a <strong>deploy_main.yml</strong> file in case of assemble templates..</p>
 </div>
-<div class="NOTE"><h5>Note</h5><p>Ansible automation tool is used by the Cloud Platform to automate environment creation based on applications with specific requirements and installation steps. For more details about Ansible, please access this <strong><a href="https://docs.ansible.com/ansible/2.5/user_guide/quickstart.html" target="blank">link</a></strong>.</p>
+<div class="NOTE"><h5>Note</h5><p>Ansible automation tool is used by the Platform to automate the environment creation based on applications with specific requirements and installation steps. For more details about Ansible, please access this <strong><a href="https://docs.ansible.com/ansible/2.5/user_guide/quickstart.html" target="blank">link</a></strong>.</p>
 </div>
 <h2 id="start-template-customization">Start template customization</h2>
-<p>After boosting your environment, meaning that your environment repository contains all the folders and files related to your environment template, you can start the customization.
-There are several ways in which you can customize your environment template based on the type of your change.</p>
-<div class="NOTE"><h5>Note</h5><p>All the changes that must be implemented to a cloud environment template can be done only in <u>environment repository</u>. Thus, environment repository must be cloned in your local machine. For more information about how to clone an environment repository, please check this <strong><a href="use-gitlab-repository.md" target="blank">page</a></strong>.</p>
+<p>There are several ways in which you can customize your environment template based on the type of your change.</p>
+<div class="NOTE"><h5>Note</h5><p>All the changes that must be implemented to a cloud environment template can be done only in <u>environment repository</u>. Thus, environment repository must be cloned in your local machine. For more information about how to clone an environment repository, please check this <strong><a href="./use-gitlab-repository.md" target="blank">page</a></strong>.</p>
 </div>
 <ol>
 <li><p>Changes that will require <span style="color:red;font-weight:600;">the rebuild of your environment</span>:</p>
@@ -199,7 +198,7 @@ The detailed VM specifications can be viewed <strong><a href="https://docs.micro
 <li>Changes related to roles tha represent a module/plugin/framework and not an application.
 <p style="padding-left: 10px">New roles that represent a module/plugin/framework and not an application can be added to an application of your environment. In order to accomplish this, a new role along its settings must be created in <em><span style="background-color: #858382;color: white;"> /environments/common/roles </span></em> &nbsp;folder and the new role must be added to the specific application in <em><span style="color:#D2940F;font-weight:600;">playbook.yml</span></em> file from <em><span style="background-color: #858382;color: white;"> /environments/common/playbooks </span></em> &nbsp;folder. After this, push all these changes to environment repository and trigger the deployment.</p></li>
 <li>Changes that are not related to environment template.
-<p style="padding-left: 10px">For the changes described <strong><a href="use-gitlab-repository.md#repository-structure" target="blank">here</a></strong> that are not related to environment template, you just have to commit and push the required changes to your environment repository and trigger the deployment.</p></li>
+<p style="padding-left: 10px">For the changes described <strong><a href="./use-gitlab-repository.md#repository-structure" target="blank">here</a></strong> that are not related to environment template, you just have to commit and push the required changes to your environment repository and trigger the deployment.</p></li>
 </ul>
 <div class="NOTE"><h5>Note</h5><p>If the deployment operation is not successful for your changes, please rebuild the environment.</p>
 </div>
@@ -208,10 +207,10 @@ The detailed VM specifications can be viewed <strong><a href="https://docs.micro
 <p>The cloud portal catalogue of available templates can be checked <strong><a href="../temenos-cloud-templates.html" target="blank">here</a></strong>.</p>
 <!-- <br /><span style="font-size:20px">text</span> -->
 <h2 id="save-new-template">Save New Template</h2>
-<p>After doing the above steps (template customization), go to <strong>Save as a new template</strong> button and fill the required fields, as in the example below:</p>
-<p><img src="images/customize-save-template.png" alt="boost 7"></p>
-<p>You will see a message on the screen &quot;Environment saved as a new template&quot;.</p>
-<p>Go to Templates Catalog and search for the new template, which should be available in the templates list.</p>
+<p>After doing the above steps (template customization), go to the <strong>Actions</strong> tab on your environment, select the <strong>Save as a new template</strong> option. Fill in the <strong>Environment Name</strong>, <strong>Environment Description</strong>, read the note, tick the confirmation by which you <strong>understand the Save As Template action and agree to proceed further</strong>, then click <strong>Save</strong>.</p>
+<p><img src="images/env-save-new-template.png" alt=""></p>
+<p>You will see a message on the screen <strong>Environment saved as a new template</strong>.</p>
+<p>Go to <strong>Templates Catalog</strong> and search for the new template, which will be available in the templates list.</p>
 <p><img src="images/customize-search-catalog.png" alt=""></p>
 <p><br></p>
               <hr>
