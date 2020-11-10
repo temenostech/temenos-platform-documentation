@@ -88,24 +88,29 @@
 <p><img src="images/run-factory-dashboard.png" alt=""> 
 <br></p>
 <p>If the factory has been run at least once, a pop-up appears which enables you to proceed with the factory run by creating a new transact environment or skipping the factory environment creation for the current factory run. This functionality is useful when you want to change the tests and use the same Transact environment used for a previous factory run.</p>
-<p><img src="images/skip-environment.png" alt="">
+<p>   <img src="images/skip-environment.png" alt="">
 <br></p>
-<p> <strong>- Option 1</strong>: If you want to skip the factory environment creation and reuse the environment from the previous factory run, select the option <strong>Reuse the existing environment from previous factory run without overwriting it</strong> and click on <strong>Run</strong> button.</p>
-<p> <strong>- Option 2</strong>: If you don&#39;t want to skip the factory environment creation just click on <strong>Run</strong> button.</p>
+<ul>
+<li><p><strong>Option 1</strong>: If you want to skip the factory environment creation and reuse the environment from the previous factory run, select the option <strong>Reuse the existing environment from previous factory run without overwriting it</strong> and click on <strong>Run</strong> button.</p>
+</li>
+<li><p><strong>Option 2</strong>: If you don&#39;t want to skip the factory environment creation just click on <strong>Run</strong> button.
+<br>
+</br></p>
+</li>
+</ul>
 <p>See the following scenarios if you choose to skip the factory environment creation:</p>
 <ul>
-<li><p><strong>Scenario 1</strong> - If the factory environment status is <strong>STARTED</strong>, the factory run will trigger directly the test environment. See below an example of the factory run timeline for this scenario:</p>
+<li><p><strong>Scenario 1</strong> - If the factory environment status is <strong>STARTED</strong>, the factory run will trigger directly the test environment. </p>
 <p><img src="images/factory_run_started_env.png" alt="">
 <br></p>
 </li>
-<li><p><strong>Scenario 2</strong> - If the factory environment status is <strong>STOPPED</strong> and previous environment status is <strong>STARTED</strong> - the factory run automatically starts the environment and once it is <strong>STARTED</strong>, it triggers the test environment. See below an example of the factory run timeline for this scenario:</p>
-<p><img src="images/factory_run_stopped_env.png" alt=""></p>
-</li>
-</ul>
+<li><p><strong>Scenario 2</strong> - If the factory environment status is <strong>STOPPED</strong> and previous environment status is <strong>STARTED</strong> - the factory run automatically starts the environment and once it is <strong>STARTED</strong>, it triggers the test environment. </p>
 <blockquote><p>Note: if the factory environment creation has failed during the previous factory run, it is not possible to use it for your current factory run. You need to first identify and solve the issue in order to see the <strong>Reuse the existing environment from previous factory run without overwriting it</strong> in the pop-up. Otherwise this checkbox will not appear in the pop-up.</p>
 </blockquote>
-<p><br></p>
-<p>Once the <strong>Run</strong> button is clicked, the process is initiated and it gets immediately to the stage where an environment based on your chosen template is created. </p>
+</li>
+</ul>
+<p><br> </p>
+<p>Once the <strong>Run</strong> button is clicked, the process is initiated and it gets immediately to the stage where an environment based on your chosen template is created:</p>
 <p><img src="images/run-factory-deploy.png" alt=""></p>
 <p>During the factory run you are able to:</p>
 <ol>
@@ -135,12 +140,17 @@
 <p>After the environment deployment phase is completed, the next phase (stage) is Running Test Deploy. During this phase a test environment is created (you can check it under Environments tab). </p>
 <p><strong>Note</strong> that this environment is automatically deleted after the tests are run and the process is completed.</p>
 <p><img src="images/run-factory-create-test.png" alt=""></p>
-<p> After running the tests successfully, you will see some details about all stages and the results, as in the example below. You can either download the test results or open them in a new page:</p>
+<p> After running the tests successfully, you will see some details about all stages and the results, as in the example below </p>
 <p><img src="images/run-factory-completed.png" alt=""></p>
+<p>You are able to do the following:</p>
 <ul>
-<li><p>click on <img src="images/downloadable-icon2.png" alt=""> to store the results on your local machine</p>
+<li><p><img src="images/view-test-scripts-location.png" alt=""> - click to view the test scripts location in the Artifactory (you need to login with your user credentials)</p>
 </li>
-<li><p>click on <img src="./images/modular-eye.png" alt=""> to view the test results in a new page</p>
+<li><p><img src="images/application-logs.png" alt=""> - click to download the factory logs</p>
+</li>
+<li><p><img src="images/downloadable-icon2.png" alt=""> - click on the downloadable icon to store the results on your local machine</p>
+</li>
+<li><p><img src="images/modular-eye.png" alt=""> - click on the modular eye icon to view the test results in a new page as below:</p>
 <p><img src="images/run-factory-see-results.png" alt=""></p>
 <blockquote><p>Note: The Test Results URL is accessible as long as the portal login session is valid. When the portal session expires, the test results page throws a 401 error.</p>
 </blockquote>
