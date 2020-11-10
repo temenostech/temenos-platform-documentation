@@ -1,6 +1,6 @@
 # How to Create and Publish a New Template after a Successful Factory Run 
 
-This feature offers the possibility to baseline a particular version of a product and create a template from that version. Further anybody will be able to create an environment with the baselined version of the product.
+This feature offers the possibility to baseline a particular version of a product and create a template from that version. Furthermore anybody will be able to create an environment with the baselined version of the product.
 
 To set up the factory, follow the steps from [here](http://documentation.temenos.cloud/home/techguides/factories.html "here").
 
