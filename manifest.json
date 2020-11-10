@@ -331,6 +331,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/images/env-new.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/env-new.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/images/env-template-list.png",
       "output": {
         "resource": {
@@ -379,6 +390,17 @@
       "output": {
         "resource": {
           "relative_path": "home/images/external-connectivity-tcd-org-services.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/idler-session-timeout.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/idler-session-timeout.png"
         }
       },
       "is_incremental": false,
@@ -628,6 +650,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/images/template-components-list.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/template-components-list.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/images/template-details.png",
       "output": {
         "resource": {
@@ -850,15 +883,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "home/manage-environments.md",
       "output": {
         ".html": {
           "relative_path": "home/manage-environments.html",
-          "hash": "droaEO3a4ul4MQHGQjQwZw=="
+          "hash": "j6Cyl9nPNBjxJPuP00kV+A=="
         }
       },
       "is_incremental": false,
@@ -1071,7 +1101,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/automated-factories.html",
-          "hash": "p4vjX/6xnvTjiZsb1Ey4kQ=="
+          "hash": "fxui3wkAQk3zruPBi/JOuA=="
         }
       },
       "is_incremental": false,
@@ -7257,7 +7287,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/run-factory.html",
-          "hash": "Yndxmgdp4k/CIgdZsLtXMg=="
+          "hash": "Ko3ojp7hn+4bHH6O2igvdA=="
         }
       },
       "is_incremental": false,
@@ -7482,7 +7512,7 @@
       "output": {
         ".html": {
           "relative_path": "home/user-creation-in-paas.html",
-          "hash": "UgrNSu16vTMf+UxmIzxxMA=="
+          "hash": "PNkaT7FeZSEg7ma/RcUcRQ=="
         }
       },
       "is_incremental": false,
@@ -7726,6 +7756,11 @@
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "RestApiDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -7737,11 +7772,6 @@
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
-          "incrementalPhase": "build"
-        },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
