@@ -138,7 +138,8 @@ To get a better understanding of what happens when COB is triggered please refer
 This configuration enables the user to select all the required principle products along with the target stage to which they will be promoted after a successful factory run. In addition, the user can select the Test Components along with the target stage if they need promotion as well. 
 ![factory-promotion-configuration](./images/factory-promotion-configuration.png)
 
->Note: it is not mandatory to fill in the Tests to Promote field and the associated Select target stage for Tests from the right side. 
+> [!Note]
+ > It is not mandatory to fill in the Tests to Promote field and the associated Select target stage for Tests from the right side. 
 
 
 
