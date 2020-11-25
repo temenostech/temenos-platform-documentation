@@ -12,7 +12,7 @@ This page provides information about the monthly Temenos Continuous Deployment P
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Organization Admins can now reset other user's password. (read more [here](http://documentation.temenos.cloud/home/user-creation-in-paas.html#recover-password)). 
 <br>
-</br> 
+</br>  
 
 &nbsp;&nbsp;&nbsp;&nbsp;**2. Change in the naming convention of the downloaded test results**
 
