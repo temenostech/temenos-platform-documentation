@@ -23,7 +23,7 @@ This page provides information about the monthly Temenos Continuous Deployment P
 &nbsp;&nbsp;&nbsp;&nbsp;**3. Factory run manifest file **
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- The factory run manifest now displays the test cases and the platform always picks up the latest file from the test cases component in artifactory.
-<br>
+<br> 
 </br> 
 
 &nbsp;&nbsp;&nbsp;&nbsp;**4. Factory edit issues**
