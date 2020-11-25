@@ -1089,7 +1089,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/artifactory-test-cycle.html",
-          "hash": "Vn4YqLPq/STIdM35atRdFg=="
+          "hash": "RTkLFmbXdTnSS1Uv7g8Tiw=="
         }
       },
       "is_incremental": false,
@@ -1230,7 +1230,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/fix-issues-factory-run.html",
-          "hash": "oz6DnGCSUMOm3rKbvxTg5A=="
+          "hash": "wwV9uCA/Hp4+kZi+r9QjzQ=="
         }
       },
       "is_incremental": false,
@@ -7307,18 +7307,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "home/techguides/stage-testcases.md",
-      "output": {
-        ".html": {
-          "relative_path": "home/techguides/stage-testcases.html",
-          "hash": "ki8w7LNRMt/mAFD7aNxITA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "home/techguides/stage.md",
       "output": {
         ".html": {
@@ -7751,14 +7739,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "RestApiDocumentProcessor": {
