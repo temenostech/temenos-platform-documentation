@@ -3,6 +3,35 @@
 
 This page provides information about the monthly Temenos Continuous Deployment Platform features and improvements in each release.
 
+# **202010**
+**InfraBuild**: TBA  &nbsp;**|**&nbsp; **PortalTag**: TBA
+&nbsp;**|**&nbsp; **ControllerBuild**: TBA  &nbsp;**|**&nbsp;  **ReleaseNumber**: TBA |&nbsp; **WorkflowServiceTag**: TBA
+
+## Technical enhancements
+&nbsp;&nbsp;&nbsp;&nbsp;**1. User Password Reset Option**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Organization Admins can now reset other user's password. (read more [here](http://documentation.temenos.cloud/home/user-creation-in-paas.html#recover-password)).
+<br>
+</br> 
+
+&nbsp;&nbsp;&nbsp;&nbsp;**2. Change in the naming convention of the downloaded test results**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Now the tests results file name downloaded from the Factory Dashboard has a unique name containing the factory name and the time stamp (i.e.: factoryname_timestamp_testresults.zip).
+<br>
+</br> 
+
+&nbsp;&nbsp;&nbsp;&nbsp;**3. Factory run manifest file **
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- The factory run manifest now displays the test cases and the platform always picks up the latest file from the test cases component in artifactory.
+<br>
+</br> 
+
+&nbsp;&nbsp;&nbsp;&nbsp;**4. Factory edit issues**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- To improve the user experience, UI changes have been applied to the **Edit Factory** feature (read more [here](http://documentation.temenos.cloud/home/techguides/automated-factories.html)).
+<br>
+</br> 
+
 # **202009**
 **InfraBuild**: TBA  &nbsp;**|**&nbsp; **PortalTag**: TBA
 &nbsp;**|**&nbsp; **ControllerBuild**: TBA  &nbsp;**|**&nbsp;  **ReleaseNumber**: TBA |&nbsp; **WorkflowServiceTag**: TBA
@@ -45,11 +74,11 @@ This page provides information about the monthly Temenos Continuous Deployment P
 ## Technical enhancements
 &nbsp;&nbsp;&nbsp;&nbsp;**1. Technical Enhancements**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Access to SFTP server is now available through HTTPs (read more [here](http://documentation.temenos.cloud/home/techguides/https-in-front-of-sftp.html?q=https))
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- The SFTP servers can now be accessed over HTTPS (read more [here](http://documentation.temenos.cloud/home/techguides/https-in-front-of-sftp.html?q=https))
+
 <br>
 </br> 
-<br>
-</br> 
+
 
 
 
