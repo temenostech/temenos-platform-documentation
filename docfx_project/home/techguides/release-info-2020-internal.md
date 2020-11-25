@@ -10,7 +10,7 @@ This page provides information about the monthly Temenos Continuous Deployment P
 ## Technical enhancements
 &nbsp;&nbsp;&nbsp;&nbsp;**1. User Password Reset Option**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Organization Admins can now reset other user's password. (read more [here](http://documentation.temenos.cloud/home/user-creation-in-paas.html#recover-password)).
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Organization Admins can now reset other user's password. (read more [here](http://documentation.temenos.cloud/home/user-creation-in-paas.html#recover-password)). 
 <br>
 </br> 
 
