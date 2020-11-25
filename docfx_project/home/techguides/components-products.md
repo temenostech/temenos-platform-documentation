@@ -71,7 +71,7 @@ See below example:
 
 ![](./images/products-add-component.png)
 
-A folder is automatically created into the repository *(we are using JFrog Artifactory)* with the name of your component and will be always created under the default **stable_dev** stage. This is the path where the components' files should be uploaded as explained on the next steps.
+A folder is automatically created into the repository *(we are using JFrog Artifactory)* with the name of your component and will be always created under the default **CONFIGURATION_STAGE** stage. This is the path where the components' files should be uploaded as explained on the next steps.
 
 *(Please note that the components' artifacts can be uploaded any time before running a factory).*
 
