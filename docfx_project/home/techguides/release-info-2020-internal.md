@@ -34,8 +34,8 @@ This page provides information about the monthly Temenos Continuous Deployment P
 
 
 # **202009**
-**InfraBuild**: TBA  &nbsp;**|**&nbsp; **PortalTag**: TBA
-&nbsp;**|**&nbsp; **ControllerBuild**: TBA  &nbsp;**|**&nbsp;  **ReleaseNumber**: TBA |&nbsp; **WorkflowServiceTag**: TBA
+**InfraBuild**: 39  &nbsp;**|**&nbsp; **PortalTag**: 202009.RC4
+&nbsp;**|**&nbsp; **ControllerBuild**: 273  &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202009 |&nbsp; **WorkflowServiceTag**: 202009.RC5
 
 ## Technical enhancements
 &nbsp;&nbsp;&nbsp;&nbsp;**1. The SFTP servers can now be accessed over HTTPS**
