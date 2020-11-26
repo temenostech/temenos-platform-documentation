@@ -276,6 +276,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/images/change-user-password-admin.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/change-user-password-admin.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/images/cloud-offering.png",
       "output": {
         "resource": {
@@ -302,6 +313,28 @@
       "output": {
         "resource": {
           "relative_path": "home/images/create-user-role-permissions.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/create-user-role.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/create-user-role.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/images/create-user.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/images/create-user.png"
         }
       },
       "is_incremental": false,
@@ -932,18 +965,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "home/manage-testcases-video.md",
-      "output": {
-        ".html": {
-          "relative_path": "home/manage-testcases-video.html",
-          "hash": "hAkBM5XCQQdX2sKN0VEhIA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "home/overview.md",
       "output": {
         ".html": {
@@ -1125,7 +1146,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/components-products.html",
-          "hash": "blWR300xXJUA7fQqYvquUQ=="
+          "hash": "OKxnuf+3oWtfY4vALrJ9qw=="
         }
       },
       "is_incremental": false,
@@ -3135,6 +3156,17 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/edit-delete-workflow.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/edit-environment-update.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/edit-environment-update.png"
         }
       },
       "is_incremental": false,
@@ -7263,7 +7295,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/release-info-2020-internal.html",
-          "hash": "QIPeHNO7XSmVssPGLXiKhg=="
+          "hash": "r4nt9793mG6w+LFlY+GThg=="
         }
       },
       "is_incremental": false,
@@ -7456,12 +7488,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "home/toc.yml",
       "output": {
         ".html": {
           "relative_path": "home/toc.html",
-          "hash": "aTrgGlP9drCeP7zBauTiBw=="
+          "hash": "EYapWnk8yITaRv0q0wFOkg=="
         }
       },
       "is_incremental": false,
@@ -7492,15 +7527,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "home/user-creation-in-paas.md",
       "output": {
         ".html": {
           "relative_path": "home/user-creation-in-paas.html",
-          "hash": "PNkaT7FeZSEg7ma/RcUcRQ=="
+          "hash": "HNsrwnz5qAwXxJbCUd0W0Q=="
         }
       },
       "is_incremental": false,
