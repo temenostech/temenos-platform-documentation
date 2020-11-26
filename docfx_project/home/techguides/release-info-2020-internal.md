@@ -12,7 +12,8 @@ This page provides information about the monthly Temenos Continuous Deployment P
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Organization Admins can now reset other user's password. (read more [here](http://documentation.temenos.cloud/home/user-creation-in-paas.html#recover-password)). 
 <br>
-</br>  
+</br>
+
 
 &nbsp;&nbsp;&nbsp;&nbsp;**2. Change in the naming convention of the downloaded test results**
 
@@ -24,7 +25,7 @@ This page provides information about the monthly Temenos Continuous Deployment P
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- The factory run manifest now displays the test cases and the platform always picks up the latest file from the test cases component in artifactory.
 <br> 
-</br> 
+</br>  
 
 &nbsp;&nbsp;&nbsp;&nbsp;**4. Factory edit issues**
 
@@ -32,9 +33,11 @@ This page provides information about the monthly Temenos Continuous Deployment P
 <br>
 </br> 
 
+
+
 # **202009**
-**InfraBuild**: TBA  &nbsp;**|**&nbsp; **PortalTag**: TBA
-&nbsp;**|**&nbsp; **ControllerBuild**: TBA  &nbsp;**|**&nbsp;  **ReleaseNumber**: TBA |&nbsp; **WorkflowServiceTag**: TBA
+**InfraBuild**: 39  &nbsp;**|**&nbsp; **PortalTag**: 202009.RC4
+&nbsp;**|**&nbsp; **ControllerBuild**: 273  &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202009 |&nbsp; **WorkflowServiceTag**: 202009.RC5
 
 ## Technical enhancements
 &nbsp;&nbsp;&nbsp;&nbsp;**1. The SFTP servers can now be accessed over HTTPS**
