@@ -88,8 +88,6 @@
          href: ./manage-components-products-video.md
        - name: Manage Factories 
          href: ./manage-factories-video.md
-       - name: Manage Testcases 
-         href: ./manage-testcases-video.md    
        - name: Run Factory 
          href: ./run-factory-video.md   
 - name: Troubleshooting
