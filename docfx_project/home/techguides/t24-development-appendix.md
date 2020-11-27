@@ -254,24 +254,6 @@ In order to deploy your developed routines in the sandbox, a T24 package must be
   ![](./images/export_enquiries_2.png)  
   <br>
 
-## Data (.d) files 
-
-A data(.d) file represents a details viewer of a record from the database. A data file has 2 columns:  
--> first column contains the unique number of all table fields of the record;  
--> second column contains the values for all table fields of the record.  
-![](./images/data_files_1.png)
-<br>
-
-> [!Note]
-> Assuming that your **date-code** module is toggled to TAFJ project nature, make sure you update the .properties file related to your project from Your_DEV_Path/TAFJ/conf folder with the private database IP of your sandbox.
-
-Before starting to extract/load data files from/to your sandbox database, you must login to TAFJ-DBTools.  
--> Right click on your **data-code** module and select **DBTools login**.
-![](./images/extract_data_dbtools_1.png)  
-<br>
--> A wizard will appear in which you must type the DBTools credentials(which can be found in Add_DBTools_User.bat file from Your_DEV_Path) and click **Finish**.
-![](./images/extract_data_dbtools_2.png)  
-<br>
 
 ### Extract data files from the database 
 

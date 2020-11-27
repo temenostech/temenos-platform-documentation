@@ -21,17 +21,31 @@ To see all the steps regarding how to add a new user on the portal and to attach
 
 ## Connect via SFTP Client ##
 
- - In order to have access to the FCM Cloud Application live folders, you can install an FTP client from [https://winscp.net/eng/index.php](https://winscp.net/eng/index.php)
+- To connect to the T24/ VM Cloud Application live folders, download a FTP client from [https://winscp.net/eng/index.php](https://winscp.net/eng/index.php)
+ 
  - Open WinSCP application and fill the mandatory fields:
-    - Host name > copy it from the environment endpoint: sftp.temenos.cloud *(see image below)*
-    - User name > input the exact name of the user added to the portal
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![sftp fields](./images/access-fcm-endpoints.png)
-- click **Advanced**
-- on the new screen (the right screenshot below), select **SSH -  Authentication** 
-- upload the private key previously saved (corresponding to the public key attached to the portal user) and click **OK**
--  now you can click **Login** on the lef-side screenshot
+ 
+    - **Host name**: Click on **Access Environment Files** from the environment's T24 section:
+    
+    ![](./images/access-ud-endpoint.png)
 
-    ![](./images/access-fcm-ud-sftp-fields.png)
+    - A new page opens. Copy the SFTP Url:
+
+    ![](./images/copy-sftp-url.png)
+
+     - Open WinSCP and fill in the following:
+     
+    - **User name** input the exact name of the user added to the portal
+    
+    - Click **Advanced**
+
+    - In the new screen, select **SSH Authentication** 
+ 
+      - Upload the private key previously saved (corresponding to the public key attached to the portal user)
+
+      - Click **OK**
+
+     ![](./images/access-ud-sftp-fields.png)
 
 
 

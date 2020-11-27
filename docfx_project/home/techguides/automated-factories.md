@@ -10,9 +10,9 @@ Below you will find the pre-requisites to run a Automated factory:
 
 - **2 stages** within the stream you created (learn how to create streams [here](http://documentation.temenos.cloud/home/techguides/stream.html))
 
-   a. Source stage - the stage from which pre-tested stable components can be picked up
+   a. Source Stage - the stage from which pre-tested stable components can be picked up
 
-  b. Base/Test Stage – the stage from which the “Other Products” (Base Products) components are fetched. This stage represents a stable version of components that is pre-tested from the perspective of the current factory.
+  b. Target Stage – the stage which will be provisioned during the factory run with the components from the **Source Stage**
 
 
 - **the list of mandatory components from the environment template** (learn how to deploy the components [here](http://documentation.temenos.cloud/home/techguides/components-products.html))
@@ -49,11 +49,9 @@ Below you will find the pre-requisites to run a Automated factory:
     c. The list of components cannot contain a component type that is unknown to the Template.
 
 
-2. Templates – The selection of templates are restricted based on the type of the template and a selection list is already confined to allocated and valid templates.
+2. Stages – No restriction. The factory can even choose to use the same Stage for all three stage values.
 
-3. Stages – No restriction. The factory can even choose to use the same Stage for all three stage values.
-
-4. During the factory setup all the mandatory fields need to be filled in the current tab. Otherwise you are not able to move to the next phases and the **Next** button is disabled.
+3. During the factory setup all the mandatory fields need to be filled in the current tab. Otherwise you are not able to move to the next phases and the **Next** button is disabled.
 
 
 See below configurations to understand better how to configure correctly and the factory's behavior.

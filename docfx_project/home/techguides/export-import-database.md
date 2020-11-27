@@ -14,9 +14,7 @@ To see how to create an environment, please also check <a href="./environment-cr
 >   - DevEnv
 >   - DevEnv1
 >
-> They will be used to see how to export the DB from one environment and import it into the other one.
->
-> 
+> These will be used to see how to export the DB from one environment and import it into the other one.
 
 ## Amend a customer record ##
 
@@ -29,7 +27,8 @@ To see how to create an environment, please also check <a href="./environment-cr
 
 - Change the GB Town/City from the Physical Address tab and then press **Commit the deal** button ![](./images/db-commit-button.png) in order to save the change. 
 
-**Note**: You can do any change on any record type)*
+> [!Note]
+>You can do any change on any record type)*
 
    ![](./images/db-amend-info.png) 
 <br>
@@ -59,7 +58,7 @@ To export and re-import the database into an environment or do some changes and 
 
      ![](./images/export-db.png) 
 
-After clicking the export starts (the action takes around a few minutes based on the DB size). While exporting, the button is disabled, after the export is done, the button gets enabled back.
+After clicking the export starts (the action takes around a few minutes based on the DB size). While exporting, the button is disabled. After the export is done, the button is enabled back.
 
 ![](./images/db-exporting.png) 
 

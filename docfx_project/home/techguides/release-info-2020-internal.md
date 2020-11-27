@@ -4,8 +4,8 @@
 This page provides information about the monthly Temenos Continuous Deployment Platform features and improvements in each release.
 
 # **202010**
-**InfraBuild**: TBA  &nbsp;**|**&nbsp; **PortalTag**: TBA
-&nbsp;**|**&nbsp; **ControllerBuild**: TBA  &nbsp;**|**&nbsp;  **ReleaseNumber**: TBA |&nbsp; **WorkflowServiceTag**: TBA
+**InfraBuild**: 39  &nbsp;**|**&nbsp; **PortalTag**: 202010.RC8
+&nbsp;**|**&nbsp; **ControllerBuild**: 320  &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202010 |&nbsp; 
 
 ## Technical enhancements
 &nbsp;&nbsp;&nbsp;&nbsp;**1. User Password Reset Option**

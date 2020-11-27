@@ -8,13 +8,13 @@ Learn how to easily access the T24 UD directories of your sandbox and make updat
 
 ## Create New Environment
 
- - Login to the indicated Temenos Continuous Deployment Platform - either: [portal.temenos.com](https://portal.temenos.cloud/)
+ - Login to the indicated Temenos Continuous Deployment Platform 
  - Each time you login, you must accept the Privacy Notice in order to have access to the portal.
  - The first page that is displayed after login is the **Environments** page where you can fill the date to create a **New environment**.
 - Fill the mandatory fields:
     - **Name**
     - **Description**
-- Select an application from **Cloud native applications** (select T24)
+- Select an application from **Template Type** (select T24)
 - Choose a template from **Templates** list
 - *Labels field is optional*
 - Click **Create environment**
@@ -30,25 +30,36 @@ To see all the steps regarding how to add a new user on the portal and to attach
 
 ## Connect via SFTP Client
 
- - In order to have access to the T24/ VM Cloud Application live folders, you can install an FTP client from [https://winscp.net/eng/index.php](https://winscp.net/eng/index.php)
+ - To connect to the T24/ VM Cloud Application live folders, download a FTP client from [https://winscp.net/eng/index.php](https://winscp.net/eng/index.php)
+ 
  - Open WinSCP application and fill the mandatory fields:
-    - Host name > copy it from the environment endpoint: sftp.temenos.cloud *(see image below)*
-    - User name > input the exact name of the user added to the portal
+ 
+    - **Host name**: Click on **Access Environment Files** from the environment's T24 section:
+    
+    ![](./images/access-ud-endpoint.png)
+
+    - A new page opens. Copy the SFTP Url:
+
+    ![](./images/copy-sftp-url.png)
+
+     - Open WinSCP and fill in the following:
+     
+    - **User name** input the exact name of the user added to the portal
+    
+    - Click **Advanced**
+
+    - In the new screen, select **SSH Authentication** 
+ 
+      - Upload the private key previously saved (corresponding to the public key attached to the portal user)
+
+      - Click **OK**
+
+     ![](./images/access-ud-sftp-fields.png)
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![sftp fields](./images/access-ud-endpoint.png)
-
-
-- Click **Advanced**
-- In the new screen, select **SSH Authentication** 
-- Upload the private key previously saved (corresponding to the public key attached to the portal user)
-- Click **OK**
-
-![](./images/access-ud-sftp-fields.png)
-
+  - On the previous screen, click **Login**
 <br>
-
- - Previous screen pops-up, click **Login**
+</br>
 
 ## Check and Use Live Folders 
 
@@ -82,15 +93,17 @@ To see all the steps regarding how to add a new user on the portal and to attach
        - how to find which is the T24_HOME path.
        - how to point to the T24_HOME path in order to get the response that you need for your application.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<span style="color:#010466;font-size:14pt;">Find the T24_HOME path:</span>*
+## Find the T24_HOME
 
- - Go to your environment on the portal 
- - Click on MONITOR APPLICATION  
+To go to the T24 homepage, on your environment overview click on the **Tafj Web Application**:
+
+  ![](./images/tafj-web-application.png)
+
+- A new page opens - insert the credentials from the portal 
+
+![](./images/env_gotoapplication.png)
 
 
-![access ud directories schema](./images/env_gotoapplication.png)
-
-<br>
  - Login with your credentials (these will be provided by Temenos)
 
  - Then click on tdiag (the path will look similar to this: https://t24-1xxxxxxxxxxxxo.dev.temenos.cloud/TAFJEE/tDiag)  the xxx part represents your environment's id
@@ -100,15 +113,14 @@ To see all the steps regarding how to add a new user on the portal and to attach
   ![access ud directories schema](./images/env_tajfruntimeproperties.png)
 
 <br>
-- If for example, you need to create a folder into the default location (/temenossftp/*yourorgid/your
-- id/yourenvid*/default) named "demo" then, in the T24 area the appropriate path will be **/opt/rh/eap7/root/usr/share/wildfly/default/demo**.
+- If for example, you need to create a folder into the default location (/temenossftp/*yourorgid/yourenvid*/default) named "demo" then, in the T24 area the appropriate path will be **/opt/rh/eap7/root/usr/share/wildfly/default/demo**.
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<span style="color:#010466;font-size:14pt;">Point to the T24_HOME path:</span>*
+## Point to the T24_HOME path ##
 
-Into the newly added folder (on default location), make sure you create a configuration file in which you set also the path to your folder.
+Into the newly added folder (on the default location), make sure you create a configuration file in which you set also the path to your folder.
 
-If for example you want to see a specific log for your application, you will be able to see this log into the **log_t24** folder (see below more details). In order to do so, make sure you add a log4j.properties file into the same folder (the newly created) where you specify the path for the logs of your app. 
+If you want to see a specific log for your application, go to the  **log_t24** folder (see below more details). Make sure you add a log4j.properties file into the same folder (the newly created) where you specify the path for the logs of your app. 
 
 EXAMPLE: 
 
@@ -116,9 +128,9 @@ EXAMPLE:
 
 <br>
 
-   - <span style="color:orange">**log_t24**</span>  - contains the T24.log files and also your como logs files when you run TSAs
+- **log_t24**</span>  - contains the T24.log files and also your como logs files when you run TSAs
 
-![access ud directories schema](./images/access-ud-como.png)
+ ![access ud directories schema](./images/access-ud-como.png)
 
    - como - it will load TSA logs when running different TSA services
    - T24.log -  refers to the T24 BrowserWeb processes
@@ -126,10 +138,10 @@ EXAMPLE:
 
 <br>
 
-  - <span style="color:orange">**standalone**</span> - contains the jboss logs
+  - **standalone**</span> - contains the jboss logs
 server.log - shows the Jboss application log (standalone folder appeas only for the Extend Templates, Wildfly Template and Stack01 Template). On the other hand, if you download the Stack02 Template instead of 'standalone' you will find the 'appserver' folder which shows WebSphere logs such as startServer.log, stopServer.log, and SystemOut.log 
 
-![access ud directories schema](./images/access-ud-standalone.png)
+ ![access ud directories schema](./images/access-ud-standalone.png)
 <br>
 
 <br>

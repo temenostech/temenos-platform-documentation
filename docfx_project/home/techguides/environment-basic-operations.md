@@ -53,15 +53,25 @@ The user can also **clone**, **edit**, **delete**, **start**, **stop**, **rebuil
 
      - However, please **note** that start button is not triggering also the deployment of whatever is present into the associated Git repository (such as something that was committed when the environment was stopped or a T24 update package ( L1 development) that was not yet successfully deployed to the T24 area).
 
- - **Stop** an environment  - stops all running VMs that are part of the Environment.
+ - **Stop** an environment  - stop all running VMs that are part of the environment.
 
- - **Rebuild** an environment - it recreates the resources into the cloud and re-installs T24 and H2 db. This is used for example when modifying the application templates (i.e. changing the T24 displayed name or adding a new application).
+ - **Rebuild** an environment - recreate the resources into the cloud and re-installs T24 and H2 db. This is used for example when modifying the application templates (i.e. changing the T24 displayed name or adding a new application).
 
- - **Edit the environment**  - allows you to change the name and the description of an environment
+ - **Save as new template** - the functionality is enabled by default to an environment.
+     - the functionality copies all the components from the environment GIT Repository to Artifactory and saves them as a new template. 
+     - To save the new template, you need to have the mandatory components uploaded and deployed successfully. This is to ensure that there will be no issues in any environment  created from the new template. 
+     - If all the mandatory components are deployed successfully then you can save the new template otherwise the **Save as new template** fails. 
+     - To proceed, click on the **Save as new template** and read the information in the pop-up. Fill in the blanks, tick the box and then click on **Save Template**.
 
- - **Clone environment** - creates an identical environment by copying the Environment and configuration repository
+      ![](./images/save-as-new-template.png) 
 
- - **Upgrade** - the feature is only available for the **Model Bank/ OSS Stack Template** environments. By clicking on **Upgrade** the user can upgrade the environment to the target template version). 
+ - **Edit the environment** - change the name and the description of an environment. You can ignore the **Auto Start / Stop Scheduler** as configured in the **Schedule Environments** from the General Tab:
+
+      ![](./images/edit-environment-update.png) 
+
+ - **Clone environment** - create an identical environment by copying the Environment and configuration repository
+
+ - **Upgrade** - the feature is only available for the **Model Bank/ OSS Stack Template**, therefore Extend environments. By clicking on **Upgrade** you can boost the environment to the target template version. 
  
      - Upon clicking on the button a pop-up appears which prompts to select another template from the list of available template:
       ![](./images/environment-upgrade-button.png) 
@@ -71,16 +81,17 @@ The user can also **clone**, **edit**, **delete**, **start**, **stop**, **rebuil
      - The environment status changes to **Upgrading**:
        
           ![](./images/environment-upgrading.png) 
+          - In the **Events** tab you can see the log which refers to the upgrade from the Base template to Target template
 <br>
 </br>
 
-  **T24 Upgrade Validations:**
+  **Upgrade Validations:**
 
-1. The **Upgrade** button is enabled at the organisation level. 
+1. The **Upgrade** button is enabled at the organisation level.
 
 2. Once the **Upgrade** is initiated all the environment action buttons are disabled except **Edit Environment** and **Delete Environment** buttons.
  
-3. Only organisations having this organisation role will be able to use the **Upgrade** feature.  Only users with the permission UPGRADE_TEMPLATE will have the **Upgrade** button enabled on their environment.
+3. Only users with the permission UPGRADE_TEMPLATE will have the **Upgrade** button enabled on their environment.
 
 4. The **Upgrade** button is not available on a stopped environment.
 
@@ -88,9 +99,21 @@ The user can also **clone**, **edit**, **delete**, **start**, **stop**, **rebuil
 
 6. L3 or other plugins present in the current template are not auto deployed, and you have to upload them back to GIT and deploy it post upgrade.
 
-7. The new app server won’t have any additional queues.
+7. The upgrade pipeline will not deploy anything on the GIT folder to the upgraded environment automatically, therefore you have to manually trigger this post upgrade.
 
-8. The upgrade pipeline will not deploy anything on the GIT folder to the upgraded environment automatically, therefore you have to manually trigger this post upgrade.
+8. The new app server won’t have any additional queues.
+
+9. The upgrade flow is from the client template to ModelBank template and not vice-versa.
+
+10. An environment created with a custom template can be upgraded to a ModelBank template and not vice versa.
+
+11. When an environment is upgraded, the **Clone** and **Rebuild** options are not available.
+
+12. The **Upgrade** functionality is not available for environments resulted from factory runs (automated and manual factories).
+
+13. **Upgrade** is supported from Python-based templates to Python-based templates only.
+
+
 <br>
 </br>
 
@@ -108,21 +131,41 @@ The user can also **clone**, **edit**, **delete**, **start**, **stop**, **rebuil
 
  ![](./images/upgrade-customize-template.png) 
 
+ >Note: the **Customize Template** functionality is not enabled for factory run environments (automated and manual factories).
+
+<br>
+</br>
+
 ## T24 Release section - available actions ##
 
 ### <span style="color:orange;font-weight:1000;">**Endpoints**:</span>  ###
+Depending on the template used to provision your environment, you will be able to access the below endpoints:
 
-- GO TO APPLICATION - clicking this endpoint, a new tab containing the T24 BrowserWeb URL will open in a new browser window. The username and password to be used here will have been sent via email.
+- T24 Browser Web
 
-- MONITOR APPLICATION - clicking this endpoint, the TAFJEE Servlets page will open in a new browser tab and from here you can check the following sections:
+- TAFJ Web Application 
 
-   - Diagnostic section: provides details about your TAFJ environment, get routine compilation details, etc.
-   - Execution section: run services, etc.
-   - Troubleshooting section: access log files, commo files, etc.
-<br>
-- tcdSFTP.temenos.cloud - allows you to copy the SFTP link.
-- Design Studio Kit - you can start downloading Design Studio tool (DS version is compatible to your environment). 
+- Access Environment Files (login with your portal credentials)
 
+- UXP Browser
+
+- IRIS APIs
+
+- IRIS Runtime
+
+- IRIS Workbench
+
+- Temenos Workbench 
+
+- Temenos Connect User Administration (TCUA) 
+
+- Internet Banking - Retail
+
+- Design Studio Kit - you can start downloading Design Studio tool (DS version is compatible with your environment). 
+
+1. To access this endpoints you check the Template Name (you will find it under the environment name in the Environment page)
+
+2. Go to the **Templates Catalogue**, select the **Template Type** from the top-right, then look for the template you used for to provision the environment. On that Template page, under the **Release Notes** tab you can see the template’s **Topology** which displays all the credentials you need. 
 
 ### <span style="color:orange;font-weight:1000;">**Buttons**</span>  ###
 
@@ -137,6 +180,9 @@ Clicking the 'Export Environment' button will generate a zip file on the tcdSFTP
    - all jar files deployed in T24 sandbox and the correspondent module.xml file;
    - the content of the default folder of T24;
    - all war files deployed in the T24 sandbox and the Jboss server log.
+
+<br>
+</br>
 
 ## Database section - available actions ##
 
@@ -155,6 +201,7 @@ Clicking the 'Export Environment' button will generate a zip file on the tcdSFTP
  - tcdSFTP.temenos.cloud - allows you to copy the SFTP link.
 
 <br>
+</br>
 
 ## Repository section - available actions ##
 

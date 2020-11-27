@@ -58,7 +58,9 @@ After the workflow is created, the user can add this workflow to any factory wit
 # Edit and delete a workflow
 Users can edit and delete workflows only if these are not assigned to a factory.
 
-- to edit a workflow click on the Edit button. In this phase you can change the workflow elements and connections. Click Update workflow once you finish updating it.
+- to edit a workflow click on the **Edit** button. In this phase you can change the workflow elements and connections. Click Update workflow once you finish updating it.
+
+- the **Edit Workflow** and **Delete Workflow** buttons are disabled for the Default Workflows
 
  ![](./images/workflow-edit-delete.png) 
 

@@ -32,7 +32,7 @@
  - After commiting and pushing to Environment Repository all the features, you have to deploy them in your Environment. 
  - Login to your organisation, select your environment, locate the Repository Application and click the Deploy button. 
 
-For more details about the deployment, check the following [<ins>**steps**</ins>](use-gitlab-repository.md#trigger-deployment).
+For more details about the deployment, check the following [<ins>**steps**</ins>](http://documentation.temenos.cloud/home/techguides/deploy-an-update-to-an-existing-environment.html).
 
 
 ## Check jBC routines deployment to Sandbox 
