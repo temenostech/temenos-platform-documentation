@@ -28,23 +28,23 @@ Create your own environment:
 - Either click the Environments tab on the left menu and then click **New Environment** button on the top right corner
 - Or you can already see the environment page open with the fields available to create a new environment
 
-![](./images/env_tab.png)
+ ![](./images/env_tab.png)
 
 
 <br>
 
- - Fill Name and Description fields
- - Select one of the available templates from dropdown list, based on your requirements
+ - Fill in the **Environment** **Name** and **Environment** **Description** fields
+ - Select one of the available **Template** **Types** and the **Template** from the drop-down lists
+ - Fill in the **Labels** field (optional)
  - Click **Create environment**
-All fields are mandatory except 'Labels'
 
-![](./images/env-new.png)
+ ![](./images/env-new.png)
 
 <br>
 
 
- To see the details of an environment you need to select it from the environments list. This window allows you to also filter the Extend environments or those resulted following a manual/ automated factory:
-![](./images/env-list.png)
+ To see the details of an environment you need to select it from the environments list. This window allows you to also filter the Extend environments or those resulted following  automated factory:
+ ![](./images/env-list.png)
 
 
 <br>
@@ -54,7 +54,7 @@ All fields are mandatory except 'Labels'
 
 Check the list with all available templates. Click the **Templates Catalog** on the left menu.
 
-![](./images/template-details.png)
+ ![](./images/template-details.png)
 
 1. Click on the **Template Type** and select for one of the applications, for example T24 to see the templates that are available for your organisation. 
 
@@ -62,12 +62,12 @@ Check the list with all available templates. Click the **Templates Catalog** on 
 
 3. Hover over the **Name** field to list all the available templates alphabetically
 
-4. Select the number of **items per page** you want to display
+4. Select the number of **Items per page** you want to display
 
 
 5. Click on a template - on the right you will see the name of the template, its version, installation and expiration dates as well as:
 
-6. The **Release Notes**
+6. The **Release Notes** - displays the Contents (Release Information, Latest Updates) and the Topology 
 
 7. The **Components List** - these can be filtered as the user wants
 

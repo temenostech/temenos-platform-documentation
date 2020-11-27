@@ -91,13 +91,15 @@ To Update the SSH Key, follow the instructions below:
 
 1. Click on your **user name** (top-right) and then on **Profile**
 
-2. Click on **Edit SSH** button 
+2. Click  **Edit SSH** 
 
   ![](./images/user-edit-ssh.png)
 
-3. Do the necessary changes and click on **Update SSH** / if no changes are required click on **Cancel**
+3. Do the necessary changes and click on **Update SSH** / if no changes are required click **Cancel**
 
-  ![](./images/update-ssh-key.png)
+    ![](./images/update-ssh-key.png)
+
+ >Note: the  **Update SHH** button is enabled once the editing is started and the number of characters added in the field are over 200.
 
 <br>
 
@@ -131,14 +133,16 @@ Once the role is created, the admin can assign it to a specific user:
 
 To understand what which of the permission does, hover the cursor over the variables and a short description will pop up or click **[here](http://documentation.temenos.cloud/home/techguides/user-permissions)** to get an overview of the permissions.
 
-For security purposes, if you are inactive for more than 5 minutes on the Temenos Continuous Deployment Platform a dialog box pop up prompts on the screen in the last minute of your inactive session which asks to choose whether you want to extend the session or logout.
- 
+For security reasons, if you are inactive for more than 5 minutes on the Temenos Continuous Deployment Platform a dialog box pop up prompts on the screen in the last minute of your inactive session which asks to choose whether you want to extend the session or logout.
+
 ![](./images/idler-session-timeout.png)
 
 - By clicking **Extend** your session will still be active
 
 - If you opt to **Logout** or don’t take any action on the pop-up your session will expire. Note that the environment creation, factory runs or other organization operations will still be running. 
 
+The session is automatically extended when the you click on the **Overview** or **Events** tabs in the environments details page.
+ 
 # How to use PuTTY SSH client for SSH key generation. #
 
 If you need access to the source code repository you must provide the public SSH Keys on the user profile section to gain access. You can use any other SSH key generator client.
