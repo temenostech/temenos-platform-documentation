@@ -15,8 +15,6 @@
          href: ./techguides/environment-basic-operations.md
        - name: Deploy an update to an existing environment
          href: ./techguides/deploy-an-update-to-an-existing-environment.md
-       - name: Add new endpoints to an environment
-         href: ./techguides/add-app-endpoint.md
        - name: Develop T24 packages, plugins and Code
          href: ./techguides/t24-development.md
        - name: Clone an Environment  
