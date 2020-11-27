@@ -95,19 +95,35 @@
 <p>To see all the steps regarding how to add a new user on the portal and to attach the SSH key, please see the following user guide about how to <a href="user-creation-in-paas.html"><strong>Create Users</strong></a>.</p>
 <h2 id="connect-via-sftp-client">Connect via SFTP Client</h2>
 <ul>
-<li>In order to have access to the FCM Cloud Application live folders, you can install an FTP client from <a href="https://winscp.net/eng/index.php">https://winscp.net/eng/index.php</a></li>
+<li><p>To connect to the T24/ VM Cloud Application live folders, download a FTP client from <a href="https://winscp.net/eng/index.php">https://winscp.net/eng/index.php</a></p>
+<ul>
 <li><p>Open WinSCP application and fill the mandatory fields:</p>
 <ul>
-<li>Host name &gt; copy it from the environment endpoint: sftp.temenos.cloud <em>(see image below)</em></li>
-<li><p>User name &gt; input the exact name of the user added to the portal
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/access-fcm-endpoints.png" alt="sftp fields"></p>
-<ul>
-<li>click <strong>Advanced</strong></li>
-<li>on the new screen (the right screenshot below), select <strong>SSH -  Authentication</strong> </li>
-<li>upload the private key previously saved (corresponding to the public key attached to the portal user) and click <strong>OK</strong></li>
-<li>now you can click <strong>Login</strong> on the lef-side screenshot</li>
+<li><strong>Host name</strong>: Click on <strong>Access Environment Files</strong> from the environment&#39;s T24 section:</li>
 </ul>
-<p><img src="images/access-fcm-ud-sftp-fields.png" alt=""></p>
+<p><img src="images/access-ud-endpoint.png" alt=""></p>
+<ul>
+<li>A new page opens. Copy the SFTP Url:</li>
+</ul>
+<p><img src="images/copy-sftp-url.png" alt=""></p>
+<ul>
+<li>Open WinSCP and fill in the following:</li>
+</ul>
+<ul>
+<li><p><strong>User name</strong> input the exact name of the user added to the portal</p>
+</li>
+<li><p>Click <strong>Advanced</strong></p>
+</li>
+<li><p>In the new screen, select <strong>SSH Authentication</strong> </p>
+<ul>
+<li><p>Upload the private key previously saved (corresponding to the public key attached to the portal user)</p>
+</li>
+<li><p>Click <strong>OK</strong></p>
+</li>
+</ul>
+<p><img src="images/access-ud-sftp-fields.png" alt=""></p>
+</li>
+</ul>
 </li>
 </ul>
 </li>

@@ -88,8 +88,8 @@
 <li><p><strong>1 stream</strong></p>
 </li>
 <li><p><strong>2 stages</strong> within the stream you created (learn how to create streams <a href="http://documentation.temenos.cloud/home/techguides/stream.html">here</a>)</p>
-<p> a. Source stage - the stage from which pre-tested stable components can be picked up</p>
-<p>b. Base/Test Stage – the stage from which the “Other Products” (Base Products) components are fetched. This stage represents a stable version of components that is pre-tested from the perspective of the current factory.</p>
+<p> a. Source Stage - the stage from which pre-tested stable components can be picked up</p>
+<p>b. Target Stage – the stage which will be provisioned during the factory run with the components from the <strong>Source Stage</strong></p>
 </li>
 <li><p><strong>the list of mandatory components from the environment template</strong> (learn how to deploy the components <a href="http://documentation.temenos.cloud/home/techguides/components-products.html">here</a>)</p>
 </li>
@@ -109,8 +109,6 @@
 <p> a. The list of components contained in the principle and other products needs to match a bare minimum of all mandatory components specified in the template.</p>
 <p> b. The list of components can possibly have more than one component of the same type if the template allows more than one count of the same type.</p>
 <p> c. The list of components cannot contain a component type that is unknown to the Template.</p>
-</li>
-<li><p>Templates – The selection of templates are restricted based on the type of the template and a selection list is already confined to allocated and valid templates.</p>
 </li>
 <li><p>Stages – No restriction. The factory can even choose to use the same Stage for all three stage values.</p>
 </li>

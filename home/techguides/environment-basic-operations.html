@@ -130,15 +130,26 @@
 </li>
 </ul>
 </li>
-<li><p><strong>Stop</strong> an environment  - stops all running VMs that are part of the Environment.</p>
+<li><p><strong>Stop</strong> an environment  - stop all running VMs that are part of the environment.</p>
 </li>
-<li><p><strong>Rebuild</strong> an environment - it recreates the resources into the cloud and re-installs T24 and H2 db. This is used for example when modifying the application templates (i.e. changing the T24 displayed name or adding a new application).</p>
+<li><p><strong>Rebuild</strong> an environment - recreate the resources into the cloud and re-installs T24 and H2 db. This is used for example when modifying the application templates (i.e. changing the T24 displayed name or adding a new application).</p>
 </li>
-<li><p><strong>Edit the environment</strong>  - allows you to change the name and the description of an environment</p>
+<li><p><strong>Save as new template</strong> - the functionality is enabled by default to an environment.</p>
+<ul>
+<li>the functionality copies all the components from the environment GIT Repository to Artifactory and saves them as a new template. </li>
+<li>To save the new template, you need to have the mandatory components uploaded and deployed successfully. This is to ensure that there will be no issues in any environment  created from the new template. </li>
+<li>If all the mandatory components are deployed successfully then you can save the new template otherwise the <strong>Save as new template</strong> fails. </li>
+<li><p>To proceed, click on the <strong>Save as new template</strong> and read the information in the pop-up. Fill in the blanks, tick the box and then click on <strong>Save Template</strong>.</p>
+<p><img src="images/save-as-new-template.png" alt=""> </p>
 </li>
-<li><p><strong>Clone environment</strong> - creates an identical environment by copying the Environment and configuration repository</p>
+</ul>
 </li>
-<li><p><strong>Upgrade</strong> - the feature is only available for the <strong>Model Bank/ OSS Stack Template</strong> environments. By clicking on <strong>Upgrade</strong> the user can upgrade the environment to the target template version). </p>
+<li><p><strong>Edit the environment</strong> - change the name and the description of an environment. You can ignore the <strong>Auto Start / Stop Scheduler</strong> as configured in the <strong>Schedule Environments</strong> from the General Tab:</p>
+<p>   <img src="images/edit-environment-update.png" alt=""> </p>
+</li>
+<li><p><strong>Clone environment</strong> - create an identical environment by copying the Environment and configuration repository</p>
+</li>
+<li><p><strong>Upgrade</strong> - the feature is only available for the <strong>Model Bank/ OSS Stack Template</strong>, therefore Extend environments. By clicking on <strong>Upgrade</strong> you can boost the environment to the target template version. </p>
 <ul>
 <li><p>Upon clicking on the button a pop-up appears which prompts to select another template from the list of available template:
 <img src="images/environment-upgrade-button.png" alt=""> </p>
@@ -146,20 +157,23 @@
 <li><p>Click on <strong>Upgrade</strong> to proceed.</p>
 </li>
 <li><p>The environment status changes to <strong>Upgrading</strong>:</p>
-<p>   <img src="images/environment-upgrading.png" alt=""> 
+<p>   <img src="images/environment-upgrading.png" alt=""> </p>
+<ul>
+<li>In the <strong>Events</strong> tab you can see the log which refers to the upgrade from the Base template to Target template
 <br>
-</br></p>
+</br></li>
+</ul>
 </li>
 </ul>
-<p><strong>T24 Upgrade Validations:</strong></p>
+<p><strong>Upgrade Validations:</strong></p>
 </li>
 </ul>
 <ol>
-<li><p>The <strong>Upgrade</strong> button is enabled at the organisation level. </p>
+<li><p>The <strong>Upgrade</strong> button is enabled at the organisation level.</p>
 </li>
 <li><p>Once the <strong>Upgrade</strong> is initiated all the environment action buttons are disabled except <strong>Edit Environment</strong> and <strong>Delete Environment</strong> buttons.</p>
 </li>
-<li><p>Only organisations having this organisation role will be able to use the <strong>Upgrade</strong> feature.  Only users with the permission UPGRADE_TEMPLATE will have the <strong>Upgrade</strong> button enabled on their environment.</p>
+<li><p>Only users with the permission UPGRADE_TEMPLATE will have the <strong>Upgrade</strong> button enabled on their environment.</p>
 </li>
 <li><p>The <strong>Upgrade</strong> button is not available on a stopped environment.</p>
 </li>
@@ -167,13 +181,25 @@
 </li>
 <li><p>L3 or other plugins present in the current template are not auto deployed, and you have to upload them back to GIT and deploy it post upgrade.</p>
 </li>
+<li><p>The upgrade pipeline will not deploy anything on the GIT folder to the upgraded environment automatically, therefore you have to manually trigger this post upgrade.</p>
+</li>
 <li><p>The new app server won’t have any additional queues.</p>
 </li>
-<li><p>The upgrade pipeline will not deploy anything on the GIT folder to the upgraded environment automatically, therefore you have to manually trigger this post upgrade.
-<br>
-</br></p>
-<p><strong>After the upgrade is completed you can:</strong></p>
+<li><p>The upgrade flow is from the client template to ModelBank template and not vice-versa.</p>
 </li>
+<li><p>An environment created with a custom template can be upgraded to a ModelBank template and not vice versa.</p>
+</li>
+<li><p>When an environment is upgraded, the <strong>Clone</strong> and <strong>Rebuild</strong> options are not available.</p>
+</li>
+<li><p>The <strong>Upgrade</strong> functionality is not available for environments resulted from factory runs (automated and manual factories).</p>
+</li>
+<li><p><strong>Upgrade</strong> is supported from Python-based templates to Python-based templates only.</p>
+</li>
+</ol>
+<p><br>
+</br></p>
+<p> <strong>After the upgrade is completed you can:</strong></p>
+<ol>
 <li><p><strong>Rebuild</strong> the upgraded environment from the  <strong>Actions</strong> button - a pop-up informs that <em>Any changes made to the environment will be lost and the environment will be reset to its original state.</em>. To proceed, tick the checkbok and click <strong>Confirm</strong></p>
 <p><img src="images/upgrade-rebuild-env.png" alt=""> </p>
 </li>
@@ -182,24 +208,45 @@
 </li>
 <li><p><strong>Customize Template</strong> from the Repository Section - a pop-up informs where you can find the template customization user guide and that the <em>Customize My Template will not work if T24 environment is upgraded</em>. To proceed, tick the checkbox and click <strong>Confirm</strong>:</p>
 <p><img src="images/upgrade-customize-template.png" alt=""> </p>
+<blockquote><p>Note: the <strong>Customize Template</strong> functionality is not enabled for factory run environments (automated and manual factories).</p>
+</blockquote>
 </li>
 </ol>
+<p><br>
+</br></p>
 <h2 id="t24-release-section---available-actions">T24 Release section - available actions</h2>
 <h3 id="span-stylecolororangefont-weight1000endpointsspan"><span style="color:orange;font-weight:1000;"><strong>Endpoints</strong>:</span></h3>
+<p>Depending on the template used to provision your environment, you will be able to access the below endpoints:</p>
 <ul>
-<li><p>GO TO APPLICATION - clicking this endpoint, a new tab containing the T24 BrowserWeb URL will open in a new browser window. The username and password to be used here will have been sent via email.</p>
+<li><p>T24 Browser Web</p>
 </li>
-<li><p>MONITOR APPLICATION - clicking this endpoint, the TAFJEE Servlets page will open in a new browser tab and from here you can check the following sections:</p>
-<ul>
-<li>Diagnostic section: provides details about your TAFJ environment, get routine compilation details, etc.</li>
-<li>Execution section: run services, etc.</li>
-<li>Troubleshooting section: access log files, commo files, etc.
-<br></li>
-</ul>
+<li><p>TAFJ Web Application </p>
 </li>
-<li>tcdSFTP.temenos.cloud - allows you to copy the SFTP link.</li>
-<li>Design Studio Kit - you can start downloading Design Studio tool (DS version is compatible to your environment). </li>
+<li><p>Access Environment Files (login with your portal credentials)</p>
+</li>
+<li><p>UXP Browser</p>
+</li>
+<li><p>IRIS APIs</p>
+</li>
+<li><p>IRIS Runtime</p>
+</li>
+<li><p>IRIS Workbench</p>
+</li>
+<li><p>Temenos Workbench </p>
+</li>
+<li><p>Temenos Connect User Administration (TCUA) </p>
+</li>
+<li><p>Internet Banking - Retail</p>
+</li>
+<li><p>Design Studio Kit - you can start downloading Design Studio tool (DS version is compatible with your environment). </p>
+</li>
 </ul>
+<ol>
+<li><p>To access this endpoints you check the Template Name (you will find it under the environment name in the Environment page)</p>
+</li>
+<li><p>Go to the <strong>Templates Catalogue</strong>, select the <strong>Template Type</strong> from the top-right, then look for the template you used for to provision the environment. On that Template page, under the <strong>Release Notes</strong> tab you can see the template’s <strong>Topology</strong> which displays all the credentials you need. </p>
+</li>
+</ol>
 <h3 id="span-stylecolororangefont-weight1000buttonsspan"><span style="color:orange;font-weight:1000;"><strong>Buttons</strong></span></h3>
 <ul>
 <li><p><strong>Exporting</strong> an environment  allows to export and import an environment or a database through SFTP server</p>
@@ -213,6 +260,8 @@
 <li>the content of the default folder of T24;</li>
 <li>all war files deployed in the T24 sandbox and the Jboss server log.</li>
 </ul>
+<p><br>
+</br></p>
 <h2 id="database-section---available-actions">Database section - available actions</h2>
 <h3 id="span-stylecolororangefont-weight1000buttonsspan"><span style="color:orange;font-weight:1000;"><strong>Buttons</strong></span></h3>
 <ul>
@@ -224,7 +273,8 @@
 <ul>
 <li>tcdSFTP.temenos.cloud - allows you to copy the SFTP link.</li>
 </ul>
-<p><br></p>
+<p><br>
+</br></p>
 <h2 id="repository-section---available-actions">Repository section - available actions</h2>
 <h3 id="span-stylecolororangefont-weight1000buttonsspan"><span style="color:orange;font-weight:1000;"><strong>Buttons</strong></span></h3>
 <ul>

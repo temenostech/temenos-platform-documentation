@@ -264,15 +264,6 @@ MVCC=TRUE;LOCK_TIMEOUT=30000<br> <span style="color:red">Replace <strong>ENV_DNS
 <li>A message should be displayed saying that the enquiry was successfully modified.
 <img src="images/export_enquiries_2.png" alt=""><br><br></li>
 </ul>
-<h2 id="data-d-files">Data (.d) files</h2>
-<p>A data(.d) file represents a details viewer of a record from the database. A data file has 2 columns:<br>-&gt; first column contains the unique number of all table fields of the record;<br>-&gt; second column contains the values for all table fields of the record.<br><img src="images/data_files_1.png" alt="">
-<br></p>
-<div class="NOTE"><h5>Note</h5><p>Assuming that your <strong>date-code</strong> module is toggled to TAFJ project nature, make sure you update the .properties file related to your project from Your_DEV_Path/TAFJ/conf folder with the private database IP of your sandbox.</p>
-</div>
-<p>Before starting to extract/load data files from/to your sandbox database, you must login to TAFJ-DBTools.<br>-&gt; Right click on your <strong>data-code</strong> module and select <strong>DBTools login</strong>.
-<img src="images/extract_data_dbtools_1.png" alt=""><br><br>
--&gt; A wizard will appear in which you must type the DBTools credentials(which can be found in Add_DBTools_User.bat file from Your_DEV_Path) and click <strong>Finish</strong>.
-<img src="images/extract_data_dbtools_2.png" alt=""><br><br></p>
 <h3 id="extract-data-files-from-the-database">Extract data files from the database</h3>
 <ul>
 <li>Expand <strong>data-code</strong> module, go to src, right click on <strong>Data</strong> and select <strong>Extract from the database</strong>.<br><img src="images/extract_data_1.png" alt=""><br><br></li>
