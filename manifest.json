@@ -1258,6 +1258,21 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "home/techguides/git-folder-standardization.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/git-folder-standardization.html",
+          "hash": "pMQUROUk9jFJRLJ66uXMxQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "home/techguides/https-in-front-of-sftp.md",
       "output": {
@@ -2877,6 +2892,28 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/db.properties.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db.properties.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/db.properties2.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/db.properties2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/dbtools_1.png",
       "output": {
         "resource": {
@@ -4069,6 +4106,17 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/git-download.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/git-pull.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/git-pull.png"
         }
       },
       "is_incremental": false,
@@ -6309,6 +6357,39 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/standalone-custom-queues.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/standalone-custom-queues.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/standalone-queues.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/standalone-queues.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/standalone-tss.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/standalone-tss.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/start-all-user-env.png",
       "output": {
         "resource": {
@@ -6731,6 +6812,17 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/tafj-web-application.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/tafjdb.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/tafjdb.png"
         }
       },
       "is_incremental": false,
@@ -7820,14 +7912,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "RestApiDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "RestApiDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {

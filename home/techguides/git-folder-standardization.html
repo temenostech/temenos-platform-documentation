@@ -1,0 +1,645 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Git Folder Standardization </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Git Folder Standardization ">
+    <meta name="generator" content="docfx 2.22.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/woocircle.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" class="Git Folder Standardization ">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar" role="navigation">
+          <div class="container">
+            <div class="row">
+              <div class="navbar-header col-md-2">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                
+                <a class="navbar-brand" href="https://www.temenos.com/platform/temenos-continuous-deployment-devops/">
+                  <img id="logo" src="/logo.png" alt="">
+                </a>
+              </div>
+              <div class="themainmenu col-md-10">
+              <div class="collapse navbar-collapse" id="navbar">
+                <form class="navbar-form navbar-right" role="search" id="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                  </div>
+                </form>
+              </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="git-folder-standardization">Git Folder Standardization</h1>
+
+<p>The GIT folder standardization enables Temenos Continuous Deployment to deploy client specific components in the environment created using model bank templates. This features allows you to deploy the same components both via Extend and Assemble environments.</p>
+<div class="NOTE"><h5>Note</h5><p>All existing environments structure will be migrated automatically to the new folder structure.</p>
+</div>
+<h1 id="what-is-new">What is new?</h1>
+<h2 id="1the-environment-folder-structure">1.The environment folder structure</h2>
+<p>The files in your previous environment (left column in the table below) is migrated to the new folder structure in GIT.</p>
+<p>If you need to push new changes into your existing environments, you have to clone the GIT folder again.</p>
+<ul>
+<li><p>Env Structure before Git Folder Standardisation: </p>
+<p><img src="images/old-env-structure.png" alt=""></p>
+</li>
+<li><p>Env Structure after Git Folder Standardisation:</p>
+<p><img src="images/new-env-structure.png" alt=""></p>
+</li>
+</ul>
+<div class="NOTE"><h5>Note</h5><p>If you need to push new changes into your existing environments, you have to clone the GIT folder again.</p>
+</div>
+<p><br>
+</br></p>
+<h2 id="2-the-order-of-installation">2. The Order of installation</h2>
+<p> The sequence of the components that are installed is the following:</p>
+<ul>
+<li><p>model-bank-database​</p>
+</li>
+<li><p>t24-jars​</p>
+</li>
+<li><p>tafj-installer​</p>
+</li>
+<li><p>tafj-ext-jars​</p>
+</li>
+<li><p>t24-l3-java​</p>
+</li>
+<li><p>jboss-module​</p>
+</li>
+<li><p>t24-ud​</p>
+</li>
+</ul>
+<p>Other components​ that are deployed in the jboss application server</p>
+<ul>
+<li><p>t24-updates​</p>
+</li>
+<li><p>l3-predsf-packages​</p>
+</li>
+<li><p>l3-ds-package​</p>
+</li>
+<li><p>l3-postdsf-packages​</p>
+</li>
+<li><p>t24updates-data-project</p>
+</li>
+</ul>
+<p><br>
+</br></p>
+<h2 id="3-the-folders-name">3. The folders&#39; name</h2>
+<p>Some of the folders have been renamed to better reflect the name of the components. You can find below and example of the before and after components name and structure (where N/A is present the component folder was not present in the old folder structure).</p>
+<table>
+<thead>
+<tr>
+<th>BEFORE</th>
+<th>AFTER</th>
+<th>PREVIOUS FORMAT SUPPORTED</th>
+<th>CURRENT FORMAT SUPPORTED</th>
+<th>NOTES AND CHANGES IN THE   EXISTING FUNCTIONALITY</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>N/A</td>
+<td>authenticator</td>
+<td>*.war</td>
+<td>*.war</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>axis2</td>
+<td>*.war</td>
+<td>*.war</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>browser-classic</td>
+<td>*.war</td>
+<td>*.war</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>browser-generated</td>
+<td>*.zip</td>
+<td>*.zip</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>browser-iris</td>
+<td>*.war</td>
+<td>*.war</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>dsf-iris</td>
+<td>*.war</td>
+<td>*.war</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>dsf-uxp</td>
+<td>*.war</td>
+<td>*.war</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>client_files/helptext</td>
+<td>helptext</td>
+<td>*.zip</td>
+<td>*.zip</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>irf-provider-container</td>
+<td>*.war</td>
+<td>*.war</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>irf-t24catalog-services</td>
+<td>*.war</td>
+<td>*.war</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>irf-test-web</td>
+<td>*.war</td>
+<td>*.war</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>irf-web-client</td>
+<td>*.war</td>
+<td>*.war</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>packages</td>
+<td>l3-ds-packages</td>
+<td>*.jar, *.zip</td>
+<td>*.zip</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>client_files/h2db</td>
+<td>model-bank-database-h2</td>
+<td>*.zip</td>
+<td>*.zip</td>
+<td>db.properties   file should be included in the zip file . The format of db.properties should   be as follows: db_name=TAFJDB -&gt; without extension .mv.db or .h2.db      clientdb_user=t24 -&gt; db username      clientdb_pass=t24 -&gt; db password</td>
+</tr>
+<tr>
+<td>client_files/sqldb</td>
+<td>model-bank-database-sqlserver</td>
+<td>*.bak</td>
+<td>*.zip</td>
+<td>db.properties file   should be included in the zip file . The format of db.properties should be as   follows: db_name=UTPSQL2016 -&gt; without extension names      clientdb_user=t24 -&gt; db username      clientdb_pass=t24 -&gt; db password</td>
+</tr>
+<tr>
+<td>post-dsf-packages</td>
+<td>l3-post-dsf-packages</td>
+<td>zip of zip</td>
+<td>zip of zip</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>pre-dsf-packages</td>
+<td>l3-pre-dsf-packages</td>
+<td>zip of zip</td>
+<td>zip of zip</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>addons</td>
+<td>t24-Addons</td>
+<td>*.zip</td>
+<td>*.zip</td>
+<td>environment file can be provided along with the jars/wars   which contains JAVA_OPTS that can to be added in the appserver startup. If   only environment file inside the zip is provded the JAVA_OPTS will be added   to the appserver without copying any war/jar files</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>t24-eb-authentication-service-ejb</td>
+<td>*.jar</td>
+<td>*.jar</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>t24-eb-catalog-service-ejb</td>
+<td>*.jar</td>
+<td>*.jar</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>t24-eb-ofs-connector-service-ejb</td>
+<td>*.jar</td>
+<td>*.jar</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>t24-eb-resource-provider-service-ejb</td>
+<td>*.jar</td>
+<td>*.jar</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>t24-if-integration-framework-service-ejb</td>
+<td>*.jar</td>
+<td>*.jar</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>t24-interactiontests-iris</td>
+<td></td>
+<td></td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>t24-jars</td>
+<td>*.zip</td>
+<td>*.zip</td>
+<td>zip of multiple folders containing jars. For eg: t24lib, l3lib. Note: We   use the folders t24lib and l3lib for core and l3 libraries respectively.   Hence the same naming convention has to be used for the artifacts.eg:       |24tcdjars.zip        |_t24lib        |_l3lib        |_abclib        ...</td>
+</tr>
+<tr>
+<td>client_files/localjars</td>
+<td>t24-l3-java</td>
+<td></td>
+<td></td>
+<td>zip of l3libraries.   Eg:      tcdl3.zip         |_a1.jar         |_a2.jar         |_a3.jar         ....</td>
+</tr>
+<tr>
+<td>plugins</td>
+<td>war-package</td>
+<td>*.zip containing war, jar or war and optional .endpoint file</td>
+<td>*.zip containing war, jar or war and optional .endpoint file   which contains the dns name. E.g.:  Provider   APIs~<a href="https://t24-v1f2k9y77x18.temenos.cloud/provider-apis/api/v1.0.0/meta/apidocs">https://t24-v1f2k9y77x18.temenos.cloud/provider-apis/api/v1.0.0/meta/apidocs</a></td>
+<td>Optional .endpoint file within *.zip should now contain he   keyword &#39;localhost&#39; instead of the dnsname to be able to used during factory   run. E.g: Provider   APIs~<a href="https://localhost/provider-apis/api/v1.0.0/meta/apidocs">https://localhost/provider-apis/api/v1.0.0/meta/apidocs</a></td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>t24-ud</td>
+<td>*.zip containing UD folders</td>
+<td>*.zip containing UD folders</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>updates</td>
+<td>t24-updates</td>
+<td>zip of zip</td>
+<td>zip of zip</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>wsdl</td>
+<td>wsdl</td>
+<td></td>
+<td></td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>client_files/localjars/ext</td>
+<td>tafj-ext-jars</td>
+<td>zip of jars</td>
+<td>zip of jars</td>
+<td>zip of l3libraries. Eg:      tafjext.zip         |_a1.jar         |_a2.jar         |_a3.jar         ....</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>tafj-installer</td>
+<td>*.zip containing installer</td>
+<td>*.zip containing installer</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>tcib-api</td>
+<td>*.war</td>
+<td>*.war</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>tcua-tcuseradmin-iris</td>
+<td>*.war</td>
+<td>*.war</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>tcua-useradministration</td>
+<td>*.war</td>
+<td>*.war</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>tcxb2-generated</td>
+<td>*.war</td>
+<td>*.war</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>tcxb2-iris</td>
+<td>*.war</td>
+<td>*.war</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>tcxb2-retail</td>
+<td>*.war</td>
+<td>*.war</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>temp.release</td>
+<td></td>
+<td></td>
+<td>*.zip containing the temp.release</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>tocf-ee</td>
+<td>*.zip</td>
+<td>*.zip</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>uxp-browser</td>
+<td>*.war</td>
+<td>*.war</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>uxp-god-properties</td>
+<td>*.zip</td>
+<td>*.zip</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>resourceserverwar</td>
+<td>*.war</td>
+<td>*.war</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>irf-rp-services</td>
+<td>*.war</td>
+<td>*.war</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>t24-eb.product</td>
+<td></td>
+<td>*.txt</td>
+<td>The text file should contain the number of product ,   product name separated by ‘~&#39; (more than 1 product) and product codes   separated by &#39;~’ (more than 1 product) . EX: 2,name1~name2,code1~code2</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>jboss-modules</td>
+<td></td>
+<td>*.zip</td>
+<td>*.zip containing   the folders, sub folders, jars, with the module.xml which can be unzipped to   modules folder in jboss      It also checks for the existing folders com/temenos/t24, com/temenos/tafj   ,system ,if exists it is ignored and other folders are copied</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>standalone.xml</td>
+<td></td>
+<td>*.xml</td>
+<td>*.xml containing standalone.xml file. The template file for   OSS and TSS are provided at point 6 in this user guide for both OSS and TSS   templates.</td>
+</tr>
+</tbody>
+</table>
+<p><br>
+</br></p>
+<h2 id="4-how-to-deploy-an-update-to-an-environment">4. How to deploy an update to an environment?</h2>
+<h3 id="41-clone-the-environment-repository">4.1. Clone the environment repository</h3>
+<p>Refer to this <a href="http://documentation.temenos.cloud/home/techguides/deploy-an-update-to-an-existing-environment.html#clone-environment-repository">user guide</a>.</p>
+<h3 id="42-commit--push-the-changes-to-the-environment-repository">4.2 Commit &amp; push the changes to the Environment Repository</h3>
+<div class="NOTE"><h5>Note</h5><p>Always Git → Pull before pushing new code in the environment repository. This command fetches and downloads content from a remote repository and immediately update the local repository to match that content.</p>
+</div>
+<p><img src="images/git-pull.png" alt=""></p>
+<h3 id="43-deploy-the-changes">4.3 Deploy the changes</h3>
+<p>Refer to <a href="http://documentation.temenos.cloud/home/techguides/deploy-an-update-to-an-existing-environment.html#commit--push-features-to-repository">this page</a> to learn how to deploy the changes to your environment.</p>
+<p>During the deployment, the <strong>Start</strong>, <strong>Stop</strong>, <strong>Rebuild</strong>, <strong>Upgrade</strong> and <strong>Clone Environment</strong> buttons are not disabled.</p>
+<div class="NOTE"><h5>Note</h5><p>It is very important to place the components in the folder with the format that the Temenos Continuous Deployment expects. Otherwise, your deployment fails. Below you can find an exercise with a passed and failed deployment - the root cause is the wrong file format deployed.</p>
+</div>
+<ul>
+<li>Passed Deployment:</li>
+</ul>
+<p><img src="./images/passed-env.png" alt=""></p>
+<ul>
+<li>Failed Deployment:</li>
+</ul>
+<p><img src="./images/failed-env.png" alt=""></p>
+<h3 id="44-standalonexml-file-notes">4.4 Standalone.xml file notes</h3>
+<p>There are different standalone.xml templates for TSS and OSS. These are provided to you by us.</p>
+<h3 id="441-the-standalonexml-tss-template">4.4.1 The standalone.xml TSS template:</h3>
+<ul>
+<li><p>don’t change any of the static values</p>
+</li>
+<li><p>the only changes you can apply to the files are</p>
+</li>
+<li><p>in the datasource code block and give a new name (ie. instead of jndi-name=&quot;java:/jdbc/t24DS&quot; you can change the name from t24DS to another one) or change the min/max-pool-size. If you want to add more datasource copy the entire code block highlighted below.</p>
+<p><img src="images/standalone-tss.png" alt=""></p>
+</li>
+<li><p>in the queues add new connection pools (copy-paste the link and change the name, max-pool-size)</p>
+<p><img src="images/standalone-queues.png" alt=""></p>
+</li>
+<li><p>add custom queues ( copy the highlighted queue below and add another name (ie. instead of tecEventsTopic you can add another name)</p>
+<p><img src="images/standalone-custom-queues.png" alt=""></p>
+<p><strong>Other alterations added to the XML file will result in a failed deployment.</strong></p>
+</li>
+</ul>
+<h3 id="442-the-dbproperties-file---only-applicatble-for-oss-templates">4.4.2 The db.properties file - only applicatble for OSS templates!</h3>
+<p>You can place the TAFJDB.zip file in the model-bank-database-h2 folder:</p>
+<p> <img src="images/tafjdb.png" alt=""></p>
+<p>The Git Folder Standardisation allows you to add the db.properties file into the TAFJDB.zip. The db.properties file contains the db name, clientdb user and pass:</p>
+<p> <img src="images/db.properties.png" alt=""></p>
+<p>If the folder inside TAFJDB.zip file is renamed, then it is mandatory in the db.properties to add the db-name the same as the db folder name and the credentials for the respective db.</p>
+<p> <img src="images/db.properties2.png" alt=""></p>
+<h1 id="5-attachments">5. Attachments</h1>
+<p>You can download the Standalone OSS/ TSS and the db.properties files below:</p>
+<ul>
+<li><p><strong><a href="./../zip/client-standalone-OSS">Standalone OSS template</a></strong> </p>
+</li>
+<li><p><strong><a href="./../zip/client-standalone-TSS">Standalone TSS template</a></strong> </p>
+</li>
+<li><p><strong><a href="../zip/db.properties">db.properties file</a></strong> </p>
+</li>
+<li><p>Video tutorial available <strong><a href="https://youtu.be/Kc5nXfJewKg">here</a></strong>.</p>
+</li>
+</ul>
+<p><br></p>
+              <hr>
+              
+              <div id="disqus_thread"></div>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 footer-note left">
+              <p>
+                <a href="/"><img src="/logo-bottom.png" alt=""></a>
+                <a href="https://www.temenos.com/en/accessibility/">Accessibility</a>
+                <a href="https://www.temenos.com/en/legal-information/cookie-policy/">Cookie Policy</a>
+                <a href="https://www.temenos.com/en/legal-information/privacy-policy/">Privacy Policy</a>
+                <a href="https://www.temenos.com/en/legal-information/terms-and-conditions/">Terms & Conditions</a>
+              </p>
+            </div>
+      
+            <div class="col-md-6 footer-note right">
+              <p>
+                Copyright &copy; 2020 Temenos Headquarters SA <span>&#183;</span>
+                <a target="_blank" href="https://www.facebook.com/TemenosGroup"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+                <a target="_blank" href="https://twitter.com/Temenos"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a target="_blank" href="http://www.linkedin.com/company/temenos"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a target="_blank" href="//plus.google.com/u/0/100035548059267323447?prsrc=3"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+              </p>
+            </div>
+          </div>
+      
+        </div>
+      </footer>
+      
+      <div class="back-to-top">
+        <a href="#top">
+          <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i></span>
+        </a>
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script id="dsq-count-scr" src="//temenostech.disqus.com/count.js" async=""></script>
+    
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myshareDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.sharedropbtn')) {
+    
+        var dropdowns = document.getElementsByClassName("sharedropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+    
+    <script>
+    	window.onload = function(){
+        	document.getElementById("shareFacebook").href = 'https://www.facebook.com/sharer/sharer.php?u=' + window.location.toString();
+    
+        	document.getElementById("shareTwitter").href = 'https://twitter.com/intent/tweet?text=Temenos+Developer+Portal&url=' + window.location.toString();
+    
+        	document.getElementById("shareGoogle").href = 'https://plus.google.com/share?url=' + window.location.toString();
+    
+        	document.getElementById("shareLinkedin").href = 'https://www.linkedin.com/shareArticle?mini=true&url=' + window.location.toString() + '&title=Temenos+Developer+Portal&summary=&source=';
+    
+        	document.getElementById("shareEmail").href = 'mailto:' + window.location.toString();
+    	}
+    </script>
+    
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-38593742-8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-38593742-8');
+    </script>  
+  </body>
+</html>
