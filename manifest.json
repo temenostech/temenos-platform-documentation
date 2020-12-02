@@ -5055,6 +5055,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/new-env-structure.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/new-env-structure.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/new-template.png",
       "output": {
         "resource": {
@@ -5092,6 +5103,17 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/ok_after_push.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/old-env-structure.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/old-env-structure.png"
         }
       },
       "is_incremental": false,
