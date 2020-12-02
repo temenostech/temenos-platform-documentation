@@ -71,7 +71,8 @@ The user can also **clone**, **edit**, **delete**, **start**, **stop**, **rebuil
 
  - **Clone environment** - create an identical environment by copying the Environment and configuration repository
 
- - **Upgrade** - the feature is only available for the **Model Bank/ OSS Stack Template**, therefore Extend environments. By clicking on **Upgrade** you can boost the environment to the target template version. 
+ - **Upgrade** - the feature is only available for the **Model Bank TSS/ OSS Stack Template**, therefore Extend environments. By clicking on **Upgrade** you can boost the environment to the target template version. 
+
  
      - Upon clicking on the button a pop-up appears which prompts to select another template from the list of available template:
       ![](./images/environment-upgrade-button.png) 
@@ -113,6 +114,7 @@ The user can also **clone**, **edit**, **delete**, **start**, **stop**, **rebuil
 
 13. **Upgrade** is supported from Python-based templates to Python-based templates only.
 
+14. An environment can only be upgraded with a MB template that is assigned to your organisation. You won't be able to upgrade a MB-T24-Wildfly-H2-202002 to a MB-T24-Wildfly-H2-202004 if the latter version is not assigned to your organisation. 
 
 <br>
 </br>
