@@ -190,7 +190,7 @@
                         <password>clientdb_pass</password>
                     </security>
                 </datasource
-                <datasource jta="true" jndi-name="java:/jdbc/t24Axis2DS" pool-name="Axis2H2DS" enabled="true" use-java-context="true" use-ccm="true">
+                <datasource jta="true" jndi-name="java:/jdbc/t24Axis2DS" pool-name="Axis2H2DS" enabled="true" use-java-context="true" use-ccm="true"> 
                     <connection-url>jdbc:h2:tcp://private_ip//data/temenos/h2/db_name;MODE=Oracle;TRACE_LEVEL_FILE=0;TRACE_LEVEL_SYSTEM_OUT=0;DB_CLOSE_ON_EXIT=FALSE;FILE_LOCK=NO;IFEXISTS=TRUE;CACHE_SIZE=8192;MVCC=TRUE;LOCK_TIMEOUT=60000</connection-url>
                     <connection-property name="defaultRowPrefetch">
                         100
