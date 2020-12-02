@@ -182,7 +182,7 @@ If the folder inside TAFJDB.zip file is renamed, then it is mandatory in the db.
 
  ![](./images/db.properties2.png)
 
-#5. Attachments
+##5. Attachments
 
 You can download the Standalone OSS/ TSS and the db.properties files below:
 
