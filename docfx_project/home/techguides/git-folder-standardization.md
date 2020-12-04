@@ -1,4 +1,4 @@
-# Git Folder Standardisation #
+# Git Folder Standardization #
 
 The GIT folder standardization enables Temenos Continuous Deployment to deploy client specific components in the environment created using model bank templates. This features allows you to deploy the same components both via Extend and Assemble environments.
 
@@ -13,11 +13,11 @@ The files in your previous environment (left column in the table below) is migra
 
 If you need to push new changes into your existing environments, you have to clone the GIT folder again.
 
-- Env Structure before Git Folder Standardisation: 
+- Env Structure before Git Folder Standardization: 
 
  ![](./images/old-env-structure.png)
 
-- Env Structure after Git Folder Standardisation:
+- Env Structure after Git Folder Standardization:
 
  ![](./images/new-env-structure.png)
 
@@ -174,7 +174,7 @@ You can place the TAFJDB.zip file in the model-bank-database-h2 folder:
 
  ![](./images/tafjdb.png)
 
-The Git Folder Standardisation allows you to add the db.properties file into the TAFJDB.zip. The db.properties file contains the db name, clientdb user and pass:
+The Git Folder Standardization allows you to add the db.properties file into the TAFJDB.zip. The db.properties file contains the db name, clientdb user and pass:
 
  ![](./images/db.properties.png)
 
