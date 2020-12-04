@@ -1262,11 +1262,11 @@
         "InvalidFileLink"
       ],
       "type": "Conceptual",
-      "source_relative_path": "home/techguides/git-folder-standardisation.md",
+      "source_relative_path": "home/techguides/git-folder-standardization.md",
       "output": {
         ".html": {
-          "relative_path": "home/techguides/git-folder-standardisation.html",
-          "hash": "CFzipTLX9Z7TNB+MaH/Ckg=="
+          "relative_path": "home/techguides/git-folder-standardization.html",
+          "hash": "s8cP7liAhMgRe31s3VGmjQ=="
         }
       },
       "is_incremental": false,
@@ -7626,7 +7626,7 @@
       "output": {
         ".html": {
           "relative_path": "home/toc.html",
-          "hash": "nbxNgAGmvkW0mRMHSB0HzQ=="
+          "hash": "FQCahzwmKvtL6z7zaEkruQ=="
         }
       },
       "is_incremental": false,
@@ -7934,14 +7934,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "RestApiDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "RestApiDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {

@@ -89,10 +89,10 @@
 <p>The files in your previous environment (left column in the table below) is migrated to the new folder structure in GIT.</p>
 <p>If you need to push new changes into your existing environments, you have to clone the GIT folder again.</p>
 <ul>
-<li><p>Env Structure before Git Folder Standardisation: </p>
+<li><p>Env Structure before Git Folder Standardization: </p>
 <p><img src="images/old-env-structure.png" alt=""></p>
 </li>
-<li><p>Env Structure after Git Folder Standardisation:</p>
+<li><p>Env Structure after Git Folder Standardization:</p>
 <p><img src="images/new-env-structure.png" alt=""></p>
 </li>
 </ul>
@@ -242,14 +242,14 @@
 <td>model-bank-database-h2</td>
 <td>*.zip</td>
 <td>*.zip</td>
-<td>db.properties   file should be included in the zip file . The format of db.properties should   be as follows: db_name=TAFJDB -&gt; without extension .mv.db or .h2.db      clientdb_user=t24 -&gt; db username      clientdb_pass=t24 -&gt; db password</td>
+<td>db.properties   file should be included in the zip file . The format of db.properties should   be as follows: db_name=TAFJDB -&gt; without extension .mv.db or .h2.db.</td>
 </tr>
 <tr>
 <td>client_files/sqldb</td>
 <td>model-bank-database-sqlserver</td>
 <td>*.bak</td>
 <td>*.zip</td>
-<td>db.properties file   should be included in the zip file . The format of db.properties should be as   follows: db_name=UTPSQL2016 -&gt; without extension names      clientdb_user=t24 -&gt; db username      clientdb_pass=t24 -&gt; db password</td>
+<td>db.properties file   should be included in the zip file . The format of db.properties should be as follows: db_name=UTPSQL2016 -&gt; without extension names.</td>
 </tr>
 <tr>
 <td>post-dsf-packages</td>
@@ -270,7 +270,7 @@
 <td>t24-Addons</td>
 <td>*.zip</td>
 <td>*.zip</td>
-<td>environment file can be provided along with the jars/wars   which contains JAVA_OPTS that can to be added in the appserver startup. If   only environment file inside the zip is provded the JAVA_OPTS will be added   to the appserver without copying any war/jar files</td>
+<td>The environment file can be provided along with the jars/wars which contains JAVA_OPTS that can to be added in the appserver startup. If only environment file inside the zip is provided the JAVA_OPTS will be added to the appserver without copying any war/jar files.</td>
 </tr>
 <tr>
 <td>N/A</td>
@@ -319,14 +319,14 @@
 <td>t24-jars</td>
 <td>*.zip</td>
 <td>*.zip</td>
-<td>zip of multiple folders containing jars. For eg: t24lib, l3lib. Note: We   use the folders t24lib and l3lib for core and l3 libraries respectively.   Hence the same naming convention has to be used for the artifacts.eg:       |24tcdjars.zip        |_t24lib        |_l3lib        |_abclib        ...</td>
+<td>zip of multiple folders containing jars. For eg: t24lib, l3lib. Note: We   use the folders t24lib and l3lib for core and l3 libraries respectively.   Hence the same naming convention has to be used for the artifacts.</td>
 </tr>
 <tr>
 <td>client_files/localjars</td>
 <td>t24-l3-java</td>
 <td></td>
 <td></td>
-<td>zip of l3libraries.   Eg:      tcdl3.zip         |_a1.jar         |_a2.jar         |_a3.jar         ....</td>
+<td>zip of l3libraries</td>
 </tr>
 <tr>
 <td>plugins</td>
@@ -361,7 +361,7 @@
 <td>tafj-ext-jars</td>
 <td>zip of jars</td>
 <td>zip of jars</td>
-<td>zip of l3libraries. Eg:      tafjext.zip         |_a1.jar         |_a2.jar         |_a3.jar         ....</td>
+<td>zip of l3libraries</td>
 </tr>
 <tr>
 <td>N/A</td>
@@ -521,11 +521,11 @@
 <h3 id="442-the-dbproperties-file---only-applicatble-for-oss-templates">4.4.2 The db.properties file - only applicatble for OSS templates!</h3>
 <p>You can place the TAFJDB.zip file in the model-bank-database-h2 folder:</p>
 <p> <img src="images/tafjdb.png" alt=""></p>
-<p>The Git Folder Standardisation allows you to add the db.properties file into the TAFJDB.zip. The db.properties file contains the db name, clientdb user and pass:</p>
+<p>The Git Folder Standardization allows you to add the db.properties file into the TAFJDB.zip. The db.properties file contains the db name, clientdb user and pass:</p>
 <p> <img src="images/db.properties.png" alt=""></p>
 <p>If the folder inside TAFJDB.zip file is renamed, then it is mandatory in the db.properties to add the db-name the same as the db folder name and the credentials for the respective db.</p>
 <p> <img src="images/db.properties2.png" alt=""></p>
-<h1 id="5-attachments">5. Attachments</h1>
+<h2 id="5-attachments">5. Attachments</h2>
 <p>You can download the Standalone OSS/ TSS and the db.properties files below:</p>
 <ul>
 <li><p><strong><a href="./../zip/client-standalone-OSS">Standalone OSS template</a></strong> </p>
