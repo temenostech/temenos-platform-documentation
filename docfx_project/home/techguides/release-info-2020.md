@@ -9,11 +9,11 @@ This page provides information about the monthly Temenos Continuous Deployment P
 
 ## Technical enhancements
 
-&nbsp;&nbsp;&nbsp;&nbsp;**1. Service Virtualization/Git folder standardization**
+&nbsp;&nbsp;&nbsp;&nbsp;**1. Service Virtualization/ GIT folder standardization**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This feature provides a self-service template editing mechanism that creates custom template from a model bank template. All the component binaries used in the environment can be changed once the environment is created. Read more [here](http://documentation.temenos.cloud/home/techguides/git-folder-standardisation.html?q=git%20fol).
 <br>
-<br/
+<br/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;**2. User Password Reset Option**
 
