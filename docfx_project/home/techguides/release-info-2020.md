@@ -8,26 +8,33 @@ This page provides information about the monthly Temenos Continuous Deployment P
 &nbsp;**|**&nbsp; **ControllerBuild**: 320  &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202010 |&nbsp; 
 
 ## Technical enhancements
-&nbsp;&nbsp;&nbsp;&nbsp;**1. User Password Reset Option**
+
+&nbsp;&nbsp;&nbsp;&nbsp;**1. Service Virtualization/Git folder standardization**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This feature provides a self-service template editing mechanism that creates custom template from a model bank template. All the component binaries used in the environment can be changed once the environment is created. Read more [here](http://documentation.temenos.cloud/home/techguides/git-folder-standardisation.html?q=git%20fol).
+<br>
+<br/
+
+&nbsp;&nbsp;&nbsp;&nbsp;**2. User Password Reset Option**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Organization Admins can now reset other user's password. (read more [here](http://documentation.temenos.cloud/home/user-creation-in-paas.html#recover-password)). 
 <br>
 </br>
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;**2. Change in the naming convention of the downloaded test results**
+&nbsp;&nbsp;&nbsp;&nbsp;**3. Change in the naming convention of the downloaded test results**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Now the tests results file name downloaded from the Factory Dashboard has a unique name containing the factory name and the time stamp (i.e.: factoryname_timestamp_testresults.zip).
 <br>
 </br> 
 
-&nbsp;&nbsp;&nbsp;&nbsp;**3. Factory run manifest file**
+&nbsp;&nbsp;&nbsp;&nbsp;**4. Factory run manifest file**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- The factory run manifest now displays the test cases and the platform always picks up the latest file from the test cases component in artifactory.
 <br> 
 </br>  
  
-&nbsp;&nbsp;&nbsp;&nbsp;**4. Factory edit issues**
+&nbsp;&nbsp;&nbsp;&nbsp;**5. Factory edit issues**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- To improve the user experience, UI changes have been applied to the **Edit Factory** feature (read more [here](http://documentation.temenos.cloud/home/techguides/automated-factories.html)).
 <br>

@@ -13,6 +13,8 @@
      items:
        - name: Perform Environment Basic Operations
          href: ./techguides/environment-basic-operations.md
+       - name: Git Folder Standardisation
+         href: ./techguides/git-folder-standardisation.md
        - name: Deploy an update to an existing environment
          href: ./techguides/deploy-an-update-to-an-existing-environment.md
        - name: Develop T24 packages, plugins and Code
