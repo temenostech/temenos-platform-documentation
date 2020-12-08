@@ -182,6 +182,9 @@ If the folder inside TAFJDB.zip file is renamed, then it is mandatory in the db.
 
  ![](./images/db.properties2.png)
 
+>[!Note
+>If you want to overwrite the database it is important to do at least one change before deploying it. Otherwise the platform will pick the initial database only.
+
 ##5. Attachments
 
 You can download the Standalone OSS/ TSS and the db.properties files below:
