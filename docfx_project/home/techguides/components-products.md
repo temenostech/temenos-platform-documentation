@@ -148,7 +148,7 @@ In order to invoke that Artifactory API a CURL command must be executed (this ca
 > Open source doesn’t support multiple file uploads at a time, therefore you need to upload the required binaries one by one.
 
 **Example of the curl command based on the above**: 
-curl -H "X-JFrog-Art-Api:AKCp5dKYyM9WMoiacim9yedAZfG6gLwwcYugPmzZhqHkdRe6ex6pZZnRMteQqedLE9Q3qds6V" "https://1dtk4nz95tssg-artifactory.temenos.cloud/artifactory/repo-1dtk4nz95tssg/dev_stream/demo_stage/t24-jars" -T /drives/c/Users/file/t24-jars-63688104355895.zip
+curl -H "X-JFrog-Art-Api:AKPp5dKYsrreear46t4e6ett7t7x6pZZnRMteeffsLE9Q3qds6V" "https://1dtk4nz95bmnw-artifactory.temenos.cloud/artifactory/repo-1dtk4nz95tssg/dev_stream/demo_stage/t24-jars" -T /drives/c/Users/file/t24-jars-63688104355895.zip
 
 For demo purposes, we used MobaXterm to upload the binary into the Artifactory as displayed below:
 ![](./images/components-products-mobaxterm.png)
