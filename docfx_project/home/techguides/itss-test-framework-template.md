@@ -5,7 +5,7 @@ This page provides information about the ITSS Test Framework Template, the pre-r
 
 ## Implementation 
 
-The ITSS Test framework Template provide:
+The ITSS Test framework Template pre-requisites:
 
 - Windows Server 2016 Datacenter Edition with the following software/packages pre-installed:
 
@@ -15,7 +15,7 @@ The ITSS Test framework Template provide:
 
  - The latest version of Google Chrome Drive
 
-The Google Chrome Driver are downloaded to the ITSS client WebDriver folder in the provisioned VM.
+The Google Chrome Driver is downloaded to the ITSS client WebDriver folder in the provisioned VM.
 <br>
 </br>
 
@@ -23,11 +23,11 @@ The Google Chrome Driver are downloaded to the ITSS client WebDriver folder in t
 
 
 
-- The ITSS test tool has 2 parts, a Server and a Client. 
+- The ITSS test tool contains a Server and a Client. 
 
 - The Test Cases and Test Campaigns (ITSS terminology for Test Scenarios) are created and maintained in the ITSS server. 
 
-- To maintain the Test Component structure in Artifactory to fit with the Assemble principle, Temenos Continuous Deployment manages and promotes the configuration files instead of actual test cases and scenarios. Those configuration files gather all the necessary information for the ITSS test client to "download" from the ITSS test server at run time the set of test scenarios to run.
+- To maintain the Test Component structure in Artifactory to fit with the Assemble principle, Temenos Continuous Deployment manages and promotes the configuration files instead of the actual test cases and scenarios. Those configuration files gather all the necessary information for the ITSS test client to "download" from the ITSS test server at run time the set of test scenarios to run.
 
 - The ITSS test framework is a Selenium-based framework embedded with other functionalities. See below the ITSS test client framework folder structure: 
 
@@ -35,7 +35,7 @@ The Google Chrome Driver are downloaded to the ITSS client WebDriver folder in t
 
  |     +—config (default folder which contains the configuration files IBSRemote.properties and parameters.properties)
 
- |     +—lib (libraries of the ITSS client)
+ |     +—lib (client ITSS libraries)
 
  |     +—out (default folder where manifest and .pdf files are generated)
 
@@ -48,13 +48,13 @@ The Google Chrome Driver are downloaded to the ITSS client WebDriver folder in t
 
 ##  How to launch ITSS client framework
 
-To launch the ITSS client framework start.bat < < URL_T24/BrowserWeb > >  < < Test Campaign UUID > >.
+To launch the ITSS client framework you need to start.bat < < URL_T24/BrowserWeb > >  < < Test Campaign UUID > >.
 <br>
 </br>
 
 ## The Test Script Structure ##
 
-As explained earlier, the config files that can be used by the ITSS Template must be a .zip file within a .zip. The name of the .zip files can have any name. The parent .zip file can contain multiple .zips of tests (see the screenshot below).
+The config files that can be used by the ITSS Template must be a .zip file within a .zip. The name of the .zip files can have any name. The parent .zip file can contain multiple .zips of tests (see the screenshot below).
 
  ![](./images/itss-config-file.png)
 
@@ -64,10 +64,9 @@ Each test suite is a suite of config files that can be used by the ITSS client t
 
 - parameters.properties - the test campaign details including Test Campaign UUID
 
- >Note
- >The template consolidates all the results from the output folder of the ITSS Client and produces consolidated results.
-
- >The platform moves these consolidated results to a centralized storage account and provides a download facility from the dashboard.
+>Note:
+>The template consolidates all the results from the output folder of the ITSS Client and produces consolidated results.
+>The platform moves these consolidated results to a centralized storage account and provides a download facility from the dashboard.
 
 <br>
 </br>
@@ -80,7 +79,7 @@ The properties file holds the configurable parameters used by the ITSS Client fr
 
  - ibs.server.api.key= << ITSS Server API key >> (used to connect to the server API)
 
- - ibs.server.url=<< ITSS Server URL >> (used in the run time to check if the server is accessible → This parameter is by the Temenos template and not directly by the ITSS test Framework)
+ - ibs.server.url=<< ITSS Server URL >> (used in the run time to check if the server is accessible → This parameter is by the Temenos template and not directly by the ITSS test framework)
 
 **The convention name is  “IBSRemote.properties”.**
 <br>
@@ -90,7 +89,7 @@ The properties file holds the configurable parameters used by the ITSS Client fr
 
 Same as above, see below example of the file structure:
 
-- ibs.ta.param.testcase.id=<< TestCampaign-UUID >> - the value will be used by template at the run time. 
+- ibs.ta.param.testcase.id=<< TestCampaign-UUID >> - the value will be used by the template at the run time. 
 
 - ibs.ta.param.user.id=<< UserAppUUID >>
 
@@ -106,19 +105,19 @@ Same as above, see below example of the file structure:
 
 ## Template Runtime 
 
-- The ITSS client is delivered with the Chrome driver. To avoid Chrome version compatibility issues, the test template will replace Chrome driver in sync with Chrome browser version deployed on the test VM.
+- The ITSS client is delivered with the Chrome driver. To avoid Chrome version compatibility issues, the test template will replace Chrome driver in sync with the Chrome browser version deployed on the test VM.
 
 - Before the test execution, the template checks if the ITSS server is accessible and fails execution if not accessible.
 
 - In the event of a network issue preventing the ITSS client framework to connect to its server, a retry mechanism (once) is implemented if the test result files were not generated.
 
-- Temporarily, ibs.ta.param.testcase.id=<< TestCampaign-UUID >> from “parameters.properties“ file is used by the template at the run time to pass it as an argument to the ITSS test client execution command.
+- Temporarily, ibs.ta.param.testcase.id=<< TestCampaign-UUID >> from *parameters.properties* file is used by the template at the run time to pass it as an argument to the ITSS test client execution command.
 
  - This functionality from Temenos Continuous Platform is removed in the next phase when the ITSS team releases the next version of ITSS client which will pick the value from the files by default.
 
 - The standard output of the ITSS client command execution is written to a log file and is available for download as part of the .zip files.
 
-- A HTML file is generated dynamically and displays the contents of **result.pdf** generated as part of ITSS execution results.
+- A HTML file is generated dynamically and displays the contents of the **result.pdf** generated as part of the ITSS execution results.
 <br>
 </br>
 
@@ -244,6 +243,9 @@ From the below structure, the Temenos Continuous Deployment Platform needs to ma
     <result>FAIL</result>
     <hostName></hostName>
 
+<br>
+</br>
+
 The consolidation utility generates the consolidated-results.xml file with the above details. The below table describes the manifest tags and their purposes.
 
 | Tag         | Description                                                                            |
@@ -258,6 +260,8 @@ The Temenos Continuous Deployment Platform will use this information to populate
  ![](./images/itss-dashboard.png)
 
 The Temenos Continuous Deployment platform moves these consolidated results to a centralized storage account and provides a download facility from the dashboard for each test suite.
+<br>
+</br>
 
 ## Attachments 
 
