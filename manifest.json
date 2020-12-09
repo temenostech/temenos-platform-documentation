@@ -1278,7 +1278,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/https-in-front-of-sftp.html",
-          "hash": "3UMnHqvQNsv26JdESnSmQA=="
+          "hash": "321wpwspmK/G+fNKeaN14A=="
         }
       },
       "is_incremental": false,
@@ -6152,6 +6152,17 @@
       "output": {
         "resource": {
           "relative_path": "home/techguides/images/sftp-change-password.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/sftp-endpoint.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/sftp-endpoint.png"
         }
       },
       "is_incremental": false,
