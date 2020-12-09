@@ -43,7 +43,9 @@ To have access to the T24/ VM Cloud Application live folders, you need to instal
 
 - Encryption - **TLS/SSL**
 
-- Host name - copy it from your environment endpoint
+- Host name - go to your environment page. Under the T24 Release section click on the **Access Environment Files**. A new page opens where you have to copy from the URL the SFTP link (ie. thisismysftp.temenos.cloud)
+
+   ![](./images/sftp-endpoint.png) 
 
 - Port Number - **443**
 
