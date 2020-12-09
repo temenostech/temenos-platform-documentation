@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- configured only by authorised user-->
+<Manifest>
+<Report>
+<ScenarioName>Temenos Testing</ScenarioName>
+<TestCaseName>get <https://t24URL/BrowserWeb</TestCaseName>>
+<ExpectedResult></ExpectedResult>
+<ReportStatus>PASS</ReportStatus>
+</Report>
+<Report>
+<ScenarioName>Temenos Testing</ScenarioName>
+<TestCaseName>setText (id signOnName *****)</TestCaseName>
+<ExpectedResult></ExpectedResult>
+<ReportStatus>PASS</ReportStatus>
+</Report>
+<Report>
+<ScenarioName>Temenos Testing</ScenarioName>
+<TestCaseName>sleep (sec)</TestCaseName>
+<ExpectedResult></ExpectedResult>
+<ReportStatus>PASS</ReportStatus>
+</Report>
+<Report>
+<ScenarioName>Temenos Testing</ScenarioName>
+<TestCaseName>setText (id password )</TestCaseName>
+<ExpectedResult></ExpectedResult>
+<ReportStatus>PASS</ReportStatus>
+</Report>
+<Report>
+<ScenarioName>Temenos Testing</ScenarioName>
+<TestCaseName>sleep (sec)</TestCaseName>
+<ExpectedResult></ExpectedResult>
+<ReportStatus>PASS</ReportStatus>
+</Report>
+<Report>
+<ScenarioName>Temenos Testing</ScenarioName>
+<TestCaseName>sleep (sec)</TestCaseName>
+<ExpectedResult></ExpectedResult>
+<ReportStatus>PASS</ReportStatus>
+</Report>
+<Report>
+<ScenarioName>Temenos Testing</ScenarioName>
+<TestCaseName>sleep (sec)</TestCaseName>
+<ExpectedResult></ExpectedResult>
+<ReportStatus>PASS</ReportStatus>
+</Report>
+<Report>
+<ScenarioName>Temenos Testing</ScenarioName>
+<TestCaseName>sleep (sec)</TestCaseName>
+<ExpectedResult></ExpectedResult>
+<ReportStatus>PASS</ReportStatus>
+</Report>
+<Report>
+<ScenarioName>Temenos Testing</ScenarioName>
+<TestCaseName>switchToFrame()</TestCaseName>
+<ExpectedResult></ExpectedResult>
+<ReportStatus>FAIL</ReportStatus>
+</Report>
+<Report>
+<ScenarioName>Temenos Testing</ScenarioName>
+<TestCaseName>setText (id commandValue CUSTOMER I F3)</TestCaseName>
+<ExpectedResult></ExpectedResult>
+<ReportStatus>FAIL</ReportStatus>
+</Report>
+<Report>
+<ScenarioName>Temenos Testing</ScenarioName>
+<TestCaseName>sleep (sec)</TestCaseName>
+<ExpectedResult></ExpectedResult>
+<ReportStatus>PASS</ReportStatus>
+</Report>
+<Report>
+<ScenarioName>Temenos Testing</ScenarioName>
+<TestCaseName>sleep (sec)</TestCaseName>
+<ExpectedResult></ExpectedResult>
+<ReportStatus>FAIL</ReportStatus>
+</Report>
+<Report>
+<ScenarioName>Temenos Testing</ScenarioName>
+<TestCaseName>sleep (sec)</TestCaseName>
+<ExpectedResult></ExpectedResult>
+<ReportStatus>PASS</ReportStatus>
+</Report>
+<Report>
+<ScenarioName>Temenos Testing</ScenarioName>
+<TestCaseName>sleep (sec)</TestCaseName>
+<ExpectedResult></ExpectedResult>
+<ReportStatus>PASS</ReportStatus>
+<ReportImagePath>F:\TCD\TestResults\automation-screenshots\screenshot4955634319564025885.png</ReportImagePath>
+</Report>
+<passedTests>11</passedTests>
+<failedTests>3</failedTests>
+<totalTests>14</totalTests>
+<Name>Temenos Automation Testing Framework</Name>
+<toolVersion>1.2</toolVersion>
+<startDate>2020.04.03 09:34:34</startDate>
+<duration>112.94700</duration>
+<result>FAIL</result>
+<hostName></hostName>
+</Manifest>
