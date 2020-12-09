@@ -4300,6 +4300,39 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/itss-config-file.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/itss-config-file.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/itss-dashboard.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/itss-dashboard.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/techguides/images/itss-framework-structure.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/itss-framework-structure.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/jar-location.png",
       "output": {
         "resource": {
@@ -7403,6 +7436,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "home/techguides/itss-test-framework-template.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/itss-test-framework-template.html",
+          "hash": "RXQrmLUjXQgne4/aCJuvBw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "home/techguides/manage-workflows.md",
       "output": {
         ".html": {
@@ -7705,6 +7750,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/zip/TestScript.zip",
+      "output": {
+        "resource": {
+          "relative_path": "home/zip/TestScript.zip"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/zip/TestSuite.zip",
       "output": {
         "resource": {
@@ -7753,6 +7809,28 @@
       "output": {
         "resource": {
           "relative_path": "home/zip/db.properties"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/zip/itsstest-testresults.zip",
+      "output": {
+        "resource": {
+          "relative_path": "home/zip/itsstest-testresults.zip"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/zip/manifest.xml",
+      "output": {
+        "resource": {
+          "relative_path": "home/zip/manifest.xml"
         }
       },
       "is_incremental": false,
@@ -7934,18 +8012,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "RestApiDocumentProcessor": {
@@ -7954,6 +8028,10 @@
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         }
