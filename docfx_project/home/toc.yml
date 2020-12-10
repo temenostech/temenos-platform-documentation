@@ -36,7 +36,7 @@
      items:
        - name: Available Templates
          href: ./techguides/templates-list.md
-       - name: Transact Templates Overview
+       - name: Transact Template Overview
          href: http://documentation.temenos.cloud/home/pdf/transact-components.pdf 
        - name: Selenium Template overview
          href: http://documentation.temenos.cloud/home/techguides/selenium-template.html 
