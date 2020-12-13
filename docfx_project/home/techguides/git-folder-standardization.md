@@ -91,7 +91,7 @@ Some of the folders have been renamed to better reflect the name of the componen
 | N/A                        | t24-interactiontests-iris                |                                                              |                                                                                                                                                                                                 | N/A                                                                                                                                                                                                                                                                       |
 | N/A                        | t24-jars                                 | *.zip                                                        | *.zip                                                                                                                                                                                           | zip of multiple folders containing jars. For eg: t24lib, l3lib. Note: We   use the folders t24lib and l3lib for core and l3 libraries respectively.   Hence the same naming convention has to be used for the artifacts.                                                  |
 | client_files/localjars     | t24-l3-java                              |                                                              |                                                                                                                                                                                                 | zip of l3libraries                                                                                                                                                                                                                                                        |
-| plugins                    | war-package                              | *.zip containing war, jar or war and optional .endpoint file | *.zip containing war, jar or war and optional .endpoint file   which contains the dns name. E.g.:  Provider   APIs~https://t24-v1f2k9y77x18.temenos.cloud/provider-apis/api/v1.0.0/meta/apidocs | Optional .endpoint file within *.zip should now contain he   keyword 'localhost' instead of the dnsname to be able to used during factory   run. E.g: Provider   APIs~https://localhost/provider-apis/api/v1.0.0/meta/apidocs                                             |
+| plugins                    | war-package                              | *.zip containing war, jar or war and optional .endpoint file | *.zip containing war, jar or war and optional .endpoint file   which contains the dns name. Ie.:  Provider   APIs~https://t24-v1f2k9y77x18.temenos.cloud/provider-apis/api/v1.0.0/meta/apidocs | Optional .endpoint file within *.zip should now contain he   keyword 'localhost' instead of the dnsname to be able to used during factory   run. Ie.: Provider   APIs~https://localhost/provider-apis/api/v1.0.0/meta/apidocs                                             |
 | N/A                        | t24-ud                                   | *.zip containing UD folders                                  | *.zip containing UD folders                                                                                                                                                                     | N/A                                                                                                                                                                                                                                                                       |
 | updates                    | t24-updates                              | zip of zip                                                   | zip of zip                                                                                                                                                                                      | N/A                                                                                                                                                                                                                                                                       |
 | wsdl                       | wsdl                                     |                                                              |                                                                                                                                                                                                 | N/A                                                                                                                                                                                                                                                                       |
@@ -126,7 +126,7 @@ Refer to this [user guide](http://documentation.temenos.cloud/home/techguides/de
 > [!Note]
 >Always Git → Pull before pushing new code in the environment repository. This command fetches and downloads content from a remote repository and immediately update the local repository to match that content.
 
-![](./images/git-pull.png)
+ ![](./images/git-pull.png)
 
 ### 4.3 Deploy the changes  ###
 
@@ -143,7 +143,7 @@ During the deployment, the **Start**, **Stop**, **Rebuild**, **Upgrade** and **C
 
 - Failed Deployment:
 
-![](./images/failed-env.png)
+ ![](./images/failed-env.png)
 
 ### 4.4 Standalone.xml file notes ###
 
@@ -156,11 +156,11 @@ There are different standalone.xml templates for TSS and OSS. These are provided
 
 - in the datasource code block and give a new name (ie. instead of jndi-name="java:/jdbc/t24DS" you can change the name from t24DS to another one) or change the min/max-pool-size. If you want to add more datasource copy the entire code block highlighted below.
 
- ![](./images/standalone-tss.png)
+  ![](./images/standalone-tss.png)
 
 - in the queues add new connection pools (copy-paste the link and change the name, max-pool-size)
 
- ![](./images/standalone-queues.png)
+  ![](./images/standalone-queues.png)
 
 - add custom queues ( copy the highlighted queue below and add another name (ie. instead of tecEventsTopic you can add another name)
 
@@ -172,17 +172,17 @@ There are different standalone.xml templates for TSS and OSS. These are provided
 
 You can place the TAFJDB.zip file in the model-bank-database-h2 folder:
 
- ![](./images/tafjdb.png)
+  ![](./images/tafjdb.png)
 
 The Git Folder Standardization allows you to add the db.properties file into the TAFJDB.zip. The db.properties file contains the db name, clientdb user and pass:
 
- ![](./images/db.properties.png)
+  ![](./images/db.properties.png)
 
 If the folder inside TAFJDB.zip file is renamed, then it is mandatory in the db.properties to add the db-name the same as the db folder name and the credentials for the respective db.
 
- ![](./images/db.properties2.png)
+  ![](./images/db.properties2.png)
 
->[!Note
+>[!Note]
 >If you want to overwrite the database it is important to do at least one change before deploying it. Otherwise the platform will pick the initial database only.
 
 ##5. Attachments
