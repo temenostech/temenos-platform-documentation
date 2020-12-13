@@ -332,8 +332,8 @@
 <td>plugins</td>
 <td>war-package</td>
 <td>*.zip containing war, jar or war and optional .endpoint file</td>
-<td>*.zip containing war, jar or war and optional .endpoint file   which contains the dns name. E.g.:  Provider   APIs~<a href="https://t24-v1f2k9y77x18.temenos.cloud/provider-apis/api/v1.0.0/meta/apidocs">https://t24-v1f2k9y77x18.temenos.cloud/provider-apis/api/v1.0.0/meta/apidocs</a></td>
-<td>Optional .endpoint file within *.zip should now contain he   keyword &#39;localhost&#39; instead of the dnsname to be able to used during factory   run. E.g: Provider   APIs~<a href="https://localhost/provider-apis/api/v1.0.0/meta/apidocs">https://localhost/provider-apis/api/v1.0.0/meta/apidocs</a></td>
+<td>*.zip containing war, jar or war and optional .endpoint file   which contains the dns name. Ie.:  Provider   APIs~<a href="https://t24-v1f2k9y77x18.temenos.cloud/provider-apis/api/v1.0.0/meta/apidocs">https://t24-v1f2k9y77x18.temenos.cloud/provider-apis/api/v1.0.0/meta/apidocs</a></td>
+<td>Optional .endpoint file within *.zip should now contain he   keyword &#39;localhost&#39; instead of the dnsname to be able to used during factory   run. Ie.: Provider   APIs~<a href="https://localhost/provider-apis/api/v1.0.0/meta/apidocs">https://localhost/provider-apis/api/v1.0.0/meta/apidocs</a></td>
 </tr>
 <tr>
 <td>N/A</td>
@@ -485,7 +485,7 @@
 <h3 id="42-commit--push-the-changes-to-the-environment-repository">4.2 Commit &amp; push the changes to the Environment Repository</h3>
 <div class="NOTE"><h5>Note</h5><p>Always Git → Pull before pushing new code in the environment repository. This command fetches and downloads content from a remote repository and immediately update the local repository to match that content.</p>
 </div>
-<p><img src="images/git-pull.png" alt=""></p>
+<p> <img src="images/git-pull.png" alt=""></p>
 <h3 id="43-deploy-the-changes">4.3 Deploy the changes</h3>
 <p>Refer to <a href="http://documentation.temenos.cloud/home/techguides/deploy-an-update-to-an-existing-environment.html#commit--push-features-to-repository">this page</a> to learn how to deploy the changes to your environment.</p>
 <p>During the deployment, the <strong>Start</strong>, <strong>Stop</strong>, <strong>Rebuild</strong>, <strong>Upgrade</strong> and <strong>Clone Environment</strong> buttons are not disabled.</p>
@@ -496,9 +496,10 @@
 </ul>
 <p><img src="images/passed-env.png" alt=""></p>
 <ul>
-<li>Failed Deployment:</li>
-</ul>
+<li><p>Failed Deployment:</p>
 <p><img src="images/failed-env.png" alt=""></p>
+</li>
+</ul>
 <h3 id="44-standalonexml-file-notes">4.4 Standalone.xml file notes</h3>
 <p>There are different standalone.xml templates for TSS and OSS. These are provided to you by us.</p>
 <h3 id="441-the-standalonexml-tss-template">4.4.1 The standalone.xml TSS template:</h3>
@@ -520,14 +521,13 @@
 </ul>
 <h3 id="442-the-dbproperties-file---only-applicatble-for-oss-templates">4.4.2 The db.properties file - only applicatble for OSS templates!</h3>
 <p>You can place the TAFJDB.zip file in the model-bank-database-h2 folder:</p>
-<p> <img src="images/tafjdb.png" alt=""></p>
+<p>  <img src="images/tafjdb.png" alt=""></p>
 <p>The Git Folder Standardization allows you to add the db.properties file into the TAFJDB.zip. The db.properties file contains the db name, clientdb user and pass:</p>
-<p> <img src="images/db.properties.png" alt=""></p>
+<p>  <img src="images/db.properties.png" alt=""></p>
 <p>If the folder inside TAFJDB.zip file is renamed, then it is mandatory in the db.properties to add the db-name the same as the db folder name and the credentials for the respective db.</p>
-<p> <img src="images/db.properties2.png" alt=""></p>
-<blockquote><p>[!Note
-If you want to overwrite the database it is important to do at least one change before deploying it. Otherwise the platform will pick the initial database only.</p>
-</blockquote>
+<p>  <img src="images/db.properties2.png" alt=""></p>
+<div class="NOTE"><h5>Note</h5><p>If you want to overwrite the database it is important to do at least one change before deploying it. Otherwise the platform will pick the initial database only.</p>
+</div>
 <h2 id="5-attachments">5. Attachments</h2>
 <p>You can download the Standalone OSS/ TSS and the db.properties files below:</p>
 <ul>
