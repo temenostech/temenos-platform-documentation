@@ -58,9 +58,10 @@ To change the password you need to follow the next steps:
  >Note: on your first login, you need to reset the password that was initially created by the Organisation Admin.
 
   ![](./images/user-change-password.png)
+<br>
+</br>
 
 # Recover Password
-<br>
 ## Ask the Organisation Admin to change your password 
 
 If you lost your password, your Organisation Admin can change it from his/ her end. To do this, the Organiation Admin needs to:
@@ -86,7 +87,7 @@ If you have forgotten or lost your password, you can recover it by contacting th
 <br>
 </br>
 
-# Update SSH Key
+# Update the SSH Key
 To Update the SSH Key, follow the instructions below:
 
 1. Click on your **user name** (top-right) and then on **Profile**
@@ -102,7 +103,7 @@ To Update the SSH Key, follow the instructions below:
  >Note: the  **Update SHH** button is enabled once the editing is started and the number of characters added in the field are over 200.
 
 <br>
-
+</br>
 # User Roles Management 
 
 By default, when your organisation is created, Temenos will provide you the link and access instructions to your designated organisation administrator (the first and only user with full rights on the platform).
