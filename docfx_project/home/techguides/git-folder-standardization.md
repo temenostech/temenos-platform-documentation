@@ -170,7 +170,7 @@ There are different standalone.xml templates for TSS and OSS. These are provided
 
 ### 4.4.2 The db.properties file - only applicatble for OSS templates! ###
 
-You can place the TAFJDB.zip file in the model-bank-database-h2 folder:
+You can place the TAFJDB.zip file in the model-bank-database-h2 folder. The db.properties file should be added to the corresponding H2 .zip files in the artifactory and the H2 machines must have a copy of this file. 
 
   ![](./images/tafjdb.png)
 
@@ -181,6 +181,7 @@ The Git Folder Standardization allows you to add the db.properties file into the
 If the folder inside TAFJDB.zip file is renamed, then it is mandatory in the db.properties to add the db-name the same as the db folder name and the credentials for the respective db.
 
   ![](./images/db.properties2.png)
+
 
 >[!Note]
 >If you want to overwrite the database it is important to do at least one change before deploying it. Otherwise the platform will pick the initial database only.
