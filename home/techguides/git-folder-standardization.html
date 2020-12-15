@@ -270,7 +270,7 @@
 <td>t24-Addons</td>
 <td>*.zip</td>
 <td>*.zip</td>
-<td>The environment file can be provided along with the jars/wars which contains JAVA_OPTS that can to be added in the appserver startup. If only environment file inside the zip is provided the JAVA_OPTS will be added to the appserver without copying any war/jar files.</td>
+<td>The environment file can be provided along with the jars/wars which contains JAVA_OPTS that can to be added in the appserver startup. If only environment file inside the zip is provided the JAVA_OPTS will be added to the appserver without copying any war/jar files.       Additionally, this environment file can be used to add or update the java heap size in the app server start up file (java_opts=<variables> - replace the variables with the appropriate ones).</variables></td>
 </tr>
 <tr>
 <td>N/A</td>
@@ -520,7 +520,10 @@
 </li>
 </ul>
 <h3 id="442-the-dbproperties-file---only-applicatble-for-oss-templates">4.4.2 The db.properties file - only applicatble for OSS templates!</h3>
-<p>You can place the TAFJDB.zip file in the model-bank-database-h2 folder. The db.properties file should be added to the corresponding H2 .zip files in the artifactory and the H2 machines must have a copy of this file. </p>
+<p>You can place the TAFJDB.zip file in the model-bank-database-h2 folder. The db.properties file should be added to the corresponding H2 .zip files in the artifactory and the H2 machines must have a copy of this file.</p>
+<div class="NOTE"><h5>Note</h5><p>If the Golden Copy is provided by you make sure to have the db.properties file under the model-bank-database-h2. If this is not present, the environment will be created using the default modelbank credentials.</p>
+<p>It is mandatory to have the db.properties file included along with your H2 DB .zip file, otherwise the environment will be created using the default modelbank credentials.</p>
+</div>
 <p>  <img src="images/tafjdb.png" alt=""></p>
 <p>The Git Folder Standardization allows you to add the db.properties file into the TAFJDB.zip. The db.properties file contains the db name, clientdb user and pass:</p>
 <p>  <img src="images/db.properties.png" alt=""></p>
