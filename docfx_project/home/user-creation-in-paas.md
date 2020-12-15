@@ -143,8 +143,10 @@ For security reasons, if you are inactive for more than 5 minutes on the Temenos
 - If you opt to **Logout** or don’t take any action on the pop-up your session will expire. Note that the environment creation, factory runs or other organization operations will still be running. 
 
 The session is automatically extended when the you click on the **Overview** or **Events** tabs in the environments details page.
- 
-# How to use PuTTY SSH client for SSH key generation. #
+ <br>
+</br>
+
+# How to generate SSH key for your user#
 
 If you need access to the source code repository you must provide the public SSH Keys on the user profile section to gain access. You can use any other SSH key generator client.
 
@@ -159,7 +161,7 @@ If you need access to the source code repository you must provide the public SSH
 
 
 
-## How to create the SSH keys (pair public and private keys) ##
+### How to create the SSH keys (pair public and private keys) ###
 
 
 
@@ -185,12 +187,10 @@ If you need access to the source code repository you must provide the public SSH
 •	The public/private key location on your local machine should look like this:
 
 ![public/private keys location](./images/putty-keygen-keyslocation.png)
+<br>
+</br>
 
-
-
-
-
-## How to add users on the portal with the SSH keys  ##
+### How to add users on the portal with the SSH keys ###
 
 > [!Note]
 > All fields are mandatory!
