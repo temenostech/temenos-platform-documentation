@@ -1266,7 +1266,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/git-folder-standardization.html",
-          "hash": "nRcHu4lokVkcpnsrs3aF0Q=="
+          "hash": "fiMGsBsgQEHEolQ3+KKU4Q=="
         }
       },
       "is_incremental": false,
@@ -7783,10 +7783,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/zip/client-standalone-OSS.xml",
+      "source_relative_path": "home/zip/client-standalone-OSS.txt",
       "output": {
         "resource": {
-          "relative_path": "home/zip/client-standalone-OSS.xml"
+          "relative_path": "home/zip/client-standalone-OSS.txt"
         }
       },
       "is_incremental": false,

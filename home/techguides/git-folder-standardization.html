@@ -506,8 +506,8 @@
 <ul>
 <li><p>don’t change any of the static values</p>
 </li>
-<li><p>the only changes you can apply to the files are</p>
-</li>
+<li><p>the only changes you can apply to the files are:</p>
+<ul>
 <li><p>in the datasource code block and give a new name (ie. instead of jndi-name=&quot;java:/jdbc/t24DS&quot; you can change the name from t24DS to another one) or change the min/max-pool-size. If you want to add more datasource copy the entire code block highlighted below.</p>
 <p><img src="images/standalone-tss.png" alt=""></p>
 </li>
@@ -516,6 +516,8 @@
 </li>
 <li><p>add custom queues ( copy the highlighted queue below and add another name (ie. instead of tecEventsTopic you can add another name)</p>
 <p><img src="images/standalone-custom-queues.png" alt=""></p>
+</li>
+</ul>
 <p><strong>Other alterations added to the XML file will result in a failed deployment.</strong></p>
 </li>
 </ul>
