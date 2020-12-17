@@ -152,19 +152,19 @@ There are different standalone.xml templates for TSS and OSS. These are provided
 ### 4.4.1 The standalone.xml TSS template: ###
 - don’t change any of the static values
 
-- the only changes you can apply to the files are
+- the only changes you can apply to the files are:
 
-- in the datasource code block and give a new name (ie. instead of jndi-name="java:/jdbc/t24DS" you can change the name from t24DS to another one) or change the min/max-pool-size. If you want to add more datasource copy the entire code block highlighted below.
+    - in the datasource code block and give a new name (ie. instead of jndi-name="java:/jdbc/t24DS" you can change the name from t24DS to another one) or change the min/max-pool-size. If you want to add more datasource copy the entire code block highlighted below.
 
-  ![](./images/standalone-tss.png)
+      ![](./images/standalone-tss.png)
 
-- in the queues add new connection pools (copy-paste the link and change the name, max-pool-size)
+    - in the queues add new connection pools (copy-paste the link and change the name, max-pool-size)
 
-  ![](./images/standalone-queues.png)
+      ![](./images/standalone-queues.png)
 
-- add custom queues ( copy the highlighted queue below and add another name (ie. instead of tecEventsTopic you can add another name)
+    - add custom queues ( copy the highlighted queue below and add another name (ie. instead of tecEventsTopic you can add another name)
 
- ![](./images/standalone-custom-queues.png)
+     ![](./images/standalone-custom-queues.png)
 
  **Other alterations added to the XML file will result in a failed deployment.**
 
