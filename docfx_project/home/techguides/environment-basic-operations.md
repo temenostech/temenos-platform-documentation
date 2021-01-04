@@ -121,7 +121,7 @@ The user can also **clone**, **edit**, **delete**, **start**, **stop**, **rebuil
 
  **After the upgrade is completed you can:**
 
-1. **Rebuild** the upgraded environment from the  **Actions** button - a pop-up informs that *Any changes made to the environment will be lost and the environment will be reset to its original state.*. To proceed, tick the checkbok and click **Confirm**
+1. **Rebuild** the upgraded environment from the  **Actions** button - a pop-up informs that *Any changes made to the environment will be lost and the environment will be reset to its original state.* To proceed, tick the check box and click **Confirm**:
 
  ![](./images/upgrade-rebuild-env.png) 
 
