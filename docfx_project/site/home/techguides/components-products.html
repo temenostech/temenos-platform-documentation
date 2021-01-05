@@ -138,7 +138,7 @@ An organization can define as many components as needed but should have all mand
 </ol>
 <p>See below example:</p>
 <p><img src="images/products-add-component.png" alt=""></p>
-<p>A folder is automatically created into the repository <em>(we are using JFrog Artifactory)</em> with the name of your component and will be always created under the default <strong>stable_dev</strong> stage. This is the path where the components&#39; files should be uploaded as explained on the next steps.</p>
+<p>A folder is automatically created into the repository <em>(we are using JFrog Artifactory)</em> with the name of your component and will be always created under the default <strong>CONFIGURATION_STAGE</strong> stage. This is the path where the components&#39; files should be uploaded as explained on the next steps.</p>
 <p><em>(Please note that the components&#39; artifacts can be uploaded any time before running a factory).</em></p>
 <p><em>(If the related artifacts are not uploaded, running the factory will not be possible and an error message will be thrown).</em></p>
 <p> To see the details of a component please make sure to first select the stream from the top-right-side menu. The list with the components that belong to the respective stream will be displayed on the left side of the page. The same operation applies for the products.</p>
@@ -198,7 +198,7 @@ Also the binaries/ artifacts have to be uploaded each time a component is update
 <div class="NOTE"><h5>Note</h5><p>Open source doesn’t support multiple file uploads at a time, therefore you need to upload the required binaries one by one.</p>
 </div>
 <p><strong>Example of the curl command based on the above</strong>: 
-curl -H &quot;X-JFrog-Art-Api:AKCp5dKYyM9WMoiacim9yedAZfG6gLwwcYugPmzZhqHkdRe6ex6pZZnRMteQqedLE9Q3qds6V&quot; &quot;<a href="https://1dtk4nz95tssg-artifactory.temenos.cloud/artifactory/repo-1dtk4nz95tssg/dev_stream/demo_stage/t24-jars">https://1dtk4nz95tssg-artifactory.temenos.cloud/artifactory/repo-1dtk4nz95tssg/dev_stream/demo_stage/t24-jars</a>&quot; -T /drives/c/Users/file/t24-jars-63688104355895.zip</p>
+curl -H &quot;X-JFrog-Art-Api:AKPp5dKYsrreear46t4e6ett7t7x6pZZnRMteeffsLE9Q3qds6V&quot; &quot;<a href="https://1dtk4nz95bmnw-artifactory.temenos.cloud/artifactory/repo-1dtk4nz95tssg/dev_stream/demo_stage/t24-jars">https://1dtk4nz95bmnw-artifactory.temenos.cloud/artifactory/repo-1dtk4nz95tssg/dev_stream/demo_stage/t24-jars</a>&quot; -T /drives/c/Users/file/t24-jars-63688104355895.zip</p>
 <p>For demo purposes, we used MobaXterm to upload the binary into the Artifactory as displayed below:
 <img src="images/components-products-mobaxterm.png" alt=""></p>
 <p>Once the command is run, the binary is uploaded on the Artifactory:
@@ -299,8 +299,16 @@ curl -H &quot;X-JFrog-Art-Api:AKCp5dKYyM9WMoiacim9yedAZfG6gLwwcYugPmzZhqHkdRe6ex
 <p><br>
 </br></p>
 <h1 id="artifactory-view">Artifactory view</h1>
-<p>The artifactory view displays the uploaded components that are available for the particular stages. By expanding the components, the user triggers a download of the respective component zip file.</p>
-<p><img src="images/artifactory_view.png" alt=""></p>
+<p>The artifactory view displays the uploaded components that are available for the all stages within a stream. 
+<img src="images/artifactory_view.png" alt=""></p>
+<ul>
+<li><p>Click on the <img src="images/i-icon.png" alt=""> icon to go to the Artifactory page. You need to login with your portal credentials to the Artifactory:</p>
+<p><img src="images/platform-artifactory-login.png" alt=""></p>
+</li>
+<li><p>Click on the <img src="images/arrow-icon.png" alt=""> icon to expand the Component details. Click on the <em>component.zip</em> to download the binary to your local machine:
+<img src="images/download-component.png" alt=""></p>
+</li>
+</ul>
 <p><br>
 </br></p>
 <h1 id="user-permissions-required">User Permissions Required</h1>
