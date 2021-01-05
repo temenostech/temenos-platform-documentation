@@ -15,7 +15,7 @@ This page provides information about the monthly Temenos Continuous Deployment P
 <br>  
 </br> 
 
-&nbsp;&nbsp;&nbsp;&nbsp;**2. Factory Run: Added validation that checks for the correct file naming format**
+&nbsp;&nbsp;&nbsp;&nbsp;**2. Factory Run: Added validation that checks for the correct file naming format** 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - File naming conventions are validated immediately after the factory run is triggered. If the naming convention is not compliant, the factory run fails. 
 <br>
