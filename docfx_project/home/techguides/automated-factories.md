@@ -78,17 +78,17 @@ See below configurations to understand better how to configure correctly and the
 
 ## Product Configuration 
 
-This tab represents the test configuration that holds the template, the products and the source stage that are pre-tested from the perspective of the current factory.
+This step represents the test configuration that holds the template, the products and the source stage that are pre-tested from the perspective of the current factory.
 
-   - **Template**: choose an Environment Template from the dropdown list. Based on this template  the environments will be created where you will be able to test different products
+   1. Select the **Product Configuration** tab.
+
+   2. **Template**: choose an Environment Template from the drop-down list. Based on this template  the environments will be created where you will be able to test different products.
    
-   - **Select Principle Products**: following a successful run, the principle products are promoted to the next stage (the configured one)
+   3. **Select Principle Products** and **Select Other Products**: select none, one or more products from the drop-down. The products selected at this stage are promoted to the next stage (the configured one).  You must select at least one **Principal** or **Other Product** in any of these two fields to progress with the factory creation. I.e.: in the screenshot below we selected a product only in the **Other Product**.
   
-   - **Source Stage**: this is the stage with the stable version of components
-    
-   - **Select Other Products**: you can select more products that are required to test the Principle products
+   4. **Source Stage**: add the stage with the stable version of components (the components from this stage will be promoted to the target stage during the factory run).
    
-   - click **Next**
+   5. Click **Next**.
     
 ![](./images/factory-product-configuration.png) 
 
@@ -99,23 +99,22 @@ The Test Configuration consists in in-build service tasks and is used to  trigge
 Depending on your organisation settings, you may / may not have a Default Workflow or the option to select from a list of workflows defined by the users from your organisation. During this phase, you have to fill in the **Workflow** steps - a sample which displays the steps (in that exact sequence) that are executed by the selected workflow. Assuming that you select the **Default Workflow**, you need to fill in the following fields:
 
 
+   1. Select the **Test Configuration** tab 
 
 
+   2. **Step 1** - fill in the below:
 
-- **Test template**: specifies the template that is required to deploy a test environment that holds the testing framework and test scripts. This is needed to generalize the test tools as a template.
+      - **Test template**: specifies the template that is required to deploy a test environment that holds the testing framework and test scripts. This is needed to generalize the test tools as a template.
 
+      - **Component**: this is the component that holds the test scripts which runs against the T24 VM.
 
-- **Component**: this is the component that holds the test scripts which runs against the T24 VM
+      - **No. of VMs**: number of test VM's to be created during factory run.
 
+      - **Test Stage**: represents a stable version of components that is pre-tested from the perspective of the current factory.
 
-- **No. of VMs**: number of test VM's to be created during factory run
-Test Stage: represents a stable version of components that is pre-tested from the perspective of the current factory
+      - **Optional**: tick if the workflow should stop in case of failure.
 
-
-- **Optional**: tick if the workflow should stop in case of failure
-
-
-- Click **Next**
+   3.  Click **Next**.
 
 At the end of this step, when the first round of tests is completed, the test VM will be deleted, but it will not stop the T24 environment (this will be done at the end of the workflow)
 
@@ -133,24 +132,33 @@ To get a better understanding of what happens when COB is triggered please refer
 
 
 ## Promotion Configuration
-This configuration enables the user to select all the required principle products along with the target stage to which they will be promoted after a successful factory run. In addition, the user can select the Test Components along with the target stage if they need promotion as well. 
-![factory-promotion-configuration](./images/factory-promotion-configuration.png)
 
-> [!Note]
- > It is not mandatory to fill in the Tests to Promote field and the associated Select target stage for Tests from the right side. 
+This promotion configuration enables you to select all the required products to promote along with their target stage. In addition, you can select the Test Components along with the target stage if they need promotion as well. 
+
+Following the 202011 release, it is not mandatory to select any product or test at this factory creation stage.
+
+![](./images/factory-promotion-configuration.png)
 
 
 
-#### Factory Scheduler
-A user has the privilege to configure the factory run schedule to automatically run the tests and have the results available daily.
 
-- the scheduler can be configured to run one time per day
 
-- if the factory run test is successful you can choose to stop, or keep running the T24 environment
 
-- the same applies for the Factory Run Failure scenario
+## Factory Scheduler
 
-The **Stop Environment** and **Keep Running Environment** options are aimed to be used for costs purposes
+You can configure the factory scheduler to automatically run the tests and have the results available daily. This feature is optional and you can opt to set it/ don't set it during the factory creation stage.
+
+How does the factory scheduler work?
+
+- if the factory run  is successful you can choose to stop or keep running the Transact environment
+
+- the same applies for a factory run failure or any other failure if the environments are available
+
+- you can enable/ disable the factory run to follow a pattern (i.e. you can schedule to trigger the factory run in a certain time range and different days). Once enabled the **Schedule Pattern** you need to set the start and end date, the time and ideally the days when you want the factory to be run. If no day is selected then the factory will run every day.
+
+
+
+The **Stop Environment** and **Keep Running Environment** options are aimed to be used for costs purposes.
 
 ![factory-scheduler](./images/factory-scheduler.png)
 

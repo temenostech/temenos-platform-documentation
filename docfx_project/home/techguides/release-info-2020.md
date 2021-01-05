@@ -3,6 +3,31 @@
 
 This page provides information about the monthly Temenos Continuous Deployment Platform features and improvements in each release.
 
+# **202011**
+**InfraBuild**: 39  &nbsp;**|**&nbsp; **PortalTag**: 202011.RC3
+&nbsp;**|**&nbsp; **ControllerBuild**: 335  &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202011 |&nbsp; 
+
+## Technical enhancements
+
+&nbsp;&nbsp;&nbsp;&nbsp;**1. Factory:  Product Configuration and Promotion Configuration changes**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product and Promotion Configuration screens were enhanced for a better user experience. Read more [here](http://documentation.temenos.cloud/home/techguides/automated-factories.html)
+<br>
+</br> 
+
+&nbsp;&nbsp;&nbsp;&nbsp;**2. Factory Run: Added validation that checks for the correct file naming format before the factory is started**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - File naming conventions are validated immediately after the factory run is triggered. If the naming convention is not compliant, the factory run fails. 
+<br>
+</br> 
+
+&nbsp;&nbsp;&nbsp;&nbsp;**3. Environment Events tab improvements**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Error messages  in the environment **Events** tab are enhanced to provide meaningful information.
+
+<br>
+</br> 
+
 # **202010**
 **InfraBuild**: 39  &nbsp;**|**&nbsp; **PortalTag**: 202010.RC8
 &nbsp;**|**&nbsp; **ControllerBuild**: 320  &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202010 |&nbsp; 

@@ -35,7 +35,7 @@ See the following scenarios if you choose to skip the factory environment creati
 
   - **Scenario 2** - If the factory environment status is **STOPPED** and previous environment status is **STARTED** - the factory run automatically starts the environment and once it is **STARTED**, it triggers the test environment. 
 
-> [!Note]
+> Note:
 > If the factory environment creation has failed during the previous factory run, it is not possible to use it for your current factory run. You need to first identify and solve the issue in order to see the **Reuse the existing environment from previous factory run without overwriting it** in the pop-up. Otherwise this checkbox will not appear in the pop-up.
  
 
@@ -81,11 +81,12 @@ During the factory run you are able to:
 
 After the environment deployment phase is complete, the next phase (stage) is Running Test Deploy. During this phase a test environment is created (you can check it under Environments tab). 
 
-**Note** that this environment is automatically deleted after the tests are run and the process is completed.
+>> [!Note]
+> This environment is automatically deleted after the tests are run and the process is completed.
 
 ![](./images/run-factory-create-test.png)
 
- After running the tests successfully, you will see some details about all stages and the results, as in the example below 
+After the tests are run, the dashboard shows details about the stages and the results, as in the example below:
 
 ![](./images/run-factory-completed.png)
 
