@@ -1,6 +1,6 @@
 
 ## Release Notes
-
+ 
 This page provides information about the monthly Temenos Continuous Deployment Platform features and improvements in each release.
 
 # **202011**
