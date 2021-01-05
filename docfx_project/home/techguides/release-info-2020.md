@@ -5,7 +5,7 @@ This page provides information about the monthly Temenos Continuous Deployment P
 
 # **202011**
 **InfraBuild**: 39  &nbsp;**|**&nbsp; **PortalTag**: 202011.RC3
-&nbsp;**|**&nbsp; **ControllerBuild**: 335  &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202011 |&nbsp; 
+&nbsp;**|**&nbsp; **ControllerBuild**: 335  &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202011 &nbsp; 
 
 ## Technical enhancements
 
@@ -30,7 +30,7 @@ This page provides information about the monthly Temenos Continuous Deployment P
 
 # **202010**
 **InfraBuild**: 39  &nbsp;**|**&nbsp; **PortalTag**: 202010.RC8
-&nbsp;**|**&nbsp; **ControllerBuild**: 320  &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202010 |&nbsp; 
+&nbsp;**|**&nbsp; **ControllerBuild**: 320  &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202010 &nbsp; 
 
 ## Technical enhancements
 
