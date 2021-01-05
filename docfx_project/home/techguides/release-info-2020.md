@@ -6,7 +6,7 @@ This page provides information about the monthly Temenos Continuous Deployment P
 # **202011**
 **InfraBuild**: 39  &nbsp;**|**&nbsp; **PortalTag**: 202011.RC3
 &nbsp;**|**&nbsp; **ControllerBuild**: 335  &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202011 &nbsp; 
-
+    
 ## Technical enhancements
 
 &nbsp;&nbsp;&nbsp;&nbsp;**1. Factory:  Product Configuration and Promotion Configuration changes**
