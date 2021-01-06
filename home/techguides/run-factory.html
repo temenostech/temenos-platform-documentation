@@ -107,8 +107,9 @@
 <li><p><strong>Scenario 2</strong> - If the factory environment status is <strong>STOPPED</strong> and previous environment status is <strong>STARTED</strong> - the factory run automatically starts the environment and once it is <strong>STARTED</strong>, it triggers the test environment. </p>
 </li>
 </ul>
-<div class="NOTE"><h5>Note</h5><p>If the factory environment creation has failed during the previous factory run, it is not possible to use it for your current factory run. You need to first identify and solve the issue in order to see the <strong>Reuse the existing environment from previous factory run without overwriting it</strong> in the pop-up. Otherwise this checkbox will not appear in the pop-up.</p>
-</div>
+<blockquote><p>Note:
+If the factory environment creation has failed during the previous factory run, it is not possible to use it for your current factory run. You need to first identify and solve the issue in order to see the <strong>Reuse the existing environment from previous factory run without overwriting it</strong> in the pop-up. Otherwise this checkbox will not appear in the pop-up.</p>
+</blockquote>
 <p><br> </p>
 <p>Once the <strong>Run</strong> button is clicked, the process is initiated and it gets immediately to the stage where an environment based on your chosen template is created:</p>
 <p><img src="images/run-factory-deploy.png" alt=""></p>
@@ -138,9 +139,11 @@
 </ol>
 </div>
 <p>After the environment deployment phase is complete, the next phase (stage) is Running Test Deploy. During this phase a test environment is created (you can check it under Environments tab). </p>
-<p><strong>Note</strong> that this environment is automatically deleted after the tests are run and the process is completed.</p>
+<blockquote><div class="NOTE"><h5>Note</h5><p>This environment is automatically deleted after the tests are run and the process is completed.</p>
+</div>
+</blockquote>
 <p><img src="images/run-factory-create-test.png" alt=""></p>
-<p> After running the tests successfully, you will see some details about all stages and the results, as in the example below </p>
+<p>After the tests are run, the dashboard shows details about the stages and the results, as in the example below:</p>
 <p><img src="images/run-factory-completed.png" alt=""></p>
 <p>You are able to do the following:</p>
 <ul>

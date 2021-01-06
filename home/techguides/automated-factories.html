@@ -138,36 +138,43 @@
 </ol>
 <p><img src="images/factory-details.png" alt=""></p>
 <h2 id="product-configuration">Product Configuration</h2>
-<p>This tab represents the test configuration that holds the template, the products and the source stage that are pre-tested from the perspective of the current factory.</p>
-<ul>
-<li><p><strong>Template</strong>: choose an Environment Template from the dropdown list. Based on this template  the environments will be created where you will be able to test different products</p>
+<p>This step represents the test configuration that holds the template, the products and the source stage that are pre-tested from the perspective of the current factory.</p>
+<ol>
+<li><p>Select the <strong>Product Configuration</strong> tab.</p>
 </li>
-<li><p><strong>Select Principle Products</strong>: following a successful run, the principle products are promoted to the next stage (the configured one)</p>
+<li><p><strong>Template</strong>: choose an Environment Template from the drop-down list. Based on this template  the environments will be created where you will be able to test different products.</p>
 </li>
-<li><p><strong>Source Stage</strong>: this is the stage with the stable version of components</p>
+<li><p><strong>Select Principle Products</strong> and <strong>Select Other Products</strong>: select none, one or more products from the drop-down. The products selected at this stage are promoted to the next stage (the configured one).  You must select at least one <strong>Principal</strong> or <strong>Other Product</strong> in any of these two fields to progress with the factory creation. I.e.: in the screenshot below we selected a product only in the <strong>Other Product</strong>.</p>
 </li>
-<li><p><strong>Select Other Products</strong>: you can select more products that are required to test the Principle products</p>
+<li><p><strong>Source Stage</strong>: add the stage with the stable version of components (the components from this stage will be promoted to the target stage during the factory run).</p>
 </li>
-<li><p>click <strong>Next</strong></p>
+<li><p>Click <strong>Next</strong>.</p>
 </li>
-</ul>
+</ol>
 <p><img src="images/factory-product-configuration.png" alt=""> </p>
 <h2 id="test-configuration">Test Configuration</h2>
 <p>The Test Configuration consists in in-build service tasks and is used to  trigger tests for a given factory-run, trigger export of application logs.</p>
 <p>Depending on your organisation settings, you may / may not have a Default Workflow or the option to select from a list of workflows defined by the users from your organisation. During this phase, you have to fill in the <strong>Workflow</strong> steps - a sample which displays the steps (in that exact sequence) that are executed by the selected workflow. Assuming that you select the <strong>Default Workflow</strong>, you need to fill in the following fields:</p>
+<ol>
+<li><p>Select the <strong>Test Configuration</strong> tab </p>
+</li>
+<li><p><strong>Step 1</strong> - fill in the below:</p>
 <ul>
 <li><p><strong>Test template</strong>: specifies the template that is required to deploy a test environment that holds the testing framework and test scripts. This is needed to generalize the test tools as a template.</p>
 </li>
-<li><p><strong>Component</strong>: this is the component that holds the test scripts which runs against the T24 VM</p>
+<li><p><strong>Component</strong>: this is the component that holds the test scripts which runs against the T24 VM.</p>
 </li>
-<li><p><strong>No. of VMs</strong>: number of test VM&#39;s to be created during factory run
-Test Stage: represents a stable version of components that is pre-tested from the perspective of the current factory</p>
+<li><p><strong>No. of VMs</strong>: number of test VM&#39;s to be created during factory run.</p>
 </li>
-<li><p><strong>Optional</strong>: tick if the workflow should stop in case of failure</p>
+<li><p><strong>Test Stage</strong>: represents a stable version of components that is pre-tested from the perspective of the current factory.</p>
 </li>
-<li><p>Click <strong>Next</strong></p>
+<li><p><strong>Optional</strong>: tick if the workflow should stop in case of failure.</p>
 </li>
 </ul>
+</li>
+<li><p>Click <strong>Next</strong>.</p>
+</li>
+</ol>
 <p>At the end of this step, when the first round of tests is completed, the test VM will be deleted, but it will not stop the T24 environment (this will be done at the end of the workflow)</p>
 <p><img src="images/factory-test-configuration.png" alt=""> </p>
 <p>Assuming that you select a customized workflow with COB you need to fill in additional steps, such as:</p>
@@ -178,21 +185,21 @@ Test Stage: represents a stable version of components that is pre-tested from th
 <p><br>
 </br></p>
 <h2 id="promotion-configuration">Promotion Configuration</h2>
-<p>This configuration enables the user to select all the required principle products along with the target stage to which they will be promoted after a successful factory run. In addition, the user can select the Test Components along with the target stage if they need promotion as well. 
-<img src="images/factory-promotion-configuration.png" alt="factory-promotion-configuration"></p>
-<div class="NOTE"><h5>Note</h5><p>It is not mandatory to fill in the Tests to Promote field and the associated Select target stage for Tests from the right side. </p>
-</div>
-<h4 id="factory-scheduler">Factory Scheduler</h4>
-<p>A user has the privilege to configure the factory run schedule to automatically run the tests and have the results available daily.</p>
+<p>This promotion configuration enables you to select all the required products to promote along with their target stage. In addition, you can select the Test Components along with the target stage if they need promotion as well. </p>
+<p>Following the 202011 release, it is not mandatory to select any product or test at this factory creation stage.</p>
+<p><img src="images/factory-promotion-configuration.png" alt=""></p>
+<h2 id="factory-scheduler">Factory Scheduler</h2>
+<p>You can configure the factory scheduler to automatically run the tests and have the results available daily. This feature is optional and you can opt to set it/ don&#39;t set it during the factory creation stage.</p>
+<p>How does the factory scheduler work?</p>
 <ul>
-<li><p>the scheduler can be configured to run one time per day</p>
+<li><p>if the factory run  is successful you can choose to stop or keep running the Transact environment</p>
 </li>
-<li><p>if the factory run test is successful you can choose to stop, or keep running the T24 environment</p>
+<li><p>the same applies for a factory run failure or any other failure if the environments are available</p>
 </li>
-<li><p>the same applies for the Factory Run Failure scenario</p>
+<li><p>you can enable/ disable the factory run to follow a pattern (i.e. you can schedule to trigger the factory run in a certain time range and different days). Once enabled the <strong>Schedule Pattern</strong> you need to set the start and end date, the time and ideally the days when you want the factory to be run. If no day is selected then the factory will run every day.</p>
 </li>
 </ul>
-<p>The <strong>Stop Environment</strong> and <strong>Keep Running Environment</strong> options are aimed to be used for costs purposes</p>
+<p>The <strong>Stop Environment</strong> and <strong>Keep Running Environment</strong> options are aimed to be used for costs purposes.</p>
 <p><img src="images/factory-scheduler.png" alt="factory-scheduler"></p>
 <p> To see the details of a factory first select the stream and the stage from the top-right-side menu. If you have more stages, click on the stage where you created the respective factory. The list with the factories that belong to the respective stage will be displayed on the left side of the page:
 <img src="images/factory-see-details.png" alt=""></p>
