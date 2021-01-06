@@ -1,7 +1,7 @@
 
 ## Release Notes
  
-This page provides information about the monthly Temenos Continuous Deployment Platform features and improvements in each release.
+This page provides information about the monthly Temenos Continuous Deployment Platform features and improvements in each release. 
 
 # **202011**
 **InfraBuild**: 39  &nbsp;**|**&nbsp; **PortalTag**: 202011.RC3
