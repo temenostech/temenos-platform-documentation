@@ -11,7 +11,7 @@ This page provides information about the monthly Temenos Continuous Deployment P
 
 &nbsp;&nbsp;&nbsp;&nbsp;**1. Factory:  Product Configuration and Promotion Configuration changes**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product and Promotion Configuration screens were enhanced for a better user experience. Read more [here](http://documentation.temenos.cloud/home/techguides/automated-factories.html)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product and Promotion Configuration screens were enhanced for a better user experience. Read more [here](http://documentation.temenos.cloud/home/techguides/automated-factories.html).
 <br>  
 </br> 
 
