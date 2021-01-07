@@ -6,37 +6,45 @@ Below you can find the current templates catalogue:
 
 # T24   #
 ## TSS ##
-| Template   Name             | Version | Description                                                |
-|-----------------------------|---------|------------------------------------------------------------|
-| MB-T24-Jboss-SQL-202008     | 202008  | TSS-R20 Template for Stack06 - 202008 using ARM   template |
-| MB-T24-Jboss-SQL-202004-ARM | 202004  | TSS-R20Template for Stack06 - 202004 using ARM   template  |
-| MB-T24-Jboss-SQL-202003     | 202003  | TSS-R20Template for Stack06 - 202003                       |
-| MB-T24-Jboss-SQL-202002     | 202002  | TSS-R20Template for Stack06 - 202002                       |
-| MB-T24-Jboss-SQL-202001     | 202001  | TSS-R20Template for Stack06 - 202001                       |
-| MB-T24-Jboss-SQL-201912     | 201912  | TSS-R19Template for Stack06 - 201912                       |
-| MB-T24-Jboss-SQL-201911     | 201911  | TSS-R19Template for Stack06 - 201911                       |
-| MB-T24-Jboss-SQL-201910     | 201910  | TSS-R19Template for Stack06 - 201910                       |
-| MB-T24-Jboss-SQL-201909     | 201909  | TSS-R19Template for Stack06 - 201909                       |
-| MB-T24-Jboss-SQL-201908     | 201908  | TSS-R19Template for Stack06 - 201908                       |
-| MB-T24-Jboss-SQL-201904     | 201904  | TSS-R19Template for Stack06 - 201904                       |
-| MB-T24-Jboss-SQL-201804     | 201804  | TSS-R18Template for Stack06 - 201804                       |
+| Template   Name                  | Version | Description                                                 |
+|----------------------------------|---------|-------------------------------------------------------------|
+|     MB-Transact-Jboss-SQL-202012 | 202012  | TSS-R20 Template for Stack06 - 202012 using ARM template    |
+|     MB-Transact-Jboss-SQL-202011 | 202011  | TSS-R20 Template for Stack06 - 202011 using ARM template    |
+| MB-Transact-Jboss-SQL-202010     | 202010  | TSS-R20 Template for Stack06 - 202010 using ARM template    |
+| MB-T24-Jboss-SQL-202008          | 202008  | TSS-R20 Template for Stack06 - 202008 using ARM template    |
+| MB-T24-Jboss-SQL-202004-ARM      | 202004  | TSS-R20Template   for Stack06 - 202004 using ARM template   |
+| MB-T24-Jboss-SQL-202003          | 202003  | TSS-R20Template   for Stack06 - 202003                      |
+| MB-T24-Jboss-SQL-202002          | 202002  | TSS-R20Template   for Stack06 - 202002                      |
+| MB-T24-Jboss-SQL-202001          | 202001  | TSS-R20Template   for Stack06 - 202001                      |
+| MB-T24-Jboss-SQL-201912          | 201912  | TSS-R19Template   for Stack06 - 201912                      |
+| MB-T24-Jboss-SQL-201911          | 201911  | TSS-R19Template   for Stack06 - 201911                      |
+| MB-T24-Jboss-SQL-201910          | 201910  | TSS-R19Template   for Stack06 - 201910                      |
+| MB-T24-Jboss-SQL-201909          | 201909  | TSS-R19Template   for Stack06 - 201909                      |
+| MB-T24-Jboss-SQL-201908          | 201908  | TSS-R19Template   for Stack06 - 201908                      |
+| MB-T24-Jboss-SQL-201904          | 201904  | TSS-R19Template   for Stack06 - 201904                      |
+| MB-T24-Jboss-SQL-201804          | 201804  | TSS-R18Template   for Stack06 - 201804                      |
+
 
 
 ## OSS ##
-| Template   Name          | Version | Description                                 |
-|--------------------------|---------|---------------------------------------------|
-| MB-T24-Wildfly-H2-202004 | 202004  | T24 R20.04 (Open Source)                    |
-| MB-T24-Wildfly-H2-202003 | 202003  | T24 R20.03 (Open Source)                    |
-| MB-T24-Wildfly-H2-202002 | 202002  | T24 R20.02 (Open Source)                    |
-| MB-T24-Wildfly-H2-202001 | 202001  | T24 R20.01 (Open Source)                    |
-| MB-T24-Wildfly-H2-201912 | 201912  | T24 R19.12 (Open Source)                    |
-| MB-T24-Wildfly-H2-201911 | 201911  | T24 R19.11 (Open Source)                    |
-| MB-T24-Wildfly-H2-201910 | 201910  | T24 R19.10 (Open Source)                    |
-| MB-T24-Wildfly-H2-201909 | 201909  | MB-T24-Wildfly-H2-201909                    |
-| MB-T24-Wildfly-H2-201908 | 201908  | T24 R19.08 (Open Source)                    |
-| MB-T24-Wildfly-H2-201906 | 201906  | T24 R19.06 (Open Source)                    |
-| MB-T24-Wildfly-H2-201904 | 201904  | This is template for T24 with Widfly and H2 |
-| MB-T24-Wildfly-H2-201812 | 201812  | T24 R18.12 (Open Source)                    |
+| Template   Name                                                                                          | Version | Description                                   |
+|----------------------------------------------------------------------------------------------------------|---------|-----------------------------------------------|
+| MB-Transact-Wildfly-H2-202011                                                                            | 202011  | T24 R20.11   (Open Source)                    |
+|                                 MB-Transact-Wildfly-H2-202010                                            | 202010  | T24 R20.10   (Open Source)                    |
+| MB-T24-Wildfly-H2-202009                                                                                 | 202009  | T24 R20.09   (Open Source)                    |
+| MB-T24-Wildfly-H2-202008                                                                                 | 202008  | T24 R20.08   (Open Source)                    |
+| MB-T24-Wildfly-H2-202004                                                                                 | 202004  | T24   R20.04 (Open Source)                    |
+| MB-T24-Wildfly-H2-202003                                                                                 | 202003  | T24   R20.03 (Open Source)                    |
+| MB-T24-Wildfly-H2-202002                                                                                 | 202002  | T24   R20.02 (Open Source)                    |
+| MB-T24-Wildfly-H2-202001                                                                                 | 202001  | T24   R20.01 (Open Source)                    |
+| MB-T24-Wildfly-H2-201912                                                                                 | 201912  | T24   R19.12 (Open Source)                    |
+| MB-T24-Wildfly-H2-201911                                                                                 | 201911  | T24   R19.11 (Open Source)                    |
+| MB-T24-Wildfly-H2-201910                                                                                 | 201910  | T24   R19.10 (Open Source)                    |
+| MB-T24-Wildfly-H2-201909                                                                                 | 201909  | MB-T24-Wildfly-H2-201909                      |
+| MB-T24-Wildfly-H2-201908                                                                                 | 201908  | T24   R19.08 (Open Source)                    |
+| MB-T24-Wildfly-H2-201906                                                                                 | 201906  | T24   R19.06 (Open Source)                    |
+| MB-T24-Wildfly-H2-201904                                                                                 | 201904  | This   is template for T24 with Widfly and H2 |
+| MB-T24-Wildfly-H2-201812                                                                                 | 201812  | T24   R18.12 (Open Source)                    |
 
  <br>
 </br>
