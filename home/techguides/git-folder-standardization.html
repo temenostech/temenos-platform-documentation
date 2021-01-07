@@ -140,9 +140,9 @@
 <tr>
 <th>BEFORE</th>
 <th>AFTER</th>
-<th>PREVIOUS FORMAT SUPPORTED</th>
-<th>CURRENT FORMAT SUPPORTED</th>
-<th>NOTES AND CHANGES IN THE   EXISTING FUNCTIONALITY</th>
+<th>PREVIOUS FORMAT   SUPPORTED</th>
+<th>CURRENT FORMAT   SUPPORTED</th>
+<th>NOTES AND   CHANGES IN THE EXISTING FUNCTIONALITY</th>
 </tr>
 </thead>
 <tbody>
@@ -233,7 +233,7 @@
 <tr>
 <td>packages</td>
 <td>l3-ds-packages</td>
-<td>*.jar, *.zip</td>
+<td>*.jar,   *.zip</td>
 <td>*.zip</td>
 <td>N/A</td>
 </tr>
@@ -242,27 +242,27 @@
 <td>model-bank-database-h2</td>
 <td>*.zip</td>
 <td>*.zip</td>
-<td>db.properties   file should be included in the zip file . The format of db.properties should   be as follows: db_name=TAFJDB -&gt; without extension .mv.db or .h2.db.</td>
+<td>db.properties file should be included in the zip file   . The format of db.properties should be as follows: db_name=TAFJDB -&gt;   without extension .mv.db or .h2.db.</td>
 </tr>
 <tr>
 <td>client_files/sqldb</td>
 <td>model-bank-database-sqlserver</td>
 <td>*.bak</td>
 <td>*.zip</td>
-<td>db.properties file   should be included in the zip file . The format of db.properties should be as follows: db_name=UTPSQL2016 -&gt; without extension names.</td>
+<td>db.properties file should be included in the zip file   . The format of db.properties should be as follows: db_name=UTPSQL2016 -&gt;   without extension names.</td>
 </tr>
 <tr>
 <td>post-dsf-packages</td>
 <td>l3-post-dsf-packages</td>
-<td>zip of zip</td>
-<td>zip of zip</td>
+<td>zip   of zip</td>
+<td>zip   of zip</td>
 <td>N/A</td>
 </tr>
 <tr>
 <td>pre-dsf-packages</td>
 <td>l3-pre-dsf-packages</td>
-<td>zip of zip</td>
-<td>zip of zip</td>
+<td>zip   of zip</td>
+<td>zip   of zip</td>
 <td>N/A</td>
 </tr>
 <tr>
@@ -270,7 +270,7 @@
 <td>t24-Addons</td>
 <td>*.zip</td>
 <td>*.zip</td>
-<td>The environment file can be provided along with the jars/wars which contains JAVA_OPTS that can to be added in the appserver startup. If only environment file inside the zip is provided the JAVA_OPTS will be added to the appserver without copying any war/jar files.       Additionally, this environment file can be used to add or update the java heap size in the app server start up file (java_opts=<variables> - replace the variables with the appropriate ones).</variables></td>
+<td>The environment file can be provided along with the   jars/wars which contains JAVA_OPTS that can to be added in the appserver   startup. If only environment file inside the zip is provided the JAVA_OPTS   will be added to the appserver without copying any war/jar files.   Additionally, this environment file can be used to add or update the java   heap size in the app server start up file (java_opts= - replace the   variables with the appropriate ones).</td>
 </tr>
 <tr>
 <td>N/A</td>
@@ -319,7 +319,7 @@
 <td>t24-jars</td>
 <td>*.zip</td>
 <td>*.zip</td>
-<td>zip of multiple folders containing jars. For eg: t24lib, l3lib. Note: We   use the folders t24lib and l3lib for core and l3 libraries respectively.   Hence the same naming convention has to be used for the artifacts.</td>
+<td>zip of multiple folders containing jars. For eg:   t24lib, l3lib. Note: We use the folders t24lib and l3lib for core and l3   libraries respectively. Hence the same naming convention has to be used for   the artifacts.</td>
 </tr>
 <tr>
 <td>client_files/localjars</td>
@@ -331,22 +331,22 @@
 <tr>
 <td>plugins</td>
 <td>war-package</td>
-<td>*.zip containing war, jar or war and optional .endpoint file</td>
-<td>*.zip containing war, jar or war and optional .endpoint file   which contains the dns name. Ie.:  Provider   APIs~<a href="https://t24-v1f2k9y77x18.temenos.cloud/provider-apis/api/v1.0.0/meta/apidocs">https://t24-v1f2k9y77x18.temenos.cloud/provider-apis/api/v1.0.0/meta/apidocs</a></td>
-<td>Optional .endpoint file within *.zip should now contain he   keyword &#39;localhost&#39; instead of the dnsname to be able to used during factory   run. Ie.: Provider   APIs~<a href="https://localhost/provider-apis/api/v1.0.0/meta/apidocs">https://localhost/provider-apis/api/v1.0.0/meta/apidocs</a></td>
+<td>*.zip   containing war, jar or war and optional .endpoint file</td>
+<td>*.zip containing war, jar or war and optional .endpoint   file which contains the dns name. Ie.: Provider   APIs~<a href="https://t24-v1f2k9y77x18.temenos.cloud/provider-apis/api/v1.0.0/meta/apidocs">https://t24-v1f2k9y77x18.temenos.cloud/provider-apis/api/v1.0.0/meta/apidocs</a></td>
+<td>Optional .endpoint file within *.zip should now contain   he keyword &#39;localhost&#39; instead of the dnsname to be able to used during   factory run. Ie.: Provider   APIs~<a href="https://localhost/provider-apis/api/v1.0.0/meta/apidocs">https://localhost/provider-apis/api/v1.0.0/meta/apidocs</a></td>
 </tr>
 <tr>
 <td>N/A</td>
 <td>t24-ud</td>
-<td>*.zip containing UD folders</td>
-<td>*.zip containing UD folders</td>
+<td>*.zip   containing UD folders</td>
+<td>*.zip   containing UD folders</td>
 <td>N/A</td>
 </tr>
 <tr>
 <td>updates</td>
 <td>t24-updates</td>
-<td>zip of zip</td>
-<td>zip of zip</td>
+<td>zip   of zip</td>
+<td>zip   of zip</td>
 <td>N/A</td>
 </tr>
 <tr>
@@ -359,16 +359,16 @@
 <tr>
 <td>client_files/localjars/ext</td>
 <td>tafj-ext-jars</td>
-<td>zip of jars</td>
-<td>zip of jars</td>
+<td>zip   of jars</td>
+<td>zip   of jars</td>
 <td>zip of l3libraries</td>
 </tr>
 <tr>
 <td>N/A</td>
 <td>tafj-installer</td>
-<td>*.zip containing installer</td>
-<td>*.zip containing installer</td>
-<td>N/A</td>
+<td>*.zip   containing installer</td>
+<td>*.zip   containing installer</td>
+<td>The TAFJ will be redeployed (full installation, not   patch) hence please make sure any properties that you would like to include   are present within the .properties file inside the installer. For more   details, refer to tafj.installer notes added in the Transact Template   Overview Page.</td>
 </tr>
 <tr>
 <td>N/A</td>
@@ -466,14 +466,14 @@
 <td>jboss-modules</td>
 <td></td>
 <td>*.zip</td>
-<td>*.zip containing   the folders, sub folders, jars, with the module.xml which can be unzipped to   modules folder in jboss      It also checks for the existing folders com/temenos/t24, com/temenos/tafj   ,system ,if exists it is ignored and other folders are copied</td>
+<td>*.zip containing the folders, sub folders, jars, with   the module.xml which can be unzipped to modules folder in jboss It also   checks for the existing folders com/temenos/t24, com/temenos/tafj ,system ,if   exists it is ignored and other folders are copied</td>
 </tr>
 <tr>
 <td>N/A</td>
 <td>standalone.xml</td>
 <td></td>
 <td>*.xml</td>
-<td>*.xml containing standalone.xml file. The template file for   OSS and TSS are provided at point 6 in this user guide for both OSS and TSS   templates.</td>
+<td>*.xml containing standalone.xml file. The template   file for OSS and TSS are provided at point 6 in this user guide for both OSS   and TSS templates.</td>
 </tr>
 </tbody>
 </table>
