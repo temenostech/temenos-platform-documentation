@@ -71,7 +71,7 @@ The user can also **clone**, **edit**, **delete**, **start**, **stop**, **rebuil
 
  - **Clone environment** - create an identical environment by copying the Environment and configuration repository
 
- - **Upgrade** - the feature is only available for the **Model Bank TSS/ OSS Stack Template**, therefore Extend environments. By clicking on **Upgrade** you can boost the environment to the target template version. 
+ - **Upgrade** - the feature is only available for the **Model Bank TSS/ OSS Stack Template**, therefore Extend environments. By clicking on **Upgrade** you can boost the environment to the target template version. Watch the tutorial [here](https://youtu.be/R4J4P-SlJ6Q).
 
  
      - Upon clicking on the button a pop-up appears which prompts to select another template from the list of available template:
