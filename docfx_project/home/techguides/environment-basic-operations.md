@@ -112,9 +112,7 @@ The user can also **clone**, **edit**, **delete**, **start**, **stop**, **rebuil
 
 12. The **Upgrade** functionality is not available for environments resulted from factory runs (automated and manual factories).
 
-13. **Upgrade** is supported from Python-based templates to Python-based templates only.
-
-14. An environment can only be upgraded with a MB template that is assigned to your organisation. You won't be able to upgrade a MB-T24-Wildfly-H2-202002 to a MB-T24-Wildfly-H2-202004 if the latter version is not assigned to your organisation. 
+13. An environment can only be upgraded with a MB template that is assigned to your organisation. You won't be able to upgrade a MB-T24-Wildfly-H2-202002 to a MB-T24-Wildfly-H2-202004 if the latter version is not assigned to your organisation. 
 
 <br>
 </br>
