@@ -98,9 +98,13 @@ T24-updates.zip
 </br>
 
 # Trigger Deployment #
-•	After all required features are commited and pushed to Environment Repository, you have to deploy these features in your Environment. To do this, login to your organisation, select your environment, locate **Repository** Application and click the **Deploy** button.
+•	After all the required features are committed and pushed to the Environment Repository, you have to deploy these features in your Environment. To do this, login to your organisation, select your environment, locate **Repository** Application and click the **Deploy** button.
 
 ![repo deploy 1](./images/use-git-deploy.png)
+
+• A notification appears which displays the list of components that will be deployed. Tick the confirmation box to proceed:
+
+![deploy components](./images/deploy-components.png)
 
 •	The Environment and its manageable Applications status will be changed to <span style="color:#4d94ff;font-weight:600;">Deploying</span> during the deployment process and the Deploy button becomes disabled until the deployment is finished.
 
