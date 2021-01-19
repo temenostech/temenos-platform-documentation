@@ -24,7 +24,7 @@ Below you can find the current templates catalogue:
 | MB-T24-Jboss-SQL-201904          | 201904  | TSS-R19Template   for Stack06 - 201904                      |
 | MB-T24-Jboss-SQL-201804          | 201804  | TSS-R18Template   for Stack06 - 201804                      |
 
-
+ 
 
 ## OSS ##
 | Template   Name               | Version | Description                                 |
