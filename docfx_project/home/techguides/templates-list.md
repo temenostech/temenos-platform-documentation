@@ -27,24 +27,25 @@ Below you can find the current templates catalogue:
 
 
 ## OSS ##
-| Template   Name                                                                                          | Version | Description                                   |
-|----------------------------------------------------------------------------------------------------------|---------|-----------------------------------------------|
-| MB-Transact-Wildfly-H2-202011                                                                            | 202011  | T24 R20.11   (Open Source)                    |
-|                                 MB-Transact-Wildfly-H2-202010                                            | 202010  | T24 R20.10   (Open Source)                    |
-| MB-T24-Wildfly-H2-202009                                                                                 | 202009  | T24 R20.09   (Open Source)                    |
-| MB-T24-Wildfly-H2-202008                                                                                 | 202008  | T24 R20.08   (Open Source)                    |
-| MB-T24-Wildfly-H2-202004                                                                                 | 202004  | T24   R20.04 (Open Source)                    |
-| MB-T24-Wildfly-H2-202003                                                                                 | 202003  | T24   R20.03 (Open Source)                    |
-| MB-T24-Wildfly-H2-202002                                                                                 | 202002  | T24   R20.02 (Open Source)                    |
-| MB-T24-Wildfly-H2-202001                                                                                 | 202001  | T24   R20.01 (Open Source)                    |
-| MB-T24-Wildfly-H2-201912                                                                                 | 201912  | T24   R19.12 (Open Source)                    |
-| MB-T24-Wildfly-H2-201911                                                                                 | 201911  | T24   R19.11 (Open Source)                    |
-| MB-T24-Wildfly-H2-201910                                                                                 | 201910  | T24   R19.10 (Open Source)                    |
-| MB-T24-Wildfly-H2-201909                                                                                 | 201909  | MB-T24-Wildfly-H2-201909                      |
-| MB-T24-Wildfly-H2-201908                                                                                 | 201908  | T24   R19.08 (Open Source)                    |
-| MB-T24-Wildfly-H2-201906                                                                                 | 201906  | T24   R19.06 (Open Source)                    |
-| MB-T24-Wildfly-H2-201904                                                                                 | 201904  | This   is template for T24 with Widfly and H2 |
-| MB-T24-Wildfly-H2-201812                                                                                 | 201812  | T24   R18.12 (Open Source)                    |
+| Template   Name               | Version | Description                                 |
+|-------------------------------|---------|---------------------------------------------|
+| MB-Transact-Wildfly-H2-202012 | 202012  | T24 R20.12 (Open Source)                    |
+| MB-Transact-Wildfly-H2-202011 | 202011  | T24 R20.11 (Open Source)                    |
+| MB-Transact-Wildfly-H2-202010 | 202010  | T24 R20.10 (Open Source)                    |
+| MB-T24-Wildfly-H2-202009      | 202009  | T24 R20.09 (Open Source)                    |
+| MB-T24-Wildfly-H2-202008      | 202008  | T24 R20.08 (Open Source)                    |
+| MB-T24-Wildfly-H2-202004      | 202004  | T24 R20.04 (Open Source)                    |
+| MB-T24-Wildfly-H2-202003      | 202003  | T24 R20.03 (Open Source)                    |
+| MB-T24-Wildfly-H2-202002      | 202002  | T24 R20.02 (Open Source)                    |
+| MB-T24-Wildfly-H2-202001      | 202001  | T24 R20.01 (Open Source)                    |
+| MB-T24-Wildfly-H2-201912      | 201912  | T24 R19.12 (Open Source)                    |
+| MB-T24-Wildfly-H2-201911      | 201911  | T24 R19.11 (Open Source)                    |
+| MB-T24-Wildfly-H2-201910      | 201910  | T24 R19.10 (Open Source)                    |
+| MB-T24-Wildfly-H2-201909      | 201909  | MB-T24-Wildfly-H2-201909                    |
+| MB-T24-Wildfly-H2-201908      | 201908  | T24 R19.08 (Open Source)                    |
+| MB-T24-Wildfly-H2-201906      | 201906  | T24 R19.06 (Open Source)                    |
+| MB-T24-Wildfly-H2-201904      | 201904  | This is template for T24 with Widfly and H2 |
+| MB-T24-Wildfly-H2-201812      | 201812  | T24 R18.12 (Open Source)                    |
 
  <br>
 </br>
