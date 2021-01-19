@@ -3,6 +3,24 @@
  
 This page provides information about the monthly Temenos Continuous Deployment Platform features and improvements in each release. 
  
+# **202012**
+**InfraBuild**: 39  &nbsp;**|**&nbsp; **PortalTag**: 202012.RC5
+&nbsp;**|**&nbsp; **ControllerBuild**: 364  &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202012 &nbsp; 
+    
+## Technical enhancements
+
+&nbsp;&nbsp;&nbsp;&nbsp;**1. Removing references to T24**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - **T24** is renamed to **Transact** across the Temenos Continuous Deployment Portal.
+<br>  
+</br> 
+
+&nbsp;&nbsp;&nbsp;&nbsp;**2. Display the list of components that will be deployed** 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - After clicking **Deploy** a notification appears which shows the list of components that will be deployed during the repository deployment. You need to confirm the action to proceed.
+<br>
+</br> 
+
 # **202011**
 **InfraBuild**: 39  &nbsp;**|**&nbsp; **PortalTag**: 202011.RC3
 &nbsp;**|**&nbsp; **ControllerBuild**: 335  &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202011 &nbsp; 
