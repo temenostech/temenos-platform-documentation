@@ -7597,7 +7597,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/templates-list.html",
-          "hash": "xp4WlM5WmhjpUkpG3SgXVg=="
+          "hash": "1DlFCOEN3LX8U00RsYCNFA=="
         }
       },
       "is_incremental": false,
@@ -8039,10 +8039,6 @@
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build"
-        },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
@@ -8055,6 +8051,10 @@
         "RestApiDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
           "incrementalPhase": "build"
         }
       }
