@@ -195,7 +195,7 @@ If the folder inside TAFJDB.zip file is renamed, then it is mandatory in the db.
 
 You can download the Standalone OSS/ TSS and the db.properties files below:
 
-- **<a href="./../zip/client-standalone-OSS">Standalone OSS template</a>**     
+- **<a href="./../zip/client-standalone-oss">Standalone OSS template</a>**     
 
 - **<a href="./../zip/client-standalone-TSS">Standalone TSS template</a>** 
 
