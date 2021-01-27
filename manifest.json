@@ -5840,6 +5840,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/save-as-new-template1.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/save-as-new-template1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/save-new-template.png",
       "output": {
         "resource": {
@@ -7149,6 +7160,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "home/techguides/images/upgraded-environment.png",
+      "output": {
+        "resource": {
+          "relative_path": "home/techguides/images/upgraded-environment.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "home/techguides/images/use-git-deploy.png",
       "output": {
         "resource": {
@@ -7530,6 +7552,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "home/techguides/save-as-new-template.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/save-as-new-template.html",
+          "hash": "jYdeGyqkvrDk6IiwyzrUww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "home/techguides/selenium-template.md",
       "output": {
         ".html": {
@@ -7641,6 +7675,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "home/techguides/upgrade-trials.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/upgrade-trials.html",
+          "hash": "BGT/mCyjPHFFF3LyXkq0ug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "home/techguides/user-creation-in-paas.md",
       "output": {
         ".html": {
@@ -7693,7 +7739,7 @@
       "output": {
         ".html": {
           "relative_path": "home/toc.html",
-          "hash": "5KzxTaFV8QDYW9yXezZqCg=="
+          "hash": "+TNx4KTw7uxZnG8OEY+cZA=="
         }
       },
       "is_incremental": false,
@@ -8039,6 +8085,14 @@
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -8047,14 +8101,6 @@
         "RestApiDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build"
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
           "incrementalPhase": "build"
         }
       }

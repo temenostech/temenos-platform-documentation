@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Save as New Template </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Save as New Template ">
+    <meta name="generator" content="docfx 2.22.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/woocircle.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" class="Save as New Template ">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar" role="navigation">
+          <div class="container">
+            <div class="row">
+              <div class="navbar-header col-md-2">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                
+                <a class="navbar-brand" href="https://www.temenos.com/platform/temenos-continuous-deployment-devops/">
+                  <img id="logo" src="/logo.png" alt="">
+                </a>
+              </div>
+              <div class="themainmenu col-md-10">
+              <div class="collapse navbar-collapse" id="navbar">
+                <form class="navbar-form navbar-right" role="search" id="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                  </div>
+                </form>
+              </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="save-as-new-template">Save as New Template</h1>
+
+<p>You can easily customize your templates via the <strong>Save as New Template</strong> feature. This self-service functionality enables you to create custom templates from a model bank template in just a few click. During this operation component binaries, deployment mechanisms or infrastructure can be changed and new components can be added.</p>
+<p>By clicking on the <strong>Save as New Template</strong>  all the components are copied from the environment GIT Repository to Artifactory and saves them as a new template. </p>
+<p>To customize your template, you need to have at least the mandatory components uploaded and deployed successfully. This is to ensure that there will be no issues in any environment created from the new template (read <a href="http://documentation.temenos.cloud/home/techguides/deploy-an-update-to-an-existing-environment.html">here</a> how you can deploy a component).</p>
+<h2 id="how-to-create-a-new-template"><strong>How to create a new template</strong></h2>
+<p>After deploying the components:</p>
+<ol>
+<li><p>Click on the <strong>Environment</strong> tab from the left-side menu.</p>
+</li>
+<li><p>Select the <strong>Environment</strong> from the list.</p>
+</li>
+<li><p>On the environment page, expand the <strong>Actions</strong> button from the right.</p>
+</li>
+<li><p>Click on <strong>Save as New Template</strong>.</p>
+<p><img src="images/save-as-new-template1.png" alt=""></p>
+</li>
+<li><p>Read the information in the pop-up. Fill in the blanks, tick the box and then click on <strong>Save Template</strong>.</p>
+<p>   <img src="images/save-as-new-template.png" alt=""> </p>
+</li>
+<li><p>The template creation is initiated and you will be able to see it in the template catalog shortly. 
+<br>
+</br></p>
+</li>
+</ol>
+<h2 id="post-template-creation-actions"><strong>Post template creation actions</strong></h2>
+<p>After the template is successfully created you can:</p>
+<ol>
+<li><p>Provision an environment with the newly created template (learn <a href="http://documentation.temenos.cloud/home/manage-environments.html">here</a> how to create an environment). </p>
+</li>
+<li><p>Run a factory using the template (learn <a href="http://documentation.temenos.cloud/home/techguides/run-factory.html">here</a> how to run factories).</p>
+</li>
+</ol>
+<p>Watch the video tutorial <a href="https://www.youtube.com/watch?v=4G7PH5tsej0&amp;feature=youtu.be"><strong>here</strong></a>.</p>
+<h1 id="user-permissions-required">User Permissions Required</h1>
+<p>To be able to perform basic  environment operations the below permissions need to be enabled for your user:</p>
+<ul>
+<li>MANAGE _ ENVIRONMENTS</li>
+<li>CREATE _ ENVIRONMENT</li>
+<li>UPDATE _ ENVIRONMENT</li>
+<li>DELETE _ ENVIRONMENT</li>
+<li>BOOST _ ENVIRONMENT</li>
+<li>REDEPLOY _ ENVIRONMENT</li>
+<li>START _ ENVIRONMENT</li>
+<li>STOP _ ENVIRONMENT</li>
+<li>ALLOW -  EXPORT  - ENVIRONMENT</li>
+<li>START -  ALL  - ENVIRONMENT</li>
+<li>STOP -  ALL  - ENVIRONMENT</li>
+<li>SCHEDULE _ ENVIRONMENT</li>
+<li>ALLOW - EXPORT - ENVIRONMENT</li>
+<li>MANAGE _ ENVIRONMENTS</li>
+</ul>
+<p>To have a better understanding of the user permissions, hover the cursor over the variables and a short description will pop up or click <a href="http://documentation.temenos.cloud/home/techguides/user-permissions">here</a> to read more.</p>
+<p><br></p>
+              <hr>
+              
+              <div id="disqus_thread"></div>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 footer-note left">
+              <p>
+                <a href="/"><img src="/logo-bottom.png" alt=""></a>
+                <a href="https://www.temenos.com/en/accessibility/">Accessibility</a>
+                <a href="https://www.temenos.com/en/legal-information/cookie-policy/">Cookie Policy</a>
+                <a href="https://www.temenos.com/en/legal-information/privacy-policy/">Privacy Policy</a>
+                <a href="https://www.temenos.com/en/legal-information/terms-and-conditions/">Terms & Conditions</a>
+              </p>
+            </div>
+      
+            <div class="col-md-6 footer-note right">
+              <p>
+                Copyright &copy; 2020 Temenos Headquarters SA <span>&#183;</span>
+                <a target="_blank" href="https://www.facebook.com/TemenosGroup"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+                <a target="_blank" href="https://twitter.com/Temenos"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a target="_blank" href="http://www.linkedin.com/company/temenos"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a target="_blank" href="//plus.google.com/u/0/100035548059267323447?prsrc=3"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+              </p>
+            </div>
+          </div>
+      
+        </div>
+      </footer>
+      
+      <div class="back-to-top">
+        <a href="#top">
+          <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i></span>
+        </a>
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script id="dsq-count-scr" src="//temenostech.disqus.com/count.js" async=""></script>
+    
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myshareDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.sharedropbtn')) {
+    
+        var dropdowns = document.getElementsByClassName("sharedropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+    
+    <script>
+    	window.onload = function(){
+        	document.getElementById("shareFacebook").href = 'https://www.facebook.com/sharer/sharer.php?u=' + window.location.toString();
+    
+        	document.getElementById("shareTwitter").href = 'https://twitter.com/intent/tweet?text=Temenos+Developer+Portal&url=' + window.location.toString();
+    
+        	document.getElementById("shareGoogle").href = 'https://plus.google.com/share?url=' + window.location.toString();
+    
+        	document.getElementById("shareLinkedin").href = 'https://www.linkedin.com/shareArticle?mini=true&url=' + window.location.toString() + '&title=Temenos+Developer+Portal&summary=&source=';
+    
+        	document.getElementById("shareEmail").href = 'mailto:' + window.location.toString();
+    	}
+    </script>
+    
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-38593742-8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-38593742-8');
+    </script>  
+  </body>
+</html>

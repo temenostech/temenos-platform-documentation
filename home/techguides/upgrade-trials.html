@@ -1,0 +1,290 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Upgrade Trials </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Upgrade Trials ">
+    <meta name="generator" content="docfx 2.22.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/woocircle.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" class="Upgrade Trials ">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar" role="navigation">
+          <div class="container">
+            <div class="row">
+              <div class="navbar-header col-md-2">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                
+                <a class="navbar-brand" href="https://www.temenos.com/platform/temenos-continuous-deployment-devops/">
+                  <img id="logo" src="/logo.png" alt="">
+                </a>
+              </div>
+              <div class="themainmenu col-md-10">
+              <div class="collapse navbar-collapse" id="navbar">
+                <form class="navbar-form navbar-right" role="search" id="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                  </div>
+                </form>
+              </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="upgrade-trials">Upgrade Trials</h1>
+
+<p>The <strong>Upgrade</strong> feature enables you to boost your environment to higher T24 releases and run your regression. By undergoing an upgrade you can get better clarity on any issues with the upgrade and in general more confidence and predictability on the upgrade project itself.</p>
+<p><br>
+</br></p>
+<h1 id="upgrade-pre-requisites">Upgrade pre-requisites</h1>
+<p>To upgrade an environment you need:</p>
+<ol>
+<li><p>The <strong>UPGRADE_TEMPLATE</strong> user permission enabled​.</p>
+</li>
+<li><p>An environment with the status <strong>STARTED</strong>. ​</p>
+</li>
+<li><p>TortoiseGit installed and configured on your local machine​.</p>
+</li>
+<li><p>ModelBank Templates with the release you intend to upgrade assigned to your organization.</p>
+</li>
+</ol>
+<p><br>
+</br></p>
+<h1 id="how-to-upgrade-an-environment">How to upgrade an environment</h1>
+<ol>
+<li>Upon clicking on the button a pop-up appears which prompts to select another template from the list of available template:</li>
+</ol>
+<p><img src="images/environment-upgrade-button.png" alt=""> </p>
+<ol>
+<li><p>Click on <strong>Upgrade</strong> to proceed.</p>
+</li>
+<li><p>The environment status changes to <strong>Upgrading</strong>:</p>
+</li>
+<li><p>In the <strong>Events</strong> tab you can see the log which refers to the upgrade from the Base template to Target template.</p>
+</li>
+<li><p>Once the action is complete, in the <strong>Template Info</strong> bar you can see that the template name changed to the target release (in this example 202003).</p>
+</li>
+</ol>
+<p><img src="images/upgraded-environment.png" alt=""> </p>
+<p><br>
+</br></p>
+<p>  <strong>Upgrade Validations:</strong></p>
+<ol>
+<li><p>The <strong>Upgrade</strong> button is enabled at the organisation level.</p>
+</li>
+<li><p>Once the <strong>Upgrade</strong> is initiated all the environment action buttons are disabled except <strong>Edit Environment</strong> and <strong>Delete Environment</strong> buttons.</p>
+</li>
+<li><p>Only users with the permission <strong>UPGRADE_TEMPLATE</strong> will have the <strong>Upgrade</strong> button enabled on their environment.</p>
+</li>
+<li><p>The <strong>Upgrade</strong> button is not available on a stopped environment.</p>
+</li>
+<li><p>Make sure you have a Database Backup before the upgrade.</p>
+</li>
+<li><p>L3 or other plugins present in the current template are not auto deployed, and you have to upload them back to GIT and deploy it post upgrade.</p>
+</li>
+<li><p>The upgrade pipeline will not deploy anything on the GIT folder to the upgraded environment automatically, therefore you have to manually trigger this post upgrade.</p>
+</li>
+<li><p>The new app server won’t have any additional queues.</p>
+</li>
+<li><p>The upgrade flow is from the client template to ModelBank template and not vice-versa.</p>
+</li>
+<li><p>An environment created with a custom template can be upgraded to a ModelBank template and not vice versa.</p>
+</li>
+<li><p>When an environment is upgraded, the <strong>Clone</strong> and <strong>Rebuild</strong> options are not available.</p>
+</li>
+<li><p>The <strong>Upgrade</strong> functionality is not available for environments resulted from factory runs (automated and manual factories).</p>
+</li>
+<li><p>An environment can only be upgraded with a MB template that is assigned to your organisation. You won&#39;t be able to upgrade a MB-T24-Wildfly-H2-202002 to a MB-T24-Wildfly-H2-202004 if the latter version is not assigned to your organisation. </p>
+</li>
+</ol>
+<p><br>
+</br></p>
+<p> <strong>After the upgrade is completed you can:</strong></p>
+<ol>
+<li><p><strong>Rebuild</strong> the upgraded environment from the  <strong>Actions</strong> button - a pop-up informs that <em>Any changes made to the environment will be lost and the environment will be reset to its original state.</em> To proceed, tick the check box and click <strong>Confirm</strong>:</p>
+<p><img src="images/upgrade-rebuild-env.png" alt=""> </p>
+</li>
+<li><p><strong>Clone</strong> the upgraded environment from the <strong>Actions</strong> button -  a pop-up appears where you need to insert the <strong>Environment Name</strong>, <strong>Environment Description</strong> and <strong>Labels</strong>. The pop-up informs that if L3 packages are manually altered, then they will not be copied and the clone may not work if the T24 environment is upgraded:</p>
+<p><img src="images/upgrade-rebuild-env.png" alt=""> </p>
+</li>
+<li><p>Use the self-service <strong>Save as New Template</strong> feature (read more here)</p>
+</li>
+<li><p>Use the environment to perform all the environment actions (authorize the exception, deploy, install T24 products updates/ L3/ APIs, COB  etc.).</p>
+</li>
+</ol>
+<p><br>
+</br></p>
+<h1 id="user-permissions-required">User Permissions Required</h1>
+<p>To be able to perform basic  environment operations the below permissions need to be enabled for your user:</p>
+<ul>
+<li>MANAGE _ ENVIRONMENTS</li>
+<li>CREATE _ ENVIRONMENT</li>
+<li>UPDATE _ ENVIRONMENT</li>
+<li>DELETE _ ENVIRONMENT</li>
+<li>BOOST _ ENVIRONMENT</li>
+<li>REDEPLOY _ ENVIRONMENT</li>
+<li>START _ ENVIRONMENT</li>
+<li>STOP _ ENVIRONMENT</li>
+<li>ALLOW -  EXPORT  - ENVIRONMENT</li>
+<li>START -  ALL  - ENVIRONMENT</li>
+<li>STOP -  ALL  - ENVIRONMENT</li>
+<li>SCHEDULE _ ENVIRONMENT</li>
+<li>ALLOW - EXPORT - ENVIRONMENT</li>
+<li>MANAGE _ ENVIRONMENTS</li>
+<li>UPGRADE_TEMPLATE</li>
+</ul>
+<p>To have a better understanding of the user permissions, hover the cursor over the variables and a short description will pop up or click <a href="http://documentation.temenos.cloud/home/techguides/user-permissions">here</a> to read more.</p>
+<p><br></p>
+              <hr>
+              
+              <div id="disqus_thread"></div>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 footer-note left">
+              <p>
+                <a href="/"><img src="/logo-bottom.png" alt=""></a>
+                <a href="https://www.temenos.com/en/accessibility/">Accessibility</a>
+                <a href="https://www.temenos.com/en/legal-information/cookie-policy/">Cookie Policy</a>
+                <a href="https://www.temenos.com/en/legal-information/privacy-policy/">Privacy Policy</a>
+                <a href="https://www.temenos.com/en/legal-information/terms-and-conditions/">Terms & Conditions</a>
+              </p>
+            </div>
+      
+            <div class="col-md-6 footer-note right">
+              <p>
+                Copyright &copy; 2020 Temenos Headquarters SA <span>&#183;</span>
+                <a target="_blank" href="https://www.facebook.com/TemenosGroup"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+                <a target="_blank" href="https://twitter.com/Temenos"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a target="_blank" href="http://www.linkedin.com/company/temenos"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a target="_blank" href="//plus.google.com/u/0/100035548059267323447?prsrc=3"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+              </p>
+            </div>
+          </div>
+      
+        </div>
+      </footer>
+      
+      <div class="back-to-top">
+        <a href="#top">
+          <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i></span>
+        </a>
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script id="dsq-count-scr" src="//temenostech.disqus.com/count.js" async=""></script>
+    
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myshareDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.sharedropbtn')) {
+    
+        var dropdowns = document.getElementsByClassName("sharedropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+    
+    <script>
+    	window.onload = function(){
+        	document.getElementById("shareFacebook").href = 'https://www.facebook.com/sharer/sharer.php?u=' + window.location.toString();
+    
+        	document.getElementById("shareTwitter").href = 'https://twitter.com/intent/tweet?text=Temenos+Developer+Portal&url=' + window.location.toString();
+    
+        	document.getElementById("shareGoogle").href = 'https://plus.google.com/share?url=' + window.location.toString();
+    
+        	document.getElementById("shareLinkedin").href = 'https://www.linkedin.com/shareArticle?mini=true&url=' + window.location.toString() + '&title=Temenos+Developer+Portal&summary=&source=';
+    
+        	document.getElementById("shareEmail").href = 'mailto:' + window.location.toString();
+    	}
+    </script>
+    
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-38593742-8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-38593742-8');
+    </script>  
+  </body>
+</html>
