@@ -89,7 +89,7 @@ To upgrade an environment you need:
 <br>
 </br>
 
-
+Tutorial available [**here**](https://www.youtube.com/watch?v=R4J4P-SlJ6Q&feature=youtu.be).
 
 # User Permissions Required
 To be able to perform basic  environment operations the below permissions need to be enabled for your user:
