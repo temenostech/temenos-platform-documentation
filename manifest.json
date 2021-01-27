@@ -1197,7 +1197,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/deploy-an-update-to-an-existing-environment.html",
-          "hash": "hHv2i40cMPPZCEgC4DwyyA=="
+          "hash": "MOIkvtIQtWmkbblroueyvw=="
         }
       },
       "is_incremental": false,
@@ -1266,7 +1266,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/git-folder-standardization.html",
-          "hash": "8YKLXKsTjiPPbuEmKWUVrg=="
+          "hash": "WIGTYyMeKDCijIhoLFBMog=="
         }
       },
       "is_incremental": false,
@@ -8085,6 +8085,11 @@
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
+        "RestApiDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
@@ -8096,11 +8101,6 @@
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "RestApiDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
