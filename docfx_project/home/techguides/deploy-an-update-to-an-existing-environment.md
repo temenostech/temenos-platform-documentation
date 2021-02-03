@@ -38,7 +38,7 @@ This document can be used by technical staff who need to deploy different featur
 
 ## The environment folder structure after the clone
 
-Before the 202010 release, the environment binaries' folders were comprised in 9 folders. From the 202010 release onwards, after cloning an environment, you can now find dedicated folders for each binaries where you can upload them. The example below shows what changed:
+Before the 202010 Temenos Continous Deployment platform release, the environment binaries' folders were comprised in 9 folders. From the 202010 platform release onwards, after cloning an environment, you can now find dedicated folders for each binaries where you can upload them. The example below shows what changed:
 
 - Env Structure before Git Folder Standardization: 
 
@@ -54,7 +54,7 @@ Before the 202010 release, the environment binaries' folders were comprised in 9
 <br>
 </br>
 
-Following the 202010 release, you can find below and example of the before and after components name and structure (where N/A is present the component folder was not present in the old folder structure).
+With the 202010 platform release, you can find below and example of the before and after components name and structure (where N/A is present the component folder was not present in the old folder structure).
 
 | BEFORE                     | AFTER                                    | PREVIOUS FORMAT   SUPPORTED                                    | CURRENT FORMAT   SUPPORTED                                                                                                                                                                    | NOTES AND   CHANGES IN THE EXISTING FUNCTIONALITY                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |----------------------------|------------------------------------------|----------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -337,8 +337,7 @@ To deploy DSF packages, the following components must be present in  Extend/ Ass
 ### 4.4 Standalone.xml file notes ###
 
 There are different standalone.xml templates for TSS and OSS. These are provided to you by us.
-<br>
-</br>
+
 
 ### 4.4.1 The standalone.xml TSS template: ###
 - don’t change any of the static values
@@ -358,26 +357,32 @@ There are different standalone.xml templates for TSS and OSS. These are provided
      ![](./images/standalone-custom-queues.png)
 
  **Other alterations added to the XML file will result in a failed deployment.**
-<br>
-</br>
+
 ### 4.4.2 The db.properties file - only applicable for Wildfly/ H2 templates ###
 
 You can place the TAFJDB.zip file in the model-bank-database-h2 folder. The db.properties file should be added to the corresponding H2 .zip files in the artifactory and the H2 machines must have a copy of this file.
  
 >[!Note]
->If the Golden Copy is provided by you make sure to have the db.properties file under the model-bank-database-h2. If this is not present, the environment will be created using the default modelbank credentials.
->
-> It is mandatory to have the db.properties file included along with your H2 DB .zip file, otherwise the environment will be created using the default modelbank credentials.
+> If the Golden Copy is provided by you make sure to have the db.properties file under the model-bank-database-h2. If this is not present, the environment will be created using the default modelbank credentials.
+
+
+**It is mandatory to have the db.properties file included along with your H2 DB .zip file, otherwise the environment will be created using the default modelbank credentials.**
 
   ![](./images/tafjdb.png)
 
-The Git Folder Standardization allows you to add the db.properties file into the TAFJDB.zip. The db.properties file contains the db name, clientdb user and pass:
 
-  ![](./images/db.properties.png)
+The Git Folder Standardization allows you to add the db.properties file into the TAFJDB.zip. The db.properties file contains the db name, clientdb user and pass, as well as the dbuser and dbpassword where:
+
+- the dbuser is the Transact/ T24 user which has SUPER.USER privileges
+
+- these entries are used by the Temenos Continuous Deployment automation scripts to run the T24 programs and TSA SERVICES. If you fail to provide the below the automation scripts will use the default Model Bank credentials (INPUTT/123456) which might lead to failed database deployments.
+
+
+  ![](./images/db-properties.png)
 
 If the folder inside TAFJDB.zip file is renamed, then it is mandatory in the db.properties to add the db-name the same as the db folder name and the credentials for the respective db.
 
-  ![](./images/db.properties2.png)
+  ![](./images/db-properties2.png)
 
 
 >[!Note]
