@@ -106,8 +106,7 @@
          href: ./techguides/triage-workflow.md
 - name: Release information
   items:
-       - name: 2020 
-         href: ./techguides/release-info-2020.md
+         href: ./techguides/release-notes.md
 - name: FAQs
   href: ./faq.md
 - name: Getting Support
