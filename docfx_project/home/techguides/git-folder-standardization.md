@@ -171,7 +171,7 @@ There are different standalone.xml templates for TSS and OSS. These are provided
 
  **Other alterations added to the XML file will result in a failed deployment.**
 
-### 4.4.2 The db.properties file - only applicatble for OSS templates! ###
+### 4.4.2 The db.properties file - only applicable for Wildfly/ H2 templates ###
 
 You can place the TAFJDB.zip file in the model-bank-database-h2 folder. The db.properties file should be added to the corresponding H2 .zip files in the artifactory and the H2 machines must have a copy of this file.
  
