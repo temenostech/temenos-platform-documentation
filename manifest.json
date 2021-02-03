@@ -1200,7 +1200,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/deploy-an-update-to-an-existing-environment.html",
-          "hash": "MaHxLswbAAX0PhfnDEZRew=="
+          "hash": "Cc9daumJ9YwRXy9DLFM8zw=="
         }
       },
       "is_incremental": false,
@@ -7497,18 +7497,6 @@
         ".html": {
           "relative_path": "home/techguides/metadata.html",
           "hash": "dg7cVhzY8apBmFO8jpr8SQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "home/techguides/release-info-2020-internal.md",
-      "output": {
-        ".html": {
-          "relative_path": "home/techguides/release-info-2020-internal.html",
-          "hash": "p+6y9dh0wU3ZWHdr3NvzZw=="
         }
       },
       "is_incremental": false,
