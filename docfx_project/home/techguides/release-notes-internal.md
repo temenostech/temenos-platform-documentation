@@ -9,21 +9,21 @@ This page provides information about the monthly Temenos Continuous Deployment P
     
 ## Technical enhancements
  
-&nbsp;&nbsp;&nbsp;&nbsp;**1. Number of environment validation not working as expected**
+&nbsp;&nbsp;&nbsp;&nbsp;**1. The number of environment validation not working as expected**
  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Only Extend environments are taken into consideration by the MAX_ENV_COUNT metadata. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Now only the Extend environments are taken into consideration by the MAX _ ENV _ COUNT metadata. 
 <br>  
 </br> 
 
 &nbsp;&nbsp;&nbsp;&nbsp;**2. Environments provisioned with the FCM, Infinity and Wealth templates have a similar dynamic structure as the ones provisioned with Transact templates** 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - As part of the GIT Folder Standardization changes, Temenos Continuous Deployment provides separate folder structure for FCM, Wealth and Infinity under the parent folder *Environment Configuration*. Read more [**here**](http://documentation.temenos.cloud/home/techguides/deploy-an-update-to-an-existing-environment.html#the-environment-folder-structure-after-the-clone).
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - As part of the GIT Folder Standardization changes, Temenos Continuous Deployment provides a separate folder structure for environments provisitioned with FCM, Wealth and Infinity Templates under the parent folder *Environment Configuration*. Read more [**here**](http://documentation.temenos.cloud/home/techguides/deploy-an-update-to-an-existing-environment.html#the-environment-folder-structure-after-the-clone).
 <br>
 </br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;**3. The Save as New Template features is not deploying the non-mandatory components**
+&nbsp;&nbsp;&nbsp;&nbsp;**3. The* Save as New Template* feature is not deploying the non-mandatory components**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Non-mandatory components are now getting deployed with the template created from *Save as New Template* functionality.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Non-mandatory components are now getting deployed with the template created via the *Save as New Template* functionality.
 <br>
 </br> 
 
