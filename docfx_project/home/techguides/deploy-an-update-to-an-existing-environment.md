@@ -10,7 +10,7 @@ This document can be used by technical staff who need to deploy different featur
 # Clone Environment Repository #
 
  To clone an environment repository login to your organisation, select your environment and locate the Endpoint of **Repository** Application (this is the last available endpoint on the environment page). 
-
+o
 - Click the **copy to clipboard icon** from the right:
 
  ![repository](./images/use-git-endpoint.png)
@@ -336,7 +336,7 @@ To deploy DSF packages, the following components must be present in  Extend/ Ass
  
 ### 4.4 Standalone.xml file notes ###
 
-There are different standalone.xml templates for TSS and OSS. These are provided to you by us.
+There are different standalone.xml templates for [TSS (Jboss/ SQL) and OSS (Widlfly/ H2)](http://documentation.temenos.cloud/home/techguides/templates-list.html#t24). These are provided to you by us.
 
 
 ### 4.4.1 The standalone.xml TSS template: ###
@@ -392,15 +392,15 @@ If the folder inside TAFJDB.zip file is renamed, then it is mandatory in the db.
 
 ##5. Attachments
 
-You can download the Standalone OSS/ TSS and the db.properties files below:
+You can download the Standalone OSS (Wildfly/ H2)/ TSS (Jboss/ SQL) and the db.properties files below:
 
-- **<a href="./../zip/client-standalone-OSS-1">Standalone OSS file applicable for lower template versions than 202008</a>** 
+- **<a href="./../zip/client-standalone-OSS-1">Standalone OSS (Wildfly/ H2) file applicable for lower template versions than 202008</a>** 
 
-- **<a href="./../zip/client-standalone-OSS-2">Standalone OSS file applicable for higher template versions than 202008 (including the 202008 version)</a>** 
+- **<a href="./../zip/client-standalone-OSS-2">Standalone OSS (Wildfly/ H2) file applicable for higher template versions than 202008 (including the 202008 version)</a>** 
 
-- **<a href="./../zip/client-standalone-TSS-1">Standalone TSS file applicable for lower template versions than 202008</a>** 
+- **<a href="./../zip/client-standalone-TSS-1">Standalone TSS (Jboss/ SQL) file applicable for lower template versions than 202008</a>** 
 
-- **<a href="./../zip/client-standalone-TSS-2">Standalone TSS file applicable for higher template than 202008 (including the 202008 version)</a>** 
+- **<a href="./../zip/client-standalone-TSS-2">Standalone TSS (Jboss/ SQL) file applicable for higher template than 202008 (including the 202008 version)</a>** 
 
 
 - **<a href="./../zip/db.properties">db.properties file</a>** 
