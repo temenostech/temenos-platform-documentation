@@ -15,7 +15,7 @@ This page provides information about the monthly Temenos Continuous Deployment P
 <br>  
 </br> 
 
-&nbsp;&nbsp;&nbsp;&nbsp;**2. FCM, Infinity and Wealth templates have a similar dynamic structure to Transact Environments** 
+&nbsp;&nbsp;&nbsp;&nbsp;**2. Environments provisioned with the FCM, Infinity and Wealth templates have a similar dynamic structure as the ones provisioned with Transact templates** 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - As part of the GIT Folder Standardization changes, Temenos Continuous Deployment provides separate folder structure for FCM, Wealth and Infinity under the parent folder *Environment Configuration*. Read more [**here**](http://documentation.temenos.cloud/home/techguides/deploy-an-update-to-an-existing-environment.html#the-environment-folder-structure-after-the-clone).
 <br>
