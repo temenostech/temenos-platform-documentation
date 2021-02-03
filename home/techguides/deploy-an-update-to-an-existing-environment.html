@@ -108,7 +108,7 @@
 </li>
 </ul>
 <h2 id="the-environment-folder-structure-after-the-clone">The environment folder structure after the clone</h2>
-<p>Before the 202010 release, the environment binaries&#39; folders were comprised in 9 folders. From the 202010 release onwards, after cloning an environment, you can now find dedicated folders for each binaries where you can upload them. The example below shows what changed:</p>
+<p>Before the 202010 Temenos Continous Deployment platform release, the environment binaries&#39; folders were comprised in 9 folders. From the 202010 platform release onwards, after cloning an environment, you can now find dedicated folders for each binaries where you can upload them. The example below shows what changed:</p>
 <ul>
 <li><p>Env Structure before Git Folder Standardization: </p>
 <p><img src="images/old-env-structure.png" alt=""></p>
@@ -121,7 +121,7 @@
 </div>
 <p><br>
 </br></p>
-<p>Following the 202010 release, you can find below and example of the before and after components name and structure (where N/A is present the component folder was not present in the old folder structure).</p>
+<p>With the 202010 platform release, you can find below and example of the before and after components name and structure (where N/A is present the component folder was not present in the old folder structure).</p>
 <table>
 <thead>
 <tr>
@@ -641,9 +641,7 @@
 </li>
 </ul>
 <h3 id="44-standalonexml-file-notes">4.4 Standalone.xml file notes</h3>
-<p>There are different standalone.xml templates for TSS and OSS. These are provided to you by us.
-<br>
-</br></p>
+<p>There are different standalone.xml templates for TSS and OSS. These are provided to you by us.</p>
 <h3 id="441-the-standalonexml-tss-template">4.4.1 The standalone.xml TSS template:</h3>
 <ul>
 <li><p>don’t change any of the static values</p>
@@ -660,21 +658,25 @@
 <p><img src="images/standalone-custom-queues.png" alt=""></p>
 </li>
 </ul>
-<p><strong>Other alterations added to the XML file will result in a failed deployment.</strong>
-<br>
-</br></p>
-<h3 id="442-the-dbproperties-file---only-applicable-for-wildfly-h2-templates">4.4.2 The db.properties file - only applicable for Wildfly/ H2 templates</h3>
+<p><strong>Other alterations added to the XML file will result in a failed deployment.</strong></p>
 </li>
 </ul>
+<h3 id="442-the-dbproperties-file---only-applicable-for-wildfly-h2-templates">4.4.2 The db.properties file - only applicable for Wildfly/ H2 templates</h3>
 <p>You can place the TAFJDB.zip file in the model-bank-database-h2 folder. The db.properties file should be added to the corresponding H2 .zip files in the artifactory and the H2 machines must have a copy of this file.</p>
 <div class="NOTE"><h5>Note</h5><p>If the Golden Copy is provided by you make sure to have the db.properties file under the model-bank-database-h2. If this is not present, the environment will be created using the default modelbank credentials.</p>
-<p>It is mandatory to have the db.properties file included along with your H2 DB .zip file, otherwise the environment will be created using the default modelbank credentials.</p>
 </div>
+<p><strong>It is mandatory to have the db.properties file included along with your H2 DB .zip file, otherwise the environment will be created using the default modelbank credentials.</strong></p>
 <p>  <img src="images/tafjdb.png" alt=""></p>
-<p>The Git Folder Standardization allows you to add the db.properties file into the TAFJDB.zip. The db.properties file contains the db name, clientdb user and pass:</p>
-<p>  <img src="images/db.properties.png" alt=""></p>
+<p>The Git Folder Standardization allows you to add the db.properties file into the TAFJDB.zip. The db.properties file contains the db name, clientdb user and pass, as well as the dbuser and dbpassword where:</p>
+<ul>
+<li><p>the dbuser is the Transact/ T24 user which has SUPER.USER privileges</p>
+</li>
+<li><p>these entries are used by the Temenos Continuous Deployment automation scripts to run the T24 programs and TSA SERVICES. If you fail to provide the below the automation scripts will use the default Model Bank credentials (INPUTT/123456) which might lead to failed database deployments.</p>
+</li>
+</ul>
+<p>  <img src="images/db-properties.png" alt=""></p>
 <p>If the folder inside TAFJDB.zip file is renamed, then it is mandatory in the db.properties to add the db-name the same as the db folder name and the credentials for the respective db.</p>
-<p>  <img src="images/db.properties2.png" alt=""></p>
+<p>  <img src="images/db-properties2.png" alt=""></p>
 <div class="NOTE"><h5>Note</h5><p>If you want to overwrite the database it is important to do at least one change before deploying it. Otherwise the platform will pick the initial database only.
 <br>
 </br></p>
