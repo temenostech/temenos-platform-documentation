@@ -37,7 +37,8 @@ This page provides information about the monthly Temenos Continuous Deployment P
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - **T24** is renamed to **Transact** across the Temenos Continuous Deployment Portal.
 </br> 
-
+<br>  
+</br> 
 &nbsp;&nbsp;&nbsp;&nbsp;**2. Display the list of components that will be deployed** 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - After clicking Deploy a notification appears which shows the list of components that will be deployed during the repository deployment. You need to confirm the action to proceed.
