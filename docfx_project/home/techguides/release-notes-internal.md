@@ -10,7 +10,7 @@ This page provides information about the monthly Temenos Continuous Deployment P
 ## Technical enhancements
  
 &nbsp;&nbsp;&nbsp;&nbsp;**1. Number of environment validation not working as expected**
-
+ 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Only Extend environments are taken into consideration by the MAX_ENV_COUNT metadata. 
 <br>  
 </br> 
