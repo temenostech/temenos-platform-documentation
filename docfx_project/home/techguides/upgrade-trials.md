@@ -25,7 +25,7 @@ To upgrade an environment you need:
 
 1. Upon clicking on the button a pop-up appears which prompts to select another template from the list of available template:
 
-![](./images/environment-upgrade-button.png) 
+ ![](./images/environment-upgrade-button.png) 
 
 2. Click on **Upgrade** to proceed.
 
@@ -35,12 +35,12 @@ To upgrade an environment you need:
 
 5. Once the action is complete, in the **Template Info** bar you can see that the template name changed to the target release (in this example 202003).
 
-![](./images/upgraded-environment.png) 
+ ![](./images/upgraded-environment.png) 
 
 <br>
 </br>
 
-  **Upgrade Validations:**
+##   Upgrade Validations ##
 
 1. The **Upgrade** button is enabled at the organisation level.
 
@@ -71,25 +71,33 @@ To upgrade an environment you need:
 <br>
 </br>
 
- **After the upgrade is completed you can:**
+## Post Upgrade Actions ##
 
-1. **Rebuild** the upgraded environment from the  **Actions** button - a pop-up informs that *Any changes made to the environment will be lost and the environment will be reset to its original state.* To proceed, tick the check box and click **Confirm**:
+1. Install EB products.
 
- ![](./images/upgrade-rebuild-env.png) 
+2. Install Transact/ T24 Updates.
 
-2. **Clone** the upgraded environment from the **Actions** button -  a pop-up appears where you need to insert the **Environment Name**, **Environment Description** and **Labels**. The pop-up informs that if L3 packages are manually altered, then they will not be copied and the clone may not work if the T24 environment is upgraded:
+3. Integrate L3 deployment via GIT​.
 
- ![](./images/upgrade-rebuild-env.png) 
+4. Install new modules in Jboss​.
 
-3. Use the self-service **Save as New Template** feature (read more here)
+5. Add new queues and data sources in the standalone.xml file​.
 
-4. Use the environment to perform all the environment actions (authorize the exception, deploy, install T24 products updates/ L3/ APIs, COB  etc.).
+6. Install custom APIs and different versions of core war files​.
+
+7. Deploy helptext files​.
+
+8. Save as New Template (learn [**here**](http://documentation.temenos.cloud/home/techguides/save-as-new-template.html?q=save) how to create new templates).
 
 
 <br>
 </br>
 
+## Tutorial ##
+
 Tutorial available [**here**](https://www.youtube.com/watch?v=R4J4P-SlJ6Q&feature=youtu.be).
+<br>
+</br>
 
 # User Permissions Required
 To be able to perform basic  environment operations the below permissions need to be enabled for your user:
