@@ -1261,21 +1261,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
-      "type": "Conceptual",
-      "source_relative_path": "home/techguides/git-folder-standardization.md",
-      "output": {
-        ".html": {
-          "relative_path": "home/techguides/git-folder-standardization.html",
-          "hash": "9qmtxLK9swamvXzM7dcuKw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "type": "Conceptual",
       "source_relative_path": "home/techguides/https-in-front-of-sftp.md",
       "output": {
@@ -7742,7 +7727,7 @@
       "output": {
         ".html": {
           "relative_path": "home/toc.html",
-          "hash": "+TNx4KTw7uxZnG8OEY+cZA=="
+          "hash": "PQFcOquf/Opu5QIAr7ighw=="
         }
       },
       "is_incremental": false,
