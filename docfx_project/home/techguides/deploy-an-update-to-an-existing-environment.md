@@ -1,8 +1,4 @@
-> **[!Note]**
-> **This page will be soon removed from the documentation portal. If your organisation was upgraded with the Git Folder Standardization feature, navigate to [this](http://documentation.temenos.cloud/home/techguides/git-folder-standardization.html) user guide to learn how to deploy an update to an environment.**
 
-<br>
-</br>
 # Deploy an update to an existing environment 
 This document can be used by technical staff who need to deploy different features on a Temenos Continuous Deployment Environment. Each Environment has an associated Repository for uploading different type of features based on the Environment Template type, these features being deployed automatically to your Environment.
 
