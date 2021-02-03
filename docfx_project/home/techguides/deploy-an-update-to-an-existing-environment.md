@@ -2,36 +2,43 @@
 # Deploy an update to an existing environment 
 This document can be used by technical staff who need to deploy different features on a Temenos Continuous Deployment Environment. Each Environment has an associated Repository for uploading different type of features based on the Environment Template type, these features being deployed automatically to your Environment.
 
-Before proceeding, please check the following requirements:
+# Pre-requisites #
+
 - Make sure you have a GUI Git Client installed in your local machine. This guide uses *TortoiseGit* Git Client that can be installed from <a href="https://tortoisegit.org/download/" target="blank">here</a>.
 - Make sure you have an user created under your organisation that has a public ssh key attached. Please check this <a href="./user-creation-in-paas.md" target="blank">guide</a> to understand how you can create an user or how you can generate and attach a ssh key to an user.
 
 # Clone Environment Repository #
 
-•	Please login to your organisation, select your environment and locate the Endpoint of **Repository** Application (this is the last available endpoint on the environment page). 
+ To clone an environment repository login to your organisation, select your environment and locate the Endpoint of **Repository** Application (this is the last available endpoint on the environment page). 
 
 - Click the **copy to clipboard icon** from the right:
 
-![repository](./images/use-git-endpoint.png)
+ ![repository](./images/use-git-endpoint.png)
 
-•	Create a folder in any location from your local machine. In the current example, a folder name GitLabRepo is used.
 
-•	Go to your local repository folder(GitLabRepo folder in our example), right click inside the folder and choose **Git Clone**.
+
+- Create a folder in any location from your local machine. In the current example, a folder name GitLabRepo is used.
+
+
+
+- Go to your local repository folder (i.e. GitLabRepo), right click inside the folder and choose **Git Clone**.
 ![gitlab repo clone1](./images/gitlab_repo_clone1.png)
 
-•	The bellow screen is opened where you have to paste the Endpoint of **Repository** Application of your Environment in URL textbox, set the Directory textbox to your local repository folder(GitLabRepo folder in our example) and load your private key.
+
+
+- The bellow screen is opened where you have to paste the Endpoint of **Repository** Application of your Environment in URL textbox, set the Directory textbox to your local repository folder (GitLabRepo folder in our example) and load your private key.
 ![gitlab repo clone2](./images/gitlab_repo_clone2.png)
 
-•	Content is downloaded from the Repository of your Environment to your local machine.
+
+
+- The content is downloaded from the Repository of your Environment to your local machine.
 ![gitlab repo clone3](./images/gitlab_repo_clone3.png)
 <br>
 </br>
 
-## The environment folder structure after the clone##
+## The environment folder structure after the clone
 
-The files in your previous environment (left column in the table below) is migrated to the new folder structure in GIT.
-
-If you need to push new changes into your existing environments, you have to clone the GIT folder again.
+Before the 202010 release, the environment binaries' folders were comprised in 9 folders. From the 202010 release onwards, after cloning an environment, you can now find dedicated folders for each binaries where you can upload them. The example below shows what changed:
 
 - Env Structure before Git Folder Standardization: 
 
@@ -47,41 +54,7 @@ If you need to push new changes into your existing environments, you have to clo
 <br>
 </br>
 
-## 2. The Order of installation ##
- The sequence of the components that are installed is the following:
-
-- model-bank-database​
-
-- t24-jars​
-
-- tafj-installer​
-
-- tafj-ext-jars​
-
-- t24-l3-java​
-
-- jboss-module​
-
-- t24-ud​
-
-Other components​ that are deployed in the jboss application server
-
-- t24-updates​
-
-- l3-predsf-packages​
-
-- l3-ds-package​
-
-- l3-postdsf-packages​
-
-- t24updates-data-project
-
-<br>
-</br>
-
-## 3. The folders' name ##
-
-Following the Temenos Continuous Deployment GIT folder standardization,yYou can find below and example of the before and after components name and structure (where N/A is present the component folder was not present in the old folder structure).
+Following the 202010 release, you can find below and example of the before and after components name and structure (where N/A is present the component folder was not present in the old folder structure).
 
 | BEFORE                     | AFTER                                    | PREVIOUS FORMAT   SUPPORTED                                    | CURRENT FORMAT   SUPPORTED                                                                                                                                                                    | NOTES AND   CHANGES IN THE EXISTING FUNCTIONALITY                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |----------------------------|------------------------------------------|----------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -139,7 +112,8 @@ Following the Temenos Continuous Deployment GIT folder standardization,yYou can 
 </br>
 
 # Commit & Push features to Repository #
-•	Go to repository folder from your local machine(GitLabRepo folder in our example) and copy your file/files (related to your required features that must be deployed to your Environment) to the specific folder/folders based on your requirement. In this guide, an update is pushed to the Environment Repository.
+
+To commit and push any changes in the environment go to the repository folder from your local machine (i.e GitLabRepo) and copy your file/files (related to your required features that must be deployed to your Environment) to the specific folder/folders based on your requirement. In this guide, an update is pushed to the Environment Repository.
 
 *Important: T24 Updates must be packaged as .zip of .zip file while it is deployed through the Git repository (the parent .zip file name can be anything). Example:*
 > 
@@ -150,22 +124,37 @@ T24-updates.zip
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |__ *.Jar
 
 
-![repo commit 1](./images/repo_commit_1.png)
+ ![repo commit 1](./images/repo_commit_1.png)
 
-•	To commit the files/files to Environment Repository, right click inside repository folder from your local machine and choose **Git Commit -> "master"...** option.
-![repo commit 2](./images/repo_commit_2.png)
 
-•	The following screen will appear in which your repository changes can be observed and commited. In order to commit, you have to input a commit message and check the checkbox next to each new file if it is the case.
-![repo commit 3](./images/repo_commit_3.png)
 
-•	The following screen will appear in which you have to push your changes to Environment Repository. In order to push, click the **Push** button.
-![repo commit 4](./images/repo_commit_4.png)
+-  To commit the files/files to Environment Repository, right click inside repository folder from your local machine and choose **Git Commit -> "master"...** option.
 
-•	In the next screen, you have to click **Ok** button.
-![repo commit 5](./images/repo_commit_5.png)
+ ![repo commit 2](./images/repo_commit_2.png)
 
-•	Finally, the status screen for your push action is displayed.
-![repo commit 6](./images/repo_commit_6.png)
+
+
+-  The following screen will appear in which your repository changes can be observed and commited. In order to commit, you have to input a commit message and check the checkbox next to each new file if it is the case.
+
+ ![repo commit 3](./images/repo_commit_3.png)
+
+
+
+- The following screen will appear in which you have to push your changes to Environment Repository. In order to push, click the **Push** button.
+
+ ![repo commit 4](./images/repo_commit_4.png)
+
+
+
+- In the next screen, you have to click **Ok** button.
+
+ ![repo commit 5](./images/repo_commit_5.png)
+
+
+
+- Finally, the status screen for your push action is displayed.
+
+ ![repo commit 6](./images/repo_commit_6.png)
 
 <br>
 </br>
@@ -173,18 +162,22 @@ T24-updates.zip
 # Trigger Deployment #
 After all the required features are committed and pushed to the Environment Repository, you have to deploy these features in your Environment. To do this, login to your organisation, select your environment, locate **Repository** Application and click the **Deploy** button:
 
-![repo deploy 1](./images/use-git-deploy.png)
+ ![repo deploy 1](./images/use-git-deploy.png)
 
-• A notification appears which displays the list of components that will be deployed. Tick the confirmation box to proceed:
 
-![deploy components](./images/deploy-components.png)
 
-•	The Environment and its manageable Applications status will be changed to <span style="color:#4d94ff;font-weight:600;">Deploying</span> during the deployment process and the Deploy button becomes disabled until the deployment is finished.
+- A notification appears which displays the list of components that will be deployed. Tick the confirmation box to proceed:
+
+ ![deploy components](./images/deploy-components.png)
+
+
+
+- The Environment and its manageable Applications status will be changed to <span style="color:#4d94ff;font-weight:600;">Deploying</span> during the deployment process and the Deploy button becomes disabled until the deployment is finished.
 
 The logs generated by the deployment process can be also observed in the **Events** tab of your Environment where a new event for *RepositoryDeploy* will be created.
 
-![repo deploy 2](./images/repo_deploy_2.png)
-
+ ![repo deploy 2](./images/repo_deploy_2.png)
+ 
 > [!Note]
 > The deployment process is triggered **manually** by the user after commiting and pushing all the required features in Environment Repository or whenever is appropiate based on the fact that the user can commit and push features to Environment Repository multiple times and choose when to trigger the deployment.
 
