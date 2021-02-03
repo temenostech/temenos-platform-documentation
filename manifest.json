@@ -1200,7 +1200,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/deploy-an-update-to-an-existing-environment.html",
-          "hash": "Cc9daumJ9YwRXy9DLFM8zw=="
+          "hash": "PY9w9jYE1sS/nZmvgFmodQ=="
         }
       },
       "is_incremental": false,
@@ -7504,11 +7504,23 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "home/techguides/release-info-2020.md",
+      "source_relative_path": "home/techguides/release-notes-internal.md",
       "output": {
         ".html": {
-          "relative_path": "home/techguides/release-info-2020.html",
-          "hash": "f5ajo+EA+RosJvZ9YMCZJA=="
+          "relative_path": "home/techguides/release-notes-internal.html",
+          "hash": "RwYWT+y4NrGSzrExiwGR6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "home/techguides/release-notes.md",
+      "output": {
+        ".html": {
+          "relative_path": "home/techguides/release-notes.html",
+          "hash": "gPT6EyrEN9DhcE5r8iGv0Q=="
         }
       },
       "is_incremental": false,
@@ -7715,7 +7727,7 @@
       "output": {
         ".html": {
           "relative_path": "home/toc.html",
-          "hash": "PQFcOquf/Opu5QIAr7ighw=="
+          "hash": "RxsinB4IrAo/XFtTHhWtGA=="
         }
       },
       "is_incremental": false,

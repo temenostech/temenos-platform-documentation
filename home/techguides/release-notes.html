@@ -1,0 +1,492 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Release Notes </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Release Notes ">
+    <meta name="generator" content="docfx 2.22.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/woocircle.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" class="Release Notes ">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar" role="navigation">
+          <div class="container">
+            <div class="row">
+              <div class="navbar-header col-md-2">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                
+                <a class="navbar-brand" href="https://www.temenos.com/platform/temenos-continuous-deployment-devops/">
+                  <img id="logo" src="/logo.png" alt="">
+                </a>
+              </div>
+              <div class="themainmenu col-md-10">
+              <div class="collapse navbar-collapse" id="navbar">
+                <form class="navbar-form navbar-right" role="search" id="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                  </div>
+                </form>
+              </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h2 id="release-notes">Release Notes</h2>
+
+<p>This page provides information about the monthly Temenos Continuous Deployment Platform features and improvements in each release. </p>
+<h1 id="20201201"><strong>202012.01</strong></h1>
+<p><strong>InfraBuild</strong>:   &nbsp;<strong>|</strong>&nbsp; <strong>PortalTag</strong>: 
+&nbsp;<strong>|</strong>&nbsp; <strong>ControllerBuild</strong>:   &nbsp;<strong>|</strong>&nbsp;  <strong>ReleaseNumber</strong>:  &nbsp; </p>
+<h2 id="technical-enhancements">Technical enhancements</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>1. Number of environment validation not working as expected</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Only Extend environments are taken into consideration by the MAX_ENV_COUNT metadata. 
+<br><br> </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>2. FCM, Infinity and Wealth templates have a similar dynamic structure to Transact Environments</strong> </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - As part of the GIT Folder Standardization changes, Temenos Continuous Deployment provides separate folder structure for FCM, Wealth and Infinity under the parent folder <em>Environment Configuration</em>. Read more <a href="http://documentation.temenos.cloud/home/techguides/deploy-an-update-to-an-existing-environment.html#the-environment-folder-structure-after-the-clone"><strong>here</strong></a>.
+<br>
+</br></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>3. The Save as New Template features is not deploying the non-mandatory components</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Non-mandatory components are now getting deployed with the template created from <em>Save as New Template</em> functionality.
+<br>
+</br> </p>
+<h1 id="202012"><strong>202012</strong></h1>
+<p><strong>InfraBuild</strong>: 39    &nbsp;<strong>|</strong>&nbsp; <strong>PortalTag</strong>: 202012.RC5
+&nbsp;<strong>|</strong>&nbsp; <strong>ControllerBuild</strong>: 364    &nbsp;<strong>|</strong>&nbsp;  <strong>ReleaseNumber</strong>: TCD202012   &nbsp; </p>
+<h2 id="technical-enhancements">Technical enhancements</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>1. Removed references to T24</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <strong>T24</strong> is renamed to <strong>Transact</strong> across the Temenos Continuous Deployment Portal.
+<br> </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>2. Display the list of components that will be deployed</strong> </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - After clicking Deploy a notification appears which shows the list of components that will be deployed during the repository deployment. You need to confirm the action to proceed.
+<br>
+</br></p>
+<h1 id="202011"><strong>202011</strong></h1>
+<p><strong>InfraBuild</strong>: 39  &nbsp;<strong>|</strong>&nbsp; <strong>PortalTag</strong>: 202011.RC3
+&nbsp;<strong>|</strong>&nbsp; <strong>ControllerBuild</strong>: 335  &nbsp;<strong>|</strong>&nbsp;  <strong>ReleaseNumber</strong>: TCD202011 &nbsp; </p>
+<h2 id="technical-enhancements">Technical enhancements</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>1. Factory:  Product Configuration and Promotion Configuration changes</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product and Promotion Configuration screens were enhanced for a better user experience. Read more <a href="http://documentation.temenos.cloud/home/techguides/automated-factories.html">here</a>.
+<br><br> </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>2. Factory Run: Added validation that checks for the correct file naming format</strong> </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - File naming conventions are validated immediately after the factory run is triggered. If the naming convention is not compliant, the factory run fails. 
+<br>
+</br> </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>3. Environment Events tab improvements</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Error messages  in the environment <strong>Events</strong> tab are enhanced to provide meaningful information.</p>
+<p><br>
+</br> </p>
+<h1 id="202010"><strong>202010</strong></h1>
+<p><strong>InfraBuild</strong>: 39  &nbsp;<strong>|</strong>&nbsp; <strong>PortalTag</strong>: 202010.RC8
+&nbsp;<strong>|</strong>&nbsp; <strong>ControllerBuild</strong>: 320  &nbsp;<strong>|</strong>&nbsp;  <strong>ReleaseNumber</strong>: TCD202010 &nbsp; </p>
+<h2 id="technical-enhancements">Technical enhancements</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>1. Service Virtualization/ GIT folder standardization</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This feature provides a self-service template editing mechanism that creates custom template from a model bank template. All the component binaries used in the environment can be changed once the environment is created. Read more <a href="http://documentation.temenos.cloud/home/techguides/git-folder-standardisation.html?q=git%20fol">here</a>.
+<br>
+<br></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>2. User Password Reset Option</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Organization Admins can now reset other user&#39;s password. (read more <a href="http://documentation.temenos.cloud/home/user-creation-in-paas.html#recover-password">here</a>). 
+<br>
+</br></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>3. Change in the naming convention of the downloaded test results</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Now the tests results file name downloaded from the Factory Dashboard has a unique name containing the factory name and the time stamp (i.e.: factoryname_timestamp_testresults.zip).
+<br>
+</br> </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>4. Factory run manifest file</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- The factory run manifest now displays the test cases and the platform always picks up the latest file from the test cases component in artifactory.
+<br> 
+</br>  </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>5. Factory edit issues</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- To improve the user experience, UI changes have been applied to the <strong>Edit Factory</strong> feature (read more <a href="http://documentation.temenos.cloud/home/techguides/automated-factories.html">here</a>).
+<br>
+</br> </p>
+<h1 id="202009"><strong>202009</strong></h1>
+<p><strong>InfraBuild</strong>: 39  &nbsp;<strong>|</strong>&nbsp; <strong>PortalTag</strong>: 202009.RC4
+&nbsp;<strong>|</strong>&nbsp; <strong>ControllerBuild</strong>: 273  &nbsp;<strong>|</strong>&nbsp;  <strong>ReleaseNumber</strong>: TCD202009 |&nbsp; <strong>WorkflowServiceTag</strong>: 202009.RC5</p>
+<h2 id="technical-enhancements">Technical enhancements</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>1. The SFTP servers can now be accessed over HTTPS</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- This enhancement directs the user to reset the password if required to enable HTTPS based access (read more <a href="http://documentation.temenos.cloud/home/techguides/https-in-front-of-sftp.html?q=https">here</a>).
+<br>
+</br> </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>2. Provide ability to skip target environment creation for an already executed factory run.</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Temenos Continuous Deployment Platform enables users to reuse existing environments on factory runs to rerun the tests. User guide available <a href="http://documentation.temenos.cloud/home/techguides/run-factory.html">here</a>.
+<br>
+</br> </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>3. Forgot password documentation</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- To recover a forgotten password please refer to the documentation available at <a href="http://documentation.temenos.cloud/home/user-creation-in-paas.html#recover-password">this</a> link.
+<br>
+</br> </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>4. Reduce session timeout for inactive users on the Temenos Continuous Deployment Platform</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- For security purposes, if you are inactive for more than 5 minutes on the Temenos Continuous Deployment Platform a dialog box pop up prompts on the screen in the last minute of your inactive session which asks to choose whether you want to extend the session or logout. Read more <a href="http://documentation.temenos.cloud/home/user-creation-in-paas.html">here</a>.
+<br>
+</br> </p>
+<p><br>
+</br> </p>
+<h1 id="202008"><strong>202008</strong></h1>
+<p><strong>InfraBuild</strong>: 33  &nbsp;<strong>|</strong>&nbsp; <strong>PortalTag</strong>: 202008.RC9
+&nbsp;<strong>|</strong>&nbsp; <strong>ControllerBuild</strong>: 233  &nbsp;<strong>|</strong>&nbsp;  <strong>ReleaseNumber</strong>: TCD202008 |&nbsp; <strong>WorkflowServiceTag</strong>: 202008.RC7</p>
+<h2 id="technical-enhancements">Technical enhancements</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>1. The SFTP servers can now be accessed over HTTPS</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Access to SFTP server is now available through HTTPs (read more <a href="http://documentation.temenos.cloud/home/techguides/https-in-front-of-sftp.html">here</a>)</p>
+<h1 id="202007"><strong>202007</strong></h1>
+<p><strong>InfraBuild</strong>: 28  &nbsp;<strong>|</strong>&nbsp; <strong>PortalTag</strong>: 202007.RC9
+&nbsp;<strong>|</strong>&nbsp; <strong>ControllerBuild</strong>: 209 &nbsp;<strong>|</strong>&nbsp;  <strong>ReleaseNumber</strong>: TCD202007 |&nbsp; <strong>WorkflowServiceTag</strong>: 202007.RC8 </p>
+<h2 id="technical-enhancements">Technical enhancements</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>1. Automate enablement of HTTPS for external access to Gitlab environment repos</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Gitlab will be now accessible through HTTPS as well (on top of SSH) for external accesses. 
+<br>
+</br> </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>2. Enhancements to the factory definition</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- users are not able to edit existing factories with a scheduler having start date set in the past </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- users are able to Enable/ Disable the factory Scheduler 
+<br>
+</br> </p>
+<h2 id="general-enhancements">General enhancements</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; <strong>1. UI has been reviewed in order to provide more information in single screen.</strong>
+<br>
+</br> 
+<br>
+</br> </p>
+<h1 id="2020061"><strong>202006.1</strong></h1>
+<p><strong>InfraBuild</strong>: 28  &nbsp;<strong>|</strong>&nbsp; <strong>PortalTag</strong>: 202006.1.RC2
+&nbsp;<strong>|</strong>&nbsp; <strong>PortalBuild</strong>: 1876 &nbsp;<strong>|</strong>&nbsp;<strong>ControllerBuild</strong>: 187 &nbsp;<strong>|</strong>&nbsp;  <strong>ReleaseNumber</strong>: TCD202006.1 &nbsp;<strong>|</strong>&nbsp; <strong>WorkflowServiceTag</strong>: 202006.1.RC2</p>
+<h2 id="technical-enhancements">Technical enhancements</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>1. Environment enhancements</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- for security reasons, all application environments now communicate with the Temenos Continuous Deployment infrastructure VMs only through private IPs 
+<br>
+</br> </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>2. Artifactory access</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- the JFrog Artifactory access through private IP is now done on HTTPs and not TLS
+<br>
+</br> 
+<br>
+</br> </p>
+<h1 id="202006"><strong>202006</strong></h1>
+<p><strong>InfraBuild</strong>: 28  &nbsp;<strong>|</strong>&nbsp; <strong>PortalBuild</strong>: 202006.RC6
+&nbsp;<strong>|</strong>&nbsp; <strong>ControllerBuild</strong>: 176  &nbsp;<strong>|</strong>&nbsp;  <strong>ReleaseNumber</strong>: TCD202006</p>
+<h2 id="technical-enhancements">Technical enhancements</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>1. Dashboard enhancements</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- dashboards now show the Test Workflow name for easy correlation
+<br>
+</br> </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>2. Customizable workflow</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- users have the ability to create new test workflows that can be assigned to the  factories</p>
+<h2 id="admin-portal">Admin portal</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- users are forced to reset password after first login</p>
+<p><br>
+</br></p>
+<h1 id="20200501"><strong>202005.01</strong></h1>
+<p><strong>InfraBuild</strong>: 28 &nbsp;<strong>|</strong>&nbsp; <strong>PortalBuild</strong>: 202005.HF1
+&nbsp;<strong>|</strong>&nbsp; <strong>ControllerBuild</strong>: 2020051 &nbsp;<strong>|</strong>&nbsp;  <strong>ReleaseNumber</strong>: TCD202005.1</p>
+<h2 id="technical-enhancements">Technical enhancements</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>1. Key vault not assigned to the correct subscription</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- the Platform has been enhanced to automate the assignment of  the key vault for client dedicated subscription 
+<br>
+</br> </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>2. &#39;Update Factory&#39; not working properly</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- the product configurations on the factory runs are fixed</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- the user can select all products as Principle Products</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- it is not mandatory to have 1 product in the &quot;Select other products&quot; field when setting up a factory 
+<br>
+</br></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>3. Wrong manifest file for Template created from a Factory configured with 2 different stages for the Base and Principle products.</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- the Artifactory URLs are now correctly set for all components in the manifest of a template created from a factory which is configured with different stages for the Other/ Principle products.
+<br>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;<strong>4. Inconsistent factory run scheduling pattern</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- the factory run scheduler behaviour follows the pattern defined by the user
+<br>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;<strong>5. UI Issues on filters</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- the UI filtering feature has been fixed
+<br>
+</br></p>
+<h1 id="202005"><strong>202005</strong></h1>
+<p><strong>InfraBuild</strong>: 28 &nbsp;<strong>|</strong>&nbsp; <strong>PortalVersion</strong>: cloudPortal_1.80d
+&nbsp;<strong>|</strong>&nbsp; <strong>ControllerBuild</strong>: 140 &nbsp;<strong>|</strong>&nbsp;  <strong>ReleaseNumber</strong>: TCD202005 </p>
+<h2 id="technical-enhancements">Technical enhancements</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>1.Receive notifications when a template is assigned/ removed from an organisation</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- organization administrators are informed  when a template is assigned or unassigned to their organization 
+<br>
+</br></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>2. Delete an environment that is still creating</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- the current release provides the ability to delete an environment which is still under creation.
+<br>
+</br></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>3. Display of wrong error messages in the factory dashboard</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- the factory configuration message is corrected
+<br>
+</br></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>4. &quot;No Test Steps found for the FactoryRun&quot; should not be displayed during RUNNING_ENV_DEPLOY stage</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- the Platform has been enhanced not to display the error message  &quot;No Test Steps found for the FactoryRun&quot; when not appropriate
+<br>
+</br></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>5. Issue while promoting a component with multiple packages</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- the Platform has been enhanced to ensure the deployment and promotion of a product which has multiple components of same type</p>
+<h2 id="tcd-admin-portal">TCD Admin Portal</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>1. As an Organisation Admin, I&#39;d like to easily find the date when a template has been installed</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- the Platform now displays the installation date of each template in the template details page</p>
+<h2 id="create-custom-templates-from-model-bank-templates">Create custom templates from Model bank templates</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>1. Further documentation on the process</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- online documentation has been enhanced in order to describe how to create custom templates from model bank templates
+<br>
+</br></p>
+<h1 id="202004"><strong>202004</strong></h1>
+<p><strong>InfraBuild</strong>: 28 &nbsp;<strong>|</strong>&nbsp; <strong>PortalBuild</strong>: 1658
+&nbsp;<strong>|</strong>&nbsp; <strong>ControllerBuild</strong>: 99 &nbsp;<strong>|</strong>&nbsp;  <strong>ReleaseNumber</strong>: TCD202004.1 </p>
+<h2 id="technical-enhancements">Technical enhancements</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>1. The STOP environments button displays an error after rebuild</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>START</strong> and <strong>STOP</strong> environments are handled differently to provide faster feedback to the user
+<br>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;<strong>2. Isuse on the user accounts page - the &quot;EDITING&quot; status is not displayed in the portal</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - user experience improvements have been added on the Users Page in the portal</p>
+<h2 id="factory-run-enhancements">Factory Run enhancements</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; The <strong>Factory Run</strong> functionality is now enhanced with the ability to run tests with multiple steps (workflows), in a designated sequence. Factory configuration screen layout was changed and split into 4 parts:</p>
+<ul>
+<li>Factory Definition and Products</li>
+<li>Test Configuration</li>
+<li>Promotion Configuration</li>
+<li>Factory Schedule</li>
+</ul>
+<p>Check the  <a href="http://documentation.temenos.cloud/home/techguides/factories.html" title="page"><strong>Manage Factories</strong></a> documentation to see the latest updates.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red"><strong>IMPORTANT</strong>:</span> the <strong>Test script</strong> is now a component and is promoted from one stage to another. With this release, all the factories need reconfiguration to include the test script component, otherwise the factory run will not be successful. Learn how to configure the Test Script component <a href="http://documentation.temenos.cloud/home/techguides/factory-migration.html" title="page"><strong>here</strong></a>.</p>
+<h2 id="platform-security-enhancements">Platform security enhancements</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; Security improvements made to minimize potential attacks. </p>
+<h2 id="user-experience-improvements">User experience improvements</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; User selection is mandatory to display details. .
+<br>
+</br></p>
+<p><br>
+</br></p>
+<h1 id="202002"><strong>202002</strong></h1>
+<p><strong>InfraBuild</strong>: 362 &nbsp;<strong>|</strong>&nbsp; <strong>PortalTag</strong>: cloudPortal_1.79e
+&nbsp;<strong>|</strong>&nbsp; <strong>ControllerBuild</strong>: 26</p>
+<h2 id="technical-enhancements">Technical enhancements</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>1. Exception list added to the Organisation scheduled shutdown</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- users with the &quot;UPDATE_ENVIRONMENT&quot; privilege are able to add an &quot;scheduler ignore&quot; for environments. Those environments will not be STOPPED or STARTED by time scheduler <br>
+ </br></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>2. Whitelist IPs that can acces my environments</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- users with the &quot;CREATE_ ORG_ METADATA&quot; privilege are able to restrict the access of Temenos Continous Deployment Platform environments of that organisations to the IP addresses added to the metadata &quot;ORG_ IP_ WHITELIST&quot;<br>
+</br></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>3. Factory Run timeline</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  issue has been fixed<br>
+</br></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;4.  <strong>Platform URL included in the System generated email sent to the Org Admins</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  issue has been fixed<br>
+</br></p>
+<p><br>
+</br></p>
+<h1 id="202001"><strong>202001</strong></h1>
+<p><strong>InfraBuild</strong>: 355 &nbsp; <strong>|</strong>  &nbsp;<strong>PortalTag</strong>: cloudPortal_1.78 &nbsp;<strong>|</strong>  &nbsp;<strong>ControllerBuild</strong>: 12</p>
+<h2 id="dashboard-enhancements">Dashboard enhancements</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>1. UI Updates</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Temenos Continuous Deployment Platform UI has been updated to unify look and feel, behavior, and to improve user experience. The UI changes have been updated on all pages across the documentation portal<br>
+</br></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>2. Component security enhancements</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- when creating a template from a factory run, all components are copied in the new template folder that secures this template consistency from factory deletion<br>
+</br></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>3. Templates visibility improvements</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- template identifier on the environment&#39;s page added<br>
+</br></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>4. Environment functionality updates</strong>: </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- pop-up confirmation with check box informing both START and STOP all environments added<br><br><br></p>
+<h2 id="role-management">Role Management</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>1. User access rights</strong>: </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- user profiles can perform distinct functions on the Temenos Continous Deployment Platform. Administrators, operations, developer and test users for examples require different access rights to perform certain operations. The user permissions are explained on this <a href="http://documentation.temenos.cloud/home/techguides/user-permissions" title="page"><strong>page</strong></a>. Each page from the Documentation Portal will have the access rights displayed for each operation shortly.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- users can create roles from permissions</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- users can add or remove permissions to a role</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- users (admins) can assign roles to users</p>
+<p><br></p>
+<h2 id="security-enhancements---phase-1">Security enhancements - Phase 1</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>1.</strong> Controller API keys are now managed by platform Operators such that keys are not shared with customers and the impact of a compromised/revoke key is minimised<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>2.</strong> All vulnerabilities or defects in libraries detected during initial Whitesource scanning of Temenos Continuous Deployment Platform source have been fixed</p>
+<p><br></p>
+<h2 id="security-enhancements---phase-2">Security enhancements - Phase 2</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>1.</strong> White source scanning is now automated as part of platform build process that Temenos Continuous Deployment Platform Code is scanned each time we build the platform <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>2.</strong> All the Temenos Continuous Deployment Platform 3rd parties were White Source scanned <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>3.</strong> All artifacts pushed in common GitLab and Artifactory are scanned</p>
+<p><br></p>
+<h2 id="self-service-capabilities">Self Service Capabilities</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>1.</strong> <strong>Self Service Setup:</strong><br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   -   users who have the Assemble module enabled are able to <a href="http://documentation.temenos.cloud/home/techguides/factories.html">manage their factories</a>, admin <a href="http://documentation.temenos.cloud/home/techguides/components-products.html">product and component</a>s, <a href="http://documentation.temenos.cloud/home/techguides/stream.html">create streams</a>, <a href="http://documentation.temenos.cloud/home/techguides/factories.html?q=schedule%20factory#factory-scheduler">schedule</a> and <a href="http://documentation.temenos.cloud/home/techguides/factories.html?q=schedule%20factory#set-up-create-a-factory">execute factory runs</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  all users have the option to <a href="http://documentation.temenos.cloud/home/techguides/clone-environment.html?q=clone%20envi">clone environments</a>, <a href="http://documentation.temenos.cloud/home/techguides/stage-testcases.html">manage their test cases</a> and connect to Design Studio remotely to any Azure Subscription<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  internal Users can use the Boost function to configure the available templates or build a new template. <br>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>2.</strong> Users are now able to <strong>request an environment based on any factory run</strong> to do triage, demo or ad-hoc testing (learn how <a href="http://documentation.temenos.cloud/home/techguides/run-factory.html">here</a>). <br>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>3.</strong> Organisation administrators now can <strong>create a template based on any successful factory run</strong> to baseline the environment (learn how <a href="http://documentation.temenos.cloud/home/techguides/create-publish-template.html?q=successful">here</a>). <br>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>4.</strong> Organisation Admin user now can <strong>Stop All Environments</strong> of the organisation through a single button to Manage Costs (learn how <a href="http://documentation.temenos.cloud/home/techguides/environment-basic-operations.html?q=stop%20environment">here</a>).<br>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>5.</strong> <strong>Pop-up confirmation</strong> with check box informing both START and STOP all environments added.<br>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>6.</strong> <strong>Factory Management</strong> (learn more <a href="http://documentation.temenos.cloud/home/techguides/components-products.html#how-to-set-up-edit-delete-products">here</a>):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  ability to redefine factory settings to add/ remove Products<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ability to delete a product<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ability to delete a component<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ability to disable a factory<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ability to delete a factory <br>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>7. Components Management</strong>:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-   an Artifactory folder structure available view (learn more <a href="http://documentation.temenos.cloud/home/techguides/components-products.html#artifactory-view">here</a>)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- a list of all available components in current selected stage<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- list of all component versions available in the Artifactory<br>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>8.</strong> Users are now able to <strong>Abort any Factory Run</strong> in case of need (learn how <a href="http://documentation.temenos.cloud/home/techguides/run-factory.html">here</a>) <br>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>9.</strong> Users can <strong>schedule factory runs</strong> (learn how <a href="http://documentation.temenos.cloud/home/techguides/factories.html">here</a>) <br>
+</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>10.</strong> Users can <strong>clone Stream</strong>s (learn how <a href="http://documentation.temenos.cloud/home/techguides/stream.html">here</a>).</p>
+<p><br></p>
+              <hr>
+              
+              <div id="disqus_thread"></div>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 footer-note left">
+              <p>
+                <a href="/"><img src="/logo-bottom.png" alt=""></a>
+                <a href="https://www.temenos.com/en/accessibility/">Accessibility</a>
+                <a href="https://www.temenos.com/en/legal-information/cookie-policy/">Cookie Policy</a>
+                <a href="https://www.temenos.com/en/legal-information/privacy-policy/">Privacy Policy</a>
+                <a href="https://www.temenos.com/en/legal-information/terms-and-conditions/">Terms & Conditions</a>
+              </p>
+            </div>
+      
+            <div class="col-md-6 footer-note right">
+              <p>
+                Copyright &copy; 2020 Temenos Headquarters SA <span>&#183;</span>
+                <a target="_blank" href="https://www.facebook.com/TemenosGroup"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
+                <a target="_blank" href="https://twitter.com/Temenos"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a target="_blank" href="http://www.linkedin.com/company/temenos"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a target="_blank" href="//plus.google.com/u/0/100035548059267323447?prsrc=3"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+              </p>
+            </div>
+          </div>
+      
+        </div>
+      </footer>
+      
+      <div class="back-to-top">
+        <a href="#top">
+          <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i></span>
+        </a>
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script id="dsq-count-scr" src="//temenostech.disqus.com/count.js" async=""></script>
+    
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myshareDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.sharedropbtn')) {
+    
+        var dropdowns = document.getElementsByClassName("sharedropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+    
+    <script>
+    	window.onload = function(){
+        	document.getElementById("shareFacebook").href = 'https://www.facebook.com/sharer/sharer.php?u=' + window.location.toString();
+    
+        	document.getElementById("shareTwitter").href = 'https://twitter.com/intent/tweet?text=Temenos+Developer+Portal&url=' + window.location.toString();
+    
+        	document.getElementById("shareGoogle").href = 'https://plus.google.com/share?url=' + window.location.toString();
+    
+        	document.getElementById("shareLinkedin").href = 'https://www.linkedin.com/shareArticle?mini=true&url=' + window.location.toString() + '&title=Temenos+Developer+Portal&summary=&source=';
+    
+        	document.getElementById("shareEmail").href = 'mailto:' + window.location.toString();
+    	}
+    </script>
+    
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-38593742-8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-38593742-8');
+    </script>  
+  </body>
+</html>

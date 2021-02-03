@@ -96,14 +96,14 @@ o</p>
 </li>
 <li><p>Create a folder in any location from your local machine. In the current example, a folder name GitLabRepo is used.</p>
 </li>
-<li><p>Go to your local repository folder (i.e. GitLabRepo), right click inside the folder and choose <strong>Git Clone</strong>.
-<img src="images/gitlab_repo_clone1.png" alt="gitlab repo clone1"></p>
+<li><p>Go to your local repository folder (i.e. GitLabRepo), right click inside the folder and choose <strong>Git Clone</strong>.</p>
+<p><img src="images/gitlab_repo_clone1.png" alt="gitlab repo clone1"></p>
 </li>
-<li><p>The bellow screen is opened where you have to paste the Endpoint of <strong>Repository</strong> Application of your Environment in URL textbox, set the Directory textbox to your local repository folder (GitLabRepo folder in our example) and load your private key.
-<img src="images/gitlab_repo_clone2.png" alt="gitlab repo clone2"></p>
+<li><p>The bellow screen is opened where you have to paste the Endpoint of <strong>Repository</strong> Application of your Environment in URL textbox, set the Directory textbox to your local repository folder (GitLabRepo folder in our example) and load your private key.</p>
+<p><img src="images/gitlab_repo_clone2.png" alt="gitlab repo clone2"></p>
 </li>
-<li><p>The content is downloaded from the Repository of your Environment to your local machine.
-<img src="images/gitlab_repo_clone3.png" alt="gitlab repo clone3">
+<li><p>The content is downloaded from the Repository of your Environment to your local machine.</p>
+<p><img src="images/gitlab_repo_clone3.png" alt="gitlab repo clone3">
 <br>
 </br></p>
 </li>
@@ -517,8 +517,8 @@ o</p>
 <h1 id="how-temenos-continuous-deployment-platform-installs-ds-packages">How Temenos Continuous Deployment Platform installs DS packages</h1>
 <p>Temenos Continuous Deployment provides users the ability to deploy one or more Design Studio packages into the environment. This pages explains what happens in the background when packages are deployed to the environment.</p>
 <ul>
-<li><p>one or more DS packages which with the .jar extension can be added directly into the Git folder packages as shown below.
-<img src="images/ds-installation.png" alt=""></p>
+<li><p>one or more DS packages which with the .jar extension can be added directly into the Git folder packages as shown below.</p>
+<p><img src="images/ds-installation.png" alt=""></p>
 </li>
 <li><p>one or more DS packages can be bundled into a .zip file and put under the Git folder packages/l3 folder </p>
 <p><img src="images/ds-installation-l3packages.png" alt=""></p>
@@ -604,14 +604,13 @@ o</p>
 </br></p>
 <h3 id="dsf-package-structure">DSF Package Structure</h3>
 <p>The l3-pre-dsf-packages and/or l3-post-dsf-packages containing DSF packages have the <strong>format of zip of zip</strong>. See below a  sample package:</p>
-<p><img src="images/dsf-package-structure.png" alt="">
-<br>
-<br>
-</br></p>
-<h3 id="dsf-deployment-overview">DSF Deployment Overview</h3>
-<p>See below what happens in the environment when a DSF packacke is deployed:</p>
+<p><img src="images/dsf-package-structure.png" alt=""></p>
 </li>
 </ol>
+<p><br>
+</br></p>
+<h3 id="dsf-deployment-overview">DSF Deployment Overview</h3>
+<p> See below what happens in the environment when a DSF packacke is deployed:</p>
 <ul>
 <li><p>The zip of zip file is downloaded into a temporary file within the TCD environment</p>
 </li>
@@ -621,10 +620,10 @@ o</p>
 <li><p>The output of the curl command is displayed in the events log</p>
 </li>
 <li><p>See below a sample output of a successful deployment (this is available in your <strong>Events</strong> tab on your environment page):</p>
-<p>   <img src="images/dsf-package-success-sample.png" alt=""></p>
+<p><img src="images/dsf-package-success-sample.png" alt=""></p>
 </li>
 <li><p>See below a sample output of a failed deployment (this is available in your <strong>Events</strong> tab on your environment page):</p>
-<p>   <img src="images/dsf-package-error-sample.png" alt="">
+<p><img src="images/dsf-package-error-sample.png" alt="">
 <br>
 </br></p>
 <h3 id="dsf-deployment-notes">DSF Deployment Notes</h3>
@@ -632,7 +631,7 @@ o</p>
 <li><p>For the factory run, the components mentioned in 1, 2 and 3 from the <strong>How to deploy the DSF packages</strong> should be defined in the factory.</p>
 </li>
 <li><p>In an Extend environment, there will be two new folders named <strong>pre-dsf-packages</strong> and <strong>post-dsf-packages</strong>:</p>
-<p>   <img src="images/dsf-pre-post-packages.png" alt=""></p>
+<p><img src="images/dsf-pre-post-packages.png" alt=""></p>
 </li>
 <li><p>In case you only have one set of DSF package to be installed into a Temenos Continuous Deployment Extend environment, please include the package in** pre-dsf-packages** folder in the GIT.</p>
 </li>
@@ -670,14 +669,17 @@ o</p>
 <p>  <img src="images/tafjdb.png" alt=""></p>
 <p>The Git Folder Standardization allows you to add the db.properties file into the TAFJDB.zip. The db.properties file contains the db name, clientdb user and pass, as well as the dbuser and dbpassword where:</p>
 <ul>
-<li><p>the dbuser is the Transact/ T24 user which has SUPER.USER privileges</p>
+<li><p>The dbuser is the Transact/ T24 user which has SUPER.USER privileges</p>
 </li>
-<li><p>these entries are used by the Temenos Continuous Deployment automation scripts to run the T24 programs and TSA SERVICES. If you fail to provide the below the automation scripts will use the default Model Bank credentials (INPUTT/123456) which might lead to failed database deployments.</p>
+<li><p>These entries are used by the Temenos Continuous Deployment automation scripts to run the T24 programs and TSA SERVICES. If you fail to provide the below the automation scripts will use the default Model Bank credentials (INPUTT/123456) which might lead to failed database deployments.</p>
 </li>
 </ul>
 <p>  <img src="images/db-properties.png" alt=""></p>
-<p>If the folder inside TAFJDB.zip file is renamed, then it is mandatory in the db.properties to add the db-name the same as the db folder name and the credentials for the respective db.</p>
-<p>  <img src="images/db-properties2.png" alt=""></p>
+<ul>
+<li><p><strong>If the folder inside TAFJDB.zip file is renamed, then it is mandatory in the db.properties to add the db-name the same as the db folder name and the credentials for the respective db.</strong></p>
+<p><img src="images/db-properties2.png" alt=""></p>
+</li>
+</ul>
 <div class="NOTE"><h5>Note</h5><p>If you want to overwrite the database it is important to do at least one change before deploying it. Otherwise the platform will pick the initial database only.
 <br>
 </br></p>
