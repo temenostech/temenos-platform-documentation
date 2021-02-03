@@ -104,7 +104,405 @@
 <p>•   The bellow screen is opened where you have to paste the Endpoint of <strong>Repository</strong> Application of your Environment in URL textbox, set the Directory textbox to your local repository folder(GitLabRepo folder in our example) and load your private key.
 <img src="images/gitlab_repo_clone2.png" alt="gitlab repo clone2"></p>
 <p>•   Content is downloaded from the Repository of your Environment to your local machine.
-<img src="images/gitlab_repo_clone3.png" alt="gitlab repo clone3"></p>
+<img src="images/gitlab_repo_clone3.png" alt="gitlab repo clone3">
+<br>
+</br></p>
+<h2 id="the-environment-folder-structure-after-the-clone">The environment folder structure after the clone##</h2>
+<p>The files in your previous environment (left column in the table below) is migrated to the new folder structure in GIT.</p>
+<p>If you need to push new changes into your existing environments, you have to clone the GIT folder again.</p>
+<ul>
+<li><p>Env Structure before Git Folder Standardization: </p>
+<p><img src="images/old-env-structure.png" alt=""></p>
+</li>
+<li><p>Env Structure after Git Folder Standardization:</p>
+<p><img src="images/new-env-structure.png" alt=""></p>
+</li>
+</ul>
+<div class="NOTE"><h5>Note</h5><p>If you need to push new changes into your existing environments, you have to clone the GIT folder again.</p>
+</div>
+<p><br>
+</br></p>
+<h2 id="2-the-order-of-installation">2. The Order of installation</h2>
+<p> The sequence of the components that are installed is the following:</p>
+<ul>
+<li><p>model-bank-database​</p>
+</li>
+<li><p>t24-jars​</p>
+</li>
+<li><p>tafj-installer​</p>
+</li>
+<li><p>tafj-ext-jars​</p>
+</li>
+<li><p>t24-l3-java​</p>
+</li>
+<li><p>jboss-module​</p>
+</li>
+<li><p>t24-ud​</p>
+</li>
+</ul>
+<p>Other components​ that are deployed in the jboss application server</p>
+<ul>
+<li><p>t24-updates​</p>
+</li>
+<li><p>l3-predsf-packages​</p>
+</li>
+<li><p>l3-ds-package​</p>
+</li>
+<li><p>l3-postdsf-packages​</p>
+</li>
+<li><p>t24updates-data-project</p>
+</li>
+</ul>
+<p><br>
+</br></p>
+<h2 id="3-the-folders-name">3. The folders&#39; name</h2>
+<p>Following the Temenos Continuous Deployment GIT folder standardization,yYou can find below and example of the before and after components name and structure (where N/A is present the component folder was not present in the old folder structure).</p>
+<table>
+<thead>
+<tr>
+<th>BEFORE</th>
+<th>AFTER</th>
+<th>PREVIOUS FORMAT   SUPPORTED</th>
+<th>CURRENT FORMAT   SUPPORTED</th>
+<th>NOTES AND   CHANGES IN THE EXISTING FUNCTIONALITY</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>N/A</td>
+<td>authenticator</td>
+<td>*.war</td>
+<td>*.war</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>axis2</td>
+<td>*.war</td>
+<td>*.war</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>browser-classic</td>
+<td>*.war</td>
+<td>*.war</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>browser-generated</td>
+<td>*.zip</td>
+<td>*.zip</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>browser-iris</td>
+<td>*.war</td>
+<td>*.war</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>dsf-iris</td>
+<td>*.war</td>
+<td>*.war</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>dsf-uxp</td>
+<td>*.war</td>
+<td>*.war</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>client_files/helptext</td>
+<td>helptext</td>
+<td>*.zip</td>
+<td>*.zip</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>irf-provider-container</td>
+<td>*.war</td>
+<td>*.war</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>irf-t24catalog-services</td>
+<td>*.war</td>
+<td>*.war</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>irf-test-web</td>
+<td>*.war</td>
+<td>*.war</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>irf-web-client</td>
+<td>*.war</td>
+<td>*.war</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>packages</td>
+<td>l3-ds-packages</td>
+<td>*.jar,   *.zip</td>
+<td>*.zip</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>client_files/h2db</td>
+<td>model-bank-database-h2</td>
+<td>*.zip</td>
+<td>*.zip</td>
+<td>db.properties file should be included in the zip file   . The format of db.properties should be as follows: db_name=TAFJDB -&gt;   without extension .mv.db or .h2.db.</td>
+</tr>
+<tr>
+<td>client_files/sqldb</td>
+<td>model-bank-database-sqlserver</td>
+<td>*.bak</td>
+<td>*.zip</td>
+<td>db.properties file should be included in the zip file   . The format of db.properties should be as follows: db_name=UTPSQL2016 -&gt;   without extension names.</td>
+</tr>
+<tr>
+<td>post-dsf-packages</td>
+<td>l3-post-dsf-packages</td>
+<td>zip   of zip</td>
+<td>zip   of zip</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>pre-dsf-packages</td>
+<td>l3-pre-dsf-packages</td>
+<td>zip   of zip</td>
+<td>zip   of zip</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>addons</td>
+<td>t24-Addons</td>
+<td>*.zip</td>
+<td>*.zip</td>
+<td>The environment file can be provided along with the   jars/wars which contains JAVA_OPTS that can to be added in the appserver   startup. If only environment file inside the zip is provided the JAVA_OPTS   will be added to the appserver without copying any war/jar files.   Additionally, this environment file can be used to add or update the java   heap size in the app server start up file (java_opts= - replace the   variables with the appropriate ones).</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>t24-eb-authentication-service-ejb</td>
+<td>*.jar</td>
+<td>*.jar</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>t24-eb-catalog-service-ejb</td>
+<td>*.jar</td>
+<td>*.jar</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>t24-eb-ofs-connector-service-ejb</td>
+<td>*.jar</td>
+<td>*.jar</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>t24-eb-resource-provider-service-ejb</td>
+<td>*.jar</td>
+<td>*.jar</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>t24-if-integration-framework-service-ejb</td>
+<td>*.jar</td>
+<td>*.jar</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>t24-interactiontests-iris</td>
+<td></td>
+<td></td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>t24-jars</td>
+<td>*.zip</td>
+<td>*.zip</td>
+<td>zip of multiple folders containing jars. For eg:   t24lib, l3lib. Note: We use the folders t24lib and l3lib for core and l3   libraries respectively. Hence the same naming convention has to be used for   the artifacts.</td>
+</tr>
+<tr>
+<td>client_files/localjars</td>
+<td>t24-l3-java</td>
+<td></td>
+<td></td>
+<td>zip of l3libraries</td>
+</tr>
+<tr>
+<td>plugins</td>
+<td>war-package</td>
+<td>*.zip   containing war, jar or war and optional .endpoint file</td>
+<td>*.zip containing war, jar or war and optional .endpoint   file which contains the dns name. Ie.: Provider   APIs~<a href="https://t24-v1f2k9y77x18.temenos.cloud/provider-apis/api/v1.0.0/meta/apidocs">https://t24-v1f2k9y77x18.temenos.cloud/provider-apis/api/v1.0.0/meta/apidocs</a></td>
+<td>Optional .endpoint file within *.zip should now contain   he keyword &#39;localhost&#39; instead of the dnsname to be able to used during   factory run. Ie.: Provider   APIs~<a href="https://localhost/provider-apis/api/v1.0.0/meta/apidocs">https://localhost/provider-apis/api/v1.0.0/meta/apidocs</a></td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>t24-ud</td>
+<td>*.zip   containing UD folders</td>
+<td>*.zip   containing UD folders</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>updates</td>
+<td>t24-updates</td>
+<td>zip   of zip</td>
+<td>zip   of zip</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>wsdl</td>
+<td>wsdl</td>
+<td></td>
+<td></td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>client_files/localjars/ext</td>
+<td>tafj-ext-jars</td>
+<td>zip   of jars</td>
+<td>zip   of jars</td>
+<td>zip of l3libraries</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>tafj-installer</td>
+<td>*.zip   containing installer</td>
+<td>*.zip   containing installer</td>
+<td>The TAFJ will be redeployed (full installation, not   patch) hence please make sure any properties that you would like to include   are present within the .properties file inside the installer. For more   details, refer to tafj.installer notes added in the Transact Template   Overview Page.</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>tcib-api</td>
+<td>*.war</td>
+<td>*.war</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>tcua-tcuseradmin-iris</td>
+<td>*.war</td>
+<td>*.war</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>tcua-useradministration</td>
+<td>*.war</td>
+<td>*.war</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>tcxb2-generated</td>
+<td>*.war</td>
+<td>*.war</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>tcxb2-iris</td>
+<td>*.war</td>
+<td>*.war</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>tcxb2-retail</td>
+<td>*.war</td>
+<td>*.war</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>temp.release</td>
+<td></td>
+<td></td>
+<td>*.zip containing the temp.release</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>tocf-ee</td>
+<td>*.zip</td>
+<td>*.zip</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>uxp-browser</td>
+<td>*.war</td>
+<td>*.war</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>uxp-god-properties</td>
+<td>*.zip</td>
+<td>*.zip</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>resourceserverwar</td>
+<td>*.war</td>
+<td>*.war</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>irf-rp-services</td>
+<td>*.war</td>
+<td>*.war</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>t24-eb.product</td>
+<td></td>
+<td>*.txt</td>
+<td>The text file should contain the number of product ,   product name separated by ‘~&#39; (more than 1 product) and product codes   separated by &#39;~’ (more than 1 product) . EX: 2,name1~name2,code1~code2</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>jboss-modules</td>
+<td></td>
+<td>*.zip</td>
+<td>*.zip containing the folders, sub folders, jars, with   the module.xml which can be unzipped to modules folder in jboss It also   checks for the existing folders com/temenos/t24, com/temenos/tafj ,system ,if   exists it is ignored and other folders are copied</td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>standalone.xml</td>
+<td></td>
+<td>*.xml</td>
+<td>*.xml containing standalone.xml file. The template   file for OSS and TSS are provided at point 6 in this user guide for both OSS   and TSS templates.</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE"><h5>Note</h5><p>Do not leave multiple versions of the same component type in the GIT folder as this would produce undesired results.
+<br>
+</br></p>
+</div>
 <h1 id="commit--push-features-to-repository">Commit &amp; Push features to Repository</h1>
 <p>•   Go to repository folder from your local machine(GitLabRepo folder in our example) and copy your file/files (related to your required features that must be deployed to your Environment) to the specific folder/folders based on your requirement. In this guide, an update is pushed to the Environment Repository.</p>
 <p><em>Important: T24 Updates must be packaged as .zip of .zip file while it is deployed through the Git repository (the parent .zip file name can be anything). Example:</em></p>
@@ -131,8 +529,8 @@
 <p>• A notification appears which displays the list of components that will be deployed. Tick the confirmation box to proceed:</p>
 <p><img src="images/deploy-components.png" alt="deploy components"></p>
 <p>•   The Environment and its manageable Applications status will be changed to <span style="color:#4d94ff;font-weight:600;">Deploying</span> during the deployment process and the Deploy button becomes disabled until the deployment is finished.</p>
-<p>The logs generated by the deployment process can be also observed in the <strong>Events</strong> tab of your Environment where a new event for <em>RepositoryDeploy</em> will be created.
-<img src="images/repo_deploy_2.png" alt="repo deploy 2"></p>
+<p>The logs generated by the deployment process can be also observed in the <strong>Events</strong> tab of your Environment where a new event for <em>RepositoryDeploy</em> will be created.</p>
+<p><img src="images/repo_deploy_2.png" alt="repo deploy 2"></p>
 <div class="NOTE"><h5>Note</h5><p>The deployment process is triggered <strong>manually</strong> by the user after commiting and pushing all the required features in Environment Repository or whenever is appropiate based on the fact that the user can commit and push features to Environment Repository multiple times and choose when to trigger the deployment.</p>
 </div>
 <div class="NOTE"><h5>Note</h5><p>Temenos Continuous Deployment uses PROC as the locking mechanism. If you need to change it, proceed via the TAFJEE properties set up. Refer to the TAFJ documentation for more details.</p>
@@ -225,11 +623,14 @@
 </li>
 <li><p>IRIS Catalog service in T24 environment:</p>
 <p>t24-eb-catalog-service-ejb.jar
-<br></p>
+<br>
+</br></p>
 <h3 id="dsf-package-structure">DSF Package Structure</h3>
 <p>The l3-pre-dsf-packages and/or l3-post-dsf-packages containing DSF packages have the <strong>format of zip of zip</strong>. See below a  sample package:</p>
 <p><img src="images/dsf-package-structure.png" alt="">
-<br></p>
+<br>
+<br>
+</br></p>
 <h3 id="dsf-deployment-overview">DSF Deployment Overview</h3>
 <p>See below what happens in the environment when a DSF packacke is deployed:</p>
 </li>
@@ -246,7 +647,9 @@
 <p>   <img src="images/dsf-package-success-sample.png" alt=""></p>
 </li>
 <li><p>See below a sample output of a failed deployment (this is available in your <strong>Events</strong> tab on your environment page):</p>
-<p>   <img src="images/dsf-package-error-sample.png" alt=""></p>
+<p>   <img src="images/dsf-package-error-sample.png" alt="">
+<br>
+</br></p>
 <h3 id="dsf-deployment-notes">DSF Deployment Notes</h3>
 </li>
 <li><p>For the factory run, the components mentioned in 1, 2 and 3 from the <strong>How to deploy the DSF packages</strong> should be defined in the factory.</p>
@@ -259,6 +662,61 @@
 <li><p>We currently support a single file inside the pre-dsf / post-dsf folders. Bundle all your DSF Packages into a .zip file before uploading them
 <br>
 </br></p>
+</li>
+</ul>
+<h3 id="44-standalonexml-file-notes">4.4 Standalone.xml file notes</h3>
+<p>There are different standalone.xml templates for TSS and OSS. These are provided to you by us.
+<br>
+</br></p>
+<h3 id="441-the-standalonexml-tss-template">4.4.1 The standalone.xml TSS template:</h3>
+<ul>
+<li><p>don’t change any of the static values</p>
+</li>
+<li><p>the only changes you can apply to the files are:</p>
+<ul>
+<li><p>in the datasource code block and give a new name (ie. instead of jndi-name=&quot;java:/jdbc/t24DS&quot; you can change the name from t24DS to another one) or change the min/max-pool-size. If you want to add more datasource copy the entire code block highlighted below.</p>
+<p><img src="images/standalone-tss.png" alt=""></p>
+</li>
+<li><p>in the queues add new connection pools (copy-paste the link and change the name, max-pool-size)</p>
+<p><img src="images/standalone-queues.png" alt=""></p>
+</li>
+<li><p>add custom queues ( copy the highlighted queue below and add another name (ie. instead of tecEventsTopic you can add another name)</p>
+<p><img src="images/standalone-custom-queues.png" alt=""></p>
+</li>
+</ul>
+<p><strong>Other alterations added to the XML file will result in a failed deployment.</strong>
+<br>
+</br></p>
+<h3 id="442-the-dbproperties-file---only-applicable-for-wildfly-h2-templates">4.4.2 The db.properties file - only applicable for Wildfly/ H2 templates</h3>
+</li>
+</ul>
+<p>You can place the TAFJDB.zip file in the model-bank-database-h2 folder. The db.properties file should be added to the corresponding H2 .zip files in the artifactory and the H2 machines must have a copy of this file.</p>
+<div class="NOTE"><h5>Note</h5><p>If the Golden Copy is provided by you make sure to have the db.properties file under the model-bank-database-h2. If this is not present, the environment will be created using the default modelbank credentials.</p>
+<p>It is mandatory to have the db.properties file included along with your H2 DB .zip file, otherwise the environment will be created using the default modelbank credentials.</p>
+</div>
+<p>  <img src="images/tafjdb.png" alt=""></p>
+<p>The Git Folder Standardization allows you to add the db.properties file into the TAFJDB.zip. The db.properties file contains the db name, clientdb user and pass:</p>
+<p>  <img src="images/db.properties.png" alt=""></p>
+<p>If the folder inside TAFJDB.zip file is renamed, then it is mandatory in the db.properties to add the db-name the same as the db folder name and the credentials for the respective db.</p>
+<p>  <img src="images/db.properties2.png" alt=""></p>
+<div class="NOTE"><h5>Note</h5><p>If you want to overwrite the database it is important to do at least one change before deploying it. Otherwise the platform will pick the initial database only.
+<br>
+</br></p>
+</div>
+<h2 id="5-attachments">5. Attachments</h2>
+<p>You can download the Standalone OSS/ TSS and the db.properties files below:</p>
+<ul>
+<li><p><strong><a href="./../zip/client-standalone-OSS-1">Standalone OSS file applicable for lower template versions than 202008</a></strong> </p>
+</li>
+<li><p><strong><a href="./../zip/client-standalone-OSS-2">Standalone OSS file applicable for higher template versions than 202008 (including the 202008 version)</a></strong> </p>
+</li>
+<li><p><strong><a href="./../zip/client-standalone-TSS-1">Standalone TSS file applicable for lower template versions than 202008</a></strong> </p>
+</li>
+<li><p><strong><a href="./../zip/client-standalone-TSS-2">Standalone TSS file applicable for higher template than 202008 (including the 202008 version)</a></strong> </p>
+</li>
+<li><p><strong><a href="../zip/db.properties">db.properties file</a></strong> </p>
+</li>
+<li><p>Video tutorial available <strong><a href="https://youtu.be/Kc5nXfJewKg">here</a></strong>.</p>
 </li>
 </ul>
 <h1 id="user-permissions-required">User Permissions Required</h1>
