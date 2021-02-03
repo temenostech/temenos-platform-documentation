@@ -2,7 +2,7 @@
 ## Release Notes
 
 This page provides information about the monthly Temenos Continuous Deployment Platform features and improvements in each release.
-
+    
 # **202012.01**
 **InfraBuild**: TBA   &nbsp;**|**&nbsp; **PortalTag**: TBA
 &nbsp;**|**&nbsp; **ControllerBuild**: TBA  &nbsp;**|**&nbsp;  **ReleaseNumber**: TBA &nbsp; 
