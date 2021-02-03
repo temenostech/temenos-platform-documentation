@@ -21,7 +21,7 @@ This page provides information about the monthly Temenos Continuous Deployment P
 <br>
 </br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;**3. The* Save as New Template* feature is not deploying the non-mandatory components**
+&nbsp;&nbsp;&nbsp;&nbsp;**3. The *Save as New Template* feature is not deploying the non-mandatory components**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Non-mandatory components are now getting deployed with the template created via the *Save as New Template* functionality.
 <br>
