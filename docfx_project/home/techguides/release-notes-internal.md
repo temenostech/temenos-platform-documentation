@@ -13,7 +13,7 @@ This page provides information about the monthly Temenos Continuous Deployment P
  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Now only the Extend environments are taken into consideration by the MAX _ ENV _ COUNT metadata. 
 <br>  
-</br> 
+</br>   
 
 &nbsp;&nbsp;&nbsp;&nbsp;**2. Environments provisioned with the FCM, Infinity and Wealth templates have a similar dynamic structure as the ones provisioned with Transact templates** 
 
