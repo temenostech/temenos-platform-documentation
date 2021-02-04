@@ -602,14 +602,14 @@ o</p>
 <p>t24-eb-catalog-service-ejb.jar
 <br>
 </br></p>
-<h3 id="dsf-package-structure">DSF Package Structure</h3>
+<h2 id="dsf-package-structure">DSF Package Structure</h2>
 <p>The l3-pre-dsf-packages and/or l3-post-dsf-packages containing DSF packages have the <strong>format of zip of zip</strong>. See below a  sample package:</p>
 <p><img src="images/dsf-package-structure.png" alt=""></p>
 </li>
 </ol>
 <p><br>
 </br></p>
-<h3 id="dsf-deployment-overview">DSF Deployment Overview</h3>
+<h2 id="dsf-deployment-overview">DSF Deployment Overview</h2>
 <p> See below what happens in the environment when a DSF packacke is deployed:</p>
 <ul>
 <li><p>The zip of zip file is downloaded into a temporary file within the TCD environment</p>
@@ -626,7 +626,7 @@ o</p>
 <p><img src="images/dsf-package-error-sample.png" alt="">
 <br>
 </br></p>
-<h3 id="dsf-deployment-notes">DSF Deployment Notes</h3>
+<h2 id="dsf-deployment-notes">DSF Deployment Notes</h2>
 </li>
 <li><p>For the factory run, the components mentioned in 1, 2 and 3 from the <strong>How to deploy the DSF packages</strong> should be defined in the factory.</p>
 </li>
@@ -640,9 +640,9 @@ o</p>
 </br></p>
 </li>
 </ul>
-<h3 id="44-standalonexml-file-notes">4.4 Standalone.xml file notes</h3>
+<h2 id="standalonexml-file-notes">Standalone.xml file notes</h2>
 <p>There are different standalone.xml templates for <a href="http://documentation.temenos.cloud/home/techguides/templates-list.html#t24">TSS (Jboss/ SQL) and OSS (Widlfly/ H2)</a>. These are provided to you by us.</p>
-<h3 id="441-the-standalonexml-tss-template">4.4.1 The standalone.xml TSS template:</h3>
+<h3 id="the-standalonexml-tss-jboss--sql-template">The standalone.xml TSS (Jboss &amp; SQL) template</h3>
 <ul>
 <li><p>don’t change any of the static values</p>
 </li>
@@ -661,13 +661,13 @@ o</p>
 <p><strong>Other alterations added to the XML file will result in a failed deployment.</strong></p>
 </li>
 </ul>
-<h3 id="442-the-dbproperties-file---only-applicable-for-wildfly-h2-templates">4.4.2 The db.properties file - only applicable for Wildfly/ H2 templates</h3>
+<h3 id="the-dbproperties-file---only-applicable-for-oss-wildfly-h2-templates">The db.properties file - only applicable for OSS (Wildfly/ H2) templates</h3>
 <p>You can place the TAFJDB.zip file in the model-bank-database-h2 folder. The db.properties file should be added to the corresponding H2 .zip files in the artifactory and the H2 machines must have a copy of this file.</p>
 <div class="NOTE"><h5>Note</h5><p>If the Golden Copy is provided by you make sure to have the db.properties file under the model-bank-database-h2. If this is not present, the environment will be created using the default modelbank credentials.</p>
 </div>
 <p><strong>It is mandatory to have the db.properties file included along with your H2 DB .zip file, otherwise the environment will be created using the default modelbank credentials.</strong></p>
 <p>  <img src="images/tafjdb.png" alt=""></p>
-<p>The Git Folder Standardization allows you to add the db.properties file into the TAFJDB.zip. The db.properties file contains the db name, clientdb user and pass, as well as the dbuser and dbpassword where:</p>
+<p>You cann add the db.properties file into the TAFJDB.zip. The db.properties file contains the db name, clientdb user and pass, as well as the dbuser and dbpassword where:</p>
 <ul>
 <li><p>The dbuser is the Transact/ T24 user which has SUPER.USER privileges</p>
 </li>
@@ -684,7 +684,7 @@ o</p>
 <br>
 </br></p>
 </div>
-<h2 id="5-attachments">5. Attachments</h2>
+<h1 id="attachments">Attachments</h1>
 <p>You can download the Standalone OSS (Wildfly/ H2)/ TSS (Jboss/ SQL) and the db.properties files below:</p>
 <ul>
 <li><p><strong><a href="./../zip/client-standalone-OSS-1">Standalone OSS (Wildfly/ H2) file applicable for lower template versions than 202008</a></strong> </p>
