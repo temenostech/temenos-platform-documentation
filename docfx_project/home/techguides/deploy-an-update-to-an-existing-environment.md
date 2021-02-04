@@ -292,7 +292,7 @@ To deploy DSF packages, the following components must be present in  Extend/ Ass
 <br>
 </br>
 
- ### DSF Package Structure ###
+ ## DSF Package Structure
 
  The l3-pre-dsf-packages and/or l3-post-dsf-packages containing DSF packages have the **format of zip of zip**. See below a  sample package:
 
@@ -301,7 +301,7 @@ To deploy DSF packages, the following components must be present in  Extend/ Ass
 <br>
 </br>
 
- ### DSF Deployment Overview ###
+ ## DSF Deployment Overview
 
  See below what happens in the environment when a DSF packacke is deployed:
 
@@ -324,7 +324,7 @@ To deploy DSF packages, the following components must be present in  Extend/ Ass
 <br>
 </br>
 
- ### DSF Deployment Notes ###
+ ## DSF Deployment Notes
 
 - For the factory run, the components mentioned in 1, 2 and 3 from the **How to deploy the DSF packages** should be defined in the factory.
 
@@ -338,12 +338,12 @@ To deploy DSF packages, the following components must be present in  Extend/ Ass
 <br>
 </br>
  
-### 4.4 Standalone.xml file notes ###
+## Standalone.xml file notes
 
 There are different standalone.xml templates for [TSS (Jboss/ SQL) and OSS (Widlfly/ H2)](http://documentation.temenos.cloud/home/techguides/templates-list.html#t24). These are provided to you by us.
 
 
-### 4.4.1 The standalone.xml TSS template: ###
+### The standalone.xml TSS (Jboss & SQL) template 
 - don’t change any of the static values
 
 - the only changes you can apply to the files are:
@@ -362,7 +362,7 @@ There are different standalone.xml templates for [TSS (Jboss/ SQL) and OSS (Widl
 
  **Other alterations added to the XML file will result in a failed deployment.**
 
-### 4.4.2 The db.properties file - only applicable for Wildfly/ H2 templates ###
+### The db.properties file - only applicable for OSS (Wildfly/ H2) templates ###
 
 You can place the TAFJDB.zip file in the model-bank-database-h2 folder. The db.properties file should be added to the corresponding H2 .zip files in the artifactory and the H2 machines must have a copy of this file.
  
@@ -375,7 +375,7 @@ You can place the TAFJDB.zip file in the model-bank-database-h2 folder. The db.p
   ![](./images/tafjdb.png)
 
 
-The Git Folder Standardization allows you to add the db.properties file into the TAFJDB.zip. The db.properties file contains the db name, clientdb user and pass, as well as the dbuser and dbpassword where:
+You cann add the db.properties file into the TAFJDB.zip. The db.properties file contains the db name, clientdb user and pass, as well as the dbuser and dbpassword where:
 
 - The dbuser is the Transact/ T24 user which has SUPER.USER privileges
 
@@ -396,7 +396,7 @@ The Git Folder Standardization allows you to add the db.properties file into the
 <br>
 </br>
 
-##5. Attachments
+# Attachments
 
 You can download the Standalone OSS (Wildfly/ H2)/ TSS (Jboss/ SQL) and the db.properties files below:
 
