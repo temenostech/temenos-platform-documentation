@@ -36,9 +36,9 @@ After the template is successfully created you can:
 
 >[!Note]
 >
->If you want to use **axis2** and **ejb .jar files** in an environment provisioned with a template resulted from the **Save as new Template** feature then you need to deploy the two components first.
+>If you want to use Design Studio, make sure that the **axis2** and the corresponding **ejb .jar files** are deployed (as of now they are optional). Otherwise the Design Studio will not connect to the environment.
 >
-​ Similarly, you need to take the same action for the dsf-iris.war files (learn [here](http://documentation.temenos.cloud/home/techguides/deploy-an-update-to-an-existing-environment.html) how to deploy them).
+​ Similarly, it is up to you to deploy the dsf-iris.war files for the DSF package (learn [here](http://documentation.temenos.cloud/home/techguides/deploy-an-update-to-an-existing-environment.html) how to deploy them). Without these the DSF packages (l3, pre-dsf and post-dsf packages) will not be deployed.
 
 
 
