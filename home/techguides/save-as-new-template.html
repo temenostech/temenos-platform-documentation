@@ -109,8 +109,8 @@
 <ol>
 <li>Provision an environment with the newly created template (learn <a href="http://documentation.temenos.cloud/home/manage-environments.html">here</a> how to create an environment). </li>
 </ol>
-<div class="NOTE"><h5>Note</h5><p>If you want to use <strong>axis2</strong> and <strong>ejb .jar files</strong> in an environment provisioned with a template resulted from the <strong>Save as new Template</strong> feature then you need to deploy the two components first.</p>
-<p>​ Similarly, you need to take the same action for the dsf-iris.war files (learn <a href="http://documentation.temenos.cloud/home/techguides/deploy-an-update-to-an-existing-environment.html">here</a> how to deploy them).</p>
+<div class="NOTE"><h5>Note</h5><p>If you want to use Design Studio, make sure that the <strong>axis2</strong> and the corresponding <strong>ejb .jar files</strong> are deployed (as of now they are optional). Otherwise the Design Studio will not connect to the environment.</p>
+<p>​ Similarly, it is up to you to deploy the dsf-iris.war files for the DSF package (learn <a href="http://documentation.temenos.cloud/home/techguides/deploy-an-update-to-an-existing-environment.html">here</a> how to deploy them). Without these the DSF packages (l3, pre-dsf and post-dsf packages) will not be deployed.</p>
 </div>
 <ol>
 <li>Run a factory using the template (learn <a href="http://documentation.temenos.cloud/home/techguides/run-factory.html">here</a> how to run factories).</li>
