@@ -57,13 +57,7 @@ The user can also **clone**, **edit**, **delete**, **start**, **stop**, **rebuil
 
  - **Rebuild** an environment - recreate the resources into the cloud and re-installs T24 and H2 db. This is used for example when modifying the application templates (i.e. changing the T24 displayed name or adding a new application).
 
- - **Save as new template** - the functionality is enabled by default to an environment.
-     - the functionality copies all the components from the environment GIT Repository to Artifactory and saves them as a new template. 
-     - To save the new template, you need to have the mandatory components uploaded and deployed successfully. This is to ensure that there will be no issues in any environment  created from the new template. 
-     - If all the mandatory components are deployed successfully then you can save the new template otherwise the **Save as new template** fails. 
-     - To proceed, click on the **Save as new template** and read the information in the pop-up. Fill in the blanks, tick the box and then click on **Save Template**.
-
-      ![](./images/save-as-new-template.png) 
+ - **Save as new template** - read more **[here](http://documentation.temenos.cloud/home/techguides/save-as-new-template.html)**.
 
  - **Edit the environment** - change the name and the description of an environment. You can ignore the **Auto Start / Stop Scheduler** as configured in the **Schedule Environments** from the General Tab:
 
@@ -71,67 +65,20 @@ The user can also **clone**, **edit**, **delete**, **start**, **stop**, **rebuil
 
  - **Clone environment** - create an identical environment by copying the Environment and configuration repository
 
- - **Upgrade** - the feature is only available for the **Model Bank TSS/ OSS Stack Template**, therefore Extend environments. By clicking on **Upgrade** you can boost the environment to the target template version. Watch the tutorial [here](https://youtu.be/R4J4P-SlJ6Q).
+ - **Upgrade** - read more **[here](http://documentation.temenos.cloud/home/techguides/upgrade-trials.html)**.
 
- 
-     - Upon clicking on the button a pop-up appears which prompts to select another template from the list of available template:
-      ![](./images/environment-upgrade-button.png) 
 
-     - Click on **Upgrade** to proceed.
-       
-     - The environment status changes to **Upgrading**:
-       
-          ![](./images/environment-upgrading.png) 
-          - In the **Events** tab you can see the log which refers to the upgrade from the Base template to Target template
-<br>
-</br>
 
-  **Upgrade Validations:**
-
-1. The **Upgrade** button is enabled at the organisation level.
-
-2. Once the **Upgrade** is initiated all the environment action buttons are disabled except **Edit Environment** and **Delete Environment** buttons.
- 
-3. Only users with the permission UPGRADE_TEMPLATE will have the **Upgrade** button enabled on their environment.
-
-4. The **Upgrade** button is not available on a stopped environment.
-
-5. Make sure you have a Database Backup before the upgrade.
-
-6. L3 or other plugins present in the current template are not auto deployed, and you have to upload them back to GIT and deploy it post upgrade.
-
-7. The upgrade pipeline will not deploy anything on the GIT folder to the upgraded environment automatically, therefore you have to manually trigger this post upgrade.
-
-8. The new app server won’t have any additional queues.
-
-9. The upgrade flow is from the client template to ModelBank template and not vice-versa.
-
-10. An environment created with a custom template can be upgraded to a ModelBank template and not vice versa.
-
-11. When an environment is upgraded, the **Clone** and **Rebuild** options are not available.
-
-12. The **Upgrade** functionality is not available for environments resulted from factory runs (automated and manual factories).
-
-13. An environment can only be upgraded with a MB template that is assigned to your organisation. You won't be able to upgrade a MB-T24-Wildfly-H2-202002 to a MB-T24-Wildfly-H2-202004 if the latter version is not assigned to your organisation. 
-
-<br>
-</br>
-
- **After the upgrade is completed you can:**
-
-1. **Rebuild** the upgraded environment from the  **Actions** button - a pop-up informs that *Any changes made to the environment will be lost and the environment will be reset to its original state.* To proceed, tick the check box and click **Confirm**:
+ - **Rebuild** the upgraded environment from the  **Actions** button - a pop-up informs that *Any changes made to the environment will be lost and the environment will be reset to its original state.* To proceed, tick the check box and click **Confirm**:
 
  ![](./images/upgrade-rebuild-env.png) 
 
-2. **Clone** the upgraded environment from the **Actions** button -  a pop-up appears where you need to insert the **Environment Name**, **Environment Description** and **Labels**. The pop-up informs that if L3 packages are manually altered, then they will not be copied and the clone may not work if the T24 environment is upgraded:
+
+
+ -  **Clone** the upgraded environment from the **Actions** button -  a pop-up appears where you need to insert the **Environment Name**, **Environment Description** and **Labels**. The pop-up informs that if L3 packages are manually altered, then they will not be copied and the clone may not work if the T24 environment is upgraded:
 
  ![](./images/upgrade-rebuild-env.png) 
 
-3. **Customize Template** from the Repository Section - a pop-up informs where you can find the template customization user guide and that the *Customize My Template will not work if T24 environment is upgraded*. To proceed, tick the checkbox and click **Confirm**:
-
- ![](./images/upgrade-customize-template.png) 
-
- >Note: the **Customize Template** functionality is not enabled for factory run environments (automated and manual factories).
 
 <br>
 </br>

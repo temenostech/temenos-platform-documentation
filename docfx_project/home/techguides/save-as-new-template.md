@@ -34,6 +34,14 @@ After the template is successfully created you can:
 
 1. Provision an environment with the newly created template (learn [here](http://documentation.temenos.cloud/home/manage-environments.html) how to create an environment). 
 
+>[!Note]
+>
+>If you want to use **axis2** and **ejb .jar files** in an environment provisioned with a template resulted from the **Save as new Template** feature then you need to deploy the two components first.
+>
+​ Similarly, you need to take the same action for the dsf-iris.war files (learn [here](http://documentation.temenos.cloud/home/techguides/deploy-an-update-to-an-existing-environment.html) how to deploy them).
+
+
+
 2. Run a factory using the template (learn [here](http://documentation.temenos.cloud/home/techguides/run-factory.html) how to run factories).
 
 ## Tutorial ##

@@ -13,12 +13,14 @@
      items:
        - name: Perform Environment Basic Operations
          href: ./techguides/environment-basic-operations.md
+       - name: Deploy an update to an existing environment
+         href: ./techguides/deploy-an-update-to-an-existing-environment.md 
+       - name: Self-service templates
+         href: ./techguides/save-as-new-template.md
        - name: Upgrade Trials
          href: ./techguides/upgrade-trials.md
        - name: ITSS Test Framework Template Implementation
          href: ./techguides/itss-test-framework-template.md    
-       - name: Deploy an update to an existing environment
-         href: ./techguides/deploy-an-update-to-an-existing-environment.md
        - name: Develop T24 packages, plugins and Code
          href: ./techguides/t24-development.md
        - name: Clone an Environment  
