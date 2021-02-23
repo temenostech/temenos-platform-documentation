@@ -4,6 +4,7 @@
 This page provides information about the monthly Temenos Continuous Deployment Platform features and improvements in each release. 
 
 
+
 # **202012.01**
 **InfraBuild**: 39   &nbsp;**|**&nbsp; **PortalBuild**: 2245
 &nbsp;**|**&nbsp; **ControllerBuild**: 202012_HF1  &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202012.1 &nbsp; 
@@ -210,14 +211,11 @@ This page provides information about the monthly Temenos Continuous Deployment P
 <br>
 </br> 
 
-&nbsp;&nbsp;&nbsp;&nbsp;**2. Customizable workflow**
+&nbsp;&nbsp;&nbsp;&nbsp;**2. Customizable workflows**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- users have the ability to create new test workflows that can be assigned to the  factories
 
 
-## Admin portal
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- users are forced to reset password after first login
 
 <br>
 </br>
