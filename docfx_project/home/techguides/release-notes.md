@@ -3,7 +3,75 @@
  
 This page provides information about the monthly Temenos Continuous Deployment Platform features and improvements in each release. 
 
+# **202101**
+**InfraBuild**: 39   &nbsp;**|**&nbsp; **PortalTag**: 202101.RC6&nbsp; | **PortalBuild**: 2279**&nbsp;**|&nbsp; **ControllerBuild**: 416  &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202101 &nbsp;   
 
+    
+## Technical enhancements
+ 
+&nbsp;&nbsp;&nbsp;&nbsp;**1. TCD202101 is now upgraded to Angular 11 which only supports IE11 as an opt-in feature (support for IE9 and IE10 is already removed)**
+ 
+
+&nbsp;&nbsp;&nbsp;&nbsp;**2. Release highlights:** 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Limit the errors we encounter for WhiteSource scans
+<br>
+</br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - The current release enables to migrate to ESLint from the current TSLint (which is also deprecated) – Required for better code quality.
+<br>
+</br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Benefit from TypeScript’s latest type checking.
+<br>
+</br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Avoid any known bugs and improve the accessibility of the portal
+<br>
+</br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -  Bootstrap 5 will also be dropping support for IE in coming months after which other libraries will follow. And it might not be possible to support it thereafter.
+<br>
+</br>
+
+## UI enhancements
+
+&nbsp;&nbsp;&nbsp;&nbsp;**1. Environment enhancements**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - The environment screen displays the Template version & Component list of the associated environment template. Also by clicking the template name in the Environment details page, you are directed to the selected template in the Templates catalog screen (see more [here](http://documentation.temenos.cloud/home/manage-environments.html)).
+<br>
+</br> 
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;**2. Factories run enhancements**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - The Factory run page displays the started timestamp for each stage and the duration between previous and current stage (read more [here](http://documentation.temenos.cloud/home/techguides/run-factory.html)).
+<br>
+</br> 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - You can run a factory run based on a custom template created from either a factory run or an Extend environment. A factory created using a custom template is not associated with any product and promotion configuration. This enhancement helps you run the test cases on a newly created template based on upgrades.
+<br>
+</br> 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - The factory run logs can be exported even if the environment repository deployment is failed during the factory run.
+<br>
+</br> 
+
+&nbsp;&nbsp;&nbsp;&nbsp;**2. Org Admin enhancements**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - If you are an org admin, after logging in you can select the 'show permission' toggle inside the username menu. By enabling this feature, you can see the *Required Permissions* on hover of menus and buttons inside the tooltip in the portal (read more [here](http://documentation.temenos.cloud/home/user-creation-in-paas.html)).
+<br>
+</br> 
+
+&nbsp;&nbsp;&nbsp;&nbsp;**2. Template enhancements**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Only Templates which are created successfully using *Save as New Template* option will be shown in the drop-down while creating Environments or Factories.
+<br>
+</br> 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -  The Artifactory URL is displayed in the components list table in the templates catalogue screen **only for client created/custom templates**. During the *Save as New Template* action if the template name already exists then error will be shown and allow the user to change the template name for resubmit.
+<br>
+</br> 
 
 # **202012.01**
 **InfraBuild**: 39   &nbsp;**|**&nbsp; **PortalBuild**: 2245
