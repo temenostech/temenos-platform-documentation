@@ -82,6 +82,51 @@
 <h2 id="release-notes">Release Notes</h2>
 
 <p>This page provides information about the monthly Temenos Continuous Deployment Platform features and improvements in each release. </p>
+<h1 id="202101"><strong>202101</strong></h1>
+<p><strong>InfraBuild</strong>: 39   &nbsp;<strong>|</strong>&nbsp; <strong>PortalTag</strong>: 202101.RC6&nbsp; | <strong>PortalBuild</strong>: 2279<strong>&nbsp;</strong>|&nbsp; <strong>ControllerBuild</strong>: 416  &nbsp;<strong>|</strong>&nbsp;  <strong>ReleaseNumber</strong>: TCD202101 &nbsp;   </p>
+<h2 id="technical-enhancements">Technical enhancements</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>1. TCD202101 is now upgraded to Angular 11 which only supports IE11 as an opt-in feature (support for IE9 and IE10 is already removed). Release highlights:</strong> </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Limit the errors we encounter for WhiteSource scans
+<br>
+</br></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - The current release enables to migrate to ESLint from the current TSLint (which is also deprecated) – Required for better code quality.
+<br>
+</br></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Benefit from TypeScript’s latest type checking.
+<br>
+</br></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Avoid any known bugs and improve the accessibility of the portal
+<br>
+</br></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -  Bootstrap 5 will also be dropping support for IE in coming months after which other libraries will follow. And it might not be possible to support it thereafter.
+<br>
+</br></p>
+<h2 id="ui-enhancements">UI enhancements</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>1. Environment enhancements</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - The environment screen displays the Template version &amp; Component list of the associated environment template. Also by clicking the template name in the Environment details page, you are directed to the selected template in the Templates catalog screen (see more <a href="http://documentation.temenos.cloud/home/manage-environments.html">here</a>).
+<br>
+</br> </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>2. Factories run enhancements</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - The Factory run page displays the started timestamp for each stage and the duration between previous and current stage (read more <a href="http://documentation.temenos.cloud/home/techguides/run-factory.html">here</a>).
+<br>
+</br> </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - You can run a factory run based on a custom template created from either a factory run or an Extend environment. A factory created using a custom template is not associated with any product and promotion configuration. This enhancement helps you run the test cases on a newly created template based on upgrades.
+<br>
+</br> </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - The factory run logs can be exported even if the environment repository deployment is failed during the factory run.
+<br>
+</br> </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>2. Org Admin enhancements</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - If you are an org admin, after logging in you can select the &#39;show permission&#39; toggle inside the username menu. By enabling this feature, you can see the <em>Required Permissions</em> on hover of menus and buttons inside the tooltip in the portal (read more <a href="http://documentation.temenos.cloud/home/user-creation-in-paas.html">here</a>).
+<br>
+</br> </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>2. Template enhancements</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Only Templates which are created successfully using <em>Save as New Template</em> option will be shown in the drop-down while creating Environments or Factories.
+<br>
+</br> </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -  The Artifactory URL is displayed in the components list table in the templates catalogue screen <strong>only for client created/custom templates</strong>. During the <em>Save as New Template</em> action if the template name already exists then error will be shown and allow the user to change the template name for resubmit.
+<br>
+</br> </p>
 <h1 id="20201201"><strong>202012.01</strong></h1>
 <p><strong>InfraBuild</strong>: 39   &nbsp;<strong>|</strong>&nbsp; <strong>PortalBuild</strong>: 2245
 &nbsp;<strong>|</strong>&nbsp; <strong>ControllerBuild</strong>: 202012_HF1  &nbsp;<strong>|</strong>&nbsp;  <strong>ReleaseNumber</strong>: TCD202012.1 &nbsp; </p>
@@ -216,10 +261,8 @@
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- dashboards now show the Test Workflow name for easy correlation
 <br>
 </br> </p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>2. Customizable workflow</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>2. Customizable workflows</strong></p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- users have the ability to create new test workflows that can be assigned to the  factories</p>
-<h2 id="admin-portal">Admin portal</h2>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- users are forced to reset password after first login</p>
 <p><br>
 </br></p>
 <h1 id="20200501"><strong>202005.01</strong></h1>

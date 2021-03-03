@@ -101,7 +101,7 @@
 <p>See the following scenarios if you choose to skip the factory environment creation:</p>
 <ul>
 <li><p><strong>Scenario 1</strong> - If the factory environment status is <strong>STARTED</strong>, the factory run will trigger directly the test environment. </p>
-<p><img src="images/factory_run_started_env.png" alt="">
+<p><img src="./images/factory_run_started_env.png" alt="">
 <br></p>
 </li>
 <li><p><strong>Scenario 2</strong> - If the factory environment status is <strong>STOPPED</strong> and previous environment status is <strong>STARTED</strong> - the factory run automatically starts the environment and once it is <strong>STARTED</strong>, it triggers the test environment. </p>
@@ -111,9 +111,7 @@
 If the factory environment creation has failed during the previous factory run, it is not possible to use it for your current factory run. You need to first identify and solve the issue in order to see the <strong>Reuse the existing environment from previous factory run without overwriting it</strong> in the pop-up. Otherwise this checkbox will not appear in the pop-up.</p>
 </blockquote>
 <p><br> </p>
-<p>Once the <strong>Run</strong> button is clicked, the process is initiated and it gets immediately to the stage where an environment based on your chosen template is created:</p>
-<p><img src="images/run-factory-deploy.png" alt=""></p>
-<p>During the factory run you are able to:</p>
+<p>Once the <strong>Run</strong> button is clicked, the process is initiated and it gets immediately to the stage where an environment based on your chosen template is created. During the factory run you can:</p>
 <ol>
 <li><p>See the duration of total time between different stages and the status of the current stage</p>
 </li>
@@ -128,7 +126,7 @@ If the factory environment creation has failed during the previous factory run, 
     <img src="images/run-factory-abort-factory.png" alt=""><br><br></p>
 </li>
 <li><p>Refresh the timeline by clicking on the <strong>Refresh</strong> icon</p>
-<p><img src="images/run-factory-deploy2.png" alt=""></p>
+<p><img src="./images/run-factory-deploy2.png" alt=""></p>
 </li>
 </ol>
 <div class="NOTE"><h5>Note</h5><ol>
@@ -142,14 +140,14 @@ If the factory environment creation has failed during the previous factory run, 
 <blockquote><div class="NOTE"><h5>Note</h5><p>This environment is automatically deleted after the tests are run and the process is completed.</p>
 </div>
 </blockquote>
-<p><img src="images/run-factory-create-test.png" alt=""></p>
+<p><img src="./images/run-factory-create-test.png" alt=""></p>
 <p>After the tests are run, the dashboard shows details about the stages and the results, as in the example below:</p>
 <p><img src="images/run-factory-completed.png" alt=""></p>
 <p>You are able to do the following:</p>
 <ul>
 <li><p><img src="images/view-test-scripts-location.png" alt=""> - click to view the test scripts location in the Artifactory (you need to login with your user credentials)</p>
 </li>
-<li><p><img src="images/application-logs.png" alt=""> - click to download the factory logs</p>
+<li><p><img src="images/application-logs.png" alt=""> - click to download the factory logs (the logs can be exported regardless of the status of the factory run)</p>
 </li>
 <li><p><img src="images/downloadable-icon2.png" alt=""> - click on the downloadable icon to store the results on your local machine</p>
 </li>
