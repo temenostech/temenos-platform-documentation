@@ -37,7 +37,16 @@ This will create a new user in your organisation. This new user will be automati
 
 On their first login, all new users will be forced to reset the password that was initially created by the Organisation Admin.
 
-![user-change-password](./images/user-change-password.png)
+![](./images/user-change-password.png)
+
+<br>
+</br>
+
+# Show tooltips
+
+As an organization admin you can enable the tooltips in the portal that show what are the required permissions for the actions on hover.
+
+![](./images/show-permissions.png)
 
 # User Roles Management #
 

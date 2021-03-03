@@ -6,13 +6,14 @@ This document can be used by technical staff who need to create Users on the Tem
 
 The Administrator can navigate to the Users section on the portal, create more users and invite them to access and use the portal using the URL link. In this way the administrator is in control of who receives the URL link and which users can access the Organisation.
 
-The users can access their organisation only, view their user profiles and perform various operations according to the set of user permissions set by the Organisation Administrator.
-
- Note that only the users with the 'Admin' permission can create more users. To manage/ see the users please refer to the below:
-
-•	Login to your organisation portal using the link and the credentials provided.
+ If you belong to more than one organizations then a pop-up appears after entering your username and password. Select the organization you want to log in. 
 
 ![portal login](./images/user-login.png)
+
+ Note that only the users with the 'Admin' permission can create more users. To manage/ see the users please refer to the below.
+
+
+
 
 
 ![](./images/users-tab.png)
@@ -37,7 +38,12 @@ This will create a new user in your organisation. This new user will be automati
 >**Important!**: It is the Organisation Admin's 
 >responsibility to inform the new user about its credentials and set of permissions granted on the portal.
 
+# Enable tooltips
 
+As an organization admin you can enable the tooltips in the portal that show what are the required permissions for the actions on hovering the mouse on the menus and buttons.
+
+![](./images/show-permissions.png)
+ 
 # Change Password
 To change the password you need to follow the next steps:
 

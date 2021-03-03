@@ -9,10 +9,7 @@ This page provides information about the monthly Temenos Continuous Deployment P
     
 ## Technical enhancements
  
-&nbsp;&nbsp;&nbsp;&nbsp;**1. TCD202101 is now upgraded to Angular 11 which only supports IE11 as an opt-in feature (support for IE9 and IE10 is already removed)**
- 
-
-&nbsp;&nbsp;&nbsp;&nbsp;**2. Release highlights:** 
+&nbsp;&nbsp;&nbsp;&nbsp;**1. TCD202101 is now upgraded to Angular 11 which only supports IE11 as an opt-in feature (support for IE9 and IE10 is already removed). Release highlights:** 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Limit the errors we encounter for WhiteSource scans
 <br>

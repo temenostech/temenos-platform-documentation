@@ -26,6 +26,11 @@ After deploying the components:
       ![](./images/save-as-new-template.png) 
 
 6. The template creation is initiated and you will be able to see it in the template catalog shortly. 
+
+7. After the template is created you can find it in the templates catalogue. Unlike the pre-defined templates, those resulted using the **Save as New Template** feature contain the Artifactory URL for each component (go to the *Components List* tab to access them).
+
+ ![](./images/components-artifactory-url.png)
+
 <br>
 </br>
 
@@ -43,6 +48,10 @@ After the template is successfully created you can:
 
 
 2. Run a factory using the template (learn [here](http://documentation.temenos.cloud/home/techguides/run-factory.html) how to run factories).
+
+>[!Note]
+>
+>Only Templates which are created successfully using **Save As Template option** are displayed in the drop-down while creating Environments or Factories.
 
 ## Tutorial ##
 

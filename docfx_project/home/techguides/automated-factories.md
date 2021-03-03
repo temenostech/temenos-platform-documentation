@@ -53,7 +53,6 @@ Below you will find the pre-requisites to run a Automated factory:
 
 3. During the factory setup all the mandatory fields need to be filled in the current tab. Otherwise you are not able to move to the next phases and the **Next** button is disabled.
 
-
 See below configurations to understand better how to configure correctly and the factory's behavior.
 
 # Set-up/ Create a Automated Factory #
@@ -83,6 +82,12 @@ This step represents the test configuration that holds the template, the product
    1. Select the **Product Configuration** tab.
 
    2. **Template**: choose an Environment Template from the drop-down list. Based on this template  the environments will be created where you will be able to test different products.
+
+>[!Note]
+> You can set up a factory based on a custom template created from either a factory run or an Extend environment (the template is created by you via the ['Save as New Template'](http://documentation.temenos.cloud/home/techguides/save-as-new-template.html) feature). A factory created using a custom template is not associated with any product and promotion configuration, therefore in the *Select Principle Products* fields you can't select any of you products. This allows you to run the test cases on a newly created template based on upgrades.
+
+![](./images/factory-product-configuration-custom-template.png)
+
    
    3. **Select Principle Products** and **Select Other Products**: select none, one or more products from the drop-down. The products selected at this stage are promoted to the next stage (the configured one).  You must select at least one **Principal** or **Other Product** in any of these two fields to progress with the factory creation. I.e.: in the screenshot below we selected a product only in the **Other Product**.
   
@@ -133,9 +138,12 @@ To get a better understanding of what happens when COB is triggered please refer
 
 ## Promotion Configuration
 
-This promotion configuration enables you to select all the required products to promote along with their target stage. In addition, you can select the Test Components along with the target stage if they need promotion as well. 
+The promotion configuration enables you to select all the required products to promote along with their target stage. In addition, you can select the Test Components along with the target stage if they need promotion as well. 
 
-Following the 202011 release, it is not mandatory to select any product or test at this factory creation stage.
+Following the 202011 Platform release, it is not mandatory to select any product or test at this factory creation stage.
+
+>[!Note]
+> If in the *Product Configuration*  you selected a custom template then you are not able to define the *Promotion Configuration* stage as no promotion takes place following this setup. Instead, you only  run the test cases from a newly created template. 
 
 ![](./images/factory-promotion-configuration.png)
 

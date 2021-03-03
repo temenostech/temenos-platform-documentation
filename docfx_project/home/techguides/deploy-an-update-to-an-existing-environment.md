@@ -375,7 +375,7 @@ You can place the TAFJDB.zip file in the model-bank-database-h2 folder. The db.p
   ![](./images/tafjdb.png)
 
 
-You cann add the db.properties file into the TAFJDB.zip. The db.properties file contains the db name, clientdb user and pass, as well as the dbuser and dbpassword where:
+You can add the db.properties file into the TAFJDB.zip. The db.properties file contains the db name, clientdb user and pass, as well as the dbuser and dbpassword where:
 
 - The dbuser is the Transact/ T24 user which has SUPER.USER privileges
 

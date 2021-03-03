@@ -42,11 +42,7 @@ See the following scenarios if you choose to skip the factory environment creati
 <br> 
 
 
-Once the **Run** button is clicked, the process is initiated and it gets immediately to the stage where an environment based on your chosen template is created:
-
-![](./images/run-factory-deploy.png)
-
-During the factory run you are able to:
+Once the **Run** button is clicked, the process is initiated and it gets immediately to the stage where an environment based on your chosen template is created. During the factory run you can:
 
 1. See the duration of total time between different stages and the status of the current stage
 
@@ -94,7 +90,7 @@ You are able to do the following:
 
 - ![](./images/view-test-scripts-location.png) - click to view the test scripts location in the Artifactory (you need to login with your user credentials)
 
--  ![](./images/application-logs.png) - click to download the factory logs
+-  ![](./images/application-logs.png) - click to download the factory logs (the logs can be exported regardless of the status of the factory run)
 
 -  ![](./images/downloadable-icon2.png) - click on the downloadable icon to store the results on your local machine
 
