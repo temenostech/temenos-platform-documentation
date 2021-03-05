@@ -6,7 +6,7 @@ This document can be used by technical staff who need to create Users on the Tem
 
 The Administrator can navigate to the Users section on the portal, create more users and invite them to access and use the portal using the URL link. In this way the administrator is in control of who receives the URL link and which users can access the Organisation.
 
- If you belong to more than one organizations then a pop-up appears after entering your username and password. Select the organization you want to log in. 
+ If you belong to more than one organizations then a pop-up appears after entering your username and password. Select the organization you want to access. 
 
 ![portal login](./images/user-login.png)
 
