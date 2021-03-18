@@ -258,7 +258,7 @@ o</p>
 <td>t24-Addons</td>
 <td>*.zip</td>
 <td>*.zip</td>
-<td>The environment file can be provided along with the   jars/wars which contains JAVA_OPTS that can to be added in the appserver   startup. If only environment file inside the zip is provided the JAVA_OPTS   will be added to the appserver without copying any war/jar files.   Additionally, this environment file can be used to add or update the java   heap size in the app server start up file (java_opts= - replace the   variables with the appropriate ones).</td>
+<td>The main package is a  .zip file and the name  of the .zip can be anything. Inside the .zip you can include the .jar files you need to deploy. Additionally, you can add an environment file (i.e. a Notepad file) that can be used to add or update the java heap size in the app server start up file (java_opts= - replace the variables with the appropriate ones). To change the This zip should be pushed to git and then deploy. See an example below.</td>
 </tr>
 <tr>
 <td>N/A</td>
