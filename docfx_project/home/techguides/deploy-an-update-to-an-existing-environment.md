@@ -109,6 +109,9 @@ With the 202010 platform release, you can find below and example of theÂ beforeÂ
 | N/A                        | jboss-modules                            |                                                                | *.zip                                                                                                                                                                                         | *.zip containing the folders, sub folders, jars, with   the module.xml which can be unzipped to modules folder in jboss It also   checks for the existing folders com/temenos/t24, com/temenos/tafj ,system ,if   exists it is ignored and other folders are copied                                                                                                                                                                                                       |
 | N/A                        | standalone.xml                           |                                                                | *.xml                                                                                                                                                                                         | *.xml containing standalone.xml file. The template   file for OSS and TSS are provided at point 6 in this user guide for both OSS   and TSS templates.                                                                                                                                                                                                                                                                                                                    |
 
+Example of how the environment file should contain if you need to change the heap size:
+ ![](./images/java-heap-size.png)
+
 >[!Note] 
 >Do not leave multiple versions of the same component type in the GIT folder as this would produce undesired results.
 <br>
