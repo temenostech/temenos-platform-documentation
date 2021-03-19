@@ -21,15 +21,13 @@ This document can be used by technical staff who need to add new endpoints to th
  > As a reference, if you want to insert an endpoint which links to your environment browser web, please check the related URL - for example: https://t24-xxxxxxxxxxxx.temenos.cloud/BrowserWeb/)
 
 
-In order to create new endpoints for the T24 application of your Environment, the next steps must be followed:
+In order to create new endpoints for the Transact application of your Environment, the next steps must be followed:
  - Clone the GitLab repository of your Environment in your local machine. For more details on how to clone a repository, check this **[page](http://documentation.temenos.cloud/home/techguides/deploy-an-update-to-an-existing-environment.html)**.
 
- - Create a file with **.endpoint** extension inside **plugins** folder of the cloned repository as in the bellow picture. The name of the file is not important, but it should be relevant for your requirement.
+ - Create a file with **.endpoint** extension inside **war-package** folder of the cloned repository as in the bellow picture. The name of the file is not important, but it should be relevant for your requirement.
 ![create endpoint file](./images/endpoint-create.png)
 
- - Inside the **.endpoint** file, add a new line for each endpoint with the structure **Your_Endpoint_Description~Your_Endpoint_URL~Your_Endpoint_Type**, as per bellow picture:
-
- ![edit endpoint file](./images/app-endpoint-edit.png)
+ - Inside the **.endpoint** file, add a new line for each endpoint with the structure **Provider APIs~https://localhost/provider-apis/api/v1.0.0/meta/apidocs~clickable~true**, as per bellow picture:
 
  ![edit endpoint file](./images/app-endpoint-append.png)
 
@@ -59,7 +57,7 @@ In order to create new endpoints for the T24 application of your Environment, th
 
 # Add multiple endpoints from multiple files at the same time #
  - If you want to add endpoints for multiple plugins deployed in your Environment, you can add the endpoints of all plugins in a single file or you can also create a separate .endpoint file for each plugin for a better delimitation.
- ![multiple endpoints multiple files](./images/app-endpoint-multi.png)
+
 
  - After both files are deployed, the three endpoints for plugin1 and the two endpoints for plugin2 are displayed in the Endpoints section of the T24 application.
 
