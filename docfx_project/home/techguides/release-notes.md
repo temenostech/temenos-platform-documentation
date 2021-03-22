@@ -3,6 +3,43 @@
  
 This page provides information about the monthly Temenos Continuous Deployment Platform features and improvements in each release. 
 
+
+# **202102**
+**InfraBuild**: 39  &nbsp;**|**&nbsp; **PortalTag**: 202011.RC3
+&nbsp;**|**&nbsp; **ControllerBuild**: 335  &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202011 &nbsp; 
+    
+## Technical enhancements
+
+&nbsp;&nbsp;&nbsp;&nbsp;**1. Users can connect to multiple Organizations**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Users can now use a single account to login to multiple organisation. While logging in, the user needs to select the organization he/ she wants to access and can switch from one organization to another at any point. Read more [here](http://documentation.temenos.cloud/home/user-creation-in-paas.html).
+<br>  
+</br> 
+
+&nbsp;&nbsp;&nbsp;&nbsp;**2. Delete user created template** 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - The templates created using the **Save as New template** feature can be deleted using the **Delete** button action. Read more [here](http://documentation.temenos.cloud/home/techguides/save-as-new-template.html).
+<br>
+</br> 
+
+&nbsp;&nbsp;&nbsp;&nbsp;**3. Deploy non-mandatory components via GIT post upgrade to speed up the upgrade**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- As part of this change, the AppServer will be created with only minimal & mandatory components so that the upgrade process will be faster. You can deploy non-mandatory components via GIT post upgrade (i.e. after exceptions are authorized and the DB is validated post the technical upgrade).
+<br>
+</br> 
+
+&nbsp;&nbsp;&nbsp;&nbsp;**4. Fix - Logs can be exported for failed environments resulted from factory runs too**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Any available logs can be exported even while aborting the factory runs.
+<br>
+</br> 
+
+&nbsp;&nbsp;&nbsp;&nbsp;**5. Component types are added to each organization when the template is assigned.**
+
+
+<br>
+</br> 
+
 # **202101**
 **InfraBuild**: 39   &nbsp;**|**&nbsp; **PortalTag**: 202101.RC6&nbsp; | **PortalBuild**: 2279**&nbsp;**|&nbsp; **ControllerBuild**: 416  &nbsp;**|**&nbsp;  **ReleaseNumber**: TCD202101 &nbsp;   
 

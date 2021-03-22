@@ -1,3 +1,6 @@
+> [!Note]
+> Note: Starting April 5th the TCD user guide will move on the [Temenos Customer Support Portal (TCSP)](https://tcsp.temenos.com/TCD/Modules/TemenosContinuousDeployment/Overview/Overview.htm). We recommend you to log in to the portal and check if your credentials are available. Raise a ticket at [CloudPlatformSupport@temenos.com](CloudPlatformSupport@temenos.com) if you encounter any issues.
+
 # Export and Import Databases #
 
 This user guide explains how to import and export databases of a Temenos cloud environment in order to migrate datasets across environments. 

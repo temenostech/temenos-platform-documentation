@@ -1,3 +1,6 @@
+> [!Note]
+> Note: Starting April 5th the TCD user guide will move on the [Temenos Customer Support Portal (TCSP)](https://tcsp.temenos.com/TCD/Modules/TemenosContinuousDeployment/Overview/Overview.htm). We recommend you to log in to the portal and check if your credentials are available. Raise a ticket at [CloudPlatformSupport@temenos.com](CloudPlatformSupport@temenos.com) if you encounter any issues.
+
 # Save as New Template
 
 You can easily customize your templates via the **Save as New Template** feature. This self-service functionality enables you to create custom templates from a model bank template in just a few clicks. During this operation component binaries, deployment mechanisms or infrastructure can be changed and new components can be added.

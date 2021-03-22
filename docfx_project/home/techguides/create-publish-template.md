@@ -1,3 +1,6 @@
+> [!Note]
+> Note: Starting April 5th the TCD user guide will move on the [Temenos Customer Support Portal (TCSP)](https://tcsp.temenos.com/TCD/Modules/TemenosContinuousDeployment/Overview/Overview.htm). We recommend you to log in to the portal and check if your credentials are available. Raise a ticket at [CloudPlatformSupport@temenos.com](CloudPlatformSupport@temenos.com) if you encounter any issues.
+
 # How to Create and Publish a New Template after a Successful Factory Run 
 
 This feature offers the possibility to baseline a particular version of a product and create a template from that version. Furthermore, anybody will be able to create an environment with the baselined version of the product.
