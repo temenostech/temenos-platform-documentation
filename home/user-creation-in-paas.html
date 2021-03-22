@@ -79,13 +79,24 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="introduction">Introduction</h1>
 
+<div class="NOTE"><h5>Note</h5><p>Note: Starting April 5th the TCD user guide will move to the <a href="https://tcsp.temenos.com/TCD/Modules/TemenosContinuousDeployment/Overview/Overview.htm">Temenos Customer Support Portal (TCSP)</a>. We recommend you to log in to the portal and check if your credentials are available. Raise a ticket at <a href="CloudPlatformSupport@temenos.com">CloudPlatformSupport@temenos.com</a> if you encounter any issues.</p>
+</div>
+<h1 id="introduction">Introduction</h1>
 <p>This document can be used by technical staff who need to create Users on the Temenos Continuous Deployment Platform and associate to each user a ssh key. </p>
 <h2 id="how-to-create-users">How to create Users</h2>
 <p>The Administrator can navigate to the Users section on the portal, create more users and invite them to access and use the portal using the URL link. In this way the administrator is in control of who receives the URL link and which users can access the Organisation.</p>
-<p> If you belong to more than one organizations then a pop-up appears after entering your username and password. Select the organization you want to access. </p>
+<p> If you belong to more than one organisations then a pop-up appears after entering your username and password. Select the organisation you want to access. </p>
 <p><img src="images/user-login.png" alt="portal login"></p>
+<p>Starting from 202102, user management has been improved so that you can access multiple Organisations from a single user account. To use this feature, you should keep the account with your correct company email address and ask your Organisation Admin to assign access to all the necessary Organisations. You can then delete the other unnecessary user accounts, likely setup with spoof email addresses.</p>
+<div class="NOTE"><h5>Note</h5><p>Always make sure you use a valid email address (i.e. org admins can receive emails from the Temenos Continuous Deployment team about templates). By using fake emails you won’t get these notifications that can impact you/your organization’s work on the platform.</p>
+</div>
+<p>Once logged in to your desired organization you can copy the org ID and name:</p>
+<p><img src="./images/organisation-details.png" alt=""></p>
+<p>Once logged in you can switch the organization:</p>
+<ul>
+<li>Click on the  arrows <img src="./images/organisation-arrows.png" alt=""> next to the organization arrows. A notification appears, similar to the one above which enables you to select the organization you want to access.</li>
+</ul>
 <p> Note that only the users with the &#39;Admin&#39; permission can create more users. To manage/ see the users please refer to the below.</p>
 <p><img src="images/users-tab.png" alt=""></p>
 <ol>
@@ -103,12 +114,12 @@
 </li>
 </ol>
 <p><img src="images/create-user.png" alt=""></p>
-<p>This will create a new user in your organisation. This new user will be automatically assigned to all GitLab Repositories from within all environments. If you have already a user created, you can click on the user and update the SSH key box with the one created above.</p>
-<blockquote><p><strong>Important!</strong>: It is the Organisation Admin&#39;s 
+<p>This will create a new user in your organization. This new user will be automatically assigned to all GitLab Repositories from within all environments. If you have already a user created, you can click on the user and update the SSH key box with the one created above.</p>
+<blockquote><p><strong>Important!</strong>: It is the Organization Admin&#39;s 
 responsibility to inform the new user about its credentials and set of permissions granted on the portal.</p>
 </blockquote>
 <h1 id="enable-tooltips">Enable tooltips</h1>
-<p>As an organization admin you can enable the tooltips in the portal that show what are the required permissions for the actions on hovering the mouse on the menus and buttons.</p>
+<p>As an organization admin you can enable the tool tips in the portal that show what are the required permissions for the actions on hovering the mouse on the menus and buttons.</p>
 <p><img src="images/show-permissions.png" alt=""></p>
 <h1 id="change-password">Change Password</h1>
 <p>To change the password you need to follow the next steps:</p>
@@ -123,7 +134,7 @@ responsibility to inform the new user about its credentials and set of permissio
 </li>
 <li><p>Fill in the <strong>Current Password</strong>, <strong>New Password</strong> and <strong>Confirm Password</strong> and click <strong>Confirm</strong></p>
 <p><img src="images/user-change-password4.png" alt=""></p>
-<blockquote><p>Note: on your first login, you need to reset the password that was initially created by the Organisation Admin.</p>
+<blockquote><p>Note: on your first login, you need to reset the password that was initially created by the Organization Admin.</p>
 </blockquote>
 <p><img src="images/user-change-password.png" alt="">
 <br>
@@ -131,8 +142,8 @@ responsibility to inform the new user about its credentials and set of permissio
 </li>
 </ol>
 <h1 id="recover-password">Recover Password</h1>
-<h2 id="ask-the-organisation-admin-to-change-your-password">Ask the Organisation Admin to change your password</h2>
-<p>If you lost your password, your Organisation Admin can change it from his/ her end. To do this, the Organiation Admin needs to:</p>
+<h2 id="ask-the-organization-admin-to-change-your-password">Ask the Organization Admin to change your password</h2>
+<p>If you lost your password, your Organization Admin can change it from his/ her end. To do this, the Organization Admin needs to:</p>
 <ol>
 <li><p>Click on the <strong>User</strong> tab from the left menu and select the user</p>
 </li>
@@ -140,7 +151,7 @@ responsibility to inform the new user about its credentials and set of permissio
 </li>
 <li><p>Fill in the <strong>New Password</strong> and <strong>Confirm Password</strong> fields, then click <strong>Confirm</strong></p>
 <p><img src="images/change-user-password-admin.png" alt=""></p>
-<blockquote><p>Note: upon login with the password set by the organisation admin, you need to reset your password. </p>
+<blockquote><p>Note: upon login with the password set by the organization admin, you need to reset your password. </p>
 </blockquote>
 </li>
 </ol>
@@ -166,17 +177,17 @@ responsibility to inform the new user about its credentials and set of permissio
 </li>
 <li><p>Do the necessary changes and click on <strong>Update SSH</strong> / if no changes are required click <strong>Cancel</strong></p>
 <p> <img src="images/update-ssh-key.png" alt=""></p>
-<blockquote><p>Note: the  <strong>Update SHH</strong> button is enabled once the editing is started and the number of characters added in the field are over 200.</p>
-</blockquote>
+<div class="NOTE"><h5>Note</h5><p>The  <strong>Update SHH</strong> button is enabled once the editing is started and the number of characters added in the field are over 200.</p>
+</div>
 </li>
 </ol>
 <p><br>
 </br></p>
 <h1 id="user-roles-management">User Roles Management</h1>
-<p>By default, when your organisation is created, Temenos will provide you the link and access instructions to your designated organisation administrator (the first and only user with full rights on the platform).</p>
+<p>By default, when your organization is created, Temenos will provide you the link and access instructions to your designated organization administrator (the first and only user with full rights on the platform).</p>
 <p><img src="images/see-user-role.png" alt=""></p>
 <ol>
-<li><p>Click on the <strong>Roles</strong> tab to see the available list of roles within your organisation</p>
+<li><p>Click on the <strong>Roles</strong> tab to see the available list of roles within your organization</p>
 </li>
 <li><p>Hover over the <strong>Name</strong> tab to display the alphabetical order of the available roles</p>
 </li>
@@ -246,7 +257,7 @@ See further below how to generate the SSH key</p>
 <div class="NOTE"><h5>Note</h5><p>Once created, you <strong>cannot</strong> change the name and the email address, nor the user&#39;s password. You can only update (or add) the SSH key through edit button.</p>
 </div>
 <ul>
-<li><p>Your username will be created in Gitlab server and public SSH key provided will be added to your account being accessible from all the environments created in your organisation.</p>
+<li><p>Your username will be created in Gitlab server and public SSH key provided will be added to your account being accessible from all the environments created in your organization.</p>
 </li>
 <li><p>For further details or issues related to Gitlab SSH keys usage, or other operating systems (MAC, Linux), please consult this link:  [https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/](</p>
 </li>

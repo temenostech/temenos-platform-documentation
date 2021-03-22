@@ -37,24 +37,30 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/architecture.md",
       "output": {
         ".html": {
           "relative_path": "home/architecture.html",
-          "hash": "nKPsShGKgWDnD/u010DQCQ=="
+          "hash": "7xi2RL8Q+7gt7tb7zUPfMw=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/assemble.md",
       "output": {
         ".html": {
           "relative_path": "home/assemble.html",
-          "hash": "J5gNWDK8MwGEYOSeUmMYvQ=="
+          "hash": "VvAL35qHG2p5DoUm7EpCbQ=="
         }
       },
       "is_incremental": false,
@@ -160,24 +166,30 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/extend.md",
       "output": {
         ".html": {
           "relative_path": "home/extend.html",
-          "hash": "Ez5kAhcDKDV8iGkTW8R4mA=="
+          "hash": "qtr72o2CCwR3EB598LGSVg=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/faq.md",
       "output": {
         ".html": {
           "relative_path": "home/faq.html",
-          "hash": "3b4cZkYNaa+Tb6vmg5+rTQ=="
+          "hash": "0I2FS4hQUXE3Vi6xJ+eePg=="
         }
       },
       "is_incremental": false,
@@ -927,12 +939,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/manage-environments.md",
       "output": {
         ".html": {
           "relative_path": "home/manage-environments.html",
-          "hash": "987lX01jwnwa/EZAIOUIWA=="
+          "hash": "3DPIx9KXFGjwbSSGmr1nIQ=="
         }
       },
       "is_incremental": false,
@@ -975,12 +990,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/overview.md",
       "output": {
         ".html": {
           "relative_path": "home/overview.html",
-          "hash": "zVOrdX6hykJNrOgo9Gz5rQ=="
+          "hash": "bjI8L6nRiwb5gTeQIVN0eQ=="
         }
       },
       "is_incremental": false,
@@ -1077,12 +1095,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/techguides/access-fcm-ud-directories.md",
       "output": {
         ".html": {
           "relative_path": "home/techguides/access-fcm-ud-directories.html",
-          "hash": "8xSY2m4STCw0N7E+Gx+NdA=="
+          "hash": "fRmVJ+qBMAzohHjT3sJPsw=="
         }
       },
       "is_incremental": false,
@@ -7508,7 +7529,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/save-as-new-template.html",
-          "hash": "O1yjSg3tJ6eelUtq4z4Plw=="
+          "hash": "abq0+/R12vONfzenhm5XCw=="
         }
       },
       "is_incremental": false,
@@ -7725,12 +7746,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "home/user-creation-in-paas.md",
       "output": {
         ".html": {
           "relative_path": "home/user-creation-in-paas.html",
-          "hash": "MfaFGMBgfET1rACHYRxqoQ=="
+          "hash": "7r1CHqhtAMP/HpGE5Qhidg=="
         }
       },
       "is_incremental": false,
@@ -8068,14 +8092,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "RestApiDocumentProcessor": {
