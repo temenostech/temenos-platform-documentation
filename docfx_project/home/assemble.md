@@ -1,3 +1,6 @@
+> [!Note]
+> Note: Starting April 5th the TCD user guide will move to the [Temenos Customer Support Portal (TCSP)](https://tcsp.temenos.com/TCD/Modules/TemenosContinuousDeployment/Overview/Overview.htm). We recommend you to log in to the portal and check if your credentials are available. Raise a ticket at [CloudPlatformSupport@temenos.com](CloudPlatformSupport@temenos.com) if you encounter any issues.
+
 **Assemble** your configuration and local developments, with published versions of Temenos software and run through automated regression testing. Triage results for continuous development
 
 Bring together configuration and local developments, with published versions of Temenos software and run through automated regression testing. Triage results for continuous development.

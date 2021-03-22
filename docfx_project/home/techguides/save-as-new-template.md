@@ -31,6 +31,38 @@ After deploying the components:
 
  ![](./images/components-artifactory-url.png)
 
+
+<br>
+</br>
+
+
+## Delete a custom template ##
+
+You can delete a template created through **Save as New Template** feature:
+
+- On the templates page tick, in the filter box the **Custom Templates** - this action triggers the list of  templates any user from your organisation created.
+
+- Select the template you want to delete.
+
+- Click **Delete Template**.
+
+ ![](./images/delete-custom-template.png)
+
+ >[!Note]
+ >
+ >This button is visible only for the custom templates.
+ >
+ >You cannot restore a deleted template.
+
+<br>
+
+You cannot delete a custom template if:
+
+- It is used in any factory.
+
+- It is used by any extend environment.
+
+
 <br>
 </br>
 

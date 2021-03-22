@@ -1,3 +1,6 @@
+> [!Note]
+> Note: Starting April 5th the TCD user guide will move to the [Temenos Customer Support Portal (TCSP)](https://tcsp.temenos.com/TCD/Modules/TemenosContinuousDeployment/Overview/Overview.htm). We recommend you to log in to the portal and check if your credentials are available. Raise a ticket at [CloudPlatformSupport@temenos.com](CloudPlatformSupport@temenos.com) if you encounter any issues.
+
 
 # Introduction #
 This document can be used by technical staff who need to create Users on the Temenos Continuous Deployment Platform and associate to each user a ssh key. 
@@ -6,14 +9,27 @@ This document can be used by technical staff who need to create Users on the Tem
 
 The Administrator can navigate to the Users section on the portal, create more users and invite them to access and use the portal using the URL link. In this way the administrator is in control of who receives the URL link and which users can access the Organisation.
 
- If you belong to more than one organizations then a pop-up appears after entering your username and password. Select the organization you want to access. 
+ If you belong to more than one organisations then a pop-up appears after entering your username and password. Select the organisation you want to access. 
 
 ![portal login](./images/user-login.png)
 
+Starting from 202102, user management has been improved so that you can access multiple Organisations from a single user account. To use this feature, you should keep the account with your correct company email address and ask your Organisation Admin to assign access to all the necessary Organisations. You can then delete the other unnecessary user accounts, likely setup with spoof email addresses.
+
+
+> [!Note]
+> Always make sure you use a valid email address (i.e. org admins can receive emails from the Temenos Continuous Deployment team about templates). By using fake emails you won’t get these notifications that can impact you/your organization’s work on the platform.
+
+Once logged in to your desired organization you can copy the org ID and name:
+
+![](./images/organisation-details.png)
+
+Once logged in you can switch the organization:
+
+- Click on the  arrows ![](./images/organisation-arrows.png) next to the organization arrows. A notification appears, similar to the one above which enables you to select the organization you want to access.
+
+
+
  Note that only the users with the 'Admin' permission can create more users. To manage/ see the users please refer to the below.
-
-
-
 
 
 ![](./images/users-tab.png)
@@ -32,15 +48,15 @@ The Administrator can navigate to the Users section on the portal, create more u
 
 ![](./images/create-user.png)
 
-This will create a new user in your organisation. This new user will be automatically assigned to all GitLab Repositories from within all environments. If you have already a user created, you can click on the user and update the SSH key box with the one created above.
+This will create a new user in your organization. This new user will be automatically assigned to all GitLab Repositories from within all environments. If you have already a user created, you can click on the user and update the SSH key box with the one created above.
 
 
->**Important!**: It is the Organisation Admin's 
+>**Important!**: It is the Organization Admin's 
 >responsibility to inform the new user about its credentials and set of permissions granted on the portal.
 
 # Enable tooltips
 
-As an organization admin you can enable the tooltips in the portal that show what are the required permissions for the actions on hovering the mouse on the menus and buttons.
+As an organization admin you can enable the tool tips in the portal that show what are the required permissions for the actions on hovering the mouse on the menus and buttons.
 
 ![](./images/show-permissions.png)
  
@@ -61,16 +77,16 @@ To change the password you need to follow the next steps:
  
  ![](./images/user-change-password4.png)
 
- >Note: on your first login, you need to reset the password that was initially created by the Organisation Admin.
+ >Note: on your first login, you need to reset the password that was initially created by the Organization Admin.
 
   ![](./images/user-change-password.png)
 <br>
 </br>
 
 # Recover Password
-## Ask the Organisation Admin to change your password 
+## Ask the Organization Admin to change your password 
 
-If you lost your password, your Organisation Admin can change it from his/ her end. To do this, the Organiation Admin needs to:
+If you lost your password, your Organization Admin can change it from his/ her end. To do this, the Organization Admin needs to:
 
 1. Click on the **User** tab from the left menu and select the user
 
@@ -79,7 +95,7 @@ If you lost your password, your Organisation Admin can change it from his/ her e
 3. Fill in the **New Password** and **Confirm Password** fields, then click **Confirm**
 
   ![](./images/change-user-password-admin.png)
->Note: upon login with the password set by the organisation admin, you need to reset your password. 
+>Note: upon login with the password set by the organization admin, you need to reset your password. 
 
 <br>
 </br>
@@ -105,18 +121,19 @@ To Update the SSH Key, follow the instructions below:
 3. Do the necessary changes and click on **Update SSH** / if no changes are required click **Cancel**
 
     ![](./images/update-ssh-key.png)
+> [!Note]
+> The  **Update SHH** button is enabled once the editing is started and the number of characters added in the field are over 200.
 
- >Note: the  **Update SHH** button is enabled once the editing is started and the number of characters added in the field are over 200.
 
 <br>
 </br>
 # User Roles Management 
 
-By default, when your organisation is created, Temenos will provide you the link and access instructions to your designated organisation administrator (the first and only user with full rights on the platform).
+By default, when your organization is created, Temenos will provide you the link and access instructions to your designated organization administrator (the first and only user with full rights on the platform).
 
 ![](./images/see-user-role.png)
 
-1. Click on the **Roles** tab to see the available list of roles within your organisation
+1. Click on the **Roles** tab to see the available list of roles within your organization
 
 2. Hover over the **Name** tab to display the alphabetical order of the available roles
 
@@ -221,7 +238,7 @@ If you need access to the source code repository you must provide the public SSH
 
 
 
-- Your username will be created in Gitlab server and public SSH key provided will be added to your account being accessible from all the environments created in your organisation.
+- Your username will be created in Gitlab server and public SSH key provided will be added to your account being accessible from all the environments created in your organization.
 
 - For further details or issues related to Gitlab SSH keys usage, or other operating systems (MAC, Linux), please consult this link:  [https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/](
 

@@ -1,3 +1,7 @@
+> [!Note]
+> Note: Starting April 5th the TCD user guide will move to the [Temenos Customer Support Portal (TCSP)](https://tcsp.temenos.com/TCD/Modules/TemenosContinuousDeployment/Overview/Overview.htm). We recommend you to log in to the portal and check if your credentials are available. Raise a ticket at [CloudPlatformSupport@temenos.com](CloudPlatformSupport@temenos.com) if you encounter any issues.
+
+
 ## **What is Temenos Continuous Deployment?**
 
 Temenos Continuous Deployment (TCD) is an offering from Temenos SaaS that provides client individuals and teams with the ability to manage, configure and assemble client licensed Temenos Software.
