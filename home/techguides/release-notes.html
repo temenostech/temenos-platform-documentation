@@ -82,6 +82,28 @@
 <h2 id="release-notes">Release Notes</h2>
 
 <p>This page provides information about the monthly Temenos Continuous Deployment Platform features and improvements in each release. </p>
+<h1 id="202102"><strong>202102</strong></h1>
+<p><strong>InfraBuild</strong>: 39  &nbsp;<strong>|</strong>&nbsp; <strong>PortalTag</strong>: 202011.RC3
+&nbsp;<strong>|</strong>&nbsp; <strong>ControllerBuild</strong>: 335  &nbsp;<strong>|</strong>&nbsp;  <strong>ReleaseNumber</strong>: TCD202011 &nbsp; </p>
+<h2 id="technical-enhancements">Technical enhancements</h2>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>1. Users can connect to multiple Organizations</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Users can now use a single account to login to multiple organisation. While logging in, the user needs to select the organization he/ she wants to access and can switch from one organization to another at any point. Read more <a href="http://documentation.temenos.cloud/home/user-creation-in-paas.html">here</a>.
+<br><br> </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>2. Delete user created template</strong> </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - The templates created using the <strong>Save as New template</strong> feature can be deleted using the <strong>Delete</strong> button action. Read more <a href="http://documentation.temenos.cloud/home/techguides/save-as-new-template.html">here</a>.
+<br>
+</br> </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>3. Deploy non-mandatory components via GIT post upgrade to speed up the upgrade</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- As part of this change, the AppServer will be created with only minimal &amp; mandatory components so that the upgrade process will be faster. You can deploy non-mandatory components via GIT post upgrade (i.e. after exceptions are authorized and the DB is validated post the technical upgrade).
+<br>
+</br> </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>4. Fix - Logs can be exported for failed environments resulted from factory runs too</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Any available logs can be exported even while aborting the factory runs.
+<br>
+</br> </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>5. Component types are added to each organization when the template is assigned.</strong></p>
+<p><br>
+</br> </p>
 <h1 id="202101"><strong>202101</strong></h1>
 <p><strong>InfraBuild</strong>: 39   &nbsp;<strong>|</strong>&nbsp; <strong>PortalTag</strong>: 202101.RC6&nbsp; | <strong>PortalBuild</strong>: 2279<strong>&nbsp;</strong>|&nbsp; <strong>ControllerBuild</strong>: 416  &nbsp;<strong>|</strong>&nbsp;  <strong>ReleaseNumber</strong>: TCD202101 &nbsp;   </p>
 <h2 id="technical-enhancements">Technical enhancements</h2>
