@@ -1,11 +1,14 @@
 > [!Note]
-> Note: Starting April 5th the TCD user guide will move on the [Temenos Customer Support Portal (TCSP)](https://tcsp.temenos.com/TCD/Modules/TemenosContinuousDeployment/Overview/Overview.htm). We recommend you to log in to the portal and check if your credentials are available. Raise a ticket at [CloudPlatformSupport@temenos.com](CloudPlatformSupport@temenos.com) if you encounter any issues.
+>  Starting April 5th the TCD user guide will move on the [Temenos Customer Support Portal (TCSP)](https://tcsp.temenos.com/TCD/Modules/TemenosContinuousDeployment/Overview/Overview.htm). We recommend you to log in to the portal and check if your credentials are available. Raise a ticket at [CloudPlatformSupport@temenos.com](CloudPlatformSupport@temenos.com) if you encounter any issues.
 
 # Upgrade Trials
 
 
 The **Upgrade** feature enables you to boost your environment to higher T24 releases and run your regression. By undergoing an upgrade you can get better clarity on any issues with the upgrade and in general more confidence and predictability on the upgrade project itself.
  
+> [!Note]
+>  During the upgrade only the mandatory components are deployed (browser-classic, t24-ud, t24-jars, tafj-installer, modelbank-database-h2). You can deploy non-mandatory components using this [user guide](http://documentation.temenos.cloud/home/techguides/deploy-an-update-to-an-existing-environment.html) post-upgrade, i.e., after exceptions are authorized and the DB is validated post the technical upgrade.
+>  
 <br>
 </br>
 
