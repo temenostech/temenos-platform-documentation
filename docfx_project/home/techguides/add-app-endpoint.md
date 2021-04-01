@@ -7,7 +7,7 @@ This document can be used by technical staff who need to add new endpoints to th
 > [!Note]
 > This guide presumes that an Environment is already created and available. *(In this example, we have created a Environment named DevEnv).*
 
-**Four** properties are mandatory to create a new endpoint:
+**Three** properties are mandatory to create a new endpoint:
 
 <span style="color:orange">(Please note that the user guide contains <span style="color:blue">**examples**</span> on how to use each of the properties).</span>
 
@@ -47,12 +47,7 @@ In order to create new endpoints for the Transact application of your Environmen
 # Add multiple endpoints from a single file #
 
  - If a plugin has more than one endpoint, create a .endpoint file and add a separate line for each endpoint item, as below:
- <br>
-
- ![multiple endpoints same file](./images/app-endpoint-all.png)
-<br>
-<br>
- - After the file is deployed, all 4 endpoints from the example are displayed in the Endpoints section of the T24 application.
+ - After the file is deployed, all endpoints are displayed in the Endpoints section of the Transact application.
  - Also note that the endpoints are displayed/ grouped by their type: clickable, copyable and downloadable.
 
  ![multiple endpoints multiples files display](./images/app-endpoint-grouped.png)
