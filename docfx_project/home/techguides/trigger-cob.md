@@ -1,3 +1,6 @@
+> [!Note]
+>  With the 202103 release, the TCD user guide will move to the [Temenos Customer Support Portal (TCSP)](https://tcsp.temenos.com/TCD/Modules/TemenosContinuousDeployment/Overview/Overview.htm). We recommend you to log in to TCSP and check if your credentials are available. Raise a ticket at [CloudPlatformSupport@temenos.com](CloudPlatformSupport@temenos.com) if you encounter any issues.
+
 # What happens when COB is triggered during a Factory Run
 
 This user guide explains what happens when COB is triggered during a factory run. COB can be run in company wise (e.g.: COB-GB0010001), group wise (e.g.: COB-1), or system wide (COB) in a Temenos Continuous Deployment environment as a part of test workflow (see how to manage workflows [here](http://documentation.temenos.cloud/home/techguides/manage-workflows.html)). 
