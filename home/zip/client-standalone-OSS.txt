@@ -58,9 +58,7 @@
             </security-realm>
             <security-realm name="ApplicationRealm">
                 <server-identities>
-                    <ssl>
                         <!-- ANSIBLE MANAGED BLOCK -->
-                    </ssl>
                 </server-identities>
                 <authentication>
                     <local default-user="$local" allowed-users="*" skip-group-loading="true"/>
