@@ -1250,7 +1250,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/deploy-an-update-to-an-existing-environment.html",
-          "hash": "KvRq97ErmZ+zGu64BNQ6Lg=="
+          "hash": "zuvBTnFCHFdU++E85d/qHw=="
         }
       },
       "is_incremental": false,
@@ -7955,43 +7955,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/zip/client-standalone-OSS-1.xml",
+      "source_relative_path": "home/zip/client-standalone-OSS.xml",
       "output": {
         "resource": {
-          "relative_path": "home/zip/client-standalone-OSS-1.xml"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/zip/client-standalone-OSS-2.xml",
-      "output": {
-        "resource": {
-          "relative_path": "home/zip/client-standalone-OSS-2.xml"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/zip/client-standalone-TSS-1.xml",
-      "output": {
-        "resource": {
-          "relative_path": "home/zip/client-standalone-TSS-1.xml"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/zip/client-standalone-TSS-2.xml",
-      "output": {
-        "resource": {
-          "relative_path": "home/zip/client-standalone-TSS-2.xml"
+          "relative_path": "home/zip/client-standalone-OSS.xml"
         }
       },
       "is_incremental": false,
@@ -8228,18 +8195,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "RestApiDocumentProcessor": {
@@ -8248,6 +8211,10 @@
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         }
