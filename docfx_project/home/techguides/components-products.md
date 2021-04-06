@@ -17,6 +17,8 @@ Each component has the following fields *(all mandatory)*:
  
 - Component Type
 
+- Component Template
+
 - Name
 
 - Description
