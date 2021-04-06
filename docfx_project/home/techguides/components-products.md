@@ -64,13 +64,25 @@ These components have a structure associated and work in a standardized manner a
  
 1. Click on **Settings** button on the left menu > this will expand a menu containing buttons for: Streams, Stages, Products, Factory and General
 
-2. Select the **Stream** *(top-right)* where you want to add the respective component
 
-3. Click on **New Components**
+2. Select the **Stream** (top-right) where you want to add the respective component.
 
-4. Select the Component Type from the dropdown list and fill in the **Component Name**, **Component Description**, and **Component Display Name**
+3. Click  New **Component**.
 
-5. Click **Create**.
+4. Select the **Template type**–  filters the templates available in your organization.
+
+5. Select the **Component Templates** - filters the component types based on selected template
+
+6. Select the **Component Type** from the dropdown list 
+
+7. Enter the **Component Name** 
+
+8. Enter a **Component Description**
+
+9. Enter a **Component Display Name**
+
+7. Click **Create**.
+
 
 See below example:
 
