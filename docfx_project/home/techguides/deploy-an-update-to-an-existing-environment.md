@@ -406,9 +406,9 @@ You can add the db.properties file into the TAFJDB.zip. The db.properties file 
 
 You can download the Standalone OSS (Wildfly/ H2)/ TSS (Jboss/ SQL) and the db.properties files below:
 
-- **<a href="./../zip/client-standalone-OSS-">Standalone OSS (Wildfly/ H2) file</a>** 
+- **<a href="./../zip/client-standalone-OSS">Standalone OSS (Wildfly/ H2) file</a>** 
 
-- **<a href="./../zip/client-standalone-TSS-">Standalone TSS (Jboss/ SQL) file</a>** 
+- **<a href="./../zip/client-standalone-TSS">Standalone TSS (Jboss/ SQL) file</a>** 
 
 - **<a href="./../zip/db.properties">db.properties file</a>** 
 
