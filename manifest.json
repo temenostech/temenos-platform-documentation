@@ -7975,28 +7975,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/zip/client-standalone-OSS.txt",
-      "output": {
-        "resource": {
-          "relative_path": "home/zip/client-standalone-OSS.txt"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "home/zip/client-standalone-TSS.txt",
-      "output": {
-        "resource": {
-          "relative_path": "home/zip/client-standalone-TSS.txt"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "home/zip/consolidated-results.xml",
       "output": {
         "resource": {
