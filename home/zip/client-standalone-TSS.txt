@@ -64,9 +64,7 @@
             </security-realm>
             <security-realm name="UndertowRealm">
                 <server-identities>
-                    <ssl>
                         <!-- ANSIBLE MANAGED BLOCK -->
-                    </ssl>
                 </server-identities>
             </security-realm>
         </security-realms>

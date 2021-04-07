@@ -64,7 +64,7 @@
             </security-realm>
             <security-realm name="UndertowRealm">
                 <server-identities>
-                    <!-- {mark} ANSIBLE SSL MANAGED BLOCK -->
+                    <!-- ANSIBLE MANAGED BLOCK -->
                 </server-identities>
             </security-realm>
         </security-realms>
@@ -196,7 +196,7 @@
                     </security>
                 </datasource>
                 <datasource jta="false" jndi-name="java:/jdbc/t24RODS" pool-name="t24RODS" enabled="true" use-java-context="true" use-ccm="true">
-                    <connection-url>jdbc:sqlserver://{{ hostvars[relatedEnvironments.database]['private_ip'] }}:1433;databaseName={{ modelbankdlm_db }};integratedSecurity=false</connection-url>
+                    <connection-url>jdbc:sqlserver://private_ip:1433;databaseName={{ modelbankdlm_db }};integratedSecurity=false</connection-url>
                     <driver>sqljdbc</driver>
                     <pool>
                         <min-pool-size>5</min-pool-size>
@@ -209,7 +209,7 @@
                     </security>
                 </datasource>
                 <datasource jta="false" jndi-name="java:/jdbc/t24FCMRODS" pool-name="FCMsqlRODS" enabled="true" use-java-context="true" use-ccm="true">
-                    <connection-url>jdbc:sqlserver://{{ hostvars[relatedEnvironments.database]['private_ip'] }}:1433;databaseName=FCMDB;integratedSecurity=false</connection-url>
+                    <connection-url>jdbc:sqlserver://private_ip:1433;databaseName=FCMDB;integratedSecurity=false</connection-url>
                     <driver>sqljdbc</driver>
                     <pool>
                         <min-pool-size>5</min-pool-size>
@@ -222,7 +222,7 @@
                     </security>
                 </datasource>
                 <datasource jta="false" jndi-name="java:/jdbc/t24FCMDS" pool-name="FCMsqlDS" enabled="true" use-java-context="true" use-ccm="true">
-                    <connection-url>jdbc:sqlserver://{{ hostvars[relatedEnvironments.database]['private_ip'] }}:1433;databaseName=FCMDB;integratedSecurity=false</connection-url>
+                    <connection-url>jdbc:sqlserver://private_ip:1433;databaseName=FCMDB;integratedSecurity=false</connection-url>
                     <driver>sqljdbc</driver>
                     <pool>
                         <min-pool-size>5</min-pool-size>

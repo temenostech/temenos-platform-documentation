@@ -1253,7 +1253,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/deploy-an-update-to-an-existing-environment.html",
-          "hash": "FOLW+53gOI1avhc5CYA76A=="
+          "hash": "LYDSolA9dMyiWYqvtWwU7A=="
         }
       },
       "is_incremental": false,
@@ -7649,7 +7649,7 @@
       "output": {
         ".html": {
           "relative_path": "home/techguides/run-factory.html",
-          "hash": "gG5YguXIgK3gLURlbU4mvw=="
+          "hash": "fqN6Xoe7+45o2i9gKBVw7Q=="
         }
       },
       "is_incremental": false,
@@ -7975,10 +7975,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/zip/client-standalone-OSS.xml",
+      "source_relative_path": "home/zip/client-standalone-OSS-1.xml",
       "output": {
         "resource": {
-          "relative_path": "home/zip/client-standalone-OSS.xml"
+          "relative_path": "home/zip/client-standalone-OSS-1.xml"
         }
       },
       "is_incremental": false,
@@ -7986,10 +7986,32 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "home/zip/client-standalone-TSS.xml",
+      "source_relative_path": "home/zip/client-standalone-OSS-2.xml",
       "output": {
         "resource": {
-          "relative_path": "home/zip/client-standalone-TSS.xml"
+          "relative_path": "home/zip/client-standalone-OSS-2.xml"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/zip/client-standalone-TSS-1.xml",
+      "output": {
+        "resource": {
+          "relative_path": "home/zip/client-standalone-TSS-1.xml"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "home/zip/client-standalone-TSS-2.xml",
+      "output": {
+        "resource": {
+          "relative_path": "home/zip/client-standalone-TSS-2.xml"
         }
       },
       "is_incremental": false,
@@ -8215,14 +8237,19 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "RestApiDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "RestApiDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
@@ -8231,11 +8258,6 @@
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
-          "incrementalPhase": "build"
-        },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
