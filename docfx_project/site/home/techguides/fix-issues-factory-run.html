@@ -79,15 +79,17 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h2 id="artifactory">Artifactory</h2>
 
+<div class="NOTE"><h5>Note</h5><p> With the 202103 release, the TCD user guide will move to the <a href="https://tcsp.temenos.com/TCD/Modules/TemenosContinuousDeployment/Overview/Overview.htm">Temenos Customer Support Portal (TCSP)</a>. We recommend you to log in to TCSP and check if your credentials are available. Raise a ticket at <a href="CloudPlatformSupport@temenos.com">CloudPlatformSupport@temenos.com</a> if you encounter any issues.</p>
+<h2 id="artifactory">Artifactory</h2>
+</div>
 <p>Each Organisation provided has an repository associated automatically. This repository is available in Jfrog Artifactory and has a default name. </p>
 <p>Once logged into the portal, you can check the information related to the artifactory by clicking the General button on the left menu. This will display the Metadata Settings.</p>
 <p><img src="images/sanity-general.png" alt=""></p>
 <p><strong>Note:</strong> If you wish to have a different name for the repository, you need to go to the Artifactory and create yourself a repository and then update its name in the metadata (ARTIFACTORY_URL).</p>
 <p><strong>Note:</strong> Make sure you set also the ARTIFACTORY_KEY which allows to download the components&#39; binaries at the moment when running a factory. This is when the components and test cases are used. </p>
 <h3 id="issue-1-unable-to-create-factory-due-to-wrong-product-set-up">Issue 1. Unable to Create Factory Due to Wrong Product Set-up</h3>
-<p>When setting-up a factory (see configuration steps in <a href="factories.md#set-up-create-a-factory" target="blank"><b>this user guide</b></a>), in case the products used in the factory don&#39;t have the mandatory components uploaded, after pressing the <strong>Create</strong> button, an error similar to the example below will appear, showing the missing components:</p>
+<p>When setting-up a factory (see configuration steps in <a href="./factories.md#set-up-create-a-factory" target="blank"><b>this user guide</b></a>), in case the products used in the factory don&#39;t have the mandatory components uploaded, after pressing the <strong>Create</strong> button, an error similar to the example below will appear, showing the missing components:</p>
 <p><img src="images/sanity-product-issue.png" alt=""></p>
 <h4 id="how-to-fix"><strong>How to fix:</strong></h4>
 <p>Based on the template that you want to use, when creating the principle product, make sure you add all mandatory components belonging to that template. </p>
@@ -100,7 +102,7 @@
 <h4 id="how-to-fix"><strong>How to fix:</strong></h4>
 <p>Go to <a href="components-products.html#how-to-set-up-delete-components" target="blank"><strong>this</strong></a> section to see how to upload the artifacts. </p>
 <p>After that, go to the dashboard and run again the factory. </p>
-<div class="NOTE"><h5>Note</h5><p>The same error you will encounter in case the test cases aren&#39;t uploaded. The error will reflect the stream, the stage and the missing folder. You can also check <a href="stage-testcases.md" target="blank"><strong>this user guide</strong></a> to see how to add the test cases. </p>
+<div class="NOTE"><h5>Note</h5><p>The same error you will encounter in case the test cases aren&#39;t uploaded. The error will reflect the stream, the stage and the missing folder. You can also check <a href="./stage-testcases.md" target="blank"><strong>this user guide</strong></a> to see how to add the test cases. </p>
 </div>
 <p><br></p>
               <hr>

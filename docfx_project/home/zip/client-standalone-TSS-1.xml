@@ -64,7 +64,7 @@
             </security-realm>
             <security-realm name="UndertowRealm">
                 <server-identities>
-                        <!-- ANSIBLE MANAGED BLOCK -->
+                    <!-- ANSIBLE MANAGED BLOCK -->
                 </server-identities>
             </security-realm>
         </security-realms>
@@ -206,6 +206,32 @@
                     <security>
                         <user-name>dlm</user-name>
                         <password>dlm</password>
+                    </security>
+                </datasource>
+                <datasource jta="false" jndi-name="java:/jdbc/t24FCMRODS" pool-name="FCMsqlRODS" enabled="true" use-java-context="true" use-ccm="true">
+                    <connection-url>jdbc:sqlserver://private_ip:1433;databaseName=FCMDB;integratedSecurity=false</connection-url>
+                    <driver>sqljdbc</driver>
+                    <pool>
+                        <min-pool-size>5</min-pool-size>
+                        <max-pool-size>220</max-pool-size>
+                        <flush-strategy>FailingConnectionOnly</flush-strategy>
+                    </pool>
+                    <security>
+                        <user-name>model2</user-name>
+                        <password>model2</password>
+                    </security>
+                </datasource>
+                <datasource jta="false" jndi-name="java:/jdbc/t24FCMDS" pool-name="FCMsqlDS" enabled="true" use-java-context="true" use-ccm="true">
+                    <connection-url>jdbc:sqlserver://private_ip:1433;databaseName=FCMDB;integratedSecurity=false</connection-url>
+                    <driver>sqljdbc</driver>
+                    <pool>
+                        <min-pool-size>5</min-pool-size>
+                        <max-pool-size>220</max-pool-size>
+                        <flush-strategy>FailingConnectionOnly</flush-strategy>
+                    </pool>
+                    <security>
+                        <user-name>model2</user-name>
+                        <password>model2</password>
                     </security>
                 </datasource>
                 <drivers>

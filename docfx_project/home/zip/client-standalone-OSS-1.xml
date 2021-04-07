@@ -43,7 +43,6 @@
         <property name="tafj.home" value="/data/temenos/TAFJ"/>
         <property name="jboss.as.management.blocking.timeout" value="1500"/>
         <property name="file.encoding" value="UTF-8"/>
-        <property name="org.apache.tomcat.util.http.Parameters.MAX_COUNT" value="10000"/>
     </system-properties>
     <management>
         <security-realms>
@@ -58,7 +57,7 @@
             </security-realm>
             <security-realm name="ApplicationRealm">
                 <server-identities>
-                        <!-- ANSIBLE MANAGED BLOCK -->
+                    <!-- ANSIBLE MANAGED BLOCK -->
                 </server-identities>
                 <authentication>
                     <local default-user="$local" allowed-users="*" skip-group-loading="true"/>
@@ -156,14 +155,14 @@
         <subsystem xmlns="urn:jboss:domain:datasources:5.0">
             <datasources>
                 <datasource jta="true" jndi-name="java:/jdbc/t24DS" pool-name="t24DS" enabled="true" use-java-context="true" use-ccm="true">
-                    <connection-url>jdbc:h2:tcp://private_ip//data/temenos/h2/db_name;MODE=Oracle;TRACE_LEVEL_FILE=0;TRACE_LEVEL_SYSTEM_OUT=0;DB_CLOSE_ON_EXIT=FALSE;FILE_LOCK=NO;IFEXISTS=TRUE;CACHE_SIZE=8192;MVCC=TRUE;LOCK_TIMEOUT=60000</connection-url>
+                    <connection-url>jdbc:h2:tcp://private_ip//data/temenos/h2/db_name;MODE=Oracle;TRACE_LEVEL_FILE=0;TRACE_LEVEL_SYSTEM_OUT=0;DB_CLOSE_ON_EXIT=FALSE;FILE_LOCK=NO;IFEXISTS=TRUE;CACHE_SIZE=8192;LOCK_TIMEOUT=60000</connection-url>
                     <connection-property name="defaultRowPrefetch">
                         100
                     </connection-property>
                     <driver>h2</driver>
                     <pool>
-                        <min-pool-size>100</min-pool-size>
-                        <max-pool-size>300</max-pool-size>
+                        <min-pool-size>5</min-pool-size>
+                        <max-pool-size>220</max-pool-size>
                         <flush-strategy>FailingConnectionOnly</flush-strategy>
                     </pool>
                     <security>
@@ -171,32 +170,15 @@
                         <password>clientdb_pass</password>
                     </security>
                 </datasource>
-				 <datasources>
-                <datasource jta="true" jndi-name="java:/jdbc/t24DS" pool-name="t24DS" enabled="true" use-java-context="true" use-ccm="true">
-                    <connection-url>jdbc:h2:tcp://private_ip//data/temenos/h2/db_name;MODE=Oracle;TRACE_LEVEL_FILE=0;TRACE_LEVEL_SYSTEM_OUT=0;DB_CLOSE_ON_EXIT=FALSE;FILE_LOCK=NO;IFEXISTS=TRUE;CACHE_SIZE=8192;MVCC=TRUE;LOCK_TIMEOUT=60000</connection-url>
-                    <connection-property name="defaultRowPrefetch">
-                        100
-                    </connection-property>
-                    <driver>h2</driver>
-                    <pool>
-                        <min-pool-size>100</min-pool-size>
-                        <max-pool-size>300</max-pool-size>
-                        <flush-strategy>FailingConnectionOnly</flush-strategy>
-                    </pool>
-                    <security>
-                        <user-name>clientdb_user</user-name>
-                        <password>clientdb_pass</password>
-                    </security>
-                </datasource
                 <datasource jta="true" jndi-name="java:/jdbc/t24Axis2DS" pool-name="Axis2H2DS" enabled="true" use-java-context="true" use-ccm="true">
-                    <connection-url>jdbc:h2:tcp://private_ip//data/temenos/h2/db_name;MODE=Oracle;TRACE_LEVEL_FILE=0;TRACE_LEVEL_SYSTEM_OUT=0;DB_CLOSE_ON_EXIT=FALSE;FILE_LOCK=NO;IFEXISTS=TRUE;CACHE_SIZE=8192;MVCC=TRUE;LOCK_TIMEOUT=60000</connection-url>
+                    <connection-url>jdbc:h2:tcp://private_ip//data/temenos/h2/db_name;MODE=Oracle;TRACE_LEVEL_FILE=0;TRACE_LEVEL_SYSTEM_OUT=0;DB_CLOSE_ON_EXIT=FALSE;FILE_LOCK=NO;IFEXISTS=TRUE;CACHE_SIZE=8192;LOCK_TIMEOUT=60000</connection-url>
                     <connection-property name="defaultRowPrefetch">
                         100
                     </connection-property>
                     <driver>h2</driver>
                     <pool>
-                        <min-pool-size>100</min-pool-size>
-                        <max-pool-size>300</max-pool-size>
+                        <min-pool-size>5</min-pool-size>
+                        <max-pool-size>220</max-pool-size>
                         <flush-strategy>FailingConnectionOnly</flush-strategy>
                     </pool>
                     <security>
@@ -205,11 +187,11 @@
                     </security>
                 </datasource>
                 <datasource jta="false" jndi-name="java:/jdbc/t24LockingDS" pool-name="t24LockingDS" enabled="true" use-java-context="true" use-ccm="true">
-                    <connection-url>jdbc:h2:tcp://private_ip//data/temenos/h2/db_name;MODE=Oracle;TRACE_LEVEL_FILE=0;TRACE_LEVEL_SYSTEM_OUT=0;DB_CLOSE_ON_EXIT=FALSE;FILE_LOCK=NO;IFEXISTS=TRUE;CACHE_SIZE=8192;MVCC=TRUE;LOCK_TIMEOUT=60000</connection-url>
+                    <connection-url>jdbc:h2:tcp://private_ip//data/temenos/h2/db_name;MODE=Oracle;TRACE_LEVEL_FILE=0;TRACE_LEVEL_SYSTEM_OUT=0;DB_CLOSE_ON_EXIT=FALSE;FILE_LOCK=NO;IFEXISTS=TRUE;CACHE_SIZE=8192;LOCK_TIMEOUT=60000</connection-url>
                     <driver>h2</driver>
                     <pool>
-                        <min-pool-size>100</min-pool-size>
-                        <max-pool-size>300</max-pool-size>
+                        <min-pool-size>5</min-pool-size>
+                        <max-pool-size>220</max-pool-size>
                         <flush-strategy>FailingConnectionOnly</flush-strategy>
                     </pool>
                     <security>
@@ -218,27 +200,11 @@
                     </security>
                 </datasource>
                 <datasource jta="false" jndi-name="java:/jdbc/t24RODS" pool-name="t24RODS" enabled="true" use-java-context="true" use-ccm="true">
-                    <connection-url>jdbc:h2:tcp://private_ip//data/temenos/h2/db_name;MODE=Oracle;TRACE_LEVEL_FILE=0;TRACE_LEVEL_SYSTEM_OUT=0;DB_CLOSE_ON_EXIT=FALSE;FILE_LOCK=NO;IFEXISTS=TRUE;CACHE_SIZE=8192;MVCC=TRUE;LOCK_TIMEOUT=60000</connection-url>
+                    <connection-url>jdbc:h2:tcp://private_ip//data/temenos/h2/db_name;MODE=Oracle;TRACE_LEVEL_FILE=0;TRACE_LEVEL_SYSTEM_OUT=0;DB_CLOSE_ON_EXIT=FALSE;FILE_LOCK=NO;IFEXISTS=TRUE;CACHE_SIZE=8192;LOCK_TIMEOUT=60000</connection-url>
                     <driver>h2</driver>
                     <pool>
-                        <min-pool-size>100</min-pool-size>
-                        <max-pool-size>300</max-pool-size>
-                        <flush-strategy>FailingConnectionOnly</flush-strategy>
-                    </pool>
-                    <security>
-                        <user-name>clientdb_user</user-name>
-                        <password>clientdb_pass</password>
-                    </security>
-                </datasource>
-                		<datasource jta="true" jndi-name="java:/jdbc/UXPB/EBFileUploadDS" pool-name="EBFileUploadDS" enabled="true" use-java-context="true" use-ccm="true">
-                    <connection-url>jdbc:h2:tcp://private_ip//data/temenos/h2/db_name;MODE=Oracle;TRACE_LEVEL_FILE=0;TRACE_LEVEL_SYSTEM_OUT=0;DB_CLOSE_ON_EXIT=FALSE;FILE_LOCK=NO;IFEXISTS=TRUE;CACHE_SIZE=8192;MVCC=TRUE;LOCK_TIMEOUT=60000</connection-url>
-                    <connection-property name="defaultRowPrefetch">
-                        100
-                    </connection-property>
-                    <driver>h2</driver>
-                    <pool>
-                        <min-pool-size>100</min-pool-size>
-                        <max-pool-size>300</max-pool-size>
+                        <min-pool-size>5</min-pool-size>
+                        <max-pool-size>220</max-pool-size>
                         <flush-strategy>FailingConnectionOnly</flush-strategy>
                     </pool>
                     <security>
@@ -664,8 +630,8 @@
         <subsystem xmlns="urn:jboss:domain:undertow:8.0" default-server="default-server" default-virtual-host="default-host" default-servlet-container="default" default-security-domain="other">
             <buffer-cache name="default"/>
             <server name="default-server">
-                <http-listener name="default" socket-binding="http" max-parameters="50000" no-request-timeout="-1" redirect-socket="https" enable-http2="true"/>
-                <https-listener name="https" socket-binding="https" max-parameters="50000" no-request-timeout="-1" security-realm="ApplicationRealm" enable-http2="true"/>
+                <http-listener name="default" socket-binding="http" max-parameters="10000" no-request-timeout="-1" redirect-socket="https" enable-http2="true"/>
+                <https-listener name="https" socket-binding="https" max-parameters="10000" no-request-timeout="-1" security-realm="ApplicationRealm" enable-http2="true"/>
                 <host name="default-host" alias="localhost">
                     <location name="/" handler="welcome-content"/>
                     <http-invoker path="/wildfly-services" security-realm="ApplicationRealm"/>
@@ -702,5 +668,5 @@
             <inet-address value="${jboss.bind.address.unsecure:127.0.0.1}"/>
         </interface>
     </interfaces>
-	<!-- {mark} ANSIBLE MANAGED BLOCK -->
+    <!-- {mark} ANSIBLE MANAGED BLOCK -->
 </server>

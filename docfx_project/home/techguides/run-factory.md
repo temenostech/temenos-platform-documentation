@@ -84,6 +84,14 @@ After the environment deployment phase is complete, the next phase (stage) is Ru
 
 ![](./images/run-factory-create-test.png)
 
+During the factory run, Temenos Continuous Deployment validates the extension of the components uploaded to the Artifactory (go to [this](http://documentation.temenos.cloud/home/techguides/deploy-an-update-to-an-existing-environment.html) user guide to see the correct format of the component defined in the template configuration script). If you fail to upload them as expected you will receive the following notification:
+
+![](./images/component-upload-notification.png)
+
+
+This feature is to validate the extension of component uploaded to factory source stage against template configuration script. Extension of the component should be same as defined in the template configuration and should be uploaded in the same format in Artifactory.
+
+
 After the tests are run, the dashboard shows details about the stages and the results, as in the example below:
 
 ![](./images/run-factory-completed.png)

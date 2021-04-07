@@ -79,8 +79,10 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h2 id="run-factory">Run Factory</h2>
 
+<div class="NOTE"><h5>Note</h5><p> With the 202103 release, the TCD user guide will move to the <a href="https://tcsp.temenos.com/TCD/Modules/TemenosContinuousDeployment/Overview/Overview.htm">Temenos Customer Support Portal (TCSP)</a>. We recommend you to log in to TCSP and check if your credentials are available. Raise a ticket at <a href="CloudPlatformSupport@temenos.com">CloudPlatformSupport@temenos.com</a> if you encounter any issues.</p>
+</div>
+<h2 id="run-factory">Run Factory</h2>
 <p>After setting-up a factory (see configuration steps <a href="http://documentation.temenos.cloud/home/techguides/automated-factories.html#set-up-create-a-automated-factory">here</a>, go to <strong>Dashboard</strong> on the main menu and select the factory you created (in case you have more factories). </p>
 <div class="NOTE"><h5>Note</h5><p>In order to run your factory, make sure first you select the stream and stage where you created the factory <em>(top right)</em>.</p>
 </div>
@@ -141,6 +143,9 @@ If the factory environment creation has failed during the previous factory run, 
 </div>
 </blockquote>
 <p><img src="./images/run-factory-create-test.png" alt=""></p>
+<p>During the factory run, Temenos Continuous Deployment validates the extension of the components uploaded to the Artifactory (go to <a href="http://documentation.temenos.cloud/home/techguides/deploy-an-update-to-an-existing-environment.html">this</a> user guide to see the correct format of the component defined in the template configuration script). If you fail to upload them as expected you will receive the following notification:</p>
+<p><img src="images/component-upload-notification.png" alt=""></p>
+<p>This feature is to validate the extension of component uploaded to factory source stage against template configuration script. Extension of the component should be same as defined in the template configuration and should be uploaded in the same format in Artifactory.</p>
 <p>After the tests are run, the dashboard shows details about the stages and the results, as in the example below:</p>
 <p><img src="images/run-factory-completed.png" alt=""></p>
 <p>You are able to do the following:</p>
