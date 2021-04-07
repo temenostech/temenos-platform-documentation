@@ -38,7 +38,7 @@ Below you can find the current templates catalogue:
 | Template   Name               | Version | Description                                 |
 |-------------------------------|---------|---------------------------------------------|
 | MB-Transact-Wildfly-H2-202103 | 202103  | T24 R21.03 (Open Source)                    |
-| MB-Transact-Wildfly-H2-202101 | 202102  | T24 R21.02 (Open Source)                    |
+| MB-Transact-Wildfly-H2-202102 | 202102  | T24 R21.02 (Open Source)                    |
 | MB-Transact-Wildfly-H2-202101 | 202101  | T24 R21.01 (Open Source)                    |
 | MB-Transact-Wildfly-H2-202012 | 202012  | T24 R20.12 (Open Source)                    |
 | MB-Transact-Wildfly-H2-202011 | 202011  | T24 R20.11 (Open Source)                    |
