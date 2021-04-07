@@ -593,7 +593,6 @@
                 <jms-queue name="t24DSFPACKAGERReplyQueue" entries="queue/t24DSFPACKAGERReplyQueue java:jboss/exported/jms/queue/t24DSFPACKAGERReplyQueue"/>
                 <jms-topic name="tecEventsTopic" entries="topic/tecEventsTopic java:jboss/exported/jms/topic/tecEventsTopic"/>
                 <jms-topic name="t24ManagementTopic" entries="topic/t24ManagementTopic java:jboss/exported/jms/topitopic/t24ManagementTopic"/>
-				  <jms-queue name="t24ReplyQueue" entries="queue/t24DSFPACKAGERReplyQueue java:jboss/exported/jms/queue/t24DSFPACKAGERReplyQueue"/>
                 <connection-factory name="InVmConnectionFactory" entries="java:/ConnectionFactory" connectors="in-vm"/>
                 <connection-factory name="RemoteConnectionFactory" entries="java:jboss/exported/jms/RemoteConnectionFactory" connectors="https-connector" ha="true" block-on-acknowledge="true" reconnect-attempts="-1"/>
                 <pooled-connection-factory name="activemq-ra" entries="java:/JmsXA java:jboss/DefaultJMSConnectionFactory" connectors="in-vm" transaction="xa"/>
