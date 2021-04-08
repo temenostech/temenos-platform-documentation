@@ -19,7 +19,7 @@ Starting from 202102, user management has been improved so that you can access m
 > [!Note]
 > Always make sure you use a valid email address (i.e. org admins can receive emails from the Temenos Continuous Deployment team about templates). By using fake emails you won’t get these notifications that can impact you/your organization’s work on the platform.
 
-Once logged in to your desired organization you can copy the org ID and name:
+Once logged in to your desired organization you can copy the org ID and name.
 
 ![](./images/organisation-details.png)
 
@@ -34,17 +34,21 @@ Once logged in you can switch the organization:
 
 ![](./images/users-tab.png)
 
-1. Go to the menu on the left and then click Users tab, as below:
+1. Go to the menu on the left and then click **Users** tab, as below:
 
-2. Click on the **Users** tab 
+2. To order the users' list hover over the **Name** tab - the users will be listed in an alphabetical order
 
-3. To order the users' list hover over the **Name** tab - the users will be listed in an alphabetical order
+3. Click on the **Status** tab to see the status of each user (i.e. the user status can be **creating, editing, failed, deleting**)
 
-4. Click on the **Status** tab to see the status of each user (i.e. the user status can be **creating, editing, failed, deleting**)
+4. Create a new user by clicking the **New user** button on the top-right corner. Enter a email address.  It is important to add a valid email as you might receive communications on it.
 
-5. Create a new user by clicking the **New user** button on the top-right corner. Fill in the username, email, password and the user role (the SSH Key can be added later on if needed).
+![](./images/create-user.png)
 
-6. Click **Create**
+5. Enter a user name. At this stage, the platform validates whether the email and user name already exists in the database.
+
+6. If the email and the username pass the first round of validation, then you can define the user's password, add the SSH Key (optional) and assign a user role to it.
+
+7. Click **Create**. 
 
 ![](./images/create-user.png)
 
