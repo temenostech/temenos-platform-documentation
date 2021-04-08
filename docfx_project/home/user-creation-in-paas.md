@@ -50,7 +50,7 @@ Once logged in you can switch the organization:
 
 7. Click **Create**. 
 
-![](./images/create-user.png)
+![](./images/create-user-2.png)
 
 This will create a new user in your organization. This new user will be automatically assigned to all GitLab Repositories from within all environments. If you have already a user created, you can click on the user and update the SSH key box with the one created above.
 
