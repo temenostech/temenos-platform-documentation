@@ -38,7 +38,7 @@ Click on the Status tab to see the status of each user (i.e. the user status c
 
 3. Create a new user by clicking the New user button on the top-right corner. Enter a email address.  It is important to add a valid email as you might receive communications on it. 
 
-![](./images/create-user.png)
+ ![](./images/create-user.png)
 
 4. If the email exists in the platform a notification pop-us up which asks you to confirm whether the username associated to that email address should be added to your organisation.
 
@@ -51,7 +51,7 @@ Click on the Status tab to see the status of each user (i.e. the user status c
 7. Click **Create**. 
 
 
-![](./images/create-user-2.png)
+ ![](./images/create-user-2.png)
 
 This will create a new user in your organization. This new user will be automatically assigned to all GitLab Repositories from within all environments. If you have already a user created, you can click on the user and update the SSH key box with the one created above.
 
