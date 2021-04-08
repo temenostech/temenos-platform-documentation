@@ -31,24 +31,25 @@ Once logged in you can switch the organization:
 
  Note that only the users with the 'Admin' permission can create more users. To manage/ see the users please refer to the below.
 
+1. Go to the menu on the left and then click Users tab.
 
-![](./images/users-tab.png)
+2. To order the users' list hover over the Name tab - the users will be listed in an alphabetical order.
+Click on the Status tab to see the status of each user (i.e. the user status can be creating, editing, failed, deleting).
 
-1. Go to the menu on the left and then click **Users** tab, as below:
-
-2. To order the users' list hover over the **Name** tab - the users will be listed in an alphabetical order
-
-3. Click on the **Status** tab to see the status of each user (i.e. the user status can be **creating, editing, failed, deleting**)
-
-4. Create a new user by clicking the **New user** button on the top-right corner. Enter a email address.  It is important to add a valid email as you might receive communications on it.
+3. Create a new user by clicking the New user button on the top-right corner. Enter a email address.  It is important to add a valid email as you might receive communications on it. 
 
 ![](./images/create-user.png)
 
-5. Enter a user name. At this stage, the platform validates whether the email and user name already exists in the database.
+4. If the email exists in the platform a notification pop-us up which asks you to confirm whether the username associated to that email address should be added to your organisation.
 
-6. If the email and the username pass the first round of validation, then you can define the user's password, add the SSH Key (optional) and assign a user role to it.
 
-7. Click **Create**. 
+
+5. Enter a *user name*.
+
+6. Define the user's *password*, add the *SSH Key* (optional) and assign a *user role* to it.
+
+7. Click **Create**. 
+
 
 ![](./images/create-user-2.png)
 
