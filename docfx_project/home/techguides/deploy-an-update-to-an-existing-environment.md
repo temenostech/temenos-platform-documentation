@@ -117,6 +117,9 @@ See below an example in which an environment file with the JAVA_OPTS change has 
 
 >[!Note] 
 >Do not leave multiple versions of the same component type in the GIT folder as this would produce undesired results.
+>If you deploy a non-modelbank database into TCD make sure that the Recover Model in the DB Properties  is set **Simple**:
+> ![](./images/db-nonmodel.png)
+>
 <br>
 </br>
 
